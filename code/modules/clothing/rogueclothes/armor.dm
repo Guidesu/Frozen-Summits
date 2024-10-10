@@ -576,8 +576,8 @@
 
 /obj/item/clothing/suit/roguetown/armor/blacksteel/platechest
 	slot_flags = ITEM_SLOT_ARMOR
-	name = "Blacksteel Plate Armor"
-	desc = "A suit of Full Plate smithed of durable blacksteel."
+	name = "blacksteel plate armor"
+	desc = "A suit of full plate smithed of durable blacksteel."
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
 	icon = 'icons/roguetown/clothing/special/blkknight.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
@@ -600,7 +600,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/blacksteel/cuirass
 	slot_flags = ITEM_SLOT_ARMOR
-	name = "Blacksteel Cuirass"
+	name = "blacksteel cuirass"
 	desc = "A basic cuirass forged from blacksteel. It's somewhat more durable than regular steel."
 	body_parts_covered = CHEST|VITALS
 	icon_state = "grenzelcuirass"
