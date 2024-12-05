@@ -53,7 +53,7 @@
 				)
 
 /datum/supply_pack/rogue/armor/boots
-	name = "Steel Boots"
+	name = "Steel Plate Boots"
 	cost = 50
 	contains = list(
 					/obj/item/clothing/shoes/plate,
