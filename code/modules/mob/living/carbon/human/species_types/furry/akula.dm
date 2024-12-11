@@ -2,16 +2,16 @@
 	race = /datum/species/akula
 
 /datum/species/akula
-	name = "Axian"
+	name = "Kuo-Toa"
 	id = "akula"
 	desc = "<b>Axian</b><br>\
-	Axians are a proud, shark-like people that have a heritage founded in maritime trade, \
-	tax evasion, and piracy. They have a strong distaste for the nobility and taxation, \
-	making them a target of discrimination in the distant lands. They are oftentimes scapegoats for crime. \
-	Due to their penchant for trade and travel, they can be found all over the world, oftentimes \
-	seeing places many could not even dream of. They look down at those they considered the 'settled' \
-	and often uproot themselves quite often in their lifetimes. However, due to the isolation in Frozen Summit, many Axians \
-	find their sanity being clawed away as they find themselves stuck in one place."
+	Kuo-toa , also known as gogglers and men-fish, are a piscine race of warm-blooded and amphibious creatures that dwelt in the Underdark and the deep sea. \
+	Sinister secrets lurked below the surface of their alien minds, \
+	for the kuo-toa were fanatics plagued by mental instability.\
+	Kuo-toa are not all necessarily evil, but within their repressive theocracy,\
+	only few posess enough willpower to oppose the ruling castes. \
+	Kuo-toa are an amphibious race, capable of operating with equal or greater mobility underwater as they could on land.\
+	"
 	inherent_traits = list(
 		TRAIT_STRONGBITE,
 		TRAIT_NASTY_EATER,
