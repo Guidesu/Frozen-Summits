@@ -1,9 +1,9 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/minotaur
-	icon = 'icons/roguetown/mob/monster/minotaur.dmi'
+	icon = 'icons/mob/newminotaur.dmi'
 	name = "Minotaur"
-	icon_state = "Gor"
-	icon_living = "Gor"
-	icon_dead = "GorD"
+	icon_state = "MinotaurMale"
+	icon_living = "MinotaurMale"
+	icon_dead = "MinotaurMale_dead"
 	gender = MALE
 	emote_hear = null
 	emote_see = null
@@ -11,18 +11,19 @@
 	turns_per_move = 2
 	see_in_dark = 10
 	move_to_delay = 3
-	base_intents = list(/datum/intent/simple/bite)
+	base_intents = list(/datum/intent/simple/minotaur_unarmed)
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 10,
 						/obj/item/natural/hide = 10, /obj/item/natural/bundle/bone/full = 2)
 	faction = list("caves")
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
-	health = 300
-	maxHealth = 400
-	melee_damage_lower = 45
-	melee_damage_upper = 70
+	health = 500
+	maxHealth = 600
+	melee_damage_lower = 55
+	melee_damage_upper = 80
 	vision_range = 3
-	aggro_vision_range = 4
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	aggro_vision_range = 8
+	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
+	obj_damage = 1
 	retreat_distance = 0
 	minimum_distance = 0
 	milkies = FALSE
@@ -35,7 +36,6 @@
 	deaggroprob = 0
 	defprob = 40
 	defdrain = 10
-	del_on_deaggro = 44 SECONDS
 	retreat_health = 0
 	food = 0
 	attack_sound = list('sound/combat/wooshes/blunt/wooshhuge (1).ogg','sound/combat/wooshes/blunt/wooshhuge (2).ogg','sound/combat/wooshes/blunt/wooshhuge (3).ogg')
@@ -103,3 +103,28 @@
 			return "foreleg"
 	return ..()
 
+/datum/intent/simple/minotaur_unarmed
+	name = "minotaur unarmed"
+	icon_state = "instrike"
+	attack_verb = list("punches", "strikes", "kicks", "steps on", "crushes", "bites")
+	animname = "blank22"
+	blade_class = BCLASS_CUT
+	hitsound = "smallslash"
+	chargetime = 0
+	penfactor = 5
+	swingdelay = 3
+	candodge = TRUE
+	canparry = TRUE
+
+/datum/intent/simple/minotaur_axe
+	name = "minotaur axe"
+	icon_state = "instrike"
+	attack_verb = list("hacks at", "slashes", "chops", "steps on", "crushes", "bites")
+	animname = "blank22"
+	blade_class = BCLASS_CHOP
+	hitsound = "genchop"
+	chargetime = 20
+	penfactor = 5
+	swingdelay = 3
+	candodge = TRUE
+	canparry = TRUE

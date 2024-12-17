@@ -310,10 +310,6 @@
 		LoseTarget()
 		return 0
 	if(target in possible_targets)
-//		var/turf/T = get_turf(src)
-//		if(target.z != T.z)
-//			LoseTarget()
-//			return 0
 		var/target_distance = get_dist(targets_from,target)
 		if(incapacitated())
 			walk(src,0)
@@ -346,19 +342,6 @@
 		Goto(target,move_to_delay,minimum_distance)
 		FindHidden()
 		return 1
-//	if(environment_smash)
-//		if(target.loc != null && get_dist(targets_from, target.loc) <= vision_range) //We can't see our target, but he's in our vision range still
-//			if(ranged_ignores_vision && ranged_cooldown <= world.time) //we can't see our target... but we can fire at them!
-//				OpenFire(target)
-//			if((environment_smash & ENVIRONMENT_SMASH_WALLS) || (environment_smash & ENVIRONMENT_SMASH_RWALLS)) //If we're capable of smashing through walls, forget about vision completely after finding our target
-//				Goto(target,move_to_delay,minimum_distance)
-//				FindHidden()
-//				return 1
-//			else
-//				if(FindHidden())
-//					return 1
-//	LoseTarget()
-//	return 0
 
 /mob/living/simple_animal/hostile/proc/Goto(target, delay, minimum_distance)
 	if(target == src.target)
@@ -608,15 +591,6 @@
 	if (!T)
 		return
 
-//	if (!length(SSmobs.clients_by_zlevel[T.z])) // It's fine to use .len here but doesn't compile on 511
-//		toggle_ai(AI_Z_OFF)
-//		return
-
-//	var/cheap_search = isturf(T) && !is_station_level(T.z)
-//	if (cheap_search)
-//		tlist = ListTargetsLazy(T.z)
-//	else
-
 	if(world.time < next_seek)
 		return
 	next_seek = world.time + 3 SECONDS
@@ -624,8 +598,6 @@
 	var/list/tlist = ListTargets()
 
 	if(AIStatus == AI_IDLE && FindTarget(tlist, 1))
-//		if(cheap_search) //Try again with full effort
-//			FindTarget()
 		toggle_ai(AI_ON)
 		testing("becomeidle [src]")
 
