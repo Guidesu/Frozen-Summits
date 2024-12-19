@@ -49,7 +49,7 @@
 	scale_vol_with_severity = TRUE
 	weather_sounds = list(/datum/looping_sound/snow)
 	indoor_weather_sounds = list(/datum/looping_sound/indoor_rain)
-	weather_messages = list("The rail hurts a little.", "The storm is really picking up!")
+	weather_messages = list("The hail hurts a little.", "The storm is really picking up!")
 
 	minSeverity = 4
 	maxSeverity = 100
