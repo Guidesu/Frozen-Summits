@@ -123,7 +123,7 @@
 	name = "Shields"
 	dreams = list(
 	"...a terrible lizard unleashes a torrent of fire upon you. Yet, you stand firm, a living bastion, unyielding and stalwart...",
-	"...the half-moon crest upon your shield shines even in the bright of Astrata's day. You catch a gleam on it, and reflexively pull it upwards. An arrow bounces off..."
+	"...the half-moon crest upon your shield shines even in the brightest day. You catch a gleam on it, and reflexively pull it upwards. An arrow bounces off..."
 	)
 
 /datum/skill/combat/firearms
