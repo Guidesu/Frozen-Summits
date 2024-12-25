@@ -69,3 +69,15 @@
 	desc = "A depiction of a Cleric woman."
 	icon_state = "seraphinapainting_deployed"
 	stolen_painting = /obj/item/rogue/painting/seraphina
+
+/obj/structure/fluff/walldeco/painting/darlak
+	desc = "a portrait of a pale man."
+	icon_state = "darlakpainting_deployed"
+	stolen_painting = /obj/item/rogue/painting/darlak
+
+/obj/item/rogue/painting/darlak
+	icon_state = "darlakpainting"
+	desc = "A portrait of a pale man."
+	dropshrink = 0.5
+	sellprice = 50
+	deployed_structure = /obj/structure/fluff/walldeco/painting/darlak
