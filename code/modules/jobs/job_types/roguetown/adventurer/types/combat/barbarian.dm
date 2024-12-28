@@ -13,6 +13,7 @@
 	..() // Compared to the Warrior the barbarian is more suited to the wilds. But they are able to make use of almost any weapon by talent and killer instinct.
 	H.adjust_blindness(-3)
 	var/classes = list("Brute","Hunter Killer", "Ravager")
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/barbarian_rage)
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 	switch(classchoice)
 		if("Warrior")

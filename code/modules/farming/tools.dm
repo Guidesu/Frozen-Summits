@@ -17,6 +17,8 @@
 	gripsprite = TRUE
 	drop_sound = 'sound/foley/dropsound/wooden_drop.ogg'
 	smeltresult = /obj/item/ingot/iron
+	improvised = TRUE
+
 /datum/intent/flailthresh
 	name = "thresh"
 	icon_state = "inthresh"
@@ -66,6 +68,7 @@
 	slot_flags = ITEM_SLOT_HIP
 	max_blade_int = 50
 	smeltresult = /obj/item/ingot/iron
+	improvised = TRUE
 
 /obj/item/rogueweapon/sickle/getonmobprop(tag)
 	. = ..()
@@ -108,6 +111,7 @@
 	hoe_damage = 25
 	work_time = 15 SECONDS
 
+	improvised = TRUE
 
 /obj/item/rogueweapon/hoe/getonmobprop(tag)
 	. = ..()
@@ -254,6 +258,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	drop_sound = 'sound/foley/dropsound/wooden_drop.ogg'
 	smeltresult = /obj/item/ingot/iron
+	improvised = TRUE
 /obj/item/rogueweapon/pitchfork/getonmobprop(tag)
 	. = ..()
 	if(tag)

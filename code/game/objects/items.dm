@@ -207,6 +207,9 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 
 	var/visual_replacement //Path. For use in generating dummies for one-off items that would break the game like the crown.
 
+	//is it an improvised weapon?
+	var/improvised = FALSE
+
 /obj/item/Initialize()
 	. = ..()
 	if(!pixel_x && !pixel_y && !bigboy)

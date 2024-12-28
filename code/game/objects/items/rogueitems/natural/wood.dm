@@ -174,6 +174,8 @@
 	gripped_intents = null
 	slot_flags = ITEM_SLOT_MOUTH|ITEM_SLOT_HIP
 	lumber_amount = 0
+	tool_behaviour = TOOL_RETRACTOR
+	improvised = TRUE
 
 /*/obj/item/grown/log/tree/lumber
 	name = "lumber"
