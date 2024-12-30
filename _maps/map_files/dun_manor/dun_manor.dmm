@@ -1690,6 +1690,7 @@
 /obj/structure/closet/crate/chest/wicker{
 	opened = 1
 	},
+/obj/item/fishingrod,
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/rtfield)
 "cXE" = (
