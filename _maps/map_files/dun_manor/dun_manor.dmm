@@ -4420,10 +4420,6 @@
 /obj/effect/decal/cleanable/blood/gibs,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave)
-"qnu" = (
-/obj/item/rogueweapon/spear/stone,
-/turf/open/floor/rogue/grassred,
-/area/rogue/outdoors/rtfield)
 "qqZ" = (
 /obj/structure/table/wood{
 	icon_state = "longtable";
@@ -37961,7 +37957,7 @@ lnn
 dPV
 dPV
 lyQ
-qnu
+lyQ
 lyQ
 lyQ
 lyQ
