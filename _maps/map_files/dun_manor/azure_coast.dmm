@@ -421,6 +421,12 @@
 	icon_state = "weird1"
 	},
 /area/rogue/outdoors/beach/forest)
+"bO" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/snow{
+	color = "e6f2ff"
+	},
+/area/rogue/outdoors/beach/forest)
 "bQ" = (
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/beach)
@@ -1310,6 +1316,10 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/beach)
+"iC" = (
+/obj/structure/chair/stool/rogue,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/cave)
 "iE" = (
 /turf/closed/wall/mineral/rogue/decostone/center,
 /area/rogue/indoors/cave)
@@ -3746,6 +3756,10 @@
 "Cy" = (
 /obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
 /turf/open/floor/rogue/cobblerock,
+/area/rogue/indoors/cave)
+"CA" = (
+/obj/machinery/light/rogue/campfire/densefire,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave)
 "CB" = (
 /obj/structure/chair/wood/rogue,
@@ -6415,6 +6429,10 @@
 /turf/open/floor/rogue/dirt/road{
 	color = "80ffff"
 	},
+/area/rogue/indoors/cave)
+"Xv" = (
+/obj/structure/bed/rogue/bedroll,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave)
 "Xw" = (
 /obj/structure/toilet,
@@ -49476,8 +49494,8 @@ pa
 pz
 pz
 pz
-pz
-pz
+RT
+RT
 RL
 RL
 RL
@@ -49606,10 +49624,10 @@ pa
 pz
 pz
 pz
-pz
-pz
-RL
-RL
+bO
+kC
+iC
+CA
 RL
 RL
 RL
@@ -49736,10 +49754,10 @@ pz
 pa
 pz
 vF
-pz
-pz
-RL
-RL
+RT
+RT
+kM
+Xv
 RL
 RL
 RL
@@ -66117,8 +66135,8 @@ BA
 BA
 BA
 BA
-BA
-BA
+Ze
+Ze
 pz
 pz
 pz
@@ -66247,8 +66265,8 @@ BA
 BA
 BA
 BA
-BA
-BA
+Ze
+Ze
 pz
 rb
 kC
@@ -66377,8 +66395,8 @@ BA
 BA
 BA
 BA
-BA
-BA
+Ze
+Ze
 rb
 rb
 VO
