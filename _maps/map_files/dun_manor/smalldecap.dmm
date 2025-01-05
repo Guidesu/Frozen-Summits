@@ -581,11 +581,8 @@
 /turf/open/floor/rogue/church,
 /area/rogue/outdoors/mountains/decap/stepbelow)
 "hu" = (
-/obj/structure/bars/pipe{
-	dir = 8;
-	pixel_x = 10
-	},
-/turf/open/water/swamp,
+/mob/living/carbon/human/species/skeleton/npc,
+/turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/mountains/decap/stepbelow)
 "hv" = (
 /obj/effect/decal/wood/herringbone2{
@@ -1008,6 +1005,7 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/outdoors/mountains/decap/stepbelow)
 "mJ" = (
+/obj/item/restraints/legcuffs/beartrap/armed/camouflage,
 /obj/structure/mineral_door/wood/donjon/stone,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/mountains/decap/stepbelow)
@@ -1172,9 +1170,8 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/mountains/decap/stepbelow)
 "pn" = (
-/obj/effect/decal/cleanable/blood/footprints,
 /mob/living/simple_animal/hostile/retaliate/rogue/minotaur,
-/turf/open/floor/rogue/church,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/mountains/decap/stepbelow)
 "pv" = (
 /obj/structure/closet/dirthole/closed/loot,
@@ -3133,15 +3130,12 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/mountains/decap/stepbelow)
 "Nr" = (
-/obj/structure/bars/passage{
-	density = 0;
-	icon_state = "passage1"
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 8
 	},
-/obj/structure/plasticflaps/opaque,
-/turf/open/floor/rogue/metal{
-	icon_state = "plating2"
-	},
-/area/rogue/outdoors/mountains/decap)
+/turf/open/lava,
+/area/rogue/outdoors/mountains/decap/stepbelow)
 "Nt" = (
 /turf/closed/wall/mineral/rogue/pipe{
 	icon_state = "iron_corner";
@@ -3615,11 +3609,16 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/mountains/decap/stepbelow)
 "TM" = (
-/obj/effect/decal/cleanable/blood/footprints{
-	dir = 4
+/obj/structure/mineral_door/wood/donjon/stone,
+/obj/item/restraints/legcuffs/beartrap/armed/camouflage,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/mountains/decap/stepbelow)
+"TQ" = (
+/obj/structure/fluff/railing/border{
+	dir = 4;
+	icon_state = "border"
 	},
-/mob/living/simple_animal/hostile/retaliate/rogue/minotaur,
-/turf/open/floor/rogue/church,
+/turf/open/lava,
 /area/rogue/outdoors/mountains/decap/stepbelow)
 "TT" = (
 /obj/structure/fluff/millstone,
@@ -3859,7 +3858,6 @@
 "WZ" = (
 /obj/effect/decal/cleanable/blood/gibs/bubblegum,
 /obj/effect/decal/cleanable/blood/gibs/up,
-/obj/item/restraints/legcuffs/beartrap/armed/camouflage,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/outdoors/mountains/decap/stepbelow)
 "Xe" = (
@@ -6111,7 +6109,7 @@ CF
 CF
 CF
 SV
-LR
+XT
 zA
 LR
 lD
@@ -6529,7 +6527,7 @@ LR
 LR
 LR
 LR
-Nr
+ra
 ra
 JG
 JG
@@ -6631,7 +6629,7 @@ Wk
 NV
 yf
 fg
-aX
+hu
 AB
 LR
 xf
@@ -6992,8 +6990,8 @@ fg
 fg
 CF
 CF
-qE
-qE
+CF
+CF
 LR
 tX
 fg
@@ -7123,7 +7121,7 @@ tX
 tX
 CF
 CF
-qE
+CF
 SJ
 HU
 Ki
@@ -7250,11 +7248,11 @@ Ki
 Ki
 bX
 bX
-qE
-qE
-qE
 CF
-qE
+CF
+CF
+CF
+CF
 HU
 Ki
 Ki
@@ -7380,10 +7378,10 @@ bX
 Ki
 bX
 bX
-qE
-qE
-qE
-qE
+CF
+CF
+CF
+CF
 CF
 tX
 Ki
@@ -7510,10 +7508,10 @@ bX
 Ki
 bX
 bX
-qE
-Lc
-qE
-qE
+CF
+oC
+CF
+CF
 CF
 tX
 Ki
@@ -7641,7 +7639,7 @@ Ki
 bX
 bX
 Ln
-Lc
+oC
 Ln
 bX
 bX
@@ -7758,8 +7756,8 @@ HU
 HU
 Kp
 Kp
-Ki
-SJ
+WW
+WW
 AJ
 WW
 WW
@@ -7771,7 +7769,7 @@ Ki
 bX
 bX
 Ln
-Lc
+oC
 Ln
 bX
 bX
@@ -7888,20 +7886,20 @@ Vs
 Vs
 Vs
 Kp
-SJ
+pn
 SJ
 SJ
 pP
 pP
 Km
 pP
-SJ
+xL
 Ki
 Ki
 bX
 bX
 Ln
-Lc
+oC
 Ln
 bX
 bX
@@ -8016,7 +8014,7 @@ Ps
 jr
 gN
 Pi
-TM
+gN
 mi
 SJ
 SJ
@@ -8031,7 +8029,7 @@ Ki
 bX
 bX
 Ln
-Lc
+oC
 Ln
 cf
 bX
@@ -8155,13 +8153,13 @@ Zg
 KH
 pP
 pP
-SJ
-Ki
-Ki
+xL
+TQ
+TQ
 bX
 bX
 Ln
-Lc
+oC
 Ln
 bX
 CF
@@ -8287,11 +8285,11 @@ vO
 KH
 SJ
 SJ
-Ki
-bX
-bX
-Ln
-Lc
+SJ
+SJ
+SJ
+oC
+oC
 Wg
 Db
 Db
@@ -8300,7 +8298,7 @@ Db
 Db
 Db
 Be
-Lc
+qE
 Ln
 bX
 bX
@@ -8407,8 +8405,8 @@ WZ
 JW
 Zx
 Ek
-mJ
-SJ
+TM
+pn
 SJ
 xL
 aX
@@ -8416,21 +8414,21 @@ lP
 pP
 zC
 xL
-Ki
-Ki
+Nr
+Nr
 bX
 bX
 Ln
-Lc
-Lc
-Lc
-Lc
-Lc
-Lc
-Lc
-Lc
-Lc
-Lc
+oC
+qE
+qE
+qE
+qE
+qE
+qE
+qE
+qE
+qE
 Ln
 bX
 bX
@@ -8551,16 +8549,16 @@ Ki
 bX
 bX
 Ln
-Lc
-Lc
-Lc
-Lc
-Lc
-Lc
-Lc
-Lc
-Lc
-Lc
+oC
+qE
+qE
+qE
+qE
+qE
+qE
+qE
+qE
+qE
 Ln
 bX
 bX
@@ -8666,10 +8664,10 @@ Ps
 Ps
 gN
 jr
-pn
+jr
 mi
-SJ
-SJ
+WW
+WW
 AJ
 WW
 WW
@@ -8682,8 +8680,8 @@ bX
 bX
 Ln
 JR
-Lc
-Lc
+qE
+qE
 oC
 Ra
 Db
@@ -8812,8 +8810,8 @@ bX
 bX
 Ln
 vY
-Lc
-Lc
+oC
+oC
 FF
 Ln
 bX
@@ -8942,8 +8940,8 @@ bX
 bX
 Ln
 DQ
-Lc
-Lc
+qE
+qE
 oC
 Ln
 Ki
@@ -9072,8 +9070,8 @@ bX
 bX
 Ln
 FF
-Lc
-Lc
+qE
+qE
 oC
 Ln
 Ki
@@ -9202,8 +9200,8 @@ bX
 bX
 Ln
 LU
-Lc
-Lc
+qE
+qE
 DQ
 Ln
 Ki
@@ -9332,8 +9330,8 @@ bX
 CF
 Ln
 oC
-Lc
-Lc
+qE
+qE
 oC
 Ln
 Ki
@@ -9462,8 +9460,8 @@ CF
 CF
 Ln
 DQ
-Lc
-Lc
+qE
+qE
 oC
 Ln
 CF
@@ -9591,9 +9589,9 @@ CF
 CF
 CF
 SJ
-SJ
-Lc
-Lc
+oC
+qE
+qE
 LU
 Ln
 SJ
@@ -9719,11 +9717,11 @@ Ki
 pX
 pX
 CF
-qE
-qE
+CF
+CF
 oC
-Lc
-Lc
+oC
+oC
 oC
 Ln
 ea
@@ -9849,11 +9847,11 @@ Ki
 pX
 um
 oC
-qE
+CF
 Ln
 oC
 SJ
-Lc
+qE
 oC
 Ln
 oC
@@ -9983,7 +9981,7 @@ fA
 Ln
 oC
 SJ
-Lc
+qE
 oC
 Ln
 zp
@@ -10026,8 +10024,8 @@ CF
 CF
 CF
 CF
-qE
-qE
+CF
+CF
 CF
 Ln
 CF
@@ -10155,10 +10153,10 @@ pX
 CF
 CF
 CF
-qE
-qE
-qE
-qE
+CF
+CF
+CF
+CF
 cn
 CF
 bX
@@ -10285,12 +10283,12 @@ CF
 CF
 CF
 CF
-qE
-qE
 CF
-qE
-qE
-qE
+CF
+CF
+CF
+CF
+CF
 bX
 CF
 fg
@@ -10369,8 +10367,8 @@ Ki
 pX
 PI
 oC
-qE
-qE
+CF
+CF
 SJ
 SJ
 SJ
@@ -10414,10 +10412,10 @@ pX
 CF
 CF
 CF
-qE
-qE
-qE
-qE
+CF
+CF
+CF
+CF
 CF
 cn
 CF
@@ -11319,9 +11317,9 @@ pX
 pX
 CF
 CF
-qE
-qE
-qE
+CF
+CF
+CF
 pX
 pX
 pX
@@ -11450,8 +11448,8 @@ Db
 Db
 Ou
 Ou
-qE
-hu
+CF
+Ou
 Ou
 Db
 Db
@@ -11578,10 +11576,10 @@ IQ
 fg
 CF
 CF
-qE
-qE
-qE
-qE
+CF
+CF
+CF
+CF
 CF
 CF
 CF
@@ -15665,8 +15663,8 @@ pd
 pd
 pd
 HW
-pd
-pd
+HW
+HW
 HW
 HW
 pd
@@ -15795,7 +15793,7 @@ pd
 pd
 pd
 pd
-pd
+HW
 HW
 HW
 HW
@@ -15927,8 +15925,8 @@ HW
 HW
 HW
 HW
-pd
-pd
+HW
+HW
 pd
 HW
 HW
@@ -16445,7 +16443,7 @@ HW
 pd
 HW
 HW
-pd
+HW
 pd
 pd
 pd
@@ -16961,7 +16959,7 @@ lv
 pd
 pd
 HW
-pd
+HW
 HW
 HW
 pd
@@ -17091,7 +17089,7 @@ lv
 pd
 pd
 pd
-pd
+HW
 HW
 HW
 HW
@@ -17220,10 +17218,10 @@ lv
 lv
 pd
 pd
-pd
-pd
 HW
-pd
+HW
+HW
+HW
 pd
 pd
 pd
@@ -17350,10 +17348,10 @@ lv
 lv
 lv
 pd
-pd
 HW
 HW
-pd
+HW
+HW
 pd
 HW
 HW
@@ -17482,8 +17480,8 @@ HW
 HW
 HW
 HW
-pd
-pd
+HW
+HW
 pd
 pd
 pd
