@@ -772,6 +772,7 @@
 /obj/item/reagent_containers/glass/bowl,
 /obj/item/reagent_containers/glass/bowl,
 /obj/item/reagent_containers/glass/bowl,
+/obj/item/cooking/pan,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors)
 "acu" = (
@@ -3251,11 +3252,9 @@
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/rtfield)
 "hQP" = (
-/obj/item/cooking/pan{
-	pixel_y = 28
-	},
-/turf/closed/wall/mineral/rogue/stonebrick,
-/area/rogue/indoors)
+/obj/item/restraints/legcuffs/beartrap/armed/camouflage,
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/mountains)
 "hRp" = (
 /obj/structure/mineral_door/wood/deadbolt,
 /turf/open/floor/rogue/hexstone,
@@ -41820,7 +41819,7 @@ acn
 act
 rDz
 acv
-hQP
+abV
 dPV
 dPV
 dPV
@@ -42297,7 +42296,7 @@ dPV
 vjT
 dPV
 bxn
-ymg
+sLi
 sLi
 ymg
 dPV
@@ -61278,11 +61277,11 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
-tXZ
-tXZ
+huO
+huO
+huO
+huO
+huO
 tXZ
 tXZ
 tXZ
@@ -61433,20 +61432,20 @@ tXZ
 tXZ
 tXZ
 tXZ
+huO
+huO
+huO
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
-tXZ
-tXZ
-tXZ
-tXZ
-tXZ
-tXZ
-tXZ
-tXZ
+huO
+huO
+huO
+huO
+huO
+huO
+huO
+huO
 tXZ
 tXZ
 tXZ
@@ -61588,6 +61587,9 @@ tXZ
 tXZ
 tXZ
 tXZ
+huO
+huO
+huO
 tXZ
 tXZ
 tXZ
@@ -61600,10 +61602,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -61738,6 +61737,14 @@ tXZ
 tXZ
 tXZ
 tXZ
+huO
+huO
+huO
+hQP
+tXZ
+tXZ
+hQP
+huO
 tXZ
 tXZ
 tXZ
@@ -61752,15 +61759,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
-tXZ
-tXZ
-tXZ
-tXZ
-tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -61917,7 +61916,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -62074,8 +62073,8 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
+huO
+huO
 tXZ
 tXZ
 tXZ
@@ -62232,7 +62231,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -62389,7 +62388,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -62546,7 +62545,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -62703,7 +62702,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -62860,7 +62859,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -63017,7 +63016,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -63174,7 +63173,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -63331,8 +63330,8 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
+huO
+huO
 tXZ
 tXZ
 tXZ
@@ -63489,7 +63488,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -63646,7 +63645,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -63803,8 +63802,8 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
+huO
+huO
 tXZ
 tXZ
 tXZ
@@ -63961,7 +63960,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -64118,7 +64117,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -64275,7 +64274,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -64432,7 +64431,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -64589,8 +64588,8 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
+huO
+huO
 tXZ
 tXZ
 tXZ
@@ -64747,7 +64746,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -64904,7 +64903,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -65061,7 +65060,7 @@ xDp
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -65218,7 +65217,7 @@ xDp
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -65375,7 +65374,7 @@ xDp
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -65532,7 +65531,7 @@ xDp
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -65689,8 +65688,8 @@ xDp
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
+huO
+huO
 tXZ
 tXZ
 tXZ
@@ -65847,7 +65846,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -66004,7 +66003,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -66161,7 +66160,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -66318,7 +66317,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -66475,7 +66474,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -66632,7 +66631,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -66789,8 +66788,8 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
+huO
+huO
 tXZ
 tXZ
 tXZ
@@ -66947,7 +66946,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -67104,7 +67103,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -67261,7 +67260,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -67418,7 +67417,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -67575,7 +67574,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -67732,8 +67731,8 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
+huO
+huO
 tXZ
 tXZ
 tXZ
@@ -67889,8 +67888,8 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
+huO
+hQP
 tXZ
 tXZ
 tXZ
@@ -68360,9 +68359,9 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
+huO
+huO
+hQP
 tXZ
 tXZ
 tXZ
@@ -68519,7 +68518,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -68676,8 +68675,8 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
+huO
+huO
 tXZ
 tXZ
 tXZ
@@ -68834,7 +68833,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -68991,7 +68990,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -69148,7 +69147,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -69305,7 +69304,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -69462,7 +69461,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
@@ -69619,8 +69618,8 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
+huO
+huO
 tXZ
 tXZ
 tXZ
@@ -69777,7 +69776,7 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
+huO
 tXZ
 tXZ
 tXZ
