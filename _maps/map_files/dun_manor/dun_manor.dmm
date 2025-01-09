@@ -1408,9 +1408,7 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/rtfield)
 "bvV" = (
-/obj/machinery/light/rogue/torchholder/c{
-	dir = 4
-	},
+/obj/machinery/light/rogue/lanternpost,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/rtfield)
 "bwp" = (
@@ -1561,6 +1559,7 @@
 /obj/item/rogueweapon/sword/uchigatana,
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,
 /obj/item/quiver/arrows,
+/obj/item/rogueweapon/sword/silver,
 /turf/open/floor/rogue/carpet/lord/right,
 /area/rogue/indoors)
 "bOZ" = (
@@ -1885,6 +1884,12 @@
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/outdoors/rtfield)
+"cHF" = (
+/obj/structure/roguewindow/openclose{
+	dir = 8
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors)
 "cIa" = (
 /obj/structure/flora/roguetree/snow{
 	icon_state = "tree5"
@@ -2306,6 +2311,12 @@
 /obj/structure/bed/rogue/inn/hay,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/rtfield)
+"dOB" = (
+/obj/structure/chair/bench{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/mountains)
 "dPu" = (
 /obj/effect/spawner/roguemap/stump,
 /turf/open/floor/rogue/snow,
@@ -3288,9 +3299,7 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town/tavern)
 "hxJ" = (
-/obj/machinery/light/rogue/torchholder/c{
-	dir = 4
-	},
+/obj/machinery/light/rogue/lanternpost,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/mountains)
 "hDp" = (
@@ -3591,6 +3600,12 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
+"iFP" = (
+/obj/structure/chair/wood/rogue{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/rtfield)
 "iFR" = (
 /obj/structure/roguerock,
 /turf/open/floor/rogue/snow,
@@ -7232,6 +7247,12 @@
 /obj/machinery/light/rogue/firebowl/standing,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town/tavern)
+"tkh" = (
+/obj/machinery/light/rogue/lanternpost{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/mountains)
 "tku" = (
 /obj/structure/closet/crate/chest/neu_fancy,
 /obj/item/fishingrod,
@@ -7858,9 +7879,9 @@
 /area/rogue/indoors/town/tavern)
 "vxu" = (
 /obj/structure/roguewindow/openclose{
-	dir = 4
+	dir = 1
 	},
-/turf/closed,
+/turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/rtfield)
 "vxM" = (
 /obj/structure/flora/roguetree/snow{
@@ -8125,11 +8146,11 @@
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/outdoors/rtfield)
 "wiu" = (
-/obj/machinery/light/rogue/torchholder/c{
-	dir = 8
+/obj/machinery/light/rogue/lanternpost{
+	dir = 1
 	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/mountains)
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/rtfield)
 "wiv" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -44123,13 +44144,13 @@ qYz
 qYz
 qYz
 iSL
-qYz
+bvV
+iFP
+iFP
 iSL
 iSL
 iSL
-qYz
-iSL
-qYz
+bvV
 iSL
 iSL
 qYz
@@ -44281,13 +44302,13 @@ qYz
 qYz
 iSL
 iSL
-bvV
 iSL
 iSL
 iSL
-bvV
 iSL
-bvV
+iSL
+iSL
+iSL
 iSL
 iSL
 bvV
@@ -44437,13 +44458,13 @@ teY
 fLa
 quh
 fsP
-fsP
+wiu
 aCU
 fsP
 fsP
 fsP
 fsP
-fsP
+wiu
 fsP
 fsP
 fsP
@@ -68305,7 +68326,7 @@ xDp
 xDp
 aat
 lRw
-adc
+cHF
 lRw
 aat
 xDp
@@ -68460,6 +68481,8 @@ sPC
 jLQ
 sPC
 hxJ
+dOB
+dOB
 sPC
 sPC
 sPC
@@ -68467,8 +68490,6 @@ hxJ
 sPC
 sPC
 sPC
-sPC
-hxJ
 sPC
 jLQ
 sPC
@@ -68773,17 +68794,17 @@ tXZ
 bPG
 xDp
 sPC
-wiu
 sPC
 sPC
 sPC
+tkh
 sPC
 fIZ
 sPC
 sPC
 sPC
-wiu
 sPC
+tkh
 xDp
 gpi
 bPG
