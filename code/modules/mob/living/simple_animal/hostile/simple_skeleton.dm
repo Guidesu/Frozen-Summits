@@ -104,7 +104,7 @@
 /mob/living/simple_animal/hostile/rogue/skeleton/Initialize(mapload, mob/user, cabal_affine = FALSE)
 	. = ..()
 	if(user)
-		friends += user.name
+		summoner = user.name
 		if (cabal_affine)
 			faction |= "cabal"
 
@@ -175,3 +175,27 @@
 	woundclass = BCLASS_STAB
 	flag = "bullet"
 	speed = 2
+
+/datum/intent/simple/axe/skeleton
+	clickcd = SKELETON_ATTACK_SPEED
+
+/datum/intent/simple/claw/skeleton
+	clickcd = SKELETON_ATTACK_SPEED
+	
+/datum/intent/simple/spear/skeleton
+	reach = 2
+	clickcd = SKELETON_ATTACK_SPEED * 1.2
+	chargetime = 1
+	animname = "stab"
+
+
+
+/mob/living/simple_animal/hostile/rogue/skeleton/axe/event
+	ai_controller = /datum/ai_controller/simple_skeleton/event
+/mob/living/simple_animal/hostile/rogue/skeleton/spear/event
+	ai_controller = /datum/ai_controller/skeleton_spear/event
+/mob/living/simple_animal/hostile/rogue/skeleton/guard/event
+	ai_controller = /datum/ai_controller/simple_skeleton/event
+/mob/living/simple_animal/hostile/rogue/skeleton/bow/event
+	ai_controller = /datum/ai_controller/skeleton_ranged/event
+	

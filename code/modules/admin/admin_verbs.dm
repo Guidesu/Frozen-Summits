@@ -20,6 +20,7 @@ GLOBAL_PROTECT(admin_verbs_default)
 	/client/proc/jumptoarea,
 	/client/proc/jumptokey,
 	/client/proc/local_lightsout,
+	/client/proc/mass_direct,
 	/datum/admins/proc/checkpq,
 	/datum/admins/proc/adjustpq,
 	/client/proc/jumptomob,

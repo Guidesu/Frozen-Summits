@@ -6,6 +6,9 @@
 #define BB_ATTACK_TARGET "BB_ATTACK_TARGET"
 #define BB_VISION_RANGE "BB_VISION_RANGE"
 
+///Travel BB key
+#define BB_TRAVEL_DESTINATION "BB_travel_destination"
+
 /// Basically, what is our vision/hearing range.
 #define BB_HOSTILE_VISION_RANGE 10
 /// After either being given a verbal order or a pointing order, ignore further of each for this duration
@@ -54,3 +57,16 @@
 
 ///List of mobs who have damaged us
 #define BB_BASIC_MOB_RETALIATE_LIST "BB_basic_mob_shitlist"
+
+///Blackboard key for a whitelist typecache of "things we can target while trying to move"
+#define BB_OBSTACLE_TARGETING_WHITELIST "BB_targeting_whitelist"
+
+///Hunting BB keys
+#define BB_CURRENT_HUNTING_TARGET "BB_current_hunting_target"
+#define BB_HUNTING_COOLDOWN "BB_hunting_cooldown"
+
+///Reinforcements BB key
+#define BB_BASIC_MOB_REINFORCEMENT_TARGET "BB_basic_mob_reinforcement_target"
+#define BB_REINFORCEMENTS_SAY "BB_basic_mob_reinforcement_say"
+#define BB_REINFORCEMENTS_EMOTE "BB_basic_mob_reinforcement_emote"
+#define BB_BASIC_MOB_REINFORCEMENTS_COOLDOWN "BB_basic_mob_reinforcement_cooldown"
