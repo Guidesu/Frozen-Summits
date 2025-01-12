@@ -173,11 +173,11 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter)
 "aB" = (
-/mob/living/simple_animal/hostile/rogue/skeleton/guard,
 /obj/effect/decal/cobbleedge{
 	icon_state = "borderfall";
 	dir = 1
 	},
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
 /turf/open/floor/rogue/dirt/road{
 	color = "80ffff"
 	},
@@ -214,11 +214,11 @@
 	},
 /area/rogue/indoors/cave)
 "aH" = (
-/mob/living/simple_animal/hostile/rogue/skeleton/guard,
 /obj/structure/chair/wood/rogue{
 	icon_state = "chair2";
 	dir = 1
 	},
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
 /turf/open/floor/rogue/dirt/road{
 	color = "80ffff"
 	},
@@ -2161,9 +2161,6 @@
 /obj/structure/stairs{
 	dir = 8
 	},
-/obj/structure/mineral_door/wood/red{
-	locked = 1
-	},
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
@@ -2801,7 +2798,7 @@
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/cave)
 "tD" = (
-/mob/living/simple_animal/hostile/rogue/skeleton/bow,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
 /turf/open/floor/rogue/snow{
 	color = "e6f2ff"
 	},
@@ -2969,9 +2966,11 @@
 /turf/closed/wall/mineral/rogue/stone/window,
 /area/rogue/outdoors/beach/forest)
 "vk" = (
-/mob/living/carbon/human/species/skeleton/npc/ambush,
-/turf/open/floor/rogue/woodturned,
-/area/rogue/indoors/shelter)
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
+/turf/open/floor/rogue/dirt/road{
+	color = "80ffff"
+	},
+/area/rogue/outdoors/beach/forest)
 "vq" = (
 /obj/structure/closet/crate/roguecloset/inn,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
@@ -3397,14 +3396,11 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors/beach)
 "yE" = (
-/obj/structure/mineral_door/wood/deadbolt{
-	dir = 1;
-	locked = 1
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/dirt/road{
+	color = "80ffff"
 	},
-/turf/open/floor/rogue/snow{
-	color = "e6f2ff"
-	},
-/area/rogue/indoors/shelter)
+/area/rogue/outdoors/beach/forest)
 "yG" = (
 /obj/structure/stairs{
 	dir = 8
@@ -3716,6 +3712,7 @@
 /area/rogue/outdoors/beach)
 "Ba" = (
 /obj/effect/decal/cleanable/blood/tracks,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/shelter)
 "Bb" = (
@@ -4211,6 +4208,10 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/indoors/cave)
+"ET" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/shelter)
 "EW" = (
 /obj/structure/fluff/railing/border{
 	icon_state = "border";
@@ -5368,6 +5369,11 @@
 	dir = 4
 	},
 /area/rogue/outdoors/beach/forest)
+"Nd" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear,
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/shelter)
 "Ne" = (
 /obj/structure/fluff/railing/border{
 	dir = 9
@@ -5558,9 +5564,11 @@
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/cave)
 "Oz" = (
-/mob/living/simple_animal/hostile/rogue/skeleton/spear,
-/turf/open/floor/rogue/wood,
-/area/rogue/indoors/shelter)
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear,
+/turf/open/floor/rogue/dirt/road{
+	color = "80ffff"
+	},
+/area/rogue/outdoors/beach/forest)
 "OB" = (
 /obj/structure/fluff/railing/fence{
 	dir = 1
@@ -5798,6 +5806,12 @@
 /obj/item/rogueore/coal,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter)
+"Qu" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear,
+/turf/open/floor/rogue/snow{
+	color = "e6f2ff"
+	},
+/area/rogue/outdoors/beach/forest)
 "Qx" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1";
@@ -44106,7 +44120,7 @@ RL
 pz
 DG
 fa
-Oz
+CH
 CH
 kB
 DG
@@ -44236,7 +44250,7 @@ RL
 pz
 DG
 rZ
-CH
+Nd
 CH
 DG
 Vs
@@ -44498,7 +44512,7 @@ DG
 CH
 CH
 CH
-yE
+CH
 sa
 sa
 BN
@@ -45543,7 +45557,7 @@ VK
 Nx
 XK
 XK
-XK
+vk
 pz
 pz
 pz
@@ -45920,7 +45934,7 @@ pz
 VE
 pz
 pz
-Tn
+pz
 XK
 XK
 XK
@@ -46582,7 +46596,7 @@ gc
 aH
 OO
 XK
-XK
+yE
 XK
 XK
 XK
@@ -46695,7 +46709,7 @@ HI
 HI
 SW
 fL
-vk
+VK
 RE
 bX
 QP
@@ -47214,7 +47228,7 @@ XK
 SW
 vH
 Tk
-CH
+ET
 CH
 IL
 kB
@@ -47229,7 +47243,7 @@ nd
 Jg
 VZ
 eV
-XK
+yE
 XK
 XK
 XK
@@ -47614,7 +47628,7 @@ XK
 XK
 XK
 XK
-EB
+Oz
 pz
 pz
 pz
@@ -47748,7 +47762,7 @@ pz
 pa
 pa
 pa
-pz
+Qu
 pz
 pz
 XK
@@ -48265,7 +48279,7 @@ XK
 XK
 XK
 XK
-XK
+yE
 XK
 XK
 XK
@@ -48384,7 +48398,7 @@ pz
 XK
 pz
 pz
-Tn
+pz
 pz
 pz
 pz
@@ -48528,7 +48542,7 @@ XK
 XK
 XK
 XK
-XK
+yE
 XK
 XK
 DG
@@ -49685,7 +49699,7 @@ pz
 pz
 pz
 pz
-pz
+Tn
 pz
 GB
 pz
@@ -50216,7 +50230,7 @@ XK
 pz
 pz
 GB
-pz
+Tn
 pz
 bu
 pz
@@ -50468,7 +50482,7 @@ pz
 vF
 pz
 pz
-pz
+Tn
 XK
 XK
 XK
