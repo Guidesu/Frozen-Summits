@@ -814,15 +814,20 @@
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk,
 /obj/item/clothing/gloves/roguetown/chain,
 /obj/item/clothing/under/roguetown/heavy_leather_pants,
-/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate,
 /obj/item/clothing/suit/roguetown/armor/brigandine/coatplates,
+/obj/item/clothing/suit/roguetown/armor/longcoat,
+/obj/item/clothing/head/roguetown/grenzelhofthat,
+/obj/item/clothing/under/roguetown/heavy_leather_pants/shorts,
+/obj/item/clothing/cloak/half/rider/red,
+/obj/item/clothing/shoes/roguetown/grenzelhoft,
+/obj/item/clothing/head/roguetown/roguehood/red,
+/obj/item/clothing/suit/roguetown/armor/chainmail/bikini,
+/obj/item/clothing/suit/roguetown/armor/leather/studded/bikini,
+/obj/item/rogueweapon/sword/uchigatana,
 /turf/open/floor/rogue/carpet/lord/center,
 /area/rogue/indoors)
 "acA" = (
 /obj/structure/fluff/railing/border,
-/obj/structure/closet/crate/chest/neu_fancy,
-/obj/item/clothing/suit/roguetown/armor/leather/studded/bikini,
-/obj/item/clothing/suit/roguetown/armor/chainmail/bikini,
 /turf/open/floor/rogue/carpet/lord/center,
 /area/rogue/indoors)
 "acB" = (
@@ -899,21 +904,6 @@
 "acN" = (
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/outdoors/mountains)
-"acO" = (
-/obj/structure/closet/crate/chest/neu_fancy,
-/obj/item/clothing/head/roguetown/roguehood/red,
-/obj/item/clothing/under/roguetown/grenzelpants,
-/obj/item/clothing/suit/roguetown/shirt/grenzelhoft,
-/obj/item/clothing/head/roguetown/grenzelhofthat,
-/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate,
-/obj/item/clothing/suit/roguetown/armor/leathercoat/heavy,
-/obj/item/clothing/shoes/roguetown/grenzelhoft,
-/obj/item/clothing/mask/rogue/lordmask/naledi,
-/obj/item/clothing/cloak/half/rider/red,
-/obj/item/clothing/suit/roguetown/armor/longcoat,
-/obj/item/clothing/under/roguetown/heavy_leather_pants/shorts,
-/turf/open/floor/rogue/carpet/lord/left,
-/area/rogue/indoors)
 "acP" = (
 /obj/structure/bed/rogue/inn/double,
 /obj/item/bedsheet/rogue/fabric_double,
@@ -1610,14 +1600,6 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave)
-"bOC" = (
-/obj/structure/closet/crate/roguecloset,
-/obj/item/rogueweapon/sword/uchigatana,
-/obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,
-/obj/item/quiver/arrows,
-/obj/item/rogueweapon/sword/silver,
-/turf/open/floor/rogue/carpet/lord/right,
-/area/rogue/indoors)
 "bOZ" = (
 /obj/structure/flora/newbranch{
 	dir = 4
@@ -9475,6 +9457,11 @@
 /area/rogue/outdoors/beach)
 "wBj" = (
 /obj/structure/closet/crate/chest/neu_fancy,
+/obj/item/clothing/cloak/fauld/battleskirt,
+/obj/item/clothing/shoes/roguetown/sandals,
+/obj/item/clothing/head/roguetown/roguehood/pontifex,
+/obj/item/clothing/gloves/roguetown/angle/pontifex,
+/obj/item/clothing/gloves/roguetown/chain,
 /turf/open/floor/rogue/carpet,
 /area/rogue)
 "wDm" = (
@@ -67877,7 +67864,7 @@ acx
 acC
 euD
 acK
-acO
+euD
 abV
 acQ
 abV
@@ -68507,7 +68494,7 @@ acJ
 acL
 hqO
 acP
-bOC
+hqO
 abV
 tXZ
 tXZ
