@@ -1941,7 +1941,9 @@
 /turf/open/floor/rogue/greenstone,
 /area/rogue/under/cave/dungeon1/gethsmane)
 "mS" = (
-/obj/structure/roguewindow/openclose,
+/obj/structure/roguewindow/openclose{
+	dir = 1
+	},
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
 "mW" = (
@@ -7309,9 +7311,7 @@
 /turf/open/floor/rogue/greenstone,
 /area/rogue/under/cave/dungeon1/gethsmane/inner)
 "Yr" = (
-/obj/structure/roguewindow/openclose{
-	dir = 1
-	},
+/obj/structure/roguewindow/openclose,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
 "Ys" = (
@@ -47801,13 +47801,13 @@ jW
 sy
 Yi
 Yi
-kP
+Ao
 jJ
 Xq
 Xq
 Zw
 Xq
-Ao
+kP
 ew
 ew
 ew
@@ -48429,13 +48429,13 @@ Yi
 Yi
 MK
 jW
-kP
+Ao
 Xq
 Xq
 Zu
 ew
 jz
-Ao
+kP
 ew
 ew
 ew
@@ -72137,13 +72137,13 @@ rj
 rj
 zO
 KQ
-tl
+Jc
 VQ
 Uk
 Uk
 Uk
 Uk
-Jc
+tl
 KQ
 hZ
 rj
@@ -72765,13 +72765,13 @@ NT
 NT
 DO
 KQ
-tl
+Jc
 KQ
 KQ
 KQ
 KQ
 aT
-Jc
+tl
 KQ
 hZ
 rj
