@@ -2618,10 +2618,6 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/woods)
-"qb" = (
-/obj/structure/closet/crate/drawer/random,
-/turf/closed/wall/mineral/rogue/decowood,
-/area/rogue/outdoors/town/roofs)
 "qc" = (
 /obj/structure/fluff/traveltile{
 	aportalgoesto = "forestout_cave";
@@ -6962,12 +6958,12 @@
 /turf/open/floor/rogue/grass/green,
 /area/rogue/outdoors/woods)
 "RH" = (
-/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/pontifex,
 /obj/item/clothing/head/roguetown/roguehood/pontifex,
 /obj/item/clothing/under/roguetown/heavy_leather_pants,
 /obj/item/clothing/shoes/roguetown/sandals,
 /obj/structure/closet/crate/roguecloset/inn/south,
 /obj/item/clothing/mask/rogue/lordmask/naledi,
+/obj/item/clothing/suit/roguetown/shirt/robe/pointfex,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/outdoors/town/roofs)
 "RI" = (
@@ -7155,23 +7151,6 @@
 /obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
 /obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
 /obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
-/obj/item/reagent_containers/food/snacks/rogue/meat/fatty,
-/obj/item/reagent_containers/food/snacks/rogue/meat/fatty,
-/obj/item/reagent_containers/food/snacks/rogue/meat/fatty,
-/obj/item/reagent_containers/food/snacks/rogue/meat/fatty,
-/obj/item/reagent_containers/food/snacks/rogue/meat/fatty,
-/obj/item/reagent_containers/food/snacks/rogue/meat/fatty,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/shelter/woods)
 "SF" = (
@@ -71514,7 +71493,7 @@ rj
 rj
 dt
 Bo
-qb
+WA
 WA
 WA
 Bo
