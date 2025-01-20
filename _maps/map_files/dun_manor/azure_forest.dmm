@@ -3640,7 +3640,7 @@
 "yW" = (
 /obj/structure/closet/crate/drawer,
 /obj/item/roguekey/vampire{
-	lockid = s
+	lockid = "treehut"
 	},
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/mountains)
