@@ -5611,12 +5611,6 @@
 /obj/structure/spacevine,
 /turf/open/water/sewer,
 /area/rogue/under/cave/dungeon1/gethsmane/inner)
-"IE" = (
-/obj/structure/stairs/stone/d{
-	dir = 1
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/woods)
 "II" = (
 /obj/structure/far_travel,
 /turf/open/floor/rogue/cobblerock,
@@ -7440,6 +7434,12 @@
 /mob/living/carbon/human/species/goblin/npc/ambush/sea,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/town/basement)
+"TU" = (
+/obj/structure/stairs/stone/d{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods)
 "TV" = (
 /obj/structure/fluff/walldeco/artificerflag,
 /turf/closed/wall/mineral/rogue/craftstone,
@@ -22249,7 +22249,7 @@ en
 HT
 HT
 en
-ad
+HT
 ad
 cU
 IQ
@@ -22406,7 +22406,7 @@ en
 HT
 en
 en
-ad
+HT
 ad
 cU
 kZ
@@ -46587,7 +46587,7 @@ hJ
 bP
 bP
 sY
-IE
+TU
 ew
 ew
 ew
@@ -46744,7 +46744,7 @@ jW
 jW
 jW
 sY
-IE
+TU
 ew
 ew
 ew
