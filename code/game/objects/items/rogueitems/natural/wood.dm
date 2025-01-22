@@ -138,6 +138,8 @@
 	slot_flags = ITEM_SLOT_MOUTH|ITEM_SLOT_HIP
 	tool_behaviour = TOOL_SCREWDRIVER
 	lumber_amount = 0
+	grid_width = 32
+	grid_height = 32
 
 /obj/item/grown/log/tree/stick/Crossed(mob/living/L)
 	. = ..()

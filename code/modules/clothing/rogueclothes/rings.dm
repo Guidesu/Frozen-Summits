@@ -12,6 +12,7 @@
 	slot_flags = ITEM_SLOT_RING
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	anvilrepair = /datum/skill/craft/armorsmithing
+	drop_sound = 'sound/foley/coinphy (1).ogg'
 
 /obj/item/clothing/ringP  /////////////////////// cast focus ring for acolytes and shit.
 	parent_type = /obj/item/clothing/neck/roguetown/psicross
