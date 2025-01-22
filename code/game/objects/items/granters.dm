@@ -69,8 +69,46 @@
 			return
 	if(do_after(user,50, user))
 		on_reading_finished(user)
-		reading = FALSE
-	return TRUE
+		return TRUE
+	reading = FALSE //failsafe
+	return FALSE
+
+/obj/item/book/granter/spell
+	grid_width = 64
+	grid_height = 32
+
+	var/spell
+	var/spellname = "conjure bugs"
+
+/obj/item/book/granter/spell/already_known(mob/user)
+	if(!spell)
+		return TRUE
+	for(var/obj/effect/proc_holder/spell/knownspell in user.mind.spell_list)
+		if(knownspell.type == spell)
+			if(user.mind)
+				to_chat(user,span_warning("You've already read this one!"))
+			return TRUE
+	return FALSE
+
+/obj/item/book/granter/spell/on_reading_start(mob/user)
+	to_chat(user, span_notice("I start reading about casting [spellname]..."))
+
+/obj/item/book/granter/spell/on_reading_finished(mob/user)
+	to_chat(user, span_notice("I feel like you've experienced enough to cast [spellname]!"))
+	var/obj/effect/proc_holder/spell/S = new spell
+	user.mind.AddSpell(S)
+	user.log_message("learned the spell [spellname] ([S])", LOG_ATTACK, color="orange")
+	onlearned(user)
+
+/obj/item/book/granter/spell/random
+	icon_state = "random_book"
+
+/obj/item/book/granter/spell/random/Initialize()
+	. = ..()
+	var/static/banned_spells = list(/obj/item/book/granter/spell/mimery_blockade)
+	var/real_type = pick(subtypesof(/obj/item/book/granter/spell) - banned_spells)
+	new real_type(loc)
+	return INITIALIZE_HINT_QDEL
 
 ///ACTION BUTTONS///
 

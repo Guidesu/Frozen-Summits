@@ -134,6 +134,9 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 
+	grid_width = 64
+	grid_height = 32
+
 /obj/item/clothing/gloves/roguetown/grenzelgloves
 	name = "mercenary gloves"
 	desc = ""
