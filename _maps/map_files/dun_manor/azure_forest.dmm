@@ -535,7 +535,7 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
 "cU" = (
-/obj/structure/handcart,
+/obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/cavewet/bogcaves)
 "cV" = (
@@ -767,9 +767,8 @@
 /turf/open/floor/rogue/grass/green,
 /area/rogue/outdoors/beach/forest)
 "eA" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/r,
-/turf/open/floor/rogue/hexstone,
-/area/rogue/under/cavewet/bogcaves)
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods)
 "eC" = (
 /obj/effect/spawner/lootdrop/roguetown/dungeon,
 /turf/open/floor/rogue/dirt,
@@ -1780,7 +1779,11 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
 "kZ" = (
-/turf/closed/wall/mineral/rogue/stone,
+/obj/structure/stairs/stone{
+	dir = 1;
+	icon_state = "stonestairs"
+	},
+/turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
 "la" = (
 /obj/machinery/light/rogue/oven/east,
@@ -5693,12 +5696,13 @@
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/mountains)
 "Jd" = (
-/obj/structure/stairs/stone{
-	dir = 1;
-	icon_state = "stonestairs"
+/obj/structure/handcart{
+	dir = 1
 	},
-/turf/open/floor/rogue/dirt,
-/area/rogue/outdoors/woods)
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/rogueweapon/pick/steel,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cavewet/bogcaves)
 "Je" = (
 /obj/machinery/conveyor/auto{
 	color = "#755f48";
@@ -6182,6 +6186,12 @@
 /obj/structure/spacevine,
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/under/cave/dungeon1/gethsmane/inner)
+"Me" = (
+/obj/structure/stairs/stone/d{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods)
 "Mf" = (
 /obj/structure/flora/roguegrass/water,
 /obj/structure/flora/roguegrass/water,
@@ -7787,12 +7797,6 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/mountains)
-"Wf" = (
-/obj/structure/stairs/stone/d{
-	dir = 1
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/woods)
 "Wg" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
 /turf/open/water/cleanshallow,
@@ -20675,7 +20679,7 @@ cp
 cp
 Iu
 Iu
-cU
+aN
 aN
 aN
 aN
@@ -20832,13 +20836,13 @@ cp
 cp
 Iu
 Iu
-cU
 aN
 aN
 aN
 aN
 aN
 aN
+Jd
 ii
 ii
 Iu
@@ -20989,13 +20993,13 @@ cp
 Iu
 Iu
 Iu
+aN
 cU
-eA
 aN
 aN
 aN
 aN
-aN
+Jd
 ii
 ii
 Iu
@@ -21152,7 +21156,7 @@ ey
 aN
 aN
 aN
-aN
+Jd
 ii
 ii
 Iu
@@ -22247,7 +22251,7 @@ HT
 en
 ad
 ad
-kZ
+eA
 IQ
 tx
 gC
@@ -22404,8 +22408,8 @@ en
 en
 ad
 ad
+eA
 kZ
-Jd
 tx
 gC
 gC
@@ -46583,7 +46587,7 @@ hJ
 bP
 bP
 sY
-Wf
+Me
 ew
 ew
 ew
@@ -46740,7 +46744,7 @@ jW
 jW
 jW
 sY
-Wf
+Me
 ew
 ew
 ew
