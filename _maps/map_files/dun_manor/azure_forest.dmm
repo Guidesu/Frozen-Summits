@@ -1637,10 +1637,6 @@
 	},
 /turf/open/water/sewer,
 /area/rogue/under/cave/dungeon1/gethsmane/inner)
-"kb" = (
-/obj/structure/handcart,
-/turf/open/floor/rogue/cobble,
-/area/rogue/under/cavewet/bogcaves)
 "ke" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -1785,6 +1781,10 @@
 "kY" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
+"kZ" = (
+/obj/structure/handcart,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cavewet/bogcaves)
 "la" = (
 /obj/machinery/light/rogue/oven/east,
 /obj/structure/fluff/railing/wood{
@@ -4117,6 +4117,12 @@
 /obj/item/rogueweapon/huntingknife/stoneknife,
 /turf/open/floor/rogue/grass/green,
 /area/rogue/outdoors/woods)
+"zL" = (
+/obj/structure/roguewindow/openclose/reinforced{
+	dir = 8
+	},
+/turf/open/floor/rogue/ruinedwood/chevron,
+/area/rogue/indoors/shelter/woods)
 "zM" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-n"
@@ -5216,12 +5222,6 @@
 "Gi" = (
 /turf/open/transparent/openspace,
 /area/rogue/under/town/basement)
-"Gm" = (
-/obj/structure/roguewindow/openclose/reinforced{
-	dir = 8
-	},
-/turf/open/floor/rogue/ruinedwood/chevron,
-/area/rogue/indoors/shelter/woods)
 "Go" = (
 /obj/machinery/conveyor/auto{
 	color = "#755f48"
@@ -21456,7 +21456,7 @@ Iu
 ad
 fB
 ZO
-kb
+kZ
 OS
 ZO
 en
@@ -47191,7 +47191,7 @@ MK
 Ix
 Ji
 gX
-Gm
+zL
 gX
 Ji
 Kd
