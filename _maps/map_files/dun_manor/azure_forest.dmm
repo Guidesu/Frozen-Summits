@@ -535,9 +535,9 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
 "cU" = (
-/obj/item/roguebin/water,
-/turf/open/floor/rogue/blocks/stonered,
-/area/rogue/outdoors/woods)
+/obj/structure/handcart,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cavewet/bogcaves)
 "cV" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/grass/green,
@@ -757,7 +757,7 @@
 /area/rogue/outdoors/woods)
 "ex" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
-/turf/open/floor/rogue/grass/green,
+/turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/woods)
 "ey" = (
 /turf/closed/wall/mineral/rogue/craftstone,
@@ -767,10 +767,8 @@
 /turf/open/floor/rogue/grass/green,
 /area/rogue/outdoors/beach/forest)
 "eA" = (
-/obj/structure/wallladder{
-	dir = 1
-	},
-/turf/open/floor/rogue/cobble,
+/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/turf/open/floor/rogue/hexstone,
 /area/rogue/under/cavewet/bogcaves)
 "eC" = (
 /obj/effect/spawner/lootdrop/roguetown/dungeon,
@@ -1782,9 +1780,8 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
 "kZ" = (
-/obj/structure/handcart,
-/turf/open/floor/rogue/cobble,
-/area/rogue/under/cavewet/bogcaves)
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods)
 "la" = (
 /obj/machinery/light/rogue/oven/east,
 /obj/structure/fluff/railing/wood{
@@ -2268,7 +2265,7 @@
 /area/rogue/under/cavewet/bogcaves)
 "nG" = (
 /obj/item/fishingrod/crafted,
-/turf/open/floor/rogue/grass/green,
+/turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/woods)
 "nH" = (
 /obj/structure/flora/roguegrass/water,
@@ -5648,12 +5645,10 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/woods)
 "IQ" = (
-/obj/structure/closet/crate/chest/wicker,
-/obj/item/natural/worms,
-/obj/item/natural/worms,
-/obj/item/natural/worms,
-/obj/item/natural/worms,
-/obj/item/natural/worms,
+/obj/structure/stairs/stone{
+	dir = 1;
+	icon_state = "stonestairs"
+	},
 /turf/open/floor/rogue/grass/green,
 /area/rogue/outdoors/woods)
 "IR" = (
@@ -5698,8 +5693,12 @@
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/mountains)
 "Jd" = (
-/turf/open/floor/rogue/grass/green,
-/area/rogue/under/cavewet/bogcaves)
+/obj/structure/stairs/stone{
+	dir = 1;
+	icon_state = "stonestairs"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods)
 "Je" = (
 /obj/machinery/conveyor/auto{
 	color = "#755f48";
@@ -7788,6 +7787,12 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/mountains)
+"Wf" = (
+/obj/structure/stairs/stone/d{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods)
 "Wg" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
 /turf/open/water/cleanshallow,
@@ -8022,7 +8027,7 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
 "Yb" = (
-/obj/structure/ladder/unbreakable,
+/obj/item/roguebin/water,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/outdoors/woods)
 "Ye" = (
@@ -20514,9 +20519,9 @@ cp
 Iu
 Iu
 Iu
-en
-HT
-en
+aN
+aN
+aN
 en
 en
 en
@@ -20670,12 +20675,12 @@ cp
 cp
 Iu
 Iu
-en
-en
-HT
-en
-en
-en
+cU
+aN
+aN
+aN
+aN
+aN
 en
 ii
 ii
@@ -20827,13 +20832,13 @@ cp
 cp
 Iu
 Iu
-en
-en
-HT
-en
-Iu
-en
-en
+cU
+aN
+aN
+aN
+aN
+aN
+aN
 ii
 ii
 Iu
@@ -20984,13 +20989,13 @@ cp
 Iu
 Iu
 Iu
-en
-en
-HT
-en
-Iu
-en
-en
+cU
+eA
+aN
+aN
+aN
+aN
+aN
 ii
 ii
 Iu
@@ -21144,10 +21149,10 @@ ad
 ad
 ad
 ey
-en
-en
-en
-en
+aN
+aN
+aN
+aN
 ii
 ii
 Iu
@@ -21302,8 +21307,8 @@ ZO
 xD
 Be
 ZO
-en
-en
+aN
+aN
 Iu
 ii
 ii
@@ -21456,11 +21461,11 @@ Iu
 ad
 fB
 ZO
-kZ
+ZO
 OS
 ZO
-en
-en
+aN
+aN
 Iu
 ii
 ii
@@ -21616,8 +21621,8 @@ ZO
 ZO
 Fd
 sY
-bP
-bP
+tx
+tx
 gC
 gC
 rR
@@ -21770,11 +21775,11 @@ Iu
 ad
 fB
 ZO
-eA
+ZO
 OS
 yQ
-bP
-bP
+tx
+tx
 gC
 gC
 jW
@@ -21930,8 +21935,8 @@ ZO
 Eg
 YJ
 sY
-bP
-bP
+tx
+tx
 gC
 gC
 jW
@@ -22087,7 +22092,7 @@ ad
 ad
 OG
 nG
-bP
+tx
 ex
 gC
 gC
@@ -22240,11 +22245,11 @@ en
 HT
 HT
 en
-en
-Jd
-bP
+ad
+ad
+kZ
 IQ
-bP
+tx
 gC
 gC
 gC
@@ -22397,11 +22402,11 @@ en
 HT
 en
 en
-en
-HT
-MK
-jW
-bP
+ad
+ad
+kZ
+Jd
+tx
 gC
 gC
 aW
@@ -22556,8 +22561,8 @@ en
 en
 HT
 UC
-MK
-MK
+tx
+tx
 eI
 gC
 gC
@@ -22713,8 +22718,8 @@ HT
 en
 HT
 UC
-MK
-MK
+tx
+tx
 eI
 gC
 gC
@@ -22871,7 +22876,7 @@ en
 en
 kV
 kV
-jW
+tx
 lz
 gC
 aW
@@ -23028,7 +23033,7 @@ en
 en
 kV
 kV
-jW
+tx
 gC
 gC
 aW
@@ -45949,7 +45954,7 @@ Yi
 BP
 SS
 xt
-cU
+xt
 BP
 ew
 ew
@@ -46577,8 +46582,8 @@ bP
 hJ
 bP
 bP
-MK
-jW
+sY
+Wf
 ew
 ew
 ew
@@ -46734,8 +46739,8 @@ bP
 jW
 jW
 jW
-jW
-jW
+sY
+Wf
 ew
 ew
 ew
