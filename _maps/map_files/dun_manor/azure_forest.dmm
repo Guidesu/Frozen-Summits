@@ -916,6 +916,7 @@
 /obj/item/rogueweapon/sword/uchigatana,
 /obj/item/storage/backpack/rogue/backpack/rucksack,
 /obj/item/bedroll,
+/obj/item/rope,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors/mountains)
 "fz" = (
@@ -1098,6 +1099,7 @@
 	lockid = "kjdoor"
 	},
 /obj/machinery/light/rogue/wallfire/candle/r,
+/obj/item/reagent_containers/powder/spice,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors/town/roofs)
 "gx" = (
@@ -6644,6 +6646,10 @@
 	},
 /turf/open/floor/rogue/greenstone,
 /area/rogue/under/cave/dungeon1/gethsmane/inner)
+"PR" = (
+/obj/structure/bearpelt,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/shelter/woods)
 "PS" = (
 /obj/effect/decal/cobbleedge,
 /turf/open/floor/rogue/hexstone,
@@ -48857,7 +48863,7 @@ Iv
 FL
 FL
 FL
-FL
+PR
 pm
 HW
 bP
