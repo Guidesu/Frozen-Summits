@@ -59,6 +59,12 @@
 "ap" = (
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/cavewet/bogcaves)
+"aq" = (
+/obj/structure/stairs/stone/d{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods)
 "as" = (
 /obj/structure/flora/roguetree,
 /turf/open/floor/rogue/dirt/road,
@@ -7434,12 +7440,6 @@
 /mob/living/carbon/human/species/goblin/npc/ambush/sea,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/town/basement)
-"TU" = (
-/obj/structure/stairs/stone/d{
-	dir = 1
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/woods)
 "TV" = (
 /obj/structure/fluff/walldeco/artificerflag,
 /turf/closed/wall/mineral/rogue/craftstone,
@@ -22250,7 +22250,7 @@ HT
 HT
 en
 HT
-ad
+HT
 cU
 IQ
 tx
@@ -22407,7 +22407,7 @@ HT
 en
 en
 HT
-ad
+HT
 cU
 kZ
 tx
@@ -46587,7 +46587,7 @@ hJ
 bP
 bP
 sY
-TU
+aq
 ew
 ew
 ew
@@ -46744,7 +46744,7 @@ jW
 jW
 jW
 sY
-TU
+aq
 ew
 ew
 ew
