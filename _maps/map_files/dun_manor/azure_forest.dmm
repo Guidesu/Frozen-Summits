@@ -1154,6 +1154,15 @@
 /obj/item/reagent_containers/glass/bottle/rogue/wine/sourwine,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/town/basement)
+"gK" = (
+/obj/structure/fluff/railing/wood,
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	icon_state = "woodrailing";
+	pixel_x = -4
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
 "gP" = (
 /obj/structure/bars/pipe{
 	dir = 8
@@ -1628,6 +1637,10 @@
 	},
 /turf/open/water/sewer,
 /area/rogue/under/cave/dungeon1/gethsmane/inner)
+"kb" = (
+/obj/structure/handcart,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cavewet/bogcaves)
 "ke" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -2617,6 +2630,15 @@
 	icon_state = "cobbleedge-w"
 	},
 /turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods)
+"qb" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 8
+	},
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
 "qc" = (
 /obj/structure/fluff/traveltile{
@@ -3811,6 +3833,7 @@
 /area/rogue/outdoors/woods)
 "xD" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
+/obj/item/rogueweapon/pick/steel,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cavewet/bogcaves)
 "xF" = (
@@ -5193,6 +5216,12 @@
 "Gi" = (
 /turf/open/transparent/openspace,
 /area/rogue/under/town/basement)
+"Gm" = (
+/obj/structure/roguewindow/openclose/reinforced{
+	dir = 8
+	},
+/turf/open/floor/rogue/ruinedwood/chevron,
+/area/rogue/indoors/shelter/woods)
 "Go" = (
 /obj/machinery/conveyor/auto{
 	color = "#755f48"
@@ -6433,6 +6462,12 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/mountains)
+"NU" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
 "NX" = (
 /obj/structure/bars/pipe,
 /turf/open/water/sewer,
@@ -8249,9 +8284,7 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet/bogcaves)
 "ZC" = (
-/obj/structure/roguewindow/openclose/reinforced{
-	dir = 1
-	},
+/obj/structure/roguewindow/openclose/reinforced,
 /turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/outdoors/woods)
 "ZD" = (
@@ -21423,7 +21456,7 @@ Iu
 ad
 fB
 ZO
-ZO
+kb
 OS
 ZO
 en
@@ -47158,7 +47191,7 @@ MK
 Ix
 Ji
 gX
-Br
+Gm
 gX
 Ji
 Kd
@@ -47456,10 +47489,10 @@ MK
 LA
 bP
 bP
-bP
-bP
-MK
-MK
+Hk
+rc
+yE
+NU
 MK
 MK
 MK
@@ -47611,12 +47644,12 @@ bP
 Ek
 MK
 MK
-Ek
+bP
+qb
 MK
 MK
 MK
-MK
-MK
+gK
 MK
 MK
 MK
