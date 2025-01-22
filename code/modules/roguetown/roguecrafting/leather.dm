@@ -425,13 +425,14 @@
 				/obj/item/natural/fur = 1)
 	craftdiff = 2
 
+/*
 /datum/crafting_recipe/roguetown/leather/shozoku
 	name = "stealthy body armor {fl}"
 	result = /obj/item/clothing/suit/roguetown/armor/leather/hide/shozoku
 	reqs = list(/obj/item/natural/hide = 2,
 				/obj/item/natural/fur = 1)
 	craftdiff = 2
-
+*/
 /datum/crafting_recipe/roguetown/leather/kaizoku
 	name = "heartfeltean vest {fl}"
 	result = /obj/item/clothing/suit/roguetown/armor/leather/vest/kaizoku

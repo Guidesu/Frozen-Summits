@@ -314,7 +314,7 @@
 	icon_state = "ono"
 	max_blade_int = 500
 	smeltresult = /obj/item/ingot/steel
-	gripped_intents = list(/datum/intent/axe/cut,/datum/intent/axe/battleaxe/chop/ono)
+	gripped_intents = list(/datum/intent/axe/cut,/datum/intent/axe/chop)
 	parrysound = list('sound/combat/parry/wood/parrywood (1).ogg', 'sound/combat/parry/wood/parrywood (2).ogg', 'sound/combat/parry/wood/parrywood (3).ogg')
 	swingsound = BLADEWOOSH_MED
 	associated_skill = /datum/skill/combat/axes
@@ -354,7 +354,6 @@
 	max_integrity = 300
 	wdefense = 3
 	throwforce = 40
-	axe_cut = 5 //You'd be surprised to know that the axe head design for throwing is the same one for cutting wood, but lighter.
 	embedding = list("embedded_pain_multiplier" = 3, "embed_chance" = 20, "embedded_fall_chance" = 60)
 
 /obj/item/rogueweapon/stoneaxe/woodcut/changfu
@@ -363,7 +362,6 @@
 	icon_state = "changfu"
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 	wdefense = 4 //Battle designed.
-	axe_cut = 3 //Not as viable for cutting as the other one, less than a hatchet in fact.
 
 /datum/intent/axe/chop/ono //because actual battle axes don't have stupid large blades.
 	name = "chop"
@@ -372,6 +370,5 @@
 	attack_verb = list("chops", "hacks")
 	animname = "chop"
 	hitsound = list('sound/combat/hits/bladed/genchop (1).ogg', 'sound/combat/hits/bladed/genchop (2).ogg', 'sound/combat/hits/bladed/genchop (3).ogg')
-	penfactor = AP_HEAVYAXE_STAB
 	swingdelay = 1
 	misscost = 10

@@ -25,9 +25,9 @@
 	inherent_traits = list(
 		TRAIT_NOCSIGHT,
 		TRAIT_BEAUTIFUL,
-		TRAIT_SEA_DRINKER
-		TRAIT_STRONGBITE
-		TRAIT_LONGSTRIDER
+		TRAIT_SEA_DRINKER,
+		TRAIT_STRONGBITE,
+		TRAIT_LONGSTRIDER,
 	)
 
 	skin_tone_wording = "Championage Branch"
@@ -48,7 +48,7 @@
 	hairyness = ""
 	use_f = FALSE
 	soundpack_m = /datum/voicepack/male/abyssariad
-	soundpack_f = /datum/voicepack/female/abyssariad
+	soundpack_f = /datum/voicepack/female
 
 	offset_features = list(OFFSET_ID = list(0,1), OFFSET_GLOVES = list(0,1), OFFSET_WRISTS = list(0,1),\
 	OFFSET_CLOAK = list(0,1), OFFSET_FACEMASK = list(0,1), OFFSET_HEAD = list(0,1), \
@@ -68,7 +68,7 @@
 		ORGAN_SLOT_HEART = /obj/item/organ/heart,
 		ORGAN_SLOT_LUNGS = /obj/item/organ/lungs,
 		ORGAN_SLOT_EYES = /obj/item/organ/eyes/night_vision/werewolf,
-		ORGAN_SLOT_EARS = /obj/item/organ/ears/kitsune,
+		ORGAN_SLOT_EARS = /obj/item/organ/ears,
 		ORGAN_SLOT_TONGUE = /obj/item/organ/tongue/kitsune,
 		ORGAN_SLOT_LIVER = /obj/item/organ/liver,
 		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach,
@@ -118,7 +118,7 @@
 		/datum/customizer/bodypart_feature/accessory,
 		/datum/customizer/bodypart_feature/face_detail,
 		/datum/customizer/bodypart_feature/underwear,
-		/datum/customizer/organ/tail/kitsune,
+		/datum/customizer/organ/tail/anthro,
 		/datum/customizer/organ/testicles/anthro,
 		/datum/customizer/organ/penis/anthro,
 		/datum/customizer/organ/breasts/human,
@@ -130,6 +130,9 @@
 		/datum/language/common,
 		/datum/language/abyssal,
 	)
+
+/datum/species/abyssariad/changeling/check_roundstart_eligible()
+	return TRUE
 
 /datum/species/abyssariad/changeling/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()

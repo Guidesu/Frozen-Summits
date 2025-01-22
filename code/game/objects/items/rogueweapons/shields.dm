@@ -376,7 +376,7 @@
 	desc = "Light steel spikes are visible on this shield to protect the user against the chaotic close-quarter skirmishes where grappling and flanking is common, but can be caught on enemy armor and weapons."
 	icon_state = "aegis"
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
-	possible_item_intents = list(/datum/intent/shield/bash/metal, /datum/intent/shield/block/metal)
+	possible_item_intents = list(/datum/intent/shield/bash, /datum/intent/shield/block)
 	force = 20
 	throwforce = 10
 	throw_speed = 1

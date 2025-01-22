@@ -733,14 +733,14 @@
 	reqs = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 2
-
+/*
 /datum/crafting_recipe/roguetown/sewing/zubon
 	name = "stealthy trousers {fl}"
 	result = list(/obj/item/clothing/under/roguetown/trou/leather/shinobizubon)
 	reqs = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 2)
 	craftdiff = 2
-
+*/
 /*.............. recipes requiring skill 3 ..............*/
 
 /datum/crafting_recipe/roguetown/sewing/onmyojigood

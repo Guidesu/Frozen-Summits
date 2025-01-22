@@ -2,6 +2,11 @@
 #define ARMOR_CLASS_LIGHT 1
 #define ARMOR_CLASS_MEDIUM 2
 #define ARMOR_CLASS_HEAVY 3
+#define ARMOR_CLASS_NONE 0
+#define AC_LIGHT 1
+#define AC_MEDIUM 2
+#define AC_HEAVY 3
+
 
 /obj/item/clothing
 	name = "clothing"
@@ -30,6 +35,7 @@
 	var/active_sound = null
 	var/toggle_cooldown = null
 	var/cooldown = 0
+	var/colorgrenz = FALSE
 
 	var/emote_environment = -1
 	var/list/prevent_crits

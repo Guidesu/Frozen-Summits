@@ -1699,10 +1699,9 @@
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/head.dmi'
 	flags_inv = HIDEEARS
 
-	armor = ARMOR_PADDED
+
 	body_parts_covered = HEAD|HAIR|EARS
-	prevent_crits =  MINOR_CRITICALS
-	max_integrity = INTEGRITY_POOR
+
 
 /obj/item/clothing/head/roguetown/tengai
 	name = "tengai"
@@ -1716,10 +1715,8 @@
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/head64.dmi'
 	flags_inv = HIDEEARS
 
-	armor = ARMOR_PADDED
+
 	body_parts_covered = HEAD|HAIR|EARS
-	prevent_crits =  MINOR_CRITICALS
-	max_integrity = INTEGRITY_POOR
 
 /obj/item/clothing/head/roguetown/tengai/yamabushi
 	name = "yamabushi tengai"
@@ -1875,7 +1872,6 @@
 	flags_inv = HIDEEARS
 	smeltresult = /obj/item/ash
 	flags_inv = HIDEEARS
-	sellprice = VALUE_CHEAP_IRON_HELMET
 	body_parts_covered = HEAD | HAIR | EARS | NOSE
 
 /obj/item/clothing/head/roguetown/helmet/sallet/tosei_kabuto
@@ -1967,10 +1963,7 @@
 	emote_environment = 3
 	sellprice = 70
 	clothing_flags = CANT_SLEEP_IN
-	armor = ARMOR_PLATE
-	armor_class = AC_HEAVY
-	prevent_crits = ALL_CRITICAL_HITS
-	max_integrity = INTEGRITY_STRONG
+
 
 /obj/item/clothing/head/roguetown/helmet/leather/malgai
 	name = "leather malgai"
@@ -2046,7 +2039,6 @@
 				H.update_inv_head()
 		else if(adjustable == CADJUSTED)
 			ResetAdjust(user)
-			prevent_crits = ALL_CRITICAL_HITS
 			body_parts_covered = FULL_HEAD
 			flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 			flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH

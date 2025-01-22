@@ -303,7 +303,6 @@
 	name = "chop"
 	chargetime = 5
 	no_early_release = TRUE
-	penfactor = AP_FLAIL_SMASH
 	recovery = 10
 	damfactor = 1.2
 	chargedloop = /datum/looping_sound/flailswing

@@ -6,6 +6,7 @@
 	icon = 'icons/roguetown/weapons/32.dmi'
 	icon_state = "bow"
 	item_state = "bow"
+	var/base_icon = "bow"
 	experimental_onhip = TRUE
 	experimental_onback = TRUE
 	possible_item_intents = list(
@@ -428,7 +429,7 @@
 	icon = 'icons/roguetown/kaizoku/weapons/bows.dmi'
 	icon_state = "hankyubow"
 	item_state = "hankyubow"
-	base_icon = "hankyubow"
+
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow/yumi
 	name = "yumi bow"
@@ -437,7 +438,6 @@
 	icon = 'icons/roguetown/kaizoku/weapons/bows.dmi'
 	icon_state = "yumibow"
 	item_state = "yumibow"
-	base_icon = "yumibow"
 
 	slot_flags = ITEM_SLOT_BACK
 	force = 12

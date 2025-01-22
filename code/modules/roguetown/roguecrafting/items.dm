@@ -828,7 +828,7 @@
 				/obj/item/jingle_bells = 1,
 				)
 	craftdiff = 0
-
+/*
 /datum/crafting_recipe/roguetown/shinobiarrow
 	name = "shinobi arrow(5)"
 	result = list(/obj/item/ammo_casing/caseless/rogue/arrow/poison/fog,
@@ -851,6 +851,7 @@
 				/obj/item/reagent_containers/food/snacks/fogdart = 1)
 	craftdiff = 1
 
+*/
 /datum/crafting_recipe/roguetown/kusaripeasant
 	name = "handmade kusarigama"
 	result = /obj/item/rogueweapon/flail/kusarigama/peasant

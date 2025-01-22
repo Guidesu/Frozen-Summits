@@ -879,7 +879,6 @@
 	wlength = WLENGTH_GREAT
 	slot_flags = ITEM_SLOT_BACK
 	minstr = 13 //Requirement is halved when wielded in two hands either way. No sane person should be thinking of using this one-handed.
-	wbalance = EASY_TO_DODGE
 	sellprice = 90
 
 /obj/item/rogueweapon/sword/iron/jian
@@ -937,7 +936,7 @@
 /obj/item/rogueweapon/sword/dragonslayer //It's a sword, yes. It will be used as a sword? My dudes we moving that one like warhammers at this point. So it's blunt at this point.
 	name = "dragonslayer eclipse sword"
 	desc = "Dragonslayers uses swords too big to be called a sword. Massive, thick, heavy and far too rough. Indeed, they use a heap of raw iron. These are not crafted for fnesse, but for raw carnage in steel to obliterate Dragon's almost impenetrable skin."
-	gripped_intents = list(/datum/intent/dragonslayer/smash, /datum/intent/polearm/chop) //This is practically a mace... that can chop off heads since it's sharp.
+	gripped_intents = list(/datum/intent/mace/smash, /datum/intent/axe/chop) //This is practically a mace... that can chop off heads since it's sharp.
 	icon_state = "eclipse_sword"
 	resistance_flags = FIRE_PROOF
 	smeltresult = /obj/item/ingot/steel

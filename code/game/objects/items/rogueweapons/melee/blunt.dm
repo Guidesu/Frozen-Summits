@@ -458,7 +458,7 @@
 	force = 10
 	force_wielded = 25
 	possible_item_intents = list(/datum/intent/mace/strike)
-	gripped_intents = list(/datum/intent/mace/strike/heavy, /datum/intent/mace/smash/heavy)
+	gripped_intents = list(/datum/intent/mace/strike, /datum/intent/mace/smash)
 	name = "otsuchi"
 	desc = "A wooden greathammer of Abyssariad make, heavy enough to give any warrior pause. Often used by Yamabushi warriors."
 	icon_state = "otsuchi"
@@ -484,8 +484,8 @@
 	name = "kanabo"
 	desc = "A heavy two handed club, reinforced with an iron sleeve. Most commonly seen in the hands of Onis and Yamabushis."
 	icon_state = "kanabo"
-	possible_item_intents = list(/datum/intent/mace/strike/heavy)
-	gripped_intents = list(/datum/intent/mace/smash/heavy) //Can't spear people, but can make them bleed due to spikes.
+	possible_item_intents = list(/datum/intent/mace/strike)
+	gripped_intents = list(/datum/intent/mace/smash) //Can't spear people, but can make them bleed due to spikes.
 	sharpness = IS_SHARP
 	icon = 'icons/roguetown/kaizoku/weapons/64.dmi'
 	parrysound = "parrywood"
@@ -511,8 +511,8 @@
 	name = "tetsubo"
 	desc = "A heavier variant of the kanabo, fitted with a steel sleeve bearing menacing spikes and favored by Ogre Warlords. Requires immense strength to use, but hits like a raging bull."
 	icon_state = "tetsubo"
-	possible_item_intents = list(/datum/intent/mace/strike/heavy)
-	gripped_intents = list(/datum/intent/mace/smash/heavy) //Can't spear people, but can make them bleed due to spikes.
+	possible_item_intents = list(/datum/intent/mace/strike)
+	gripped_intents = list(/datum/intent/mace/smash) //Can't spear people, but can make them bleed due to spikes.
 	sharpness = IS_SHARP
 	icon = 'icons/roguetown/kaizoku/weapons/64.dmi'
 	pixel_y = -16

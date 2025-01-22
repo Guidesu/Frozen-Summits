@@ -729,8 +729,6 @@
 	..()
 
 /obj/item/storage/belt/rogue/kaizoku/leather/daisho/ninja/PopulateContents()
-	new /obj/item/reagent_containers/food/snacks/fogdart(src)
-	new /obj/item/reagent_containers/food/snacks/fogdart(src)
 	new /obj/item/rogueweapon/tetsubishi(src)
 
 /obj/item/storage/belt/rogue/kaizoku/leather/daisho/thunder

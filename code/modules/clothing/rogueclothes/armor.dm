@@ -1034,11 +1034,7 @@
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_armor.dmi'
 	icon_state = "rattan"
 	item_state = "rattan"
-	sellprice = VALUE_IRON_ARMOR+10
 
-	armor = ARMOR_MAILLE_IRON
-	max_integrity = INTEGRITY_STANDARD
-	prevent_crits = ALL_EXCEPT_BLUNT_AND_STAB
 	sewrepair = TRUE //this armor's utility.
 
 /obj/item/clothing/suit/roguetown/armor/leather/jacket/haori

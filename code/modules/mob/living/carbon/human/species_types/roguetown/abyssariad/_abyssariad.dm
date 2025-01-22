@@ -13,7 +13,6 @@
 	C.grant_language(/datum/language/common)
 	C.grant_language(/datum/language/abyssal)
 	C.cmode_music = list('sound/music/kaizoku/combat/combat_changeling.ogg','sound/music/kaizoku/combat/combat_stormwarrior.ogg','sound/music/kaizoku/combat/combat_searaider.ogg','sound/music/kaizoku/combat/combat_oldtides.ogg','sound/music/kaizoku/combat/combat_decapitator.ogg','sound/music/kaizoku/combat/combat_emperor.ogg','sound/music/kaizoku/combat/combat_traditional.ogg','sound/music/kaizoku/combat/combat_navalretainers.ogg','sound/music/kaizoku/combat/combat_kyudo.ogg')
-	ADD_TRAIT(C, TRAIT_KAIZOKU, TRAIT_GENERIC)  //Cultural Trait. Must not be considered a 'buff' or 'debuff'.
 
 /datum/species/abyssariad/get_accent(mob/living/carbon/human/H)
 	return strings("abyssal_replacement.json", "abyssal")
@@ -120,7 +119,7 @@
 	reqs = list(/obj/item/alch/bone = 2, /obj/item/natural/cloth = 4)
 	result = /obj/item/clothing/suit/roguetown/armor/ceramic/light
 	category = CAT_NONE
-
+/*
 /datum/crafting_recipe/obsidian_club
 	name = "Obsidian Club"
 	time = 4 SECONDS
@@ -134,3 +133,4 @@
 	reqs = list(/obj/item/grown/log/tree/lumber = 1, /obj/item/natural/cloth = 1, /obj/item/natural/stone =  2, /obj/item/ash = 1)
 	result = /obj/item/rogueweapon/polearm/spear/stone/obsidian
 	category = CAT_NONE
+*/

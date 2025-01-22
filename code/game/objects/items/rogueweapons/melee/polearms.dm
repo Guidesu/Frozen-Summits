@@ -703,8 +703,6 @@
 /obj/item/rogueweapon/spear/mancatcher
 	force = 10
 	force_wielded = 20
-	possible_item_intents = list(POLEARM_BASH)
-	gripped_intents = list(POLEARM_BASH,MANCATCHER)
 	name = "sasumata"
 	desc = "A unique polearm featuring a spring-action pincer on the end, lined with spikes designed to cause extreme pain, rather than extreme injury. Referred to as a man-catcher in the Humen tongue due to coastal kidnappings performed by abyssariad Wokous."
 	icon_state = "sasumata"
@@ -837,7 +835,6 @@
 	bigboy = TRUE
 	gripsprite = FALSE
 	resistance_flags = FLAMMABLE // Weapon made mostly of wood
-	max_integrity = INTEGRITY_STANDARD
 	minstr = 8
 	smeltresult = /obj/item/ingot/steel
 	associated_skill = /datum/skill/combat/polearms

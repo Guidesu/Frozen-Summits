@@ -20,6 +20,7 @@
 	/datum/species/halforc,\
 	/datum/species/kobold,\
 	/datum/species/goblinp,\
+	/datum/species/abyssariad/changeling,\
 )
 
 #define RACES_RESPECTED \

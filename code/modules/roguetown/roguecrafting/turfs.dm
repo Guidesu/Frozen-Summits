@@ -418,7 +418,7 @@
 
 //Abyssariad Walls.
 //Tier 'Plank' Abyssariad wall. Making a rough counterpart later.
-
+/*
 /datum/crafting_recipe/roguetown/turfs/woodwall/abyssal
 	name = "wagoya joinwall"
 	result = /turf/closed/wall/mineral/rogue/wood/abyssal
@@ -432,7 +432,7 @@
 	reqs = list(/obj/item/natural/plank = 2)
 	skillcraft = /datum/skill/craft/carpentry
 	craftdiff = 1
-
+*/
 //Abyssariad Walls.
 //Tier 'Stone' Abyssariad wall. Making a Stoneblock counterpart later.
 
