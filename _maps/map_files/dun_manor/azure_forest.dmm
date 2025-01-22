@@ -535,9 +535,8 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
 "cU" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/r,
-/turf/open/floor/rogue/hexstone,
-/area/rogue/under/cavewet/bogcaves)
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods)
 "cV" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/grass/green,
@@ -767,8 +766,9 @@
 /turf/open/floor/rogue/grass/green,
 /area/rogue/outdoors/beach/forest)
 "eA" = (
-/turf/closed/wall/mineral/rogue/stone,
-/area/rogue/outdoors/woods)
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cavewet/bogcaves)
 "eC" = (
 /obj/effect/spawner/lootdrop/roguetown/dungeon,
 /turf/open/floor/rogue/dirt,
@@ -5611,6 +5611,12 @@
 /obj/structure/spacevine,
 /turf/open/water/sewer,
 /area/rogue/under/cave/dungeon1/gethsmane/inner)
+"IE" = (
+/obj/structure/stairs/stone/d{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods)
 "II" = (
 /obj/structure/far_travel,
 /turf/open/floor/rogue/cobblerock,
@@ -6186,12 +6192,6 @@
 /obj/structure/spacevine,
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/under/cave/dungeon1/gethsmane/inner)
-"Me" = (
-/obj/structure/stairs/stone/d{
-	dir = 1
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/woods)
 "Mf" = (
 /obj/structure/flora/roguegrass/water,
 /obj/structure/flora/roguegrass/water,
@@ -20525,7 +20525,7 @@ Iu
 Iu
 aN
 aN
-aN
+eA
 en
 en
 en
@@ -20994,7 +20994,7 @@ Iu
 Iu
 Iu
 aN
-cU
+aN
 aN
 aN
 aN
@@ -22251,7 +22251,7 @@ HT
 en
 ad
 ad
-eA
+cU
 IQ
 tx
 gC
@@ -22408,7 +22408,7 @@ en
 en
 ad
 ad
-eA
+cU
 kZ
 tx
 gC
@@ -46587,7 +46587,7 @@ hJ
 bP
 bP
 sY
-Me
+IE
 ew
 ew
 ew
@@ -46744,7 +46744,7 @@ jW
 jW
 jW
 sY
-Me
+IE
 ew
 ew
 ew
