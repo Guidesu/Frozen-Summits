@@ -520,3 +520,264 @@
 					)
 
 	craftdiff = 1
+
+//Kaizoku Smithing content. I humbly ask for help; A way in which only people with the trait "Kaizoku", being the ones able to make Kaizoku weapons and armor. In another hand,
+//they cannot make most (exceptions; the objects that have no abyssariad alternative) armors and weapons.
+
+/datum/anvil_recipe/weapons/sword_steel
+	name = "Uchigatana zatana"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/rogueweapon/sword/uchigatana
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/odachi
+	name = "Odachi zatana (3)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/steel)
+	created_item = /obj/item/rogueweapon/sword/long/greatsword/odachi
+	craftdiff = 4
+
+/datum/anvil_recipe/weapons/tachi
+	name = "Tachi zatana (2)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel)
+	created_item = /obj/item/rogueweapon/sword/long/tachi
+	craftdiff = 3
+
+/datum/anvil_recipe/weapons/jiansword
+	name = "Jian sword"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/rogueweapon/sword/iron/jian
+
+/datum/anvil_recipe/weapons/daosword
+	name = "Dao sword"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/rogueweapon/sword/iron/messer/dao
+
+/datum/anvil_recipe/weapons/yuntoudao
+	name = "Yuntoudao"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/rogueweapon/sword/falchion/yuntoudao
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/shortjian
+	name = "Short Jian"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/rogueweapon/sword/short/jian
+	craftdiff = 1
+
+/datum/anvil_recipe/weapons/wakizashi
+	name = "Wakisashi Zatana"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/rogueweapon/sword/short/wakizashi
+	craftdiff = 1
+
+/datum/anvil_recipe/weapons/piandao
+	name = "Piandao"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/rogueweapon/sword/sabre/piandao
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/decpiandao
+	name = "Decorated piandao (+g)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/gold)
+	created_item = /obj/item/rogueweapon/sword/sabre/piandao/dec
+	craftdiff = 3
+
+/datum/anvil_recipe/weapons/kanabo
+	name = "Iron Kanabo Warclub (+w)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/grown/log/tree/small)
+	created_item = /obj/item/rogueweapon/mace/goden/kanabo
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/tetsubo
+	name = "Steel Tetsubo Warclub (+w)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/grown/log/tree/small)
+	created_item = /obj/item/rogueweapon/mace/goden/steel/tetsubo
+	craftdiff = 3
+
+/datum/anvil_recipe/weapons/iararebo
+	name = "Iron ararebo club (+s)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/grown/log/tree/stick)
+	created_item = /obj/item/rogueweapon/mace/ararebo
+
+/datum/anvil_recipe/weapons/sararebo
+	name = "Steel Ararebo club (2)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel)
+	created_item = /obj/item/rogueweapon/mace/steel/ararebo
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/kusarifundo
+	name = "Kusarifundo (+c) (+s)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/rope/chain, /obj/item/grown/log/tree/stick)
+	created_item = /obj/item/rogueweapon/flail/sflail/kusarifundo
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/kunai
+	name = "Kunai"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/rogueweapon/huntingknife/kunai
+	craftdiff = 1
+
+/datum/anvil_recipe/weapons/tanto
+	name = "Tanto smallsword x2"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/rogueweapon/huntingknife/idagger/steel/tanto
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/kaiken
+	name = "Kaiken knife x2"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/rogueweapon/huntingknife/idagger/steel/kaiken
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 3
+
+/datum/anvil_recipe/weapons/sai //not made of iron. Still Less damage tho.
+	name = "Sai x2"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/rogueweapon/huntingknife/idagger/steel
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 3
+
+/datum/anvil_recipe/weapons/yari
+	name = "yari x2 (+w)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/grown/log/tree/small)
+	created_item = /obj/item/rogueweapon/spear/yari
+	createmultiple = TRUE
+	createditem_num = 1
+
+/datum/anvil_recipe/weapons/katakama
+	name = "Katakama Yari x2 (+w) (+i)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/grown/log/tree/small, /obj/item/ingot/iron)
+	created_item = /obj/item/rogueweapon/spear/yari/katakama
+
+/datum/anvil_recipe/weapons/jumonji
+	name = "Jumonji Yari (+w)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/grown/log/tree/small)
+	created_item = /obj/item/rogueweapon/spear/billhook/jumonji
+	craftdiff = 3
+
+/datum/anvil_recipe/weapons/naginata
+	name = "Traditional Naginata (2) (+w)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/ingot/iron,/obj/item/grown/log/tree/small)
+	created_item = /obj/item/rogueweapon/halberd/bardiche/naginata
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/tsukushi
+	name = "Tsukushi Naginata x2 (2) (+w)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/ingot/iron,/obj/item/grown/log/tree/small)
+	created_item = /obj/item/rogueweapon/halberd/naginata/tsukushi
+	craftdiff = 1
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/bisento
+	name = "Bisento (3) (+w)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel,/obj/item/grown/log/tree/small,/obj/item/ingot/steel)
+	created_item = /obj/item/rogueweapon/eaglebeak/bisento
+	craftdiff = 5
+
+/datum/anvil_recipe/weapons/onobattle
+	name = "Ono Battle Axe (2)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel)
+	created_item = /obj/item/rogueweapon/stoneaxe/battle/ono
+	craftdiff = 3
+
+/datum/anvil_recipe/weapons/changfu
+	name = "changfu woodcutter (+s)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/grown/log/tree/stick)
+	created_item = /obj/item/rogueweapon/stoneaxe/woodcut/changfu
+
+//Unique few
+/datum/anvil_recipe/weapons/jitte
+	name = "Jitte Cudgel"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/rogueweapon/mace/cudgel/jitte
+
+/datum/anvil_recipe/weapons/otsuchi
+	name = "Otsuchi warhammer (+l)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/grown/log/tree/small)
+	created_item = /obj/item/rogueweapon/mace/goden/otsuchi
+
+/datum/anvil_recipe/weapons/kusarigama
+	name = "Kusarigama (+c) (+s)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/rope/chain, /obj/item/grown/log/tree/stick)
+	created_item = /obj/item/rogueweapon/flail/kusarigama
+
+/datum/anvil_recipe/weapons/mancatcher
+	name = "Mancatchers x2 (+w)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/grown/log/tree/small)
+	created_item = /obj/item/rogueweapon/spear/mancatcher
+	createmultiple = TRUE
+	createditem_num = 1
+
+/datum/anvil_recipe/weapons/onothrow
+	name = "Ono throwing axe (2)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/rogueweapon/stoneaxes/thrown/ono
+	craftdiff = 3
+
+/datum/anvil_recipe/weapons/tetsubishi
+	name = "tetsubishi caltrop (2)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/rogueweapon/tetsubishi
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/kama
+	name = "Kama sickle (2)"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/rogueweapon/sickle/kama
+	craftdiff = 2

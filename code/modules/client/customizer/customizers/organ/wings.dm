@@ -84,3 +84,18 @@
 		/datum/sprite_accessory/wings/wide/dragon_alt2,
 		/datum/sprite_accessory/wings/huge/dragon,
 		)
+
+/datum/customizer_choice/organ/wings/tengu
+	name = "Harpy Wings"
+	organ_type = /obj/item/organ/wings/tengu
+	sprite_accessories = list(
+		/datum/sprite_accessory/wings/tengu/tenguwings,
+		/datum/sprite_accessory/wings/feathery,
+		/datum/sprite_accessory/wings/wide/harpywings,
+		/datum/sprite_accessory/wings/wide/harpywingsalt1,
+		/datum/sprite_accessory/wings/wide/harpywingsalt2,
+		/datum/sprite_accessory/wings/wide/harpywings_top,
+		/datum/sprite_accessory/wings/wide/harpywingsalt1_top,
+		/datum/sprite_accessory/wings/wide/harpywingsalt2_top,
+		/datum/sprite_accessory/wings/large/harpyswept,
+		)

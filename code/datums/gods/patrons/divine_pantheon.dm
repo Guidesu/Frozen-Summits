@@ -100,9 +100,12 @@
 	desc = "The Queen of the Depths, Umberlee is feared and respected by those who sail. She commands the fury of the seas. "
 	worshippers = "Men of the Sea, Primitive Aquatics"
 	mob_traits = list(TRAIT_ABYSSOR_SWIM, TRAIT_SEA_DRINKER)
+	t0 = /obj/effect/proc_holder/spell/invoked/projectile/purify
 	t1 = /obj/effect/proc_holder/spell/invoked/abyssor_bends
 	t2 = /obj/effect/proc_holder/spell/invoked/abyssheal
 	t3 = /obj/effect/proc_holder/spell/invoked/call_mossback
+	t4 = /obj/effect/proc_holder/spell/invoked/icebind
+
 	confess_lines = list(
 		"UMBERLEE COMMANDS THE WAVES!",
 		"THE OCEAN'S FURY IS UMBERLEE'S WILL!",

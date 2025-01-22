@@ -218,3 +218,20 @@
 		/datum/sprite_accessory/tail/lizard/spikes,
 		/datum/sprite_accessory/tail/rattlesnake
 		)
+
+/datum/customizer/organ/tail/changeling
+	customizer_choices = list(/datum/customizer_choice/organ/tail/changeling)
+	allows_disabling = FALSE
+
+/datum/customizer_choice/organ/tail/changeling
+	name = "Changeling Tail"
+	organ_type = /obj/item/organ/tail/changeling
+	generic_random_pick = TRUE
+	sprite_accessories = list(
+		/datum/sprite_accessory/tails/changeling/onetail,
+		/datum/sprite_accessory/tails/changeling/twotails,
+		/datum/sprite_accessory/tails/changeling/threetails,
+		/datum/sprite_accessory/tail/kitsune,
+		/datum/sprite_accessory/tail/tamamo_kitsune,
+		)
+	allows_accessory_color_customization = FALSE

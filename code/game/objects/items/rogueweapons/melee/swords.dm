@@ -52,6 +52,16 @@
 	damfactor = 1.0
 	item_d_type = "slash"
 
+/datum/intent/sword/chop/great
+	name = "cleave"
+	attack_verb = list("cleaves", "splits")
+	damfactor = 1.4 //At 13 strenght, on a greatsword (35 damage), this will deal 63 damage. Yes. Still worse against armor, on average, than a halberd's stab or a greataxe's chop.
+	chargetime = 1.5 //Same as halberd chop.
+	swingdelay = 1
+	penfactor = 5+10 //20 combined AP.
+	misscost = 12
+	warnie = "mobwarning"
+
 //sword objs ฅ^•ﻌ•^ฅ
 
 /obj/item/rogueweapon/sword
@@ -826,3 +836,241 @@
 	force_wielded = 35
 	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust, /datum/intent/sword/strike)
 	icon_state = "kingslayer"
+
+///////////////////////////////////////////////////////////////////
+// Part of Kaizoku project that is still yet to be finished.     //
+// The Demo usage is meant for Stonekeep and Warmongers.		 //
+// If the usage for other sources is desired, before it finishes,//
+// ask monochrome9090 for permission. Respect the artists's will.//
+// If you want this quality content, COMMISSION me instead. 	 //
+// For this project, requirements are low, and mostly lore-based.//
+// I just do not desire for the Abyssariads to be butchered.	 //
+///////////////////////////////////////////////////////////////////
+
+/obj/item/rogueweapon/sword/long/tachi //this sword is all fucked. Oh God. Help me.
+	name = "tachi"
+	desc = "A long, curved Zatana of Abyssariad make, introduced when Wokou raiders returned to the Fog Isles with captured horses and began developing their own cavalry tactics."
+	icon = 'icons/roguetown/kaizoku/weapons/64.dmi'
+	icon_state = "tachi"
+	item_state = "tachi"
+	pixel_y = -16
+	pixel_x = -18
+
+/obj/item/rogueweapon/sword/long/tachi/dustcurse/dropped()
+	. = ..()
+	name = "Dustcurse tachi"
+	minstr = 0 //asset solely to be used by NPCs. This will not be found on the hands of players.
+	to_chat(src, "<span class='warning'>A haunting wind scatters [usr] into dust, sweeping it back to the ocean!</span>")
+	if(QDELETED(src))
+		return
+	qdel(src)
+
+/obj/item/rogueweapon/sword/long/greatsword/odachi
+	name = "odachi"
+	desc = "Greatsword traditionally wielded in open battlefields just as it is a ceremonial blade. Though impractical for duels, it breaks spearlines and shields on a whim, requiring momentum with each slash."
+	icon_state = "odachi"
+	icon = 'icons/roguetown/kaizoku/weapons/64.dmi'
+	parrysound = "bladedlarge"
+	force = 25
+	force_wielded = 35
+	possible_item_intents = list(/datum/intent/sword/chop, /datum/intent/sword/strike)
+	gripped_intents = list(/datum/intent/sword/chop, /datum/intent/sword/chop/great, /datum/intent/sword/strike) //You get chop, bigger chop, and half-swording.
+	swingsound = BLADEWOOSH_HUGE
+	wlength = WLENGTH_GREAT
+	slot_flags = ITEM_SLOT_BACK
+	minstr = 13 //Requirement is halved when wielded in two hands either way. No sane person should be thinking of using this one-handed.
+	wbalance = EASY_TO_DODGE
+	sellprice = 90
+
+/obj/item/rogueweapon/sword/iron/jian
+	name = "iron jian"
+	desc = "A simple, double-edged iron straight sword of abyssariad design used in martial arts."
+	icon_state = "jian"
+	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
+
+/obj/item/rogueweapon/sword/iron/messer/dao
+	name = "iron dao"
+	desc = "A single edged iron saber of Abyssariad making for horseback use. Suitable for chopping."
+	icon_state = "dao"
+	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
+
+/obj/item/rogueweapon/sword/falchion/yuntoudao //this sprite disappeared by reasons unknown
+	name = "Yuntoudao"
+	desc = "A expensive Abyssariad saber with wide middle and tapered ends in a 'willow-leaf' shape, it concentrates the force of a strike in an axe-like blow, while retaining the swiftness of a saber."
+	icon_state = "yuntoudao"
+	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
+
+/obj/item/rogueweapon/sword/short/jian
+	name = "short jian"
+	desc = "A simple, shortened version of the double-edged Jian. This is usually given to Abyssariad citizens as a right for self-defense by the emperor's will."
+	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
+	icon_state = "shortjian"
+
+/obj/item/rogueweapon/sword/short/wakizashi
+	name = "wakizashi"
+	desc = "A shorter design of a Zatana designed to replace the tanto as a zamurai's sidearm. The sorii makes it cut deeper - but is not efficient at thrusting, and can't handle much stress."
+	icon_state = "wakizashi"
+	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
+	possible_item_intents = list(/datum/intent/sword/cut/sorii, /datum/intent/sword/thrust/sorii)
+
+/datum/intent/sword/cut/sorii //It is the reverse of the Shortsword.
+	clickcd = 10
+	penfactor = 30
+
+/datum/intent/sword/thrust/sorii
+	clickcd = 10
+	damfactor = 0.85
+
+/obj/item/rogueweapon/sword/sabre/piandao
+	name = "piandao"
+	desc = "An curved abyssariad sword with a broad, single-edged blade that ends in a heavier curve for powerful and fast sweeping strikes."
+	icon_state = "piandao"
+	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
+
+/obj/item/rogueweapon/sword/sabre/piandao/dec
+	name = "decorated piandao"
+	desc = "The Abyssariad saber with the hilt covered in gold and letters reflecting the user's family lineage."
+	icon_state = "piandaodec"
+	max_integrity = 550
+	sellprice = 140
+
+/obj/item/rogueweapon/sword/dragonslayer //It's a sword, yes. It will be used as a sword? My dudes we moving that one like warhammers at this point. So it's blunt at this point.
+	name = "dragonslayer eclipse sword"
+	desc = "Dragonslayers uses swords too big to be called a sword. Massive, thick, heavy and far too rough. Indeed, they use a heap of raw iron. These are not crafted for fnesse, but for raw carnage in steel to obliterate Dragon's almost impenetrable skin."
+	gripped_intents = list(/datum/intent/dragonslayer/smash, /datum/intent/polearm/chop) //This is practically a mace... that can chop off heads since it's sharp.
+	icon_state = "eclipse_sword"
+	resistance_flags = FIRE_PROOF
+	smeltresult = /obj/item/ingot/steel
+	max_integrity = 500
+	force = 5 //You won't get ANYTHING by using in one hand. Trust me. EVEN IF YOU COULD.
+	force_wielded = 40 // I thought Gundam would nerf it. He buffed it instead. What a World!
+	slowdown = 1
+	wbalance = -1
+	sellprice = 300
+	w_class = WEIGHT_CLASS_HUGE
+	wbalance = -1 //haha... yeah.
+	wdefense = 3
+	minstr = 14
+	associated_skill = /datum/skill/combat/axes //if you tell me that fighting with this sword is LIKE a sword, I will kill you (ingame)-Mono
+	icon = 'icons/roguetown/kaizoku/weapons/64.dmi'
+	slot_flags = ITEM_SLOT_BACK
+	parrysound = "largeblade"
+	pickup_sound = "brandish_blade"
+	bigboy = TRUE
+
+/datum/intent/dragonslayer/smash
+	name = "smash"
+	icon_state = "insmash"
+	attack_verb = list("clangs")
+	animname = "smash"
+	blade_class = BCLASS_CHOP
+	hitsound = list('sound/combat/hits/bladed/dragonslayer.ogg', 'sound/combat/hits/bladed/dragonslayer2.ogg')
+	penfactor = 30
+	damfactor = 1.2
+	chargetime = 5
+	swingdelay = 5
+	misscost = 35
+	warnie = "mobwarning"
+
+//Special Weapons. 
+
+/obj/item/rogueweapon/tetsubishi //I humbly request someone to cook the 'jump' not causing damage.
+	name = "tetsubishi"
+	desc = "a sharp spike object used to slow down pursuer, often used by abyssariad shinobis, it has been massproduced and shipped to Heartfell."
+	icon_state = "tetsubishi"
+	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
+	force = 5
+	throwforce = 10
+	w_class = WEIGHT_CLASS_SMALL
+	block_chance = 0
+	armor_penetration = 5
+	sharpness = IS_SHARP
+	custom_materials = null
+	can_parry = FALSE
+	wlength = 6
+	sellprice = 1
+	has_inspect_verb = TRUE
+	parrysound = list('sound/combat/parry/parrygen.ogg')
+	anvilrepair = /datum/skill/craft/weaponsmithing
+	obj_flags = CAN_BE_HIT
+	blade_dulling = DULLING_BASH
+	max_integrity = 60
+	wdefense = 3
+	experimental_onhip = TRUE
+	experimental_onback = TRUE
+	embedding = list(
+		"embed_chance" = 60,
+		"embedded_pain_multiplier" = 1,
+		"embedded_fall_chance" = 0,
+	)
+	attack_verb = list("stabbed", "slashed", "sliced", "cut")
+	hitsound = 'sound/blank.ogg'
+	var/icon_prefix
+
+/obj/item/rogueweapon/tetsubishi/Initialize()
+	. = ..()
+	AddComponent(/datum/component/kaizoku/caltrop, 20, 30, 100, CALTROP_BYPASS_SHOES)
+
+/obj/item/rogueweapon/tetsubishi/Crossed(mob/living/L)
+	playsound(loc, 'sound/foley/flesh_rem2.ogg', TRUE)
+	return ..()
+
+/datum/component/kaizoku/caltrop //Less laggy alternative for the server-destroying OG caltrops.
+	var/min_damage
+	var/max_damage
+	var/probability
+	var/flags
+
+	var/cooldown = 0
+
+/datum/component/kaizoku/caltrop/Initialize(_min_damage = 0, _max_damage = 0, _probability = 100,  _flags = NONE)
+	min_damage = _min_damage
+	max_damage = max(_min_damage, _max_damage)
+	probability = _probability
+	flags = _flags
+
+	RegisterSignal(parent, list(COMSIG_MOVABLE_CROSSED), PROC_REF(Crossed))
+
+/datum/component/kaizoku/caltrop/proc/Crossed(datum/source, atom/movable/AM)
+	var/atom/A = parent
+	if(!prob(probability))
+		return
+
+	if(ishuman(AM))
+		var/mob/living/carbon/human/H = AM
+		if((flags & CALTROP_IGNORE_WALKERS) && H.m_intent == MOVE_INTENT_WALK)
+			return
+
+		var/picked_def_zone = pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
+		var/obj/item/bodypart/O = H.get_bodypart(picked_def_zone)
+		if(!istype(O))
+			return
+
+		var/feetCover = (H.wear_armor && (H.wear_armor.body_parts_covered & FEET)) || (H.wear_pants && (H.wear_pants.body_parts_covered & FEET))
+
+		if(!(flags & CALTROP_BYPASS_SHOES) && (H.shoes || feetCover))
+			return
+
+		if((H.movement_type & FLYING) || H.buckled)
+			return
+
+		var/damage = rand(min_damage, max_damage)
+		H.apply_damage(damage, BRUTE, picked_def_zone)
+
+
+		if(cooldown < world.time - 10) //cooldown to avoid message spam.
+			if(!H.incapacitated(ignore_restraints = TRUE))
+				H.visible_message("<span class='danger'>[H] steps on [A] as it pierces skin.</span>", \
+						"<span class='danger'>I feel my feet being pierced as I step on [A]!</span>")
+			else
+				H.visible_message("<span class='danger'>[H] slides their bodies on [A]!</span>", \
+						"<span class='danger'>I slide on [A]!</span>")
+
+			cooldown = world.time
+		H.Stun(60)
+
+/obj/item/throwing_star/ninja
+	name = "throwing star"
+	desc = "a simple distracting tool used to cause a commotion and bleeding so its user can scramble."
+	icon_state = "shuriken"
+	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'

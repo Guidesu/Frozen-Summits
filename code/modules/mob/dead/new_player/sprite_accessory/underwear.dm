@@ -48,3 +48,12 @@
 	if(owner.gender == MALE)
 		return "male_leotard"
 	return "female_leotard"
+
+/datum/sprite_accessory/underwear/male_fundoshi
+	name = "Mendoshi"
+	icon_state = "male_fundoshi"
+	icon = 'icons/roguetown/kaizoku/clothing/underwear.dmi'
+
+/datum/sprite_accessory/underwear/male_fundoshi/female
+	name = "Femdoshi"
+	icon_state = "female_fundoshi"

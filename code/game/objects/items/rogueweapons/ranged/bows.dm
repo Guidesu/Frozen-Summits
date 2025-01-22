@@ -421,3 +421,44 @@
 	if(ismob(loc))
 		var/mob/M = loc
 		M.update_inv_hands()
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/bow/hankyu
+	name = "hankyu bow"
+	desc = "A smaller version of the asymmetrical bow named Yumi. It must be shot overhead, and it is perfect for horseback use."  
+	icon = 'icons/roguetown/kaizoku/weapons/bows.dmi'
+	icon_state = "hankyubow"
+	item_state = "hankyubow"
+	base_icon = "hankyubow"
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow/yumi
+	name = "yumi bow"
+	desc = "The asymmetrical and elegant piece of Kyudo warfare, hard-hitting and powerful, bringing fear to orcish hordes and demons on a whim."
+	possible_item_intents = list(/datum/intent/shoot/bow/yumi, /datum/intent/arc/bow/yumi,INTENT_GENERIC)
+	icon = 'icons/roguetown/kaizoku/weapons/bows.dmi'
+	icon_state = "yumibow"
+	item_state = "yumibow"
+	base_icon = "yumibow"
+
+	slot_flags = ITEM_SLOT_BACK
+	force = 12
+	damfactor = 1.2
+
+/datum/intent/shoot/bow/yumi/prewarning()
+	if(mastermob)
+		mastermob.visible_message("<span class='warning'>[mastermob] draws [masteritem]!</span>")
+		playsound(mastermob, pick('sound/combat/Ranged/bow-draw-04.ogg'), 100, FALSE)
+
+/datum/intent/arc/bow/yumi/prewarning()
+	if(mastermob)
+		mastermob.visible_message("<span class='warning'>[mastermob] draws [masteritem]!</span>")
+		playsound(mastermob, pick('sound/combat/Ranged/bow-draw-04.ogg'), 100, FALSE)
+
+/datum/intent/shoot/bow/yumi
+	chargetime = 1.5
+	chargedrain = 1.5
+	charging_slowdown = 3
+
+/datum/intent/arc/bow/yumi
+	chargetime = 1.5
+	chargedrain = 1.5
+	charging_slowdown = 3

@@ -348,3 +348,18 @@
 	color_keys = 2
 	color_key_names = list("Tail", "Tip")
 	can_wag = TRUE
+
+/datum/sprite_accessory/tails/changeling/onetail
+	name = "Onetail"
+	icon = 'icons/roguetown/kaizoku/body_details/attachment.dmi'
+	icon_state = "onetail"
+
+/datum/sprite_accessory/tails/changeling/twotails
+	name = "twotails"
+	icon = 'icons/roguetown/kaizoku/body_details/attachment.dmi'
+	icon_state = "twotails"
+
+/datum/sprite_accessory/tails/changeling/threetails
+	name = "threetails"
+	icon = 'icons/roguetown/kaizoku/body_details/attachment.dmi'
+	icon_state = "threetails"

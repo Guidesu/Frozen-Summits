@@ -140,5 +140,8 @@
 	..()
 	grant_all_languages(omnitongue=TRUE)
 
-/datum/language_holder/abyssal
+/datum/language_holder/hellspeak
 	languages = list(/datum/language/hellspeak)
+
+/datum/language_holder/abyssal
+	languages = list(/datum/language/abyssal)

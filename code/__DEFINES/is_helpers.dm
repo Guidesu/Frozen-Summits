@@ -103,6 +103,12 @@ GLOBAL_LIST_INIT(our_forest_sex, typecacheof(list(
 #define isargonian(A) (is_species(A, /datum/species/lizard/brazil))
 #define isgoblinp(A) (is_species(A, /datum/species/goblinp))
 
+//RT Kaizoku Species
+#define isabyssariad(A) (is_species(A, /datum/species/abyssariad))
+#define ischangeling(A) (is_species(A, /datum/species/abyssariad/changeling))
+#define isogre(A) (is_species(A, /datum/species/abyssariad/ogre))
+#define isharpy(A) (is_species(A, /datum/species/abyssariad/harpy))
+
 //more carbon mobs
 #define ismonkey(A) (istype(A, /mob/living/carbon/monkey))
 

@@ -1939,7 +1939,7 @@
 				var/obj/item/restraints/legcuffs/beartrap/M = O
 				if(isturf(M.loc) && M.armed)
 					found_ping(get_turf(M), client, "trap")
-			if(istype(O, /obj/structure/flora/roguegrass/maneater/real))
+			if(istype(O, /obj/structure/flora/roguegrass/maneater/real || /obj/structure/abyssaltomb))
 				found_ping(get_turf(O), client, "trap")
 			//Hearthstone port - Tracking
 		for(var/obj/effect/track/potential_track in orange(7, src)) //Can't use view because they're invisible by default.

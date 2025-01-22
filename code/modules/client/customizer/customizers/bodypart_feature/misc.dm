@@ -59,4 +59,6 @@
 		/datum/sprite_accessory/underwear/panties,
 		/datum/sprite_accessory/underwear/bikini,
 		/datum/sprite_accessory/underwear/leotard,
+		/datum/sprite_accessory/underwear/male_fundoshi,
+		/datum/sprite_accessory/underwear/male_fundoshi/female,
 		)

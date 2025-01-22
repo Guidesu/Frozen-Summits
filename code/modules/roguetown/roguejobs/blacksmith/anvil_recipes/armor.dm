@@ -508,3 +508,326 @@
 	req_bar = /obj/item/ingot/iron
 	additional_items = list(/obj/item/natural/cloth)
 	created_item = /obj/item/clothing/under/roguetown/splintlegs
+
+//Kaizoku Smithing content. I humbly ask for help; A way in which only people with the trait "Kaizoku", being the ones able to make Kaizoku weapons and armor. In another hand,
+//they cannot make most (exceptions; the objects that have no abyssariad alternative) armors and weapons.
+
+//'armor'
+/datum/anvil_recipe/armor/nanbando
+	name = "Barbarian half-plate (3)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel,/obj/item/ingot/steel)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/nanbando
+	craftdiff = 3
+
+/datum/anvil_recipe/armor/nanbandocuirass
+	name = "Barbarian Cuirass"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/suit/roguetown/armor/cuirass/nanbando
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/nanbandofull
+	name = "Barbarian Fullplate (4)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel,/obj/item/ingot/steel,/obj/item/ingot/steel)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/full/nanbando
+	craftdiff = 4
+
+/datum/anvil_recipe/armor/steeltatami
+	name = "Steel foldeable armor"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/suit/roguetown/armor/chainmail/tatami
+	craftdiff = 2
+
+// huh. We can make these uniquely then. Since we can't make the iron chainmail for the european counterparts?... why?
+/datum/anvil_recipe/armor/irontatami
+	name = "Iron foldeable armor"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/suit/roguetown/armor/chainmail/iron/tatami
+	craftdiff = 2
+	createmultiple = TRUE
+	createditem_num = 1
+
+/datum/anvil_recipe/armor/kusari
+	name = "Chainmail Robe (2)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel)
+	created_item = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/kusari
+	craftdiff = 3
+
+/datum/anvil_recipe/armor/imirror
+	name = "Iron disk chestplate (3)"
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/ingot/iron,/obj/item/ingot/iron)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/mirror/iron
+	craftdiff = 1
+
+/datum/anvil_recipe/armor/mirror
+	name = "Steel disk chestplate (3)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel,/obj/item/ingot/steel)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/mirror
+	craftdiff = 3
+
+/datum/anvil_recipe/armor/oyoroi
+	name = "Compact great armor (3) (c)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/steel, /obj/item/natural/cloth)
+	created_item = /obj/item/clothing/suit/roguetown/armor/brigandine/oyoroi
+	craftdiff = 3
+
+/datum/anvil_recipe/armor/oyoroigusoku //costier version. Only really viable if you got what to waste.
+	name = "Full great armor (4) (2c)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/steel, /obj/item/ingot/steel, /obj/item/natural/cloth, /obj/item/natural/cloth)
+	created_item = /obj/item/clothing/suit/roguetown/armor/brigandine/oyoroi/oyoroigusoku
+	craftdiff = 3
+
+/datum/anvil_recipe/armor/sanmaido
+	name = "Three-plate cuirass"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/suit/roguetown/armor/cuirass/sanmaido
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/kikko
+	name = "Turtleshell leather armor (2h)"
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/natural/hide, /obj/item/natural/hide)
+	created_item = /obj/item/clothing/suit/roguetown/armor/leather/studded/kikko
+	craftdiff = 1
+
+/obj/item/clothing/suit/roguetown/armor/rattan //cheaper on iron, but has many sticks. Proper for this armor's context.
+/datum/anvil_recipe/armor/iplate
+	name = "Iron-woven Rattan armor (2) (4s)"
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/ingot/iron,/obj/item/grown/log/tree/stick,/obj/item/grown/log/tree/stick,/obj/item/grown/log/tree/stick,/obj/item/grown/log/tree/stick)
+	created_item = /obj/item/clothing/suit/roguetown/armor/rattan
+	craftdiff = 1
+
+/datum/anvil_recipe/armor/kikkoarmor //cheaper brigadine with hide.
+	name = "Turtleshell Full Armor (2) (2h)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel, /obj/item/natural/hide, /obj/item/natural/hide)
+	created_item = /obj/item/clothing/suit/roguetown/armor/medium/surcoat/heartfelt/abyssariad
+	craftdiff = 3
+
+//'feet'
+/datum/anvil_recipe/armor/kusaritabi
+	name = "Chainmail footwear x2"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/shoes/roguetown/boots/armor/light/kusaritabi
+	createmultiple = TRUE
+	createditem_num = 1
+
+/datum/anvil_recipe/armor/suneate
+	name = "Plated shin-guards"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/shoes/roguetown/boots/armor/suneate
+	craftdiff = 3
+
+//'gloves'
+/datum/anvil_recipe/armor/kikkotekko
+	name = "Turtleshell gauntlets x2"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/gloves/roguetown/chain/kikko
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/ikikkotekko
+	name = "Turtleshell gauntlets x2"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/gloves/roguetown/chain/iron/kikko
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 0
+
+/datum/anvil_recipe/armor/lamellaetekko
+	name = "Lamellae gauntlets"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/gloves/roguetown/plate/lamellaetekko
+	craftdiff = 3
+
+//'hats'
+/datum/anvil_recipe/armor/hachigane
+	name = "Hachigane x2"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/head/roguetown/helmet/skullcap/hachigane
+	createmultiple = TRUE
+	createditem_num = 1
+
+/datum/anvil_recipe/armor/rattanhelmet
+	name = "Iron Woven Rattan Helmet x2 (3s)"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/head/roguetown/helmet/skullcap/rattan
+	additional_items = list(/obj/item/grown/log/tree/stick,/obj/item/grown/log/tree/stick,/obj/item/grown/log/tree/stick)
+	createmultiple = TRUE
+	createditem_num = 1
+
+/obj/item/clothing/head/roguetown/helmet/visored/abyssalchampion
+/datum/anvil_recipe/armor/abyssalchampion
+	name = "Newfangled Myrmidon Helmet (3)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/steel)
+	created_item = (/obj/item/clothing/head/roguetown/helmet/visored/abyssalchampion)
+	craftdiff = 4
+
+/datum/anvil_recipe/armor/helmetbuc
+	name = "Sohei Heavy Headwear"
+	req_bar = /obj/item/ingot/steel
+	created_item = (/obj/item/clothing/head/roguetown/helmet/heavy/bucket/soheidemon)
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/zunari
+	name = "Zamurai's helmet (2)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel)
+	created_item = (/obj/item/clothing/head/roguetown/helmet/visored/zunari)
+	craftdiff = 3
+
+/datum/anvil_recipe/armor/zijinguan
+	name = "Plumed Footsoldier helmet x2"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/head/roguetown/helmet/zijinguan
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/jingasa
+	name = "Conical Ashigaru helmet x2"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/head/roguetown/helmet/jingasa
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/toseikabuto
+	name = "Tosei-kabuto"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/head/roguetown/helmet/sallet/tosei_kabuto
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/toseikabutov
+	name = "Visored tosei-kabuto (2)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel)
+	created_item = (/obj/item/clothing/head/roguetown/helmet/visored/sallet/tosei_kabuto)
+	craftdiff = 3
+
+//'mask'
+/datum/anvil_recipe/armor/imenpo
+	name = "Iron faceguard"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/mask/rogue/kaizoku/menpo
+	craftdiff = 0
+
+/datum/anvil_recipe/armor/himenpo
+	name = "Iron half-faceguard x2"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/mask/rogue/kaizoku/menpo/half
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 0
+
+/datum/anvil_recipe/armor/smenpo
+	name = "Steel faceguard"
+	req_bar = /obj/item/ingot/steel
+	created_item = (/obj/item/clothing/mask/rogue/kaizoku/menpo/steel/half)
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/hsmenpo
+	name = "Steel half-faceguard x2"
+	req_bar = /obj/item/ingot/steel
+	created_item = (/obj/item/clothing/mask/rogue/kaizoku/menpo/steel)
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/itribalfish
+	name = "Iron fishpeople mask x2"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/mask/rogue/kaizoku/menpo/facemask
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 0
+
+/datum/anvil_recipe/armor/stribalfish
+	name = "Steel fishpeople mask"
+	req_bar = /obj/item/ingot/steel
+	created_item = (/obj/item/clothing/mask/rogue/kaizoku/menpo/facemask/steel)
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/ctengu
+	name = "Birdpeople champion mask"
+	req_bar = /obj/item/ingot/steel
+	created_item = (/obj/item/clothing/mask/rogue/kaizoku/menpo/facemask/colourable/tengu)
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/ckitsune
+	name = "Foxpeople champion mask"
+	req_bar = /obj/item/ingot/steel
+	created_item = (/obj/item/clothing/mask/rogue/kaizoku/menpo/facemask/colourable/kitsune)
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/coni
+	name = "Ogrepeople champion mask"
+	req_bar = /obj/item/ingot/steel
+	created_item = (/obj/item/clothing/mask/rogue/facemask/steel)
+	craftdiff = 2
+
+//'neck'
+/datum/anvil_recipe/armor/shood
+	name = "Karuta hood x2"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/neck/roguetown/chaincoif/karuta_zukin
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/ihood
+	name = "Chainmail hood x2"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/neck/roguetown/chaincoif/iron/kusari_zukin
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 0
+
+//'pants'
+/datum/anvil_recipe/armor/ihaidate
+	name = "Foldable Thighguards x2"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/under/roguetown/chainlegs/iron/haidate_tatami
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 0
+
+/datum/anvil_recipe/armor/shaidate
+	name = "Plate Thighguards x2"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/under/roguetown/chainlegs/sendan
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/superhaidate
+	name = "Plated Trousers x2"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/under/roguetown/platelegs/yoroihakama
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 3
+
+//'wrists'
+/datum/anvil_recipe/armor/kote //Protects more limbs, so it is costier.
+	name = "Armored Sleeve"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/wrists/roguetown/bracers/kote
+	craftdiff = 4
+
+/datum/anvil_recipe/armor/weeper
+	name = "Weeper Bracers x2"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/wrists/roguetown/bracers/mountainstar
+	createmultiple = TRUE
+	createditem_num = 1
+	craftdiff = 3

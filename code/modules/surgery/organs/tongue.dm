@@ -22,6 +22,7 @@
 		/datum/language/felid,
 		/datum/language/thievescant,
 		/datum/language/grenzelhoftian,
+		/datum/language/abyssal,
 	))
 
 /obj/item/organ/tongue/Initialize(mapload)
@@ -243,3 +244,15 @@
 
 /obj/item/organ/tongue/wild_tongue
 	name = "wild tongue"
+
+/obj/item/organ/tongue/kitsune
+	name = "changeling tongue"
+	desc = "The tongue that inwardly bends the moldable changeling skull into a glasgow smile, or other shapes depending on their branch."
+	icon = 'icons/obj/surgery.dmi'
+	icon_state = "eldritch"
+	slot = ORGAN_SLOT_TONGUE
+	var/tongue_type = "eldritch"
+	var/can_wag = TRUE
+	var/wagging = FALSE
+	zone = BODY_ZONE_PRECISE_MOUTH
+	slot = ORGAN_SLOT_TONGUE

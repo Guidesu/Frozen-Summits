@@ -1372,3 +1372,70 @@
 /datum/sprite_accessory/hair/facial/vox/neck
 	name = "Neck Quills"
 	icon_state = "neck"
+
+//kaizokuhairs
+
+/datum/sprite_accessory/hair/kaizoku
+	name = "Zamurai Manbun"
+	icon = 'icons/roguetown/kaizoku/body_details/hairstyles.dmi'
+	icon_state = "samurai"
+
+/datum/sprite_accessory/hair/kaizoku/ronin
+	name = "Vagabond"
+	icon_state = "ronin"
+
+/datum/sprite_accessory/hair/kaizoku/freespirit
+	name = "Free Spirit"
+	icon_state = "freespirit"
+
+/datum/sprite_accessory/hair/kaizoku/novice
+	name = "New Rice"
+	icon_state = "novice"
+
+/datum/sprite_accessory/hair/kaizoku/yakuza
+	name = "Irezumi Gangster"
+	icon_state = "yakuza"
+
+/datum/sprite_accessory/hair/kaizoku/steppeman
+	name = "Aridlands raider"
+	icon_state = "steppeman"
+
+/datum/sprite_accessory/hair/kaizoku/bishonen
+	name = "Husband"
+	icon_state = "bishonen"
+
+/datum/sprite_accessory/hair/kaizoku/emperor
+	name = "Imperial Court"
+	icon_state = "emperor"
+
+/datum/sprite_accessory/hair/kaizoku/protagonist
+	name = "Historical Protagonist"
+	icon_state = "hprotagonist"
+
+/datum/sprite_accessory/hair/kaizoku/protagonistalt
+	name = "Longer Protagonist"
+	icon_state = "alsoprotagonist"
+
+/datum/sprite_accessory/hair/kaizoku/empress
+	name = "Abyssal Empress"
+	icon_state = "empress"
+
+/datum/sprite_accessory/hair/kaizoku/onnamusha
+	name = "Onnamusha"
+	icon_state = "warlady"
+
+/datum/sprite_accessory/hair/kaizoku/waterfield
+	name = "Waterbearer"
+	icon_state = "waterfield"
+
+/datum/sprite_accessory/hair/kaizoku/homewaifu
+	name = "Homewife"
+	icon_state = "homewaifu"
+
+/datum/sprite_accessory/hair/kaizoku/casual
+	name = "Natural River"
+	icon_state = "casual"
+
+/datum/sprite_accessory/hair/kaizoku/martyr
+	name = "Inhonor of the Fallen"
+	icon_state = "martyr"

@@ -204,12 +204,6 @@
 	max_integrity = 150
 	smeltresult = /obj/item/ingot/steel
 
-/obj/item/rogueweapon/huntingknife/idagger/steel/tanto
-	force = 15
-	name = "tanto"
-	icon_state = "tanto"
-	desc = "It is primarily a thrusting weapon, but is also a decent cutting implement."
-
 /obj/item/rogueweapon/huntingknife/idagger/dtace
 	name = "'De Tace'"
 	desc = "The right hand of the right hand, this narrow length of steel serves as a quick solution to petty greviences."
@@ -393,3 +387,44 @@
 	is_silver = TRUE
 	sellprice = 6
 	smeltresult = null
+
+///////////////////////////////////////////////////////////////////
+// Part of Kaizoku project that is still yet to be finished.     //
+// The Demo usage is meant for Stonekeep and Warmongers.		 //
+// If the usage for other sources is desired, before it finishes,//
+// ask monochrome9090 for permission. Respect the artists's will.//
+// If you want this quality content, COMMISSION me instead. 	 //
+// For this project, requirements are low, and mostly lore-based.//
+// I just do not desire for the Abyssariads to be butchered.	 //
+///////////////////////////////////////////////////////////////////
+
+/obj/item/rogueweapon/huntingknife/kunai //Practically a villager knife with more utility. It helps others to climb walls.
+	name = "kunai"
+	desc = "A simple stabbing weapon made of iron which originated as a masonry or gardening tool, useful for climbing walls in similar ways to pitons."
+	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
+	icon_state = "kunai"
+	force = 8
+
+/obj/item/rogueweapon/huntingknife/idagger/steel/tanto
+	name = "tanto"
+	icon_state = "tanto"
+	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
+	desc = "Initially a companion blade to the tachi in a zamurai's daisho, the tanto was later replaced by the wakizashi with the shift to infantry tactics."
+
+/obj/item/rogueweapon/huntingknife/idagger/steel/kaiken
+	name = "kaiken"
+	desc = "The weapon laws in colonized Abyssariad islands, with high humen of elven population, forbade non-warriors from carrying blades in public, so abyssariad colonists made weapons such as this."
+	icon_state = "kaiken"
+	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
+	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut,/datum/intent/dagger/thrust/pick)
+	w_class = WEIGHT_CLASS_TINY
+
+/obj/item/rogueweapon/huntingknife/idagger/sai
+	name = "sai"
+	desc = "Recognizable by its uniqueness and typically carried in pairs, the sai features a sharply-tapered central rod with two prongs at the cross-guards. It lacks blade for cutting, but it excels in jabbing and defending against other weapons."
+	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
+	icon_state = "sai"
+	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/thrust/pick)
+	w_class = WEIGHT_CLASS_NORMAL
+	force = 10
+	wdefense = 5

@@ -594,7 +594,8 @@ GLOBAL_LIST_EMPTY(asset_datums)
 		"undead.ttf" = 'interface/fonts/languages/undead.ttf',
 		"draconic.ttf" = 'interface/fonts/languages/draconic.ttf',
 		"lupian.ttf" = 'interface/fonts/languages/lupian.ttf',
-		"felid.ttf" = 'interface/fonts/languages/felid.ttf'
+		"felid.ttf" = 'interface/fonts/languages/felid.ttf',
+		"abyssal.ttf" = 'interface/fonts/languages/abyssal.ttf'
 	)
 
 /datum/asset/spritesheet/goonchat

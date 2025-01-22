@@ -293,3 +293,13 @@
 	timer = 1 MINUTES
 	stressadd = 1
 	desc = span_red("The horrid wails of the dead call for relief! I can ENDURE such calls...")
+
+/datum/stressevent/raider
+	timer = 1 MINUTES
+	stressadd = 1
+	desc = "<span class='red'>Vicious sea raider, they prey on fellow men.</span>"
+
+/datum/stressevent/whaler
+	timer = 1 MINUTES
+	stressadd = 1
+	desc = "<span class='red'>Filthy corrupted whaler. Never forget the Storm Lord.</span>"

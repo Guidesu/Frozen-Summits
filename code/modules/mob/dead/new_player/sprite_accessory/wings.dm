@@ -244,3 +244,9 @@
 /datum/sprite_accessory/wings/large/harpyswept
 	name = "Harpy (Swept)"
 	icon_state = "harpys"
+
+/datum/sprite_accessory/wings/tengu/tenguwings
+	name = "eastern wings"
+	icon = 'icons/roguetown/kaizoku/body_details/attachment.dmi'
+	icon_state = "tengus"
+	color_key_defaults = KEY_FACE_HAIR_COLOR

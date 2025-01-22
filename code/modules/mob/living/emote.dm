@@ -1437,3 +1437,15 @@
 	else
 		to_chat(usr, span_warning("Your tongue doesn't do that"))
 		return
+
+/datum/emote/living/throatsing
+	key = "throatsing"
+	message = "murmurs a guttural, throaty warble."
+	emote_type = EMOTE_AUDIBLE
+	only_forced_audio = TRUE
+
+/datum/emote/living/birdcall
+	key = "birdcall"
+	message = "performs a enthusiastic harpy call."
+	emote_type = EMOTE_AUDIBLE
+	only_forced_audio = TRUE

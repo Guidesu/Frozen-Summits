@@ -74,3 +74,7 @@
 	desc = ""
 	color = "#116611"
 	accessory_type =  /datum/sprite_accessory/tail/lizard/kobold
+
+/obj/item/organ/tail/changeling
+	name = "axian tail"
+	accessory_type =  /datum/sprite_accessory/tail/changeling
