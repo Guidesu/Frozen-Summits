@@ -355,6 +355,7 @@
 	name = "abyssal leather gloves (x2){fl}"
 	result = list(/obj/item/clothing/gloves/roguetown/leather/abyssal,
 	/obj/item/clothing/gloves/roguetown/leather/abyssal)
+	reqs = list(/obj/item/natural/hide = 2)
 
 /datum/crafting_recipe/roguetown/leather/khudagach
 	name = "archery bracers (x2){fl}"
@@ -364,19 +365,23 @@
 /datum/crafting_recipe/roguetown/leather/furtobi
 	name = "leather pants {fl}"
 	result = list(/obj/item/clothing/under/roguetown/trou/leather/fur)
+	reqs = list(/obj/item/natural/hide = 2)
 
 /datum/crafting_recipe/roguetown/leather/jikatabi
 	name = "jikatabi (x2){fl}"
 	result = list(/obj/item/clothing/shoes/roguetown/boots/jikatabi,
 				/obj/item/clothing/shoes/roguetown/boots/jikatabi)
+	reqs = list(/obj/item/natural/hide = 2)
 
 /datum/crafting_recipe/roguetown/leather/cloudhead
 	name = "cloudhead shoes {fl}"
 	result = /obj/item/clothing/shoes/roguetown/shortboots/cloudhead
+	reqs = list(/obj/item/natural/hide = 2)
 
 /datum/crafting_recipe/roguetown/leather/geta
 	name = "geta sandals {fl}"
 	result = /obj/item/clothing/shoes/roguetown/sandals/geta
+	reqs = list(/obj/item/natural/hide = 2)
 
 /datum/crafting_recipe/roguetown/leather/haori
 	name = "haori jacket {fl}"
