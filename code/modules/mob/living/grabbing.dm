@@ -311,6 +311,15 @@
 					span_userdanger("My prosthetic [parse_zone(sublimb_grabbed)] was twisted off of me![C.next_attack_msg.Join()]"), span_hear("I hear a sickening sound of pugilism!"), COMBAT_MESSAGE_RANGE, user)
 		to_chat(user, span_warning("I twisted [C]'s prosthetic [parse_zone(sublimb_grabbed)] off.[C.next_attack_msg.Join()]"))
 		limb_grabbed.drop_limb(TRUE)
+	// Scruffing
+	if(ishuman(C))
+		var/mob/living/carbon/human/H = C
+		if((istype(H.dna?.species, /datum/species/tabaxi) || istype(H.dna?.species, /datum/species/lupian)) && sublimb_grabbed == BODY_ZONE_PRECISE_NECK)
+			if(get_location_accessible(H, BODY_ZONE_PRECISE_NECK) && H.age == AGE_ADULT) // Is the neck accessible? Also, only applies to adults
+				H.Paralyze(20) // 2 seconds of paralysis
+				to_chat(H, span_userdanger("You go limp as your scruff is twisted!"))
+				to_chat(user, span_warning("You twist [H]'s scruff, causing them to go limp!"))
+
 
 /obj/item/grabbing/proc/headbutt(mob/living/carbon/human/H)
 	var/mob/living/carbon/C = grabbed

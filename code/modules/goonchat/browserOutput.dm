@@ -54,13 +54,9 @@ GLOBAL_DATUM_INIT(iconCache, /savefile, new("tmp/iconCache.sav")) //Cache of ico
 	if(!owner)
 		return
 
-	/*for(var/attempts in 1 to 5)
-		for(var/asset in GLOB.chatResources)
-			owner << browse_rsc(wrap_file(asset))*/
-
 	var/datum/asset/stuff = get_asset_datum(/datum/asset/group/goonchat)
-	//stuff.register()
 	stuff.send(owner)
+	//516 debug winset(owner, null, "browser-options=devtools,find")
 
 	owner << browse(file('code/modules/goonchat/browserassets/html/browserOutput.html'), "window=browseroutput")
 

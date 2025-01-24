@@ -395,8 +395,8 @@ function output(message, flag) {
 			entry.className += ' hidden';
 			entry.setAttribute('data-filter', filteredOut);
 		}
-
-		$(entry).find('[replaceRegex]').each(replaceRegex);
+		entry.innerHTML = DOMPurify.sanitize(entry.innerHTML);
+		$(entry).find('[replaceRegex]').each(replaceRegex); //just in case
 
 		$last_message = trimmed_message;
 		$messages[0].appendChild(entry);
@@ -697,6 +697,11 @@ if (typeof $ === 'undefined') {
 	div += '<br><br>ERROR: Jquery did not load.';
 }
 
+if (typeof DOMPurify === 'undefined') {
+    var div = document.getElementById('loading').childNodes[1];
+    div.innerHTML += '<br><br>ERROR: DOMPurify did not load.';
+}
+
 $(function() {
 	$messages = $('#messages');
 	$subOptions = $('#subOptions');
@@ -749,7 +754,7 @@ $(function() {
 			opts.pingDisabled = true;
 			$('#ping').hide();
 		}
-		//internalOutput('<span class="internal boldnshit">Loaded ping display of: '+(opts.pingDisabled ? 'hidden' : 'visible')+'</span>', 'internal');
+		internalOutput('<span class="internal boldnshit">Loaded ping display of: '+(opts.pingDisabled ? 'hidden' : 'visible')+'</span>', 'internal');
 	}
 	if (savedConfig.shighlightTerms) {
 		var savedTerms = $.parseJSON(savedConfig.shighlightTerms).filter(function (entry) {
@@ -1029,30 +1034,41 @@ $(function() {
 	
 
 	$('#saveLog').click(function(e) {
-		// Requires IE 10+ to issue download commands. Just opening a popup
-		// window will cause Ctrl+S to save a blank page, ignoring innerHTML.
-		if (!window.Blob) {
-			output('<span class="big red">This function is only supported on IE 10 and up. Upgrade if possible.</span>', 'internal');
-			return;
-		}
-
+		var date = new Date();
+		var fname = 'Azure Peak Chat Log ' + 
+					date.getFullYear() + '-' + 
+					(date.getMonth() + 1 < 10 ? '0' : '') + (date.getMonth() + 1) + '-' + 
+					(date.getDate() < 10 ? '0' : '') + date.getDate() + ' ' +
+					(date.getHours() < 10 ? '0' : '') + date.getHours() +
+					(date.getMinutes() < 10 ? '0' : '') + date.getMinutes() +
+					(date.getSeconds() < 10 ? '0' : '') + date.getSeconds() +
+					'.html';
+	
 		$.ajax({
 			type: 'GET',
 			url: 'browserOutput_white.css',
 			success: function(styleData) {
-				var blob = new Blob(['<head><title>Chat Log</title><style>', styleData, '</style></head><body>', $messages.html(), '</body>']);
-
-				var fname = 'Azure Peaks Chat Log';
-				var date = new Date(), month = date.getMonth(), day = date.getDay(), hours = date.getHours(), mins = date.getMinutes(), secs = date.getSeconds();
-				fname += ' ' + date.getFullYear() + '-' + (month < 10 ? '0' : '') + month + '-' + (day < 10 ? '0' : '') + day;
-				fname += ' ' + (hours < 10 ? '0' : '') + hours + (mins < 10 ? '0' : '') + mins + (secs < 10 ? '0' : '') + secs;
-				fname += '.html';
-
-				window.navigator.msSaveBlob(blob, fname);
-			}
+				var blob = new Blob([
+					'<head><title>Azure Peak Chat Log</title><style>',
+					styleData,
+					'</style></head><body>',
+					$messages.html(),
+					'</body>'
+				], { type: 'text/html;charset=utf-8' });
+	
+				if (window.navigator.msSaveBlob) {
+					window.navigator.msSaveBlob(blob, fname);
+				} else {
+					var link = document.createElement('a');
+					link.href = URL.createObjectURL(blob);
+					link.download = fname;
+					link.click();
+					URL.revokeObjectURL(link.href);
+				}
+			},
 		});
 	});
-	
+	  
 	//clone of above but strips html
 	$('#saveLogTxt').click(function(e) {
 		if (!window.Blob) {
@@ -1060,12 +1076,14 @@ $(function() {
 			return;
 		}
 	
-
-		var plainText = '';
+		let plainText = '';
 		$messages.children().each(function() {
-			plainText += $(this).text() + '\n'; 
+			const tempDiv = document.createElement('div');
+			tempDiv.innerHTML = $(this).html(); 
+			const messageText = tempDiv.innerText.replace(/\n+/g, '\n').trim();
+			plainText += messageText + '\n'; //add newline to end
 		});
-	
+
 		var blob = new Blob([plainText], { type: 'text/plain' });
 	
 		var fname = 'Azure Peak Chat Log';
@@ -1084,42 +1102,6 @@ $(function() {
 			URL.revokeObjectURL(link.href);
 		}
 		internalOutput('<span class="internal boldnshit">Log file saved.</span>', 'internal');
-	});
-
-	$('#startLogging').click(function () {
-		if (!window.Blob) {
-			alert('Your browser does not support modern file-saving features. Please update your browser.');
-			return;
-		}
-		internalOutput('<span class="internal boldnshit">Log file saved.</span>', 'internal');
-		// Accumulated log content
-		let logContent = '';
-	
-		// Start periodic logging
-		setInterval(function () {
-			// Extract plain text from chat messages
-			const newContent = $messages.children().map(function () {
-				return $(this).text();
-			}).get().join('\n') + '\n';
-	
-			// Append new content to the log
-			logContent += newContent;
-	
-			// Create a Blob and trigger a download
-			const blob = new Blob([logContent], { type: 'text/plain' });
-			const link = document.createElement('a');
-			link.href = URL.createObjectURL(blob);
-			link.download = 'Azure_Peak_Chat_Log.txt'; // Default file name
-			link.style.display = 'none';
-	
-			// Append link to the document, click it, then remove it
-			document.body.appendChild(link);
-			link.click();
-			document.body.removeChild(link);
-	
-			// Revoke the Blob URL to save memory
-			URL.revokeObjectURL(link.href);
-		}, 5000); // Save logs every 5 seconds
 	});
 
 	$('body').on('keyup', '#highlightColor', function() {

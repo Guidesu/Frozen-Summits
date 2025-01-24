@@ -343,3 +343,25 @@
 		if(prob(50))
 			C.adjustFireLoss(4)
 			C.Jitter(3)
+// Darkling debuffs
+/datum/status_effect/debuff/darkling_glare
+	id = "darkling_glare"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/darkling_glare
+	effectedstats = list("perception" = -1)
+	duration = 10 SECONDS
+
+/atom/movable/screen/alert/status_effect/debuff/darkling_glare
+	name = "Eye Strain"
+	desc = "My eyes are starting to water, the light burns."
+	icon_state = "stressb"
+
+/datum/status_effect/debuff/darkling_migraine
+	id = "darkling_migraine"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/darkling_migraine
+	effectedstats = list("perception" = -1, "endurance" = -1, "speed" = -1)
+	duration = 1 MINUTES
+
+/atom/movable/screen/alert/status_effect/debuff/darkling_migraine
+	name = "Migraine"
+	icon_state = "muscles"
+	desc = "My head is pounding, I need to get away from the light and rest a while!"

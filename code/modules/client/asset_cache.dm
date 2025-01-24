@@ -405,7 +405,7 @@ GLOBAL_LIST_EMPTY(asset_datums)
 /datum/asset/group/tgui
 	children = list(
 		/datum/asset/simple/tgui,
-	//	/datum/asset/simple/fontawesome
+		/datum/asset/simple/fontawesome
 	)
 
 /datum/asset/simple/headers
@@ -525,15 +525,22 @@ GLOBAL_LIST_EMPTY(asset_datums)
 /datum/asset/group/goonchat
 	children = list(
 		/datum/asset/simple/jquery,
+		/datum/asset/simple/purify,
 		/datum/asset/simple/goonchat,
 		/datum/asset/spritesheet/goonchat,
 		/datum/asset/simple/fontawesome,
 		/datum/asset/simple/roguefonts
 	)
 
+/datum/asset/simple/purify
+	verify = TRUE
+	assets = list(
+		"purify.min.js"            = 'goon/browserassets/js/purify.min.js',
+	)
+
 
 /datum/asset/simple/jquery
-	verify = FALSE
+	verify = TRUE
 	assets = list(
 		"jquery.min.js"            = 'goon/browserassets/js/jquery.min.js',
 	)
@@ -564,7 +571,7 @@ GLOBAL_LIST_EMPTY(asset_datums)
 		"try4.png" = 'icons/roguetown/misc/try4.png',
 		"try4_border.png" = 'icons/roguetown/misc/try4_border.png',
 		"slop_menustyle2.css" = 'html/browser/slop_menustyle2.css',
-		//"haha_skull.gif" = 'icons/roguetown/misc/haha_skull.gif'
+		"haha_skull.gif" = 'icons/roguetown/misc/haha_skull.gif'
 	)
 
 /datum/asset/simple/blackedstone_triumph_buy_menu_slop_layout

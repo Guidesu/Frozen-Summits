@@ -40,20 +40,6 @@
 			pic.color = get_detail_color()
 		add_overlay(pic)
 
-/obj/item/clothing/suit/roguetown/shirt/dress/royal/lordcolor(primary,secondary)
-	detail_color = primary
-	update_icon()
-
-/obj/item/clothing/suit/roguetown/shirt/dress/royal/Initialize()
-	. = ..()
-	if(GLOB.lordprimary)
-		lordcolor(GLOB.lordprimary,GLOB.lordsecondary)
-	else
-		GLOB.lordcolor += src
-
-/obj/item/clothing/suit/roguetown/shirt/dress/royal/Destroy()
-	GLOB.lordcolor -= src
-	return ..()
 
 //................ Princess Dress ............... //
 /obj/item/clothing/suit/roguetown/shirt/dress/royal/princess
@@ -87,24 +73,6 @@
 		if(get_detail_color())
 			pic.color = get_detail_color()
 		add_overlay(pic)
-
-/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/winterdress/lordcolor(primary,secondary)
-	detail_color = primary
-	update_icon()
-
-/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/winterdress/Initialize()
-	. = ..()
-	if(GLOB.lordprimary)
-		lordcolor(GLOB.lordprimary,GLOB.lordsecondary)
-	else
-		GLOB.lordcolor += src
-
-/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/winterdress/Destroy()
-	GLOB.lordcolor -= src
-	return ..()
-
-
-
 
 //................ Cloak ............... //
 /obj/item/clothing/cloak/tribal

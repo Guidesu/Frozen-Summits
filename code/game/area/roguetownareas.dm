@@ -196,9 +196,9 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	ambientnight = AMB_FORESTNIGHT
 	spookysounds = SPOOKY_CROWS
 	spookynight = SPOOKY_FOREST
-	droning_sound = 'sound/music/area/forest.ogg'
-	droning_sound_dusk = 'sound/music/area/septimus.ogg'
-	droning_sound_night = 'sound/music/area/sleeping.ogg'
+	droning_sound = 'sound/ambience/grove.ogg'
+	droning_sound_dusk = null
+	droning_sound_night = 'sound/ambience/grove_night.ogg'
 	soundenv = 15
 	warden_area = TRUE
 	ambush_times = list("night","dawn","dusk","day")
@@ -211,6 +211,31 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 				/mob/living/carbon/human/species/goblin/npc/ambush = 30)
 	first_time_text = "THE FROZEN SUMMIT GROVE"
 	converted_type = /area/rogue/indoors/shelter/woods
+
+
+/area/rogue/outdoors/shadow_fell
+	name = "shadow cursed lands"
+	icon_state = "woods"
+	ambientsounds = AMB_FORESTDAY
+	ambientnight = AMB_FORESTNIGHT
+	spookysounds = SPOOKY_CROWS
+	spookynight = SPOOKY_FOREST
+	droning_sound = 'sound/ambience/shadowfell.ogg'
+	droning_sound_dusk = null
+	droning_sound = 'sound/ambience/shadowfell.ogg'
+	soundenv = 15
+	warden_area = TRUE
+	ambush_times = list("night","dawn","dusk","day")
+	ambush_types = list(
+				/turf/open/floor/rogue/dirt,
+				/turf/open/floor/rogue/grass)
+	ambush_mobs = list(
+				/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 40,
+				/mob/living/carbon/human/species/skeleton/npc/ambush = 10,
+				/mob/living/carbon/human/species/goblin/npc/ambush = 30)
+	first_time_text = "THE FROZEN SUMMIT CURSED SHADOW LANDS"
+
+
 /area/rogue/indoors/shelter/woods
 	icon_state = "woods"
 	droning_sound = 'sound/music/area/forest.ogg'
