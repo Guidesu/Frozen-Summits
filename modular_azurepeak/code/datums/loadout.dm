@@ -246,6 +246,14 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/feather
 	name = "Feather"
 	path = /obj/item/natural/feather
+
+/datum/loadout_item/battleskirt
+	name = "Battle Skirt"
+	path = /obj/item/clothing/cloak/fauld/battleskirt
+
+/datum/loadout_item/fauld
+	name = "Fauld"
+	path = /obj/item/clothing/cloak/fauld
 //below are not clothes and may be valuable and well, clearly superior to having clothes but you only get one choice, and it's a 'loadout' so maybe its fine.
 // Above clothing are usually hard to get on their own, some.
 
