@@ -750,6 +750,9 @@
 	H.mind.special_items["Folded Hat"] = /obj/item/clothing/head/roguetown/bucklehat
 	H.mind.special_items["Duelist's Hat"] = /obj/item/clothing/head/roguetown/duelhat
 	H.mind.special_items["Hood"] = /obj/item/clothing/head/roguetown/roguehood
+	H.mind.special_items["Takuhatsugasa Hat"] = /obj/item/clothing/head/roguetown/takuhatsugasa
+	H.mind.special_items["Torioigasa Hat"] = /obj/item/clothing/head/roguetown/tengai/torioigasa
+	H.mind.special_items["Gasa Hat"] = /obj/item/clothing/head/roguetown/tengai/gasa
 
 	H.mind.special_items["Tabard"] = /obj/item/clothing/cloak/tabard
 	H.mind.special_items["Surcoat"] = /obj/item/clothing/cloak/stabard
@@ -774,6 +777,10 @@
 	H.mind.special_items["Dress"] = /obj/item/clothing/suit/roguetown/shirt/dress/gen
 	H.mind.special_items["Bar Dress"] = /obj/item/clothing/suit/roguetown/shirt/dress
 	H.mind.special_items["Chemise"] = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress
+	H.mind.special_items["Eastern Monk Garb"] = /obj/item/clothing/suit/roguetown/shirt/rags/monkgarb
+	H.mind.special_items["Kimono"] = /obj/item/clothing/suit/roguetown/shirt/tunic/kimono
+	H.mind.special_items["Kamishimo"] = /obj/item/clothing/suit/roguetown/shirt/tunic/kamishimo
+	H.mind.special_items["Eastern Tribal Loincloth"] = /obj/item/clothing/under/roguetown/kaizoku/tribal
 	H.mind.special_items["Maid Dress"] = /obj/item/clothing/suit/roguetown/shirt/undershirt/maid_dress
 	H.mind.special_items["Sexy Dress"] = /obj/item/clothing/suit/roguetown/shirt/dress/gen/sexy
 	H.mind.special_items["Strapless Dress"] = /obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless
@@ -801,6 +808,10 @@
 	H.mind.special_items["Pipe"] = /obj/item/clothing/mask/cigarette/pipe
 	H.mind.special_items["Westman Pipe"] = /obj/item/clothing/mask/cigarette/pipe/westman
 	H.mind.special_items["Feather"] = /obj/item/natural/feather
+	H.mind.special_items["Battle Skirt"] = /obj/item/clothing/cloak/fauld/battleskirt
+	H.mind.special_items["Fauld"] = /obj/item/clothing/cloak/fauld
+	H.mind.special_items["Hakama"] = /obj/item/clothing/under/roguetown/tights/hakama
+	H.mind.special_items["Eyeband"] = /obj/item/clothing/mask/rogue/kaizoku/eyeband
 
 	H.mind.special_items["Silver Ring"] = /obj/item/clothing/ring/silver
 	H.mind.special_items["Gold Ring"] = /obj/item/clothing/ring/gold
