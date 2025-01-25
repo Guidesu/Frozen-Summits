@@ -63,6 +63,18 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Heavy Hood"
 	path = /obj/item/clothing/head/roguetown/roguehood/shalal/heavyhood
 
+/datum/loadout_item/takuhatsugasa
+	name = "Takuhatsugasa Hat"
+	path = /obj/item/clothing/head/roguetown/takuhatsugasa
+
+/datum/loadout_item/torioigasa
+	name = "Torioigasa Hat"
+	path = /obj/item/clothing/head/roguetown/tengai/torioigasa
+
+/datum/loadout_item/gasa
+	name = "Gasa Hat"
+	path = /obj/item/clothing/head/roguetown/tengai/gasa
+
 //CLOAKS
 /datum/loadout_item/tabard
 	name = "Tabard"
@@ -150,6 +162,22 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/chemise
 	name = "Chemise"
 	path = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress
+
+/datum/loadout_item/easternmonkgarb
+	name = "Eastern Monk Garb"
+	path = /obj/item/clothing/suit/roguetown/shirt/rags/monkgarb
+
+/datum/loadout_item/kimono
+	name = "Kimono"
+	path = /obj/item/clothing/suit/roguetown/shirt/tunic/kimono
+
+/datum/loadout_item/kamishimo
+	name = "Kamishimo"
+	path = /obj/item/clothing/suit/roguetown/shirt/tunic/kamishimo
+
+/datum/loadout_item/easterntribalgarb
+	name = "Eastern Tribal Loincloth"
+	path = /obj/item/clothing/under/roguetown/kaizoku/tribal
 
 /datum/loadout_item/maid_dress
 	name = "Maid Dress"
@@ -254,6 +282,14 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/fauld
 	name = "Fauld"
 	path = /obj/item/clothing/cloak/fauld
+
+/datum/loadout_item/hakama
+	name = "Hakama"
+	path = /obj/item/clothing/under/roguetown/tights/hakama
+
+/datum/loadout_item/eyeband
+	name = "Eyeband"
+	path = /obj/item/clothing/mask/rogue/kaizoku/eyeband
 //below are not clothes and may be valuable and well, clearly superior to having clothes but you only get one choice, and it's a 'loadout' so maybe its fine.
 // Above clothing are usually hard to get on their own, some.
 
