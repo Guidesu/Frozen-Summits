@@ -12,6 +12,10 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/shadow_fell)
+"aN" = (
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/shadow_fell)
 "bc" = (
 /turf/open/floor/rogue/church,
 /area/rogue/outdoors/shadow_fell)
@@ -33,6 +37,10 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/shadow_fell)
+"el" = (
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/shadow_fell)
 "eq" = (
 /obj/structure/fluff/statue/dragonl{
 	name = "Aegis of the Platinum Warden";
@@ -45,6 +53,10 @@
 /area/rogue/outdoors/shadow_fell)
 "eI" = (
 /obj/structure/flora/roguegrass/water/reeds,
+/turf/open/water/swamp/deep,
+/area/rogue/outdoors/shadow_fell)
+"eU" = (
+/obj/machinery/light/rogue/firebowl/stump,
 /turf/open/water/swamp/deep,
 /area/rogue/outdoors/shadow_fell)
 "fp" = (
@@ -72,8 +84,18 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/spider,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/shadow_fell)
+"he" = (
+/obj/structure/chair/wood/rogue/chair3{
+	dir = 4
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/shadow_fell)
 "hE" = (
 /turf/open/floor/rogue/twig,
+/area/rogue/outdoors/shadow_fell)
+"hH" = (
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/water/swamp,
 /area/rogue/outdoors/shadow_fell)
 "io" = (
 /turf/open/floor/rogue/cobblerock,
@@ -81,6 +103,16 @@
 "iD" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/swamp,
+/area/rogue/outdoors/shadow_fell)
+"ji" = (
+/obj/effect/wisp{
+	color = "black";
+	desc = "Will-o'-wisps... malicious little creatures that try to lure people into traps or their doom";
+	name = "Shadow Blessed Will-o'-wisp";
+	light_range = 2000;
+	light_color = "black"
+	},
+/turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/shadow_fell)
 "jq" = (
 /obj/structure/mineral_door/wood/deadbolt{
@@ -94,6 +126,10 @@
 /obj/structure/spider/stickyweb,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
+"kN" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/shadow_fell)
 "lo" = (
 /turf/closed/wall/mineral/rogue/wooddark/vertical,
 /area/rogue/outdoors/shadow_fell)
@@ -104,6 +140,10 @@
 "mn" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/mole,
 /turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/shadow_fell)
+"mp" = (
+/obj/structure/mineral_door/wood/fancywood,
+/turf/open/floor/rogue/twig,
 /area/rogue/outdoors/shadow_fell)
 "np" = (
 /obj/structure/fluff/railing/wood{
@@ -209,11 +249,18 @@
 /obj/structure/spider/stickyweb,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
+"wU" = (
+/obj/structure/bed/rogue,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/shadow_fell)
 "xj" = (
 /obj/structure/chair/wood/rogue{
 	dir = 4
 	},
 /turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/shadow_fell)
+"xY" = (
+/turf/open/floor/rogue/rooftop/green,
 /area/rogue/outdoors/shadow_fell)
 "yR" = (
 /obj/effect/landmark/start/adventurerlate{
@@ -271,6 +318,10 @@
 	aportalid = "grove_swamp"
 	},
 /turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/shadow_fell)
+"FH" = (
+/obj/structure/table/wood,
+/turf/open/floor/rogue/twig,
 /area/rogue/outdoors/shadow_fell)
 "FJ" = (
 /obj/machinery/light/rogue/firebowl/stump,
@@ -413,6 +464,10 @@
 	},
 /turf/open/floor/rogue/grassred,
 /area/rogue/outdoors/shadow_fell)
+"RN" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/shadow_fell)
 "Sm" = (
 /obj/structure/stairs/stone{
 	dir = 8
@@ -428,7 +483,7 @@
 /area/rogue/outdoors/shadow_fell)
 "SY" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/bogtroll,
-/turf/open/floor/rogue/twig,
+/turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/shadow_fell)
 "Ti" = (
 /obj/structure/stairs{
@@ -8177,10 +8232,10 @@ Hr
 AH
 AH
 AH
-Xi
-Xi
-Xi
-Xi
+io
+io
+io
+io
 dc
 dc
 dc
@@ -8334,8 +8389,8 @@ Zi
 AH
 AH
 AH
-Xi
-Xi
+io
+io
 AH
 AH
 dc
@@ -8489,10 +8544,10 @@ eI
 Hr
 AH
 Ia
-Xi
-Xi
-Xi
-Xi
+io
+io
+io
+io
 AH
 AH
 AH
@@ -8646,8 +8701,8 @@ eI
 eI
 Su
 AH
-Xi
-Xi
+io
+io
 AH
 AH
 AH
@@ -8803,8 +8858,8 @@ nH
 eI
 AH
 AH
-Xi
-Xi
+io
+io
 AH
 AH
 AH
@@ -8960,8 +9015,8 @@ nH
 eI
 iD
 AH
-Xi
-AH
+io
+aN
 AH
 AH
 AH
@@ -9117,7 +9172,7 @@ eI
 nH
 iD
 iD
-hE
+io
 AH
 AH
 AH
@@ -9274,7 +9329,7 @@ eI
 eI
 iD
 iD
-hE
+io
 iD
 AH
 Su
@@ -9431,7 +9486,7 @@ nH
 nH
 nH
 iD
-hE
+io
 iD
 AH
 AH
@@ -9588,7 +9643,7 @@ nH
 nH
 nH
 eI
-hE
+io
 nH
 iD
 AH
@@ -9745,7 +9800,7 @@ nH
 nH
 nH
 SY
-hE
+io
 nH
 iD
 iD
@@ -9901,7 +9956,7 @@ iD
 iD
 JJ
 JJ
-hE
+io
 eI
 eI
 eI
@@ -10058,7 +10113,7 @@ AH
 iD
 iD
 iD
-hE
+io
 nH
 nH
 eI
@@ -10212,10 +10267,10 @@ eI
 iD
 Su
 AH
-Ia
-hE
-hE
-hE
+ji
+io
+io
+io
 JJ
 nH
 nH
@@ -10369,8 +10424,8 @@ AH
 AH
 AH
 AH
-Xi
-Xi
+io
+io
 AH
 iD
 iD
@@ -10526,8 +10581,8 @@ iD
 AH
 AH
 AH
-Xi
-Xi
+io
+io
 AH
 iD
 iD
@@ -10682,8 +10737,8 @@ JJ
 iD
 Su
 AH
-Xi
-Xi
+io
+io
 AH
 AH
 AH
@@ -10839,8 +10894,8 @@ JJ
 AH
 AH
 AH
-qx
-Xi
+SY
+io
 AH
 Su
 AH
@@ -10997,7 +11052,7 @@ AH
 Su
 Su
 AH
-Xi
+io
 Xi
 AH
 AH
@@ -11154,7 +11209,7 @@ Su
 AH
 AH
 AH
-Xi
+io
 AH
 AH
 AH
@@ -11310,8 +11365,8 @@ iD
 AH
 AH
 AH
-Xi
-Xi
+io
+io
 AH
 AH
 iD
@@ -11466,8 +11521,8 @@ JJ
 iD
 iD
 AH
-AH
-Xi
+aN
+io
 AH
 AH
 Su
@@ -11619,12 +11674,12 @@ eI
 JJ
 JJ
 JJ
-hE
-hE
-hE
-hE
-Xi
-Xi
+io
+io
+io
+io
+io
+io
 AH
 AH
 AH
@@ -11776,7 +11831,7 @@ iD
 iD
 iD
 iD
-hE
+io
 iD
 iD
 AH
@@ -11930,10 +11985,10 @@ nH
 nH
 nH
 iD
-Ia
-hE
-hE
-hE
+ji
+io
+io
+io
 JJ
 iD
 iD
@@ -12087,7 +12142,7 @@ nH
 iD
 JJ
 AH
-Xi
+io
 Xi
 iD
 iD
@@ -12244,7 +12299,7 @@ nH
 JJ
 AH
 Su
-Xi
+io
 qx
 AH
 iD
@@ -12401,7 +12456,7 @@ iD
 iD
 iD
 AH
-AH
+io
 Xi
 AH
 AH
@@ -12550,15 +12605,15 @@ JJ
 JJ
 JJ
 iD
-nH
+eU
 hE
 eI
 eI
-hE
-hE
-hE
-hE
-Xi
+io
+io
+io
+io
+io
 Xi
 AH
 Su
@@ -12708,15 +12763,15 @@ iD
 iD
 iD
 iD
-hE
-hE
-hE
-hE
+io
+io
+io
+io
 iD
 iD
 AH
 Ia
-Xi
+el
 hE
 iD
 iD
@@ -12865,9 +12920,9 @@ AH
 AH
 iD
 iD
-hE
+io
 eI
-nH
+eU
 nH
 iD
 iD
@@ -13020,11 +13075,11 @@ Xi
 Xi
 Xi
 qx
-hE
-hE
-hE
+io
+io
+io
 eI
-nH
+io
 nH
 JJ
 iD
@@ -13175,16 +13230,16 @@ Xi
 Xi
 Xi
 Xi
-AH
-AH
-AH
+aN
+io
+io
 iD
 iD
 eI
 eI
 nH
 JJ
-JJ
+io
 JJ
 JJ
 qb
@@ -13333,7 +13388,7 @@ AH
 Xi
 AH
 Su
-AH
+io
 iD
 iD
 JJ
@@ -13487,10 +13542,10 @@ Su
 AH
 AH
 Xi
-Xi
-AH
-AH
-Ia
+io
+io
+io
+ji
 iD
 JJ
 JJ
@@ -13643,8 +13698,8 @@ iD
 AH
 AH
 Su
-Xi
-Xi
+io
+io
 AH
 AH
 AH
@@ -13800,7 +13855,7 @@ iD
 iD
 AH
 iD
-iD
+RN
 hE
 AH
 Su
@@ -13955,9 +14010,9 @@ nH
 eI
 eI
 iD
+hH
 iD
-iD
-JJ
+io
 hE
 AH
 iD
@@ -14111,10 +14166,10 @@ nH
 nH
 eI
 HS
-JJ
-iD
-JJ
-JJ
+io
+io
+io
+io
 hE
 iD
 iD
@@ -14268,7 +14323,7 @@ HS
 eI
 eI
 nH
-JJ
+io
 iD
 hE
 hE
@@ -14423,9 +14478,9 @@ eI
 eI
 eI
 eI
+eU
 nH
-nH
-JJ
+io
 iD
 hE
 iD
@@ -14570,19 +14625,19 @@ JJ
 JJ
 iD
 iD
-AH
+aN
 Xi
 Xi
 AH
 AH
 iD
-nH
-nH
-nH
-eI
-nH
-nH
-JJ
+io
+io
+io
+io
+io
+io
+io
 iD
 hE
 JJ
@@ -14721,20 +14776,20 @@ nH
 iD
 iD
 hE
-iD
-iD
-hE
-hE
-hE
-hE
-Xi
-Xi
-AH
-AH
-AH
-iD
-nH
-nH
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+io
+eU
 nH
 eI
 HS
@@ -14877,9 +14932,9 @@ nH
 nH
 JJ
 JJ
-hE
-JJ
-iD
+io
+io
+hH
 hE
 JJ
 iD
@@ -15033,8 +15088,8 @@ eI
 iD
 iD
 iD
-JJ
-hE
+io
+io
 hE
 hE
 hE
@@ -15189,8 +15244,8 @@ nH
 eI
 Ia
 AH
-iD
-JJ
+io
+io
 hE
 JJ
 JJ
@@ -15340,13 +15395,13 @@ HS
 eI
 eI
 hE
-nH
+eU
 eI
 iD
 iD
 Xi
-hE
-hE
+io
+io
 hE
 hE
 iD
@@ -15496,13 +15551,13 @@ iD
 JJ
 nH
 eI
-hE
-hE
-hE
-hE
-Xi
-Xi
-AH
+io
+io
+io
+io
+io
+io
+io
 iD
 iD
 iD
@@ -15650,15 +15705,15 @@ Su
 AH
 AH
 iD
+hH
 iD
 iD
-iD
-hE
+io
 iD
 iD
 AH
-Xi
-AH
+io
+io
 Su
 iD
 iD
@@ -15803,19 +15858,19 @@ eI
 hE
 eI
 iD
-AH
-AH
-Xi
-Xi
-hE
-hE
-hE
-hE
+io
+io
+io
+io
+io
+io
+io
+io
 JJ
 iD
-AH
-Su
-AH
+io
+kN
+aN
 AH
 AH
 iD
@@ -15957,10 +16012,10 @@ Su
 iD
 nH
 nH
-hE
-hE
-hE
-Xi
+io
+io
+io
+io
 Xi
 Xi
 AH
@@ -15970,7 +16025,7 @@ JJ
 JJ
 iD
 iD
-iD
+RN
 AH
 AH
 Su
@@ -16115,12 +16170,12 @@ iD
 nH
 nH
 eI
-nH
+eU
 iD
 AH
 AH
 AH
-Su
+AH
 AH
 eI
 eI
@@ -16275,10 +16330,10 @@ nH
 nH
 eI
 iD
-Su
-AH
-AH
-JJ
+WI
+mp
+WI
+WI
 nH
 nH
 nH
@@ -16432,10 +16487,10 @@ nH
 HS
 nH
 eI
-AH
-AH
-iD
-JJ
+WI
+hE
+hE
+WI
 nH
 nH
 nH
@@ -16589,10 +16644,10 @@ nH
 nH
 eI
 eI
-eI
-eI
-eI
-iD
+WI
+he
+hE
+Ov
 eI
 nH
 nH
@@ -16746,10 +16801,10 @@ nH
 eI
 eI
 nH
-nH
-nH
-nH
-HS
+WI
+FH
+wU
+WI
 eI
 nH
 JJ
@@ -16902,11 +16957,11 @@ nH
 nH
 eI
 nH
-HS
 nH
-nH
-nH
-nH
+WI
+WI
+WI
+WI
 eI
 eI
 iD
@@ -40611,10 +40666,10 @@ eE
 eE
 eE
 eE
-eE
-eE
-eE
-eE
+xY
+xY
+xY
+xY
 eE
 eE
 eE
@@ -40768,10 +40823,10 @@ eE
 eE
 eE
 eE
-eE
-eE
-eE
-eE
+xY
+xY
+xY
+xY
 eE
 eE
 eE
@@ -40925,10 +40980,10 @@ eE
 eE
 eE
 eE
-eE
-eE
-eE
-eE
+xY
+xY
+xY
+xY
 eE
 eE
 eE
@@ -41082,10 +41137,10 @@ eE
 eE
 eE
 eE
-eE
-eE
-eE
-eE
+xY
+xY
+xY
+xY
 eE
 eE
 eE
@@ -41239,10 +41294,10 @@ eE
 eE
 eE
 eE
-eE
-eE
-eE
-eE
+xY
+xY
+xY
+xY
 eE
 eE
 eE

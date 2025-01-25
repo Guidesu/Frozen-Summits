@@ -5064,9 +5064,9 @@
 /obj/structure/table/wood{
 	icon_state = "tablewood3"
 	},
-/obj/item/rogueweapon/huntingknife/idagger/steel/tanto,
-/obj/item/rogueweapon/huntingknife/idagger/steel/parrying,
 /obj/machinery/light/rogue/wallfire/candle/l,
+/obj/item/rogueweapon/huntingknife/kunai,
+/obj/item/rogueweapon/sword/short/wakizashi,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/woods)
 "Oj" = (
@@ -5363,7 +5363,7 @@
 /area/rogue/outdoors/woods)
 "Rr" = (
 /obj/structure/mineral_door/wood/window,
-/turf/closed/wall/mineral/rogue/decowood/vert,
+/turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods)
 "Rs" = (
 /obj/structure/fluff/railing/border{
@@ -5930,8 +5930,8 @@
 /turf/open/floor/rogue/church,
 /area/rogue/outdoors/woods)
 "Vk" = (
-/obj/structure/mineral_door/wood/fancywood,
-/turf/closed,
+/obj/structure/mineral_door/wood/window,
+/turf/open/floor/rogue/herringbone,
 /area/rogue/outdoors/woods)
 "Vl" = (
 /obj/structure/gravemarker,
@@ -6204,18 +6204,17 @@
 	dir = 5
 	},
 /obj/structure/closet/crate/roguecloset,
-/obj/item/clothing/mask/rogue/shepherd/shadowmask,
-/obj/item/clothing/neck/roguetown/chaincoif/full,
-/obj/item/storage/belt/rogue/leather/plaquesilver,
-/obj/item/clothing/suit/roguetown/armor/leather/studded,
-/obj/item/clothing/shoes/roguetown/grenzelhoft,
-/obj/item/clothing/head/roguetown/paddedcap,
 /obj/item/clothing/gloves/roguetown/fingerless/shadowgloves,
-/obj/item/clothing/wrists/roguetown/bracers,
-/obj/item/clothing/under/roguetown/heavy_leather_pants,
-/obj/item/clothing/cloak/half/rider/red,
-/obj/item/clothing/suit/roguetown/armor/chainmail,
 /obj/machinery/light/rogue/wallfire/candle/l,
+/obj/item/clothing/under/roguetown/heavy_leather_pants/shinobizubon,
+/obj/item/clothing/shoes/roguetown/boots/jikatabi/shinobi,
+/obj/item/clothing/suit/roguetown/shirt/looseshirt/shinobi,
+/obj/item/clothing/head/roguetown/shinobi_zukin,
+/obj/item/clothing/suit/roguetown/armor/leather/studded/shozoku,
+/obj/item/clothing/neck/roguetown/chaincoif/karuta_zukin/military,
+/obj/item/clothing/cloak/half/rider/red,
+/obj/item/clothing/mask/rogue/kaizoku/menpo/facemask/colourable/kitsune,
+/obj/item/clothing/wrists/roguetown/bracers/leather/khudagach,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/woods)
 "XD" = (

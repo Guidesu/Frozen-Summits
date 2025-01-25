@@ -4812,9 +4812,8 @@
 /area/rogue/indoors)
 "kLI" = (
 /obj/structure/fluff/railing/border{
-	dir = 9;
-	pixel_y = -26;
-	pixel_x = -6
+	icon_state = "border";
+	dir = 9
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/mountains)
