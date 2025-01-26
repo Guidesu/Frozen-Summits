@@ -109,6 +109,8 @@
 /datum/species/human/northern/proc/languages(mob/living/carbon/human/foreign)
 	if(foreign.skin_tone == SKIN_COLOR_GRENZELHOFT)
 		foreign.grant_language(/datum/language/grenzelhoftian)
+	else if(foreign.skin_tone == SKIN_COLOR_KAZENGUN)
+		foreign.grant_language(/datum/language/abyssal)
 
 /datum/species/human/northern/get_skin_list()
 	return list(
