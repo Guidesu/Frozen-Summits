@@ -2456,7 +2456,12 @@
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/outdoors/rtfield)
 "dKn" = (
-/turf/open/floor/rogue/carpet/lord/left,
+/obj/structure/fermenting_barrel/water{
+	pixel_x = 5;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/glass/cup,
+/turf/open/floor/carpet/inn,
 /area/rogue/outdoors/rtfield)
 "dKO" = (
 /turf/open/floor/rogue/dirt/ambush,
@@ -2984,7 +2989,7 @@
 /obj/machinery/light/rogue/torchholder{
 	dir = 1
 	},
-/turf/open/floor/rogue/carpet/lord/center,
+/turf/open/floor/carpet/inn,
 /area/rogue/outdoors/rtfield)
 "fsg" = (
 /obj/structure/chair/stool/rogue,
@@ -3275,7 +3280,9 @@
 	pixel_y = 8;
 	pixel_x = -16
 	},
-/turf/open/floor/rogue/carpet/lord/center,
+/obj/structure/bed/rogue/inn,
+/obj/item/bedsheet/rogue/wool,
+/turf/open/floor/carpet/inn,
 /area/rogue/outdoors/rtfield)
 "giU" = (
 /obj/structure/stairs{
@@ -3447,7 +3454,7 @@
 /turf/open/floor/rogue/tile/bath,
 /area/rogue/outdoors/exposed/bath)
 "gFA" = (
-/turf/open/floor/rogue/carpet/lord/center,
+/turf/open/floor/carpet/inn,
 /area/rogue/outdoors/rtfield)
 "gFS" = (
 /obj/structure/table/church/m,
@@ -4833,8 +4840,12 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/rtfield)
 "kBJ" = (
-/obj/structure/closet/crate/roguecloset/inn/south,
-/turf/open/floor/rogue/carpet/lord/right,
+/obj/structure/fermenting_barrel/water{
+	pixel_x = -5;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/glass/cup,
+/turf/open/floor/carpet/inn,
 /area/rogue/outdoors/rtfield)
 "kBZ" = (
 /obj/structure/ladder,
@@ -7288,7 +7299,7 @@
 /obj/machinery/light/rogue/wallfire{
 	pixel_y = 32
 	},
-/turf/open/floor/rogue/carpet/lord/center,
+/turf/open/floor/carpet/inn,
 /area/rogue/outdoors/rtfield)
 "qmO" = (
 /obj/structure/flora/roguegrass/water,
@@ -7919,9 +7930,6 @@
 	},
 /turf/open/floor/rogue/ruinedwood/platform,
 /area/rogue/outdoors/mountains)
-"rNe" = (
-/turf/open/floor/rogue/carpet/lord/right,
-/area/rogue/outdoors/rtfield)
 "rNp" = (
 /obj/structure/fluff/railing/fence{
 	icon_state = "fence";
@@ -8653,7 +8661,7 @@
 /area/rogue/under/cave)
 "tBr" = (
 /obj/structure/closet/crate/roguecloset/inn/south,
-/turf/open/floor/rogue/carpet/lord/left,
+/turf/open/floor/carpet/inn,
 /area/rogue/outdoors/rtfield)
 "tBy" = (
 /obj/structure/closet/crate/roguecloset,
@@ -42965,8 +42973,8 @@ abY
 abZ
 abZ
 tBr
-dKn
-dKn
+gFA
+gFA
 vxu
 dPV
 dPV
@@ -43121,7 +43129,7 @@ acc
 acc
 acc
 abY
-gFA
+kBJ
 gFA
 frZ
 qYz
@@ -43435,7 +43443,7 @@ ace
 rDz
 ace
 abY
-gFA
+dKn
 gFA
 frZ
 qYz
@@ -43592,9 +43600,9 @@ acf
 rDz
 rDz
 abY
-kBJ
-rNe
-rNe
+tBr
+gFA
+gFA
 vxu
 dPV
 dPV
