@@ -48,7 +48,7 @@
 	hairyness = ""
 	use_f = FALSE
 	soundpack_m = /datum/voicepack/male/abyssariad
-	soundpack_f = /datum/voicepack/female
+	soundpack_f = /datum/voicepack/female/abyssariad
 
 	offset_features = list(OFFSET_ID = list(0,1), OFFSET_GLOVES = list(0,1), OFFSET_WRISTS = list(0,1),\
 	OFFSET_CLOAK = list(0,1), OFFSET_FACEMASK = list(0,1), OFFSET_HEAD = list(0,1), \
