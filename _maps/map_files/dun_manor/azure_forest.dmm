@@ -4526,6 +4526,10 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
+"KS" = (
+/obj/machinery/light/rogue/torchholder,
+/turf/closed/mineral/rogue/bedrock,
+/area/rogue/outdoors/woods)
 "KT" = (
 /obj/structure/mineral_door/wood/violet{
 	lockid = "tower1"
@@ -4784,6 +4788,13 @@
 "Nh" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/swamp,
+/area/rogue/outdoors/woods)
+"Nn" = (
+/obj/machinery/light/rogue/torchholder{
+	dir = 1;
+	pixel_y = 26
+	},
+/turf/closed/wall/mineral/rogue/wooddark/horizontal,
 /area/rogue/outdoors/woods)
 "Nq" = (
 /obj/structure/bed/rogue/inn/hay,
@@ -31104,11 +31115,11 @@ pC
 "}
 (4,1,2) = {"
 pC
-pC
+KS
 ag
 od
 od
-nD
+Nn
 ZO
 Xq
 vW
@@ -31889,11 +31900,11 @@ pC
 "}
 (9,1,2) = {"
 pC
-pC
+KS
 Ui
 Ui
 Ui
-nD
+Nn
 Ji
 Xq
 Ae
