@@ -7,6 +7,12 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
+"ag" = (
+/obj/structure/flora/newbranch{
+	dir = 8
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/woods)
 "ai" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -45,6 +51,10 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/woods)
+"aq" = (
+/obj/machinery/light/rogue/firebowl,
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/outdoors/woods)
 "as" = (
 /obj/structure/flora/roguetree,
 /turf/open/floor/rogue/dirt/road,
@@ -54,23 +64,30 @@
 /area/rogue/outdoors/woods)
 "aC" = (
 /obj/structure/closet/crate/roguecloset/inn/south,
-/obj/item/clothing/shoes/roguetown/boots/armor,
-/obj/item/clothing/head/roguetown/helmet/heavy/astratahelm,
 /obj/item/clothing/suit/roguetown/armor/chainmail/bikini,
-/obj/item/clothing/suit/roguetown/armor/otavan,
-/obj/item/clothing/gloves/roguetown/plate,
-/obj/item/clothing/under/roguetown/platelegs,
 /obj/item/clothing/cloak/half/rider,
 /obj/item/clothing/under/roguetown/heavy_leather_pants/shorts,
 /obj/item/clothing/suit/roguetown/armor/leather/studded/bikini,
-/obj/item/clothing/neck/roguetown/chaincoif/full,
 /obj/item/clothing/head/roguetown/grenzelhofthat,
 /obj/item/clothing/shoes/roguetown/grenzelhoft,
 /obj/item/clothing/gloves/roguetown/fingerless/shadowgloves,
-/obj/item/clothing/wrists/roguetown/bracers,
 /obj/machinery/light/rogue/wallfire/candle/l,
-/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk,
-/obj/item/clothing/mask/rogue/facemask/steel,
+/obj/item/clothing/mask/rogue/kaizoku/menpo/steel/half{
+	desc = "The lower part of a menpo portraying the maws of a ogre's head. It covers only the neck and the mouth, often used by warriors that cares about their sight... this particular one has the initals S.E on it."
+	},
+/obj/item/clothing/suit/roguetown/armor/chainmail/tatami,
+/obj/item/clothing/suit/roguetown/armor/plate/full/nanbando{
+	desc = "A complete set of abyssariad steel armor, refined and with additional auxiliary parts for protection. this one has the initals S.E"
+	},
+/obj/item/clothing/shoes/roguetown/boots/armor,
+/obj/item/clothing/head/roguetown/helmet/heavy/necran,
+/obj/item/clothing/neck/roguetown/chaincoif/karuta_zukin/military,
+/obj/item/clothing/neck/roguetown/psicross/silver,
+/obj/item/clothing/gloves/roguetown/plate/lamellaetekko,
+/obj/item/clothing/under/roguetown/platelegs/weepershanwenkai,
+/obj/item/rogueweapon/sword/long/greatsword/odachi{
+	desc = "Greatsword traditionally wielded in open battlefields just as it is a ceremonial blade. Though impractical for duels, it breaks spearlines and shields on a whim, requiring momentum with each slash. this one has the initals S.E on its blade."
+	},
 /turf/open/floor/rogue/carpet,
 /area/rogue/outdoors/woods)
 "aD" = (
@@ -308,6 +325,28 @@
 /obj/structure/chair/stool/rogue,
 /mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods)
+"cD" = (
+/obj/structure/closet/crate/chest/neu_fancy,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
+/turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/woods)
 "cK" = (
 /obj/item/fishingrod,
@@ -630,6 +669,10 @@
 "ft" = (
 /obj/structure/mineral_door/bars,
 /turf/open/floor/rogue/hexstone,
+/area/rogue/outdoors/woods)
+"fu" = (
+/obj/structure/flora/newtree,
+/turf/closed/wall/mineral/rogue/stonebrick,
 /area/rogue/outdoors/woods)
 "fx" = (
 /obj/effect/wisp{
@@ -1120,6 +1163,10 @@
 	},
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/outdoors/woods)
+"jA" = (
+/obj/structure/closet/crate/roguecloset,
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/outdoors/woods)
 "jB" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy,
 /area/rogue/outdoors/woods)
@@ -1537,6 +1584,12 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
+"nt" = (
+/obj/structure/fermenting_barrel/hagwoodbitter,
+/obj/item/reagent_containers/glass/cup/wooden,
+/obj/item/reagent_containers/glass/cup/wooden,
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/outdoors/woods)
 "nw" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/rogue/dirt/road,
@@ -1544,6 +1597,10 @@
 "nx" = (
 /obj/structure/flora/roguegrass/herb/salvia,
 /turf/open/floor/rogue/grass/green,
+/area/rogue/outdoors/woods)
+"nD" = (
+/obj/structure/mineral_door/wood/fancywood,
+/turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/woods)
 "nE" = (
 /obj/structure/fluff/railing/border{
@@ -2455,6 +2512,14 @@
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/woods)
+"ve" = (
+/obj/item/natural/rock/gem,
+/obj/structure/gravemarker{
+	pixel_y = 10;
+	pixel_x = -9
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/woods)
 "vi" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/snacks/rogue/pie/cooked/pot,
@@ -2922,6 +2987,12 @@
 /obj/machinery/light/rogue/oven/south,
 /obj/machinery/light/rogue/hearth,
 /turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/outdoors/woods)
+"zy" = (
+/obj/structure/flora/newbranch{
+	dir = 4
+	},
+/turf/open/transparent/openspace,
 /area/rogue/outdoors/woods)
 "zA" = (
 /turf/open/floor/rogue/wood,
@@ -3755,7 +3826,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 4
 	},
-/turf/closed,
+/turf/open/transparent/openspace,
 /area/rogue/outdoors/woods)
 "Fc" = (
 /obj/structure/flora/newbranch{
@@ -4275,6 +4346,11 @@
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/woods)
+"Ji" = (
+/obj/structure/bed/rogue/inn/double,
+/obj/item/bedsheet/rogue/fabric_double,
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/outdoors/woods)
 "Jj" = (
 /obj/structure/handcart{
 	dir = 4
@@ -4298,6 +4374,10 @@
 "Ju" = (
 /obj/structure/bed/rogue/inn/hay,
 /turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/woods)
+"Jx" = (
+/obj/machinery/light/rogue/wallfire,
+/turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/outdoors/woods)
 "JB" = (
 /obj/machinery/light/rogue/wallfire/candle/blue,
@@ -4998,6 +5078,10 @@
 	icon_state = "border"
 	},
 /turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods)
+"Qu" = (
+/obj/structure/flora/newbranch,
+/turf/open/transparent/openspace,
 /area/rogue/outdoors/woods)
 "Qv" = (
 /obj/structure/mineral_door/wood/window,
@@ -6148,6 +6232,12 @@
 /obj/item/grown/log/tree,
 /obj/item/grown/log/tree/stick,
 /turf/open/water/swamp/deep,
+/area/rogue/outdoors/woods)
+"ZO" = (
+/obj/structure/wallladder{
+	dir = 1
+	},
+/turf/open/floor/rogue/grass/green,
 /area/rogue/outdoors/woods)
 "ZR" = (
 /obj/effect/spawner/lootdrop/roguetown/dungeon,
@@ -44813,9 +44903,9 @@ kV
 kV
 kV
 jW
-By
-By
-By
+jW
+jW
+jW
 bP
 bP
 Ek
@@ -44972,9 +45062,9 @@ bP
 By
 By
 By
-bP
-bP
-bP
+Ek
+Ek
+Ek
 bP
 Ek
 Ek
@@ -45126,12 +45216,12 @@ kV
 kV
 kV
 bP
-bP
+Ek
 bP
 bP
 bP
 jW
-jW
+By
 jW
 jW
 jW
@@ -45281,15 +45371,15 @@ pC
 pC
 kV
 kV
+Ek
+By
+By
+Ek
 bP
-jW
-jW
-bP
-bP
-jW
-jW
 jW
 By
+By
+jW
 jW
 jW
 jW
@@ -45438,19 +45528,19 @@ pC
 pC
 kV
 kV
-bP
+Ek
 jW
 jW
-bP
+Ek
+By
+By
+jW
+By
 jW
 jW
 jW
 jW
 jW
-jW
-jW
-jW
-GX
 jW
 bP
 Yi
@@ -45595,15 +45685,15 @@ pC
 pC
 kV
 bP
-bP
+Ek
 jW
 jW
 bP
+By
 jW
-GX
 jW
-bP
-bP
+Ek
+ZO
 bP
 jW
 jW
@@ -45752,14 +45842,14 @@ pC
 pC
 kV
 bP
+By
 jW
 jW
+Ek
+By
+By
 jW
-bP
-jW
-jW
-jW
-jW
+By
 bP
 bP
 bP
@@ -45909,17 +45999,17 @@ pC
 pC
 kV
 bP
-jW
-jW
-bP
-bP
-jW
-jW
-jW
-jW
-bP
-bP
+By
+By
 Ek
+Ek
+jW
+jW
+By
+By
+bP
+bP
+bP
 jW
 jW
 jW
@@ -46068,13 +46158,13 @@ kV
 kV
 kV
 jW
-bP
-bP
-jW
-jW
-jW
-bP
 Ek
+bP
+jW
+jW
+jW
+Ek
+bP
 bP
 bP
 jW
@@ -46225,12 +46315,12 @@ Ry
 kV
 kV
 kV
-bP
-bP
-jW
-jW
-jW
-bP
+Ek
+Ek
+By
+By
+By
+Ek
 bP
 bP
 bP
@@ -46386,13 +46476,13 @@ bP
 bP
 jW
 jW
-GX
 jW
 jW
 jW
 jW
 jW
-By
+jW
+jW
 jW
 jW
 Yi
@@ -46704,7 +46794,7 @@ bP
 jW
 jW
 jW
-By
+jW
 jW
 jW
 jW
@@ -47013,14 +47103,14 @@ Ry
 kV
 kV
 MK
-GX
 jW
-Ek
-Ek
+jW
+bP
+bP
 bP
 jW
 Ek
-Yl
+bP
 bP
 bP
 bP
@@ -47487,7 +47577,7 @@ Vh
 fx
 jW
 jW
-GX
+jW
 jW
 jW
 jW
@@ -68396,7 +68486,7 @@ ew
 ew
 ew
 ew
-ew
+ve
 ew
 ew
 ew
@@ -68994,8 +69084,8 @@ pC
 pC
 ew
 ew
-ew
-ew
+ag
+ag
 ew
 ew
 ew
@@ -69148,12 +69238,12 @@ pC
 pC
 pC
 pC
-ew
-ew
-ew
-ew
-ew
-ew
+ag
+ag
+ag
+ag
+ag
+ag
 ew
 ew
 ew
@@ -69305,13 +69395,13 @@ pC
 pC
 pC
 pC
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+fu
+Ut
+Ut
+Ut
+Ut
+fu
+Qu
 ew
 ew
 ew
@@ -69462,14 +69552,14 @@ pC
 pC
 pC
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+Ut
+Xq
+Xq
+Xq
+Xq
+Ut
+Qu
+Qu
 ew
 ew
 ew
@@ -69617,15 +69707,15 @@ pC
 pC
 pC
 pC
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+fu
+Ut
+Ut
+Ji
+Xq
+Xq
+Ut
+Ut
+Qu
 ew
 ew
 ew
@@ -69774,14 +69864,14 @@ pC
 pC
 pC
 pC
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+Ut
+Xq
+Ut
+Ut
+Ut
+Ae
+Ut
+aq
 ew
 ew
 ew
@@ -69931,14 +70021,14 @@ pC
 pC
 pC
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+Jx
+Xq
+Xq
+Xq
+Xq
+Xq
+nD
+Xq
 ew
 ew
 ew
@@ -70088,14 +70178,14 @@ pC
 pC
 pC
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+Ut
+cD
+Xq
+Xq
+Xq
+Xq
+Ut
+aq
 ew
 ew
 ew
@@ -70245,16 +70335,16 @@ pC
 pC
 pC
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+fu
+Ut
+nt
+Xq
+Xq
+Xq
+Ut
+Ut
+Qu
+Qu
 ew
 ew
 ew
@@ -70404,13 +70494,13 @@ pC
 pC
 pC
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+Ut
+jA
+jA
+Xq
+Xq
+Ut
+Qu
 ew
 ew
 ew
@@ -70561,14 +70651,14 @@ pC
 pC
 pC
 pC
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+fu
+Ut
+Ut
+Ut
+Ut
+fu
+Qu
+Qu
 ew
 ew
 ew
@@ -70718,12 +70808,12 @@ pC
 pC
 pC
 pC
-ew
-ew
-ew
-ew
-ew
-ew
+zy
+zy
+zy
+zy
+zy
+zy
 ew
 ew
 ew
@@ -70876,11 +70966,11 @@ pC
 pC
 pC
 pC
+zy
 ew
 ew
-ew
-ew
-ew
+zy
+zy
 ew
 ew
 ew
@@ -93641,12 +93731,12 @@ pC
 pC
 pC
 pC
-ew
-ew
-ew
-ew
-ew
-ew
+su
+su
+su
+su
+su
+su
 ew
 ew
 ew
@@ -93798,12 +93888,12 @@ pC
 pC
 pC
 ew
-ew
-ew
-ew
-ew
-ew
-ew
+su
+su
+su
+su
+su
+su
 ew
 ew
 ew
@@ -93953,14 +94043,14 @@ pC
 pC
 pC
 pC
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+su
+su
+su
+su
+su
+su
+su
+su
 ew
 ew
 ew
@@ -94110,14 +94200,14 @@ pC
 pC
 pC
 pC
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+su
+su
+su
+su
+su
+su
+su
+su
 ew
 ew
 ew
@@ -94267,14 +94357,14 @@ pC
 pC
 pC
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+su
+su
+su
+su
+su
+su
+su
+su
 ew
 ew
 ew
@@ -94424,14 +94514,14 @@ pC
 pC
 pC
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+su
+su
+su
+su
+su
+su
+su
+su
 ew
 ew
 ew
@@ -94581,14 +94671,14 @@ pC
 pC
 pC
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+su
+su
+su
+su
+su
+su
+su
+su
 ew
 ew
 ew
@@ -94740,12 +94830,12 @@ pC
 pC
 pC
 ew
-ew
-ew
-ew
-ew
-ew
-ew
+su
+su
+su
+su
+su
+su
 ew
 ew
 ew
@@ -94897,12 +94987,12 @@ pC
 pC
 pC
 pC
-ew
-ew
-ew
-ew
-ew
-ew
+su
+su
+su
+su
+su
+su
 ew
 ew
 ew
