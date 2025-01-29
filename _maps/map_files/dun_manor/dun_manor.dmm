@@ -1787,12 +1787,6 @@
 /obj/item/mundane/puzzlebox/easy,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/tavern)
-"clp" = (
-/obj/structure/mineral_door/wood/violet{
-	keylock = 0
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/indoors)
 "clC" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/grasscold,
@@ -4737,6 +4731,8 @@
 /area/rogue/indoors/town/tavern)
 "kuZ" = (
 /obj/item/roguemachine/mastermail,
+/obj/structure/bed/rogue/inn,
+/obj/item/bedsheet/rogue/wool,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "kvF" = (
@@ -6130,8 +6126,9 @@
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/woods)
 "nBv" = (
+/obj/effect/landmark/start/servant,
 /obj/structure/roguemachine/stockpile,
-/turf/closed/wall/mineral/rogue/wood,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
 "nBF" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/bull,
@@ -7359,7 +7356,6 @@
 "qAl" = (
 /obj/structure/table/wood,
 /obj/item/roguekey/steward,
-/obj/structure/roguemachine/stockpile,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "qAp" = (
@@ -46477,7 +46473,7 @@ ntv
 aat
 aaw
 aaw
-aaz
+nBv
 aaz
 aaw
 aaw
@@ -46792,7 +46788,7 @@ ahG
 aat
 aat
 aat
-clp
+rDz
 aat
 aat
 aat
@@ -46953,7 +46949,7 @@ bRO
 aaI
 bRO
 bRO
-nBv
+aat
 mVe
 abn
 loN
@@ -51212,7 +51208,7 @@ kuZ
 tSL
 oSX
 bRO
-bRO
+ctF
 bRO
 bRO
 aat
@@ -51522,10 +51518,10 @@ xOC
 xOC
 xOC
 aat
-ctF
-xQA
 bez
+bRO
 unl
+bRO
 aaM
 bRO
 qAl
