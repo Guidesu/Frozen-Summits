@@ -775,8 +775,8 @@
 /area/rogue/outdoors/woods)
 "gh" = (
 /obj/structure/table/wood,
-/obj/item/scrying,
 /obj/machinery/light/rogue/wallfire/candle/r,
+/obj/item/dmusicbox,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/woods)
 "gk" = (
@@ -1171,7 +1171,7 @@
 	dir = 1;
 	icon_state = "border"
 	},
-/turf/closed/wall/mineral/rogue/wooddark,
+/turf/closed/wall/mineral/rogue/decostone/center,
 /area/rogue/outdoors/woods)
 "jA" = (
 /obj/structure/closet/crate/roguecloset,
@@ -2036,6 +2036,7 @@
 /obj/item/natural/bundle/cloth,
 /obj/item/reagent_containers/glass/bottle/waterskin,
 /obj/item/bedroll,
+/obj/item/scrying,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/woods)
 "qK" = (
@@ -4592,6 +4593,9 @@
 "Lu" = (
 /obj/structure/flora/roguetree/wise,
 /turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods)
+"Lv" = (
+/turf/closed/wall/mineral/rogue/decostone/center,
 /area/rogue/outdoors/woods)
 "Lw" = (
 /obj/structure/fluff/railing/border{
@@ -21912,13 +21916,13 @@ MK
 jW
 kV
 kV
-Ut
+Lv
 sL
 sL
 sL
 sL
 sL
-Ut
+Lv
 aK
 aK
 Bn
@@ -22701,7 +22705,7 @@ ch
 Vh
 Vh
 BZ
-Ut
+Lv
 OF
 ch
 Mb
@@ -23168,13 +23172,13 @@ jW
 jW
 jW
 cU
-Ut
+Lv
 sL
 sL
 sL
 sL
 sL
-Ut
+Lv
 kV
 kV
 gC
@@ -46248,13 +46252,13 @@ MK
 Yi
 MK
 EC
-Ut
+Lv
 sL
 sL
 sL
 sL
 sL
-Ut
+Lv
 EC
 ew
 ew
@@ -47504,13 +47508,13 @@ SM
 Yi
 bP
 EC
-Ut
+Lv
 sL
 sL
 sL
 sL
 sL
-Ut
+Lv
 EC
 jW
 ew
@@ -47817,13 +47821,13 @@ sV
 MK
 Yi
 bP
-Ek
 bP
 bP
 bP
 bP
-Ek
-Ek
+bP
+bP
+bP
 ew
 ew
 ew
@@ -47974,7 +47978,7 @@ By
 ho
 Yi
 bP
-Ek
+bP
 bP
 bP
 bP
@@ -70584,13 +70588,13 @@ ew
 ew
 zO
 Xq
-Ut
+Lv
 sL
 sL
 sL
 sL
 sL
-Ut
+Lv
 Xq
 hZ
 ew
@@ -71840,13 +71844,13 @@ Xq
 Xq
 Xq
 Xq
-Ut
+Lv
 sL
 sL
 sL
 sL
 sL
-Ut
+Lv
 Xq
 hZ
 ew
