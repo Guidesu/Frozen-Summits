@@ -87,16 +87,21 @@
 	},
 /obj/item/clothing/suit/roguetown/armor/chainmail/tatami,
 /obj/item/clothing/suit/roguetown/armor/plate/full/nanbando{
-	desc = "A complete set of abyssariad steel armor, refined and with additional auxiliary parts for protection. this one has the initals S.E"
+	desc = "A complete set of abyssariad steel armor, refined and with additional auxiliary parts for protection. this one has the initals S.E";
+	name = "Edoma's Chest Armor"
 	},
 /obj/item/clothing/shoes/roguetown/boots/armor,
-/obj/item/clothing/head/roguetown/helmet/heavy/necran,
 /obj/item/clothing/neck/roguetown/chaincoif/karuta_zukin/military,
 /obj/item/clothing/neck/roguetown/psicross/silver,
 /obj/item/clothing/gloves/roguetown/plate/lamellaetekko,
 /obj/item/clothing/under/roguetown/platelegs/weepershanwenkai,
-/obj/item/rogueweapon/sword/long/greatsword/odachi{
-	desc = "Greatsword traditionally wielded in open battlefields just as it is a ceremonial blade. Though impractical for duels, it breaks spearlines and shields on a whim, requiring momentum with each slash. this one has the initals S.E on its blade."
+/obj/item/rogueweapon/shield/tower/metal/abyssal{
+	name = "Edoma's Shield"
+	},
+/obj/item/clothing/wrists/roguetown/bracers/kote,
+/obj/item/rogueweapon/sword/long/oathkeeper,
+/obj/item/clothing/head/roguetown/helmet/otavan{
+	name = "Edoma's Helmet"
 	},
 /turf/open/floor/rogue/carpet,
 /area/rogue/outdoors/woods)
@@ -471,6 +476,14 @@
 /obj/effect/wisp/tree,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/outdoors/woods)
+"dT" = (
+/obj/structure/bookcase,
+/obj/item/book/granter/spell/spells5e/mindsliver5e,
+/obj/item/book/granter/spell/spells5e/firebolt5e,
+/obj/item/book/granter/spell/spells5e/eldritchblast5e,
+/obj/item/book/granter/spell/blackstone/greaterfireball,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods)
 "dV" = (
 /obj/structure/bars/passage{
 	density = 0;
@@ -777,6 +790,12 @@
 /obj/structure/table/wood,
 /obj/machinery/light/rogue/wallfire/candle/r,
 /obj/item/dmusicbox,
+/obj/item/clothing/mask/cigarette/rollie/cannabis,
+/obj/item/clothing/mask/cigarette/rollie/trippy,
+/obj/item/clothing/mask/cigarette/rollie/mindbreaker,
+/obj/item/clothing/mask/cigarette/rollie/cannabis,
+/obj/item/clothing/mask/cigarette/rollie/cannabis,
+/obj/item/clothing/mask/cigarette/rollie/cannabis,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/woods)
 "gk" = (
@@ -2214,6 +2233,14 @@
 	dir = 8
 	},
 /turf/closed/wall/mineral/rogue/stone/moss,
+/area/rogue/outdoors/woods)
+"so" = (
+/obj/structure/bookcase,
+/obj/item/book/granter/spell_points,
+/obj/item/book/granter/spell_points,
+/obj/item/book/granter/spell_points,
+/obj/item/book/granter/spell/blackstone/fetch,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
 "sp" = (
 /obj/structure/chair/bench/church,
@@ -4864,6 +4891,12 @@
 "NQ" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /obj/machinery/light/rogue/wallfire/candle/blue,
+/obj/structure/closet/crate/roguecloset{
+	name = "Horde"
+	},
+/obj/item/rogueweapon/sword/long/greatsword/odachi{
+	desc = "Greatsword traditionally wielded in open battlefields just as it is a ceremonial blade. Though impractical for duels, it breaks spearlines and shields on a whim, requiring momentum with each slash. this one has the initals S.E on its blade."
+	},
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
 "NR" = (
@@ -5911,6 +5944,15 @@
 	icon_state = "border"
 	},
 /turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods)
+"Xm" = (
+/obj/structure/bookcase,
+/obj/item/book/rogue/arcyne,
+/obj/item/book/rogue/beardling,
+/obj/item/book/rogue/bibble,
+/obj/item/book/rogue/noc,
+/obj/item/book/rogue/sword,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
 "Xo" = (
 /obj/item/rogueweapon/mace/wsword,
@@ -22388,7 +22430,7 @@ CN
 kV
 kV
 sL
-Vh
+dT
 Vh
 Vh
 Vh
@@ -22545,10 +22587,10 @@ CN
 kV
 Of
 sL
+so
 Vh
 Vh
-Vh
-Vh
+Xm
 Vh
 sL
 yv
