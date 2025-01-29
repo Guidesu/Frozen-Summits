@@ -25,7 +25,6 @@
 	skin_tone_wording = "Craft"
 
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY)
-	inherent_traits = list(TRAIT_NOMOBSWAP)
 	default_features = MANDATORY_FEATURE_LIST
 	use_skintones = 1
 	skinned_type = /obj/item/stack/sheet/animalhide/human
