@@ -476,14 +476,6 @@
 /obj/effect/wisp/tree,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/outdoors/woods)
-"dT" = (
-/obj/structure/bookcase,
-/obj/item/book/granter/spell/spells5e/mindsliver5e,
-/obj/item/book/granter/spell/spells5e/firebolt5e,
-/obj/item/book/granter/spell/spells5e/eldritchblast5e,
-/obj/item/book/granter/spell/blackstone/greaterfireball,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/outdoors/woods)
 "dV" = (
 /obj/structure/bars/passage{
 	density = 0;
@@ -736,6 +728,14 @@
 	name = "river water";
 	water_reagent = /datum/reagent/water
 	},
+/area/rogue/outdoors/woods)
+"fL" = (
+/obj/structure/bookcase,
+/obj/item/book/granter/spell_points,
+/obj/item/book/granter/spell_points,
+/obj/item/book/granter/spell_points,
+/obj/item/book/granter/spell/blackstone/fetch,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
 "fQ" = (
 /obj/effect/decal/cleanable/cobweb,
@@ -1253,6 +1253,15 @@
 /obj/item/natural/stone{
 	pixel_y = -14
 	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods)
+"jY" = (
+/obj/structure/bookcase,
+/obj/item/book/rogue/arcyne,
+/obj/item/book/rogue/beardling,
+/obj/item/book/rogue/bibble,
+/obj/item/book/rogue/noc,
+/obj/item/book/rogue/sword,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
 "ke" = (
@@ -1774,6 +1783,14 @@
 /obj/structure/closet/crate/coffin,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods)
+"oM" = (
+/obj/structure/bookcase,
+/obj/item/book/granter/spell/spells5e/mindsliver5e,
+/obj/item/book/granter/spell/spells5e/firebolt5e,
+/obj/item/book/granter/spell/spells5e/eldritchblast5e,
+/obj/item/book/granter/spell/blackstone/greaterfireball,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods)
 "oO" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/water/sewer,
@@ -2233,14 +2250,6 @@
 	dir = 8
 	},
 /turf/closed/wall/mineral/rogue/stone/moss,
-/area/rogue/outdoors/woods)
-"so" = (
-/obj/structure/bookcase,
-/obj/item/book/granter/spell_points,
-/obj/item/book/granter/spell_points,
-/obj/item/book/granter/spell_points,
-/obj/item/book/granter/spell/blackstone/fetch,
-/turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
 "sp" = (
 /obj/structure/chair/bench/church,
@@ -5944,15 +5953,6 @@
 	icon_state = "border"
 	},
 /turf/open/floor/rogue/ruinedwood,
-/area/rogue/outdoors/woods)
-"Xm" = (
-/obj/structure/bookcase,
-/obj/item/book/rogue/arcyne,
-/obj/item/book/rogue/beardling,
-/obj/item/book/rogue/bibble,
-/obj/item/book/rogue/noc,
-/obj/item/book/rogue/sword,
-/turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
 "Xo" = (
 /obj/item/rogueweapon/mace/wsword,
@@ -22430,7 +22430,7 @@ CN
 kV
 kV
 sL
-dT
+oM
 Vh
 Vh
 Vh
@@ -22587,10 +22587,10 @@ CN
 kV
 Of
 sL
-so
+fL
 Vh
 Vh
-Xm
+jY
 Vh
 sL
 yv
