@@ -94,6 +94,8 @@
 		/datum/customizer/organ/vagina/human,
 	)
 
+/datum/species/abyssariad/harpy/check_roundstart_eligible()
+	return FALSE
 
 /datum/species/abyssariad/harpy/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()

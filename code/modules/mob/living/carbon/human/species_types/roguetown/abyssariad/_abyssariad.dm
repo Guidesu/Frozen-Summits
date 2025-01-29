@@ -37,14 +37,11 @@
 	set category = "Noises"
 	emote("birdcall")
 
-/datum/species/abyssariad/check_roundstart_eligible()
-	return FALSE
-
 /datum/species/abyssariad/after_creation(mob/living/carbon/C)
 	..()
 //	if(!C.has_language(/datum/language/abyssal))
 	C.grant_language(/datum/language/abyssal)
-	to_chat(C, "<span class='info'>I can speak Abyssal with ,a before my speech.</span>")
+	to_chat(C, "<span class='info'>I can speak Abyssal with ,j before my speech.</span>")
 
 /datum/species/abyssariad/on_species_loss(mob/living/carbon/C)
 	. = ..()

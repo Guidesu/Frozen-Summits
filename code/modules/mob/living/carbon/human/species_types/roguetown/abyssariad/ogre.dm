@@ -130,6 +130,9 @@
 		/datum/language/abyssal
 	)
 
+/datum/species/abyssariad/ogre/check_roundstart_eligible()
+	return FALSE
+
 /datum/species/abyssariad/ogre/get_skin_list()
 	return sortList(list(
 		"Oathbound Muqian" = SKIN_COLOR_OATHBOUND_MUQIAN,
