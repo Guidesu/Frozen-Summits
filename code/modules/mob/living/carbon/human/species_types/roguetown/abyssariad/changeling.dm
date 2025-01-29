@@ -9,19 +9,18 @@
 	race = /datum/species/abyssariad/changeling
 
 /datum/species/abyssariad/changeling
-	name = "Changeling"
+	name = "Yokai"
 	id = "abyssariad"
-	desc = "<b>Storm branched Champions</b><br>\
-	Molded from Abyssor's tumultuous embrace of storm and will, the Changelings are a warrior, demiurgic race \
-	deeply bonded with honor and ethos that intertwines with the tempestuous forces of Abyssor, \
-	never set on a balance, all Changelings are extreme as the storms, with the tendency to be both \
-	hermeticly humble and quick tempered, and know for either loving duel for honor's sake \
-	- or being the most radical martial pacifists on the planet. Their society almost crumbled \
-	during The Bloody Apotheosis, but their bronze-age traditions lives on together with a deep \
-	hatred for all things Graggar. Their biology allows high degree of fleshbending, their faces exactly alike masks. \
-	They are noble souls that, when not belonging to military or clerical jobs, usually partakes \
-	in the society's intelligentsia division, usually as astronomers, alchemists and surgeons. \
-	+1 strength, +1 intelligence, -1 perception."
+	desc = "<b>Champions of Many-Faces</b><br>\
+	Yokai or Henge-Yokai are a race of intelligent natural shapechanging animals, able to adopt animal, human, and hybrid forms. \
+	They were incredibly varied, with many subraces based on different kinds of animals, and were found throughout Kara-Tur, living on the fringes of human lands. \
+	They were descended from humans and shapeshifting animal spirits originating from the Feywild. \
+	It is rumored that hengeyokai were the product of rare unions of love between nature spirits and mortal humans. \
+	Hengeyokai were by-and-large a reclusive and secretive race who preferred to live alone or in very small communities. \
+	Understanding that they were unlike humans, hengeyokai usually made no attempt to fit into their society or remain among them for very long. \
+	Most avoided contact with other sentient races, with the exception of the spirit folk. \
+	Nevertheless, while hengeyokai were wary of strangers, those who showed them true kindness were rewarded with close and long-lasting friendship. \
+	+1 Strength, +1 Intelligence, -1 Perception."
 	inherent_traits = list(
 		TRAIT_NOCSIGHT,
 		TRAIT_BEAUTIFUL,
