@@ -8164,6 +8164,7 @@
 	},
 /obj/item/pestle,
 /obj/item/reagent_containers/glass/mortar,
+/obj/item/mortar,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/rtfield)
 "svu" = (
