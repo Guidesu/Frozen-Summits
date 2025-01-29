@@ -139,7 +139,7 @@
 	return message_language.spans
 
 /datum/species/abyssariad/changeling/check_roundstart_eligible()
-	return FALSE
+	return TRUE
 
 /datum/species/abyssariad/changeling/get_skin_list()
 	return sortList(list(
