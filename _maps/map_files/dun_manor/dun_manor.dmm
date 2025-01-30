@@ -204,6 +204,7 @@
 /area/rogue/indoors/town)
 "aaM" = (
 /obj/structure/roguemachine/merchantvend,
+/obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "aaN" = (
@@ -1349,6 +1350,7 @@
 /obj/structure/roguemachine/drugmachine{
 	name = "Consumables Catalogue"
 	},
+/obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "bhd" = (
@@ -1852,6 +1854,7 @@
 /area/rogue/indoors)
 "ctF" = (
 /obj/structure/roguemachine/steward,
+/obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "cui" = (
@@ -7376,6 +7379,7 @@
 "qAl" = (
 /obj/structure/table/wood,
 /obj/item/roguekey/steward,
+/obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "qAp" = (
@@ -8728,6 +8732,7 @@
 /obj/structure/roguemachine/atm{
 	pixel_x = -32
 	},
+/obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "tTv" = (
@@ -8868,6 +8873,7 @@
 /area/rogue/under/cave)
 "unl" = (
 /obj/structure/roguemachine/drugmachine,
+/obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "unS" = (
