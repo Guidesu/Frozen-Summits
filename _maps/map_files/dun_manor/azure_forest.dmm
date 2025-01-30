@@ -338,10 +338,14 @@
 	icon_state = "border"
 	},
 /obj/structure/fluff/railing/border,
-/turf/open/water/pond{
-	name = "hotspring";
-	desc = "Still and idyllic hot water that flows through meadows."
+/obj/structure/fluff/railing/border{
+	dir = 8;
+	icon_state = "border"
 	},
+/obj/machinery/light/rogue/firebowl/standing/blue{
+	pixel_y = 9
+	},
+/turf/open/floor/rogue/wood,
 /area/rogue/outdoors/woods)
 "cs" = (
 /obj/structure/table/wood{
@@ -2620,11 +2624,7 @@
 /area/rogue/outdoors/woods)
 "ve" = (
 /obj/structure/fluff/railing/border,
-/obj/structure/flora/roguegrass/water/reeds,
-/turf/open/water/pond{
-	name = "hotspring";
-	desc = "Still and idyllic hot water that flows through meadows."
-	},
+/turf/closed/wall/mineral/rogue/decostone/center,
 /area/rogue/outdoors/woods)
 "vi" = (
 /obj/structure/table/wood,
@@ -2675,6 +2675,17 @@
 "vJ" = (
 /obj/item/roguegem/random,
 /turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods)
+"vK" = (
+/obj/structure/fluff/railing/border{
+	dir = 4;
+	icon_state = "border"
+	},
+/obj/structure/fluff/railing/border,
+/obj/machinery/light/rogue/firebowl/standing/blue{
+	pixel_y = 9
+	},
+/turf/open/floor/rogue/wood,
 /area/rogue/outdoors/woods)
 "vL" = (
 /obj/structure/fluff/railing/border{
@@ -4576,6 +4587,19 @@
 /obj/structure/roguewindow/openclose/reinforced,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/outdoors/woods)
+"KG" = (
+/obj/structure/fluff/railing/border{
+	dir = 4;
+	pixel_x = 1
+	},
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/obj/machinery/light/rogue/firebowl/standing/blue{
+	pixel_y = 9
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/woods)
 "KI" = (
 /obj/structure/closet/crate/chest/neu_iron,
 /obj/item/reagent_containers/food/snacks/rogue/pie/cooked/pot,
@@ -5005,6 +5029,18 @@
 	icon_state = "cobbleedge-e"
 	},
 /turf/open/floor/rogue/woodturned,
+/area/rogue/outdoors/woods)
+"OC" = (
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/machinery/light/rogue/firebowl/standing/blue{
+	pixel_y = 9
+	},
+/turf/open/floor/rogue/wood,
 /area/rogue/outdoors/woods)
 "OF" = (
 /obj/structure/fluff/railing/border{
@@ -43818,12 +43854,12 @@ MK
 nx
 Yi
 Lv
+Lv
 ek
 ek
 ek
 ek
-ek
-ek
+Lv
 Lv
 Yi
 bP
@@ -43974,14 +44010,14 @@ MK
 MK
 MK
 Yi
-ek
+Lv
+vK
+Fu
+ca
 Fu
 Fu
-Fu
-Fu
-Fu
-Fu
-ek
+KG
+Lv
 Yi
 bP
 bP
@@ -44294,7 +44330,7 @@ Fu
 Fu
 Fu
 Fu
-Fu
+ca
 ek
 Yi
 bP
@@ -44449,7 +44485,7 @@ ek
 Fu
 ca
 Fu
-Fu
+ca
 Fu
 Fu
 ek
@@ -44759,14 +44795,14 @@ MK
 MK
 MK
 Yi
-ek
+Lv
 cq
 bX
 EQ
 fY
 Fu
-Fu
-ek
+OC
+Lv
 YT
 bN
 MK
@@ -44922,7 +44958,7 @@ ux
 ux
 Qb
 ek
-ek
+Lv
 Lv
 lq
 bN
@@ -68154,12 +68190,12 @@ ew
 ew
 ew
 Lv
+Lv
 su
 su
 su
 su
-su
-su
+Lv
 Lv
 ew
 ew
@@ -68310,14 +68346,14 @@ ew
 ew
 ew
 ew
+Lv
 su
 su
 su
 su
 su
 su
-su
-su
+Lv
 ew
 ew
 ew
@@ -69095,14 +69131,14 @@ ew
 ew
 ew
 ew
+Lv
 su
 su
 su
 su
 su
 su
-su
-su
+Lv
 ew
 ew
 ew
@@ -69253,12 +69289,12 @@ ew
 ew
 ew
 Lv
+Lv
 su
 su
 su
 su
-su
-su
+Lv
 Lv
 ew
 ew
