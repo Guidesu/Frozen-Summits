@@ -273,6 +273,8 @@
 	resistance_flags = NONE
 	drop_sound = 'sound/foley/dropsound/gen_drop.ogg'
 	experimental_inhand = FALSE
+	grid_width = 64
+	grid_height = 32
 
 /obj/item/cooking/platter/pewter
 	name = "pewter platter"

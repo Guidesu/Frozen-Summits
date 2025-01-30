@@ -193,6 +193,10 @@
 	gripped_intents = null
 	minstr = 4
 	wdefense = 4
+	wlength = WLENGTH_SHORT
+	w_class = WEIGHT_CLASS_NORMAL
+	grid_width = 32
+	grid_height = 96
 
 /obj/item/rogueweapon/sword/long
 	force = 25
@@ -512,6 +516,10 @@
 	gripped_intents = null
 	minstr = 4
 	wdefense = 3
+	wlength = WLENGTH_SHORT
+	w_class = WEIGHT_CLASS_NORMAL
+	grid_width = 32
+	grid_height = 96
 
 /obj/item/rogueweapon/sword/iron/short/chipped
 	force = 17
