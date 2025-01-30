@@ -246,8 +246,8 @@
 	name = "wild tongue"
 
 /obj/item/organ/tongue/kitsune
-	name = "changeling tongue"
-	desc = "The tongue that inwardly bends the moldable changeling skull into a glasgow smile, or other shapes depending on their branch."
+	name = "yokai tongue"
+	desc = "The tongue that inwardly bends the moldable yokai skull into a glasgow smile, or other shapes depending on their branch."
 	icon = 'icons/obj/surgery.dmi'
 	icon_state = "eldritch"
 	slot = ORGAN_SLOT_TONGUE

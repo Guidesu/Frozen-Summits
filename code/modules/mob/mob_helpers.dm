@@ -501,7 +501,7 @@
 				mmb_intent = null
 				if(ishuman(src))
 					var/mob/living/carbon/human/K = src
-					if(K.dna.species.name == "Changeling")
+					if(K.dna.species.name == "Yokai")
 						//K.mawchange = FALSE
 						//K.overlay_eldritchjaw = 1  // disactivates jaw -  overlays are BAD for that. Don't use it.
 						//emote.wag_mouth = FALSE //I can't make a wag system.
@@ -511,7 +511,7 @@
 				mmb_intent = new INTENT_BITE(src)
 				if(ishuman(src))
 					var/mob/living/carbon/human/K = src
-					if(K.dna.species.name == "Changeling")
+					if(K.dna.species.name == "Yokai")
 						//K.mawchange = TRUE
 						//K.overlay_eldritchjaw = 0  // activates jaw -  overlays are BAD for that. Don't use it.
 						//emote.wag_mouth = TRUE //I can't make a wag system.

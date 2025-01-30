@@ -29,8 +29,6 @@
 		TRAIT_LONGSTRIDER,
 	)
 
-	skin_tone_wording = "Championage Branch"
-
 	species_traits = list(
 		MUTCOLORS,
 		EYECOLOR,
@@ -39,7 +37,6 @@
 	)
 
 	default_features = MANDATORY_FEATURE_LIST
-	use_skintones = 1
 	possible_ages = ALL_AGES_LIST //Abyssariads are Immortal. However, if they become stray from Abyssor - they suffer severe dementia, and after some decades, become Dais.
 	skinned_type = /obj/item/stack/sheet/animalhide/human
 	disliked_food = NONE
@@ -169,21 +166,6 @@
 
 /datum/species/abyssariad/changeling/check_roundstart_eligible()
 	return TRUE
-
-
-/datum/species/abyssariad/changeling/get_skin_list()
-	return sortList(list(
-		"Oathbound Muqian" = SKIN_COLOR_OATHBOUND_MUQIAN,
-		"Oathbound Kaizoku" = SKIN_COLOR_OATHBOUND_KAIZOKU,
-		"Oathbound Shuhen" = SKIN_COLOR_OATHBOUND_SHUHEN,
-		"Oathbound Linyou" = SKIN_COLOR_OATHBOUND_LINYOU,
-		"Oathbound Dustwalker" = SKIN_COLOR_OATHBOUND_DUSTWALKER,
-		"Warpcaster Muqian" = SKIN_COLOR_WARPCASTER_MUQIAN,
-		"Warpcaster Kaizoku" = SKIN_COLOR_WARPCASTER_KAIZOKU,
-		"Warpcaster Shuhen" = SKIN_COLOR_WARPCASTER_SHUHEN,
-		"Warpcaster Linyou" = SKIN_COLOR_WARPCASTER_LINYOU,
-		"Warpcaster Dustwalker" = SKIN_COLOR_WARPCASTER_DUSTWALKER,
-	))
 
 /datum/species/abyssariad/changeling/get_hairc_list()
 	return sortList(list(
