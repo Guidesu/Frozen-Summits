@@ -171,6 +171,13 @@
 /obj/machinery/light/rogue/torchholder/c,
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/woods)
+"bq" = (
+/obj/structure/fluff/sellsign{
+	name = "Beware of dragons..";
+	desc = "Seems like causing problems here is a bad idea..."
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
 "br" = (
 /obj/item/natural/stone{
 	pixel_y = -14
@@ -260,11 +267,24 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
 "bX" = (
-/obj/structure/chair/stool/rogue,
 /obj/structure/fluff/railing/border{
 	dir = 9
 	},
-/turf/open/floor/rogue/wood,
+/obj/structure/stairs{
+	icon_state = "stairs";
+	dir = 4
+	},
+/turf/open/water/pond{
+	name = "hotspring";
+	desc = "Still and idyllic hot water that flows through meadows."
+	},
+/area/rogue/outdoors/woods)
+"ca" = (
+/obj/structure/flora/ausbushes/reedbush,
+/turf/open/water/pond{
+	name = "hotspring";
+	desc = "Still and idyllic hot water that flows through meadows."
+	},
 /area/rogue/outdoors/woods)
 "cb" = (
 /obj/structure/closet/crate/roguecloset,
@@ -302,7 +322,9 @@
 /area/rogue/outdoors/woods)
 "ch" = (
 /obj/structure/mineral_door/wood/violet{
-	lockid = "tower1"
+	lockid = "tower1";
+	desc = "I should probably stay out unless im prepared for death.";
+	name = "Edoma's House"
 	},
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
@@ -315,7 +337,11 @@
 	dir = 10;
 	icon_state = "border"
 	},
-/turf/open/water/pond,
+/obj/structure/fluff/railing/border,
+/turf/open/water/pond{
+	name = "hotspring";
+	desc = "Still and idyllic hot water that flows through meadows."
+	},
 /area/rogue/outdoors/woods)
 "cs" = (
 /obj/structure/table/wood{
@@ -528,8 +554,11 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
 "ek" = (
-/obj/machinery/light/rogue/firebowl/standing/blue,
-/turf/open/floor/rogue/dirt,
+/obj/structure/flora/roguegrass/water/reeds,
+/turf/open/water/pond{
+	name = "hotspring";
+	desc = "Still and idyllic hot water that flows through meadows."
+	},
 /area/rogue/outdoors/woods)
 "el" = (
 /obj/structure/flora/newbranch{
@@ -771,7 +800,13 @@
 /obj/structure/fluff/railing/border{
 	dir = 9
 	},
-/turf/open/water/pond,
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/turf/open/water/pond{
+	name = "hotspring";
+	desc = "Still and idyllic hot water that flows through meadows."
+	},
 /area/rogue/outdoors/woods)
 "fZ" = (
 /obj/structure/fluff/walldeco/innsign{
@@ -1076,6 +1111,14 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/woods)
+"is" = (
+/obj/structure/gravemarker{
+	pixel_y = 10;
+	pixel_x = -9
+	},
+/obj/item/natural/rock/gem,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
 "iw" = (
 /obj/structure/fluff/railing/fence{
 	dir = 1
@@ -1319,7 +1362,9 @@
 /area/rogue/outdoors/woods)
 "kJ" = (
 /obj/structure/mineral_door/wood/violet{
-	lockid = "tower1"
+	lockid = "tower1";
+	desc = "I should probably stay out unless im prepared for death.";
+	name = "Edoma's House"
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/woods)
@@ -2253,7 +2298,7 @@
 /area/rogue/outdoors/woods)
 "sp" = (
 /obj/structure/chair/bench/church,
-/turf/open/floor/rogue/cobblerock,
+/turf/open/floor/rogue/grass/green,
 /area/rogue/outdoors/woods)
 "su" = (
 /turf/open/floor/rogue/rooftop/green,
@@ -2310,7 +2355,9 @@
 /area/rogue/outdoors/woods)
 "sW" = (
 /obj/structure/mineral_door/wood/red{
-	lockid = "solis"
+	lockid = "solis";
+	name = "Solis's Smithy";
+	desc = "Breaking in here is a nice way to earn a broken jaw..."
 	},
 /turf/open/floor/rogue/ruinedwood/platform,
 /area/rogue/outdoors/woods)
@@ -2435,7 +2482,10 @@
 	dir = 5;
 	icon_state = "border"
 	},
-/turf/open/water/pond,
+/turf/open/water/pond{
+	name = "hotspring";
+	desc = "Still and idyllic hot water that flows through meadows."
+	},
 /area/rogue/outdoors/woods)
 "uf" = (
 /obj/item/natural/stone,
@@ -2478,6 +2528,10 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods)
+"ux" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/wood,
 /area/rogue/outdoors/woods)
 "uy" = (
 /turf/open/floor/rogue/churchmarble,
@@ -2565,12 +2619,12 @@
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/woods)
 "ve" = (
-/obj/item/natural/rock/gem,
-/obj/structure/gravemarker{
-	pixel_y = 10;
-	pixel_x = -9
+/obj/structure/fluff/railing/border,
+/obj/structure/flora/roguegrass/water/reeds,
+/turf/open/water/pond{
+	name = "hotspring";
+	desc = "Still and idyllic hot water that flows through meadows."
 	},
-/turf/open/transparent/openspace,
 /area/rogue/outdoors/woods)
 "vi" = (
 /obj/structure/table/wood,
@@ -3601,28 +3655,6 @@
 /area/rogue/outdoors/woods)
 "Di" = (
 /obj/structure/closet/crate/chest,
-/obj/item/ingot/iron,
-/obj/item/ingot/iron,
-/obj/item/ingot/iron,
-/obj/item/ingot/iron,
-/obj/item/ingot/iron,
-/obj/item/ingot/iron,
-/obj/item/ingot/iron,
-/obj/item/ingot/iron,
-/obj/item/ingot/iron,
-/obj/item/ingot/iron,
-/obj/item/ingot/iron,
-/obj/item/ingot/steel,
-/obj/item/ingot/steel,
-/obj/item/ingot/steel,
-/obj/item/ingot/steel,
-/obj/item/ingot/steel,
-/obj/item/ingot/steel,
-/obj/item/ingot/steel,
-/obj/item/ingot/steel,
-/obj/item/ingot/steel,
-/obj/item/ingot/steel,
-/obj/item/ingot/steel,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/outdoors/woods)
 "Dj" = (
@@ -3850,7 +3882,14 @@
 	dir = 10;
 	icon_state = "border"
 	},
-/turf/open/floor/rogue/wood,
+/obj/structure/stairs{
+	icon_state = "stairs";
+	dir = 4
+	},
+/turf/open/water/pond{
+	name = "hotspring";
+	desc = "Still and idyllic hot water that flows through meadows."
+	},
 /area/rogue/outdoors/woods)
 "ER" = (
 /obj/structure/fluff/railing/fence,
@@ -3918,8 +3957,10 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
 "Fu" = (
-/obj/machinery/light/rogue/firebowl/standing/blue,
-/turf/open/floor/rogue/dirt/road,
+/turf/open/water/pond{
+	name = "hotspring";
+	desc = "Still and idyllic hot water that flows through meadows."
+	},
 /area/rogue/outdoors/woods)
 "Fv" = (
 /obj/structure/fluff/railing/border{
@@ -4885,8 +4926,10 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/woods)
 "NO" = (
-/obj/structure/mineral_door/wood/donjon{
-	lockid = "solis"
+/obj/structure/mineral_door/wood/red{
+	lockid = "solis";
+	name = "Solis's Smithy";
+	desc = "Breaking in here is a nice way to earn a broken jaw..."
 	},
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/outdoors/woods)
@@ -5104,6 +5147,16 @@
 "PZ" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/outdoors/woods)
+"Qb" = (
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/obj/structure/flora/roguegrass/water/reeds,
+/turf/open/water/pond{
+	name = "hotspring";
+	desc = "Still and idyllic hot water that flows through meadows."
+	},
 /area/rogue/outdoors/woods)
 "Qc" = (
 /obj/structure/flora/newleaf,
@@ -5686,7 +5739,10 @@
 	dir = 6;
 	icon_state = "border"
 	},
-/turf/open/water/pond,
+/turf/open/water/pond{
+	name = "hotspring";
+	desc = "Still and idyllic hot water that flows through meadows."
+	},
 /area/rogue/outdoors/woods)
 "UL" = (
 /turf/open/floor/rogue/blocks,
@@ -42980,13 +43036,13 @@ bP
 bP
 bP
 bP
-MK
-MK
-MK
-MK
+bP
+bP
+bP
+bP
 nx
-MK
-MK
+bP
+bP
 bP
 bP
 MK
@@ -43135,15 +43191,15 @@ bP
 bP
 Ek
 bP
-MK
-MK
-Fu
-Yi
-Yi
-Yi
-Yi
-Yi
-MK
+bP
+bP
+bP
+bP
+bP
+bP
+bP
+bP
+bP
 MK
 bP
 MK
@@ -43290,17 +43346,17 @@ MK
 MK
 bP
 bP
-MK
-MK
-MK
-Yi
-Yi
-Yi
-wu
-wu
-wu
-Yi
-Fu
+bP
+bP
+bP
+bP
+bP
+bP
+bP
+bP
+bP
+bP
+bP
 MK
 bP
 MK
@@ -43447,17 +43503,17 @@ MK
 MK
 bP
 MK
-Yi
-Yi
-Yi
-Yi
-wu
-wu
-wu
-wu
-wu
-Yi
-Yi
+bP
+bP
+bP
+bP
+bP
+bP
+bP
+bP
+bP
+bP
+bP
 nx
 bP
 MK
@@ -43603,18 +43659,18 @@ Ek
 MK
 MK
 MK
-Fu
+MK
 Yi
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-wu
 Yi
+Yi
+Yi
+Yi
+Yi
+Yi
+Yi
+bP
+bP
+bP
 MK
 OG
 BP
@@ -43761,17 +43817,17 @@ MK
 MK
 nx
 Yi
+Lv
+ek
+ek
+ek
+ek
+ek
+ek
+Lv
 Yi
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-Yi
+bP
+bP
 Ut
 BP
 vS
@@ -43918,17 +43974,17 @@ MK
 MK
 MK
 Yi
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-wu
+ek
+Fu
+Fu
+Fu
+Fu
+Fu
+Fu
+ek
 Yi
-Yi
+bP
+bP
 ZC
 Lm
 hc
@@ -44075,16 +44131,16 @@ MK
 MK
 MK
 Yi
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-wu
+ek
+ca
+Fu
+Fu
+ca
+Fu
+Fu
+ek
 Yi
+bP
 sp
 ZC
 Aq
@@ -44230,18 +44286,18 @@ bP
 bP
 MK
 LA
-MK
+is
 Yi
-wu
-wu
-wu
-wu
-wu
-wu
-wu
+ek
+Fu
+Fu
+Fu
+Fu
+Fu
+Fu
+ek
 Yi
-Yi
-Yi
+bP
 fz
 Ut
 BP
@@ -44389,14 +44445,14 @@ MK
 ec
 MK
 Yi
-wu
-wu
-wu
-wu
-wu
-Yi
-Yi
-Yi
+ek
+Fu
+ca
+Fu
+Fu
+Fu
+Fu
+ek
 lq
 lq
 lq
@@ -44546,14 +44602,14 @@ MK
 Ek
 MK
 Yi
-Yi
+ek
 UK
 ud
 UK
 ud
-Yi
-bP
-bP
+Fu
+ca
+ek
 lq
 Ab
 MK
@@ -44702,15 +44758,15 @@ bP
 MK
 MK
 MK
-MK
 Yi
+ek
 cq
 bX
 EQ
 fY
-Yi
-bP
-nx
+Fu
+Fu
+ek
 YT
 bN
 MK
@@ -44859,15 +44915,15 @@ bP
 MK
 MK
 jW
-MK
 Yi
-Yi
-zA
-zA
-Yi
-Yi
-bP
-bP
+Lv
+ve
+ux
+ux
+Qb
+ek
+ek
+Lv
 lq
 bN
 MK
@@ -45017,14 +45073,14 @@ MK
 MK
 jW
 MK
-MK
-MK
+Yi
+Yi
 zA
 zA
-MK
-MK
-bP
-bP
+Yi
+Yi
+Yi
+Yi
 lq
 bN
 MK
@@ -45175,7 +45231,7 @@ jW
 bP
 bP
 bP
-ek
+jW
 zA
 zA
 MK
@@ -46132,7 +46188,7 @@ MK
 MK
 MK
 MK
-MK
+bq
 MK
 MK
 MK
@@ -68097,14 +68153,14 @@ ew
 ew
 ew
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+Lv
+su
+su
+su
+su
+su
+su
+Lv
 ew
 ew
 ew
@@ -68254,14 +68310,14 @@ ew
 ew
 ew
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+su
+su
+su
+su
+su
+su
+su
+su
 ew
 ew
 ew
@@ -68411,14 +68467,14 @@ ew
 ew
 ew
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+su
+su
+su
+su
+su
+su
+su
+su
 ew
 ew
 ew
@@ -68566,16 +68622,16 @@ ew
 ew
 ew
 ew
-ve
 ew
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+su
+su
+su
+su
+su
+su
+su
+su
 ew
 ew
 ew
@@ -68725,14 +68781,14 @@ ew
 ew
 ew
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+su
+su
+su
+su
+su
+su
+su
+su
 ew
 ew
 ew
@@ -68882,14 +68938,14 @@ ew
 ew
 ew
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+su
+su
+su
+su
+su
+su
+su
+su
 ew
 ew
 ew
@@ -69039,14 +69095,14 @@ ew
 ew
 ew
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+su
+su
+su
+su
+su
+su
+su
+su
 ew
 ew
 ew
@@ -69196,14 +69252,14 @@ ew
 ew
 ew
 ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
-ew
+Lv
+su
+su
+su
+su
+su
+su
+Lv
 ew
 ew
 ew

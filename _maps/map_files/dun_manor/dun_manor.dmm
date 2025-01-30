@@ -636,7 +636,7 @@
 /area/rogue/indoors)
 "acb" = (
 /obj/structure/mineral_door/wood{
-	name = "house ii";
+	name = "Walters House";
 	lockid = "house2"
 	},
 /turf/open/floor/rogue/wood/herringbone,
@@ -1589,6 +1589,12 @@
 /obj/structure/flora/newtree,
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/rtfield)
+"bOl" = (
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/rtfield)
 "bOv" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/rogue/blocks,
@@ -1694,6 +1700,12 @@
 /obj/machinery/light/rogue/oven/south,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors)
+"bYw" = (
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/rtfield)
 "bYR" = (
 /obj/structure/fluff/walldeco/stone,
 /turf/closed/wall/mineral/rogue/stone,
@@ -2005,6 +2017,10 @@
 	},
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town/tavern)
+"cJt" = (
+/obj/machinery/light/rogue/cauldron,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/rtfield)
 "cKj" = (
 /turf/closed/wall/mineral/rogue/wood,
 /area/rogue/outdoors/beach)
@@ -2943,6 +2959,10 @@
 /obj/item/rogueweapon/huntingknife/chefknife{
 	pixel_y = 6;
 	pixel_x = -10
+	},
+/obj/item/roguekey/custom{
+	name = "Taxee's house key";
+	lockid = "healershut"
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/rtfield)
@@ -8190,6 +8210,13 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/outdoors/rtfield)
+"sBq" = (
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 8
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/rtfield)
 "sCB" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -8305,6 +8332,13 @@
 /obj/item/storage/belt/rogue/surgery_bag/full,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/rtfield)
+"sOf" = (
+/obj/structure/mineral_door/wood{
+	name = "Walters House";
+	lockid = "house2"
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors)
 "sPC" = (
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/mountains)
@@ -10334,8 +10368,9 @@
 /turf/closed/wall/mineral/rogue/stonebrick,
 /area/rogue/under/cave)
 "ydd" = (
-/obj/structure/mineral_door/wood/deadbolt{
-	dir = 1
+/obj/structure/mineral_door/wood/fancywood{
+	lockid = "healershut";
+	name = "Taxee's Hut"
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/rtfield)
@@ -43118,7 +43153,7 @@ cQd
 cQd
 mzO
 xOC
-fzp
+bYw
 cQd
 cQd
 mVe
@@ -43274,8 +43309,8 @@ lnn
 cQd
 tID
 fzp
-fzp
-fzp
+sBq
+bOl
 fzp
 ydd
 fsP
@@ -43588,7 +43623,7 @@ lnn
 cQd
 vJd
 fzp
-fzp
+cJt
 fzp
 pzu
 cQd
@@ -44125,7 +44160,7 @@ rDz
 rDz
 rDz
 ach
-acm
+sOf
 dPV
 dPV
 dPV
