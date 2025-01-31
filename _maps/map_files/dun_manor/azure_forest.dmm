@@ -55,14 +55,6 @@
 /area/rogue/outdoors/woods)
 "aq" = (
 /obj/structure/closet/crate/chest/neu_fancy,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/woods)
 "as" = (
@@ -6445,14 +6437,6 @@
 /area/rogue/outdoors/woods)
 "ZO" = (
 /obj/structure/closet/crate/chest/neu_fancy,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
-/obj/item/reagent_containers/food/snacks/rogue/pie/cooked/meat/fish,
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/woods)
