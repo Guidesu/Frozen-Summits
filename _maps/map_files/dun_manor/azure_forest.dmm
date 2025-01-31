@@ -82,12 +82,6 @@
 /obj/item/clothing/shoes/roguetown/grenzelhoft,
 /obj/item/clothing/gloves/roguetown/fingerless/shadowgloves,
 /obj/machinery/light/rogue/wallfire/candle/l,
-/obj/item/clothing/suit/roguetown/armor/chainmail/tatami,
-/obj/item/clothing/shoes/roguetown/boots/armor,
-/obj/item/clothing/neck/roguetown/chaincoif/karuta_zukin/military,
-/obj/item/clothing/gloves/roguetown/plate/lamellaetekko,
-/obj/item/clothing/under/roguetown/platelegs/weepershanwenkai,
-/obj/item/clothing/wrists/roguetown/bracers/kote,
 /turf/open/floor/rogue/carpet,
 /area/rogue/outdoors/woods)
 "aD" = (
@@ -1101,6 +1095,7 @@
 	pixel_x = -9
 	},
 /obj/item/natural/rock/gem,
+/obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
 "iw" = (
@@ -3691,6 +3686,7 @@
 /obj/item/clothing/under/roguetown/platelegs/blacksteel,
 /obj/item/clothing/shoes/roguetown/boots/blacksteel,
 /obj/machinery/light/rogue/wallfire/candle/l,
+/obj/item/book/granter/spell/blackstone/greaterfireball,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods)
 "DL" = (
@@ -4538,7 +4534,9 @@
 /area/rogue/outdoors/woods)
 "KT" = (
 /obj/structure/mineral_door/wood/violet{
-	lockid = "tower1"
+	lockid = "tower1";
+	desc = "I should probably stay out unless im prepared for death.";
+	name = "Edoma's House"
 	},
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/woods)
@@ -4856,7 +4854,7 @@
 "NO" = (
 /obj/structure/mineral_door/wood/red{
 	lockid = "solis";
-	name = "Solis's Smithy";
+	name = "Solis's House";
 	desc = "Breaking in here is a nice way to earn a broken jaw..."
 	},
 /turf/open/floor/rogue/wood/herringbone,
@@ -4942,7 +4940,8 @@
 	dir = 8
 	},
 /obj/machinery/light/rogue/firebowl/standing/blue{
-	pixel_y = 9
+	pixel_y = 7;
+	pixel_x = 3
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors/woods)
