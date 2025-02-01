@@ -1,6 +1,5 @@
 {
-
-    "abyssal": {
+    "full": {
         "what?": "nani?",
         "'s ": "-no ",
         " evil": "aku",
@@ -97,20 +96,18 @@
         "sociopath": "menhera",
         "fragger": "menhera",
         "poem": "haiku",
-        "cyborg": "abyssal automata",
-        "robot": "abyssal automata",
-        "automation": "abyssal automata",
-        "golem": "abyssal automata",
-        "animatronic": "abyssal automata",
-        "mecha": "abyssal automata",
-        "droid": "abyssal automata",
-        "bot ": "abyssal automata",
-        "bionic": "abyssal automata",
+        "cyborg": "automata",
+        "robot": "automata",
+        "animatronic": "automata",
+        "mecha": "automata",
+        "droid": "automata",
+        "bot ": "automata",
+        "bionic": "automata",
         "psydon": "weeper",
         "jesus": "kami",
         "christ": "kami",
-        "the earth": "abyssor's spine",
-        "werewolf": "dendorblight",
+        "the earth": "Mielikki's spine",
+        "werewolf": "blightspawn",
         "opium": "ozium",
         "cocaine": "moondust",
         "magic": "qigong",
@@ -121,23 +118,13 @@
         "vibing": "deraging",
         "freak": "deviant",
         "weirdo": "misfit",
-        "yokai": "abyssariad ",
-        "youkai": "abyssariad ",
-        "ayakashi": "abyssariad ",
-        "mononoke": "abyssariad ",
-        "mamono": "abyssariad ",
-        "abyssriad": "abyssariad ",
-        "abyssaryad": "abyssariad ",
-        "abissariad": "abyssariad ",
-        "japanese": "abyssariad ",
-        "mongol": "abyssariad ",
-        "chinese": "abyssariad ",
-        "tibetian": "abyssariad ",
-        "korean": "abyssariad ",
-        "samurai": "zamurai",
+        "japanese": "yokai ",
+        "mongol": "yokai ",
+        "chinese": "yokai ",
+        "tibetian": "yokai ",
+        "korean": "yokai ",
         "cocksucker": "jawsexer",
         "cocksucking": "jawsexxing",
-        "katana": "zatana",
 
         "dakimakura": "Dishonor. I'm not going to say that.",
         "nyah ": "Dishonor. I'm not going to say that.",
@@ -152,17 +139,26 @@
         "laowai": "whaler",
 
         "desu": "it is",
+		"gozaru": "I daresay",
         "hentai": "pervert",
         "kawaii": "cute",
         "kawai": "cute",
         "idiot": "bakatare",
         "baka": "bakatare",
-        "banzai": "long live the heavenly emperor",
-        "tenno heika": "long live the heavenly emperor",
 
         "changeling": "kitsune",
 		"denmorian": "tengu",
 		"ogrun": "oni",
+		"ogre": "oni",
         "undine": "kappa"
+    },
+	"start": {
+
+    },
+    "end": {
+
+    },
+    "syllable": {
+
     }
 }

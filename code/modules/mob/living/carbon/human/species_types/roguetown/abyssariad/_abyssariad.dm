@@ -14,8 +14,6 @@
 	C.grant_language(/datum/language/abyssal)
 	C.cmode_music = list('sound/music/kaizoku/combat/combat_changeling.ogg','sound/music/kaizoku/combat/combat_stormwarrior.ogg','sound/music/kaizoku/combat/combat_searaider.ogg','sound/music/kaizoku/combat/combat_oldtides.ogg','sound/music/kaizoku/combat/combat_decapitator.ogg','sound/music/kaizoku/combat/combat_emperor.ogg','sound/music/kaizoku/combat/combat_traditional.ogg','sound/music/kaizoku/combat/combat_navalretainers.ogg','sound/music/kaizoku/combat/combat_kyudo.ogg')
 
-/datum/species/abyssariad/get_accent(mob/living/carbon/human/H)
-	return strings("abyssal_replacement.json", "abyssal")
 
 ///mob/proc/banzai() //Don't have female 'Banzai' yells for that.
 //	set name = "Banzai"
