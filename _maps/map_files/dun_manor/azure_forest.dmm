@@ -2715,10 +2715,6 @@
 	},
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
-"vv" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/saigabuck,
-/turf/open/floor/rogue/grass/green,
-/area/rogue/outdoors/woods)
 "vB" = (
 /obj/structure/flora/newleaf,
 /obj/structure/flora/newleaf,
@@ -32617,7 +32613,7 @@ jW
 jW
 bP
 bP
-vv
+bP
 bP
 bP
 bP
@@ -32941,7 +32937,7 @@ bP
 bP
 bP
 bP
-vv
+bP
 bP
 bP
 Ek
@@ -33720,7 +33716,7 @@ jW
 bP
 Ek
 bP
-vv
+bP
 bP
 bP
 bP
@@ -37469,7 +37465,7 @@ bP
 bP
 bP
 bP
-vv
+bP
 bP
 jW
 bP
@@ -37639,7 +37635,7 @@ bP
 bP
 bP
 bP
-vv
+bP
 By
 By
 RB
@@ -38102,7 +38098,7 @@ Ek
 Ek
 Ek
 Ek
-vv
+bP
 bP
 bP
 bP
@@ -39854,7 +39850,7 @@ jW
 bP
 bP
 bP
-vv
+bP
 bP
 bP
 Ek
@@ -40323,7 +40319,7 @@ MK
 MK
 jW
 bP
-vv
+bP
 bP
 bP
 bP
@@ -40488,7 +40484,7 @@ QS
 bP
 bP
 bP
-vv
+bP
 bP
 bP
 bP
@@ -42841,7 +42837,7 @@ bP
 Vy
 bP
 bP
-vv
+bP
 bP
 bP
 jW
@@ -43163,7 +43159,7 @@ bP
 bP
 bP
 bP
-vv
+bP
 bP
 bP
 Ek
@@ -44410,7 +44406,7 @@ lm
 yo
 Ek
 bP
-vv
+bP
 bP
 bP
 jW
@@ -47400,7 +47396,7 @@ jW
 jW
 bP
 bP
-vv
+bP
 bP
 bP
 bP
@@ -47418,7 +47414,7 @@ bP
 bP
 bP
 bP
-vv
+bP
 bP
 bP
 bP
@@ -48496,7 +48492,7 @@ jW
 jW
 bP
 bP
-vv
+bP
 bP
 jW
 bP
@@ -48978,7 +48974,7 @@ bP
 bP
 bP
 bP
-vv
+bP
 bP
 bP
 bP
@@ -50491,7 +50487,7 @@ jW
 MK
 MK
 MK
-vv
+bP
 bP
 bP
 bP
@@ -50656,7 +50652,7 @@ bP
 bP
 jW
 jW
-vv
+bP
 bP
 bP
 bP
@@ -51279,7 +51275,7 @@ jW
 MK
 MK
 jW
-vv
+bP
 bP
 bP
 bP

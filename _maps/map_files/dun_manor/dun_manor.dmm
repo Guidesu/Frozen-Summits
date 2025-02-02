@@ -1363,10 +1363,6 @@
 "aZe" = (
 /turf/closed/mineral/random/rogue/high,
 /area/rogue/outdoors/beach)
-"bak" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/saigabuck,
-/turf/open/floor/rogue/grasscold,
-/area/rogue/outdoors/woods)
 "bcv" = (
 /obj/effect/decal/cobbleedge{
 	dir = 9
@@ -6172,12 +6168,6 @@
 	},
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/rtfield)
-"mws" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/saigabuck,
-/turf/open/floor/rogue/snow{
-	color = "e6f2ff"
-	},
-/area/rogue/outdoors/rtfield)
 "mwP" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -7246,10 +7236,6 @@
 /obj/item/natural/rock,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cave)
-"oYr" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/saigabuck,
-/turf/open/floor/rogue/snow,
-/area/rogue/outdoors/rtfield)
 "pad" = (
 /obj/structure/fluff/railing/wood{
 	pixel_x = 1;
@@ -10393,10 +10379,6 @@
 /obj/structure/bed/rogue/shit,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cave)
-"waN" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/saigabuck,
-/turf/open/floor/rogue/grasscold,
-/area/rogue/outdoors/rtfield)
 "waT" = (
 /obj/structure/flora/roguetree/normal{
 	icon_state = "free2"
@@ -37573,7 +37555,7 @@ sLi
 ymg
 fsP
 fRr
-waN
+fRr
 fRr
 fRr
 fRr
@@ -38209,7 +38191,7 @@ fRr
 fRr
 hiR
 fRr
-waN
+fRr
 fRr
 fRr
 fRr
@@ -38516,7 +38498,7 @@ sLi
 ymg
 fsP
 fRr
-waN
+fRr
 fRr
 fRr
 fRr
@@ -43317,7 +43299,7 @@ lnn
 dPV
 abb
 dPV
-oYr
+lnn
 lnn
 lnn
 fRr
@@ -43623,7 +43605,7 @@ omo
 lDW
 jMa
 dPV
-mws
+dPV
 lnn
 lnn
 dPV
@@ -45193,7 +45175,7 @@ ylN
 pHC
 lnn
 dPV
-mws
+dPV
 dPV
 dPV
 bOa
@@ -47861,7 +47843,7 @@ dPV
 dPV
 abb
 dPV
-mws
+dPV
 lnn
 lnn
 lnn
@@ -48801,7 +48783,7 @@ lnn
 lnn
 lnn
 dPV
-mws
+dPV
 doE
 dPV
 lnn
@@ -48946,7 +48928,7 @@ dPV
 dPV
 dPV
 dPV
-mws
+dPV
 dPV
 dPV
 dPV
@@ -48965,7 +48947,7 @@ lnn
 lUr
 lUr
 lnn
-oYr
+lnn
 dPV
 dPV
 dPV
@@ -49413,7 +49395,7 @@ dPV
 lnn
 fxH
 dPV
-mws
+dPV
 dPV
 dPV
 dPV
@@ -51626,7 +51608,7 @@ tVm
 tVm
 tVm
 dot
-bak
+tVm
 dot
 dot
 tVm
@@ -51948,7 +51930,7 @@ sHp
 tVm
 adn
 tVm
-bak
+tVm
 tVm
 kzR
 sHp
@@ -52100,7 +52082,7 @@ cBC
 cBC
 cBC
 tVm
-bak
+tVm
 tVm
 adn
 tVm
@@ -55273,13 +55255,13 @@ lnn
 lnn
 lnn
 lnn
-oYr
+lnn
 lnn
 lnn
 lnn
 bOa
 lnn
-oYr
+lnn
 lnn
 lnn
 lnn
@@ -55904,7 +55886,7 @@ lnn
 lnn
 lnn
 lnn
-oYr
+lnn
 lnn
 lnn
 eUz
@@ -56696,7 +56678,7 @@ bOa
 lnn
 lnn
 lnn
-oYr
+lnn
 lnn
 lnn
 jLQ
