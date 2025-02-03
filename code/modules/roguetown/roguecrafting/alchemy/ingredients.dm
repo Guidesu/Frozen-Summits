@@ -246,6 +246,15 @@
 	med_pot = /datum/alch_cauldron_recipe/antidote
 	minor_pot = /datum/alch_cauldron_recipe/int_potion
 
+/obj/item/alch/gyellow
+	name = "topaz dust"
+	desc = "A vibrant yellow powder, crushed finely."
+	icon_state = "topazdust"
+
+	major_pot = /datum/alch_cauldron_recipe/big_health_potion
+	med_pot = /datum/alch_cauldron_recipe/lck_potion
+	minor_pot = /datum/alch_cauldron_recipe/end_potion
+
 //BEGIN THE HERBS
 
 /obj/item/alch/atropa

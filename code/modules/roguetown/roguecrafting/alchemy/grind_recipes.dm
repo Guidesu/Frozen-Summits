@@ -151,6 +151,11 @@
 	valid_outputs = list(/obj/item/alch/gblue = 1)
 	bonus_chance_outputs = list(/obj/item/alch/gblue = 50,/obj/item/alch/magicdust = 25)
 
+/datum/alch_grind_recipe/topaz
+	valid_input = /obj/item/roguegem/yellow
+	valid_outputs = list(/obj/item/alch/gyellow = 1)
+	bonus_chance_outputs = list(/obj/item/alch/gyellow = 50,/obj/item/alch/airdust = 25)
+
 //Herb -> Herbseed
 /datum/alch_grind_recipe/atropa_seed
 	valid_input = /obj/item/alch/atropa
