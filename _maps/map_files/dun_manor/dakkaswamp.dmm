@@ -176,8 +176,10 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "ig" = (
-/obj/effect/decal/cleanable/blood/bubblegum,
-/turf/closed/wall/mineral/rogue/stone/window/blue_moss,
+/obj/item/restraints/legcuffs/beartrap/armed/camouflage,
+/obj/structure/mineral_door/wood,
+/obj/item/restraints/legcuffs/beartrap/armed/camouflage,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "io" = (
 /turf/open/floor/rogue/cobblerock,
@@ -234,7 +236,7 @@
 "kS" = (
 /obj/effect/decal/cleanable/blood/bubblegum,
 /obj/effect/decal/cleanable/blood/bubblegum,
-/turf/closed/wall/mineral/rogue/stone/window/blue_moss,
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
 /area/rogue/outdoors/shadow_fell)
 "kY" = (
 /obj/machinery/light/rogue/wallfire/candle/blue,
@@ -246,8 +248,11 @@
 /turf/closed/wall/mineral/rogue/wooddark/vertical,
 /area/rogue/outdoors/shadow_fell)
 "lv" = (
+/obj/effect/decal/cleanable/blood/bubblegum,
+/obj/effect/decal/cleanable/blood/bubblegum,
 /obj/structure/spider/stickyweb,
-/turf/closed/wall/mineral/rogue/stone/window/blue_moss,
+/obj/structure/flora/roguegrass/maneater/real,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "lY" = (
 /obj/machinery/light/rogue/campfire,
@@ -263,8 +268,9 @@
 /area/rogue/outdoors/shadow_fell)
 "mz" = (
 /obj/effect/decal/cleanable/blood/bubblegum,
-/obj/effect/decal/cleanable/blood/bubblegum,
-/turf/closed/mineral/rogue/bedrock,
+/obj/structure/spider/stickyweb,
+/obj/item/restraints/legcuffs/beartrap/armed/camouflage,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "nh" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
@@ -436,6 +442,7 @@
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /obj/effect/decal/cleanable/blood/bubblegum,
 /obj/structure/spider/stickyweb,
+/obj/item/restraints/legcuffs/beartrap/armed/camouflage,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "tH" = (
@@ -447,7 +454,7 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "tM" = (
-/turf/closed/wall/mineral/rogue/stone/window/blue_moss,
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
 /area/rogue/outdoors/shadow_fell)
 "tZ" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/spider/mutated,
@@ -473,7 +480,8 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "uO" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/dragon/broodmother,
+/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/obj/item/restraints/legcuffs/beartrap/armed/camouflage,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "uX" = (
@@ -804,6 +812,11 @@
 "NS" = (
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/shadow_fell)
+"NZ" = (
+/obj/structure/spider/stickyweb,
+/obj/item/restraints/legcuffs/beartrap/armed/camouflage,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/shadow_fell)
 "Ov" = (
 /turf/closed/wall/mineral/rogue/wooddark/window,
 /area/rogue/outdoors/shadow_fell)
@@ -832,7 +845,7 @@
 /area/rogue/outdoors/shadow_fell)
 "Ps" = (
 /obj/effect/decal/cleanable/blood/bubblegum,
-/turf/closed/mineral/rogue/bedrock,
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
 /area/rogue/outdoors/shadow_fell)
 "PL" = (
 /mob/living/simple_animal/hostile/rogue/dragger,
@@ -936,7 +949,8 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/shadow_fell)
 "Ts" = (
-/obj/item/restraints/legcuffs/beartrap/armed/camouflage,
+/obj/effect/decal/cleanable/blood/bubblegum,
+/mob/living/simple_animal/hostile/retaliate/rogue/dragon/broodmother,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "Ty" = (
@@ -978,12 +992,18 @@
 /area/rogue/outdoors/shadow_fell)
 "VV" = (
 /obj/structure/mineral_door/wood,
+/obj/item/restraints/legcuffs/beartrap/armed/camouflage,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "VX" = (
 /obj/structure/bookcase,
 /obj/item/book/rogue/yeoldecookingmanual,
 /obj/item/book/rogue/robber,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/shadow_fell)
+"Wo" = (
+/obj/structure/spider/stickyweb,
+/obj/structure/flora/roguegrass/maneater/real,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "Wp" = (
@@ -1275,9 +1295,9 @@ YB
 YB
 YB
 tM
-pV
-YB
-GA
+tM
+tM
+tM
 tM
 GA
 YB
@@ -1287,7 +1307,7 @@ YB
 GA
 ax
 GA
-uO
+YB
 YB
 YB
 YB
@@ -1589,7 +1609,7 @@ YB
 YB
 YB
 tM
-YB
+pV
 yT
 yT
 yT
@@ -1756,7 +1776,7 @@ YB
 YB
 YB
 YB
-kp
+ig
 YB
 YB
 YB
@@ -1904,7 +1924,7 @@ YB
 YB
 tM
 pV
-Xb
+lv
 LB
 kF
 kp
@@ -1913,13 +1933,13 @@ YB
 YB
 YB
 YB
-kp
+ig
 YB
 YB
 yT
 yT
 YB
-yT
+Ts
 YB
 YB
 YB
@@ -3161,8 +3181,8 @@ YB
 tM
 Mx
 YB
-kp
-kF
+ig
+Wo
 yT
 yT
 Im
@@ -3474,7 +3494,7 @@ YB
 YB
 tM
 LB
-LB
+mz
 tM
 am
 YB
@@ -3632,7 +3652,7 @@ YB
 tM
 yT
 YB
-ig
+Ps
 YB
 IC
 YB
@@ -3789,7 +3809,7 @@ YB
 tM
 Mx
 YB
-ig
+Ps
 GA
 Im
 YB
@@ -3947,12 +3967,12 @@ tM
 yT
 YB
 tM
-ig
-ig
-ig
+Ps
+Ps
+Ps
 tM
-kp
 ig
+Ps
 tM
 tM
 tM
@@ -4103,7 +4123,7 @@ YB
 tM
 yT
 YB
-dc
+tM
 sn
 yT
 Cw
@@ -4118,7 +4138,7 @@ YB
 tM
 tM
 tM
-lv
+kF
 tM
 tM
 tM
@@ -4260,7 +4280,7 @@ YB
 tM
 YB
 Im
-dc
+tM
 eo
 YB
 GF
@@ -4417,7 +4437,7 @@ YB
 tM
 pV
 yT
-dc
+tM
 eo
 YB
 Jt
@@ -4574,7 +4594,7 @@ YB
 tM
 YB
 yT
-dc
+tM
 Jt
 yT
 Jt
@@ -4731,7 +4751,7 @@ YB
 tM
 YB
 yT
-mz
+kS
 Jt
 YB
 eo
@@ -5202,7 +5222,7 @@ YB
 tM
 YB
 YB
-dc
+tM
 eo
 YB
 eo
@@ -5214,7 +5234,7 @@ eo
 yT
 Jt
 yT
-ig
+Ps
 QB
 yT
 Vj
@@ -5359,7 +5379,7 @@ YB
 tM
 YB
 YB
-dc
+tM
 OL
 YB
 eo
@@ -5516,7 +5536,7 @@ YB
 tM
 YB
 YB
-dc
+tM
 Qk
 YB
 YB
@@ -5524,7 +5544,7 @@ vy
 yT
 vy
 YB
-vy
+uO
 YB
 YB
 YB
@@ -5673,7 +5693,7 @@ YB
 tM
 pV
 YB
-dc
+tM
 uH
 YB
 SQ
@@ -5688,7 +5708,7 @@ YB
 tM
 Vj
 CI
-Vj
+YB
 Im
 bw
 tM
@@ -5830,7 +5850,7 @@ YB
 tM
 sS
 YB
-dc
+tM
 YB
 SQ
 SQ
@@ -5845,7 +5865,7 @@ VV
 tM
 Vj
 YB
-Vj
+YB
 yT
 CI
 tM
@@ -5987,7 +6007,7 @@ YB
 tM
 YB
 sS
-dc
+tM
 dv
 SQ
 GA
@@ -6002,7 +6022,7 @@ YB
 tM
 Vj
 YB
-QB
+yT
 yT
 tM
 tM
@@ -6144,8 +6164,8 @@ YB
 tM
 pV
 YB
-dc
-dc
+tM
+tM
 SQ
 YB
 YB
@@ -6159,7 +6179,7 @@ YB
 tM
 Vj
 YB
-Vj
+YB
 YB
 tM
 tM
@@ -6301,7 +6321,7 @@ YB
 tM
 YB
 YB
-kF
+NZ
 GA
 SQ
 YB
@@ -6457,7 +6477,7 @@ YB
 YB
 tM
 YB
-LB
+mz
 kF
 YB
 SQ
@@ -6630,7 +6650,7 @@ VV
 tM
 Vj
 yT
-Vj
+YB
 YB
 tM
 tM
@@ -6787,7 +6807,7 @@ YB
 tM
 QB
 CP
-Vj
+YB
 YB
 tM
 tM
@@ -6944,7 +6964,7 @@ QO
 tM
 Vj
 YB
-Vj
+YB
 YB
 CI
 tM
@@ -7089,7 +7109,7 @@ YB
 YB
 YB
 VV
-Ts
+YB
 YB
 YB
 YB
