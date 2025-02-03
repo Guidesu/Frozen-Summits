@@ -42,12 +42,12 @@
 //Healing potions
 /datum/alch_cauldron_recipe/health_potion
 	recipe_name = "Elixir of Health"
-	smells_like = "sweet berries"
+	smells_like = "lesser lifeblood"
 	output_reagents = list(/datum/reagent/medicine/healthpotnew = 81)
 
 /datum/alch_cauldron_recipe/big_health_potion
 	recipe_name = "Strong Elixir of Health"
-	smells_like = "berry pie"
+	smells_like = "lifeblood"
 	output_reagents = list(/datum/reagent/medicine/stronghealth = 81,/datum/reagent/additive = 81)
 
 /datum/alch_cauldron_recipe/mana_potion
