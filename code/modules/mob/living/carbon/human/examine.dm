@@ -3,6 +3,14 @@
 		return
 	if(user.mind)
 		user.mind.i_know_person(src)
+	var/datum/species/self_species = dna.species
+	var/datum/species/examiner_species = user.dna.species
+	if(self_species.stress_examine && self_species.type != examiner_species.type && !HAS_TRAIT(user, TRAIT_TOLERANT))
+		var/event_type = /datum/stressevent/shunned_race
+		if(HAS_TRAIT(user, TRAIT_XENOPHOBIC))
+			event_type = /datum/stressevent/shunned_race_xenophobic
+		var/datum/stressevent/event = user.add_stress(event_type)
+		event.desc = self_species.stress_desc
 	if(user.has_flaw(/datum/charflaw/paranoid))	//We hate different species, that are stronger than us, and aren't racist themselves
 		if(dna.species.name != user.dna.species.name && (STASTR - user.STASTR) > 1 && !has_flaw(/datum/charflaw/paranoid))
 			user.add_stress(/datum/stressevent/parastr)
