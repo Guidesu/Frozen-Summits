@@ -7739,6 +7739,7 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/rtfield)
 "pOi" = (
+/obj/structure/bed/rogue/bedroll,
 /turf/open/floor/rogue/hay,
 /area/rogue)
 "pOo" = (
@@ -11418,12 +11419,6 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/rtfield)
-"xTl" = (
-/obj/structure/bearpelt{
-	pixel_x = -16
-	},
-/turf/open/floor/rogue/hay,
 /area/rogue/outdoors/rtfield)
 "xWm" = (
 /obj/machinery/light/rogue/hearth,
@@ -50637,7 +50632,7 @@ xOC
 eUz
 eUz
 pOi
-xTl
+aXS
 pJb
 biI
 biI
