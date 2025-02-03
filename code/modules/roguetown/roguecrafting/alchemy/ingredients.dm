@@ -226,6 +226,26 @@
 	med_pot = /datum/alch_cauldron_recipe/gender_potion
 	minor_pot = /datum/alch_cauldron_recipe/gender_potion
 
+//BEGIN THE GEMS
+
+/obj/item/alch/ggreen
+	name = "emerald dust"
+	desc = "A vibrant green powder, crushed finely."
+	icon_state = "emeralddust"
+
+	major_pot = /datum/alch_cauldron_recipe/lck_potion
+	med_pot = /datum/alch_cauldron_recipe/big_health_potion
+	minor_pot = /datum/alch_cauldron_recipe/end_potion
+
+/obj/item/alch/gblue
+	name = "quartz dust"
+	desc = "A vibrant pale blue-ish powder, crushed finely."
+	icon_state = "quartzdust"
+
+	major_pot = /datum/alch_cauldron_recipe/disease_cure
+	med_pot = /datum/alch_cauldron_recipe/antidote
+	minor_pot = /datum/alch_cauldron_recipe/int_potion
+
 //BEGIN THE HERBS
 
 /obj/item/alch/atropa

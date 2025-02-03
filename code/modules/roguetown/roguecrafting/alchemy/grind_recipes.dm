@@ -139,6 +139,18 @@
 	valid_outputs = list(/obj/item/alch/irondust = 1)
 	bonus_chance_outputs = list(/obj/item/alch/irondust = 33)
 
+//Gems -> Powder
+
+/datum/alch_grind_recipe/emerald
+	valid_input = /obj/item/roguegem/green
+	valid_outputs = list(/obj/item/alch/ggreen = 1)
+	bonus_chance_outputs = list(/obj/item/alch/ggreen = 50,/obj/item/alch/earthdust = 25)
+
+/datum/alch_grind_recipe/quartz
+	valid_input = /obj/item/roguegem/blue
+	valid_outputs = list(/obj/item/alch/gblue = 1)
+	bonus_chance_outputs = list(/obj/item/alch/gblue = 50,/obj/item/alch/magicdust = 25)
+
 //Herb -> Herbseed
 /datum/alch_grind_recipe/atropa_seed
 	valid_input = /obj/item/alch/atropa
