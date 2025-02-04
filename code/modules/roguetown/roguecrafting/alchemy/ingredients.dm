@@ -287,6 +287,15 @@
 	med_pot = /datum/alch_cauldron_recipe/con_potion
 	minor_pot = /datum/alch_cauldron_recipe/lck_potion
 
+/obj/item/alch/gamethyst
+	name = "amethyst dust"
+	desc = "A vibrant purple powder, crushed finely."
+	icon_state = "amethystdust"
+
+	major_pot = /datum/alch_cauldron_recipe/mana_potion
+	med_pot = /datum/alch_cauldron_recipe/int_potion
+	minor_pot = /datum/alch_cauldron_recipe/health_potion
+
 /obj/item/alch/gdiamond
 	name = "diamond dust"
 	desc = "A vibrant clear powder, crushed finely."

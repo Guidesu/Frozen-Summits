@@ -196,6 +196,11 @@
 	valid_outputs = list(/obj/item/alch/gviolet = 1,/obj/item/alch/waterdust = 1)
 	bonus_chance_outputs = list(/obj/item/alch/gviolet = 50,/obj/item/alch/waterdust = 25)
 
+/datum/alch_grind_recipe/amethyst
+	valid_input = /obj/item/roguegem/amethyst
+	valid_outputs = list(/obj/item/alch/gamethyst = 1,/obj/item/alch/magicdust = 1)
+	bonus_chance_outputs = list(/obj/item/alch/gamethyst = 50,/obj/item/alch/transisdust = 25)
+
 /datum/alch_grind_recipe/diamond
 	valid_input = /obj/item/roguegem/diamond
 	valid_outputs = list(/obj/item/alch/gdiamond = 1,/obj/item/alch/feaudust = 1)

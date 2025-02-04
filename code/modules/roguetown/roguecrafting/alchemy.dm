@@ -181,6 +181,12 @@
 	craftdiff = 6
 	verbage_simple = "transmute"
 
+/datum/crafting_recipe/roguetown/alchemy/d2am
+	name = "magic dust to amethyst"
+	result = list(/obj/item/roguegem/amethyst = 1)
+	reqs = list(/obj/item/alch/magicdust = 2)
+	craftdiff = 4
+	verbage_simple = "transmute"
 
 /obj/item/reagent_containers/hypospray/medipen/sealbottle
 	name = "sealed bottle item"
