@@ -4,6 +4,21 @@
 	var/list/valid_outputs = list() //List of [Itempath = amnt?1] to be created always
 	var/list/bonus_chance_outputs = list() //List of [Itempath = chance/100] to create sometimes.
 
+/datum/alch_grind_recipe/meat //More chance at extra Sinew
+	valid_input = /obj/item/reagent_containers/food/snacks/rogue/meat/steak
+	valid_outputs = list(/obj/item/alch/sinew = 1)
+	bonus_chance_outputs = list(/obj/item/alch/sinew = 50,/obj/item/alch/viscera = 25)
+
+/datum/alch_grind_recipe/chickencutlet //More chance at extra Viscera
+	valid_input = /obj/item/reagent_containers/food/snacks/rogue/meat/poultry/cutlet
+	valid_outputs = list(/obj/item/alch/sinew = 1)
+	bonus_chance_outputs = list(/obj/item/alch/sinew = 25,/obj/item/alch/viscera = 50)
+
+/datum/alch_grind_recipe/fishmince //Chance at intact tail bone
+	valid_input = /obj/item/reagent_containers/food/snacks/rogue/meat/mince/fish
+	valid_outputs = list(/obj/item/alch/viscera = 1)
+	bonus_chance_outputs = list(/obj/item/alch/sinew = 25,/obj/item/alch/bone = 50)
+
 /datum/alch_grind_recipe/sinew
 	valid_input = /obj/item/alch/sinew
 	valid_outputs = list(/obj/item/alch/viscera = 1)
