@@ -51,10 +51,15 @@
 	bonus_chance_outputs = list(/obj/item/alch/runedust = 33)
 
 //Objects -> dusts
-/datum/alch_grind_recipe/crow
+/datum/alch_grind_recipe/crow //Dunno who was high enough to make a wild animal only give airdust when grinded, but I fixed it. - Blue
 	valid_input = /obj/item/reagent_containers/food/snacks/crow
-	valid_outputs = list(/obj/item/alch/airdust = 1)
-	bonus_chance_outputs = list(/obj/item/alch/airdust = 33)
+	valid_outputs = list(/obj/item/alch/viscera = 1)
+	bonus_chance_outputs = list(/obj/item/alch/airdust = 33,/obj/item/alch/sinew = 25)
+
+/datum/alch_grind_recipe/nbone
+	valid_input = /obj/item/natural/bone
+	valid_outputs = list( /obj/item/alch/bonemeal = 2)
+	bonus_chance_outputs = list(/obj/item/alch/bonemeal = 50)
 
 /datum/alch_grind_recipe/bone
 	valid_input = /obj/item/alch/bone
@@ -134,10 +139,20 @@
 	valid_outputs = list(/obj/item/alch/irondust = 1)
 	bonus_chance_outputs = list(/obj/item/alch/irondust = 33)
 
+/datum/alch_grind_recipe/copper_ore
+	valid_input = /obj/item/rogueore/copper
+	valid_outputs = list(/obj/item/alch/copperdust = 1)
+	bonus_chance_outputs = list(/obj/item/alch/copperdust = 33)
+
 /datum/alch_grind_recipe/coal_ore
 	valid_input = /obj/item/rogueore/coal
 	valid_outputs = list(/obj/item/alch/coaldust = 1)
 	bonus_chance_outputs = list(/obj/item/alch/coaldust = 33)
+
+/datum/alch_grind_recipe/nrock
+	valid_input = /obj/item/natural/stone
+	valid_outputs = list(/obj/item/alch/rocksalt = 1)
+	bonus_chance_outputs = list(/obj/item/alch/rocksalt = 20)
 
 /datum/alch_grind_recipe/gold_bar
 	valid_input = /obj/item/ingot/gold
