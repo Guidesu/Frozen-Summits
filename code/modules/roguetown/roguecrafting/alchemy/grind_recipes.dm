@@ -141,20 +141,35 @@
 
 //Gems -> Powder
 
+/datum/alch_grind_recipe/ruby
+	valid_input = /obj/item/roguegem
+	valid_outputs = list(/obj/item/alch/gred = 1,/obj/item/alch/firedust = 1)
+	bonus_chance_outputs = list(/obj/item/alch/gred = 50,/obj/item/alch/firedust = 25)
+
 /datum/alch_grind_recipe/emerald
 	valid_input = /obj/item/roguegem/green
-	valid_outputs = list(/obj/item/alch/ggreen = 1)
+	valid_outputs = list(/obj/item/alch/ggreen = 1,/obj/item/alch/earthdust = 1)
 	bonus_chance_outputs = list(/obj/item/alch/ggreen = 50,/obj/item/alch/earthdust = 25)
 
 /datum/alch_grind_recipe/quartz
 	valid_input = /obj/item/roguegem/blue
-	valid_outputs = list(/obj/item/alch/gblue = 1)
+	valid_outputs = list(/obj/item/alch/gblue = 1,/obj/item/alch/magicdust = 1)
 	bonus_chance_outputs = list(/obj/item/alch/gblue = 50,/obj/item/alch/magicdust = 25)
 
 /datum/alch_grind_recipe/topaz
 	valid_input = /obj/item/roguegem/yellow
-	valid_outputs = list(/obj/item/alch/gyellow = 1)
+	valid_outputs = list(/obj/item/alch/gyellow = 1,/obj/item/alch/airdust = 1)
 	bonus_chance_outputs = list(/obj/item/alch/gyellow = 50,/obj/item/alch/airdust = 25)
+
+/datum/alch_grind_recipe/sapphire
+	valid_input = /obj/item/roguegem/violet
+	valid_outputs = list(/obj/item/alch/gviolet = 1,/obj/item/alch/waterdust = 1)
+	bonus_chance_outputs = list(/obj/item/alch/gviolet = 50,/obj/item/alch/waterdust = 25)
+
+/datum/alch_grind_recipe/diamond
+	valid_input = /obj/item/roguegem/diamond
+	valid_outputs = list(/obj/item/alch/gdiamond = 1,/obj/item/alch/feaudust = 1)
+	bonus_chance_outputs = list(/obj/item/alch/gdiamond = 50,/obj/item/alch/feaudust = 25)
 
 //Herb -> Herbseed
 /datum/alch_grind_recipe/atropa_seed
