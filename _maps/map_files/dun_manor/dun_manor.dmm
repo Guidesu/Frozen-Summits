@@ -932,9 +932,7 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors)
 "ada" = (
-/obj/machinery/light/rogue/hearth,
-/obj/item/reagent_containers/glass/bucket/pot,
-/turf/open/floor/rogue/blocks,
+/turf/open/floor/rogue/snow,
 /area/rogue/indoors)
 "adb" = (
 /obj/structure/fermenting_barrel/water,
@@ -1754,10 +1752,6 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/outdoors/rtfield)
-"bYv" = (
-/obj/machinery/light/rogue/oven/south,
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors)
 "bYw" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -2325,8 +2319,7 @@
 /turf/open/floor/rogue/ruinedwood/platform,
 /area/rogue/outdoors/mountains)
 "diq" = (
-/obj/structure/closet/crate/chest,
-/turf/open/floor/rogue/wood,
+/turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors)
 "diM" = (
 /obj/structure/flora/ausbushes/genericbush,
@@ -4022,10 +4015,9 @@
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/outdoors/mountains)
 "hvn" = (
-/obj/structure/fluff/millstone{
-	pixel_y = 10
-	},
-/turf/open/floor/rogue/blocks,
+/obj/effect/temp_visual/fire,
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors)
 "hvE" = (
 /turf/open/floor/rogue/dirt,
@@ -4222,7 +4214,7 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "iax" = (
-/turf/closed/wall/mineral/rogue/decostone,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
 "ibf" = (
 /obj/structure/chair/wood/rogue{
@@ -4987,12 +4979,6 @@
 /obj/structure/fluff/railing/wood,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield)
-"jPJ" = (
-/obj/machinery/light/rogue/torchholder{
-	dir = 4
-	},
-/turf/open/floor/rogue/wood,
-/area/rogue/indoors)
 "jPW" = (
 /turf/open/transparent/openspace,
 /turf/open/floor/rogue/naturalstone,
@@ -5097,23 +5083,9 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/rtfield)
 "kcM" = (
-/obj/structure/closet/crate/roguecloset,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/reagent_containers/glass/cup/wooden,
-/obj/item/reagent_containers/glass/cup/wooden,
-/obj/item/reagent_containers/glass/cup/wooden,
-/obj/item/reagent_containers/glass/cup/wooden,
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/turf/open/floor/rogue/wood,
+/obj/effect/temp_visual/fire,
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors)
 "kcN" = (
 /obj/structure/closet/crate/roguecloset/inn,
@@ -6167,19 +6139,9 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "mrM" = (
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
-	},
-/obj/item/cooking/pan{
-	pixel_y = 28
-	},
-/obj/item/kitchen/rollingpin,
-/obj/item/rogueweapon/huntingknife/chefknife{
-	pixel_y = 6;
-	pixel_x = -10
-	},
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors)
+/obj/effect/temp_visual/fire,
+/turf/open/lava,
+/area/rogue/under/cave)
 "mtb" = (
 /obj/structure/mineral_door/wood,
 /turf/open/floor/rogue/cobble,
@@ -6343,14 +6305,6 @@
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/rtfield)
-"mEr" = (
-/obj/structure/bed/rogue{
-	name = "crib";
-	icon_state = "crib";
-	desc = "A small place for a small creature. Looks comfy"
-	},
-/turf/open/floor/rogue/wood,
-/area/rogue/indoors)
 "mFL" = (
 /obj/structure/fluff/railing/border{
 	icon_state = "border";
@@ -10209,9 +10163,6 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cave)
-"vud" = (
-/turf/closed/wall/mineral/rogue/tent,
-/area/rogue/indoors)
 "vuw" = (
 /turf/open/floor/rogue/dirt/ambush,
 /area/rogue/outdoors/mountains)
@@ -10513,9 +10464,6 @@
 /obj/item/scomstone/bad,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield)
-"vZE" = (
-/turf/open/floor/rogue/ruinedwood,
-/area/rogue/outdoors/mountains)
 "vZZ" = (
 /obj/structure/fermenting_barrel/water,
 /turf/open/floor/rogue/cobble,
@@ -21178,9 +21126,9 @@ hWI
 xXW
 xXW
 hWI
-hWI
-hWI
-hWI
+sbR
+mrM
+sbR
 hWI
 hWI
 hWI
@@ -21334,11 +21282,11 @@ hWI
 hWI
 sbR
 sbR
-hWI
-hWI
-hWI
-hWI
-hWI
+sbR
+sbR
+sbR
+sbR
+mrM
 hWI
 aCh
 sbR
@@ -21492,9 +21440,9 @@ xXW
 lfj
 hWI
 hWI
-hWI
-hWI
-hWI
+mrM
+sbR
+sbR
 aCh
 eZs
 sbR
@@ -44734,7 +44682,7 @@ fRr
 fRr
 lnn
 dPV
-dPV
+fsP
 lnn
 fRr
 fRr
@@ -44887,11 +44835,11 @@ lnn
 lnn
 lnn
 lnn
-lnn
-lnn
+fsP
+fsP
 dPV
-dPV
-dPV
+fsP
+fsP
 lnn
 lnn
 fRr
@@ -45042,12 +44990,12 @@ lnn
 lnn
 lnn
 lnn
-vud
-vud
-vud
-vud
-vud
-lnn
+ada
+ada
+iax
+ada
+iax
+fsP
 lnn
 vIK
 lnn
@@ -45199,11 +45147,11 @@ lnn
 lnn
 ooF
 lnn
-vud
-mEr
-jPJ
+iax
+iax
+iax
 diq
-vud
+iax
 mVe
 lnn
 lnn
@@ -45356,11 +45304,11 @@ lnn
 lnn
 lnn
 lnn
-vud
-hHC
-hHC
-hHC
-hHC
+iax
+kcM
+diq
+diq
+diq
 fsP
 mVe
 iSJ
@@ -45512,12 +45460,12 @@ lnn
 veh
 lnn
 lnn
-lnn
-vud
-mEr
-hHC
-kcM
-vud
+fsP
+iax
+diq
+acF
+acF
+diq
 fsP
 fsP
 xqr
@@ -45670,11 +45618,11 @@ lnn
 lnn
 lnn
 lnn
-vud
-vud
-vud
-vud
-vud
+iax
+acF
+acF
+acF
+acF
 mVe
 fsP
 lnn
@@ -45825,13 +45773,13 @@ mVe
 mVe
 dPV
 dPV
-dPV
-dPV
-dPV
-dPV
-iax
-mrM
-ade
+fsP
+fsP
+fsP
+ylN
+acF
+acF
+hvn
 fsP
 fsP
 mVe
@@ -45984,11 +45932,11 @@ lnn
 lnn
 lnn
 lnn
-lnn
-lnn
-iax
-bYv
-ade
+fsP
+ylN
+diq
+diq
+diq
 fsP
 fsP
 mVe
@@ -46141,11 +46089,11 @@ lnn
 lnn
 lnn
 lnn
-lnn
-lnn
+fsP
+fsP
 iax
-hvn
-ade
+iax
+iax
 fsP
 aat
 lRw
@@ -46297,10 +46245,10 @@ lnn
 lnn
 lnn
 lnn
-lnn
+fsP
 lnn
 cdc
-lnn
+fsP
 iax
 ada
 fsP
@@ -69378,11 +69326,11 @@ tXZ
 tXZ
 tXZ
 tXZ
-vZE
-vZE
-vZE
-vZE
-vZE
+tXZ
+tXZ
+tXZ
+tXZ
+tXZ
 tXZ
 tXZ
 tXZ
@@ -69535,11 +69483,11 @@ tXZ
 tXZ
 tXZ
 tXZ
-vZE
-vZE
-vZE
-vZE
-vZE
+tXZ
+tXZ
+tXZ
+tXZ
+tXZ
 tXZ
 tXZ
 tXZ
@@ -69692,11 +69640,11 @@ tXZ
 tXZ
 tXZ
 tXZ
-vZE
-vZE
-vZE
-vZE
-vZE
+tXZ
+tXZ
+tXZ
+tXZ
+tXZ
 tXZ
 tXZ
 tXZ
@@ -69849,11 +69797,11 @@ tXZ
 tXZ
 tXZ
 tXZ
-vZE
-vZE
-vZE
-vZE
-vZE
+tXZ
+tXZ
+tXZ
+tXZ
+tXZ
 tXZ
 tXZ
 tXZ
@@ -70006,11 +69954,11 @@ tXZ
 tXZ
 tXZ
 tXZ
-vZE
-vZE
-vZE
-vZE
-vZE
+tXZ
+tXZ
+tXZ
+tXZ
+tXZ
 tXZ
 tXZ
 tXZ
@@ -70165,9 +70113,9 @@ tXZ
 tXZ
 tXZ
 tXZ
-kDi
-kDi
-kDi
+tXZ
+tXZ
+tXZ
 tXZ
 tXZ
 tXZ
@@ -70322,9 +70270,9 @@ tXZ
 tXZ
 tXZ
 tXZ
-kDi
-kDi
-kDi
+tXZ
+tXZ
+tXZ
 tXZ
 tXZ
 tXZ
@@ -70479,9 +70427,9 @@ tXZ
 tXZ
 tXZ
 tXZ
-kDi
-kDi
-kDi
+tXZ
+tXZ
+tXZ
 tXZ
 tXZ
 kDi
@@ -70637,8 +70585,8 @@ tXZ
 tXZ
 tXZ
 tXZ
-kDi
-kDi
+tXZ
+tXZ
 tXZ
 tXZ
 kDi
