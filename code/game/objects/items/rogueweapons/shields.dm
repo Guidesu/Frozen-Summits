@@ -141,6 +141,7 @@
 	coverage = 70
 	attacked_sound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
 	parrysound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
+	smeltresult = /obj/item/ingot/iron
 	max_integrity = 200
 
 /obj/item/rogueweapon/shield/tower/getonmobprop(tag)
@@ -154,7 +155,7 @@
 
 /obj/item/rogueweapon/shield/tower/metal
 	name = "kite shield"
-	desc = "A kite-shaped iron shield. Reliable and sturdy."
+	desc = "A kite-shaped steel shield. Reliable and sturdy."
 	icon_state = "ironsh"
 	force = 20
 	throwforce = 10
@@ -167,6 +168,7 @@
 	coverage = 70
 	attacked_sound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
 	parrysound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
+	smeltresult = /obj/item/ingot/steel
 	max_integrity = 300
 	blade_dulling = DULLING_BASH
 	sellprice = 30
