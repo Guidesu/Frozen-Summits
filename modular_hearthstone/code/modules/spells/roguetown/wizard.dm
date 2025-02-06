@@ -241,6 +241,12 @@
 		/obj/effect/proc_holder/spell/targeted/touch/summonrogueweapon/bladeofpsydon,
 		/obj/effect/proc_holder/spell/invoked/projectile/repel,
 		/obj/effect/proc_holder/spell/invoked/mending5e,
+		/obj/effect/proc_holder/spell/invoked/poisonspray5e,
+		/obj/effect/proc_holder/spell/targeted/touch/lesserknock,
+		/obj/effect/proc_holder/spell/invoked/counterspell,
+		/obj/effect/proc_holder/spell/invoked/enlarge,
+		/obj/effect/proc_holder/spell/invoked/leap
+		
 	)
 
 	for(var/i = 1, i <= spell_choices.len, i++)
@@ -1303,6 +1309,202 @@
 					throw_target = get_edge_target_turf(firer, get_dir(firer, target))
 			I.throw_at(throw_target, 7, 4)
 			
+
+/obj/effect/proc_holder/spell/invoked/poisonspray5e
+	name = "Aerosolize" //once again renamed to fit better :)
+	desc = "Turns a container of liquid into a smoke containing the reagents of that liquid."
+	overlay_state = "null"
+	releasedrain = 50
+	chargetime = 3
+	charge_max = 20 SECONDS
+	//chargetime = 10
+	//charge_max = 30 SECONDS
+	range = 6
+	warnie = "spellwarning"
+	movement_interrupt = FALSE
+	no_early_release = FALSE
+	chargedloop = null
+	sound = 'sound/magic/whiteflame.ogg'
+	chargedloop = /datum/looping_sound/invokegen
+	associated_skill = /datum/skill/magic/arcane //can be arcane, druidic, blood, holy
+	cost = 1
+
+	xp_gain = TRUE
+	miracle = FALSE
+
+	invocation = ""
+	invocation_type = "shout" //can be none, whisper, emote and shout
+	
+/obj/effect/proc_holder/spell/invoked/poisonspray5e/cast(list/targets, mob/living/user)
+	var/turf/T = get_turf(targets[1]) //check for turf
+	if(T)
+		var/obj/item/held_item = user.get_active_held_item() //get held item
+		var/obj/item/reagent_containers/con = held_item //get held item
+		if(con)
+			if(con.spillable)
+				if(con.reagents.total_volume > 0)
+					var/datum/reagents/R = con.reagents
+					var/datum/effect_system/smoke_spread/chem/smoke = new
+					smoke.set_up(R, 1, T, FALSE)
+					smoke.start()
+
+					user.visible_message(span_warning("[user] sprays the contents of the [held_item], creating a cloud!"), span_warning("You spray the contents of the [held_item], creating a cloud!"))
+					con.reagents.clear_reagents() //empty the container
+					playsound(user, 'sound/magic/webspin.ogg', 100)
+				else
+					to_chat(user, "<span class='warning'>The [held_item] is empty!</span>")
+					revert_cast()
+			else
+				to_chat(user, "<span class='warning'>I can't get access to the contents of this [held_item]!</span>")
+				revert_cast()
+		else
+			to_chat(user, "<span class='warning'>I need to hold a container to cast this!</span>")
+			revert_cast()
+	else
+		to_chat(user, "<span class='warning'>I couldn't find a good place for this!</span>")
+		revert_cast()
+
+/obj/effect/proc_holder/spell/targeted/touch/lesserknock
+	name = "Lesser Knock"
+	desc = "A simple spell used to focus the arcyne into an instrument for lockpicking. Can be dispelled by using it on anything that isn't a locked/unlocked door."
+	clothes_req = FALSE
+	drawmessage = "I prepare to perform a minor arcyne incantation."
+	dropmessage = "I release my minor arcyne focus."
+	school = "transmutation"
+	overlay_state = "rune4"
+	chargedrain = 0
+	chargetime = 0
+	releasedrain = 5 // this influences -every- cost involved in the spell's functionality, if you want to edit specific features, do so in handle_cost
+	chargedloop = /datum/looping_sound/invokegen
+	associated_skill = /datum/skill/magic/arcane
+	hand_path = /obj/item/melee/touch_attack/lesserknock
+	cost = 1
+	
+/obj/item/melee/touch_attack/lesserknock
+	name = "Spectral Lockpick"
+	desc = "A faintly glowing lockpick that appears to be held together by the mysteries of the arcyne. To dispel it, simply use it on anything that isn't a door."
+	catchphrase = null
+	possible_item_intents = list(/datum/intent/use)
+	icon = 'icons/roguetown/items/keys.dmi'
+	icon_state = "lockpick"
+	color = "#3FBAFD" // spooky magic blue color that's also used by presti
+	picklvl = 1
+	max_integrity = 30
+	destroy_sound = 'sound/items/pickbreak.ogg'
+	resistance_flags = FIRE_PROOF
+
+/obj/item/melee/touch_attack/lesserknock/attack_self()
+	qdel(src)
+
+/obj/effect/proc_holder/spell/invoked/counterspell
+	name = "Counterspell"
+	desc = "Briefly nullify the arcyne energy surrounding a target. Either outright preventing magic from being used outright, or preventing most magics from affecting the subject."
+	cost = 1
+	releasedrain = 35
+	chargedrain = 1
+	chargetime = 30
+	charge_max = 80 SECONDS
+	warnie = "spellwarning"
+	no_early_release = TRUE
+	movement_interrupt = FALSE
+	charging_slowdown = 3
+	chargedloop = /datum/looping_sound/wind
+	associated_skill = /datum/skill/magic/arcane
+	overlay_state = "rune2"
+
+/obj/effect/proc_holder/spell/invoked/counterspell/cast(list/targets, mob/user = usr)
+	if(isliving(targets[1]))
+		var/mob/living/carbon/target = targets[1]
+		ADD_TRAIT(target, TRAIT_SPELLCOCKBLOCK, MAGIC_TRAIT)
+		ADD_TRAIT(target, TRAIT_ANTIMAGIC, MAGIC_TRAIT)
+		to_chat(target, span_warning("I feel as if my connection to the Arcyne disappears entirely. The air feels still..."))
+		target.visible_message("[target]'s arcyne aura seems to fade.")
+		addtimer(CALLBACK(src, PROC_REF(remove_buff), target), wait = 20 SECONDS)
+		return TRUE
+	
+
+/obj/effect/proc_holder/spell/invoked/counterspell/proc/remove_buff(mob/living/carbon/target)
+	REMOVE_TRAIT(target, TRAIT_SPELLCOCKBLOCK, MAGIC_TRAIT)
+	REMOVE_TRAIT(target, TRAIT_ANTIMAGIC, MAGIC_TRAIT)
+	to_chat(target, span_warning("I feel my connection to the arcyne surround me once more."))
+	target.visible_message("[target]'s arcyne aura seems to return once more.")
+	
+/obj/effect/proc_holder/spell/invoked/enlarge
+	name = "Enlarge Person"
+	desc = "For a time, enlarges your target to a giant hulking version of themselves capable of bashing into doors. Does not work on folk who are already large."
+	cost = 1
+	releasedrain = 35
+	chargedrain = 1
+	chargetime = 30
+	charge_max = 120 SECONDS
+	warnie = "spellwarning"
+	no_early_release = TRUE
+	movement_interrupt = FALSE
+	charging_slowdown = 3
+	chargedloop = /datum/looping_sound/wind
+	associated_skill = /datum/skill/magic/arcane
+	overlay_state = "rune1"
+
+/obj/effect/proc_holder/spell/invoked/enlarge/cast(list/targets, mob/user = usr)
+	if(isliving(targets[1]))
+		var/mob/living/carbon/target = targets[1]
+		if(HAS_TRAIT(target,TRAIT_BIGGUY))
+			to_chat(user, "<span class='warning'>They're too big to enlarge!</span>")
+			revert_cast()
+			return
+		ADD_TRAIT(target, TRAIT_BIGGUY, MAGIC_TRAIT)
+		target.transform = target.transform.Scale(1.25, 1.25)
+		target.transform = target.transform.Translate(0, (0.25 * 16))
+		target.update_transform()
+		to_chat(target, span_warning("I feel taller than usual, and like I could run through a door!"))
+		target.visible_message("[target]'s body grows in size!")
+		addtimer(CALLBACK(src, PROC_REF(remove_buff), target), wait = 60 SECONDS)
+		return TRUE
+	
+
+/obj/effect/proc_holder/spell/invoked/enlarge/proc/remove_buff(mob/living/carbon/target)
+	REMOVE_TRAIT(target, TRAIT_BIGGUY, MAGIC_TRAIT)
+	target.transform = target.transform.Translate(0, -(0.25 * 16))
+	target.transform = target.transform.Scale(1/1.25, 1/1.25)      
+	target.update_transform()
+	to_chat(target, span_warning("I feel smaller all of a sudden."))
+	target.visible_message("[target]'s body shrinks quickly!")
+	
+/obj/effect/proc_holder/spell/invoked/leap
+	name = "Leap"
+	desc = "You empower your target's legs to allow them to leap to great heights. This allows your target to jump up floor levels, however does not prevent the damage from falling down one."
+	cost = 1
+	releasedrain = 35
+	chargedrain = 1
+	chargetime = 30
+	charge_max = 120 SECONDS
+	warnie = "spellwarning"
+	no_early_release = TRUE
+	movement_interrupt = FALSE
+	charging_slowdown = 3
+	chargedloop = /datum/looping_sound/wind
+	associated_skill = /datum/skill/magic/arcane
+	overlay_state = "rune5"
+
+/obj/effect/proc_holder/spell/invoked/leap/cast(list/targets, mob/user = usr)
+	if(isliving(targets[1]))
+		var/mob/living/carbon/target = targets[1]
+		if(HAS_TRAIT(target,TRAIT_ZJUMP))
+			to_chat(user, "<span class='warning'>Their already able to jump that high!</span>")
+			revert_cast()
+			return
+		ADD_TRAIT(target, TRAIT_ZJUMP, MAGIC_TRAIT)
+		to_chat(target, span_warning("My legs feel stronger! I feel like I can jump up high!"))
+		addtimer(CALLBACK(src, PROC_REF(remove_buff), target), wait = 20 SECONDS)
+		return TRUE
+	
+
+/obj/effect/proc_holder/spell/invoked/leap/proc/remove_buff(mob/living/carbon/target)
+	REMOVE_TRAIT(target, TRAIT_ZJUMP, MAGIC_TRAIT)
+	to_chat(target, span_warning("My legs feel remarkably weaker."))
+	target.Immobilize(5)
+
+
 #undef PRESTI_CLEAN
 #undef PRESTI_SPARK
 #undef PRESTI_MOTE
