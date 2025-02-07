@@ -22,7 +22,7 @@
 /area/rogue/outdoors/shadow_fell)
 "bc" = (
 /turf/open/floor/rogue/church,
-/area/rogue/outdoors/shadow_fell)
+/area/rogue/indoors/town/church)
 "bu" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /obj/structure/fluff/walldeco/chains,
@@ -91,7 +91,7 @@
 	desc = "A towering platinum statue of Bahamut with wings outstretched and a shield engraved with celestial runes. It creates a radiant barrier that repels Shadowfell incursions and protects the surrounding region."
 	},
 /turf/open/floor/rogue/church,
-/area/rogue/outdoors/shadow_fell)
+/area/rogue/indoors/town/church)
 "et" = (
 /obj/structure/mineral_door/bars,
 /turf/open/floor/rogue/naturalstone,
@@ -137,7 +137,7 @@
 	},
 /obj/item/clothing/neck/roguetown/psicross,
 /turf/open/floor/rogue/church,
-/area/rogue/outdoors/shadow_fell)
+/area/rogue/indoors/town/church)
 "fK" = (
 /obj/item/natural/rock,
 /turf/open/floor/rogue/naturalstone,
@@ -184,6 +184,9 @@
 "io" = (
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/shadow_fell)
+"it" = (
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/indoors/town/church)
 "iD" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/swamp,
@@ -288,7 +291,7 @@
 	},
 /obj/structure/fluff/psycross/copper,
 /turf/open/floor/rogue/church,
-/area/rogue/outdoors/shadow_fell)
+/area/rogue/indoors/town/church)
 "nv" = (
 /obj/structure/bookcase,
 /obj/item/book/rogue/yeoldecookingmanual,
@@ -354,7 +357,7 @@
 	dir = 1
 	},
 /turf/open/floor/rogue/church,
-/area/rogue/outdoors/shadow_fell)
+/area/rogue/indoors/town/church)
 "qq" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/wolf{
 	name = "Bitey"
@@ -419,7 +422,7 @@
 	},
 /obj/item/clothing/neck/roguetown/psicross,
 /turf/open/floor/rogue/church,
-/area/rogue/outdoors/shadow_fell)
+/area/rogue/indoors/town/church)
 "sP" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8
@@ -430,7 +433,7 @@
 	desc = "A luminous, floating wisp that guards the entrance to the Frozen Summit Grove, radiating protective magic to repel intruders and shielding the grove from the curse of the Shadowfell."
 	},
 /turf/open/floor/rogue/church,
-/area/rogue/outdoors/shadow_fell)
+/area/rogue/indoors/town/church)
 "sS" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/minotaur/axe/female,
 /turf/open/floor/rogue/naturalstone,
@@ -546,7 +549,7 @@
 	desc = "A luminous, floating wisp that guards the entrance to the Frozen Summit Grove, radiating protective magic to repel intruders and shielding the grove from the curse of the Shadowfell."
 	},
 /turf/open/floor/rogue/church,
-/area/rogue/outdoors/shadow_fell)
+/area/rogue/indoors/town/church)
 "zV" = (
 /obj/structure/fluff/railing/wood,
 /turf/open/transparent/openspace,
@@ -644,6 +647,9 @@
 /obj/structure/crabnest,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/shadow_fell)
+"EN" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/town/church)
 "FH" = (
 /obj/structure/table/wood,
 /turf/open/floor/rogue/twig,
@@ -691,7 +697,7 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/church,
-/area/rogue/outdoors/shadow_fell)
+/area/rogue/indoors/town/church)
 "Hi" = (
 /obj/structure/crabnest,
 /turf/open/water/swamp/deep,
@@ -755,7 +761,7 @@
 	},
 /obj/structure/fluff/psycross/copper,
 /turf/open/floor/rogue/church,
-/area/rogue/outdoors/shadow_fell)
+/area/rogue/indoors/town/church)
 "Kz" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/spider,
 /turf/open/water/swamp,
@@ -826,7 +832,7 @@
 	desc = "We fought bravely, side by side, Bahamut's paladins and Selûne's faithful, our light blazing against Shar’s Dark Justiciars. But it wasn’t enough. Their shadows overwhelmed us, snuffing out our wards and dragging many into the darkness. I saw it—divine light drowned by creeping black as the Justiciars called forth the Shadowfell itself. The land is cursed now, twisted by their dark victory. Traveler, heed my words: always carry a light, no matter how small. The shadows here are alive, waiting to claim the unwary. Without light, you’ll hear whispers first, then feel cold claws, and then... you’ll be gone, another soul lost to the dark."
 	},
 /turf/open/floor/rogue/grass/green,
-/area/rogue/outdoors/shadow_fell)
+/area/rogue/indoors/town/church)
 "OL" = (
 /obj/structure/bookcase,
 /obj/item/book/rogue/secret/thefireisgone,
@@ -914,6 +920,9 @@
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/shadow_fell)
+"Sf" = (
+/turf/open/floor/rogue/grass/green,
+/area/rogue/indoors/town/church)
 "Sm" = (
 /obj/structure/stairs/stone{
 	dir = 8
@@ -966,7 +975,7 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/church,
-/area/rogue/outdoors/shadow_fell)
+/area/rogue/indoors/town/church)
 "Uu" = (
 /obj/structure/closet/dirthole/closed/loot,
 /obj/effect/wisp{
@@ -26657,9 +26666,9 @@ eE
 eE
 eE
 FJ
-FZ
-io
-io
+Sf
+it
+it
 io
 FZ
 Zb
@@ -26816,8 +26825,8 @@ sy
 GU
 JQ
 sP
-io
-io
+it
+it
 FZ
 Zb
 Zb
@@ -26973,8 +26982,8 @@ qp
 bc
 bc
 bc
-io
-io
+it
+it
 FZ
 FZ
 Zb
@@ -27129,9 +27138,9 @@ eE
 qp
 bc
 eq
-io
-io
-io
+it
+it
+it
 io
 FZ
 Zb
@@ -27287,8 +27296,8 @@ qp
 bc
 bc
 zR
-FZ
-io
+Sf
+it
 io
 FZ
 FZ
@@ -27444,8 +27453,8 @@ ft
 Up
 np
 Up
-FZ
-io
+Sf
+it
 io
 io
 FZ
@@ -27600,8 +27609,8 @@ eE
 eE
 eE
 OF
-AH
-AH
+EN
+EN
 io
 io
 io
@@ -29332,7 +29341,7 @@ eE
 eE
 NS
 NS
-io
+it
 io
 NS
 NS
