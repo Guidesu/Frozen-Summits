@@ -378,7 +378,7 @@
 	var/mob/living/carbon/human/H = quirk_holder
 	H.mind.adjust_skillrank_up_to(/datum/skill/misc/stealing, 5, TRUE)
 
-/datum/quirk/languagesavant
+/*/datum/quirk/languagesavant
 	name = "(Language) Polyglot"
 	desc = "I have always picked up on languages easily."
 	value = 3
@@ -390,7 +390,7 @@
 	H.grant_language(/datum/language/hellspeak)
 	H.grant_language(/datum/language/celestial)
 	H.grant_language(/datum/language/orcish)
-	H.grant_language(/datum/language/draconic)
+	H.grant_language(/datum/language/draconic)*/
 
 /datum/quirk/civilizedbarbarian
 	name = "(Combat) Tavern Brawler"

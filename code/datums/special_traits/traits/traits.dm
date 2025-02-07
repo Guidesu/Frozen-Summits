@@ -214,7 +214,7 @@
 	character.mind.adjust_skillrank_up_to(/datum/skill/misc/sneaking, 4, TRUE)
 	character.mind.adjust_skillrank_up_to(/datum/skill/misc/climbing, 3, TRUE)
 
-/datum/special_trait/languagesavant
+/*/datum/special_trait/languagesavant
 	name = "Polyglot"
 	greet_text = span_notice("I have always picked up on languages easily, even those that are forbidden to mortals... except that accursed beastial chatter. What even is that nonsense?")
 	weight = 100
@@ -225,7 +225,7 @@
 	character.grant_language(/datum/language/hellspeak)
 	character.grant_language(/datum/language/celestial)
 	character.grant_language(/datum/language/orcish)
-	character.grant_language(/datum/language/draconic)
+	character.grant_language(/datum/language/draconic)*/
 
 /datum/special_trait/civilizedbarbarian
 	name = "Tavern Brawler"
