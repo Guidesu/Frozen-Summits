@@ -717,6 +717,24 @@
 	H.grant_language(/datum/language/canilunzt)
 
 
+/datum/quirk/orcishtalker
+	name = "(Language) Knows Orcish"
+	desc = "I learned to speak orcish in my time here."
+	value = 1
+
+/datum/quirk/lupinetalker/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.grant_language(/datum/language/orcish)
+
+/datum/quirk/dwarvishtalker
+	name = "(Language) Knows Dwarvish"
+	desc = "I learned to speak dwarvish in my time here."
+	value = 1
+
+/datum/quirk/lupinetalker/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.grant_language(/datum/language/dwarvish)
+
 /datum/quirk/selfaware
 	name = "(Virtue) Self-Aware"
 	desc = "I know the extent of my wounds to a terrifying scale."
@@ -906,7 +924,14 @@
 	var/mob/living/carbon/human/H = quirk_holder
 	H.grant_language(/datum/language/hellspeak)
 
+/datum/quirk/celestialtalker
+	name = "(Language) Knows Celestial"
+	desc = "I learned to speak celestial in my time here."
+	value = 1
 
+/datum/quirk/lupinetalker/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.grant_language(/datum/language/celestial)
 
 /datum/quirk/draconicspeaker
 	name = "(Language) Knows Draconic"
