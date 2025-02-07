@@ -722,7 +722,7 @@
 	desc = "I learned to speak orcish in my time here."
 	value = 1
 
-/datum/quirk/lupinetalker/on_spawn()
+/datum/quirk/orcishtalker/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	H.grant_language(/datum/language/orcish)
 
@@ -731,7 +731,7 @@
 	desc = "I learned to speak dwarvish in my time here."
 	value = 1
 
-/datum/quirk/lupinetalker/on_spawn()
+/datum/quirk/dwarvishtalker/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	H.grant_language(/datum/language/dwarvish)
 
@@ -929,7 +929,7 @@
 	desc = "I learned to speak celestial in my time here."
 	value = 1
 
-/datum/quirk/lupinetalker/on_spawn()
+/datum/quirk/celestialtalker/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	H.grant_language(/datum/language/celestial)
 
