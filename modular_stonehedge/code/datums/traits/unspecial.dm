@@ -716,6 +716,15 @@
 	var/mob/living/carbon/human/H = quirk_holder
 	H.grant_language(/datum/language/canilunzt)
 
+/datum/quirk/beasttalker //More costly cause also gives werewolf chat
+	name = "(Language) Knows Beastish"
+	desc = "I learned to speak the beast tongue in my time here."
+	value = 3
+
+/datum/quirk/beasttalker/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.grant_language(/datum/language/beast)
+
 
 /datum/quirk/selfaware
 	name = "(Virtue) Self-Aware"
