@@ -7242,6 +7242,10 @@
 	water_reagent = /datum/reagent/water
 	},
 /area/rogue/outdoors/beach)
+"ogt" = (
+/obj/effect/landmark/start/artificer,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors)
 "ohJ" = (
 /obj/structure/roguerock,
 /turf/open/water/pond{
@@ -11379,6 +11383,10 @@
 /obj/item/paper/fluff,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/under/cave)
+"wCL" = (
+/obj/effect/landmark/start/blacksmith,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors)
 "wDm" = (
 /obj/structure/fluff/railing/border{
 	icon_state = "border";
@@ -48277,10 +48285,10 @@ ngE
 ngE
 abV
 uId
+wCL
 bRO
 bRO
-bRO
-bRO
+ogt
 kcg
 abV
 uSv
@@ -48748,10 +48756,10 @@ ngE
 ngE
 abV
 gYC
+wCL
 bRO
 bRO
-bRO
-bRO
+ogt
 gYC
 abV
 mUd
