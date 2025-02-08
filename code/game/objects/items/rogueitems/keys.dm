@@ -237,7 +237,7 @@
 	name = "blacksmith key"
 	desc = "This key opens a blacksmith's workshop."
 	icon_state = "brownkey"
-	lockid = "blacksmith"
+	lockid = "towner_blacksmith"
 
 /obj/item/roguekey/blacksmith/town
 	name = "town blacksmith key"
@@ -295,7 +295,7 @@
 	name = "artificer's key"
 	desc = "This bronze key should open the Artificer's guild."
 	icon_state = "brownkey"
-	lockid = "artificer"
+	lockid = "towner_blacksmith"
 
 /obj/item/roguekey/tailor
 	name = "tailor's key"
