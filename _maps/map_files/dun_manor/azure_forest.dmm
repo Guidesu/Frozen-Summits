@@ -638,6 +638,13 @@
 /obj/structure/rack/rogue/shelf/biggest,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/woods)
+"eY" = (
+/obj/structure/stairs/stone{
+	dir = 1;
+	icon_state = "stonestairs"
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/woods)
 "fa" = (
 /obj/machinery/light/rogue/smelter,
 /turf/open/floor/rogue/cobble,
@@ -4061,7 +4068,7 @@
 	dir = 1;
 	icon_state = "border"
 	},
-/turf/open/floor/rogue/grass/green,
+/turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/woods)
 "FH" = (
 /obj/machinery/light/rogue/torchholder{
@@ -4892,6 +4899,16 @@
 "ML" = (
 /obj/structure/flora/newleaf,
 /turf/closed/wall/mineral/rogue/decowood/vert,
+/area/rogue/outdoors/woods)
+"MM" = (
+/obj/machinery/light/rogue/torchholder{
+	dir = 8;
+	icon_state = "torchwall1"
+	},
+/obj/structure/fluff/railing/border{
+	dir = 1
+	},
+/turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/woods)
 "MT" = (
 /obj/structure/fluff/railing/border{
@@ -46105,10 +46122,10 @@ MK
 Yi
 Yi
 Yi
-bP
-bP
-bP
-bP
+Yi
+Yi
+Yi
+Yi
 bP
 bP
 bP
@@ -46262,10 +46279,10 @@ MK
 EC
 EC
 Yi
-bP
-bP
-bP
-bP
+Yi
+sL
+SX
+Yi
 EC
 EC
 ew
@@ -70599,9 +70616,9 @@ Xq
 Xq
 Kn
 Xq
-Xq
-Xq
-Kn
+eY
+ew
+MM
 Xq
 Xq
 hZ
@@ -71995,7 +72012,7 @@ ew
 ew
 ew
 ew
-ew
+zO
 Xq
 WS
 BP
@@ -72152,7 +72169,7 @@ ew
 ew
 ew
 ew
-ew
+zO
 Xq
 Ib
 Iw
@@ -72309,7 +72326,7 @@ ew
 ew
 ew
 ew
-ew
+zO
 Xq
 PZ
 Iw
@@ -72466,7 +72483,7 @@ ew
 ew
 ew
 ew
-ew
+zO
 Xq
 WS
 BP
