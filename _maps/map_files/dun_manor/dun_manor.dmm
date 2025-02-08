@@ -2583,6 +2583,16 @@
 	dir = 1
 	},
 /area/rogue/outdoors/mountains)
+"dDx" = (
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_y = -1
+	},
+/obj/machinery/light/rogue/torchholder{
+	dir = 1
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors)
 "dDy" = (
 /obj/machinery/light/rogue/wallfire{
 	pixel_y = 32
@@ -3073,6 +3083,10 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/outdoors/rtfield)
+"eKm" = (
+/obj/effect/landmark/start/artificer,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors)
 "eLM" = (
 /obj/structure/underworld/barrier,
 /turf/open/floor/rogue/dirt,
@@ -4601,10 +4615,8 @@
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/mountains)
 "iBc" = (
-/obj/machinery/light/rogue/torchholder{
-	pixel_y = 26
-	},
-/turf/closed/wall/mineral/rogue/stonebrick,
+/obj/effect/landmark/start/blacksmith,
+/turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "iBK" = (
 /obj/structure/table/wood{
@@ -5769,6 +5781,9 @@
 /area/rogue/indoors/town/tavern)
 "kSr" = (
 /obj/structure/fluff/alch,
+/obj/machinery/light/rogue/torchholder{
+	pixel_y = 26
+	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "kSI" = (
@@ -7242,10 +7257,6 @@
 	water_reagent = /datum/reagent/water
 	},
 /area/rogue/outdoors/beach)
-"ogt" = (
-/obj/effect/landmark/start/artificer,
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors)
 "ohJ" = (
 /obj/structure/roguerock,
 /turf/open/water/pond{
@@ -8305,6 +8316,9 @@
 /obj/item/reagent_containers/glass/bucket/wooden{
 	pixel_x = 12;
 	pixel_y = 12
+	},
+/obj/machinery/light/rogue/torchholder{
+	dir = 1
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors)
@@ -11383,10 +11397,6 @@
 /obj/item/paper/fluff,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/under/cave)
-"wCL" = (
-/obj/effect/landmark/start/blacksmith,
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors)
 "wDm" = (
 /obj/structure/fluff/railing/border{
 	icon_state = "border";
@@ -23955,8 +23965,8 @@ uBR
 uBR
 uBR
 abV
-iBc
-vuV
+abV
+iTH
 vuV
 fkl
 abV
@@ -48285,10 +48295,10 @@ ngE
 ngE
 abV
 uId
-wCL
+iBc
 bRO
 bRO
-ogt
+eKm
 kcg
 abV
 uSv
@@ -48756,10 +48766,10 @@ ngE
 ngE
 abV
 gYC
-wCL
+iBc
 bRO
 bRO
-ogt
+eKm
 gYC
 abV
 mUd
@@ -72629,7 +72639,7 @@ bRO
 bRO
 bRO
 oPb
-oPb
+dDx
 abV
 kDi
 tXZ
@@ -72781,7 +72791,7 @@ abV
 abV
 abV
 abV
-bRO
+acB
 bRO
 lpE
 lpE
@@ -73252,7 +73262,7 @@ abV
 abV
 abV
 abV
-bRO
+acB
 bRO
 vIk
 vIk
