@@ -1781,8 +1781,13 @@
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
 	},
-/obj/item/reagent_containers/glass/mortar,
+/obj/item/reagent_containers/glass/mortar{
+	pixel_x = -10
+	},
 /obj/item/pestle,
+/obj/item/mortar{
+	pixel_x = 8
+	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
 "bZI" = (
@@ -5652,6 +5657,12 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/town)
+"kQz" = (
+/obj/structure/fluff/railing/wood{
+	pixel_x = 1
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/town)
 "kRD" = (
 /obj/structure/closet/crate/chest,
 /obj/item/reagent_containers/food/snacks/rogue/piedough,
@@ -6064,10 +6075,9 @@
 	},
 /area/rogue/outdoors/town)
 "lFt" = (
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
+/obj/structure/mineral_door/wood/deadbolt{
+	dir = 1
 	},
-/obj/item/mortar,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
 "lFU" = (
@@ -49052,7 +49062,7 @@ ngE
 ngE
 yaE
 bZl
-lFt
+acN
 rCp
 rCp
 acN
@@ -49207,9 +49217,9 @@ abk
 abk
 abk
 abk
-bmC
 yaE
-ngx
+yaE
+cty
 yaE
 yaE
 ngx
@@ -49364,10 +49374,10 @@ abk
 abk
 abk
 abk
-abk
-abk
-abk
-abk
+yaE
+qyk
+acN
+kQz
 abk
 get
 get
@@ -49521,10 +49531,10 @@ abk
 abk
 abk
 abk
-abk
-abk
-xDh
-abk
+yaE
+qyk
+acN
+kQz
 abk
 abk
 abk
@@ -49678,10 +49688,10 @@ abk
 abk
 abk
 abk
-abk
-abk
-abk
-abk
+yaE
+qyk
+krb
+kQz
 abk
 abk
 abk
@@ -49835,10 +49845,10 @@ abk
 abk
 abk
 abk
-abk
-abk
-abk
-abk
+bmC
+yaE
+yaE
+yaE
 abk
 abk
 abk
@@ -50151,7 +50161,7 @@ abk
 abk
 abk
 abk
-abk
+xDh
 abk
 abk
 abk
@@ -72448,7 +72458,7 @@ abj
 acN
 acN
 krb
-jCB
+lFt
 acN
 acN
 acN
@@ -72919,7 +72929,7 @@ abj
 acN
 acN
 krb
-jCB
+lFt
 acN
 lsd
 qGr
@@ -73390,7 +73400,7 @@ abj
 acN
 acN
 krb
-jCB
+lFt
 acN
 acN
 acN
@@ -73700,10 +73710,10 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
-tXZ
+kDi
+kDi
+kDi
+kDi
 nqu
 xIP
 xIP
@@ -73857,10 +73867,10 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
-tXZ
+kDi
+kDi
+kDi
+kDi
 nqu
 xIP
 xIP
@@ -74014,10 +74024,10 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
-tXZ
+kDi
+kDi
+kDi
+kDi
 atx
 bPG
 bPG
@@ -74171,10 +74181,10 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
-tXZ
+kDi
+kDi
+kDi
+kDi
 tXZ
 tXZ
 tXZ
