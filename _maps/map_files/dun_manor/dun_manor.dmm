@@ -1777,6 +1777,14 @@
 /obj/structure/fluff/walldeco/stone,
 /turf/closed/wall/mineral/rogue/wood,
 /area/rogue/indoors/town)
+"bZl" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/item/reagent_containers/glass/mortar,
+/obj/item/pestle,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "bZI" = (
 /obj/effect/decal/cleanable/ash,
 /turf/open/floor/rogue/blocks,
@@ -5035,14 +5043,6 @@
 	color = "e6f2ff"
 	},
 /area/rogue/outdoors/rtfield)
-"jAa" = (
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
-	},
-/obj/item/reagent_containers/glass/mortar,
-/obj/item/pestle,
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town)
 "jAZ" = (
 /obj/structure/flora/roguetree/snow{
 	icon_state = "tree11"
@@ -6063,6 +6063,13 @@
 	color = "e6f2ff"
 	},
 /area/rogue/outdoors/town)
+"lFt" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/item/mortar,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "lFU" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8
@@ -49044,8 +49051,8 @@ abk
 ngE
 ngE
 yaE
-jAa
-qGr
+bZl
+lFt
 rCp
 rCp
 acN
