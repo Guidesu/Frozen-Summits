@@ -1781,8 +1781,13 @@
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
 	},
-/obj/item/reagent_containers/glass/mortar,
+/obj/item/reagent_containers/glass/mortar{
+	pixel_x = -5
+	},
 /obj/item/pestle,
+/obj/item/mortar{
+	pixel_x = 5
+	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
 "bZI" = (
@@ -6070,10 +6075,9 @@
 	},
 /area/rogue/outdoors/town)
 "lFt" = (
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
+/obj/structure/mineral_door/wood/deadbolt{
+	dir = 1
 	},
-/obj/item/mortar,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
 "lFU" = (
@@ -49058,7 +49062,7 @@ ngE
 ngE
 yaE
 bZl
-lFt
+acN
 rCp
 rCp
 acN
