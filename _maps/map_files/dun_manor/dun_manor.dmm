@@ -5035,6 +5035,14 @@
 	color = "e6f2ff"
 	},
 /area/rogue/outdoors/rtfield)
+"jAa" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/item/reagent_containers/glass/mortar,
+/obj/item/pestle,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "jAZ" = (
 /obj/structure/flora/roguetree/snow{
 	icon_state = "tree11"
@@ -8461,6 +8469,8 @@
 /area/rogue/outdoors/town)
 "qTt" = (
 /obj/structure/closet/crate/drawer/inn,
+/obj/item/roguekey/blacksmith,
+/obj/item/roguekey/artificer,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
 "qUh" = (
@@ -49034,7 +49044,7 @@ abk
 ngE
 ngE
 yaE
-qGr
+jAa
 qGr
 rCp
 rCp
