@@ -1,6 +1,6 @@
-/datum/advclass/mercenary/atgervi
-	name = "Atgervi"
-	tutorial = "Fear. What more can you feel when a stranger tears apart your friend with naught but hand and maw? What more can you feel when your warriors fail to slay an invader? What more could you ask for, when hiring a mercenary?"
+/*/datum/advclass/mercenary/atgervi
+	name = "Skjaldborgar"
+	tutorial = "When your axe cracks and your shield splinters, Tempus weighs your heart. Did you fight with honor? Did you scorn cowardice? If so, your soul will march eternal in the Asgard- legion of the worthy dead, where battle is worship and every scar a prayer."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/mercenary/atgervi
@@ -8,7 +8,7 @@
 	cmode_music = 'sound/music/combat_gronn.ogg'
 
 /datum/outfit/job/roguetown/mercenary/atgervi
-	allowed_patrons = ALL_INHUMEN_PATRONS
+
 
 /datum/outfit/job/roguetown/mercenary/atgervi/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -93,17 +93,17 @@
 			ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
 			H.cmode_music = 'sound/music/combat_shaman.ogg'
 	backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/rogueweapon/huntingknife)
-
+*/
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi
 	name = "vagarian hauberk"
-	desc = "The pride of the Hammerhold mercenaries a well crafted blend of chain and leather into a dense protective coat."
+	desc = "The pride of the mercenaries a well crafted blend of chain and leather into a dense protective coat."
 	icon_state = "atgervi_raider_mail"
 	item_state = "atgervi_raider_mail"
 
 /obj/item/clothing/suit/roguetown/armor/leather/heavy/atgervi
 	name = "shamanic coat"
-	desc = "A lightly protective coat, It embodies the second trial of the Northern shamans. To honor the leopard is too desire for more."
+	desc = "A lightly protective coat, It embodies the second trial of the shamans. To honor the leopard is too desire for more."
 	icon_state = "atgervi_shaman_coat"
 	item_state = "atgervi_shaman_coat"
 
