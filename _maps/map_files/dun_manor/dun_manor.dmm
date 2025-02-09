@@ -9301,6 +9301,12 @@
 /obj/structure/closet/crate/roguecloset/inn,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town)
+"rRx" = (
+/obj/structure/mineral_door/wood/towner/blacksmith{
+	locked = 0
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "rRK" = (
 /turf/closed/wall/mineral/rogue/decostone,
 /area/rogue/indoors/town)
@@ -48549,7 +48555,7 @@ uSv
 bWc
 acN
 acN
-cty
+rRx
 iSL
 iSL
 tjx
