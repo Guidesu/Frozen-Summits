@@ -459,7 +459,7 @@
 	..()
 	qdel(src)
 
-/obj/item/reagent_containers/powder/mineral/attackby(obj/item/I, mob/user, params)
+/* /obj/item/reagent_containers/powder/mineral/attackby(obj/item/I, mob/user, params)
 	var/found_table = locate(/obj/structure/table) in (loc)
 	var/obj/item/reagent_containers/R = I
 	if(user.mind)
@@ -492,7 +492,7 @@
 				new /obj/item/reagent_containers/powder/coarse_salt(loc)
 				qdel(src)
 	else ..()
-
+ */
 
 /*	..................   Food platter   ................... */
 /obj/item/cooking/platter/attackby(obj/item/I, mob/user, params)

@@ -1327,6 +1327,73 @@
 
 /datum/status_effect/buff/healing_weave/on_remove()
 	owner.remove_filter(MIRACLE_HEALING_FILTER)
+
+//==============================================
+//	RESISTANCE
+//==============================================
+
+/obj/effect/proc_holder/spell/self/goodberry
+	name = "Goodberry"
+	overlay_state = "null"
+	releasedrain = 50
+	chargetime = 1
+	charge_max = 30 SECONDS
+	range = 2
+	warnie = "spellwarning"
+	movement_interrupt = FALSE
+	no_early_release = FALSE
+	chargedloop = null
+	sound = 'sound/magic/whiteflame.ogg'
+	chargedloop = /datum/looping_sound/invokegen
+	associated_skill = /datum/skill/magic/arcane //can be arcane, druidic, blood, holy
+	cost = 2 // Theoretically infinite healing. 
+
+	xp_gain = TRUE
+	miracle = FALSE
+
+	invocation = "Nutrire!"
+	invocation_type = "shout" //can be none, whisper, emote and shout
+
+	var/obj/item/item
+	var/item_type = /obj/item/reagent_containers/food/snacks/grown/berries/rogue/goodberry
+	var/delete_old = FALSE //TRUE to delete the last summoned object if it's still there, FALSE for infinite item stream weeeee
+
+/obj/effect/proc_holder/spell/self/goodberry/cast(list/targets, mob/user = usr)
+	var/obj/item/goodberry = user.get_active_held_item()
+	if(!istype(goodberry, /obj/item/reagent_containers/food/snacks/grown/berries/rogue))
+		user.visible_message(span_warning("I require some berries in a free hand."))
+	else
+		qdel(goodberry)
+		if (delete_old && item && !QDELETED(item))
+			QDEL_NULL(item)
+		if(user.dropItemToGround(user.get_active_held_item()))
+			user.put_in_hands(make_item(), TRUE)
+			user.visible_message(span_info("The weave condenses into the berries in [user]'s hand!"), span_info("You magically charge the berries!"))
+			return
+
+/obj/effect/proc_holder/spell/self/goodberry/proc/make_item()
+	item = new item_type
+	return item
+
+/obj/item/reagent_containers/food/snacks/grown/berries/rogue/goodberry
+	seed = /obj/item/seeds/berryrogue
+	name = "Goodberries"
+	desc = "Plump, sweet berries charged with the weave. Eat them soon, before they lose their magic!"
+	icon_state = "berries"
+	color = "#d9f075"
+	tastes = list("berry" = 1, "arcane healing" = 1)
+	bitesize = 5
+	list_reagents = list(
+		/datum/reagent/consumable/nutriment = 6,
+		/datum/reagent/medicine/stronghealth = 3
+		)
+	faretype = FARE_NEUTRAL
+	dropshrink = 0.75
+	can_distill = TRUE
+	distill_reagent = /datum/reagent/medicine/healthpotnew
+	rotprocess = 30 SECONDS // Lasts 5 minutes 30 seconds upon creation.
+	become_rot_type = /obj/item/reagent_containers/food/snacks/grown/berries/rogue
+
 //==============================================
 //	RESISTANCE
 //==============================================

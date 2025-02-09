@@ -231,6 +231,7 @@
 		/obj/effect/proc_holder/spell/invoked/greenflameblade5e,
 		/obj/effect/proc_holder/spell/invoked/infestation5e,
 		/obj/effect/proc_holder/spell/self/light5e,
+		/obj/effect/proc_holder/spell/self/goodberry,
 		/obj/effect/proc_holder/spell/targeted/lightninglure5e,
 		/obj/effect/proc_holder/spell/invoked/projectile/rayoffrost5e,
 		/obj/effect/proc_holder/spell/invoked/snap_freeze,
