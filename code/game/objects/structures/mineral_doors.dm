@@ -1081,4 +1081,4 @@
 	resident_key_type = /obj/item/roguekey/townie
 	resident_role = null
 	lockid = null //Will be randomized
-	resident_key_amount = 2
+	resident_key_amount = 4
