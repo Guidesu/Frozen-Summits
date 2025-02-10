@@ -217,7 +217,7 @@
 	desc = "A thick robe meant to be used after baths"
 	},
 /turf/open/floor/rogue/church,
-/area/rogue/under/town)
+/area/rogue/indoors/town/bath)
 "aaP" = (
 /obj/machinery/light/rogue/torchholder/c{
 	dir = 4
@@ -1049,7 +1049,7 @@
 /area/rogue/indoors/town)
 "ajr" = (
 /turf/open/floor/rogue/church,
-/area/rogue/under/town)
+/area/rogue/indoors/town/bath)
 "aka" = (
 /obj/structure/flora/roguetree/normal{
 	icon_state = "free2"
@@ -1079,7 +1079,7 @@
 /turf/open/water/bath{
 	name = "hotspring"
 	},
-/area/rogue/under/town)
+/area/rogue/indoors/town/bath)
 "amn" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -1235,6 +1235,10 @@
 /obj/item/roguekey/vault{
 	lockid = "Cohen Treasury";
 	name = "Treasury key"
+	},
+/obj/item/roguekey/garrison{
+	lockid = "Cohen Armory";
+	name = "Armory Key"
 	},
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/town)
@@ -1950,7 +1954,7 @@
 /turf/open/water/bath{
 	name = "hotspring"
 	},
-/area/rogue/under/town)
+/area/rogue/indoors/town/bath)
 "cjK" = (
 /obj/structure/closet/crate/roguecloset/inn,
 /obj/item/clothing/shoes/roguetown/boots/clothlinedanklets,
@@ -2046,6 +2050,13 @@
 	color = "e6f2ff"
 	},
 /area/rogue/outdoors/town)
+"cue" = (
+/obj/structure/rack/rogue/shelf{
+	pixel_y = 0;
+	pixel_x = -32
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "cui" = (
 /obj/machinery/light/rogue/torchholder{
 	dir = 4
@@ -2635,7 +2646,7 @@
 "dBn" = (
 /obj/machinery/light/rogue/firebowl/standing,
 /turf/open/floor/rogue/herringbone,
-/area/rogue/under/town)
+/area/rogue/indoors/town/bath)
 "dBR" = (
 /obj/structure/flora/roguetree/snow{
 	icon_state = "tree6"
@@ -2976,7 +2987,7 @@
 /area/rogue/indoors/town)
 "ejK" = (
 /turf/closed/wall/mineral/rogue/stone,
-/area/rogue/under/town)
+/area/rogue/indoors/town/bath)
 "ekN" = (
 /turf/closed/wall/mineral/rogue/decostone/end{
 	dir = 1
@@ -3367,8 +3378,9 @@
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
 	},
+/obj/item/soap,
 /turf/open/floor/rogue/herringbone,
-/area/rogue/under/town)
+/area/rogue/indoors/town/bath)
 "fnO" = (
 /obj/structure/flora/roguetree/stump/log,
 /turf/open/floor/rogue/dirt/road,
@@ -3797,7 +3809,9 @@
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/town)
 "gkl" = (
-/obj/structure/table/wood/bar,
+/obj/structure/table/wood{
+	icon_state = "longtable"
+	},
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/town)
 "gkU" = (
@@ -4609,6 +4623,10 @@
 /obj/item/rogueweapon/shovel,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/town)
+"idE" = (
+/obj/structure/rack/rogue/shelf,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "idG" = (
 /obj/machinery/light/rogue/wallfire{
 	pixel_y = 32
@@ -4821,7 +4839,7 @@
 /turf/open/water/bath{
 	name = "hotspring"
 	},
-/area/rogue/under/town)
+/area/rogue/indoors/town/bath)
 "iFP" = (
 /obj/structure/chair/wood/rogue{
 	dir = 4
@@ -6280,10 +6298,10 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town/tavern)
 "lwQ" = (
-/obj/structure/fluff/railing/wood{
-	dir = 8;
-	pixel_y = -1;
-	pixel_x = -5
+/obj/structure/mineral_door/wood{
+	locked = 1;
+	lockid = "Cohen Armory";
+	name = "Armory"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
@@ -6300,6 +6318,15 @@
 	},
 /turf/open/floor/rogue/blocks/platform,
 /area/rogue/outdoors/town)
+"lyH" = (
+/obj/structure/mannequin/male{
+	dir = 8
+	},
+/obj/structure/fluff/walldeco/rpainting/crown{
+	pixel_x = 32
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "lyP" = (
 /turf/closed/wall/mineral/rogue/wood,
 /area/rogue/outdoors/town)
@@ -7020,6 +7047,18 @@
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/beach)
+"mXn" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 2;
+	pixel_y = 7
+	},
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "mXJ" = (
 /obj/machinery/light/rogue/torchholder{
 	pixel_y = 26
@@ -7507,6 +7546,12 @@
 	color = "e6f2ff"
 	},
 /area/rogue/outdoors/rtfield)
+"omz" = (
+/obj/structure/rack/rogue/shelf{
+	pixel_y = -30
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "ona" = (
 /turf/open/water/swamp/deep,
 /area/rogue/under/cave)
@@ -8035,7 +8080,7 @@
 "prk" = (
 /obj/structure/stairs,
 /turf/open/floor/rogue/herringbone,
-/area/rogue/under/town)
+/area/rogue/indoors/town/bath)
 "prp" = (
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cave)
@@ -8459,11 +8504,11 @@
 	},
 /obj/item/clothing/ring/signet{
 	pixel_y = -6;
-	pixel_x = -10;
+	pixel_x = -11;
 	sellprice = 20
 	},
 /obj/item/paper{
-	pixel_x = 8;
+	pixel_x = 11;
 	pixel_y = -5
 	},
 /obj/item/natural/feather{
@@ -8711,6 +8756,15 @@
 /area/rogue/indoors/town)
 "qyk" = (
 /turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/town)
+"qyX" = (
+/obj/structure/mannequin/male/female{
+	dir = 8
+	},
+/obj/structure/fluff/walldeco/painting/seraphina{
+	pixel_x = 32
+	},
+/turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
 "qza" = (
 /obj/structure/roguemachine/withdraw,
@@ -9301,6 +9355,14 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
 /turf/open/water/swamp,
 /area/rogue/under/cave)
+"rLE" = (
+/obj/structure/fluff/railing/wood{
+	pixel_x = 1;
+	pixel_y = -8
+	},
+/obj/machinery/light/rogue/wallfire/candle,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town)
 "rLX" = (
 /obj/structure/fluff/railing/border,
 /obj/machinery/light/rogue/torchholder{
@@ -10370,6 +10432,13 @@
 	},
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town)
+"tRp" = (
+/obj/structure/stairs{
+	icon_state = "stairs";
+	dir = 8
+	},
+/turf/open/transparent/openspace,
+/area/rogue/indoors/town)
 "tRU" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4
@@ -11336,7 +11405,7 @@
 /turf/open/water/bath{
 	name = "hotspring"
 	},
-/area/rogue/under/town)
+/area/rogue/indoors/town/bath)
 "waG" = (
 /obj/structure/fluff/railing/border{
 	icon_state = "border";
@@ -11526,7 +11595,7 @@
 	desc = "A thick robe meant to be used after baths"
 	},
 /turf/open/floor/rogue/church,
-/area/rogue/under/town)
+/area/rogue/indoors/town/bath)
 "wnS" = (
 /obj/structure/closet/crate/roguecloset{
 	pixel_x = 5
@@ -11873,13 +11942,6 @@
 /area/rogue/outdoors/town)
 "wTr" = (
 /obj/structure/rack/rogue/shelf,
-/obj/item/reagent_containers/glass/bottle/rogue/beer/gronnmead{
-	pixel_y = 45;
-	pixel_x = -5
-	},
-/obj/item/reagent_containers/glass/bottle/rogue/beer/zagul{
-	pixel_y = 45
-	},
 /obj/item/reagent_containers/glass/bottle/rogue/wine{
 	pixel_y = 45;
 	pixel_x = 10
@@ -11887,6 +11949,14 @@
 /obj/item/reagent_containers/glass/bottle/rogue/wine{
 	pixel_y = 45;
 	pixel_x = 5
+	},
+/obj/item/reagent_containers/glass/bottle/rogue/whitewine{
+	pixel_y = 45;
+	pixel_x = -1
+	},
+/obj/item/reagent_containers/glass/bottle/rogue/redwine{
+	pixel_y = 45;
+	pixel_x = -7
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town)
@@ -51527,7 +51597,7 @@ rej
 lty
 oLW
 xZW
-gkl
+pSl
 cEq
 acN
 loL
@@ -75550,7 +75620,7 @@ tXZ
 cij
 lZB
 acN
-gIm
+cij
 gbn
 gbn
 cij
@@ -75707,7 +75777,7 @@ tXZ
 abj
 qGr
 acN
-qpJ
+gIm
 gbn
 gbn
 lwR
@@ -99728,7 +99798,7 @@ bea
 bea
 bea
 cij
-kzW
+acN
 acN
 acN
 cij
@@ -99885,9 +99955,9 @@ tXZ
 tXZ
 bea
 cij
-qpJ
-gbn
-bWc
+rLE
+tRp
+mXn
 cij
 qhe
 tXZ
@@ -100199,9 +100269,9 @@ tXZ
 tXZ
 bea
 cij
-acN
 lwQ
-acN
+cij
+lwQ
 cij
 qhe
 tXZ
@@ -100356,9 +100426,9 @@ tXZ
 tXZ
 bea
 cij
-hfn
-acN
-loL
+idE
+cue
+omz
 cij
 qhe
 tXZ
@@ -100513,9 +100583,9 @@ tXZ
 tXZ
 bea
 cij
-acN
-acN
-acN
+hfn
+qGr
+loL
 cij
 qhe
 tXZ
@@ -100670,9 +100740,9 @@ tXZ
 tXZ
 bea
 cij
-qGr
-acN
-acN
+lyH
+rCp
+qyX
 cij
 qhe
 tXZ
@@ -100828,7 +100898,7 @@ tXZ
 bea
 cij
 cij
-wDU
+cij
 cij
 cij
 qhe
