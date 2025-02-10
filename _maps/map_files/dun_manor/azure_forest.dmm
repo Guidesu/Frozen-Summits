@@ -3800,16 +3800,8 @@
 /area/rogue/outdoors/woods)
 "DK" = (
 /obj/structure/closet/crate/coffin/vampire,
-/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_full_plate,
-/obj/item/clothing/head/roguetown/helmet/blacksteel/bucket,
-/obj/item/clothing/gloves/roguetown/blacksteel/plategloves,
-/obj/item/storage/belt/rogue/leather/knifebelt/black/steel,
 /obj/item/riddleofsteel,
-/obj/item/clothing/neck/roguetown/chaincoif/full,
 /obj/item/clothing/neck/roguetown/psicross/silver,
-/obj/item/clothing/shoes/roguetown/boots/armor/blk,
-/obj/item/clothing/under/roguetown/platelegs/blacksteel,
-/obj/item/clothing/shoes/roguetown/boots/blacksteel,
 /obj/machinery/light/rogue/wallfire/candle/l,
 /obj/item/book/granter/spell/blackstone/greaterfireball,
 /turf/open/floor/rogue/cobble,
@@ -4092,7 +4084,6 @@
 /area/rogue/outdoors/woods)
 "FP" = (
 /obj/structure/table/wood,
-/obj/item/rogueweapon/sword/long/blackflamb,
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods)
