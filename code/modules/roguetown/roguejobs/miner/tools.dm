@@ -71,6 +71,7 @@
 	icon_state = "drill"
 	lefthand_file = 'icons/mob/inhands/weapons/hammers_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/hammers_righthand.dmi'
+	icon = 'icons/mob/inhands/weapons/hammers_righthand.dmi'
 	item_state = "drill"
 	possible_item_intents = list(/datum/intent/mace/smash)
 	gripped_intents = list(/datum/intent/drill)
