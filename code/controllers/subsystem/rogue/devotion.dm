@@ -244,3 +244,26 @@
 		H.mind.AddSpell(new spell_type)
 	level = CLERIC_T0
 	max_devotion = 150
+
+/mob/living/carbon/human/proc/changevoice()
+	set name = "Change Second Voice (Can only use Once!)"
+	set category = "Virtue"
+
+	var/newcolor = input(src, "Choose your character's SECOND voice color:", "VIRTUE","#a0a0a0") as color|null
+	if(newcolor)
+		second_voice = sanitize_hexcolor(newcolor)
+		src.verbs -= /mob/living/carbon/human/proc/changevoice
+		return TRUE
+	else
+		return FALSE
+
+/mob/living/carbon/human/proc/swapvoice()
+	set name = "Swap Voice"
+	set category = "Virtue"
+
+	if(voice_color != second_voice)
+		voice_color = second_voice
+		to_chat(src, span_info("I've changed my voice to the second one."))
+	else
+		voice_color = initial(voice_color)
+		to_chat(src, span_info("I've returned to my natural voice."))
