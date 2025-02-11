@@ -406,12 +406,27 @@
 	reqs = list(/obj/item/natural/hide = 1,
 				/obj/item/natural/fur = 1)
 	craftdiff = 1
+/datum/crafting_recipe/roguetown/leather/otavanleatherpants
+	name = "otavan leather trousers"
+	result = list(/obj/item/clothing/under/roguetown/trou/otavan)
+	reqs = list(/obj/item/reagent_containers/food/snacks/tallow = 1,
+	            /obj/item/natural/fibers = 1,
+	            /obj/item/natural/hide = 2,
+				/obj/item/natural/fur = 1)
+	craftdiff = 1
 
 /datum/crafting_recipe/roguetown/leather/malgai
 	name = "malgai helmet {fl}"
 	result = /obj/item/clothing/head/roguetown/helmet/leather/malgai
 	reqs = list(/obj/item/natural/hide = 2)
 	craftdiff = 1
+/datum/crafting_recipe/roguetown/leather/leathertights
+	name = "leather tights"
+	result = list(/obj/item/clothing/under/roguetown/trou/leathertights)
+	reqs = list(/obj/item/natural/hide = 1)
+	tools = list(/obj/item/needle)
+	craftdiff = 3
+	sellprice = 10
 
 /datum/crafting_recipe/roguetown/leather/kaizokuhat
 	name = "heartfeltean hat {fl}"
