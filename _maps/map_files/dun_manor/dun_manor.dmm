@@ -7082,6 +7082,12 @@
 	},
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/rtfield)
+"mvP" = (
+/obj/structure/mineral_door/wood/deadbolt{
+	locked = 1
+	},
+/turf/closed/wall/mineral/rogue/wooddark/vertical,
+/area/rogue/indoors/town)
 "mwP" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -8080,6 +8086,15 @@
 	dir = 10
 	},
 /turf/closed/wall/mineral/rogue/pipe,
+/area/rogue/indoors/town)
+"oIW" = (
+/obj/machinery/light/rogue/wallfire/candle/l,
+/obj/structure/mineral_door/wood/deadbolt{
+	locked = 1
+	},
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "weird1"
+	},
 /area/rogue/indoors/town)
 "oJU" = (
 /obj/structure/mineral_door/wood/towner/blacksmith,
@@ -10663,9 +10678,7 @@
 /obj/effect/decal/wood/herringbone2{
 	dir = 1
 	},
-/obj/structure/mineral_door/wood/deadbolt{
-	locked = 1
-	},
+/obj/structure/mineral_door/wood/deadbolt,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "tjV" = (
@@ -69788,7 +69801,7 @@ uHt
 jwv
 jwv
 jwv
-jwv
+mvP
 jwv
 uHt
 tXZ
@@ -69945,7 +69958,7 @@ tuX
 uHt
 gbn
 aax
-upU
+oIW
 abX
 tuX
 tXZ
