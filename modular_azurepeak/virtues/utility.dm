@@ -19,7 +19,7 @@
 /datum/virtue/utility/beautiful/handle_traits(mob/living/carbon/human/recipient)
 	..()
 	if(HAS_TRAIT(recipient, TRAIT_UNSEEMLY))
-		to_chat(recipient, "Your attractiveness and repulsiveness cancel out! You become normal.")
+		to_chat(recipient, "Your attractiveness is cancelled out! You become normal.")
 		REMOVE_TRAIT(recipient, TRAIT_BEAUTIFUL, TRAIT_VIRTUE)
 		REMOVE_TRAIT(recipient, TRAIT_UNSEEMLY, TRAIT_VIRTUE)
 
@@ -168,7 +168,7 @@
 /datum/virtue/utility/ugly/handle_traits(mob/living/carbon/human/recipient)
 	..()
 	if(HAS_TRAIT(recipient, TRAIT_BEAUTIFUL))
-		to_chat(recipient, "Your repulsiveness and attractiveness cancel out! You become normal.")
+		to_chat(recipient, "Your repulsiveness is cancelled out! You become normal.")
 		REMOVE_TRAIT(recipient, TRAIT_BEAUTIFUL, TRAIT_VIRTUE)
 		REMOVE_TRAIT(recipient, TRAIT_UNSEEMLY, TRAIT_VIRTUE)
 
