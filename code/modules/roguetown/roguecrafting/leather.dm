@@ -604,3 +604,4 @@
 	craftdiff = 4
 	sellprice = 15
 	
+	
