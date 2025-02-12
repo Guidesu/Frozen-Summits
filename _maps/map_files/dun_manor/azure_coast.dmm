@@ -2464,6 +2464,13 @@
 "rf" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/indoors/shelter)
+"rg" = (
+/obj/structure/fluff/traveltile{
+	aportalid = "udarkout1";
+	aportalgoesto = "udarkin1"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/cave)
 "rh" = (
 /obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
 /turf/open/floor/rogue/cobblerock,
@@ -27380,8 +27387,8 @@ tk
 tk
 oP
 oP
-oP
-oP
+oE
+XE
 oP
 oP
 oP
@@ -27509,9 +27516,9 @@ oP
 tk
 tk
 oP
-oP
-oP
-oP
+oE
+oE
+oE
 oP
 oP
 oP
@@ -27637,12 +27644,12 @@ sA
 sA
 sA
 sA
-sA
-sA
+oE
+oE
+XE
 oP
-oP
-oP
-oP
+oE
+XE
 oP
 oP
 oP
@@ -27768,12 +27775,12 @@ lU
 xO
 lU
 lU
+XE
 sA
-sA
 oP
-oP
-oP
-oP
+oE
+oE
+XE
 oP
 oP
 FP
@@ -27901,10 +27908,10 @@ lU
 AW
 sA
 oP
-oP
-oP
-oP
-oP
+XE
+oE
+oE
+XE
 oP
 FP
 "}
@@ -28032,10 +28039,10 @@ Fs
 sA
 oP
 oP
-oP
-oP
-oP
-oP
+oE
+oE
+XE
+UR
 FP
 "}
 (34,1,2) = {"
@@ -28163,9 +28170,9 @@ sA
 oP
 oP
 oP
-oP
-oP
-oP
+oE
+oE
+rg
 FP
 "}
 (35,1,2) = {"
@@ -28293,9 +28300,9 @@ sA
 oP
 oP
 oP
-oP
-oP
-oP
+XE
+oE
+rg
 FP
 "}
 (36,1,2) = {"
@@ -28424,8 +28431,8 @@ oP
 oP
 oP
 oP
-oP
-oP
+oE
+rg
 FP
 "}
 (37,1,2) = {"
@@ -28555,7 +28562,7 @@ oP
 oP
 oP
 oP
-oP
+UR
 FP
 "}
 (38,1,2) = {"

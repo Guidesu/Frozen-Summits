@@ -53,6 +53,13 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/woods)
+"ap" = (
+/obj/structure/fluff/traveltile{
+	aportalid = "udarkout3";
+	aportalgoesto = "udarkin3"
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
 "aq" = (
 /obj/structure/closet/crate/chest/neu_fancy,
 /turf/open/floor/rogue/ruinedwood/herringbone,
@@ -27680,14 +27687,14 @@ pC
 "}
 (136,1,1) = {"
 pC
-pC
+ap
+MK
 ys
 ys
-ys
 Ry
 Ry
-Ry
-Ry
+MK
+MK
 Ry
 Ry
 Ry
@@ -27837,14 +27844,14 @@ pC
 "}
 (137,1,1) = {"
 pC
-pC
-ys
-ys
-ys
+ap
+MK
+MK
+MK
 Ry
-Ry
-Ry
-Ry
+MK
+MK
+MK
 Ry
 Ry
 Ry
@@ -27994,15 +28001,15 @@ pC
 "}
 (138,1,1) = {"
 pC
-pC
-ys
-ys
-ys
-Ry
-Ry
-Ry
-Ry
-Ry
+ap
+MK
+MK
+MK
+MK
+MK
+MK
+MK
+MK
 Ry
 kV
 kV
@@ -28154,14 +28161,14 @@ pC
 pC
 ys
 ys
-ys
-Ry
-Ry
-Ry
-Ry
-Ry
-kV
-kV
+MK
+MK
+MK
+MK
+MK
+MK
+MK
+MK
 kV
 kV
 kV
@@ -28314,12 +28321,12 @@ ys
 ys
 Ry
 Ry
-Ry
-kV
-kV
-kV
-kV
-kV
+MK
+MK
+MK
+MK
+MK
+MK
 kV
 kV
 kV
@@ -28474,9 +28481,9 @@ Ry
 Ry
 kV
 kV
-kV
-kV
-kV
+MK
+MK
+MK
 kV
 kV
 kV
@@ -28632,12 +28639,12 @@ kV
 kV
 kV
 kV
-kV
-kV
-kV
-kV
 MK
 MK
+MK
+kV
+bP
+bP
 bP
 bP
 MK
@@ -28789,12 +28796,12 @@ kV
 kV
 kV
 kV
-kV
-kV
-kV
-kV
 MK
 MK
+MK
+MK
+MK
+bP
 bP
 ez
 bP
@@ -28947,11 +28954,11 @@ kV
 kV
 kV
 kV
-kV
-kV
-kV
 MK
 MK
+MK
+bP
+bP
 Rf
 bP
 bP
@@ -29106,9 +29113,9 @@ kV
 kV
 kV
 kV
-kV
 MK
-MK
+bP
+bP
 Ut
 eQ
 eQ

@@ -165,6 +165,37 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	ambush_times = list("night","dawn","dusk","day")
 	converted_type = /area/rogue/indoors/shelter/mountains/decap
 
+/area/rogue/under/underdark
+	name = "underdark"
+	icon_state = "cave"
+	ambientsounds = AMB_GENCAVE
+	ambientnight = AMB_GENCAVE
+	spookysounds = SPOOKY_CAVE
+	spookynight = SPOOKY_CAVE
+	droning_sound = 'sound/music/area/dwarf.ogg'
+	droning_sound_dusk = null
+	droning_sound_night = 'sound/music/area/dungeon2.ogg'
+	first_time_text = "THE UNDERDARK"
+	ambush_times = list("night","dawn","dusk","day")
+	ambush_types = list(
+				/turf/open/floor/rogue/dirt,
+				/turf/open/floor/rogue/dirt/road)
+	ambush_mobs = list(
+				/mob/living/carbon/human/species/goblin/npc/ambush/cave = 20,
+				/mob/living/carbon/human/species/skeleton/npc/ambush = 30,
+				/mob/living/simple_animal/hostile/retaliate/rogue/minotaur = 10,
+				/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll = 20)
+	converted_type = /area/rogue/indoors/shelter
+
+/area/rogue/under/underdark/harrowhall
+	name = "harrowhall"
+	icon_state = "spidercave"
+	first_time_text = "HARROWHALL"
+	droning_sound = 'sound/music/area/underworlddrone.ogg'
+	droning_sound_dusk = null
+	droning_sound_night = null
+	converted_type = /area/rogue/outdoors/dungeon1
+
 /area/rogue/outdoors/rtfield
 	name = "azure basin"
 	icon_state = "rtfield"
