@@ -2635,6 +2635,7 @@
 #include "code\modules\mob\living\carbon\human\npc\_npc.dm"
 #include "code\modules\mob\living\carbon\human\npc\bum.dm"
 #include "code\modules\mob\living\carbon\human\npc\deadite.dm"
+#include "code\modules\mob\living\carbon\human\npc\drowraider.dm"
 #include "code\modules\mob\living\carbon\human\npc\goblin.dm"
 #include "code\modules\mob\living\carbon\human\npc\rousman.dm"
 #include "code\modules\mob\living\carbon\human\npc\searaider.dm"
