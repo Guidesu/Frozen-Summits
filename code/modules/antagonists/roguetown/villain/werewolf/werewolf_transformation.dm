@@ -1,5 +1,5 @@
-/mob/living/carbon/human
-	var/mob/stored_mob = null
+//mob/living/carbon/human
+//	var/mob/stored_mob = null
 
 /datum/antagonist/werewolf/on_life(mob/user)
 	if(!user) return

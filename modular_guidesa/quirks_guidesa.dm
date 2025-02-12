@@ -380,3 +380,53 @@
 /datum/quirk/heavyarmor/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+
+
+/datum/quirk/skeletal_curse
+	name = "(Curse) Skeletal Form"
+	desc = "Your body has been transformed into an animated skeleton. You require no sustenance and feel no pain, but your brittle bones are fragile. How are you a sentient skeleton? That is up to you decide. Beware Kelemvor paladins."
+	value = 0 
+
+
+/datum/quirk/skeletal_curse/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	
+	// Set species traits
+	H.dna.species.species_traits |= NOBLOOD
+	H.dna.species.soundpack_m = new /datum/voicepack/skeleton()
+	H.dna.species.soundpack_f = new /datum/voicepack/skeleton()
+
+	// Limb transformation
+	var/static/list/limbs_to_regenerate = list(BODY_ZONE_R_ARM, BODY_ZONE_L_ARM)
+	for(var/zone in limbs_to_regenerate)
+		var/obj/item/bodypart/O = H.get_bodypart(zone)
+		if(O)
+			O.drop_limb()
+			qdel(O)
+		H.regenerate_limb(zone)
+
+	// Sensory changes
+	var/obj/item/organ/eyes/old_eyes = H.getorganslot(ORGAN_SLOT_EYES)
+	if(old_eyes)
+		old_eyes.Remove(H, TRUE)
+		qdel(old_eyes)
+	
+	var/obj/item/organ/eyes/new_eyes = new /obj/item/organ/eyes/night_vision/zombie()
+	new_eyes.Insert(H)
+
+	// Biological traits
+	H.mob_biotypes |= MOB_UNDEAD
+	H.faction = list("undead")
+
+	// Trait additions
+	ADD_TRAIT(H, TRAIT_NOMOOD, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_NOHUNGER, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_EASYDISMEMBER, TRAIT_GENERIC) 
+	ADD_TRAIT(H, TRAIT_NOBREATH, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_NOPAIN, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_TOXIMMUNE, TRAIT_GENERIC)
+
+	// Visual transformation
+	for(var/obj/item/bodypart/B in H.bodyparts)
+		B.skeletonize(FALSE)
+	H.update_body()
