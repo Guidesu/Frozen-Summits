@@ -8021,7 +8021,9 @@
 	aportalid = "udarkout2";
 	aportalgoesto = "udarkin2"
 	},
-/turf/open/floor/rogue/dirt/ambush,
+/turf/open/floor/rogue/naturalstone{
+	color = "585F96"
+	},
 /area/rogue/under/cave)
 "oAP" = (
 /obj/structure/fluff/railing/wood{

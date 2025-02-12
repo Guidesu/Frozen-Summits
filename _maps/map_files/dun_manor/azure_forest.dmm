@@ -58,7 +58,9 @@
 	aportalid = "udarkout3";
 	aportalgoesto = "udarkin3"
 	},
-/turf/open/floor/rogue/dirt/road,
+/turf/open/floor/rogue/naturalstone{
+	color = "585F96"
+	},
 /area/rogue/outdoors/woods)
 "aq" = (
 /obj/structure/closet/crate/chest/neu_fancy,
