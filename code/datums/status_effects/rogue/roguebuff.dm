@@ -247,6 +247,11 @@
 	desc = "I've trekked these woods for some time now. I find traversal easier here."
 	icon_state = "buff"
 
+/atom/movable/screen/alert/status_effect/buff/vampnerf
+	name = "Unholy Curse"
+	desc = "I feel them.. watching me... oh fuck...."
+	icon_state = "muscles"
+
 /datum/status_effect/buff/wardenbuff
 	id = "wardenbuff"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/wardenbuff
@@ -256,6 +261,11 @@
 	id = "guardbuffone"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/guardbuffone
 	effectedstats = list("constitution" = 1,"endurance" = 1, "speed" = 1, "perception" = 2) 
+
+/datum/status_effect/buff/vampnerf
+	id = "vampnerf"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/vampnerf
+	effectedstats = list("constitution" = -5,"endurance" = -5, "speed" = -5, "perception" = -5, "strenght" = -5) 
 
 /datum/status_effect/buff/knightbuff
 	id = "knightbuff"

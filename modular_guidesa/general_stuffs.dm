@@ -385,7 +385,9 @@
 	playsound(original_form, 'sound/combat/gib (1).ogg', 100)
 	H.emote("agony", forced = TRUE)
 	qdel(shifted_form)
-	
+	H.adjustBruteLoss(70)
+	H.adjustFireLoss(50)
+
 	original_form.Stun(30)
 	original_form.Knockdown(30)
 	transformed = FALSE // Reset SPELL state
