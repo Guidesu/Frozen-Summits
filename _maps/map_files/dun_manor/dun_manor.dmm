@@ -5399,6 +5399,16 @@
 /obj/structure/chair/wood/rogue/chair3,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
+"jrq" = (
+/obj/structure/fluff/traveltile{
+	aportalid = "udarkoutriver";
+	aportalgoesto = "udarkinriver"
+	},
+/turf/open/water/river{
+	icon_state = "rockwd";
+	dir = 8
+	},
+/area/rogue/under/cave)
 "jrz" = (
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield)
@@ -8006,6 +8016,13 @@
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors)
+"oAA" = (
+/obj/structure/fluff/traveltile{
+	aportalid = "udarkout2";
+	aportalgoesto = "udarkin2"
+	},
+/turf/open/floor/rogue/dirt/ambush,
+/area/rogue/under/cave)
 "oAP" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8
@@ -13377,9 +13394,9 @@ pNQ
 pNQ
 pNQ
 pNQ
-pNQ
-pNQ
-pNQ
+jrq
+jrq
+jrq
 pNQ
 pNQ
 pNQ
@@ -13533,8 +13550,8 @@ hWI
 xXc
 dSI
 dSI
-mAA
-mAA
+gqo
+gqo
 gqo
 gqo
 gqo
@@ -33961,10 +33978,10 @@ pNQ
 pNQ
 dKO
 adk
-pNQ
-pNQ
-pNQ
-pNQ
+dKO
+dKO
+dKO
+dKO
 hpc
 hpc
 pNQ
@@ -34118,10 +34135,10 @@ pNQ
 pNQ
 dKO
 dKO
-pNQ
-pNQ
-pNQ
-pNQ
+dKO
+dKO
+dKO
+dKO
 hpc
 hpc
 pNQ
@@ -34274,10 +34291,10 @@ pNQ
 pNQ
 pNQ
 adk
-dKO
 pNQ
-pNQ
-pNQ
+oAA
+oAA
+oAA
 pNQ
 hpc
 hpc
@@ -34430,8 +34447,8 @@ pNQ
 pNQ
 pNQ
 pNQ
-dKO
 bRm
+pNQ
 pNQ
 pNQ
 pNQ
@@ -34589,8 +34606,8 @@ pNQ
 pNQ
 aoQ
 dKO
-dKO
-dKO
+pNQ
+pNQ
 pNQ
 pNQ
 hpc
@@ -34744,8 +34761,8 @@ pNQ
 pNQ
 pNQ
 pNQ
-pNQ
-pNQ
+dKO
+dKO
 aoQ
 dKO
 adk
@@ -34902,8 +34919,8 @@ pNQ
 pNQ
 pNQ
 pNQ
-pNQ
-pNQ
+dKO
+dKO
 req
 dKO
 pNQ
