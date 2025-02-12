@@ -1,7 +1,6 @@
 
 /mob/living/carbon/human
 	var/datum/charflaw/charflaw
-	var/datum/charflaw/charflawtwo
 
 /mob/proc/advance_addiction()
 	return
