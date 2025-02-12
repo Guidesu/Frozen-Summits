@@ -66,6 +66,8 @@
 	added_traits = list(TRAIT_NOHUNGER, TRAIT_NOBREATH, TRAIT_ZJUMP, TRAIT_NOFALLDAMAGE1, TRAIT_EASYDISMEMBER, TRAIT_DARKLING, TRAIT_VAMPIRIC_CURSE)
 
 /datum/virtue/utility/deathless/apply_to_human(mob/living/carbon/human/recipient)
+	added_skills = list(list(/datum/skill/magic/blood, 2, 3) // Adding 2 ranks, to a max of 3. The original code that gives the below spells assumes you have this at the least beforehand. Doesnt actually do anything unless you have transfix, which this trait does not give.
+	)
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/bloodlightning)
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/bloodsteal)
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/targeted/shapeshift/bat)
