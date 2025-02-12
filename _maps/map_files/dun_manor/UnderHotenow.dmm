@@ -214,7 +214,7 @@
 	aportalid = "udarkin2";
 	aportalgoesto = "udarkout2"
 	},
-/turf/open/floor/rogue/dirt/road{
+/turf/open/floor/rogue/naturalstone{
 	color = "585F96"
 	},
 /area/rogue/under/underdark)
@@ -804,7 +804,7 @@
 	aportalid = "udarkin1";
 	aportalgoesto = "udarkout1"
 	},
-/turf/open/floor/rogue/dirt/road{
+/turf/open/floor/rogue/naturalstone{
 	color = "585F96"
 	},
 /area/rogue/under/underdark)
@@ -1275,6 +1275,15 @@
 /area/rogue/indoors/shelter)
 "yQ" = (
 /obj/effect/decal/remains/human,
+/turf/open/floor/rogue/dirt/road{
+	color = "585F96"
+	},
+/area/rogue/under/underdark)
+"yW" = (
+/obj/structure/stairs{
+	icon_state = "stairs";
+	dir = 1
+	},
 /turf/open/floor/rogue/dirt/road{
 	color = "585F96"
 	},
@@ -2337,7 +2346,7 @@
 	aportalid = "udarkin3";
 	aportalgoesto = "udarkout3"
 	},
-/turf/open/floor/rogue/dirt/road{
+/turf/open/floor/rogue/naturalstone{
 	color = "585F96"
 	},
 /area/rogue/under/underdark)
@@ -32752,7 +32761,7 @@ BO
 BO
 BO
 Fk
-Fk
+oJ
 Np
 Ik
 Ik
@@ -32882,7 +32891,7 @@ BO
 BO
 BO
 Fk
-Fk
+oJ
 Np
 Ik
 oJ
@@ -33012,7 +33021,7 @@ BO
 BO
 BO
 BO
-BO
+oJ
 BO
 BO
 BO
@@ -49393,7 +49402,7 @@ gT
 gT
 Ik
 Ik
-Np
+yW
 Fk
 Ik
 Ik
@@ -49523,7 +49532,7 @@ gT
 gT
 Ik
 Ik
-Np
+yW
 Fk
 Ik
 oJ

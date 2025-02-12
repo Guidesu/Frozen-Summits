@@ -189,10 +189,11 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 				/turf/open/floor/rogue/dirt,
 				/turf/open/floor/rogue/dirt/road)
 	ambush_mobs = list(
+				/mob/living/carbon/human/species/elf/dark/npc/ambush = 30,
 				/mob/living/carbon/human/species/goblin/npc/ambush/cave = 20,
-				/mob/living/carbon/human/species/skeleton/npc/ambush = 30,
+				/mob/living/carbon/human/species/skeleton/npc/ambush = 20,
 				/mob/living/simple_animal/hostile/retaliate/rogue/minotaur = 10,
-				/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll = 20)
+				/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll = 10)
 	converted_type = /area/rogue/indoors/shelter
 
 /area/rogue/under/underdark/harrowhall

@@ -11,11 +11,11 @@
 	RegisterSignal(parent, COMSIG_LIVING_HEALTH_UPDATE, PROC_REF(update_light_stress))		//Light stress accumulation
 	RegisterSignal(parent, COMSIG_MOVABLE_MOVED, PROC_REF(check_light_on_move))				//So that we get more immediate blinding, but don't make walking stress us faster
 	next_blind = world.time + 45 SECONDS 													//Giving fresh darklings enough time to get to cover or at least put their hood up before getting blinded
-	if(ishuman(parent))
+/* 	if(ishuman(parent))
 		var/mob/living/carbon/human/character = parent
 		var/obj/item/clothing/head/roguetown/roguehood/hood = new /obj/item/clothing/head/roguetown/roguehood(get_turf(character))
 		character.put_in_hands(hood, forced = TRUE)
-
+ */
 //Proc used for updating light stress, occurs every health update so around once every 2 seconds
 /datum/component/darkling/proc/update_light_stress(var/mob/living/darkling)\
 	//Closing our eyes or being blind/blindfolded lets us recovery very quickly

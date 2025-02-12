@@ -34,3 +34,9 @@
 			if(feature.feature_slot == feature_slot)
 				return feature
 	return null
+
+/mob/living/carbon/human/proc/set_hairstyle(hairstyle_accessory, colors) // Colors can be null, if using colors make sure to use color_list_to_string as hairstyles use this.
+    var/datum/bodypart_feature/hair/feature = get_bodypart_feature_of_slot(BODYPART_FEATURE_HAIR)
+    if(!feature)
+        return
+    feature.set_accessory_type(hairstyle_accessory, colors, src)
