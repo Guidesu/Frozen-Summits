@@ -1,7 +1,7 @@
 /datum/quirk/elemental_breath_fire
 	name = "(Spells) Elemental Breath (Fire Breath)"
 	desc = "Harness the elemental fury within you to unleash a breath of scorching fire. This power, often gifted by draconic heritage or a deep elemental connection, allows you to exhale a ball of flames, searing the enemies. Its not not as strong as a true dragon breath, the intensity only embodies a little of your lineage's power, but it requires time to recover after each use."
-	value = 3
+	value = 2
 
 /datum/quirk/elemental_breath_fire/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -47,7 +47,7 @@
 /datum/quirk/elemental_breath_eletricity
 	name = "(Spells) Elemental Breath (Lighting Breath)"
 	desc = "You can unleash a bolt of lightning from your breath, striking enemies in a straight line. This power comes from your draconic heritage or elemental connection and can only be used occasionally as it takes time to recharge."
-	value = 5
+	value = 2
 
 /datum/quirk/elemental_breath_eletricity/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -60,7 +60,7 @@
 /datum/quirk/elemental_acid
 	name = "(Spells) Elemental Breath (Acid)"
 	desc = "You can breath acid. Ouch."
-	value = 5
+	value = 2
 
 /datum/quirk/elemental_acid/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -88,7 +88,7 @@
 /datum/quirk/tolerant
 	name = "(Flavor) Tolerant"
 	desc = "Well, people are alright i guess."
-	value = 2
+	value = 0
 
 /datum/quirk/tolerant/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -98,7 +98,7 @@
 /datum/quirk/nosey
 	name = "(Flavor/Combat) Nosey"
 	desc = "I can grab people by their nose!"
-	value = 4
+	value = 3
 
 /datum/quirk/nosey/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -108,7 +108,7 @@
 /datum/quirk/nutcracker
 	name = "(Flavor/Combat) Nutkicker"
 	desc = "I can kick people in the nuts and CRACK them... even not having one does not save them from me."
-	value = 4
+	value = 3
 
 /datum/quirk/nutcracker/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -126,7 +126,7 @@
 /datum/quirk/good_trainer
 	name = "(Weapons/Skills) Good Trainer"
 	desc = "I am good at training people in combat, if they parry my attacks or attack me with their desired weapon they will learn faster than others."
-	value = 4
+	value = 2
 
 /datum/quirk/good_trainer/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -135,7 +135,7 @@
 /datum/quirk/one_eye_l
 	name = "(Flaws) Bad Eye (Left)"
 	desc = "My left eye is bad, wounded, or lost, and thus my vision is bad"
-	value = -5
+	value = -7
 
 /datum/quirk/one_eye_l/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -144,7 +144,7 @@
 /datum/quirk/one_eye_r
 	name = "(Flaws) Bad Eye (Right)"
 	desc = "My Right eye is bad, wounded, or lost, and thus my vision is bad"
-	value = -5
+	value = -7
 
 /datum/quirk/one_eye_r/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -154,7 +154,7 @@
 /datum/quirk/one_eye_both
 	name = "(Flaws) Bad Eye (Both)"
 	desc = "My both eyes are bad. My vision is really limited."
-	value = -10
+	value = -15
 
 /datum/quirk/one_eye_both/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -164,7 +164,7 @@
 /datum/quirk/immune_eletricity
 	name = "(Virtue) Shock Immunity"
 	desc = "Due to my blood heritage, fey magic, or elemental prowess, i am immune to a degree to shocks."
-	value = 10
+	value = 7
 
 /datum/quirk/immune_eletricity/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -173,7 +173,7 @@
 /datum/quirk/seed_knower
 	name = "(Virtue) Seed Knower"
 	desc = "Due to teachings i had, i know which seed is which when i look at them."
-	value = 2
+	value = 1
 
 /datum/quirk/seed_knower/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -236,7 +236,7 @@
 /datum/quirk/silver_bless
 	name = "(Virtues) Silver Blessed"
 	desc = "I was blessed by the moonmaiden since i was little, completing the trial of the forest under her guidance under the moon made me slightly more special than others."
-	value = 6
+	value = 2
 
 /datum/quirk/silver_bless/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -246,7 +246,7 @@
 /datum/quirk/nyctophobia
 	name = "(Flaws) Nyctophobia"
 	desc = "I fear the dark..."
-	value = -6
+	value = -7
 	medical_record_text = "Patient demonstrates a fear of the dark. (Seriously?)"
 
 /datum/quirk/nyctophobia/on_process()
@@ -275,7 +275,7 @@
 /datum/quirk/teacher
 	name = "(Virtue) Teacher"
 	desc = "I can teach others lessons in skills they don't know and i do! Usually would not work at someone who is more skilled at me."
-	value = 2
+	value = 1
 
 /datum/quirk/teacher/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -339,7 +339,7 @@
 /datum/quirk/woodsman
 	name = "(Virtue) - Woodsman"
 	desc = "I am vigilant in my duties. In the grove and coast of Frozen Summit, my abilities are sharper due to my routine and familiarity."
-	value = 1
+	value = 2
 
 /datum/quirk/woodsman/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -348,7 +348,7 @@
 /datum/quirk/bad_mood
 	name = "(Flaw) - Bad Mood"
 	desc = "Everything just seems to piss me off."
-	value = -3
+	value = -7
 
 /datum/quirk/bad_mood/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -357,7 +357,7 @@
 /datum/quirk/bready
 	name = "(Skills) - Battle Ready"
 	desc = "Defensive stance does not passively fatigue me."
-	value = 4
+	value = 5
 
 /datum/quirk/bready/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -366,7 +366,7 @@
 /datum/quirk/mediumarmor
 	name = "(Skills) - Medium Armor Proficiency"
 	desc = "I can move freely in medium armor."
-	value = 4
+	value = 5
 
 /datum/quirk/mediumarmor/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -375,7 +375,7 @@
 /datum/quirk/heavyarmor
 	name = "(Skills) - Heavy Armor Proficiency"
 	desc = "I can move freely in heavy armor."
-	value = 4
+	value = 5
 
 /datum/quirk/heavyarmor/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -416,12 +416,10 @@
 
 	// Biological traits
 	H.mob_biotypes |= MOB_UNDEAD
-	H.faction = list("undead")
 
 	// Trait additions
 	ADD_TRAIT(H, TRAIT_NOMOOD, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOHUNGER, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_EASYDISMEMBER, TRAIT_GENERIC) 
 	ADD_TRAIT(H, TRAIT_NOBREATH, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOPAIN, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_TOXIMMUNE, TRAIT_GENERIC)

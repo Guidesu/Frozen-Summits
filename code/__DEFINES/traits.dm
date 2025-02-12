@@ -46,6 +46,7 @@
 #define TRAIT_GUARDSMAN "Vigilant Guardsman"
 #define TRAIT_KNIGHTSMAN "Royal Defiance"
 #define TRAIT_WOODSMAN "Talented Woodsman"
+#define TRAIT_VAMPIRIC_CURSE "Unholy Curse"
 #define TRAIT_INQUISITION "Member of the Inquisition"
 #define TRAIT_GOODTRAINER "Good Trainer"
 #define TRAIT_SEA_DRINKER "Denizen of the Deep"
@@ -172,6 +173,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_WILD_EATER = span_info("I can eat raw food and drink from dirty water."),
 	TRAIT_NOFALLDAMAGE1 = span_warning("I can easily handle minor falls."),
 	TRAIT_NOFALLDAMAGE2 = span_warning("I can handle a fall from any height."),
+	TRAIT_VAMPIRIC_CURSE = span_bloody("If i try to enter holy places... bad things happen."),
 	TRAIT_DISFIGURED = span_warning("No one can recognize me..."),
 	TRAIT_MISSING_NOSE = span_warning("I struggle to breathe."),
 	TRAIT_SPELLCOCKBLOCK = span_warning("I cannot cast any spells."),

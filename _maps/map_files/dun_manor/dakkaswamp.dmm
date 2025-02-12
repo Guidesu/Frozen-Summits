@@ -51,7 +51,6 @@
 "dv" = (
 /obj/structure/closet/crate/chest/gold,
 /obj/item/book/granter/spell/spells5e/curewounds5e,
-/obj/item/book/granter/spell/spells5e/mindsliver5e,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "dx" = (
@@ -74,6 +73,10 @@
 	light_color = "black"
 	},
 /turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/shadow_fell)
+"eh" = (
+/obj/item/book/granter/spell_points,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "el" = (
 /obj/machinery/light/rogue/firebowl/stump,
@@ -213,9 +216,20 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/shadow_fell)
+"kj" = (
+/obj/structure/bookcase,
+/obj/item/book/rogue/yeoldecookingmanual,
+/obj/item/book/granter/spell_points,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/shadow_fell)
 "kp" = (
 /obj/item/restraints/legcuffs/beartrap/armed/camouflage,
 /obj/structure/mineral_door/wood,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/shadow_fell)
+"ks" = (
+/obj/effect/decal/cleanable/blood/bubblegum,
+/obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "kw" = (
@@ -489,17 +503,13 @@
 /area/rogue/outdoors/shadow_fell)
 "uX" = (
 /obj/structure/closet/crate/chest/gold,
-/obj/item/book/granter/spell_points,
-/obj/item/book/granter/spell_points,
-/obj/item/book/granter/spell_points,
-/obj/item/book/granter/spell_points,
 /obj/effect/decal/cleanable/blood/bubblegum,
+/obj/item/book/granter/spell/spells5e/bladeward5e,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "va" = (
 /obj/structure/table/wood,
 /obj/item/paper,
-/obj/item/book/granter/spell_points,
 /turf/open/floor/carpet/inn,
 /area/rogue/outdoors/shadow_fell)
 "vy" = (
@@ -521,6 +531,13 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/shadow_fell)
+"xR" = (
+/obj/structure/bookcase,
+/obj/item/book/rogue/secret/thefireisgone,
+/obj/item/book/rogue/yeoldecookingmanual,
+/obj/item/book/granter/spell/spells5e/frostbite5e,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "xY" = (
 /turf/open/floor/rogue/rooftop/green,
@@ -583,6 +600,10 @@
 "AH" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/shadow_fell)
+"AZ" = (
+/obj/item/book/granter/spell/blackstone/fireball,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/shadow_fell)
 "BQ" = (
 /turf/closed/mineral/random/rogue/med,
 /area/rogue/outdoors/shadow_fell)
@@ -634,13 +655,8 @@
 /area/rogue/outdoors/shadow_fell)
 "Eg" = (
 /obj/structure/bookcase,
-/obj/item/book/granter/spell/blackstone/skeleton,
-/obj/item/book/granter/spell/blackstone/invisibility,
-/obj/item/book/granter/spell/blackstone/greaterfireball,
-/obj/item/book/granter/spell/blackstone/fetch,
-/obj/item/book/granter/spell/blackstone/blindness,
-/obj/item/book/granter/spell/spells5e/greenflameblade5e,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/item/book/granter/spell/blackstone/bonechill,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "EK" = (
@@ -650,6 +666,14 @@
 "EN" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/town/church)
+"Fv" = (
+/obj/structure/bookcase,
+/obj/item/book/rogue/secret/thefireisgone,
+/obj/item/book/rogue/yeoldecookingmanual,
+/obj/effect/decal/cleanable/blood/bubblegum,
+/obj/item/book/granter/spell/spells5e/firebolt5e,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/shadow_fell)
 "FH" = (
 /obj/structure/table/wood,
 /turf/open/floor/rogue/twig,
@@ -877,6 +901,11 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/slime/cube,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
+"Rb" = (
+/obj/structure/bookcase,
+/obj/item/book/granter/spell/blackstone/skeleton,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/shadow_fell)
 "Rc" = (
 /turf/open/floor/rogue/grassred,
 /area/rogue/outdoors/shadow_fell)
@@ -887,12 +916,7 @@
 /area/rogue/outdoors/shadow_fell)
 "Rr" = (
 /obj/structure/bookcase,
-/obj/item/book/granter/spell/blackstone/skeleton,
-/obj/item/book/granter/spell/blackstone/invisibility,
-/obj/item/book/granter/spell/blackstone/greaterfireball,
-/obj/item/book/granter/spell/blackstone/fetch,
-/obj/item/book/granter/spell/blackstone/blindness,
-/obj/item/book/granter/spell/spells5e/greenflameblade5e,
+/obj/item/book/granter/spell/blackstone/sicknessray,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "RG" = (
@@ -941,10 +965,7 @@
 /area/rogue/outdoors/shadow_fell)
 "SS" = (
 /obj/structure/closet/crate/chest/gold,
-/obj/item/book/granter/spell_points,
-/obj/item/book/granter/spell_points,
-/obj/item/book/granter/spell_points,
-/obj/item/book/granter/spell_points,
+/obj/item/book/granter/spell/spells5e/acidsplash5e,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "SY" = (
@@ -997,6 +1018,13 @@
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/blood/bubblegum,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/shadow_fell)
+"VO" = (
+/obj/structure/bookcase,
+/obj/item/book/rogue/yeoldecookingmanual,
+/obj/item/book/rogue/robber,
+/obj/item/book/granter/spell_points,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/shadow_fell)
 "VV" = (
@@ -1090,6 +1118,14 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/shadow_fell)
+"Yh" = (
+/obj/structure/bookcase,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/shadow_fell)
+"Yp" = (
+/obj/effect/decal/cleanable/blood/bubblegum,
+/turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/shadow_fell)
 "YB" = (
 /turf/open/floor/rogue/naturalstone,
@@ -1782,7 +1818,7 @@ YB
 kp
 YB
 YB
-YB
+eh
 YB
 YB
 ig
@@ -1950,7 +1986,7 @@ yT
 YB
 Ts
 YB
-YB
+AZ
 YB
 tM
 Zb
@@ -2885,15 +2921,15 @@ yT
 YB
 sS
 tM
-VX
+VO
 YB
 YB
-YB
-YB
-YB
-YB
+iW
+iW
+iW
+iW
 kF
-VX
+VO
 tM
 Zb
 Zb
@@ -3045,10 +3081,10 @@ tM
 VX
 YB
 YB
-YB
-YB
-YB
-YB
+iW
+iW
+iW
+iW
 kF
 VX
 tM
@@ -3202,9 +3238,9 @@ tM
 uB
 YB
 LB
-YB
-yT
-yT
+iW
+Eb
+Eb
 LB
 kF
 nv
@@ -3513,7 +3549,7 @@ Ak
 yT
 YB
 tM
-hR
+kj
 YB
 iW
 YB
@@ -4140,7 +4176,7 @@ yT
 YB
 YB
 YB
-eo
+xR
 YB
 eo
 YB
@@ -4296,7 +4332,7 @@ GF
 Im
 YB
 YB
-yT
+Yp
 sx
 YB
 eo
@@ -4449,7 +4485,7 @@ yT
 tM
 eo
 YB
-Jt
+Fv
 Im
 YB
 YB
@@ -4461,9 +4497,9 @@ YB
 tM
 Eg
 Rr
-Rr
-Rr
-Rr
+Rb
+Yh
+Yh
 tM
 Zb
 Zb
@@ -5861,9 +5897,9 @@ sS
 YB
 tM
 YB
+YB
 SQ
-SQ
-yT
+ks
 YB
 YB
 YB
@@ -6019,7 +6055,7 @@ sS
 tM
 dv
 SQ
-GA
+SQ
 yT
 YB
 yT

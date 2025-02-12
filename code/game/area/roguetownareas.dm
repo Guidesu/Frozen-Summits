@@ -18,6 +18,14 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	var/town_area = FALSE
 	var/keep_area = FALSE
 	var/warden_area = FALSE
+	var/church_area = FALSE
+
+/area/rogue/Entered(mob/living/carbon/human/guy)
+
+	. = ..()
+	if((src.church_area == TRUE) && HAS_TRAIT(guy, TRAIT_VAMPIRIC_CURSE ) && guy.z == 3 && !guy.has_status_effect(/datum/status_effect/buff/vampnerf)) //vampires
+		guy.apply_status_effect(/datum/status_effect/buff/vampnerf)
+
 
 /area/rogue/Entered(mob/living/carbon/human/guy)
 
@@ -728,16 +736,17 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/church
+	church_area = TRUE
 /area/rogue/outdoors/exposed/church
 	icon_state = "church"
 	droning_sound = 'sound/music/area/church.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-
+	church_area = TRUE
 /area/rogue/indoors/town/church/chapel
 	icon_state = "chapel"
-	first_time_text = "THE HOUSE OF THE TEN"
-
+	first_time_text = "THE HOUSE OF THE PANTHEON"
+	church_area = TRUE
 /area/rogue/indoors/town/fire_chamber
 	name = "incinerator"
 	icon_state = "fire_chamber"

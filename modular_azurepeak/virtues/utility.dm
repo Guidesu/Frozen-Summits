@@ -60,17 +60,14 @@
 		"Book" = /obj/item/book/rogue/playerbook
 	)
 
-
 /datum/virtue/utility/deathless
 	name = "Vampiric Prowess"
-	desc = "Some fell dark magick has rendered me inwardly unliving - I do not hunger, and I do not breathe, i do not tire, i do not feel pain, almost perfected. All holy magic harms me. But i am more powerful. Very much more powerful than other vampires."
-	added_traits = list(TRAIT_NOHUNGER, TRAIT_NOBREATH, TRAIT_NOROGSTAM, TRAIT_ZJUMP, TRAIT_NOFALLDAMAGE1, TRAIT_EASYDISMEMBER)
-	added_stats = list(STAT_STRENGTH = 1, STAT_CONSTITUTION = 1, STAT_SPEED = 1, STAT_INTELLIGENCE = 2)
+	desc = "Some fell dark magick has rendered me inwardly unliving - I do not hunger, and I do not breathe, i do not feel pain, almost perfected. All holy magic harms me. But i am more powerful. Very much more powerful than other vampires."
+	added_traits = list(TRAIT_NOHUNGER, TRAIT_NOBREATH, TRAIT_ZJUMP, TRAIT_NOFALLDAMAGE1, TRAIT_EASYDISMEMBER, TRAIT_DARKLING, TRAIT_VAMPIRIC_CURSE)
 
 /datum/virtue/utility/deathless/apply_to_human(mob/living/carbon/human/recipient)
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/bloodlightning)
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/bloodsteal)
-	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/claws)
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/targeted/shapeshift/bat)
 	recipient.mob_biotypes |= MOB_UNDEAD
 

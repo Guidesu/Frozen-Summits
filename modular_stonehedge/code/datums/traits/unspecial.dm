@@ -24,7 +24,7 @@
 /datum/quirk/werewolfeyes
 	name = "(Organs) Moonlight Eyes (White Eyes)"
 	desc = "I can easily see in the dark with my eyes."
-	value = 4
+	value = 5
 
 /datum/quirk/werewolfeyes/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -46,7 +46,7 @@
 /datum/quirk/werewolfeyes_green
 	name = "(Organs) Moonlight Eyes (Green Eyes)"
 	desc = "I can easily see in the dark with my eyes."
-	value = 4
+	value = 5
 
 /datum/quirk/werewolfeyes_green/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -63,7 +63,7 @@
 /datum/quirk/werewolfeyes_blue
 	name = "(Organs) Moonlight Eyes (Blue Eyes)"
 	desc = "I can easily see in the dark with my eyes."
-	value = 4
+	value = 5
 
 /datum/quirk/werewolfeyes_blue/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -78,7 +78,7 @@
 /datum/quirk/werewolfeyes_yellow
 	name = "(Organs) Moonlight Eyes (Yellow Eyes)"
 	desc = "I can easily see in the dark with my eyes."
-	value = 4
+	value = 5
 
 /datum/quirk/werewolfeyes_yellow/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -93,7 +93,7 @@
 /datum/quirk/werewolfeyes_brown
 	name = "(Organs) Moonlight Eyes (Brown Eyes)"
 	desc = "I can easily see in the dark with my eyes."
-	value = 4
+	value = 5
 
 /datum/quirk/werewolfeyes_brown/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -109,7 +109,7 @@
 /datum/quirk/undeadeyes
 	name = "(Organs) Cursed Eyes (White Eyes)"
 	desc = "I can easily see in the dark with my undead eyes."
-	value = 4
+	value = 5
 
 /datum/quirk/undeadeyes/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -127,7 +127,7 @@
 /datum/quirk/undeadeyes_red
 	name = "(Organs) Cursed Eyes (Red Eyes)"
 	desc = "I can easily see in the dark with my undead eyes."
-	value = 4
+	value = 5
 
 /datum/quirk/undeadeyes_red/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -142,6 +142,20 @@
 
 
 
+/datum/quirk/tongue_animal
+	name = "(Organs) Animal Tongue"
+	desc = "I have a tongue that allows me to make animal noises."
+	value = 0
+
+
+/datum/quirk/tongue_animal/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/obj/item/organ/tongue/tongue = H.getorganslot(ORGAN_SLOT_TONGUE)
+	if(tongue)
+		tongue.Remove(H,1)
+		QDEL_NULL(tongue)
+	tongue = new /obj/item/organ/tongue/wild_tongue
+	tongue.Insert(H)
 
 
 //-----------------------------------
@@ -150,7 +164,7 @@
 /datum/quirk/curseofcain
 	name = "(Virtue) Flawed Immortality"
 	desc = "I don't need to eat or breathe anymore... Is this normal?"
-	value = 3
+	value = 5
 
 /datum/quirk/curseofcain/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -179,7 +193,7 @@
 /datum/quirk/night_owl
 	name = "(Virtue) Night Owl"
 	desc = "I've always preferred the night."
-	value = 1
+	value = 2
 
 /datum/quirk/night_owl/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -271,12 +285,12 @@
 /datum/quirk/training9
 	name = "(Weapons/Skills) Unarmed Training"
 	desc = "I have unarmed training and stashed a katar."
-	value = 2
+	value = 5
 
 /datum/quirk/training9/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
-	H.mind.adjust_skillrank_up_to(/datum/skill/combat/unarmed, 2, TRUE)
-	H.mind.adjust_skillrank_up_to(/datum/skill/combat/wrestling, 2, TRUE)
+	H.mind.adjust_skillrank_up_to(/datum/skill/combat/unarmed, 4, TRUE)
+	H.mind.adjust_skillrank_up_to(/datum/skill/combat/wrestling, 4, TRUE)
 	H.mind.special_items["Katar"] = /obj/item/rogueweapon/katar
 
 /datum/quirk/greenthumb
@@ -370,7 +384,7 @@
 /datum/quirk/impervious
 	name = "(Combat) Impervious"
 	desc = "I've spent years shoring up my weakspots, and have become difficult to wound with critical blows."
-	value = 3
+	value = 5
 /datum/quirk/impervious/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
@@ -402,7 +416,7 @@
 /datum/quirk/civilizedbarbarian
 	name = "(Combat) Tavern Brawler"
 	desc = "I am a barstool warrior. Improvised weapons are more effective in my hands."
-	value = 2
+	value = 5
 
 /datum/quirk/civilizedbarbarian/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -558,7 +572,7 @@ datum/quirk/backproblems_2
 /datum/quirk/hussite
 	name = "(Flaw) Cursed"
 	desc = "You are unabled to be healed by faithfuls due to a curse from a demon, fae or other entity, and people know you are cursed."
-	value = -10
+	value = -8
 
 /datum/quirk/hussite/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -607,7 +621,7 @@ datum/quirk/backproblems_2
 /datum/quirk/outlaw
 	name = "(Flaw) Known Outlaw"
 	desc = "Whether for crimes I did or was accused of, I have been declared an outlaw!"
-	value = -8
+	value = 0
 
 /datum/quirk/outlaw/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
