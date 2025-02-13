@@ -528,7 +528,7 @@
 	H.transform = H.transform.Translate(0, (1.1))
 	H.update_transform()
 
-datum/quirk/backproblems_2
+/datum/quirk/backproblems_2
 	name = "(Virtue) Giant (Extra)"
 	desc = "I've always been called a giant (atleast among my kin). I am valued for my stature, but, this world made for smaller folk has forced me to move cautiously."
 	value = 0

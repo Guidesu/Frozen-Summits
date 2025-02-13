@@ -1,4 +1,4 @@
-#define CLOTHING_SOOT_BLACK		"#414145"
+/* #define CLOTHING_SOOT_BLACK		"#414145" // Duplicates!
 #define CLOTHING_WINESTAIN_RED	"#673c3c"
 #define CLOTHING_PEASANT_BROWN	"#634f44"
 #define CLOTHING_MUD_BROWN		"#6f5f4d"
@@ -12,7 +12,7 @@
 #define CLOTHING_LINEN			"#a1a17a"
 #define CLOTHING_WHITE			"#ffffff"
 #define CLOTHING_WET			"#afafaf"
-
+ */
 
 ///Royal clothing:
 //................ Royal Dress (Ball Gown)............... //
