@@ -414,8 +414,8 @@
 
 
 /obj/structure/flora/rogueshroom
-	name = "mushroom"
-	desc = "Mushrooms are the only happy beings in this island."
+	name = "zurkhwood"
+	desc = "A tree like fungus commonly found in the underground..."
 	icon = 'icons/roguetown/misc/foliagetall.dmi'
 	icon_state = "mush1"
 	opacity = 0

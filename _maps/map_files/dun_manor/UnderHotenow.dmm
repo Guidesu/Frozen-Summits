@@ -822,6 +822,10 @@
 /obj/item/reagent_containers/glass/bottle/rogue/wine,
 /turf/open/floor/rogue/carpet,
 /area/rogue/under/underdark/harrowhall)
+"pD" = (
+/obj/structure/roguemachine/stockpile,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter)
 "pG" = (
 /obj/structure/closet/crate/chest/gold,
 /obj/item/roguegem/random,
@@ -5945,7 +5949,7 @@ BO
 BO
 BO
 Go
-pm
+hL
 vS
 Aj
 Aj
@@ -6075,7 +6079,7 @@ Ik
 BO
 BO
 Go
-pm
+pD
 vS
 Aj
 Aj
@@ -21818,7 +21822,7 @@ BO
 BO
 BO
 BO
-BO
+Ce
 Fk
 Fk
 Fk
@@ -21947,9 +21951,9 @@ Gn
 Gn
 Gn
 FT
-BO
-Ik
-Ik
+Ce
+Ce
+Ce
 Fk
 Fk
 Fk
@@ -22077,10 +22081,10 @@ Qx
 Lj
 vt
 Gn
-Ik
-Ik
-Ik
-BO
+Ce
+Ce
+Ce
+Ce
 Fk
 Fk
 Fk
@@ -22207,9 +22211,9 @@ gH
 Lj
 vt
 sy
-Ik
-Ik
-BO
+Ce
+Ce
+Ce
 BO
 BO
 BO
@@ -22337,8 +22341,8 @@ Vj
 vt
 vt
 Gn
-Ik
-BO
+Ce
+Ce
 BO
 BO
 BO
