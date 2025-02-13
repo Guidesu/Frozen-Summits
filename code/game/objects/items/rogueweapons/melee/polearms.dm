@@ -279,7 +279,7 @@
 	name = "blessed depthseeker"
 	desc = "A beautifully crafted weapon, with handle carved of some beast's bone, inlaid with smooth seaglass at pommel and head, with two prongs smithed of fine dwarven steel. The seaglass carving at the head is a masterwork in and of itself, you can feel an abyssal energy radiating off it."
 	icon_state = "depthseek"
-	smeltresult = /obj/item/ingot/blacksteel
+	smeltresult = /obj/item/ingot/adamantine
 	max_blade_int = 2600
 	wdefense = 8
 	throwforce = 50

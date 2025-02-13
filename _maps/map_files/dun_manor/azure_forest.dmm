@@ -516,7 +516,7 @@
 /obj/structure/bars/steel{
 	color = "#675340";
 	max_integrity = 20000;
-	name = "blacksteel bars"
+	name = "adamantine bars"
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods)

@@ -213,11 +213,11 @@
 	armor = list("blunt" = 5, "slash" = 5, "stab" = 5, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0) //Thinks its fair for a piece of cloth and fiber.
 
 
-// ----------------- BLACKSTEEL -----------------------
+// ----------------- ADAMANTINE -----------------------
 
-/obj/item/clothing/shoes/roguetown/boots/blacksteel/plateboots
-	name = "Blacksteel Plate Boots"
-	desc = "Boots forged of durable blacksteel."
+/obj/item/clothing/shoes/roguetown/boots/adamantine/plateboots
+	name = "Adamantine Plate Boots"
+	desc = "Boots forged of durable adamantine."
 	body_parts_covered = FEET
 	icon = 'icons/roguetown/clothing/special/blkknight.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
@@ -229,7 +229,7 @@
 	max_integrity = 400
 	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	anvilrepair = /datum/skill/craft/armorsmithing
-	smeltresult = /obj/item/ingot/blacksteel
+	smeltresult = /obj/item/ingot/adamantine
 	resistance_flags = FIRE_PROOF
 
 

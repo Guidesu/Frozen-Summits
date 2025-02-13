@@ -594,7 +594,7 @@
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
 		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
+		"Adamantine Grey"="#404040",)
 
 		var/choice = input(user, "Choose a color.", "Orle") as anything in colors
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
@@ -633,7 +633,7 @@
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
 		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
+		"Adamantine Grey"="#404040",)
 
 		var/choice = input(user, "Choose a color.", "Orle") as anything in colors
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
@@ -682,7 +682,7 @@
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
 		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
+		"Adamantine Grey"="#404040",)
 
 		var/choice = input(user, "Choose a color.", "Orle") as anything in colors
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
@@ -728,7 +728,7 @@
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
 		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
+		"Adamantine Grey"="#404040",)
 
 		var/choice = input(user, "Choose a color.", "Orle") as anything in colors
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
@@ -778,7 +778,7 @@
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
 		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
+		"Adamantine Grey"="#404040",)
 
 		var/choice = input(user, "Choose a color.", "Orle") as anything in colors
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
@@ -965,7 +965,7 @@
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
 		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
+		"Adamantine Grey"="#404040",)
 
 		var/choice = input(user, "Choose a color.", "Plume") as anything in colors
 		detail_color = colors[choice]
@@ -1015,7 +1015,7 @@
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
 		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
+		"Adamantine Grey"="#404040",)
 
 		var/choice = input(user, "Choose a color.", "Orle") as anything in colors
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
@@ -1072,7 +1072,7 @@
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
 		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
+		"Adamantine Grey"="#404040",)
 
 		var/choice = input(user, "Choose a color.", "Orle") as anything in colors
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
@@ -1188,7 +1188,7 @@
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
 		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
+		"Adamantine Grey"="#404040",)
 
 		var/choice = input(user, "Choose a color.", "Plume") as anything in colors
 		detail_color = colors[choice]
@@ -1240,7 +1240,7 @@
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
 		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
+		"Adamantine Grey"="#404040",)
 
 		var/choice = input(user, "Choose a color.", "Orle") as anything in colors
 		user.visible_message(span_warning("[user] adds [W] to [src]."))
@@ -1492,7 +1492,7 @@
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
 		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
+		"Adamantine Grey"="#404040",)
 		var/choice = input(user, "Choose a color.", "Grenzelhoft colors") as anything in colors
 		var/playerchoice = colors[choice]
 		picked = TRUE
@@ -1581,11 +1581,11 @@
 	sewrepair = TRUE
 	blocksound = SOFTHIT
 
-//----------------- BLACKSTEEL ---------------------
+//----------------- ADAMANTINE ---------------------
 
-/obj/item/clothing/head/roguetown/helmet/blacksteel/bucket
-	name = "Blacksteel Bucket Helm"
-	desc = "A bucket helmet forged of durable blacksteel. None shall pass.."
+/obj/item/clothing/head/roguetown/helmet/adamantine/bucket
+	name = "Adamantine Bucket Helm"
+	desc = "A bucket helmet forged of durable adamantine. None shall pass.."
 	body_parts_covered = FULL_HEAD
 	icon = 'icons/roguetown/clothing/special/blkknight.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
@@ -1597,7 +1597,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
 	block2add = FOV_BEHIND
 	max_integrity = 425
-	smeltresult = /obj/item/ingot/blacksteel
+	smeltresult = /obj/item/ingot/adamantine
 	smelt_bar_num = 2
 
 /obj/item/clothing/head/roguetown/roguehood/psydon

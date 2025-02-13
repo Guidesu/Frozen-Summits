@@ -86,7 +86,7 @@
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/sailor/red
 	head = /obj/item/clothing/head/roguetown/helmet/leather/minershelm
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/adamantine_half_plate
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	gloves = /obj/item/clothing/gloves/roguetown/angle

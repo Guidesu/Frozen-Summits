@@ -38,7 +38,7 @@
 	if(!user.is_literate())
 		. += "Foul liquid in a glass cask."
 	else
-		. += "Expired and dried True Draught. The stuff that the foul creatyres which came through the Breach bled. Mimickry of their life-stuff is what makes up the red and blue elixirs I quaff. Holdable only by crystal and blacksteel."
+		. += "Expired and dried True Draught. The stuff that the foul creatyres which came through the Breach bled. Mimickry of their life-stuff is what makes up the red and blue elixirs I quaff. Holdable only by crystal and adamantine."
 
 /obj/structure/fluff/statue/who
 	name = "shattered metal"

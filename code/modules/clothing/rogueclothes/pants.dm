@@ -374,7 +374,7 @@
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
 		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
+		"Adamantine Grey"="#404040",)
 
 		var/choice = input(user, "Choose a color.", "Grenzelhoft colors") as anything in colors
 		var/playerchoice = colors[choice]
@@ -395,11 +395,11 @@
 			pic.color = get_detail_color()
 		add_overlay(pic)
 
-//----------------- BLACKSTEEL---------------------
+//----------------- ADAMANTINE---------------------
 
-/obj/item/clothing/under/roguetown/platelegs/blacksteel
-	name = "Blacksteel Plate Chausses"
-	desc = "Reinforced leg plates forged of durable blacksteel."
+/obj/item/clothing/under/roguetown/platelegs/adamantine
+	name = "Adamantine Plate Chausses"
+	desc = "Reinforced leg plates forged of durable adamantine."
 	gender = PLURAL
 	icon = 'icons/roguetown/clothing/special/blkknight.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
@@ -412,7 +412,7 @@
 	max_integrity = 500
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
-	smeltresult = /obj/item/ingot/blacksteel
+	smeltresult = /obj/item/ingot/adamantine
 	smelt_bar_num = 2
 
 /obj/item/clothing/under/roguetown/trou/leather/pontifex

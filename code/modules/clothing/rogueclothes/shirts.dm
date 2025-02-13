@@ -402,7 +402,7 @@
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
 		"Cornflower Blue"="#749EE8",
-		"Blacksteel Grey"="#404040",)
+		"Adamantine Grey"="#404040",)
 
 		var/choice = input(user, "Choose a color.", "Grenzelhoft colors") as anything in colors
 		var/playerchoice = colors[choice]

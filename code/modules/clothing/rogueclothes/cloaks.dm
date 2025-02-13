@@ -1287,7 +1287,7 @@
 	sleeved = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
 
 /obj/item/clothing/head/roguetown/helmet/heavy/blkknight
-	name = "blacksteel helmet"
+	name = "adamantine helmet"
 	icon_state = "bkhelm"
 	icon = 'icons/roguetown/clothing/special/blkknight.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
@@ -1299,14 +1299,14 @@
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
 
 /obj/item/clothing/under/roguetown/platelegs/blk
-	name = "blacksteel legs"
+	name = "adamantine legs"
 	icon_state = "bklegs"
 	icon = 'icons/roguetown/clothing/special/blkknight.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
 	sleeved = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
 
 /obj/item/clothing/gloves/roguetown/plate/blk
-	name = "blacksteel gaunties"
+	name = "adamantine gaunties"
 	icon_state = "bkgloves"
 	icon = 'icons/roguetown/clothing/special/blkknight.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'

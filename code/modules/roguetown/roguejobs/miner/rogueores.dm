@@ -183,9 +183,9 @@
 	icon_state = "ingotsteel"
 	smeltresult = /obj/item/ingot/steel
 	sellprice = 40
-/obj/item/ingot/blacksteel
-	name = "blacksteel bar"
+/obj/item/ingot/adamantine
+	name = "adamantine bar"
 	desc = "Sacrificing the holy elements of silver for raw strength, this strange and powerful ingot's origin carries dark rumors.."
-	icon_state = "ingotblacksteel"
-	smeltresult = /obj/item/ingot/blacksteel
+	icon_state = "ingotadamantine"
+	smeltresult = /obj/item/ingot/adamantine
 	sellprice = 90

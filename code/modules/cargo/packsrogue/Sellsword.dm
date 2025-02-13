@@ -86,9 +86,9 @@
 
 
 /datum/supply_pack/rogue/Sellsword/steelcuirass
-	name = "Blacksteel Cuirass"
+	name = "Adamantine Cuirass"
 	cost = 50
-	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate)
+	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/adamantine_half_plate)
 
 
 /datum/supply_pack/rogue/Sellsword/Bevor
