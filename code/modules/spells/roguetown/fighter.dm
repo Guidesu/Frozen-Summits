@@ -5,14 +5,14 @@
 	desc = ""
 	clothes_req = FALSE
 	range = 8
-	overlay_state = "null"
+	overlay_state = "heal"
 	sound = list('sound/magic/whiteflame.ogg')
 	active = FALSE
 
 	releasedrain = 30
 	chargedrain = 1
 	chargetime = 3
-	charge_max = 600 SECONDS //cooldown
+	charge_max = 30 MINUTES //cooldown
 
 	warnie = "spellwarning"
 	no_early_release = TRUE
@@ -30,8 +30,12 @@
 	invocation_type = "shout" //can be none, whisper, emote and shout
 
 /obj/effect/proc_holder/spell/self/secondwind/cast(mob/user = usr)
-	var/mob/living/target = user
-	var/mob/living/carbon/M = target
-	M.rogfat_add(-100)
-	M.rogstam_add(-100)
-	user.visible_message("<span class='info'>[user] takes a deep breath in.</span>", "<span class='notice'>I take a deep breath in regaining my stamina.</span>")
+	var/mob/living/carbon/M = user
+	M.rogfat_add(-100) // Restores fat
+	M.rogstam_add(-100) // Restores stamina
+	M.adjustBruteLoss(-100) // Heals 100 brute damage
+	M.adjustFireLoss(-100) // Heals 100 burn damage
+	M.adjustToxLoss(-100) // Reduces toxin damage
+	M.adjustOxyLoss(-100) // Reduces oxygen deprivation
+
+	user.visible_message("<span class='info'>[user] takes a deep, revitalizing breath!</span>", "<span class='notice'>I take a deep breath, and my vitality returns.</span>")
