@@ -699,6 +699,10 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/medical,
 /turf/open/floor/rogue/wood,
 /area/rogue/under/town/basement)
+"mW" = (
+/obj/structure/roguemachine/stockpile,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter)
 "mY" = (
 /obj/structure/mirror/fancy,
 /turf/open/floor/rogue/carpet,
@@ -822,10 +826,6 @@
 /obj/item/reagent_containers/glass/bottle/rogue/wine,
 /turf/open/floor/rogue/carpet,
 /area/rogue/under/underdark/harrowhall)
-"pD" = (
-/obj/structure/roguemachine/stockpile,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/indoors/shelter)
 "pG" = (
 /obj/structure/closet/crate/chest/gold,
 /obj/item/roguegem/random,
@@ -2671,9 +2671,7 @@
 	icon_state = "stonestairs";
 	dir = 1
 	},
-/turf/closed/mineral/random/rogue/med{
-	color = 585F96
-	},
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/under/underdark/harrowhall)
 "WW" = (
 /obj/structure/stairs/stone{
@@ -6079,7 +6077,7 @@ Ik
 BO
 BO
 Go
-pD
+mW
 vS
 Aj
 Aj
