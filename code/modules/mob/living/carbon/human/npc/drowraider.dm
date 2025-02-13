@@ -83,6 +83,9 @@ GLOBAL_LIST_INIT(drow_aggro, world.file2list("strings/rt/drowraideraggrolines.tx
 	is_silent = TRUE
 
 /datum/outfit/job/roguetown/human/species/elf/dark/npc/pre_equip(mob/living/carbon/human/H) // Their possible loadouts. Extremely customizable!
+	H.gender = MALE
+	if(prob(20)) // Lolthsworn dogma decrees women are sacred. Less likely to be found in the field like this.
+		H.gender = FEMALE
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather // Default wrist equipment.
 	if(prob(50)) // On a 50% chance their wrist equipment is different.
 		wrists = /obj/item/clothing/wrists/roguetown/bracers
@@ -101,9 +104,8 @@ GLOBAL_LIST_INIT(drow_aggro, world.file2list("strings/rt/drowraideraggrolines.tx
 		head = /obj/item/clothing/head/roguetown/helmet/leather
 		if(prob(50))
 			head = /obj/item/clothing/neck/roguetown/chaincoif/iron
-			if(prob(10))
-				if(H.gender = FEMALE) // Example for gender specific attire. Perhaps more useful for passive NPCs?
-					head = /obj/item/clothing/head/roguetown/nyle
+			if(prob(10) && H.gender == FEMALE) // Example for gender specific attire. Perhaps more useful for passive NPCs?
+				head = /obj/item/clothing/head/roguetown/nyle
 	if(prob(40))
 		neck = /obj/item/clothing/neck/roguetown/bevor
 	if(prob(50))
@@ -119,9 +121,6 @@ GLOBAL_LIST_INIT(drow_aggro, world.file2list("strings/rt/drowraideraggrolines.tx
 		r_hand = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish/drow // 10% chance they have a silver dagger instead of a rapier.
 	l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/parrying // Parrying!
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
-	H.gender = MALE
-	if(prob(20)) // Lolthsworn dogma decrees women are sacred. Less likely to be found in the field like this.
-		H.gender = FEMALE
 	H.dna.features["mcolor"] = pick("9796a9", "897489", "938f9c", "737373", "6a616d", "5f5f70", "2f2f38") // For randomized skin tones.
 	if(H.gender == FEMALE) // Made a new helper for applying specific hairstyles to NPCs. Need the datum of chosen hairstyles. Colors go after the styles. Can be a list, or can be a single color.
 		H.set_hairstyle(pick(

@@ -58,9 +58,11 @@
 	},
 /area/rogue/under/underdark/harrowhall)
 "aL" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
-/turf/open/floor/rogue/wood,
-/area/rogue/indoors/shelter)
+/mob/living/carbon/human/species/elf/dark/npc/ambush,
+/turf/open/floor/rogue/dirt/road{
+	color = "585F96"
+	},
+/area/rogue/under/underdark)
 "aN" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/spider/mutated,
 /obj/structure/spider/stickyweb,
@@ -102,7 +104,7 @@
 /turf/open/floor/rogue/herringbone,
 /area/rogue/under/underdark/harrowhall)
 "bA" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/mob/living/carbon/human/species/elf/dark/npc/ambush,
 /turf/open/floor/rogue/dirt{
 	color = "585F96"
 	},
@@ -580,6 +582,10 @@
 /obj/item/rogueweapon/huntingknife/cleaver,
 /turf/open/floor/rogue/tile/checker,
 /area/rogue/under/underdark/harrowhall)
+"kz" = (
+/mob/living/carbon/human/species/elf/dark/npc/ambush,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/shelter)
 "kA" = (
 /obj/structure/chair/bench/church/r,
 /turf/open/floor/rogue/churchmarble,
@@ -1027,7 +1033,7 @@
 /turf/open/floor/rogue/carpet,
 /area/rogue/under/underdark/harrowhall)
 "tu" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/mob/living/carbon/human/species/elf/dark/npc/ambush,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter)
 "tz" = (
@@ -1088,6 +1094,10 @@
 	},
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/shelter)
+"uM" = (
+/mob/living/carbon/human/species/elf/dark/npc/ambush,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/under/underdark)
 "uN" = (
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/under/underdark/harrowhall)
@@ -1096,7 +1106,7 @@
 /turf/open/floor/rogue/churchrough,
 /area/rogue/under/underdark/harrowhall)
 "uW" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/mob/living/carbon/human/species/elf/dark/npc/ambush,
 /turf/open/floor/rogue/wood,
 /area/rogue/under/town/basement)
 "vl" = (
@@ -1946,7 +1956,7 @@
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/shelter)
 "JN" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/mob/living/carbon/human/species/elf/dark/npc/ambush,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/shelter)
 "JQ" = (
@@ -2052,12 +2062,9 @@
 /area/rogue/indoors/shelter)
 "LN" = (
 /obj/effect/decal/mossy{
-	dir = 8
+	dir = 1
 	},
-/obj/effect/decal/mossy{
-	dir = 4
-	},
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/mob/living/carbon/human/species/elf/dark/npc/ambush,
 /turf/open/floor/rogue/dirt/road{
 	color = "585F96"
 	},
@@ -2413,7 +2420,7 @@
 /area/rogue/under/underdark)
 "Sb" = (
 /obj/effect/decal/mossy,
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/mob/living/carbon/human/species/elf/dark/npc/ambush,
 /turf/open/floor/rogue/dirt/road{
 	color = "585F96"
 	},
@@ -21658,7 +21665,7 @@ BO
 BO
 Ia
 gn
-Ei
+uW
 ch
 ch
 Ia
@@ -21788,7 +21795,7 @@ BO
 BO
 Ia
 gn
-uW
+Ei
 Ei
 Ia
 Ia
@@ -21919,7 +21926,7 @@ BO
 Ia
 Ei
 Ei
-uW
+Ei
 pX
 Ia
 BO
@@ -22049,7 +22056,7 @@ BO
 Ia
 mU
 Ei
-Ei
+uW
 Ei
 Ia
 BO
@@ -22299,7 +22306,7 @@ BO
 BO
 Ia
 TG
-uW
+Ei
 Ei
 VH
 Ia
@@ -37401,7 +37408,7 @@ Jm
 Jm
 Jm
 Jm
-LN
+Jm
 Jm
 Yf
 gT
@@ -37919,11 +37926,11 @@ gT
 YI
 Jm
 Jm
+Jm
+Jm
+Jm
+Jm
 LN
-Jm
-Jm
-Jm
-Yf
 gT
 Ik
 gT
@@ -38429,7 +38436,7 @@ Ik
 Ik
 Ik
 oN
-Jx
+kz
 Vl
 DB
 Fh
@@ -38559,7 +38566,7 @@ gT
 Ik
 Ik
 oN
-aL
+Jx
 lL
 aU
 oN
@@ -38961,7 +38968,7 @@ Ik
 Ik
 Ik
 gT
-Ik
+aL
 gT
 gT
 gT
@@ -39606,7 +39613,7 @@ Ik
 gT
 Ik
 Ik
-gT
+bA
 gT
 Ik
 gT
@@ -39854,7 +39861,7 @@ BO
 dL
 YU
 YU
-YU
+uM
 YU
 Ct
 Ik
