@@ -69,16 +69,16 @@
 	miracle = FALSE
 	invocation = ""
 
-	cast(mob/living/user = usr)
-		if(!user)
-			return
-		// Prompt the user for a new name
-		var/new_name = input(user, "Enter your new name:", "Rename Self") as null|text
-		if(!new_name || new_name == "") // If no name is entered, cancel
-			to_chat(user, "You decide to stick with your current name.")
-			return
-		to_chat(user, "You have chosen a new name: [new_name]!")
-		user.real_name = new_name // Update the user's actual name
+/obj/effect/proc_holder/spell/self/rename_self/cast(mob/living/user = usr)
+	var/new_name = input(user, "Enter your new name:", "Rename Self") as null|text
+	if(!user)
+		return
+	// Prompt the user for a new name
+	if(!new_name || new_name == "") // If no name is entered, cancel
+		to_chat(user, "You decide to stick with your current name.")
+		return
+	to_chat(user, "You have chosen a new name: [new_name]!")
+	user.real_name = new_name // Update the user's actual name
 
 
 

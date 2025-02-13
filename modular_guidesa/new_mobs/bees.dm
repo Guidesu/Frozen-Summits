@@ -122,7 +122,7 @@
 	if(!spawning_bee)
 		return
 	spawning_bee = FALSE
-	var/mob/living/simple_animal/hostile/retaliate/rogue/bee/new_bee = new /mob/living/simple_animal/hostile/retaliate/rogue/bee(get_turf(src))
+	// var/mob/living/simple_animal/hostile/retaliate/rogue/bee/new_bee = new /mob/living/simple_animal/hostile/retaliate/rogue/bee(get_turf(src)) // Defined but not used. Find a spot for this.
 	bee_count++
 	if(bee_count < max_bees)
 		spawn_bees()

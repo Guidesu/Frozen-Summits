@@ -2,7 +2,6 @@
 #define ARMOR_CLASS_LIGHT 1
 #define ARMOR_CLASS_MEDIUM 2
 #define ARMOR_CLASS_HEAVY 3
-#define ARMOR_CLASS_NONE 0
 #define AC_LIGHT 1
 #define AC_MEDIUM 2
 #define AC_HEAVY 3

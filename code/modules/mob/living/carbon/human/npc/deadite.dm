@@ -29,7 +29,7 @@
 /mob/living/carbon/human/species/npc/deadite/after_creation()
 	. = ..()
 	src.mind_initialize()
-	src.mind.add_antag_datum(/datum/antagonist/zombie, team = FALSE, admin_panel = TRUE)
+	src.mind.add_antag_datum(/datum/antagonist/zombie, team = FALSE) // This might not be necessary
 	equipOutfit(new /datum/outfit/job/roguetown/deadite)
 
 /datum/outfit/job/roguetown/deadite/pre_equip(mob/living/carbon/human/H)
