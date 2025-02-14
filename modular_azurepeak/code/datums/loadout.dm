@@ -11,6 +11,10 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Keffiyeh"
 	path = /obj/item/clothing/head/roguetown/roguehood/shalal
 
+/datum/loadout_item/wild_guard
+	name = "Wild Guard mask"
+	path = /obj/item/clothing/mask/rogue/wildguard
+
 /datum/loadout_item/archercap
 	name = "Archer's cap"
 	path = /obj/item/clothing/head/roguetown/archercap
