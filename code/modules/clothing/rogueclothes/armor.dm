@@ -740,11 +740,11 @@
 	armor_class = ARMOR_CLASS_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
 
- //--------------- BLACKSTEEL ---------------------
+ //--------------- ADAMANTINE ---------------------
 
-/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_full_plate
-	name = "Blacksteel Plate Armor"
-	desc = "A suit of Full Plate smithed of durable blacksteel."
+/obj/item/clothing/suit/roguetown/armor/plate/adamantine_full_plate
+	name = "Adamantine Plate Armor"
+	desc = "A suit of Full Plate smithed of durable adamantine."
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
 	icon = 'icons/roguetown/clothing/special/blkknight.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
@@ -754,16 +754,16 @@
 	allowed_race = CLOTHED_RACES_TYPES
 	blocking_behavior = null
 	max_integrity = 400
-	smeltresult = /obj/item/ingot/blacksteel
+	smeltresult = /obj/item/ingot/adamantine
 	equip_delay_self = 12 SECONDS
 	unequip_delay_self = 12 SECONDS
 	equip_delay_other = 3 SECONDS
 	strip_delay = 6 SECONDS
 	smelt_bar_num = 4
 
-/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate
-	name = "Blacksteel Cuirass"
-	desc = "A basic cuirass forged from blacksteel. It's somewhat more durable than regular steel."
+/obj/item/clothing/suit/roguetown/armor/plate/adamantine_half_plate
+	name = "Adamantine Cuirass"
+	desc = "A basic cuirass forged from adamantine. It's somewhat more durable than regular steel."
 	body_parts_covered = CHEST|VITALS
 	icon_state = "grenzelcuirass"
 	item_state = "grenzelcuirass"
@@ -771,7 +771,7 @@
 	allowed_race = CLOTHED_RACES_TYPES
 	blocking_behavior = null
 	max_integrity = 400
-	smeltresult = /obj/item/ingot/blacksteel
+	smeltresult = /obj/item/ingot/adamantine
 	armor_class = ARMOR_CLASS_MEDIUM
 	smelt_bar_num = 2
 

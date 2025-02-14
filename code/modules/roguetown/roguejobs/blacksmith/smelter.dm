@@ -171,7 +171,7 @@
 					var/alloy //moving each alloy to it's own var allows for possible additions later
 					var/steelalloy
 					var/bronzealloy
-//					var/blacksteelalloy
+//					var/adamantinealloy
 
 					for(var/obj/item/I in ore)
 						if(I.smeltresult == /obj/item/rogueore/coal)
@@ -183,9 +183,9 @@
 						if(I.smeltresult == /obj/item/ingot/copper)
 							bronzealloy = bronzealloy + 2
 //						if(I.smeltresult == /obj/item/ingot/silver)
-//							blacksteelalloy = blacksteelalloy + 1
+//							adamantinealloy = adamantinealloy + 1
 //						if(I.smeltresult == /obj/item/ingot/steel)
-//							blacksteelalloy = blacksteelalloy + 2
+//							adamantinealloy = adamantinealloy + 2
 
 					if(steelalloy == 7)
 						testing("STEEL ALLOYED")
@@ -194,9 +194,9 @@
 					else if(bronzealloy == 7)
 						testing("BRONZE ALLOYED")
 						alloy = /obj/item/ingot/bronze
-//					else if(blacksteelalloy == 15)
-//						testing("BLACKSTEEL ALLOYED")
-//						alloy = /obj/item/ingot/blacksteel
+//					else if(adamantinealloy == 15)
+//						testing("ADAMANTINE ALLOYED")
+//						alloy = /obj/item/ingot/adamantine
 					else
 						alloy = null
 

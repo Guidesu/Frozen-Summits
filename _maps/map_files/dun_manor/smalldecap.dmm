@@ -222,7 +222,7 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/spidercave)
 "dg" = (
-/obj/item/clothing/gloves/roguetown/blacksteel/plategloves,
+/obj/item/clothing/gloves/roguetown/adamantine/plategloves,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cave/goblinfort)
 "dj" = (
@@ -310,7 +310,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/rogue/outdoors/mountains/decap/stepbelow)
 "dP" = (
-/obj/item/clothing/head/roguetown/helmet/blacksteel/bucket,
+/obj/item/clothing/head/roguetown/helmet/adamantine/bucket,
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/cave/goblinfort)
 "dR" = (
@@ -1278,7 +1278,7 @@
 /area/rogue/outdoors/mountains/decap/stepbelow)
 "qB" = (
 /obj/effect/decal/cleanable/blood,
-/obj/item/ingot/blacksteel,
+/obj/item/ingot/adamantine,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cave/goblinfort)
 "qD" = (

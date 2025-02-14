@@ -4,7 +4,7 @@
 	craftdiff = 1
 
 //For the sake of keeping the code modular with the introduction of new metals, each recipe has had it's main resource added to it's datum
-//This way, we can avoid having to name things in strange ways and can simply have iron/cuirass, stee/cuirass, blacksteel/cuirass->
+//This way, we can avoid having to name things in strange ways and can simply have iron/cuirass, stee/cuirass, adamantine/cuirass->
 //-> and not messy names like ibreastplate and hplate
 
 // --------- IRON RECIPES -----------
@@ -436,46 +436,46 @@
 	created_item = /obj/item/clothing/mask/rogue/facemask/goldmask
 	craftdiff = 3
 
-// --------- BLACKSTEEL RECIPES-----------
+// --------- ADAMANTINE RECIPES-----------
 
-/datum/anvil_recipe/armor/blacksteel/cuirass
-	name = "Blacksteel Cuirass (+1 B.Steel)"
-	req_bar = /obj/item/ingot/blacksteel
-	additional_items = list(/obj/item/ingot/blacksteel)
-	created_item = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate
+/datum/anvil_recipe/armor/adamantine/cuirass
+	name = "Adamantine Cuirass (+1 B.Steel)"
+	req_bar = /obj/item/ingot/adamantine
+	additional_items = list(/obj/item/ingot/adamantine)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/adamantine_half_plate
 	craftdiff = 5
 
-/datum/anvil_recipe/armor/blacksteel/platechest
-	name = "Blacksteel Plate Armor (+3 B.Steel)"
-	req_bar = /obj/item/ingot/blacksteel
-	additional_items = list(/obj/item/ingot/blacksteel, /obj/item/ingot/blacksteel, /obj/item/ingot/blacksteel)
-	created_item = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_full_plate
+/datum/anvil_recipe/armor/adamantine/platechest
+	name = "Adamantine Plate Armor (+3 B.Steel)"
+	req_bar = /obj/item/ingot/adamantine
+	additional_items = list(/obj/item/ingot/adamantine, /obj/item/ingot/adamantine, /obj/item/ingot/adamantine)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/adamantine_full_plate
 	craftdiff = 5
 
-/datum/anvil_recipe/armor/blacksteel/platelegs
-	name = "Blacksteel Plate Chausses (+1 B.Steel)"
-	req_bar = /obj/item/ingot/blacksteel
-	additional_items = list(/obj/item/ingot/blacksteel)
-	created_item = /obj/item/clothing/under/roguetown/platelegs/blacksteel
+/datum/anvil_recipe/armor/adamantine/platelegs
+	name = "Adamantine Plate Chausses (+1 B.Steel)"
+	req_bar = /obj/item/ingot/adamantine
+	additional_items = list(/obj/item/ingot/adamantine)
+	created_item = /obj/item/clothing/under/roguetown/platelegs/adamantine
 	craftdiff = 5
 
-/datum/anvil_recipe/armor/blacksteel/bucket
-	name = "Blacksteel Bucket Helmet (+1 B.Steel)"
-	req_bar = /obj/item/ingot/blacksteel
-	additional_items = list(/obj/item/ingot/blacksteel)
-	created_item = /obj/item/clothing/head/roguetown/helmet/blacksteel/bucket
+/datum/anvil_recipe/armor/adamantine/bucket
+	name = "Adamantine Bucket Helmet (+1 B.Steel)"
+	req_bar = /obj/item/ingot/adamantine
+	additional_items = list(/obj/item/ingot/adamantine)
+	created_item = /obj/item/clothing/head/roguetown/helmet/adamantine/bucket
 	craftdiff = 5
 
-/datum/anvil_recipe/armor/blacksteel/plategloves
-	name = "Blacksteel Plate Gauntlets"
-	req_bar = /obj/item/ingot/blacksteel
-	created_item = /obj/item/clothing/gloves/roguetown/blacksteel/plategloves
+/datum/anvil_recipe/armor/adamantine/plategloves
+	name = "Adamantine Plate Gauntlets"
+	req_bar = /obj/item/ingot/adamantine
+	created_item = /obj/item/clothing/gloves/roguetown/adamantine/plategloves
 	craftdiff = 5
 
-/datum/anvil_recipe/armor/blacksteel/plateboots
-	name = "Blacksteel Plate Boots"
-	req_bar = /obj/item/ingot/blacksteel
-	created_item = /obj/item/clothing/shoes/roguetown/boots/blacksteel/plateboots
+/datum/anvil_recipe/armor/adamantine/plateboots
+	name = "Adamantine Plate Boots"
+	req_bar = /obj/item/ingot/adamantine
+	created_item = /obj/item/clothing/shoes/roguetown/boots/adamantine/plateboots
 	craftdiff = 5
 
 

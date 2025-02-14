@@ -32,19 +32,19 @@
 
 
 /datum/supply_pack/rogue/Knight/blkstelbuckhelm
-	name = "Blacksteel Bucket Helm"
+	name = "Adamantine Bucket Helm"
 	cost = 100
-	contains = list(/obj/item/clothing/head/roguetown/helmet/blacksteel/bucket)
+	contains = list(/obj/item/clothing/head/roguetown/helmet/adamantine/bucket)
 
 /datum/supply_pack/rogue/Knight/Fullplate
 	name = "Steel Full plate"
 	cost = 60
 	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/full)
 
-/datum/supply_pack/rogue/Knight/blacksteelfullplate
-	name = "Blacksteel Full plate"
+/datum/supply_pack/rogue/Knight/adamantinefullplate
+	name = "Adamantine Full plate"
 	cost = 150
-	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_full_plate)
+	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/adamantine_full_plate)
 
 /datum/supply_pack/rogue/Knight/hauberk
 	name = "Hauberk"
@@ -82,9 +82,9 @@
 	contains = list(/obj/item/clothing/gloves/roguetown/plate)
 
 /datum/supply_pack/rogue/Knight/blkplategaunt
-	name = "Blacksteel Plate Gauntlets"
+	name = "Adamantine Plate Gauntlets"
 	cost = 50
-	contains = list(/obj/item/clothing/gloves/roguetown/blacksteel/plategloves)
+	contains = list(/obj/item/clothing/gloves/roguetown/adamantine/plategloves)
 
 /datum/supply_pack/rogue/Knight/platechausses
 	name = "Plate Chausses"
@@ -93,9 +93,9 @@
 
 
 /datum/supply_pack/rogue/Knight/blkplatechausses
-	name = "Blacksteel Plate Chausses"
+	name = "Adamantine Plate Chausses"
 	cost = 100
-	contains = list(/obj/item/clothing/under/roguetown/platelegs/blacksteel)
+	contains = list(/obj/item/clothing/under/roguetown/platelegs/adamantine)
 
 /datum/supply_pack/rogue/Knight/plateboots
 	name = "Plated boots"
@@ -103,9 +103,9 @@
 	contains = list(/obj/item/clothing/shoes/roguetown/boots/armor)
 
 /datum/supply_pack/rogue/Knight/blkplateboots
-	name = "Blacksteel Plated boots"
+	name = "Adamantine Plated boots"
 	cost = 40
-	contains = list(/obj/item/clothing/shoes/roguetown/boots/blacksteel/plateboots)
+	contains = list(/obj/item/clothing/shoes/roguetown/boots/adamantine/plateboots)
 
 
 /datum/supply_pack/rogue/Knight/bsword

@@ -215,7 +215,7 @@
 
 /datum/anvil_recipe/valuables/dragon
 	name = "Dragon Ring (+ Secrets)"
-	req_bar =  /obj/item/ingot/blacksteel
+	req_bar =  /obj/item/ingot/adamantine
 	additional_items = list(/obj/item/ingot/gold, /obj/item/roguegem/blue, /obj/item/roguegem/violet, /obj/item/clothing/neck/roguetown/psicross/silver)
 	created_item = /obj/item/clothing/ring/dragon_ring
 	craftdiff = 6

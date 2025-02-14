@@ -40,9 +40,9 @@
 
 /obj/item/banner/standard/ashen
 
-/obj/item/banner/standard/blacksteel_legion
-	name = "blacksteel legion banner"
-	icon_state = "blacksteel"
+/obj/item/banner/standard/adamantine_legion
+	name = "adamantine legion banner"
+	icon_state = "adamantine"
 
 
 /obj/item/banner/standard/eagle
@@ -60,9 +60,9 @@
 	verbage = "constructs"
 	craftdiff = 0
 
-/datum/crafting_recipe/roguetown/standard/blacksteel_legion
-	name = "blacksteel banner"
-	result = list(/obj/item/banner/standard/blacksteel_legion)
+/datum/crafting_recipe/roguetown/standard/adamantine_legion
+	name = "adamantine banner"
+	result = list(/obj/item/banner/standard/adamantine_legion)
 
 /datum/crafting_recipe/roguetown/standard/eagle
 	name = "eagle banner"
@@ -81,10 +81,10 @@
 	craftdiff = 0
 	craftsound = 'sound/foley/dropsound/gen_drop.ogg'
 
-/datum/crafting_recipe/roguetown/structure/banner/blacksteel
-	name = "plant banner (Blacksteel)"
-	result = list(/obj/structure/fluff/standard/blacksteel_legion)
-	reqs = list(/obj/item/banner/standard/blacksteel_legion = 1)
+/datum/crafting_recipe/roguetown/structure/banner/adamantine
+	name = "plant banner (Adamantine)"
+	result = list(/obj/structure/fluff/standard/adamantine_legion)
+	reqs = list(/obj/item/banner/standard/adamantine_legion = 1)
 
 /datum/crafting_recipe/roguetown/structure/banner/eagle
 	name = "plant banner (Eagle)"
@@ -110,10 +110,10 @@
 
 /obj/structure/fluff/standard/ashen
 
-/obj/structure/fluff/standard/blacksteel_legion
-	name = "Blacksteel Banner"
+/obj/structure/fluff/standard/adamantine_legion
+	name = "Adamantine Banner"
 	desc = ""
-	icon_state = "blacksteel"
+	icon_state = "adamantine"
 
 /obj/structure/fluff/standard/eagle
 	name = "Band of the Eagle Banner"
@@ -130,8 +130,8 @@
 			playsound(src,'sound/foley/dropsound/cloth_drop.ogg', 100, FALSE)
 			if(istype(src, /obj/structure/fluff/standard/ashen))
 				new /obj/item/banner/standard/ashen (get_turf(src))
-			if (istype(src, /obj/structure/fluff/standard/blacksteel_legion))
-				new /obj/item/banner/standard/blacksteel_legion (get_turf(src))
+			if (istype(src, /obj/structure/fluff/standard/adamantine_legion))
+				new /obj/item/banner/standard/adamantine_legion (get_turf(src))
 			if(istype(src, /obj/structure/fluff/standard/eagle))
 				new /obj/item/banner/standard/eagle (get_turf(src))
 			qdel(src)

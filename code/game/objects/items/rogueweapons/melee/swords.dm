@@ -723,12 +723,12 @@
 	max_integrity = 200
 
 /obj/item/rogueweapon/sword/long/blackflamb
-	force = 20
-	force_wielded = 32
+	force = 28
+	force_wielded = 35
 	icon_state = "blackflamb"
-	name = "blacksteel flamberge"
-	desc = "A strange sword with a winding blade forged of blacksteel and a rontz pommel."
-	smeltresult = /obj/item/ingot/blacksteel
+	name = "adamantine flamberge"
+	desc = "A strange sword with a winding blade forged of adamantine and a rontz pommel."
+	smeltresult = /obj/item/ingot/adamantine
 	max_integrity = 200
 
 /obj/item/rogueweapon/sword/long/blackflamb/getonmobprop(tag)

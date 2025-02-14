@@ -153,11 +153,11 @@
 /obj/item/clothing/gloves/roguetown/grenzelgloves/blacksmith
 	name = "forge gauntlets"
 
-//---------------- BLACKSTEEL ---------------------
+//---------------- ADAMANTINE ---------------------
 
-/obj/item/clothing/gloves/roguetown/blacksteel/plategloves
-	name = "Blacksteel Plate Gauntlets"
-	desc = "A set of plate gauntlets forged of blacksteel."
+/obj/item/clothing/gloves/roguetown/adamantine/plategloves
+	name = "Adamantine Plate Gauntlets"
+	desc = "A set of plate gauntlets forged of adamantine."
 	icon = 'icons/roguetown/clothing/special/blkknight.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
 	icon_state = "bkgloves"
@@ -171,7 +171,7 @@
 	break_sound = 'sound/foley/breaksound.ogg'
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
-	smeltresult = /obj/item/ingot/blacksteel
+	smeltresult = /obj/item/ingot/adamantine
 
 /obj/item/clothing/gloves/roguetown/angle/pontifex
 	name = "rune-scrybed wrappings"
