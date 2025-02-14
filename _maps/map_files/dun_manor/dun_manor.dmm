@@ -5692,10 +5692,6 @@
 	},
 /turf/open/floor/rogue/ruinedwood/platform,
 /area/rogue/outdoors/town)
-"jvq" = (
-/obj/structure/roguewindow/openclose,
-/turf/open/floor/rogue/snow,
-/area/rogue/indoors/town)
 "jvD" = (
 /obj/machinery/light/rogue/oven/east,
 /turf/open/floor/rogue/cobble,
@@ -12823,6 +12819,9 @@
 "wCR" = (
 /obj/machinery/light/rogue/hearth,
 /obj/item/reagent_containers/glass/bucket/pot/stone,
+/obj/machinery/light/rogue/oven{
+	pixel_y = 33
+	},
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town)
 "wDm" = (
@@ -45597,7 +45596,7 @@ ada
 xDp
 ada
 xDp
-jvq
+yaE
 wCR
 hSx
 hSx
@@ -70244,7 +70243,7 @@ tXZ
 tXZ
 tXZ
 nqu
-vUL
+hbl
 rJC
 hbl
 lRw
