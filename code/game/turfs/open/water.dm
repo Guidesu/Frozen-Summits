@@ -222,7 +222,7 @@
 /turf/open/water/get_slowdown(mob/user)
 	var/returned = slowdown
 	if(user.mind && swim_skill)
-		returned = returned - (user.mind.get_skill_level(/datum/skill/misc/swimming))
+		returned = returned - (0.7*user.mind.get_skill_level(/datum/skill/misc/swimming))
 	return returned
 
 //turf/open/water/Initialize()
