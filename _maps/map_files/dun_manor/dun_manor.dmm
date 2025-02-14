@@ -4495,7 +4495,7 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/clothing/neck/roguetown/psicross/noc{
-	name = "amulet of the Selune";
+	name = "amulet of Selune";
 	pixel_x = 8;
 	pixel_y = -3
 	},
@@ -5883,20 +5883,12 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/mountains)
 "kkC" = (
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
-	},
-/obj/structure/rack/rogue/shelf,
-/obj/item/reagent_containers/glass/cup/wooden,
-/obj/item/reagent_containers/glass/cup/wooden,
-/obj/item/reagent_containers/glass/cup/wooden,
-/obj/item/reagent_containers/glass/cup/wooden,
-/obj/item/reagent_containers/glass/cup/wooden,
-/obj/item/cooking/pan{
-	pixel_y = 28
-	},
+/obj/structure/rack/rogue/shelf/big,
 /obj/item/rogueweapon/huntingknife/cleaver{
-	pixel_y = 28
+	pixel_y = 16
+	},
+/obj/item/cooking/pan{
+	pixel_y = 14
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town)
@@ -10772,15 +10764,25 @@
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/town)
 "tpl" = (
-/obj/structure/fermenting_barrel/random/beer,
-/turf/open/floor/rogue/herringbone,
+/obj/structure/closet/crate/roguecloset{
+	pixel_x = -5;
+	pixel_y = -2
+	},
+/obj/item/reagent_containers/glass/cup/wooden,
+/obj/item/reagent_containers/glass/cup/wooden,
+/obj/item/reagent_containers/glass/cup/wooden,
+/obj/item/reagent_containers/glass/cup/wooden,
+/obj/item/reagent_containers/glass/cup/wooden,
+/turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
 "tqe" = (
 /obj/structure/far_travel,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield)
 "trb" = (
-/obj/structure/fluff/dryingrack,
+/obj/structure/fluff/dryingrack{
+	pixel_y = 12
+	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town)
 "trD" = (
@@ -12190,8 +12192,8 @@
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/bath)
 "wnS" = (
-/obj/structure/closet/crate/roguecloset{
-	pixel_x = 5
+/obj/structure/fluff/clock{
+	pixel_x = 7
 	},
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/town)
@@ -51118,8 +51120,8 @@ xDp
 utD
 rej
 oLW
-tpl
-fFu
+vuV
+vuV
 oLW
 qnC
 vuV
@@ -51279,7 +51281,7 @@ wTr
 gxr
 oLW
 kkC
-trb
+fFu
 vuV
 bdX
 huD
@@ -51432,7 +51434,7 @@ xDp
 utD
 rej
 oLW
-vuV
+trb
 vuV
 cUx
 vuV
@@ -51909,7 +51911,7 @@ llP
 pnv
 vFM
 acN
-acN
+tpl
 cij
 kgO
 rej
