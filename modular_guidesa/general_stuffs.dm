@@ -283,7 +283,7 @@
 		"Werewolf" = /datum/shapeshift_data/werewolf_male,
 		"Werewolf Female" = /datum/shapeshift_data/werewolf_female
 	)
-	var/transformed = FALSE // Track transformation state on the SPELL, not the datum
+	var/transformed = FALSE
 
 /datum/shapeshift_data
 	var/mob/living/shape_type
@@ -309,15 +309,12 @@
 		"You let out a deafening howl as you transform into a werewolf!"
 	)
 
-// Define stored_mob for werewolf mobs
-
-
 /obj/effect/proc_holder/spell/self/cinematic_shapeshift/cast(mob/user)
 	var/mob/living/carbon/human/H = user
 	if(!istype(H))
 		return
 	
-	if(transformed) // Check spell's state variable
+	if(transformed)
 		restore_form(H)
 		return
 	
@@ -329,7 +326,6 @@
 	if(!selected_form)
 		return
 	
-	// Create NEW instance of the selected datum
 	var/selected_type = possible_forms[selected_form]
 	transformation = new selected_type()
 	
@@ -347,47 +343,68 @@
 	addtimer(CALLBACK(src, .proc/complete_transformation, H), 7 SECONDS)
 
 /obj/effect/proc_holder/spell/self/cinematic_shapeshift/proc/complete_transformation(mob/living/carbon/human/H)
+	// Final transformation effects
 	for(var/message in transformation.transform_messages)
 		to_chat(H, span_userdanger("[message]"))
-	
 	H.visible_message(span_boldwarning("[H] lets out a deafening howl!"))
+	
+	// Drop all clothing/items
+	for(var/obj/item/W in H)
+		H.dropItemToGround(W)
+
 	H.spawn_gibs(FALSE)
-	
-	// Create new mob and transfer
+
+	// Create new werewolf form
 	var/mob/living/new_form = new transformation.shape_type(H.loc)
-	new_form.stored_mob = H
-	H.mind?.transfer_to(new_form) // Transfer mind first
-	H.forceMove(new_form) // Hide original mob
 	
+	// Store original human and apply stasis
+	new_form.stored_mob = H
+	H.apply_status_effect(STATUS_EFFECT_STASIS)
+	H.forceMove(new_form)
+	ADD_TRAIT(H, TRAIT_NOSLEEP, TRAIT_GENERIC)
+	
+	// Transfer mind and identity
+	if(H.mind)
+		H.mind.transfer_to(new_form)
 	new_form.real_name = "Werewolf"
 	new_form.name = "Werewolf"
 	
+	// Add werewolf traits
+	ADD_TRAIT(new_form, TRAIT_ORGAN_EATER, TRAIT_GENERIC)
+	ADD_TRAIT(new_form, TRAIT_TOXIMMUNE, TRAIT_GENERIC)
+	ADD_TRAIT(new_form, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+	
 	new_form.visible_message(span_boldwarning("The beast has fully transformed!"))
 	new_form.emote("rage", forced = TRUE)
-	transformed = TRUE // Update SPELL state
 	playsound(new_form, 'sound/combat/gib (1).ogg', 100)
+	transformed = TRUE
 
 /obj/effect/proc_holder/spell/self/cinematic_shapeshift/proc/restore_form(mob/living/carbon/human/H)
 	if(!transformed)
 		return
 	
 	var/mob/living/shifted_form = H
-	if(!shifted_form.stored_mob)
-		return
+	var/mob/living/carbon/original_form = shifted_form.stored_mob
 	
-	// Restore original mob
-	var/mob/living/original_form = shifted_form.stored_mob
+	// Restore original human
 	original_form.forceMove(get_turf(shifted_form))
-	shifted_form.mind?.transfer_to(original_form)
+	original_form.remove_status_effect(STATUS_EFFECT_STASIS)
+	REMOVE_TRAIT(original_form, TRAIT_NOSLEEP, TRAIT_GENERIC)
 	
+	// Transfer mind back
+	if(shifted_form.mind)
+		shifted_form.mind.transfer_to(original_form)
+	
+	// Cleanup effects
 	shifted_form.spawn_gibs(FALSE)
 	original_form.visible_message(span_boldwarning("[shifted_form] reverts to their original form!"))
 	playsound(original_form, 'sound/combat/gib (1).ogg', 100)
 	H.emote("agony", forced = TRUE)
 	qdel(shifted_form)
-	H.adjustBruteLoss(70)
-	H.adjustFireLoss(50)
-
+	
+	// Apply transformation aftermath
 	original_form.Stun(30)
 	original_form.Knockdown(30)
-	transformed = FALSE // Reset SPELL state
+	original_form.adjustBruteLoss(70)
+	original_form.adjustFireLoss(50)
+	transformed = FALSE

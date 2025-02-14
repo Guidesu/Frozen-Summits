@@ -428,6 +428,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	force = 10
 	wdefense = 5
+
 /obj/item/rogueweapon/huntingknife/scissors
 	possible_item_intents = list(/datum/intent/dagger/thrust, /datum/intent/dagger/cut, /datum/intent/snip)
 	max_integrity = 100
