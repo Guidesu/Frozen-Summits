@@ -24,10 +24,10 @@
 #define BODY_ADJ_LAYER			44		//certain mutantrace features (snout, body markings) that must appear above the body parts
 #define BODY_LAYER				43		//underwear, undershirts, socks, eyes, lips(makeup)
 #define FRONT_MUTATIONS_LAYER	42		//mutations that should appear above body, body_adj and bodyparts layer (e.g. laser eyes)
-#define DAMAGE_LAYER			41		//damage indicators (cuts and burns)
-#define PANTS_LAYER				40
-#define SHOES_LAYER				39
-#define LEG_PART_LAYER			38
+#define DAMAGE_LAYER			31		//damage indicators (cuts and burns)
+#define LEG_PART_LAYER			40
+#define PANTS_LAYER				39
+#define SHOES_LAYER				38
 #define LEG_DAMAGE_LAYER		37
 #define LEGSLEEVE_LAYER			36
 #define SHOESLEEVE_LAYER		35
@@ -60,13 +60,13 @@
 #define BODY_FRONT_LAYER		8
 #define BODY_FRONT_FRONT_LAYER	7
 #define BODY_FRONT_FRONT_FRONT_LAYER	6
-#define BODY_FFFFRONT_LAYER	5
+#define BODY_FFFFRONT_LAYER		5
 #define BODY_FFFFFRONT_LAYER	4
 #define HALO_LAYER				3		//blood cult ascended halo, because there's currently no better solution for adding/removing
 #define FIRE_LAYER				2		//If you're on fire
 #define TURF_LAYER				1		//If you're on fire
-#define TOTAL_LAYERS			51
 
+#define TOTAL_LAYERS			52		// Keep this updated!
 #define BACK_CLOAK_SOUTH_LAYER		(BODY_BEHIND_LAYER+1)
 
 //Human Overlay Index Shortcuts for alternate_worn_layer, layers
