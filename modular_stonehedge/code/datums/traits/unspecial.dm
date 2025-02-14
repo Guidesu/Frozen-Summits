@@ -997,3 +997,29 @@
 	H.grant_language(/datum/language/draconic)
 
 
+/datum/quirk/rage
+	name = "(Combat) Rage"
+	desc = "You can enter in rage to gain physical power."
+	value = 3
+
+/datum/quirk/rage/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/barbarian_rage)
+
+/datum/quirk/second_wind
+	name = "(Combat) Second Wind"
+	desc = "You can heal yourself every 30 minutes, as if mustering a bravado of sorts."
+	value = 3
+
+/datum/quirk/second_wind/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/secondwind)
+
+/datum/quirk/battle_Stance
+	name = "(Combat) Battle Stance"
+	desc = "You know how to use battle stances in combat, swapping between them and giving yourself advantages."
+	value = 3
+
+/datum/quirk/battle_Stance/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/toggle_stance)
