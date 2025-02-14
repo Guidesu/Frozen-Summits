@@ -2,16 +2,17 @@
 	race = /datum/species/akula
 
 /datum/species/akula
-	name = "Kuo-Toa"
+	name = "Thalassari "
 	id = "akula"
-	desc = "<b>Axian</b><br>\
-	Kuo-toa , also known as gogglers and men-fish, are a piscine race of warm-blooded and amphibious creatures that dwelt in the Underdark and the deep sea. \
-	Sinister secrets lurked below the surface of their alien minds, \
-	for the kuo-toa were fanatics plagued by mental instability.\
-	Kuo-toa are not all necessarily evil, but within their repressive theocracy,\
-	only few posess enough willpower to oppose the ruling castes. \
-	Kuo-toa are an amphibious race, capable of operating with equal or greater mobility underwater as they could on land.\
-	"
+	desc = "<b>Thalassari</b><br>\
+		Thalassari are an ancient and enigmatic aquatic race, shaped by the ever-changing sea. \
+		Their forms vary greatly—some resembling sleek, predatory sharks, while others bear the vibrant beauty of reef-dwelling fish. \
+		Bound by their deep connection to the ocean and its deities, they dwell in vast undersea cities, nomadic hunting pods, and hidden coves. \
+		While not all Thalassari are aggressive, their culture is often shaped by the ruthless law of the tides—only the strong endure. \
+		Some worship Umberlee’s fury, others heed the whispers of Dagon’s abyss, while a few seek balance under the guidance of Eadro. \
+		Amphibious by nature, Thalassari move with effortless grace through water and can operate on land when necessary, \
+		though the sea will always call them home.\
+		"
 	inherent_traits = list(
 		TRAIT_STRONGBITE,
 		TRAIT_NASTY_EATER,
