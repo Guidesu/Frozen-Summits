@@ -2974,13 +2974,6 @@
 /obj/effect/decal/cobbleedge,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
-"dPf" = (
-/obj/structure/stairs{
-	icon_state = "stairs";
-	dir = 4
-	},
-/turf/closed/wall/mineral/rogue/wooddark/horizontal,
-/area/rogue/indoors/town)
 "dPu" = (
 /obj/effect/spawner/roguemap/stump,
 /turf/open/floor/rogue/snow,
@@ -11416,14 +11409,6 @@
 	},
 /turf/open/floor/rogue/grasscold,
 /area/rogue/indoors/town/tavern)
-"tVk" = (
-/obj/structure/mineral_door/wood/towner/anyone{
-	locked = 0;
-	lockid = "fiphouse";
-	name = null
-	},
-/turf/open/floor/rogue/wood/herringbone,
-/area/rogue/indoors/town)
 "tVm" = (
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/woods)
@@ -34676,7 +34661,7 @@ mBN
 mBN
 mBN
 mBN
-dPf
+vhw
 jwv
 uys
 uys
@@ -45577,7 +45562,7 @@ wCR
 hSx
 hSx
 hSx
-tVk
+aQX
 xDp
 pOn
 puh
