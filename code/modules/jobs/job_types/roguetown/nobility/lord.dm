@@ -59,6 +59,19 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		to_chat(world, "<b><span class='notice'><span class='big'>[L.real_name] is one of the [SSticker.rulertype] of Frozen Summit.</span></span></b>")
 		if(STATION_TIME_PASSED() <= 25 MINUTES) //Late to the party? Stuck with default colors, sorry!
 			addtimer(CALLBACK(L, TYPE_PROC_REF(/mob, lord_color_choice)), 50)
+		var/mob/living/carbon/human/H = L
+		var/index = findtext(H.real_name, " ")
+		if(index)
+			index = copytext(H.real_name, 1,index)
+		if(!index)
+			index = H.real_name
+		var/prev_real_name = H.real_name
+		var/prev_name = H.name
+		var/honorary = "Duke"
+		if(H.gender == FEMALE)
+			honorary = "Duchess"
+		H.real_name = "[honorary] [prev_real_name]"
+		H.name = "[honorary] [prev_name]"
 
 /datum/outfit/job/roguetown/lord/pre_equip(mob/living/carbon/human/H)
 	..()
