@@ -59,6 +59,7 @@
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 	armor_class = ARMOR_CLASS_LIGHT
+	salvage_result = /obj/item/natural/hide
 
 /obj/item/clothing/suit/roguetown/armor/armordress/alt
 	icon_state = "armordressalt"
@@ -161,6 +162,7 @@
 	max_integrity = 150
 	sellprice = 20
 	armor_class = ARMOR_CLASS_LIGHT
+	salvage_result = /obj/item/natural/hide
 
 /obj/item/clothing/suit/roguetown/armor/leather/hide
 	name = "hide armor"
@@ -270,6 +272,7 @@
 	slot_flags = ITEM_SLOT_ARMOR
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_armor.dmi'
 	sleevetype = "shirt"
+	sewrepair = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/leather/vest/white
 	color = CLOTHING_WHITE

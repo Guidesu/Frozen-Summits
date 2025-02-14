@@ -22,6 +22,7 @@
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
 	anvilrepair = null
 	sewrepair = TRUE
+	salvage_result = /obj/item/natural/hide
 
 /obj/item/clothing/gloves/roguetown/leather/black
 	color = CLOTHING_BLACK
@@ -58,6 +59,7 @@
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
 	anvilrepair = null
 	sewrepair = TRUE
+	salvage_result = /obj/item/natural/fur
 
 /obj/item/clothing/gloves/roguetown/fingerless_leather
 	name = "fingerless leather gloves"
@@ -74,6 +76,7 @@
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
 	anvilrepair = null
 	sewrepair = TRUE
+	salvage_result = /obj/item/natural/hide
 
 /obj/item/clothing/gloves/roguetown/chain
 	name = "chain gauntlets"

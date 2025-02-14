@@ -176,6 +176,11 @@
 					)
 
 	craftdiff = 0
+/datum/anvil_recipe/tools/scissors
+	name = "Scissors"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/rogueweapon/huntingknife/scissors
+	i_type = "Tools"
 
 // --------- Steel -----------
 
@@ -203,6 +208,13 @@
 	req_bar = /obj/item/ingot/steel
 	created_item = /obj/item/rogueweapon/huntingknife/cleaver
 	createditem_num = 1
+
+/datum/anvil_recipe/tools/steelscissors
+	name = "Scissors"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/rogueweapon/huntingknife/scissors/steel
+	i_type = "Tools"
+
 
 // --------- SILVER -----------
 

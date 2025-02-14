@@ -2,7 +2,7 @@
 	race = /datum/species/akula
 
 /datum/species/akula
-	name = "Thalassari "
+	name = "Thalassari"
 	id = "akula"
 	desc = "<b>Thalassari</b><br>\
 		Thalassari are an ancient and enigmatic aquatic race, shaped by the ever-changing sea. \
@@ -75,15 +75,20 @@
 		/datum/customizer/bodypart_feature/accessory,
 		/datum/customizer/bodypart_feature/face_detail,
 		/datum/customizer/bodypart_feature/underwear,
-		/datum/customizer/organ/snout/akula,
-		/datum/customizer/organ/tail/axian,
-		/datum/customizer/organ/ears/axian,
+		/datum/customizer/organ/tail/anthro,
+		/datum/customizer/organ/tail_feature/anthro,
+		/datum/customizer/organ/snout/anthrosmall,
+		/datum/customizer/organ/ears/anthro,
+		/datum/customizer/organ/horns/anthro,
+		/datum/customizer/organ/frills/anthro,
+		/datum/customizer/organ/wings/anthro,
+		/datum/customizer/organ/neck_feature/anthro,
 		/datum/customizer/organ/testicles/anthro,
 		/datum/customizer/organ/penis/anthro,
-		/datum/customizer/organ/breasts/human,
-		/datum/customizer/organ/butt/human,
-		/datum/customizer/organ/vagina/human_anthro,
-		/datum/customizer/organ/belly/human,
+		/datum/customizer/organ/breasts/animal,
+		/datum/customizer/organ/belly/animal,
+		/datum/customizer/organ/butt/animal,
+		/datum/customizer/organ/vagina/anthro,
 		)
 	body_marking_sets = list(
 		/datum/body_marking_set/none,
