@@ -2524,6 +2524,13 @@
 /obj/structure/mineral_door/bars,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/cell)
+"cYx" = (
+/obj/machinery/light/rogue/torchholder{
+	icon_state = "torchwall1";
+	dir = 4
+	},
+/turf/open/floor/rogue/wood/herringbone,
+/area/rogue/indoors/town)
 "cZg" = (
 /obj/structure/flora/roguetree/snow,
 /turf/open/floor/rogue/snow,
@@ -5609,6 +5616,10 @@
 /obj/item/cooking/pan{
 	pixel_y = 28
 	},
+/obj/machinery/light/rogue/torchholder{
+	icon_state = "torchwall1";
+	dir = 8
+	},
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town)
 "jnQ" = (
@@ -5681,10 +5692,6 @@
 	},
 /turf/open/floor/rogue/ruinedwood/platform,
 /area/rogue/outdoors/town)
-"jvq" = (
-/obj/structure/roguewindow/openclose,
-/turf/open/floor/rogue/snow,
-/area/rogue/indoors/town)
 "jvD" = (
 /obj/machinery/light/rogue/oven/east,
 /turf/open/floor/rogue/cobble,
@@ -8279,6 +8286,12 @@
 /obj/structure/mineral_door/wood/towner/anyone,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
+"oxh" = (
+/obj/machinery/light/rogue/torchholder{
+	pixel_y = 26
+	},
+/turf/open/floor/rogue/wood/herringbone,
+/area/rogue/indoors/town)
 "oyy" = (
 /obj/structure/fluff/railing/border,
 /obj/structure/table/wood{
@@ -8698,6 +8711,13 @@
 /obj/effect/landmark/mapGenerator/sunlights{
 	endTurfX = 155;
 	endTurfY = 155
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/mountains)
+"pma" = (
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 6
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/mountains)
@@ -11105,6 +11125,12 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town/tavern)
+"tnI" = (
+/obj/machinery/light/rogue/torchholder{
+	dir = 1
+	},
+/turf/open/floor/rogue/wood/herringbone,
+/area/rogue/indoors/town)
 "toI" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -12793,6 +12819,9 @@
 "wCR" = (
 /obj/machinery/light/rogue/hearth,
 /obj/item/reagent_containers/glass/bucket/pot/stone,
+/obj/machinery/light/rogue/oven{
+	pixel_y = 33
+	},
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town)
 "wDm" = (
@@ -13447,6 +13476,15 @@
 "xOC" = (
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/rtfield)
+"xOY" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/machinery/light/rogue/torchholder{
+	dir = 1
+	},
+/turf/open/floor/rogue/wood/herringbone,
+/area/rogue/indoors/town)
 "xPB" = (
 /obj/structure/table/vtable,
 /obj/item/storage/box/matches,
@@ -44136,12 +44174,12 @@ puh
 rej
 rej
 rej
-rej
 ccX
 xWK
 xWK
 xWK
 ccX
+ada
 xDp
 ada
 ada
@@ -44293,12 +44331,12 @@ ada
 rej
 rej
 rej
-rej
 xWK
 jRf
 qyk
 qyk
 xWK
+ada
 xDp
 ada
 ada
@@ -44450,12 +44488,12 @@ wNi
 puh
 rej
 rej
-rej
 jcR
 qyk
 qyk
 jRf
 xWK
+ada
 xDp
 ada
 ada
@@ -44607,13 +44645,14 @@ puh
 puh
 rej
 rej
-joV
 ccX
 xWK
 xWK
 xWK
 ccX
 ada
+vUL
+xDp
 xDp
 lRw
 yaE
@@ -44621,9 +44660,8 @@ yaE
 yaE
 yaE
 lRw
+xDp
 ach
-xDp
-xDp
 xDp
 ada
 ada
@@ -44772,13 +44810,13 @@ xDp
 xDp
 ada
 xDp
+xDp
 yaE
 lGR
 hSx
-hSx
+cYx
 hSx
 yaE
-xDp
 xDp
 lsY
 xDp
@@ -44929,13 +44967,13 @@ xDp
 ada
 ada
 xDp
+xDp
 yaE
 viO
 hSx
 oDo
 aJL
 rQj
-xDp
 xDp
 xDp
 xDp
@@ -45086,13 +45124,13 @@ xDp
 ada
 ada
 ada
+xDp
 lRw
 yaE
 aQX
 yaE
 yaE
 lRw
-xDp
 xDp
 xDp
 xDp
@@ -45243,13 +45281,13 @@ xDp
 ada
 ada
 ada
+xDp
 yaE
 eHV
 hSx
 foj
-qBH
+xOY
 yaE
-xDp
 xDp
 xDp
 hbl
@@ -45400,13 +45438,13 @@ xDp
 ada
 ada
 ada
+xDp
 vlS
 qBH
 hSx
 foj
 foj
 hdr
-xDp
 xDp
 hbl
 puh
@@ -45555,9 +45593,10 @@ ada
 ada
 xDp
 ada
-cHF
-uMb
-jvq
+xDp
+ada
+xDp
+yaE
 wCR
 hSx
 hSx
@@ -45712,15 +45751,15 @@ hXE
 xDp
 xDp
 xDp
-cHF
-uMb
+xDp
+ada
+xDp
 yaE
 jnz
 hSx
 hSx
 hSx
 hdr
-pOn
 hbl
 puh
 puh
@@ -45869,15 +45908,15 @@ jMa
 ada
 ada
 xDp
-xDp
+vUL
 ada
+xDp
 lRw
 yaE
 uRe
 uRe
 yaE
 lRw
-hbl
 hbl
 puh
 puh
@@ -46183,8 +46222,8 @@ ada
 xDp
 xDp
 xDp
-ada
-xDp
+uMb
+cHF
 xDp
 ada
 xDp
@@ -46340,8 +46379,8 @@ xDp
 iXK
 xDp
 ada
-ada
-ada
+uMb
+uMb
 ada
 ada
 xDp
@@ -68472,12 +68511,12 @@ tXZ
 tXZ
 tXZ
 tXZ
+dCo
+dCo
+dCo
+dCo
+dCo
 tXZ
-dCo
-dCo
-dCo
-dCo
-dCo
 tXZ
 tXZ
 tXZ
@@ -68629,12 +68668,12 @@ tXZ
 tXZ
 tXZ
 tXZ
+dCo
+dCo
+dCo
+dCo
+dCo
 tXZ
-dCo
-dCo
-dCo
-dCo
-dCo
 tXZ
 tXZ
 tXZ
@@ -68786,16 +68825,16 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
 dCo
 dCo
 dCo
 dCo
 dCo
-tXZ
-tXZ
-tXZ
-tXZ
+pma
+avx
+avx
+avx
+iAU
 tXZ
 tXZ
 tXZ
@@ -68943,21 +68982,21 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
 dCo
 dCo
 dCo
 dCo
 dCo
-tXZ
-tXZ
+nqu
+hbl
+rJC
+hbl
 lRw
 yaE
 mVs
 mVs
 yaE
 lRw
-tXZ
 tXZ
 tXZ
 tXZ
@@ -69105,16 +69144,16 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
+nqu
+hbl
+rJC
+hbl
 yaE
 hSx
 hSx
 hSx
 hSx
 yaE
-tXZ
 tXZ
 tXZ
 tXZ
@@ -69262,16 +69301,16 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
+nqu
+hbl
+rJC
+hbl
 yaE
 viO
 hSx
 hSx
 hSx
 yaE
-tXZ
 tXZ
 tXZ
 tXZ
@@ -69419,16 +69458,16 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
+nqu
+hbl
+rJC
+hbl
 yaE
 hSx
 hSx
 hSx
-hSx
+tnI
 yaE
-tXZ
 tXZ
 tXZ
 tXZ
@@ -69576,16 +69615,16 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
-yaE
+nqu
+hbl
+rJC
+rJC
+aQX
 hSx
 hSx
 hSx
 hSx
 yaE
-tXZ
 tXZ
 tXZ
 tXZ
@@ -69733,16 +69772,16 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
+nqu
+hbl
+rJC
+hbl
 yaE
-hSx
+oxh
 hSx
 hSx
 hSx
 yaE
-tXZ
 tXZ
 tXZ
 tXZ
@@ -69890,16 +69929,16 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
+nqu
+hbl
+rJC
+hbl
 yaE
 hSx
 hSx
 hSx
 hSx
 yaE
-tXZ
 tXZ
 tXZ
 tXZ
@@ -70047,16 +70086,16 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
+nqu
+hbl
+rJC
+hbl
 yaE
 qBH
 bZH
 cmn
 hSx
 yaE
-tXZ
 tXZ
 tXZ
 tXZ
@@ -70204,16 +70243,16 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
+nqu
+hbl
+rJC
+hbl
 lRw
 yaE
 dgt
 dgt
 yaE
 lRw
-tXZ
 tXZ
 tXZ
 tXZ
@@ -70361,11 +70400,11 @@ tXZ
 tXZ
 tXZ
 tXZ
-tXZ
-tXZ
-tXZ
-tXZ
-tXZ
+atx
+bPG
+bPG
+bPG
+ker
 tXZ
 tXZ
 tXZ
