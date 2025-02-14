@@ -42,6 +42,12 @@
 	name = "Axolotl"
 	icon_state = "axolotl"
 
+/datum/sprite_accessory/tail/axolotl2
+	name = "Axolotl (Dual)"
+	icon_state = "axolotl2"
+	color_keys = 2
+	color_key_names = list("Tail", "Fin")
+
 /datum/sprite_accessory/tail/batl
 	name = "Bat (Long)"
 	icon_state = "batl"
