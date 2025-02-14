@@ -2524,6 +2524,13 @@
 /obj/structure/mineral_door/bars,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/cell)
+"cYx" = (
+/obj/machinery/light/rogue/torchholder{
+	icon_state = "torchwall1";
+	dir = 4
+	},
+/turf/open/floor/rogue/wood/herringbone,
+/area/rogue/indoors/town)
 "cZg" = (
 /obj/structure/flora/roguetree/snow,
 /turf/open/floor/rogue/snow,
@@ -5609,6 +5616,10 @@
 /obj/item/cooking/pan{
 	pixel_y = 28
 	},
+/obj/machinery/light/rogue/torchholder{
+	icon_state = "torchwall1";
+	dir = 8
+	},
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town)
 "jnQ" = (
@@ -8278,6 +8289,12 @@
 "owU" = (
 /obj/structure/mineral_door/wood/towner/anyone,
 /turf/open/floor/rogue/wood,
+/area/rogue/indoors/town)
+"oxh" = (
+/obj/machinery/light/rogue/torchholder{
+	pixel_y = 26
+	},
+/turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town)
 "oyy" = (
 /obj/structure/fluff/railing/border,
@@ -11105,6 +11122,12 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town/tavern)
+"tnI" = (
+/obj/machinery/light/rogue/torchholder{
+	dir = 1
+	},
+/turf/open/floor/rogue/wood/herringbone,
+/area/rogue/indoors/town)
 "toI" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -13447,6 +13470,15 @@
 "xOC" = (
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/rtfield)
+"xOY" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/machinery/light/rogue/torchholder{
+	dir = 1
+	},
+/turf/open/floor/rogue/wood/herringbone,
+/area/rogue/indoors/town)
 "xPB" = (
 /obj/structure/table/vtable,
 /obj/item/storage/box/matches,
@@ -44775,7 +44807,7 @@ xDp
 yaE
 lGR
 hSx
-hSx
+cYx
 hSx
 yaE
 xDp
@@ -45247,7 +45279,7 @@ yaE
 eHV
 hSx
 foj
-qBH
+xOY
 yaE
 xDp
 xDp
@@ -69426,7 +69458,7 @@ yaE
 hSx
 hSx
 hSx
-hSx
+tnI
 yaE
 tXZ
 tXZ
@@ -69737,7 +69769,7 @@ tXZ
 tXZ
 tXZ
 yaE
-hSx
+oxh
 hSx
 hSx
 hSx
