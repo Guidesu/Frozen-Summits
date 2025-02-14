@@ -57,12 +57,6 @@
 	dir = 8
 	},
 /area/rogue/under/underdark/harrowhall)
-"aL" = (
-/mob/living/carbon/human/species/elf/dark/npc/ambush,
-/turf/open/floor/rogue/dirt/road{
-	color = "585F96"
-	},
-/area/rogue/under/underdark)
 "aN" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/spider/mutated,
 /obj/structure/spider/stickyweb,
@@ -104,10 +98,8 @@
 /turf/open/floor/rogue/herringbone,
 /area/rogue/under/underdark/harrowhall)
 "bA" = (
-/mob/living/carbon/human/species/elf/dark/npc/ambush,
-/turf/open/floor/rogue/dirt{
-	color = "585F96"
-	},
+/mob/living/carbon/human/species/elf/dark/npc/basic/ambush,
+/turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/underdark)
 "bF" = (
 /turf/closed/wall/mineral/rogue/wood,
@@ -582,10 +574,6 @@
 /obj/item/rogueweapon/huntingknife/cleaver,
 /turf/open/floor/rogue/tile/checker,
 /area/rogue/under/underdark/harrowhall)
-"kz" = (
-/mob/living/carbon/human/species/elf/dark/npc/ambush,
-/turf/open/floor/rogue/wood,
-/area/rogue/indoors/shelter)
 "kA" = (
 /obj/structure/chair/bench/church/r,
 /turf/open/floor/rogue/churchmarble,
@@ -627,8 +615,8 @@
 /turf/open/floor/rogue/tile/checker,
 /area/rogue/under/underdark/harrowhall)
 "lL" = (
-/obj/effect/decal/remains/human,
 /obj/structure/fluff/railing/border,
+/mob/living/carbon/human/species/elf/dark/npc/basic/ambush,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/shelter)
 "lP" = (
@@ -1037,7 +1025,7 @@
 /turf/open/floor/rogue/carpet,
 /area/rogue/under/underdark/harrowhall)
 "tu" = (
-/mob/living/carbon/human/species/elf/dark/npc/ambush,
+/mob/living/carbon/human/species/elf/dark/npc/basic/ambush,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter)
 "tz" = (
@@ -1099,9 +1087,9 @@
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/shelter)
 "uM" = (
-/mob/living/carbon/human/species/elf/dark/npc/ambush,
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/under/underdark)
+/mob/living/carbon/human/species/elf/dark/npc/basic/ambush,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/shelter)
 "uN" = (
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/under/underdark/harrowhall)
@@ -1110,7 +1098,7 @@
 /turf/open/floor/rogue/churchrough,
 /area/rogue/under/underdark/harrowhall)
 "uW" = (
-/mob/living/carbon/human/species/elf/dark/npc/ambush,
+/mob/living/carbon/human/species/elf/dark/npc/basic/ambush,
 /turf/open/floor/rogue/wood,
 /area/rogue/under/town/basement)
 "vl" = (
@@ -1765,7 +1753,6 @@
 	},
 /area/rogue/under/underdark)
 "Hc" = (
-/obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors/shelter)
@@ -1960,8 +1947,8 @@
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/shelter)
 "JN" = (
-/mob/living/carbon/human/species/elf/dark/npc/ambush,
-/turf/open/floor/rogue/woodturned,
+/mob/living/carbon/human/species/elf/dark/npc/basic/ambush,
+/turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors/shelter)
 "JQ" = (
 /obj/effect/decal/mossy{
@@ -2065,11 +2052,8 @@
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/shelter)
 "LN" = (
-/obj/effect/decal/mossy{
-	dir = 1
-	},
-/mob/living/carbon/human/species/elf/dark/npc/ambush,
-/turf/open/floor/rogue/dirt/road{
+/mob/living/carbon/human/species/elf/dark/npc/basic/ambush,
+/turf/open/floor/rogue/dirt{
 	color = "585F96"
 	},
 /area/rogue/under/underdark)
@@ -2418,13 +2402,6 @@
 /area/rogue/indoors/shelter)
 "RZ" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/minotaur,
-/turf/open/floor/rogue/dirt/road{
-	color = "585F96"
-	},
-/area/rogue/under/underdark)
-"Sb" = (
-/obj/effect/decal/mossy,
-/mob/living/carbon/human/species/elf/dark/npc/ambush,
 /turf/open/floor/rogue/dirt/road{
 	color = "585F96"
 	},
@@ -21927,7 +21904,7 @@ BO
 BO
 Ia
 Ei
-Ei
+uW
 Ei
 pX
 Ia
@@ -22058,7 +22035,7 @@ BO
 Ia
 mU
 Ei
-uW
+Ei
 Ei
 Ia
 BO
@@ -22179,7 +22156,7 @@ BO
 Ia
 Ei
 Ei
-uW
+Ei
 Ei
 Ia
 BO
@@ -22308,7 +22285,7 @@ BO
 BO
 Ia
 TG
-Ei
+uW
 Ei
 VH
 Ia
@@ -37405,7 +37382,7 @@ gT
 gT
 gT
 gT
-Sb
+YI
 Jm
 Jm
 Jm
@@ -37537,7 +37514,7 @@ gT
 gT
 YI
 gT
-gT
+LN
 UL
 gT
 gT
@@ -37932,7 +37909,7 @@ Jm
 Jm
 Jm
 Jm
-LN
+Yf
 gT
 Ik
 gT
@@ -38313,7 +38290,7 @@ UJ
 UJ
 tH
 wb
-wb
+JN
 oN
 Ik
 Ik
@@ -38323,7 +38300,7 @@ Ik
 gT
 Ik
 Ik
-gT
+LN
 gT
 Ik
 gT
@@ -38438,7 +38415,7 @@ Ik
 Ik
 Ik
 oN
-kz
+Jx
 Vl
 DB
 Fh
@@ -38591,7 +38568,7 @@ dL
 ZO
 dL
 gT
-bA
+gT
 zH
 sT
 Ik
@@ -38722,7 +38699,7 @@ Ko
 oJ
 gT
 gT
-gT
+LN
 ZA
 ZA
 gT
@@ -38820,8 +38797,8 @@ BO
 gT
 oN
 wf
+uM
 DS
-JN
 DS
 oN
 gT
@@ -38839,7 +38816,7 @@ Ik
 Ik
 Ik
 Ik
-gT
+LN
 Ik
 gT
 Ik
@@ -38853,8 +38830,8 @@ Ik
 Ik
 Ik
 gT
-bA
 gT
+LN
 gT
 gT
 gT
@@ -38970,7 +38947,7 @@ Ik
 Ik
 Ik
 gT
-aL
+Ik
 gT
 gT
 gT
@@ -39615,7 +39592,7 @@ Ik
 gT
 Ik
 Ik
-bA
+gT
 gT
 Ik
 gT
@@ -39863,8 +39840,8 @@ BO
 dL
 YU
 YU
-uM
 YU
+bA
 Ct
 Ik
 Ik

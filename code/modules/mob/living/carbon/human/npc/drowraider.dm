@@ -1,7 +1,7 @@
 GLOBAL_LIST_INIT(drow_quotes, world.file2list("strings/rt/drowraiderlines.txt")) // Idle quotes! These files are, line by line, spoken verbatim as if they were copy pasted. Languages apply, if needed.
 GLOBAL_LIST_INIT(drow_aggro, world.file2list("strings/rt/drowraideraggrolines.txt")) // Enemy spotted quotes!
 
-/mob/living/carbon/human/species/elf/dark/npc // Makes a child type of the species mob
+/mob/living/carbon/human/species/elf/dark/npc // Parent type for NPC drow. Allows for basic AI to apply to all types of NPCs, but not equipment or stats.
 	aggressive=1 // Makes them hostile
 	mode = AI_IDLE // Enables AI and waits for special circumstances
 	faction = list("darkseldarine") // Assigns them to a 'team', so they dont kill eachother.
@@ -10,12 +10,6 @@ GLOBAL_LIST_INIT(drow_aggro, world.file2list("strings/rt/drowraideraggrolines.tx
 	flee_in_pain = TRUE // Makes them run away and play combat safe when health is low
 	possible_rmb_intents = list()
 	var/is_silent = FALSE /// Determines whether or not we will scream our funny lines at people.
-
-
-/mob/living/carbon/human/species/elf/dark/npc/ambush // Use this for ambush NPCs so they wander around. Just use npc if placing in an event area or dungeon.
-	aggressive=1
-
-	wander = TRUE // Makes them roam randomly when idle
 
 /mob/living/carbon/human/species/elf/dark/npc/retaliate(mob/living/L) // Makes them aggressive toward entities not in their faction that they can see
 	var/newtarg = target
@@ -32,27 +26,7 @@ GLOBAL_LIST_INIT(drow_aggro, world.file2list("strings/rt/drowraideraggrolines.tx
 		return FALSE
 	. = ..()
 
-/mob/living/carbon/human/species/elf/dark/npc/Initialize()
-	. = ..()
-	set_species(/datum/species/elf/dark)
-	spawn(10)
-		after_creation()
-	//addtimer(CALLBACK(src, PROC_REF(after_creation)), 10)
-
-/mob/living/carbon/human/species/elf/dark/npc/after_creation() // Applies traits and procs to the NPC once it has initialized.
-	..()
-	job = "Drow Slaver" // Flavor. Can show up in known people, probably?
-	ADD_TRAIT(src, TRAIT_NOMOOD, TRAIT_GENERIC) // So their stats dont vary over time 
-	ADD_TRAIT(src, TRAIT_NOHUNGER, TRAIT_GENERIC) // So they dont get hungry and lose stats, as they cant eat
-	ADD_TRAIT(src, TRAIT_HEAVYARMOR, TRAIT_GENERIC) // So they can wear heavy armor
-	ADD_TRAIT(src, TRAIT_MEDIUMARMOR, TRAIT_GENERIC) // Same as above
-	equipOutfit(new /datum/outfit/job/roguetown/human/species/elf/dark/npc)
-	var/obj/item/organ/eyes/organ_eyes = getorgan(/obj/item/organ/eyes) // This is so you can apply custom eye colors.
-	if(organ_eyes)
-		organ_eyes.accessory_colors = pick("#a71d9b#a71d9b", "#a71d2f#a71d2f", "#75a5d1#75a5d1") // For some reason the color hex needs to be doubles to account for both eyes.
-	update_hair() // Applies hair details after the loadout is applied.
-
-/mob/living/carbon/human/species/elf/dark/npc/npc_idle()
+/mob/living/carbon/human/species/elf/dark/npc/npc_idle() // Idle behavior. Makes them wander around randomly, make noises, say things, and avoid cliffs.
 	if(m_intent == MOVE_INTENT_SNEAK)
 		return
 	if(world.time < next_idle)
@@ -74,15 +48,53 @@ GLOBAL_LIST_INIT(drow_aggro, world.file2list("strings/rt/drowraideraggrolines.tx
 
 /mob/living/carbon/human/species/elf/dark/npc/handle_combat() // If they spot a target, their AI switches to hunting. This makes them do behaviors when this happens.
 	if(mode == AI_HUNT)
-		if(prob(50)) // ignores is_silent because they should at least still be able to scream at people!
+		if(prob(10)) // ignores is_silent because they should at least still be able to scream at people!
 			emote("rage")
 	. = ..()
 
+///===================///
+///    Drow Raider    ///
+///===================///
+
+/mob/living/carbon/human/species/elf/dark/npc/basic
+	aggressive=1
+	mode = AI_IDLE
+	faction = list("darkseldarine")
+	ambushable = FALSE
+	dodgetime = 30
+	flee_in_pain = TRUE
+	possible_rmb_intents = list()
+	is_silent = FALSE
+
+/mob/living/carbon/human/species/elf/dark/npc/basic/ambush // Use this for ambush NPCs so they wander around. Just use npc if placing in an event area or dungeon.
+	aggressive=1
+	wander = TRUE // Makes them roam randomly when idle
+
 /// This version stays quiet and doesn't yell. Great for admin spawn events if you don't want to destroy your players' chat logs!
-/mob/living/carbon/human/species/elf/dark/npc/silent
+/mob/living/carbon/human/species/elf/dark/npc/basic/silent
 	is_silent = TRUE
 
-/datum/outfit/job/roguetown/human/species/elf/dark/npc/pre_equip(mob/living/carbon/human/H) // Their possible loadouts. Extremely customizable!
+/mob/living/carbon/human/species/elf/dark/npc/basic/Initialize()
+	. = ..()
+	set_species(/datum/species/elf/dark)
+	spawn(10)
+		after_creation()
+	//addtimer(CALLBACK(src, PROC_REF(after_creation)), 10)
+
+/mob/living/carbon/human/species/elf/dark/npc/basic/after_creation() // Applies traits and procs to the NPC once it has initialized.
+	..()
+	job = "Drow Slaver" // Flavor. Can show up in known people, probably?
+	ADD_TRAIT(src, TRAIT_NOMOOD, TRAIT_GENERIC) // So their stats dont vary over time 
+	ADD_TRAIT(src, TRAIT_NOHUNGER, TRAIT_GENERIC) // So they dont get hungry and lose stats, as they cant eat
+	ADD_TRAIT(src, TRAIT_HEAVYARMOR, TRAIT_GENERIC) // So they can wear heavy armor
+	ADD_TRAIT(src, TRAIT_MEDIUMARMOR, TRAIT_GENERIC) // Same as above
+	equipOutfit(new /datum/outfit/job/roguetown/human/species/elf/dark/npc/basic)
+	var/obj/item/organ/eyes/organ_eyes = getorgan(/obj/item/organ/eyes) // This is so you can apply custom eye colors.
+	if(organ_eyes)
+		organ_eyes.accessory_colors = pick("#a71d9b#a71d9b", "#a71d2f#a71d2f", "#75a5d1#75a5d1") // For some reason the color hex needs to be doubles to account for both eyes.
+	update_hair() // Applies hair details after the loadout is applied.
+
+/datum/outfit/job/roguetown/human/species/elf/dark/npc/basic/pre_equip(mob/living/carbon/human/H) // Their possible loadouts. Extremely customizable!
 	H.gender = MALE
 	if(prob(20)) // Lolthsworn dogma decrees women are sacred. Less likely to be found in the field like this.
 		H.gender = FEMALE
@@ -116,6 +128,7 @@ GLOBAL_LIST_INIT(drow_aggro, world.file2list("strings/rt/drowraideraggrolines.tx
 	H.STAPER = 10 // You can, in fact, sneak by them
 	H.STAINT = 1 // They arent going to be learning skills or casting magic, are they?
 	H.STASTR = rand(14,16) // Variable strangth!
+	H.STALUC = 10 // Base luck.
 	r_hand = /obj/item/rogueweapon/sword/rapier 
 	if(prob(10))
 		r_hand = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish/drow // 10% chance they have a silver dagger instead of a rapier.
@@ -136,3 +149,86 @@ GLOBAL_LIST_INIT(drow_aggro, world.file2list("strings/rt/drowraideraggrolines.tx
 		/datum/sprite_accessory/hair/head/manbun), pick("#181a1d","#201616","#2b201b","#1d1b2b","#dee9ed","#f4f4f4"))
 	H.name = (H.gender == MALE) ? pick(GLOB.elfd_names_male) : pick(GLOB.elfd_names_female) // This allows for unique elf names, so we dont get drow named Jean-Luc, for example.
 	H.real_name = H.name // Applies the name to their real name. In case their face is covered. Name is overridden by disguise, real_name is not.
+
+
+///===================///
+///    Drow Knight    ///
+///===================///
+
+/// This is intended to be a boss entity. Use with caution!
+
+/mob/living/carbon/human/species/elf/dark/npc/boss
+	aggressive=1
+	mode = AI_IDLE
+	faction = list("darkseldarine")
+	ambushable = FALSE
+	dodgetime = 30
+	flee_in_pain = FALSE
+	possible_rmb_intents = list()
+	is_silent = FALSE
+
+/mob/living/carbon/human/species/elf/dark/npc/boss/ambush
+	aggressive=1
+	wander = TRUE
+
+/mob/living/carbon/human/species/elf/dark/npc/boss/Initialize()
+	. = ..()
+	set_species(/datum/species/elf/dark)
+	spawn(10)
+		after_creation()
+
+/mob/living/carbon/human/species/elf/dark/npc/boss/after_creation()
+	..()
+	job = "Drow Knight"
+	ADD_TRAIT(src, TRAIT_NOMOOD, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_NOHUNGER, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_SHOCKIMMUNE, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_NOBLE, TRAIT_GENERIC)
+	equipOutfit(new /datum/outfit/job/roguetown/human/species/elf/dark/npc/boss)
+	var/obj/item/organ/eyes/organ_eyes = getorgan(/obj/item/organ/eyes)
+	if(organ_eyes)
+		organ_eyes.accessory_colors = pick("#a71d9b#a71d9b", "#a71d2f#a71d2f", "#75a5d1#75a5d1")
+	update_hair()
+
+/mob/living/carbon/human/species/elf/dark/npc/boss/silent
+	is_silent = TRUE
+
+/datum/outfit/job/roguetown/human/species/elf/dark/npc/boss/pre_equip(mob/living/carbon/human/H)
+	H.gender = MALE
+	if(prob(80)) // Drow nobility.
+		H.gender = FEMALE
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/adamantine_full_plate
+	shirt = /obj/item/clothing/suit/roguetown/shirt/shadowshirt
+	pants = /obj/item/clothing/under/roguetown/platelegs/adamantine
+	head = /obj/item/clothing/head/roguetown/helmet/adamantine/bucket
+	neck = /obj/item/clothing/neck/roguetown/bevor
+	gloves = /obj/item/clothing/gloves/roguetown/adamantine/plategloves
+	H.STASPD = 10
+	H.STACON = rand(15,17)
+	H.STAEND = 15
+	H.STAPER = 14
+	H.STAINT = 1
+	H.STASTR = rand(17,19)
+	H.STALUC = 12
+	r_hand = /obj/item/rogueweapon/sword/long/blackflamb
+	l_hand = /obj/item/rogueweapon/shield/tower/metal/abyssal
+	shoes = /obj/item/clothing/shoes/roguetown/boots/adamantine/plateboots
+	H.dna.features["mcolor"] = pick("9796a9", "897489", "938f9c", "737373", "6a616d", "5f5f70", "2f2f38")
+	if(H.gender == FEMALE)
+		H.set_hairstyle(pick(
+		/datum/sprite_accessory/hair/head/antenna,
+		/datum/sprite_accessory/hair/head/beehive,
+		/datum/sprite_accessory/hair/head/beehive2,
+		/datum/sprite_accessory/hair/head/braided), pick("#181a1d","#201616","#2b201b","#1d1b2b","#dee9ed","#f4f4f4"))
+	else
+		H.set_hairstyle(pick(
+		/datum/sprite_accessory/hair/head/braided,
+		/datum/sprite_accessory/hair/head/lowbraid,
+		/datum/sprite_accessory/hair/head/lowbun,
+		/datum/sprite_accessory/hair/head/manbun), pick("#181a1d","#201616","#2b201b","#1d1b2b","#dee9ed","#f4f4f4"))
+	H.name = (H.gender == MALE) ? pick(GLOB.elfd_names_male) : pick(GLOB.elfd_names_female)
+	H.real_name = H.name
