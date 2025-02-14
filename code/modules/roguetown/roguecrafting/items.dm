@@ -829,13 +829,13 @@
 	sellprice = 6
 
 /datum/crafting_recipe/roguetown/collar
-	name = "Collar"
+	name = "collar"
 	result = /obj/item/clothing/neck/roguetown/collar
 	reqs = list(/obj/item/natural/hide = 1)
 	craftdiff = 0
 
 /datum/crafting_recipe/roguetown/bell_collar
-	name = "Bell Collar"
+	name = "bell Collar"
 	result = /obj/item/clothing/neck/roguetown/collar/bell_collar
 	reqs = list(
 				/obj/item/natural/hide = 1,

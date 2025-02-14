@@ -440,6 +440,10 @@
 	med_pot = /datum/alch_cauldron_recipe/end_potion
 	minor_pot = /datum/alch_cauldron_recipe/antidote
 
+	major_pot = /datum/alch_cauldron_recipe/rosewater_potion
+	med_pot = /datum/alch_cauldron_recipe/end_potion
+	minor_pot = /datum/alch_cauldron_recipe/antidote
+
 /obj/item/alch/rosa/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
 	if(slot == SLOT_MOUTH)
