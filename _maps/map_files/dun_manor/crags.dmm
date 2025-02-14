@@ -232,13 +232,6 @@
 "Jf" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors)
-"Js" = (
-/obj/structure/fluff/traveltile/vampire{
-	aportalgoesto = "vampin";
-	aportalid = "vampexit"
-	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/crags)
 "Jw" = (
 /turf/open/floor/rogue/volcanic,
 /area/rogue/outdoors/crags)
@@ -72786,7 +72779,7 @@ Nk
 Nk
 oB
 oB
-oB
+Nk
 Nk
 Nk
 Nk
@@ -72941,9 +72934,9 @@ Nk
 Nk
 Nk
 Nk
-oB
-oB
-nE
+Nk
+Nk
+Nk
 Nk
 Nk
 Nk
@@ -73098,9 +73091,9 @@ Nk
 Nk
 Nk
 Nk
-oB
-oB
-nE
+Nk
+Nk
+Nk
 Nk
 Nk
 Nk
@@ -73255,9 +73248,9 @@ Nk
 Nk
 Nk
 Nk
-Js
-Js
-Js
+Nk
+Nk
+Nk
 Nk
 Nk
 Nk
