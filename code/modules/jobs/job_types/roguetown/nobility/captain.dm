@@ -106,7 +106,7 @@
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
-	H.verbs |= /mob/proc/haltyell
+	
 	H.adjust_blindness(-3)
 	var/weapons = list(
 		"Zweihander",

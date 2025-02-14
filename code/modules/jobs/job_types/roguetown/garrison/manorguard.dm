@@ -104,7 +104,7 @@
 			r_hand = /obj/item/rogueweapon/spear/billhook
 
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/rope/chain = 1)
-	H.verbs |= /mob/proc/haltyell
+	
 
 // Shield + Swords + Crossbow/Bow	-	Lighter armor, but ranged + sword skill in exchange for it.
 /datum/advclass/manorguard/boltman
@@ -154,4 +154,4 @@
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/rope/chain = 1)
-	H.verbs |= /mob/proc/haltyell
+	

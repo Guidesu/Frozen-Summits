@@ -94,7 +94,7 @@
 	ADD_TRAIT(H, TRAIT_KNIGHTSMAN, TRAIT_GENERIC) //if they can't figure out how to win vs someone in leather armor with this i literally can not help them anymore
 	ADD_TRAIT(H, TRAIT_GOODTRAINER, TRAIT_GENERIC) //Knights can train their squires.
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()		//For knightly voices; even though I despise them.
-	H.verbs |= /mob/proc/haltyell
+	
 
 
 	H.change_stat("strength", 2) //tanky, two-handed melee brutes. more endurance/con than other classes in exchange for a heavy speed debuff and worse bow skills
@@ -161,7 +161,7 @@
 	ADD_TRAIT(H, TRAIT_KNIGHTSMAN, TRAIT_GENERIC) //if they can't figure out how to win vs someone in leather armor with this i literally can not help them anymore
 	ADD_TRAIT(H, TRAIT_GOODTRAINER, TRAIT_GENERIC) //Knights can train their squires.
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()		//For knightly voices; even though I despise them.
-	H.verbs |= /mob/proc/haltyell
+	
 
 	H.change_stat("strength", 2)
 	H.change_stat("constitution", 2)
@@ -223,7 +223,7 @@
 	ADD_TRAIT(H, TRAIT_KNIGHTSMAN, TRAIT_GENERIC) //if they can't figure out how to win vs someone in leather armor with this i literally can not help them anymore
 	ADD_TRAIT(H, TRAIT_GOODTRAINER, TRAIT_GENERIC) //Knights can train their squires.
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()	//For knightly voices; even though I despise them.
-	H.verbs |= /mob/proc/haltyell
+	
 
 	H.change_stat("strength", 2) //intended playstyle revolves around hit and run tactics on horseback. good str/per, but poor end/con makes them less durable than other subclasses in an extended fight off of their horse
 	H.change_stat("perception", 2)
@@ -291,7 +291,7 @@
 	ADD_TRAIT(H, TRAIT_KNIGHTSMAN, TRAIT_GENERIC) //if they can't figure out how to win vs someone in leather armor with this i literally can not help them anymore
 	ADD_TRAIT(H, TRAIT_GOODTRAINER, TRAIT_GENERIC) //Knights can train their squires.
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()		//For knightly voices; even though I despise them.
-	H.verbs |= /mob/proc/haltyell
+	
 
 	H.change_stat("strength", 1)
 	H.change_stat("endurance", 2)
