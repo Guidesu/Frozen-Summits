@@ -453,6 +453,112 @@
 		icon_state = "rosa"
 		user.update_icon()
 
+// Frozen Summit Herbs
+
+/obj/item/alch/roguemorsel
+	name = "rogue's morsel"
+	icon_state = "roguemorsel"
+
+	major_pot = /datum/alch_cauldron_recipe/health_potion
+	med_pot = /datum/alch_cauldron_recipe/con_potion
+	minor_pot = /datum/alch_cauldron_recipe/str_potion
+
+/obj/item/alch/balsam
+	name = "balsam"
+	icon_state = "balsam"
+
+	major_pot = /datum/alch_cauldron_recipe/con_potion
+	med_pot = /datum/alch_cauldron_recipe/big_health_potion
+	minor_pot = /datum/alch_cauldron_recipe/antidote
+
+/obj/item/alch/weavemoss
+	name = "weavemoss"
+	icon_state = "weavemoss"
+
+	major_pot = /datum/alch_cauldron_recipe/int_potion
+	med_pot = /datum/alch_cauldron_recipe/mana_potion
+	minor_pot = /datum/alch_cauldron_recipe/disease_cure
+
+/obj/item/alch/nightorchid
+	name = "night orchid"
+	icon_state = "nightorchid"
+
+	major_pot = /datum/alch_cauldron_recipe/big_mana_potion
+	med_pot = /datum/alch_cauldron_recipe/doompoison
+	minor_pot = /datum/alch_cauldron_recipe/int_potion
+
+/obj/item/alch/tongueofmadness
+	name = "tongue"
+	icon_state = "tongueofmadness"
+
+	major_pot = /datum/alch_cauldron_recipe/doompoison
+	med_pot = /datum/alch_cauldron_recipe/berrypoison
+	minor_pot = /datum/alch_cauldron_recipe/antidote
+
+/obj/item/alch/timmask
+	name = "timmask spores"
+	icon_state = "timmask"
+
+	major_pot = /datum/alch_cauldron_recipe/big_stam_poison
+	med_pot = /datum/alch_cauldron_recipe/end_potion
+	minor_pot = /datum/alch_cauldron_recipe/doompoison
+
+/obj/item/alch/nightlight
+	name = "nightlight frond"
+	icon_state = "nightlight"
+
+	major_pot = /datum/alch_cauldron_recipe/per_potion
+	med_pot = /datum/alch_cauldron_recipe/lck_potion
+	minor_pot = /datum/alch_cauldron_recipe/antidote
+
+/obj/item/alch/bonecap
+	name = "bonecap"
+	icon_state = "bonecap"
+
+	major_pot = /datum/alch_cauldron_recipe/doompoison
+	med_pot = /datum/alch_cauldron_recipe/big_stam_poison
+	minor_pot = /datum/alch_cauldron_recipe/berrypoison
+
+/obj/item/alch/bluecap
+	name = "bluecap"
+	icon_state = "bluecap"
+
+	major_pot = /datum/alch_cauldron_recipe/mana_potion
+	med_pot = /datum/alch_cauldron_recipe/big_stamina_potion
+	minor_pot = /datum/alch_cauldron_recipe/disease_cure
+
+/obj/item/alch/bullywug
+	name = "bullywug trumpet"
+	icon_state = "bullywug"
+
+	major_pot = /datum/alch_cauldron_recipe/stamina_potion
+	med_pot = /datum/alch_cauldron_recipe/berrypoison
+	minor_pot = /datum/alch_cauldron_recipe/con_potion
+
+/obj/item/alch/torchstalk
+	name = "torchstalk"
+	icon_state = "torchstalk"
+
+	major_pot = /datum/alch_cauldron_recipe/spd_potion
+	med_pot = /datum/alch_cauldron_recipe/per_potion
+	minor_pot = /datum/alch_cauldron_recipe/berrypoison
+
+/obj/item/alch/firelichen
+	name = "fire lichen"
+	icon_state = "firelichen"
+
+	major_pot = /datum/alch_cauldron_recipe/per_potion
+	med_pot = /datum/alch_cauldron_recipe/con_potion
+	minor_pot = /datum/alch_cauldron_recipe/mana_potion
+
+/obj/item/alch/waterorb
+	name = "water orb"
+	icon_state = "waterorb"
+
+	major_pot = /datum/alch_cauldron_recipe/int_potion
+	med_pot = /datum/alch_cauldron_recipe/disease_cure
+	minor_pot = /datum/alch_cauldron_recipe/con_potion
+
 //dust mix crafting
 /datum/crafting_recipe/roguetown/alch/feaudust
 	name = "feau dust"

@@ -47,15 +47,68 @@
 	desc = "Haha, im in danger."
 
 /obj/structure/flora/roguegrass/herb/random/Initialize()
-	var/type = pick(list(/obj/structure/flora/roguegrass/herb/atropa,/obj/structure/flora/roguegrass/herb/matricaria,
-	/obj/structure/flora/roguegrass/herb/symphitum,/obj/structure/flora/roguegrass/herb/taraxacum,
-	/obj/structure/flora/roguegrass/herb/euphrasia,/obj/structure/flora/roguegrass/herb/paris,
-	/obj/structure/flora/roguegrass/herb/calendula,/obj/structure/flora/roguegrass/herb/mentha,
-	/obj/structure/flora/roguegrass/herb/urtica,/obj/structure/flora/roguegrass/herb/salvia,
-	/obj/structure/flora/roguegrass/herb/hypericum,/obj/structure/flora/roguegrass/herb/benedictus,
-	/obj/structure/flora/roguegrass/herb/valeriana,/obj/structure/flora/roguegrass/herb/artemisia,/obj/structure/flora/roguegrass/herb/rosa,/obj/structure/flora/roguegrass/swampweed))
+	var/type = pick(list(
+		/obj/structure/flora/roguegrass/herb/atropa,
+		/obj/structure/flora/roguegrass/herb/matricaria,
+		/obj/structure/flora/roguegrass/herb/symphitum,
+		/obj/structure/flora/roguegrass/herb/taraxacum,
+		/obj/structure/flora/roguegrass/herb/euphrasia,
+		/obj/structure/flora/roguegrass/herb/paris,
+		/obj/structure/flora/roguegrass/herb/calendula,
+		/obj/structure/flora/roguegrass/herb/mentha,
+		/obj/structure/flora/roguegrass/herb/urtica,
+		/obj/structure/flora/roguegrass/herb/salvia,
+		/obj/structure/flora/roguegrass/herb/hypericum,
+		/obj/structure/flora/roguegrass/herb/benedictus,
+		/obj/structure/flora/roguegrass/herb/valeriana,
+		/obj/structure/flora/roguegrass/herb/artemisia,
+		/obj/structure/flora/roguegrass/herb/roguemorsel,
+		/obj/structure/flora/roguegrass/herb/bonecap,
+		/obj/structure/flora/roguegrass/herb/balsam,
+		/obj/structure/flora/roguegrass/herb/rosa))
 
 	var/obj/structure/flora/roguegrass/herb/boi = new type
+	boi.forceMove(get_turf(src))
+	boi.pixel_x += rand(-3,3)
+	. = ..()
+
+	return INITIALIZE_HINT_QDEL
+
+/obj/structure/flora/roguegrass/herb/underdark/random
+	name = "random underdark herb"
+	desc = "Haha, im in danger."
+
+/obj/structure/flora/roguegrass/herb/underdark/random/Initialize()
+	var/type = pick(list(
+		/obj/structure/flora/roguegrass/herb/roguemorsel,
+		/obj/structure/flora/roguegrass/herb/weavemoss,
+		/obj/structure/flora/roguegrass/herb/nightorchid,
+		/obj/structure/flora/roguegrass/herb/timmask,
+		/obj/structure/flora/roguegrass/herb/nightlight,
+		/obj/structure/flora/roguegrass/herb/bonecap,
+		/obj/structure/flora/roguegrass/herb/bluecap,
+		/obj/structure/flora/roguegrass/herb/bullywug,
+		/obj/structure/flora/roguegrass/herb/torchstalk,
+		/obj/structure/flora/roguegrass/herb/firelichen,
+		/obj/structure/flora/roguegrass/herb/waterorb,
+		/obj/structure/flora/roguegrass/herb/tongueofmadness,))
+
+	var/obj/structure/flora/roguegrass/herb/underdark/boi = new type
+	boi.forceMove(get_turf(src))
+	boi.pixel_x += rand(-3,3)
+	. = ..()
+
+	return INITIALIZE_HINT_QDEL
+
+/obj/structure/flora/roguegrass/herb/underdark/water/random
+	name = "random aquatic underdark herb"
+	desc = "Haha, im in danger."
+
+/obj/structure/flora/roguegrass/herb/underdark/water/random/Initialize()
+	var/type = pick(list(
+		/obj/structure/flora/roguegrass/herb/waterorb))
+
+	var/obj/structure/flora/roguegrass/herb/underdark/water/boi = new type
 	boi.forceMove(get_turf(src))
 	boi.pixel_x += rand(-3,3)
 	. = ..()
@@ -147,6 +200,101 @@
 
 	herbtype = /obj/item/alch/artemisia
 
+// Frozen Summit Herbs
+
+/obj/structure/flora/roguegrass/herb/roguemorsel
+	name = "rogue's morsel"
+	icon_state = "roguemorsel"
+
+	herbtype = /obj/item/alch/roguemorsel
+
+/obj/structure/flora/roguegrass/herb/balsam
+	name = "balsam"
+	icon_state = "balsam"
+
+	herbtype = /obj/item/alch/balsam
+
+/obj/structure/flora/roguegrass/herb/weavemoss
+	name = "weavemoss"
+	icon_state = "weavemoss"
+
+	herbtype = /obj/item/alch/weavemoss
+
+/obj/structure/flora/roguegrass/herb/weavemoss/New(loc, obj/item/seeds/newseed, mutate_stats)
+	..()
+	set_light(1.5, 1.5, "#a56dd3")
+
+/obj/structure/flora/roguegrass/herb/nightorchid
+	name = "night orchid"
+	icon_state = "nightorchid"
+
+	herbtype = /obj/item/alch/nightorchid
+
+/obj/structure/flora/roguegrass/herb/tongueofmadness
+	name = "tongue of madness"
+	icon_state = "tongueofmadness"
+
+	herbtype = /obj/item/alch/tongueofmadness
+
+/obj/structure/flora/roguegrass/herb/timmask
+	name = "timmask"
+	icon_state = "timmask"
+
+	herbtype = /obj/item/alch/timmask
+
+/obj/structure/flora/roguegrass/herb/nightlight
+	name = "nightlight"
+	icon_state = "nightlight"
+
+	herbtype = /obj/item/alch/nightlight
+
+/obj/structure/flora/roguegrass/herb/nightlight/New(loc, obj/item/seeds/newseed, mutate_stats)
+	..()
+	set_light(4, 1.5, "#5473d6")
+
+/obj/structure/flora/roguegrass/herb/bonecap
+	name = "bonecap"
+	icon_state = "bonecap"
+
+	herbtype = /obj/item/alch/bonecap
+
+/obj/structure/flora/roguegrass/herb/bluecap
+	name = "bluecap"
+	icon_state = "bluecap"
+
+	herbtype = /obj/item/alch/bluecap
+
+/obj/structure/flora/roguegrass/herb/bullywug
+	name = "bullywug trumpet"
+	icon_state = "bullywug"
+
+	herbtype = /obj/item/alch/bullywug
+
+/obj/structure/flora/roguegrass/herb/torchstalk
+	name = "torchstalk"
+	icon_state = "torchstalk"
+
+	herbtype = /obj/item/alch/torchstalk
+
+/obj/structure/flora/roguegrass/herb/torchstalk/New(loc, obj/item/seeds/newseed, mutate_stats)
+	..()
+	set_light(4, 1.5, "#e06f2e")
+
+/obj/structure/flora/roguegrass/herb/firelichen
+	name = "fire lichen"
+	icon_state = "firelichen"
+
+	herbtype = /obj/item/alch/firelichen
+
+/obj/structure/flora/roguegrass/herb/firelichen/New(loc, obj/item/seeds/newseed, mutate_stats)
+	..()
+	set_light(1.5, 1.5, "#e06f2e")
+
+/obj/structure/flora/roguegrass/herb/waterorb
+	name = "water orb"
+	icon_state = "waterorb"
+
+	herbtype = /obj/item/alch/waterorb
 /obj/structure/flora/roguegrass/herb/rosa
 	name = "rosa"
 	icon_state = "rosa"
