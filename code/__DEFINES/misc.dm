@@ -24,7 +24,7 @@
 #define BODY_ADJ_LAYER			44		//certain mutantrace features (snout, body markings) that must appear above the body parts
 #define BODY_LAYER				43		//underwear, undershirts, socks, eyes, lips(makeup)
 #define FRONT_MUTATIONS_LAYER	42		//mutations that should appear above body, body_adj and bodyparts layer (e.g. laser eyes)
-#define DAMAGE_LAYER			31		//damage indicators (cuts and burns)
+#define DAMAGE_LAYER			41		//damage indicators (cuts and burns)
 #define LEG_PART_LAYER			40
 #define PANTS_LAYER				39
 #define SHOES_LAYER				38
