@@ -7,8 +7,6 @@
 	icon_state = ""
 	item_state = ""
 
-	grid_width = 32
-	grid_height = 64
 
 /obj/item/bouquet/rosa
 	name = "rosa bouquet"
@@ -45,8 +43,6 @@
 	icon_state = ""
 	item_state = ""
 
-	grid_width = 64
-	grid_height = 32
 
 /obj/item/flowercrown/rosa
 	name = "crown of rosa"
