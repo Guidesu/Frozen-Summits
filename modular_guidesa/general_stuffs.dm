@@ -269,7 +269,53 @@
 	var/mob/stored_mob = null
 
 
+/mob/living/carbon/human/species/werewolf/Initialize()
+	. = ..()
+	// Add skin armor automatically
+	skin_armor = new /obj/item/clothing/suit/roguetown/armor/skin_armor/werewolf_skin(src)
 
+
+// New proc for endurance check
+/mob/living/carbon/human/proc/check_endurance_freakout()
+	if(STAEND > 15) // STAEND defined in your mob stats
+		return
+	
+	// Freak out effects
+	ww_freak_out()
+
+// Freak out proc (you'll need to implement actual effects)
+/mob/living/carbon/human/proc/ww_freak_out()
+	if(mob_timers["freakout"])
+		if(world.time < mob_timers["freakout"] + 10 SECONDS)
+			flash_fullscreen("stressflash")
+			return
+	mob_timers["freakout"] = world.time
+	shake_camera(src, 1, 3)
+	flash_fullscreen("stressflash")
+	changeNext_move(CLICK_CD_EXHAUSTED)
+	add_stress(/datum/stressevent/freakout)
+	emote("fatigue", forced = TRUE)
+	if(hud_used)
+		var/matrix/skew = matrix()
+		skew.Scale(2)
+		var/matrix/newmatrix = skew
+		for(var/C in hud_used.plane_masters)
+			var/atom/movable/screen/plane_master/whole_screen = hud_used.plane_masters[C]
+			if(whole_screen.plane == HUD_PLANE)
+				continue
+			animate(whole_screen, transform = newmatrix, time = 1, easing = QUAD_EASING)
+			animate(transform = -newmatrix, time = 30, easing = QUAD_EASING)
+	visible_message(span_warning("[src] screams in terror!"), span_userdanger("The horrific transformation leaves you frozen with fear!"))
+	Stun(50)
+	Knockdown(50)
+	adjustStaminaLoss(30)
+	flash_fullscreen("redflash3")
+	emote("scream", forced=TRUE)
+
+
+
+
+//-------------------------------------------------------------------------------------------
 /obj/effect/proc_holder/spell/self/cinematic_shapeshift
 	name = "Shapeshift"
 	desc = "Transform into a new form with dramatic effects and a longer delay."
@@ -351,7 +397,7 @@
 	// Drop all clothing/items
 	for(var/obj/item/W in H)
 		H.dropItemToGround(W)
-
+	H.fully_heal(FALSE)
 	H.spawn_gibs(FALSE)
 
 	// Create new werewolf form
@@ -368,8 +414,6 @@
 		H.mind.transfer_to(new_form)
 	new_form.real_name = "Werewolf"
 	new_form.name = "Werewolf"
-	
-	// Add werewolf traits
 	ADD_TRAIT(new_form, TRAIT_ORGAN_EATER, TRAIT_GENERIC)
 	ADD_TRAIT(new_form, TRAIT_TOXIMMUNE, TRAIT_GENERIC)
 	ADD_TRAIT(new_form, TRAIT_STEELHEARTED, TRAIT_GENERIC)
@@ -378,6 +422,12 @@
 	new_form.emote("rage", forced = TRUE)
 	playsound(new_form, 'sound/combat/gib (1).ogg', 100)
 	transformed = TRUE
+
+	for(var/mob/living/carbon/human/viewer in viewers(7, new_form))
+		if(viewer == new_form)
+			continue
+		if(viewer.STAEND <= 15)
+			viewer.ww_freak_out()
 
 /obj/effect/proc_holder/spell/self/cinematic_shapeshift/proc/restore_form(mob/living/carbon/human/H)
 	if(!transformed)
@@ -408,3 +458,69 @@
 	original_form.adjustBruteLoss(70)
 	original_form.adjustFireLoss(50)
 	transformed = FALSE
+//-----------------------------
+
+/mob/living/carbon/human
+	var/last_werewolf_regeneration = 0
+	var/werewolf_regeneration_cooldown = 300 // 30 seconds in deciseconds
+
+/mob/living/carbon/human/proc/werewolf_regenerate()
+	set name = "Devour & Regenerate"
+	set category = "LYCANTHROPY"
+	
+	
+	// Cooldown check
+	if(world.time < last_werewolf_regeneration + werewolf_regeneration_cooldown)
+		var/remaining_time = (werewolf_regeneration_cooldown - (world.time - last_werewolf_regeneration))/10
+		to_chat(src, span_warning("I need [remaining_time] more seconds before I can regenerate again!"))
+		return
+	
+	// Check for required components in hands
+	var/obj/item/main_hand = get_active_held_item()
+	var/obj/item/off_hand = get_inactive_held_item()
+	var/has_meat = FALSE
+	
+	// Initial check
+	if(istype(main_hand, /obj/item/reagent_containers/food/snacks/rogue/meat) || istype(main_hand, /obj/item/bodypart))
+		has_meat = TRUE
+	if(istype(off_hand, /obj/item/reagent_containers/food/snacks/rogue/meat) || istype(off_hand, /obj/item/bodypart))
+		has_meat = TRUE
+	
+	if(!has_meat)
+		to_chat(src, span_warning("I need fresh meat or flesh in my hands to regenerate!"))
+		return
+	
+	// Windup phase
+	to_chat(src, span_danger("I begin devouring the flesh... (Hold still for 5 seconds)"))
+	visible_message(span_warning("[src] starts tearing into some flesh with their teeth!"))
+	
+	if(!do_after(src, 50, target = src, progress = TRUE))
+		to_chat(src, span_warning("Regeneration interrupted!"))
+		return
+	
+	// Post-windup validation
+	var/obj/item/post_main = get_active_held_item()
+	var/obj/item/post_off = get_active_held_item()
+	var/still_has_meat = FALSE
+	
+	if(istype(post_main, /obj/item/reagent_containers/food/snacks/rogue/meat) || istype(post_main, /obj/item/bodypart))
+		still_has_meat = TRUE
+		qdel(post_main)
+	if(istype(post_off, /obj/item/reagent_containers/food/snacks/rogue/meat) || istype(post_off, /obj/item/bodypart))
+		still_has_meat = TRUE
+		qdel(post_off)
+	
+	if(!still_has_meat)
+		to_chat(src, span_warning("The meat was lost during regeneration!"))
+		return
+	
+	// Execute regeneration
+	to_chat(src, span_danger("I ravenously consume the flesh and feel my wounds mend!"))
+	visible_message(span_danger("[src]'s wounds close up as they devour the flesh!"))
+	playsound(src, 'sound/combat/gib (1).ogg', 100, TRUE)
+	
+	// Healing effects
+	fully_heal()
+	regenerate_limbs()
+	regenerate_organs()
+	blood_volume = BLOOD_VOLUME_NORMAL

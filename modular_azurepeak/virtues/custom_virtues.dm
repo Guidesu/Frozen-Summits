@@ -29,6 +29,7 @@
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/claws)
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/howl/call_of_the_moon)
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/cinematic_shapeshift)
+	recipient.verbs += /mob/living/carbon/human/proc/werewolf_regenerate
 /*
 /datum/virtue/size/lycan_female
 	name = "Lycanthropic Lineage (Female)"

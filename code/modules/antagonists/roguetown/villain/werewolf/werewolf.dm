@@ -123,7 +123,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/skin_armor/werewolf_skin
 	slot_flags = null
-	name = "verewolf's skin"
+	name = "Werewolf's skin"
 	desc = ""
 	icon_state = null
 	body_parts_covered = FULL_BODY
@@ -132,7 +132,7 @@
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
 	sewrepair = FALSE
-	max_integrity = 550
+	max_integrity = 700
 	item_flags = DROPDEL
 
 /datum/intent/simple/werewolf
