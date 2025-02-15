@@ -179,11 +179,7 @@
 			return "FRONT"
 		if(BODY_FRONT_FRONT_LAYER)
 			return "FRONT"
-		if(BODY_FRONT_FRONT_FRONT_LAYER)
-			return "FRONT"
-		if(BODY_FFFFRONT_LAYER)
-			return "FRONT"
-		if(BODY_FFFFFRONT_LAYER)
+		if(BODY_BACK_LAYER)
 			return "FRONT"
 		if(BODY_UNDER_LAYER)
 			return "UNDER"
