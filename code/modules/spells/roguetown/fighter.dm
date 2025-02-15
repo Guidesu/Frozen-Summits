@@ -37,5 +37,7 @@
 	M.adjustFireLoss(-100) // Heals 100 burn damage
 	M.adjustToxLoss(-100) // Reduces toxin damage
 	M.adjustOxyLoss(-100) // Reduces oxygen deprivation
+	if(M.blood_volume < BLOOD_VOLUME_SAFE)
+		M.blood_volume = BLOOD_VOLUME_SAFE
 
 	user.visible_message("<span class='info'>[user] takes a deep, revitalizing breath!</span>", "<span class='notice'>I take a deep breath, and my vitality returns.</span>")
