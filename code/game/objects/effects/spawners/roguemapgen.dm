@@ -137,6 +137,19 @@
 		/obj/item/alch/benedictus = 5,
 		/obj/item/alch/valeriana = 5,
 		/obj/item/alch/artemisia = 5,
+		/obj/item/alch/roguemorsel = 5,
+		/obj/item/alch/balsam = 5,
+		/obj/item/alch/weavemoss = 5,
+		/obj/item/alch/nightorchid = 5,
+		/obj/item/alch/tongueofmadness = 5,
+		/obj/item/alch/timmask = 5,
+		/obj/item/alch/nightlight = 5,
+		/obj/item/alch/bonecap = 5,
+		/obj/item/alch/bluecap = 5,
+		/obj/item/alch/bullywug = 5,
+		/obj/item/alch/torchstalk = 5,
+		/obj/item/alch/firelichen = 5,
+		/obj/item/alch/waterorb = 5,
 	)
 /obj/effect/spawner/roguemap/loot/potion_stats
 	icon_state = "lootstatpot"

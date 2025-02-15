@@ -266,3 +266,57 @@
 /datum/alch_grind_recipe/transistus
 	valid_input = list(/obj/item/alch/artemisia,/obj/item/alch/benedictus,/obj/item/alch/hypericum,/obj/item/alch/salvia,/obj/item/alch/atropa,/obj/item/alch/taraxacum)
 	valid_outputs = list(/obj/item/alch/transisdust = 1)
+
+// Frozen Summit Herbs
+
+/datum/alch_grind_recipe/roguemorsel_seed
+	valid_input = /obj/item/alch/roguemorsel
+	valid_outputs = list(/obj/item/herbseed/roguemorsel = 1)
+
+/datum/alch_grind_recipe/balsam_seed
+	valid_input = /obj/item/alch/balsam
+	valid_outputs = list(/obj/item/herbseed/balsam = 1)
+
+/datum/alch_grind_recipe/weavemoss_seed
+	valid_input = /obj/item/alch/weavemoss
+	valid_outputs = list(/obj/item/herbseed/weavemoss = 1)
+
+/datum/alch_grind_recipe/nightorchid_seed
+	valid_input = /obj/item/alch/nightorchid
+	valid_outputs = list(/obj/item/herbseed/nightorchid = 1)
+
+/datum/alch_grind_recipe/tongueofmadness_seed
+	valid_input = /obj/item/alch/tongueofmadness
+	valid_outputs = list(/obj/item/herbseed/tongueofmadness = 1)
+
+/datum/alch_grind_recipe/timmask_Seed
+	valid_input = /obj/item/alch/timmask
+	valid_outputs = list(/obj/item/herbseed/timmask = 1)
+
+/datum/alch_grind_recipe/nightlight_seed
+	valid_input = /obj/item/alch/nightlight
+	valid_outputs = list(/obj/item/herbseed/nightlight = 1)
+
+/datum/alch_grind_recipe/bonecap_seed
+	valid_input = /obj/item/alch/bonecap
+	valid_outputs = list(/obj/item/herbseed/bonecap = 1)
+
+/datum/alch_grind_recipe/bluecap_seed
+	valid_input = /obj/item/alch/bluecap
+	valid_outputs = list(/obj/item/herbseed/bluecap = 1)
+
+/datum/alch_grind_recipe/bullywug_seed
+	valid_input = /obj/item/alch/bullywug
+	valid_outputs = list(/obj/item/herbseed/bullywug = 1)
+
+/datum/alch_grind_recipe/torchstalk_seed
+	valid_input = /obj/item/alch/torchstalk
+	valid_outputs = list(/obj/item/herbseed/torchstalk = 1)
+
+/datum/alch_grind_recipe/firelichen_seed
+	valid_input = /obj/item/alch/firelichen
+	valid_outputs = list(/obj/item/herbseed/firelichen = 1)
+
+/datum/alch_grind_recipe/waterorb_seed
+	valid_input = /obj/item/alch/waterorb
+	valid_outputs = list(/obj/item/herbseed/waterorb = 1)

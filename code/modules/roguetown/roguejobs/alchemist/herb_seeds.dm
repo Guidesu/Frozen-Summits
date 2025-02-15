@@ -119,3 +119,57 @@
 /obj/item/herbseed/artemisia
 	makes_herb = /obj/structure/flora/roguegrass/herb/artemisia
 	seed_identity = "artemisia seeds"
+
+// Frozen Summit Herbs
+
+/obj/item/herbseed/roguemorsel
+	makes_herb = /obj/structure/flora/roguegrass/herb/roguemorsel
+	seed_identity = "rogue's morsel spores"
+
+/obj/item/herbseed/balsam
+	makes_herb = /obj/structure/flora/roguegrass/herb/balsam
+	seed_identity = "balsam seeds"
+
+/obj/item/herbseed/weavemoss
+	makes_herb = /obj/structure/flora/roguegrass/herb/weavemoss
+	seed_identity = "weavemoss seeds"
+
+/obj/item/herbseed/nightorchid
+	makes_herb = /obj/structure/flora/roguegrass/herb/nightorchid
+	seed_identity = "night orchid seeds"
+
+/obj/item/herbseed/tongueofmadness
+	makes_herb = /obj/structure/flora/roguegrass/herb/tongueofmadness
+	seed_identity = "tongue of madness spores"
+
+/obj/item/herbseed/timmask
+	makes_herb = /obj/structure/flora/roguegrass/herb/timmask
+	seed_identity = "timmask mycelium nodules"
+
+/obj/item/herbseed/nightlight
+	makes_herb = /obj/structure/flora/roguegrass/herb/nightlight
+	seed_identity = "nightlight spores"
+
+/obj/item/herbseed/bonecap
+	makes_herb = /obj/structure/flora/roguegrass/herb/bonecap
+	seed_identity = "bonecap spores"
+
+/obj/item/herbseed/bluecap
+	makes_herb = /obj/structure/flora/roguegrass/herb/bluecap
+	seed_identity = "bluecap spores"
+
+/obj/item/herbseed/bullywug
+	makes_herb = /obj/structure/flora/roguegrass/herb/bullywug
+	seed_identity = "bullywug trumpet spores"
+
+/obj/item/herbseed/torchstalk
+	makes_herb = /obj/structure/flora/roguegrass/herb/torchstalk
+	seed_identity = "torchstalk spores"
+
+/obj/item/herbseed/firelichen
+	makes_herb = /obj/structure/flora/roguegrass/herb/firelichen
+	seed_identity = "firelichen seeds"
+
+/obj/item/herbseed/waterorb
+	makes_herb = /obj/structure/flora/roguegrass/herb/waterorb
+	seed_identity = "waterorb spores"
