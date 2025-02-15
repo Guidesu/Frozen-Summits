@@ -966,7 +966,7 @@
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/under/underdark/harrowhall)
 "sk" = (
-/obj/effect/landmark/mapGenerator/rogue/cave,
+/obj/effect/landmark/mapGenerator/rogue/underdark,
 /turf/closed/mineral/rogue/bedrock{
 	color = "585F96"
 	},
@@ -1569,10 +1569,6 @@
 	color = "585F96"
 	},
 /area/rogue/under/underdark)
-"Dt" = (
-/obj/structure/stairs/stone,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/underdark)
 "Dv" = (
 /obj/machinery/light/rogue/cauldron,
 /turf/open/floor/rogue/herringbone,
@@ -2127,10 +2123,6 @@
 "Nm" = (
 /turf/closed/wall/mineral/rogue/wooddark/vertical,
 /area/rogue/indoors/shelter)
-"Nn" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/underdark)
 "Np" = (
 /obj/structure/stairs{
 	icon_state = "stairs";
@@ -5708,9 +5700,9 @@ Ik
 Ik
 Ik
 Ik
-gT
+Ce
 BO
-Ik
+Ce
 Rp
 ae
 "}
@@ -5837,10 +5829,10 @@ Ik
 Ik
 Ik
 Ik
-Ik
-Ik
-Ik
-Ik
+Ce
+Ce
+Ce
+Ce
 Rp
 ae
 "}
@@ -5967,10 +5959,10 @@ Ik
 Ik
 Ik
 BO
-gT
-Ik
-Ik
-Ik
+Ce
+Ce
+Ce
+Ce
 Rp
 ae
 "}
@@ -11608,7 +11600,7 @@ gT
 gT
 Ik
 Ik
-dm
+Ik
 dm
 dm
 dm
@@ -18463,8 +18455,8 @@ EA
 fI
 fI
 EA
-Qe
-Qe
+Ce
+Ce
 Qe
 Qe
 Qe
@@ -18593,9 +18585,9 @@ EA
 EA
 fI
 fI
-jL
-jL
-Dt
+Ce
+Ce
+vO
 yH
 EA
 EA
@@ -18724,8 +18716,8 @@ EA
 EA
 fI
 EA
-jL
-Dt
+Ce
+vO
 yH
 EA
 EA
@@ -35237,9 +35229,9 @@ fI
 EA
 EA
 Fk
-Dt
-jL
-jL
+vO
+Ce
+Ce
 Fk
 Fk
 Fk
@@ -35367,11 +35359,11 @@ fI
 fI
 EA
 Fk
-Dt
-Nn
-jL
-jL
-Dt
+vO
+DJ
+Ce
+Ce
+vO
 yH
 EA
 EA
@@ -35499,9 +35491,9 @@ fI
 EA
 EA
 EA
-jL
-jL
-Dt
+Ce
+Ce
+vO
 yH
 EA
 fI
@@ -38870,7 +38862,7 @@ ae
 ae
 yH
 BO
-Ik
+Ce
 gT
 gT
 gT
@@ -38999,9 +38991,9 @@ ae
 (23,1,3) = {"
 ae
 px
-Ik
-Ik
-gT
+Ce
+Ce
+Ce
 gT
 Ik
 gT
@@ -39129,9 +39121,9 @@ ae
 (24,1,3) = {"
 ae
 px
-Ik
-gT
-gT
+Ce
+Ce
+Ce
 gT
 gT
 gT
@@ -39259,9 +39251,9 @@ ae
 (25,1,3) = {"
 ae
 px
-Ik
-gT
-Ik
+Ce
+Ce
+Ce
 gT
 gT
 Ik
@@ -39389,9 +39381,9 @@ ae
 (26,1,3) = {"
 ae
 yH
-Ik
-gT
-Ik
+Ce
+Ce
+Ce
 gT
 gT
 gT
@@ -39520,7 +39512,7 @@ ae
 ae
 yH
 BO
-gT
+Ce
 Ik
 gT
 Ik
@@ -52113,8 +52105,8 @@ BO
 BO
 BO
 BO
-Ik
-gT
+Ce
+Ce
 Ik
 BO
 BO
@@ -52241,11 +52233,11 @@ BO
 BO
 BO
 BO
-Ik
-Ik
-Ik
-Ik
-Ik
+Ce
+Ce
+Ce
+Ce
+Ce
 BO
 BO
 BO
@@ -52370,11 +52362,11 @@ BO
 BO
 BO
 BO
-Ik
-Ik
-Ik
-Ik
-Ik
+Ce
+Ce
+Ce
+Ce
+Ce
 BO
 BO
 BO
@@ -52499,9 +52491,9 @@ BO
 BO
 BO
 BO
-Ik
-Ik
-Ik
+Ce
+Ce
+Ce
 BO
 BO
 BO
@@ -66062,7 +66054,7 @@ EA
 fI
 fI
 EA
-Ik
+Ce
 Fk
 Fk
 Fk
@@ -66192,10 +66184,10 @@ EA
 EA
 fI
 EA
-gT
+Ce
 Fk
-Ik
-gT
+Ce
+Ce
 Fk
 Fk
 Fk
@@ -66325,7 +66317,7 @@ EA
 EA
 EA
 EA
-gT
+Ce
 Fk
 Fk
 yH
@@ -66587,7 +66579,7 @@ EA
 EA
 Ik
 Ik
-jL
+Ce
 yH
 BO
 BO
@@ -66715,9 +66707,9 @@ Fk
 Fk
 EA
 EA
-jL
-jL
-jL
+Ce
+Ce
+Ce
 yH
 BO
 BO
@@ -66845,9 +66837,9 @@ Fk
 Fk
 Fk
 EA
-jL
-jL
-jL
+Ce
+Ce
+Ce
 yH
 yH
 BO
@@ -66974,11 +66966,11 @@ Fk
 Fk
 Fk
 Fk
-jL
-jL
-jL
-jL
-jL
+Ce
+Ce
+Ce
+Ce
+Ce
 yH
 BO
 BO
@@ -67104,11 +67096,11 @@ Fk
 Fk
 Fk
 Fk
-jL
-Nn
-jL
-jL
-jL
+Ce
+DJ
+Ce
+Ce
+Ce
 yH
 BO
 BO
@@ -67234,10 +67226,10 @@ Fk
 Fk
 Fk
 Fk
-jL
-jL
-jL
-jL
+Ce
+Ce
+Ce
+Ce
 EA
 yH
 BO
@@ -67364,9 +67356,9 @@ Fk
 Fk
 Fk
 Fk
-jL
-jL
-jL
+Ce
+Ce
+Ce
 EA
 EA
 yH
@@ -67494,9 +67486,9 @@ Fk
 Fk
 Fk
 Fk
-jL
-jL
-jL
+Ce
+Ce
+Ce
 EA
 EA
 yH
@@ -67624,9 +67616,9 @@ Fk
 Fk
 Fk
 Fk
-jL
-jL
-jL
+Ce
+Ce
+Ce
 EA
 EA
 yH
@@ -67754,9 +67746,9 @@ Fk
 Fk
 Fk
 Fk
-jL
-jL
-Nn
+Ce
+Ce
+DJ
 EA
 EA
 yH
@@ -67884,9 +67876,9 @@ Fk
 Fk
 Fk
 Fk
-jL
-jL
-jL
+Ce
+Ce
+Ce
 EA
 fI
 yH
@@ -68013,10 +68005,10 @@ Fk
 Fk
 Fk
 Fk
-jL
-jL
-jL
-jL
+Ce
+Ce
+Ce
+Ce
 EA
 fI
 yH
@@ -68142,10 +68134,10 @@ Fk
 Fk
 Fk
 Fk
-jL
-jL
-jL
-jL
+Ce
+Ce
+Ce
+Ce
 EA
 EA
 fI
@@ -68271,10 +68263,10 @@ Fk
 Fk
 Fk
 Fk
-jL
-jL
-jL
-jL
+Ce
+Ce
+Ce
+Ce
 EA
 EA
 EA
@@ -68400,10 +68392,10 @@ Fk
 Fk
 Fk
 Fk
-jL
-jL
-jL
-jL
+Ce
+Ce
+Ce
+Ce
 EA
 EA
 fI
@@ -68528,11 +68520,11 @@ Fk
 Fk
 Fk
 Fk
-jL
-jL
-jL
-jL
-jL
+Ce
+Ce
+Ce
+Ce
+Ce
 EA
 EA
 EA
@@ -68658,10 +68650,10 @@ EA
 EA
 EA
 Fk
-Dt
-jL
-jL
-jL
+vO
+Ce
+Ce
+Ce
 EA
 EA
 EA
@@ -68788,9 +68780,9 @@ EA
 EA
 EA
 Fk
-Dt
-jL
-jL
+vO
+Ce
+Ce
 EA
 EA
 EA
