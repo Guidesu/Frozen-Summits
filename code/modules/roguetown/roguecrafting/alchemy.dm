@@ -142,35 +142,35 @@
 /datum/crafting_recipe/roguetown/alchemy/g2top
 	name = "gold to toper"
 	result = list(/obj/item/roguegem/yellow = 1)
-	reqs = list(/obj/item/rogueore/gold = 2, /obj/item/natural/stone = 1)
+	reqs = list(/obj/item/rogueore/gold = 1, /obj/item/natural/stone = 1)
 	craftdiff = 4
 	verbage_simple = "transmute"
 
 /datum/crafting_recipe/roguetown/alchemy/t2gem
 	name = "toper to gemerald"
 	result = list(/obj/item/roguegem/green = 1)
-	reqs = list(/obj/item/roguegem/yellow = 1, /obj/item/rogueore/gold = 2)
+	reqs = list(/obj/item/roguegem/yellow = 1, /obj/item/rogueore/gold = 1)
 	craftdiff = 4
 	verbage_simple = "transmute"
 
 /datum/crafting_recipe/roguetown/alchemy/g2saf
 	name = "gemerald to saffira"
 	result = list(/obj/item/roguegem/violet = 1)
-	reqs = list(/obj/item/roguegem/green = 1, /obj/item/rogueore/gold = 2)
+	reqs = list(/obj/item/roguegem/green = 1, /obj/item/rogueore/gold = 1)
 	craftdiff = 4
 	verbage_simple = "transmute"
 
 /datum/crafting_recipe/roguetown/alchemy/s2blo
 	name = "saffira to blortz"
 	result = list(/obj/item/roguegem/blue = 1)
-	reqs = list(/obj/item/roguegem/violet = 1, /obj/item/rogueore/gold = 2)
+	reqs = list(/obj/item/roguegem/violet = 1, /obj/item/rogueore/gold = 1)
 	craftdiff = 4
 	verbage_simple = "transmute"
 
 /datum/crafting_recipe/roguetown/alchemy/r2dia
 	name = "blortz to diamond"
 	result = list(/obj/item/roguegem/diamond = 1)
-	reqs = list(/obj/item/roguegem/blue = 2, /obj/item/rogueore/gold = 2)
+	reqs = list(/obj/item/roguegem/blue = 2, /obj/item/rogueore/gold = 1)
 	craftdiff = 5
 	verbage_simple = "transmute"
 
