@@ -173,3 +173,7 @@
 /obj/item/herbseed/waterorb
 	makes_herb = /obj/structure/flora/roguegrass/herb/waterorb
 	seed_identity = "waterorb spores"
+
+/obj/item/herbseed/rosa
+	makes_herb = /obj/structure/flora/roguegrass/herb/rosa
+	seed_identity = "rosa seeds"

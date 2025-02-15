@@ -64,7 +64,8 @@
 		/obj/structure/flora/roguegrass/herb/artemisia,
 		/obj/structure/flora/roguegrass/herb/roguemorsel,
 		/obj/structure/flora/roguegrass/herb/bonecap,
-		/obj/structure/flora/roguegrass/herb/balsam))
+		/obj/structure/flora/roguegrass/herb/balsam,
+		/obj/structure/flora/roguegrass/herb/rosa))
 
 	var/obj/structure/flora/roguegrass/herb/boi = new type
 	boi.forceMove(get_turf(src))
@@ -294,3 +295,8 @@
 	icon_state = "waterorb"
 
 	herbtype = /obj/item/alch/waterorb
+/obj/structure/flora/roguegrass/herb/rosa
+	name = "rosa"
+	icon_state = "rosa"
+
+	herbtype = /obj/item/alch/rosa

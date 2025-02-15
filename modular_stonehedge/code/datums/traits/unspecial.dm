@@ -476,13 +476,14 @@
 
 /datum/quirk/bleublood
 	name = "(Flavor) Noble Lineage"
-	desc = "I am of noble blood."
-	value = 1
+	desc = "I am of noble blood, and i receive money from my estates."
+	value = 2
 
 /datum/quirk/bleublood/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	H.mind.adjust_skillrank_up_to(/datum/skill/misc/reading, 2, TRUE)
+	SStreasury.noble_incomes[H] += 150 // Adds noble income
 
 /datum/quirk/richpouch
 	name = "(Flavor) Rich Pouch"
