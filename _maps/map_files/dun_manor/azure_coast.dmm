@@ -947,6 +947,12 @@
 /mob/living/carbon/human/species/skeleton/npc/ambush,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors/beach)
+"fh" = (
+/obj/effect/landmark/start/adventurerlate{
+	dir = 1
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/outdoors/beach/forest)
 "fi" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/orc,
 /turf/open/floor/rogue/cobble,
@@ -1241,6 +1247,14 @@
 	icon_state = "weird1"
 	},
 /area/rogue/outdoors/beach/forest)
+"hh" = (
+/obj/effect/landmark/start/adventurerlate{
+	dir = 1
+	},
+/turf/open/floor/rogue/snow{
+	color = "e6f2ff"
+	},
+/area/rogue/outdoors/beach/forest)
 "hj" = (
 /obj/structure/glowshroom,
 /turf/open/water/swamp,
@@ -1449,6 +1463,14 @@
 /obj/item/clothing/neck/roguetown/psicross,
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/beach/forest)
+"iY" = (
+/obj/effect/landmark/start/adventurerlate{
+	dir = 1
+	},
+/turf/open/floor/rogue/dirt/road{
+	color = "80ffff"
+	},
+/area/rogue/outdoors/beach)
 "iZ" = (
 /obj/structure/closet/crate/coffin,
 /turf/open/floor/rogue/cobble/mossy,
@@ -2161,6 +2183,12 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/indoors/cave)
+"oT" = (
+/obj/effect/landmark/start/adventurerlate{
+	dir = 1
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/beach/forest)
 "oX" = (
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 1
@@ -3646,6 +3674,12 @@
 "Ad" = (
 /turf/open/water/swamp,
 /area/rogue/indoors/cave)
+"Ah" = (
+/obj/effect/landmark/start/adventurerlate{
+	dir = 1
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/outdoors/beach/forest)
 "Ai" = (
 /obj/structure/fluff/statue/small,
 /turf/open/floor/rogue/blocks,
@@ -4921,6 +4955,12 @@
 	icon_state = "weird1"
 	},
 /area/rogue/indoors/cave)
+"JD" = (
+/obj/effect/landmark/start/adventurerlate{
+	dir = 1
+	},
+/turf/open/floor/rogue/woodturned,
+/area/rogue/outdoors/beach/forest)
 "JE" = (
 /obj/structure/fermenting_barrel,
 /turf/open/floor/rogue/cobble,
@@ -36851,7 +36891,7 @@ Xd
 Xd
 Xd
 Xd
-Xd
+iY
 Xd
 Xd
 Xd
@@ -37120,7 +37160,7 @@ Xd
 Xd
 Xd
 Xd
-Xd
+iY
 Xd
 Xd
 Xd
@@ -37259,7 +37299,7 @@ Xd
 Xd
 Xd
 Xd
-Xd
+iY
 Xd
 Xd
 Xd
@@ -51018,7 +51058,7 @@ mK
 lI
 pa
 lI
-lI
+fh
 lI
 pa
 pa
@@ -58327,7 +58367,7 @@ XK
 XK
 bu
 pa
-pa
+oT
 pa
 pa
 pz
@@ -60472,7 +60512,7 @@ ub
 ub
 BA
 oJ
-oJ
+Ah
 oJ
 BA
 BA
@@ -62493,7 +62533,7 @@ BA
 BA
 BA
 pz
-pz
+hh
 pz
 pZ
 "}
@@ -65790,7 +65830,7 @@ AX
 AX
 AX
 AX
-AX
+JD
 AX
 AX
 AX
