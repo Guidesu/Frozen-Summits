@@ -8376,10 +8376,6 @@
 /obj/item/grown/log/tree/stake,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
-"nPK" = (
-/obj/machinery/light/rogue/firebowl/stump,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/rtfield)
 "nQp" = (
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /obj/structure/table/wood{
@@ -46329,11 +46325,10 @@ lnn
 lnn
 lnn
 lnn
-lnn
 sLi
 sLi
 sLi
-kqj
+ymg
 kqj
 xDp
 xDp
@@ -46382,7 +46377,7 @@ pOn
 pOn
 pOn
 san
-nPK
+moC
 fRr
 mVe
 scb
@@ -46393,6 +46388,7 @@ ylN
 bXj
 jPw
 lCz
+eUz
 eUz
 eUz
 "}
