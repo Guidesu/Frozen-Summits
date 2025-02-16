@@ -333,8 +333,8 @@
 	flags_1 = null
 	possible_item_intents = list(/datum/intent/use, /datum/intent/hit)
 	slot_flags = ITEM_SLOT_HIP
-	var/datum/looping_sound/torchloop/soundloop
-	max_integrity = 200
+	var/datum/looping_sound/torchloop/soundloop = null         //remove the = null to re-add the torch crackle sounds.
+	max_integrity = 40
 	fuel = 30 MINUTES
 	light_depth = 0
 	light_height = 0
@@ -354,7 +354,8 @@
 /obj/item/flashlight/flare/torch/Initialize()
 	GLOB.weather_act_upon_list += src
 	. = ..()
-	soundloop = new(list(src), FALSE)
+	if(soundloop)
+		soundloop = new(src, FALSE)
 
 /obj/item/flashlight/flare/torch/Destroy()
 	GLOB.weather_act_upon_list -= src
@@ -404,7 +405,8 @@
 
 /obj/item/flashlight/flare/torch/turn_off()
 	playsound(src.loc, 'sound/items/firesnuff.ogg', 100)
-	soundloop.stop()
+	if(soundloop)
+		soundloop.stop()
 	STOP_PROCESSING(SSobj, src)
 	..()
 	if(ismob(loc))
@@ -421,7 +423,8 @@
 			damtype = BURN
 			update_brightness()
 			force = on_damage
-			soundloop.start()
+			if(soundloop)
+				soundloop.start()
 			if(ismob(loc))
 				var/mob/M = loc
 				M.update_inv_hands()
