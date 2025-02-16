@@ -275,10 +275,64 @@
 	icon_state = "torchstalk"
 
 	herbtype = /obj/item/alch/torchstalk
+	max_integrity = 100
+	var/lit = FALSE // Hehe boom
+	var/fuze = 1 SECONDS
 
 /obj/structure/flora/roguegrass/herb/torchstalk/New(loc, obj/item/seeds/newseed, mutate_stats)
 	..()
 	set_light(4, 1.5, "#e06f2e")
+
+/obj/structure/flora/roguegrass/herb/torchstalk/take_damage(damage_amount, damage_type, damage_flag, sound_effect, attack_dir, armor_penetration)
+	. = ..()
+	light()
+
+/obj/structure/flora/roguegrass/herb/torchstalk/spark_act()
+	light()
+
+/obj/structure/flora/roguegrass/herb/torchstalk/fire_act()
+	light()
+
+/obj/structure/flora/roguegrass/herb/torchstalk/ex_act()
+	if(!QDELETED(src))
+		lit = TRUE
+		explode(TRUE)
+
+/obj/structure/flora/roguegrass/herb/torchstalk/proc/light()
+	if(!lit)
+		START_PROCESSING(SSfastprocess, src)
+		lit = TRUE
+		playsound(src.loc, 'sound/items/firelight.ogg', 100)
+
+		visible_message(span_warning("[src] catches fire!"))
+		var/turf/T = get_turf(src)
+		new /obj/effect/hotspot(T)
+
+		if(ismob(loc))
+			var/mob/M = loc
+			M.update_inv_hands()
+
+/obj/structure/flora/roguegrass/herb/torchstalk/extinguish()
+	snuff()
+
+/obj/structure/flora/roguegrass/herb/torchstalk/proc/snuff()
+	if(lit)
+		lit = FALSE
+		STOP_PROCESSING(SSfastprocess, src)
+		playsound(src.loc, 'sound/items/firesnuff.ogg', 100)
+
+/obj/structure/flora/roguegrass/herb/torchstalk/proc/explode(skipprob)
+	STOP_PROCESSING(SSfastprocess, src)
+	var/turf/T = get_turf(src)
+	if(T)
+		if(lit)
+			explosion(T, light_impact_range = 3, flame_range = 2, smoke = FALSE, soundin = pick('sound/misc/explode/bottlebomb (1).ogg','sound/misc/explode/bottlebomb (2).ogg'))
+	qdel(src)
+
+/obj/structure/flora/roguegrass/herb/torchstalk/process()
+	fuze--
+	if(fuze <= 0)
+		explode(TRUE)
 
 /obj/structure/flora/roguegrass/herb/firelichen
 	name = "fire lichen"
@@ -295,6 +349,7 @@
 	icon_state = "waterorb"
 
 	herbtype = /obj/item/alch/waterorb
+
 /obj/structure/flora/roguegrass/herb/rosa
 	name = "rosa"
 	icon_state = "rosa"
