@@ -206,7 +206,7 @@
 	summon_type = list(
 		/obj/machinery/light/rogue/campfire/createbonfire5e
 	)
-	summon_lifespan = 600
+	summon_lifespan = 10 MINUTES
 	summon_amt = 1
 
 	action_icon_state = "the_traps"
