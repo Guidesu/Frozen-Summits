@@ -669,7 +669,7 @@
 /datum/quirk/wild_night
 	name = "(Flaw) Wild Night"
 	desc = "I don't remember what I did last night, and now I'm lost!"
-	value = -8
+	value = -15
 
 /datum/quirk/wild_night/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
