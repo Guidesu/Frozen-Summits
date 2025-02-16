@@ -28,8 +28,8 @@
 	var/textper = 100
 	var/our_font = "Rosemary Roman"
 	var/override_find_book = FALSE
-	grid_width = 32
-	grid_height = 64
+	grid_width = ONE_SLOTS
+	grid_height = TWO_SLOTS
 
 /obj/item/book/attack_self(mob/user)
 	if(!user.can_read(src))

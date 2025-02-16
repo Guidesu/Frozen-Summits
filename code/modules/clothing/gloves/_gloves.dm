@@ -12,8 +12,8 @@
 	equip_delay_other = 40
 	bloody_icon_state = "bloodyhands"
 
-	grid_width = 64
-	grid_height = 32
+	grid_width = TWO_SLOTS
+	grid_height = ONE_SLOTS
 
 /obj/item/clothing/gloves/ComponentInitialize()
 	. = ..()

@@ -304,8 +304,8 @@
 	icon_state = "bedroll_r"
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_HIP | ITEM_SLOT_BACK
-	grid_width = 32
-	grid_height = 64
+	grid_width = ONE_SLOTS
+	grid_height = TWO_SLOTS
 
 /obj/item/bedroll/attack_self(mob/user, params)
 	..()

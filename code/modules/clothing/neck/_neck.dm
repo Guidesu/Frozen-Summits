@@ -6,8 +6,8 @@
 	strip_delay = 40
 	equip_delay_other = 40
 	bloody_icon_state = "bodyblood"
-	grid_width = 64
-	grid_height = 32
+	grid_width = TWO_SLOTS
+	grid_height = ONE_SLOTS
 
 /obj/item/clothing/neck/worn_overlays(isinhands = FALSE)
 	. = list()

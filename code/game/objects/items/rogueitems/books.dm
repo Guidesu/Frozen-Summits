@@ -10,8 +10,8 @@
 	drop_sound = 'sound/foley/dropsound/book_drop.ogg'
 	force = 5
 	associated_skill = /datum/skill/misc/reading
-	grid_width = 32
-	grid_height = 64
+	grid_width = ONE_SLOTS
+	grid_height = TWO_SLOTS
 
 /obj/item/book/rogue/getonmobprop(tag)
 	. = ..()
@@ -452,8 +452,8 @@
 	icon_state = "manuscript"
 	dir = 2
 	resistance_flags = FLAMMABLE
-	grid_width = 32
-	grid_height = 64
+	grid_width = ONE_SLOTS
+	grid_height = TWO_SLOTS
 	var/number_of_pages = 2
 	var/compiled_pages = null
 	var/list/page_texts = list()

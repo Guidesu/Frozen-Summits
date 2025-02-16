@@ -339,8 +339,8 @@
 	light_depth = 0
 	light_height = 0
 
-	grid_width = 32
-	grid_height = 32
+	grid_width = ONE_SLOTS
+	grid_height = ONE_SLOTS
 
 /obj/item/flashlight/flare/torch/getonmobprop(tag)
 	. = ..()
@@ -466,8 +466,8 @@
 	force = 1
 	on_damage = 5
 	fuel = 120 MINUTES
-	grid_width = 32
-	grid_height = 64
+	grid_width = ONE_SLOTS
+	grid_height = TWO_SLOTS
 
 /obj/item/flashlight/flare/torch/lantern/afterattack(atom/movable/A, mob/user, proximity)
 	. = ..()

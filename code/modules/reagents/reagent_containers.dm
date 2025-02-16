@@ -17,8 +17,8 @@
 	var/drinksounds = list('sound/items/drink_gen (1).ogg','sound/items/drink_gen (2).ogg','sound/items/drink_gen (3).ogg')
 	var/fillsounds
 	var/poursounds
-	grid_height = 64
-	grid_width = 32
+	grid_height = TWO_SLOTS
+	grid_width = ONE_SLOTS
 
 /obj/item/reagent_containers/weather_trigger(W)
 	if(W==/datum/weather/rain)

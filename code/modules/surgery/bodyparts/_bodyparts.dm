@@ -92,8 +92,8 @@
 	/// Visual features of the bodypart, such as hair and accessories
 	var/list/bodypart_features
 
-	grid_width = 32
-	grid_height = 64
+	grid_width = ONE_SLOTS
+	grid_height = TWO_SLOTS
 
 	resistance_flags = FLAMMABLE
 
@@ -706,8 +706,8 @@
 	offset_f = OFFSET_ARMOR_F
 	dismemberable = FALSE
 
-	grid_width = 64
-	grid_height = 96
+	grid_width = TWO_SLOTS
+	grid_height = THREE_SLOTS
 
 /obj/item/bodypart/chest/set_disabled(new_disabled)
 	. = ..()

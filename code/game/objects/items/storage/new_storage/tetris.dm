@@ -18,6 +18,8 @@
 
 /obj/item
 	// ~Grid INVENTORY VARIABLES
+	// These have defines at the parent obj (ONE_SLOTS, TWOSLOTS, THREE SLOTS, FOUR SLOTS, FIVE SLOTS)
+	// This is so its easier to understand the values you observe in game.
 	/// Width we occupy on the hud - Keep null to generate based on w_class
 	var/grid_width
 	/// Height we occupy on the hud - Keep null to generate based on w_class

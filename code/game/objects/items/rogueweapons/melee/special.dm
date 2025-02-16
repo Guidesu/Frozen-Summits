@@ -18,8 +18,8 @@
 	minstr = 5
 	blade_dulling = DULLING_BASHCHOP
 
-	grid_height = 96
-	grid_width = 32
+	grid_height = THREE_SLOTS
+	grid_width = ONE_SLOTS
 
 /datum/intent/lordbash
 	name = "bash"

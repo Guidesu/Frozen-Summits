@@ -14,8 +14,8 @@
 	associated_skill = /datum/skill/combat/maces
 	smeltresult = /obj/item/ingot/iron
 	improvised = TRUE
-	grid_width = 32
-	grid_height = 64
+	grid_width = ONE_SLOTS
+	grid_height = TWO_SLOTS
 
 /obj/item/rogueweapon/hammer/attack_obj(obj/attacked_object, mob/living/user)
 	if(!isliving(user) || !user.mind)

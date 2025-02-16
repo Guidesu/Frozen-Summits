@@ -539,8 +539,8 @@
 	blocksound = PLATEHIT
 	max_integrity = 200
 	
-	grid_height = 64
-	grid_width = 64
+	grid_height = TWO_SLOTS
+	grid_width = TWO_SLOTS
 
 /obj/item/clothing/head/roguetown/helmet/skullcap
 	name = "skull cap"
