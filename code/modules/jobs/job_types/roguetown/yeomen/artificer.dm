@@ -42,8 +42,7 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 3, TRUE)
 
-	head = /obj/item/clothing/head/roguetown/articap
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/jacket/artijacket
+
 	cloak = /obj/item/clothing/cloak/apron/waist/brown
 	pants = /obj/item/clothing/under/roguetown/trou
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random

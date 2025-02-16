@@ -466,7 +466,6 @@
 	force = 1
 	on_damage = 5
 	fuel = 120 MINUTES
-	should_self_destruct = FALSE
 	grid_width = 32
 	grid_height = 64
 
