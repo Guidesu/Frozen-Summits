@@ -1024,6 +1024,14 @@
 /obj/item/storage/belt/rogue/pouch/coins/mid,
 /turf/open/floor/rogue/carpet,
 /area/rogue/under/underdark/harrowhall)
+"to" = (
+/obj/effect/landmark/start/adventurerlate{
+	dir = 1
+	},
+/turf/open/floor/rogue/dirt/road{
+	color = "585F96"
+	},
+/area/rogue/under/underdark)
 "tu" = (
 /mob/living/carbon/human/species/elf/dark/npc/basic/ambush,
 /turf/open/floor/rogue/ruinedwood,
@@ -2693,6 +2701,14 @@
 	color = "585F96"
 	},
 /area/rogue/under/underdark)
+"XS" = (
+/obj/effect/landmark/start/adventurerlate{
+	dir = 1
+	},
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark)
 "Yf" = (
 /obj/effect/decal/mossy{
 	dir = 1
@@ -4239,7 +4255,7 @@ BO
 BO
 BO
 gT
-gT
+XS
 gT
 gT
 gT
@@ -11285,7 +11301,7 @@ gT
 gT
 Ik
 gT
-gT
+XS
 pT
 pT
 pT
@@ -11402,7 +11418,7 @@ Im
 vr
 gT
 gT
-gT
+XS
 gT
 gT
 gv
@@ -11936,7 +11952,7 @@ Ik
 gT
 Ik
 gT
-gT
+XS
 pT
 pT
 pT
@@ -14277,7 +14293,7 @@ Ik
 Ik
 Ik
 Ik
-Ik
+to
 Ik
 Ik
 gT
@@ -17648,7 +17664,7 @@ Ik
 gT
 Ik
 Ik
-Ik
+to
 Ik
 gT
 Ik
@@ -18009,7 +18025,7 @@ gT
 Ik
 Ik
 Ik
-Ik
+to
 Ik
 Ik
 Ik
@@ -24823,7 +24839,7 @@ yH
 BO
 BO
 BO
-Ik
+to
 Ik
 Ky
 Fk
@@ -32611,7 +32627,7 @@ BO
 Fk
 Fk
 aO
-Ik
+to
 Ik
 BO
 yH
@@ -37044,7 +37060,7 @@ yH
 BO
 BO
 gT
-gT
+XS
 Ik
 gT
 gT
@@ -37065,7 +37081,7 @@ gT
 Ik
 gT
 gT
-gT
+XS
 gT
 gT
 Ik
@@ -40975,7 +40991,7 @@ gT
 gT
 gT
 gT
-gT
+XS
 gT
 gT
 gT
@@ -47033,7 +47049,7 @@ gT
 Ik
 gT
 gT
-gT
+XS
 Ik
 gT
 gT
@@ -49226,7 +49242,7 @@ Ik
 gT
 gT
 gT
-gT
+XS
 gT
 ZA
 sT
@@ -50744,7 +50760,7 @@ gT
 gT
 Ik
 gT
-gT
+XS
 gT
 Ik
 gT
@@ -51375,7 +51391,7 @@ BO
 gT
 gT
 Ik
-gT
+XS
 gT
 gT
 gT
