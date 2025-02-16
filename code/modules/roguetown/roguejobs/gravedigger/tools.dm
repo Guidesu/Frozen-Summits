@@ -34,6 +34,8 @@
 			card.snow.update_corners()
 	user.changeNext_move(CLICK_CD_MELEE)
 	return TRUE
+	grid_width = 32
+	grid_height = 96
 
 /obj/item/rogueweapon/shovel/Destroy()
 	if(heldclod)
@@ -183,6 +185,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	max_blade_int = 0
 	smeltresult = null
+	grid_height = 64
 
 /obj/item/burial_shroud
 	name = "winding sheet"

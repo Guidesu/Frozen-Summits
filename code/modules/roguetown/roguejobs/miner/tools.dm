@@ -14,6 +14,8 @@
 	associated_skill = /datum/skill/labor/mining
 	smeltresult = /obj/item/ingot/iron
 	improvised = TRUE
+	grid_width = 64
+	grid_height = 64
 
 /obj/item/rogueweapon/pick/getonmobprop(tag)
 	. = ..()

@@ -8,6 +8,7 @@
 // END_PREFERENCES
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
+#include "_maps\roguetest.dm"
 #include "_maps\templates\bog_shack_small.dm"
 #include "_maps\templates\sewers.dm"
 #include "_maps\templates\smalldungeons.dm"
@@ -537,6 +538,7 @@
 #include "code\datums\components\plumbing\filter.dm"
 #include "code\datums\components\plumbing\reaction_chamber.dm"
 #include "code\datums\components\plumbing\splitter.dm"
+#include "code\datums\components\storage\storage_types.dm"
 #include "code\datums\components\storage\storage.dm"
 #include "code\datums\components\storage\concrete\_concrete.dm"
 #include "code\datums\components\storage\concrete\bag_of_holding.dm"
@@ -1329,6 +1331,7 @@
 #include "code\game\objects\items\storage\lockbox.dm"
 #include "code\game\objects\items\storage\secure.dm"
 #include "code\game\objects\items\storage\storage.dm"
+#include "code\game\objects\items\storage\new_storage\tetris.dm"
 #include "code\game\objects\items\storage\toolbox.dm"
 #include "code\game\objects\items\storage\uplink_kits.dm"
 #include "code\game\objects\items\storage\wallets.dm"

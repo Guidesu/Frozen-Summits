@@ -4,6 +4,11 @@
 	icon = 'icons/roguetown/clothing/wrists.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/wrists.dmi'
 	sleevetype = "shirt"
+	resistance_flags = FLAMMABLE
+	sewrepair = TRUE
+	anvilrepair = null
+	grid_width = 32
+	grid_height = 64
 
 /obj/item/clothing/wrists/roguetown/bracers
 	name = "bracers"
