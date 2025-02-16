@@ -13,8 +13,8 @@
 	var/dice_roll = null
 	var/alert = null
 	sellprice = 5
-	grid_width = 32
-	grid_height = 32
+	grid_width = ONE_SLOTS
+	grid_height = ONE_SLOTS
 
 /obj/item/mundane/puzzlebox/easy/Initialize()
 	. = ..()

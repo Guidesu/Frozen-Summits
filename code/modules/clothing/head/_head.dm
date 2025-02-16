@@ -10,8 +10,8 @@
 	dynamic_hair_suffix = "+generic"
 	bloody_icon_state = "helmetblood"
 
-	grid_height = 32
-	grid_width = 64
+	grid_height = ONE_SLOTS
+	grid_width = TWO_SLOTS
 
 /obj/item/clothing/head/Initialize()
 	. = ..()

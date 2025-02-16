@@ -306,8 +306,8 @@
 	var/listening = TRUE
 	var/speaking = TRUE
 	sellprice = 100
-	grid_width = 32
-	grid_height = 32
+	grid_width = ONE_SLOTS
+	grid_height = ONE_SLOTS
 //wip
 /obj/item/scomstone/attack_right(mob/living/carbon/human/user)
 	user.changeNext_move(CLICK_CD_MELEE)
@@ -401,8 +401,8 @@
 	var/listening = TRUE
 	var/speaking = TRUE
 	sellprice = 200
-	grid_width = 32
-	grid_height = 32
+	grid_width = ONE_SLOTS
+	grid_height = ONE_SLOTS
 
 /obj/item/listenstone/MiddleClick(mob/user)
 	if(.)
@@ -470,8 +470,8 @@
 	var/listening = TRUE
 	var/speaking = TRUE
 	sellprice = 0
-	grid_width = 32
-	grid_height = 32
+	grid_width = ONE_SLOTS
+	grid_height = ONE_SLOTS
 
 /obj/item/mattcoin/New(loc, ...)
 	. = ..()
@@ -562,8 +562,8 @@
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_MOUTH|ITEM_SLOT_HIP|ITEM_SLOT_NECK|ITEM_SLOT_RING
 	possible_item_intents = list(INTENT_GENERIC)
-	grid_width = 32
-	grid_height = 32
+	grid_width = ONE_SLOTS
+	grid_height = ONE_SLOTS
 
 /obj/item/speakerinq/proc/repeat_message(message, atom/A, tcolor, message_language)
 	if(A == src)
@@ -620,8 +620,8 @@
 	force = 10
 	throwforce = 10
 	w_class = WEIGHT_CLASS_SMALL
-	grid_width = 32
-	grid_height = 32
+	grid_width = ONE_SLOTS
+	grid_height = ONE_SLOTS
 
 
 /obj/item/listeningdevice/attack_self(mob/living/user)

@@ -18,8 +18,8 @@
 	var/deployed = 0
 	var/deploy_speed = 2 SECONDS
 	resistance_flags = FLAMMABLE
-	grid_height = 32
-	grid_width = 32
+	grid_height = ONE_SLOTS
+	grid_width = ONE_SLOTS
 
 /obj/item/bait/Initialize()
 	. = ..()

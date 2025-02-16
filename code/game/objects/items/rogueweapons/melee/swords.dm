@@ -94,8 +94,8 @@
 	minstr = 7
 	sellprice = 30
 	wdefense = 4
-	grid_width = 32
-	grid_height = 64
+	grid_width = ONE_SLOTS
+	grid_width = TWO_SLOTS
 
 /obj/item/rogueweapon/sword/Initialize()
 	. = ..()
@@ -197,8 +197,8 @@
 	wdefense = 4
 	wlength = WLENGTH_SHORT
 	w_class = WEIGHT_CLASS_NORMAL
-	grid_width = 32
-	grid_height = 96
+	grid_width = ONE_SLOTS
+	grid_width = THREE_SLOTS
 
 /obj/item/rogueweapon/sword/long
 	force = 25
@@ -520,8 +520,8 @@
 	wdefense = 3
 	wlength = WLENGTH_SHORT
 	w_class = WEIGHT_CLASS_NORMAL
-	grid_width = 32
-	grid_height = 96
+	grid_width = ONE_SLOTS
+	grid_width = THREE_SLOTS
 
 /obj/item/rogueweapon/sword/iron/short/chipped
 	force = 17

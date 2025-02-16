@@ -13,6 +13,8 @@
 	var/list/song_list = list()
 	var/playing = FALSE
 	improvised = TRUE
+	grid_height = TWO_SLOTS
+	grid_width = ONE_SLOTS
 
 /obj/item/rogue/instrument/equipped(mob/living/user, slot)
 	. = ..()

@@ -14,8 +14,8 @@
 	max_integrity = 10
 	sellprice = 0
 	rotprocess = null
-	grid_width = 32
-	grid_height = 32
+	grid_width = ONE_SLOTS
+	grid_height = ONE_SLOTS
 
 
 /obj/item/reagent_containers/food/snacks/smallrat/onbite(mob/living/carbon/human/user)

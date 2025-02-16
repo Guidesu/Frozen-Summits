@@ -13,8 +13,8 @@
 	content_overlays = FALSE
 	bloody_icon_state = "bodyblood"
 	component_type = /datum/component/storage/concrete/roguetown/belt
-	grid_width = 64
-	grid_height = 64
+	grid_width = TWO_SLOTS
+	grid_height = TWO_SLOTS
 
 /obj/item/storage/belt/rogue/attack_right(mob/user)
 	var/datum/component/storage/CP = GetComponent(/datum/component/storage)
@@ -102,8 +102,8 @@
 	component_type = /datum/component/storage/concrete/roguetown/coin_pouch
 
 /obj/item/storage/belt/rogue/pouch/coins
-	grid_height = 64
-	grid_width = 32
+	grid_height = TWO_SLOTS
+	grid_width = ONE_SLOTS
 
 /obj/item/storage/belt/rogue/pouch/coins/mid/Initialize()
 	. = ..()

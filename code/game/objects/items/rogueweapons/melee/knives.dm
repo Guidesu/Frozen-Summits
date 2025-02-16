@@ -103,8 +103,8 @@
 	anvilrepair = /datum/skill/craft/weaponsmithing
 	smeltresult = /obj/item/ingot/iron
 
-	grid_height = 64
-	grid_width = 32
+	grid_height = TWO_SLOTS
+	grid_width = ONE_SLOTS
 
 /obj/item/rogueweapon/huntingknife/getonmobprop(tag)
 	. = ..()

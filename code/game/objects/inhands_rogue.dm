@@ -10,6 +10,7 @@
 	var/last_used = 0
 	var/istrainable = FALSE // Can this be used against a training dummy to learn skills? Prevents dumb exploits.
 	var/possible_potion // check if it can be used in the cauldron, and what potion.
+	
 //#else
 //	var/force_reupdate_inhand = FALSE
 //#endif

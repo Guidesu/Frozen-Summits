@@ -16,8 +16,8 @@
 	anvilrepair = /datum/skill/craft/blacksmithing
 	resistance_flags = FIRE_PROOF
 
-	grid_height = 32
-	grid_width = 32
+	grid_height = ONE_SLOTS
+	grid_width = ONE_SLOTS
 
 /obj/item/roguekey/Initialize()
 	. = ..()
@@ -45,8 +45,8 @@
 	destroy_sound = 'sound/items/pickbreak.ogg'
 	resistance_flags = FIRE_PROOF
 
-	grid_width = 32
-	grid_height = 64
+	grid_width = ONE_SLOTS
+	grid_height = TWO_SLOTS
 
 /obj/item/roguekey/lord
 	name = "master key"

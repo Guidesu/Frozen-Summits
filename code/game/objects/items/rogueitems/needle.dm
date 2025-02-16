@@ -20,8 +20,8 @@
 	var/infinite = FALSE
 	/// If this needle can be used to repair items
 	var/can_repair = TRUE
-	grid_width = 32
-	grid_height = 32
+	grid_width = ONE_SLOTS
+	grid_height = ONE_SLOTS
 
 /obj/item/needle/examine()
 	. = ..()

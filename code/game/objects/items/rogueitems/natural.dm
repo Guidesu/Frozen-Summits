@@ -7,8 +7,8 @@
 	w_class = WEIGHT_CLASS_TINY
 	var/bundletype = null
 	var/quality = SMELTERY_LEVEL_NORMAL // To not ruin blacksmith recipes
-	grid_width = 32
-	grid_height = 32
+	grid_width = ONE_SLOTS
+	grid_height = ONE_SLOTS
 
 /obj/item/natural/attackby(obj/item/W, mob/living/user)
 	if(istype(W, /obj/item/natural/bundle))

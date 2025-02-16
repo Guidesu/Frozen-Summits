@@ -17,8 +17,8 @@
 	var/quality = SMELTERY_LEVEL_NORMAL // For it not to ruin recipes that need it
 	var/lumber = /obj/item/grown/log/tree/small //These are solely for lumberjack calculations
 	var/lumber_amount = 1
-	grid_width = 64
-	grid_height = 32
+	grid_width = TWO_SLOTS
+	grid_height = ONE_SLOTS
 
 /obj/item/grown/log/tree/attacked_by(obj/item/I, mob/living/user) //This serves to reward woodcutting
 	if(user.used_intent.blade_class == BCLASS_CHOP && lumber_amount)
@@ -138,8 +138,8 @@
 	slot_flags = ITEM_SLOT_MOUTH|ITEM_SLOT_HIP
 	tool_behaviour = TOOL_SCREWDRIVER
 	lumber_amount = 0
-	grid_width = 32
-	grid_height = 32
+	grid_width = ONE_SLOTS
+	grid_height = ONE_SLOTS
 
 /obj/item/grown/log/tree/stick/Crossed(mob/living/L)
 	. = ..()

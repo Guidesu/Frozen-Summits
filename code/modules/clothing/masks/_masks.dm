@@ -9,8 +9,8 @@
 	var/mask_adjusted = 0
 	var/adjusted_flags = null
 
-	grid_width = 64
-	grid_height = 32
+	grid_width = TWO_SLOTS
+	grid_height = ONE_SLOTS
 
 /obj/item/clothing/mask/attack_self(mob/user)
 	if(CHECK_BITFIELD(clothing_flags, VOICEBOX_TOGGLABLE))
