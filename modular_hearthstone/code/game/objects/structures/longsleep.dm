@@ -72,7 +72,7 @@
 
 
 /obj/structure/long_sleep2 //Shamelessly jury-rigged from the way Fallout13 handles this.
-	name = "Arcyne Iodestone"
+	name = "Arcane Iodestone"
 	desc = "A highly refined stone of magic, imported from the Zybantine Empire. It is capable of teleporting an individual.\n(Drag your sprite onto this to exit the round!)"
 	icon = 'icons/roguetown/misc/longsleep3.dmi'
 	icon_state = "longsleep"

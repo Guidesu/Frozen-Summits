@@ -439,28 +439,28 @@
 // --------- ADAMANTINE RECIPES-----------
 
 /datum/anvil_recipe/armor/adamantine/cuirass
-	name = "Adamantine Cuirass (+1 B.Steel)"
+	name = "Adamantine Cuirass (+1 Adamantine)"
 	req_bar = /obj/item/ingot/adamantine
 	additional_items = list(/obj/item/ingot/adamantine)
 	created_item = /obj/item/clothing/suit/roguetown/armor/plate/adamantine_half_plate
 	craftdiff = 5
 
 /datum/anvil_recipe/armor/adamantine/platechest
-	name = "Adamantine Plate Armor (+3 B.Steel)"
+	name = "Adamantine Plate Armor (+3 Adamantine)"
 	req_bar = /obj/item/ingot/adamantine
 	additional_items = list(/obj/item/ingot/adamantine, /obj/item/ingot/adamantine, /obj/item/ingot/adamantine)
 	created_item = /obj/item/clothing/suit/roguetown/armor/plate/adamantine_full_plate
 	craftdiff = 5
 
 /datum/anvil_recipe/armor/adamantine/platelegs
-	name = "Adamantine Plate Chausses (+1 B.Steel)"
+	name = "Adamantine Plate Chausses (+1 Adamantine)"
 	req_bar = /obj/item/ingot/adamantine
 	additional_items = list(/obj/item/ingot/adamantine)
 	created_item = /obj/item/clothing/under/roguetown/platelegs/adamantine
 	craftdiff = 5
 
 /datum/anvil_recipe/armor/adamantine/bucket
-	name = "Adamantine Bucket Helmet (+1 B.Steel)"
+	name = "Adamantine Bucket Helmet (+1 Adamantine)"
 	req_bar = /obj/item/ingot/adamantine
 	additional_items = list(/obj/item/ingot/adamantine)
 	created_item = /obj/item/clothing/head/roguetown/helmet/adamantine/bucket

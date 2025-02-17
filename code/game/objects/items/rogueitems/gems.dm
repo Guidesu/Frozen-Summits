@@ -89,3 +89,22 @@
 /obj/item/riddleofsteel/Initialize()
 	. = ..()
 	set_light(2, 1, "#ff0d0d")
+
+/// Soul Coin Proper
+
+/obj/item/soulcoin
+	name = "Soul Coin"
+	desc = "This is more than just a coin."
+	icon = 'icons/roguetown/underworld/enigma_husks.dmi'
+	icon_state = "soultoken_floor"
+	grid_height = ONE_SLOTS
+	grid_width = ONE_SLOTS
+	var/should_track = TRUE
+
+/obj/item/soulcoin/pickup(mob/user)
+	..()
+	icon_state = "soultoken"
+
+/obj/item/soulcoin/dropped(mob/user)
+	..()
+	icon_state = "soultoken_floor"

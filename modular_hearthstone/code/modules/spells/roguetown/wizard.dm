@@ -4,10 +4,10 @@
 
 /obj/effect/proc_holder/spell/targeted/touch/prestidigitation
 	name = "Prestidigitation"
-	desc = "A few basic tricks many apprentices use to practice basic manipulation of the arcyne."
+	desc = "A few basic tricks many apprentices use to practice basic manipulation of the arcane."
 	clothes_req = FALSE
-	drawmessage = "I prepare to perform a minor arcyne incantation."
-	dropmessage = "I release my minor arcyne focus."
+	drawmessage = "I prepare to perform a minor arcane incantation."
+	dropmessage = "I release my minor arcane focus."
 	school = "transmutation"
 	overlay_state = "prestidigitation"
 	chargedrain = 0
@@ -20,7 +20,7 @@
 /obj/item/melee/touch_attack/prestidigitation
 	name = "\improper prestidigitating touch"
 	desc = "You recall the following incantations you've learned:\n \
-	<b>Touch</b>: Use your arcyne powers to scrub an object or something clean, like using soap. Also known as the Apprentice's Woe.\n \
+	<b>Touch</b>: Use your arcane powers to scrub an object or something clean, like using soap. Also known as the Apprentice's Woe.\n \
 	<b>Shove</b>: Will forth a spark on an item of your choosing (or in front of you, if used on the ground) to ignite flammable items and things like torches, lanterns or campfires. \n \
 	<b>Use</b>: Conjure forth an orbiting mote of magelight to light your way."
 	catchphrase = null
@@ -110,7 +110,7 @@
 		mote.update_light()
 
 	if (mote.loc == src)
-		user.visible_message(span_notice("[user] holds open the palm of [user.p_their()] hand and concentrates..."), span_notice("I hold open the palm of my hand and concentrate on my arcyne power..."))
+		user.visible_message(span_notice("[user] holds open the palm of [user.p_their()] hand and concentrates..."), span_notice("I hold open the palm of my hand and concentrate on my arcane power..."))
 		if (do_after(user, src.motespeed, target = user))
 			mote.orbit(user, 1, TRUE, 0, 48, TRUE)
 			return TRUE
@@ -150,7 +150,7 @@
 	cleanspeed = initial(cleanspeed) - (skill_level * 3) // 3 cleanspeed per skill level, from 35 down to a maximum of 17 (pretty quick)
 
 	if (istype(target, /obj/structure/window))
-		user.visible_message(span_notice("[user] gestures at \the [target.name], tiny motes of arcyne power running across its surface..."), span_notice("I begin to clean \the [target.name] with my arcyne power..."))
+		user.visible_message(span_notice("[user] gestures at \the [target.name], tiny motes of arcane power running across its surface..."), span_notice("I begin to clean \the [target.name] with my arcane power..."))
 		if (do_after(user, src.cleanspeed, target = target))
 			target.remove_atom_colour(WASHABLE_COLOUR_PRIORITY)
 			target.set_opacity(initial(target.opacity))
@@ -158,14 +158,14 @@
 			return TRUE
 		return FALSE
 	else if (istype(target, /obj/effect/decal/cleanable))
-		user.visible_message(span_notice("[user] gestures at \the [target.name], arcyne power slowly scouring it away..."), span_notice("I begin to scour \the [target.name] away with my arcyne power..."))
+		user.visible_message(span_notice("[user] gestures at \the [target.name], arcane power slowly scouring it away..."), span_notice("I begin to scour \the [target.name] away with my arcane power..."))
 		if (do_after(user, src.cleanspeed, target = target))
 			to_chat(user, span_notice("I expunge \the [target.name] with my mana."))
 			qdel(target)
 			return TRUE
 		return FALSE
 	else
-		user.visible_message(span_notice("[user] gestures at \the [target.name], tiny motes of arcyne power surging over [target.p_them()]..."), span_notice("I begin to clean \the [target.name] with my arcyne power..."))
+		user.visible_message(span_notice("[user] gestures at \the [target.name], tiny motes of arcane power surging over [target.p_them()]..."), span_notice("I begin to clean \the [target.name] with my arcane power..."))
 		if (do_after(user, src.cleanspeed, target = target))
 			to_chat(user, span_notice("I render \the [target.name] clean."))
 			for (var/obj/effect/decal/cleanable/C in target)
@@ -179,7 +179,7 @@
 
 /obj/effect/wisp/prestidigitation
 	name = "minor magelight mote"
-	desc = "A tiny display of arcyne power used to illuminate."
+	desc = "A tiny display of arcane power used to illuminate."
 	pixel_x = 20
 	light_range = 4
 	light_flags = NONE
@@ -268,7 +268,7 @@
 //forcewall
 /obj/effect/proc_holder/spell/invoked/forcewall_weak
 	name = "Forcewall"
-	desc = "Conjure a wall of arcyne force, preventing anyone and anything other than you from moving through it."
+	desc = "Conjure a wall of arcane force, preventing anyone and anything other than you from moving through it."
 	school = "transmutation"
 	releasedrain = 30
 	chargedrain = 1
@@ -293,8 +293,8 @@
 
 //adapted from forcefields.dm, this needs to be destructible
 /obj/structure/forcefield_weak
-	desc = "A wall of pure arcyne force."
-	name = "Arcyne Wall"
+	desc = "A wall of pure arcane force."
+	name = "Arcane Wall"
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "forcefield"
 	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
@@ -319,7 +319,7 @@
 	else
 		new wall_type(get_step(front, NORTH), user)
 		new wall_type(get_step(front, SOUTH), user)
-	user.visible_message("[user] mutters an incantation and a wall of arcyne force manifests out of thin air!")
+	user.visible_message("[user] mutters an incantation and a wall of arcane force manifests out of thin air!")
 	return TRUE
 
 /obj/structure/forcefield_weak
@@ -341,7 +341,7 @@
 // no slowdown status effect defined, so this just immobilizes for now
 /obj/effect/proc_holder/spell/invoked/slowdown_spell_aoe
 	name = "Ensnare"
-	desc = "Tendrils of arcyne force hold anyone in a small area in place for a short while."
+	desc = "Tendrils of arcane force hold anyone in a small area in place for a short while."
 	invocation = "Karn vrak!"
 	invocation_type = "shout"
 	cost = 1
@@ -383,7 +383,7 @@
 			return
 		L.Immobilize(duration)
 		L.OffBalance(duration)
-		L.visible_message("<span class='warning'>[L] is held by tendrils of arcyne force!</span>")
+		L.visible_message("<span class='warning'>[L] is held by tendrils of arcane force!</span>")
 		new /obj/effect/temp_visual/slowdown_spell_aoe/long(get_turf(L))
 
 /obj/effect/temp_visual/slowdown_spell_aoe
@@ -434,10 +434,10 @@
 				if(HL.mind)
 					if(HL.mind.do_i_know(name=user.real_name)) //do we know who this person is?
 						identified = TRUE // we do
-						to_chat(HL, "Arcyne whispers fill the back of my head, resolving into [user]'s voice: <font color=#7246ff>[message]</font>")
+						to_chat(HL, "Arcane whispers fill the back of my head, resolving into [user]'s voice: <font color=#7246ff>[message]</font>")
 
 			if(!identified) //we failed the check OR we just dont know who that is
-				to_chat(HL, "Arcyne whispers fill the back of my head, resolving into an unknown [user.gender == FEMALE ? "woman" : "man"]'s voice: <font color=#7246ff>[message]</font>")
+				to_chat(HL, "Arcane whispers fill the back of my head, resolving into an unknown [user.gender == FEMALE ? "woman" : "man"]'s voice: <font color=#7246ff>[message]</font>")
 
 			user.visible_message("[user] mutters an incantation and their mouth briefly flashes white.")
 			user.whisper(message)
@@ -511,7 +511,7 @@
 
 /obj/effect/proc_holder/spell/invoked/blade_burst
 	name = "Blade Burst"
-	desc = "Summon a storm of arcyne force in an area, wounding anything in that location after a delay."
+	desc = "Summon a storm of arcane force in an area, wounding anything in that location after a delay."
 	cost = 1
 	invocation = "Zar'khanis!!"
 	invocation_type = "shout"
@@ -541,7 +541,7 @@
 /obj/effect/temp_visual/blade_burst
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "purplesparkles"
-	name = "rippeling arcyne energy"
+	name = "rippeling arcane energy"
 	desc = "Get out of the way!"
 	randomdir = FALSE
 	duration = 1 SECONDS
@@ -566,7 +566,7 @@
 			play_cleave = TRUE
 			L.adjustBruteLoss(damage)
 			playsound(affected_turf, "genslash", 80, TRUE)
-			to_chat(L, "<span class='userdanger'>You're cut by arcyne force!</span>")
+			to_chat(L, "<span class='userdanger'>You're cut by arcane force!</span>")
 
 	if(play_cleave)
 		playsound(T, 'sound/combat/newstuck.ogg', 80, TRUE, soundping = TRUE)
@@ -578,7 +578,7 @@
 	desc = "Consume a handful of ash and shroud a target that you touch from divination magic for 1 hour."
 	clothes_req = FALSE
 	drawmessage = "I prepare to form a magical shroud."
-	dropmessage = "I release my arcyne focus."
+	dropmessage = "I release my arcane focus."
 	school = "abjuration"
 	charge_max = 30 SECONDS
 	chargedloop = /datum/looping_sound/invokegen
@@ -588,7 +588,7 @@
 	cost = 1
 
 /obj/item/melee/touch_attack/nondetection
-	name = "\improper arcyne focus"
+	name = "\improper arcane focus"
 	desc = "Touch a creature to cover them in an anti-scrying shroud for 1 hour, consumes some ash as a catalyst."
 	catchphrase = null
 	possible_item_intents = list(INTENT_HELP)
@@ -644,7 +644,7 @@
 	desc = "Enhance the night vision of a target you touch for 15 minutes."
 	clothes_req = FALSE
 	drawmessage = "I prepare to grant Darkvision."
-	dropmessage = "I release my arcyne focus."
+	dropmessage = "I release my arcane focus."
 	school = "transmutation"
 	charge_max = 1 MINUTES
 	chargedloop = /datum/looping_sound/invokegen
@@ -654,7 +654,7 @@
 	cost = 2
 
 /obj/item/melee/touch_attack/darkvision
-	name = "\improper arcyne focus"
+	name = "\improper arcane focus"
 	desc = "Touch a creature to grant them Darkvision for 15 minutes."
 	catchphrase = null
 	possible_item_intents = list(INTENT_HELP)
@@ -674,9 +674,9 @@
 		spelltarget.apply_status_effect(/datum/status_effect/buff/darkvision)
 		user.rogfat_add(80)
 		if(spelltarget != user)
-			user.visible_message("[user] draws a glyph in the air and touches [spelltarget] with an arcyne focus.")
+			user.visible_message("[user] draws a glyph in the air and touches [spelltarget] with an arcane focus.")
 		else
-			user.visible_message("[user] draws a glyph in the air and touches themselves with an arcyne focus.")
+			user.visible_message("[user] draws a glyph in the air and touches themselves with an arcane focus.")
 		attached_spell.remove_hand()
 	return
 
@@ -965,7 +965,7 @@
 
 /obj/effect/proc_holder/spell/invoked/guidance
 	name = "Guidance"
-	desc = "Makes one's hand travel true, blessing them with arcyne luck in combat. (+10% chance to hit with melee, +10% chance to defend from melee)"
+	desc = "Makes one's hand travel true, blessing them with arcane luck in combat. (+10% chance to hit with melee, +10% chance to defend from melee)"
 	cost = 2
 	xp_gain = TRUE
 	invocation = "Sehanine'Ver!"
@@ -1033,7 +1033,7 @@
 /obj/effect/temp_visual/snap_freeze
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "shieldsparkles"
-	name = "rippeling arcyne ice"
+	name = "rippeling arcane ice"
 	desc = "Get out of the way!"
 	randomdir = FALSE
 	duration = 1 SECONDS
@@ -1130,8 +1130,8 @@
 
 
 /obj/effect/proc_holder/spell/invoked/projectile/arcynebolt //makes you confused for 2 seconds,
-	name = "Arcyne Bolt"
-	desc = "Shoot out a rapid bolt of arcyne magic that hits on impact. Little damage, but disorienting."
+	name = "Arcane Bolt"
+	desc = "Shoot out a rapid bolt of arcane magic that hits on impact. Little damage, but disorienting."
 	clothes_req = FALSE
 	invocation = "Arcanis Vel!"
 	invocation_type = "shout"
@@ -1153,7 +1153,7 @@
 	cost = 1
 
 /obj/projectile/energy/rogue3
-	name = "Arcyne Bolt"
+	name = "Arcane Bolt"
 	icon_state = "arcane_barrage"
 	damage = 30
 	damage_type = BRUTE

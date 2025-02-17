@@ -205,7 +205,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_CABAL = span_info("In secret, I have studied the ways of Her ascension, and know of others of the Cabal."),
 	TRAIT_HORDE = span_info("BY BLOOD AND BONE, I AM OF THEIR'S ANOINTED! I FEEL THE STRENGTH IN OTHERS WHO ARE THE SAME."),
 	TRAIT_FORTITUDE = span_info("The typical drain I feel from day to day life is lessened, my athleticism greater."),
-	TRAIT_GUIDANCE = span_info("The arcyne aides me in battle."),
+	TRAIT_GUIDANCE = span_info("The arcane aides me in battle."),
 	TRAIT_DEPRAVED = span_info("The languid scent of Her debauchery is known to me, and I can detect its sordid presence upon others."),
 	TRAIT_SILVER_BLESSED = span_info("I am anointed with holy silver, which preserves me from curses that bite."),
 	TRAIT_GOODTRAINER = span_info("I am a good teacher, and when it comes to weaponry I can train others to be just as skilled as I am."),
@@ -220,7 +220,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_SLOPPYSLEEPER = span_info("I can sleep anywhere."),
 	TRAIT_INTELLECTUAL = span_info("I have a keen eye and can assess a person's prowess in wit and blade."),
 	TRAIT_KAIZOKU = "Whether by birth or by learning, I've inherited the Islander ways instead of Imperial culture.",
-	TRAIT_DARKLING = span_info("I am a creature of the dark and am sensitive to the light. The hateful sun is especially harsh on my eyes, and I prefer to sleep during the dae."),
+	TRAIT_DARKLING = span_info("I am a creature of the dark and am sensitive to the light. The hateful sun is especially harsh on my eyes, and I prefer to sleep during the day."),
 	TRAIT_LEGENDARY_ALCHEMIST = span_info("An expert in the art of finding herbs in the wild."),
 ))
 

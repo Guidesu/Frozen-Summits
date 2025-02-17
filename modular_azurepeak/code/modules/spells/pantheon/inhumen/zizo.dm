@@ -184,20 +184,20 @@
 	for(var/i = 1, i <= spell_choices.len, i++)
 		choices["[spell_choices[i].name]"] = spell_choices[i]
 
-	var/choice = input("Choose an arcyne expression of the Lesser Work") as null|anything in choices
+	var/choice = input("Choose an arcane expression of the Lesser Work") as null|anything in choices
 	var/obj/effect/proc_holder/spell/item = choices[choice]
 
 	if (!choice || !item)
 		return FALSE
 
 	if (!(user.mob_biotypes & MOB_UNDEAD))
-		user.visible_message(span_warning("The pallor of the grave descends across [user]'s skin in a wave of arcyne energy..."), span_boldwarning("A deathly chill overtakes my body at my first culmination of the Lesser Work! I feel my heart slow down in my chest..."))
+		user.visible_message(span_warning("The pallor of the grave descends across [user]'s skin in a wave of arcane energy..."), span_boldwarning("A deathly chill overtakes my body at my first culmination of the Lesser Work! I feel my heart slow down in my chest..."))
 		user.mob_biotypes |= MOB_UNDEAD
 		to_chat(user, span_smallred("I have forsaken the living. I am now closer to a deadite than a mortal... but I still yet draw breath and bleed."))
 	
 	part_to_bonify.skeletonize(FALSE)
 	user.update_body_parts()
-	user.visible_message(span_warning("Faint runes flare beneath [user]'s skin before [user.p_their()] flesh suddenly slides away from [user.p_their()] [part_to_bonify.name]!"), span_notice("I feel arcyne power surge throughout my frail mortal form, as the Rituos takes its terrible price from my [part_to_bonify.name]."))
+	user.visible_message(span_warning("Faint runes flare beneath [user]'s skin before [user.p_their()] flesh suddenly slides away from [user.p_their()] [part_to_bonify.name]!"), span_notice("I feel arcane power surge throughout my frail mortal form, as the Rituos takes its terrible price from my [part_to_bonify.name]."))
 
 	if (user.mind?.rituos_spell)
 		to_chat(user, span_warning("My knowledge of [user.mind.rituos_spell.name] flees..."))
@@ -212,7 +212,7 @@
 		user.mind?.adjust_skillrank(/datum/skill/magic/arcane, 3, TRUE)
 		user.mind?.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 		user.mind?.adjust_spellpoints(3)
-		user.visible_message(span_boldwarning("[user]'s form swells with terrible power as they cast away almost all of the remnants of their mortal flesh, arcyne runes glowing upon their exposed bones..."), span_notice("I HAVE DONE IT! I HAVE COMPLETED HER LESSER WORK! I stand at the cusp of unspeakable power, but something is yet missing..."))
+		user.visible_message(span_boldwarning("[user]'s form swells with terrible power as they cast away almost all of the remnants of their mortal flesh, arcane runes glowing upon their exposed bones..."), span_notice("I HAVE DONE IT! I HAVE COMPLETED HER LESSER WORK! I stand at the cusp of unspeakable power, but something is yet missing..."))
 		ADD_TRAIT(user, TRAIT_NOHUNGER, "[type]")
 		ADD_TRAIT(user, TRAIT_NOBREATH, "[type]")
 		if (prob(33))

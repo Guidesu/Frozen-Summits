@@ -45,7 +45,7 @@
 
 		if("Enchanter")
 			H.set_blindness(0)
-			to_chat(H, span_warning("Enchanters are magicians who studied under cloistered sages, well-versed in all manners of arcyne. They prioritize enhancing their teammates and distracting foes while staying in the backline."))
+			to_chat(H, span_warning("Enchanters are magicians who studied under cloistered sages, well-versed in all manners of arcane. They prioritize enhancing their teammates and distracting foes while staying in the backline."))
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
