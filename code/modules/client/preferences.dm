@@ -71,6 +71,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/voice_type = VOICE_TYPE_MASC	// LETHALSTONE EDIT: the type of soundpack the mob should use
 	var/datum/statpack/statpack	= new /datum/statpack/wildcard/fated // LETHALSTONE EDIT: the statpack we're giving our char instead of racial bonuses
 	var/datum/virtue/virtue = new /datum/virtue/none // LETHALSTONE EDIT: the virtue we get for not picking a statpack
+	var/datum/virtue/virtuetwo = new /datum/virtue/none
 	var/age = AGE_ADULT						//age of character
 	var/origin = "Default"
 	var/accessory = "Nothing"
@@ -367,6 +368,8 @@ GLOBAL_LIST_EMPTY(chosen_names)
 
 
 			dat += "<b>Virtue:</b> <a href='?_src_=prefs;preference=virtue;task=input'>[virtue]</a><BR>"
+			if(statpack.name == "Virtuous")
+				dat += "<b>Second Virtue:</b> <a href='?_src_=prefs;preference=virtuetwo;task=input'>[virtuetwo]</a><BR>"
 			dat += "<b>Vice:</b> <a href='?_src_=prefs;preference=charflaw;task=input'>[charflaw]</a><BR>"
 			var/datum/faith/selected_faith = GLOB.faithlist[selected_patron?.associated_faith]
 			dat += "<b>Faith:</b> <a href='?_src_=prefs;preference=faith;task=input'>[selected_faith?.name || "FUCK!"]</a><BR>"
@@ -1722,10 +1725,14 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 				if("virtue")
 					var/list/virtue_choices = list()
 					for (var/path as anything in GLOB.virtues)
-						var/datum/virtue/virtue = GLOB.virtues[path]
-						if (!virtue.name)
+						var/datum/virtue/V = GLOB.virtues[path]
+						if (!V.name)
 							continue
-						virtue_choices[virtue.name] = virtue
+						if (V.name == virtue.name || V.name == virtuetwo.name)
+							continue
+						if (istype(V, /datum/virtue/heretic) && !istype(selected_patron, /datum/patron/inhumen))
+							continue
+						virtue_choices[V.name] = V
 					var/result = input(user, "Select a virtue", "Roguetown") as null|anything in virtue_choices
 
 					if (result)
@@ -1733,6 +1740,28 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 						virtue = virtue_chosen
 						if (virtue.desc)
 							to_chat(user, span_purple(virtue.desc))
+
+				if("virtuetwo")
+					var/list/virtue_choices = list()
+					for (var/path as anything in GLOB.virtues)
+						var/datum/virtue/V = GLOB.virtues[path]
+						if (!V.name)
+							continue
+						if (V.name == virtue.name || V.name == virtuetwo.name)
+							continue
+						if (istype(V, /datum/virtue/heretic) && !istype(selected_patron, /datum/patron/inhumen))
+							continue
+						virtue_choices[V.name] = V
+					var/result = input(user, "Select a virtue", "Roguetown") as null|anything in virtue_choices
+
+					if (result)
+						var/datum/virtue/virtue_chosen = virtue_choices[result]
+						virtuetwo = virtue_chosen
+						if (virtuetwo.desc)
+							to_chat(user, span_purple(virtuetwo.desc))
+					/*	if (statpack.type != /datum/statpack/wildcard/virtuous)
+							statpack = new /datum/statpack/wildcard/virtuous
+							to_chat(user, span_purple("Your statpack has been set to virtuous (no stats) due to selecting a virtue.")) */
 
 				if("charflaw")
 					var/list/coom = GLOB.character_flaws.Copy()

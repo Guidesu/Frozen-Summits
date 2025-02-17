@@ -26,6 +26,7 @@
 	var/vary = FALSE
 	var/max_loops
 	var/direct
+	var/atom/parent
 	var/extra_range = 0
 	var/falloff
 	var/frequency
@@ -39,6 +40,7 @@
 	var/loop_started = FALSE
 	///our sound channel
 	var/channel
+	var/starttime // A world.time snapshot of when the loop was started.
 
 /datum/looping_sound/New(list/_output_atoms=list(), start_immediately=FALSE, _direct=FALSE, _channel = 0)
 	if(!mid_sounds)
