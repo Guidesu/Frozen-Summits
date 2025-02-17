@@ -52,6 +52,7 @@
 #define TRAIT_GOODTRAINER "Good Trainer"
 #define TRAIT_SEA_DRINKER "Denizen of the Deep"
 #define TRAIT_STUDENT		"Student"
+#define TRAIT_KEENEARS "Keen Ears"
 #define TRAIT_INTELLECTUAL "Intellectual"
 
 //Hearthstone port (Tracking)

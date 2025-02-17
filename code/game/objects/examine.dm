@@ -52,3 +52,26 @@
 
 	for(var/datum/examine_effect/E in examine_effects)
 		E.trigger(user)
+
+/obj/item/proc/integrity_check(var/span = TRUE, var/simple = FALSE)
+	if(max_integrity)
+		if(obj_integrity < max_integrity)
+			var/meme = round(((obj_integrity / max_integrity) * 100), 1)
+			var/result
+			if(simple)
+				if(meme <= 1)
+					return span_warning("It's broken.")
+				else
+					return ""
+			switch(meme)
+				if(0 to 1)
+					result = span ? span_warning("It's broken.") : "It's broken."
+				if(1 to 10)
+					result = span ? span_warning("It's nearly broken.") : "It's nearly broken."
+				if(10 to 30)
+					result = span ? span_warning("It's severely damaged.") : "It's severely damaged."
+				if(30 to 80)
+					result = span ? span_warning("It's damaged.") : "It's damaged."
+				if(80 to 99)
+					result = span ? span_warning("It's a little damaged.") : "It's a little damaged."
+			return result

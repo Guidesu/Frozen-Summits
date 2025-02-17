@@ -580,34 +580,7 @@
 	craftdiff = 5
 	sellprice = 24
 
-/datum/crafting_recipe/roguetown/leather/furlinedjacket
-	name = "fur-lined jacket"
-	result = list(/obj/item/clothing/suit/roguetown/armor/leather/jacket/artijacket)
-	reqs = list(/obj/item/natural/hide = 2,
-				/obj/item/natural/fur = 1,
-	            /obj/item/natural/cloth = 1)
-	tools = list(/obj/item/needle)
-	craftdiff = 5
-	sellprice = 21
 
-/datum/crafting_recipe/roguetown/leather/winterjacket
-	name = "winter jacket"
-	result = list(/obj/item/clothing/suit/roguetown/armor/leather/vest/winterjacket)
-	reqs = list(/obj/item/natural/hide = 2,
-				/obj/item/natural/fur = 2,
-	            /obj/item/natural/cloth = 1)
-	tools = list(/obj/item/needle)
-	craftdiff = 5
-	sellprice = 24
-
-/datum/crafting_recipe/roguetown/leather/corset
-	name = "corset"
-	result = list(/obj/item/clothing/suit/roguetown/armor/corset)
-	reqs = list(/obj/item/natural/hide = 2,
-	            /obj/item/natural/fibers = 1)
-	tools = list(/obj/item/needle)
-	craftdiff = 4
-	sellprice = 14
 
 /datum/crafting_recipe/roguetown/leather/openrobes
 	name = "open robe"

@@ -640,18 +640,7 @@
 	reqs = list(/obj/item/natural/cloth = 1,
 				/obj/item/natural/fibers = 1)
 
-/datum/crafting_recipe/roguetown/sewing/kimono
-	name = "kimono {fl}"
-	result = list(/obj/item/clothing/suit/roguetown/shirt/tunic/kimono)
-/datum/crafting_recipe/roguetown/sewing/royalsleeves
-	name = "royal sleeves"
-	result = list(/obj/item/clothing/wrists/roguetown/royalsleeves)
-	reqs = list(/obj/item/natural/cloth = 1,
-	            /obj/item/natural/fibers = 2,
-				/obj/item/natural/silk = 1)
-	tools = list(/obj/item/needle)
-	craftdiff = 5
-	sellprice = 19
+
 
 /datum/crafting_recipe/roguetown/sewing/nemes
 	name = "nemes"
@@ -786,14 +775,6 @@
 	craftdiff = 3
 	sellprice = 14
 
-/datum/crafting_recipe/roguetown/sewing/shawl
-	name = "shawl"
-	result = list(/obj/item/clothing/head/roguetown/shawl)
-	reqs = list(/obj/item/natural/cloth = 1)
-
-	tools = list(/obj/item/needle)
-	craftdiff = 2
-
 /datum/crafting_recipe/roguetown/sewing/jinbaori
 	name = "jinbaori {fl}"
 	result = list(/obj/item/clothing/cloak/jinbaori)
@@ -861,15 +842,6 @@
 	tools = list(/obj/item/needle)
 	craftdiff = 5
 	sellprice = 15
-
-/datum/crafting_recipe/roguetown/sewing/articap
-	name = "flat cap"
-	result = list(/obj/item/clothing/head/roguetown/articap)
-	reqs = list(/obj/item/natural/cloth = 1,
-	            /obj/item/natural/fibers = 1,
-				/obj/item/natural/hide = 1)
-	tools = list(/obj/item/needle)
-	craftdiff = 4
 
 /datum/crafting_recipe/roguetown/sewing/odoshi
 	name = "odoshi bodylacing {fl}"
@@ -1001,12 +973,3 @@
 	craftdiff = 6
 	sellprice = 24
 
-/datum/crafting_recipe/roguetown/sewing/sleevelessrobe
-	name = "sleeveless robe"
-	result = list(/obj/item/clothing/suit/roguetown/shirt/robe/phys)
-	reqs = list(/obj/item/natural/cloth = 3,
-	            /obj/item/natural/fibers = 2)
-	tools = list(/obj/item/needle)
-	craftdiff = 4
-	sellprice = 13
-	
