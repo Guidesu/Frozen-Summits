@@ -14,6 +14,8 @@
 	var/closed = TRUE //Put a cork in it!
 	reagent_flags = TRANSPARENT
 	w_class = WEIGHT_CLASS_SMALL
+	grid_height = ONE_SLOTS
+	grid_width = ONE_SLOTS
 	drinksounds = list('sound/items/drink_bottle (1).ogg','sound/items/drink_bottle (2).ogg')
 	fillsounds = list('sound/items/fillcup.ogg')
 	poursounds = list('sound/items/fillbottle.ogg')

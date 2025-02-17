@@ -475,7 +475,7 @@
 
 /obj/item/mattcoin/New(loc, ...)
 	. = ..()
-	name = pick("rontz ring", "gold ring")
+	name = pick("ruby ring", "gold ring")
 
 /obj/item/mattcoin/pickup(mob/living/user)
 	if(!HAS_TRAIT(user, TRAIT_COMMIE))

@@ -101,10 +101,12 @@
 GLOBAL_VAR_INIT(underworld_coins, 0)
 
 /obj/item/underworld/coin
-	name = "The Toll"
+	name = "Soul Coin...?"
 	desc = "This is more than just a coin."
 	icon = 'icons/roguetown/underworld/enigma_husks.dmi'
 	icon_state = "soultoken_floor"
+	grid_height = ONE_SLOTS
+	grid_width = ONE_SLOTS
 	var/should_track = TRUE
 
 /obj/item/underworld/coin/Initialize()

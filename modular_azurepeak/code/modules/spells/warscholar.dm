@@ -6,7 +6,7 @@
 	name = "Blade of Mystra"
 	desc = "The manifestation of the higher concept of a blade itself. Said to be drawn upon from Mystra's tresury of wisdom, each casting a poor facsimile of the perfect weapon They hold."
 	clothes_req = FALSE
-	drawmessage = "I imagine the perfect weapon, forged by arcyne knowledge, it's edge flawless. \
+	drawmessage = "I imagine the perfect weapon, forged by arcane knowledge, it's edge flawless. \
 	I feel it in my mind's eye -- but it's just out of reach. I pull away it's shadow, a bad copy, and yet it is one of a great weapon nonetheless... "
 	dropmessage = "Letting go, I watch the blade lose it's form, unable to stay stable without my energy rooting it to this world..."
 	overlay_state = "boundkatar"
@@ -16,8 +16,8 @@
 	cost = 1
 
 /obj/item/melee/touch_attack/rogueweapon/bladeofpsydon
-	name = "\improper arcyne push dagger"
-	desc = "This blade throbs, translucent and iridiscent, blueish arcyne energies running through it's translucent surface..."
+	name = "\improper arcane push dagger"
+	desc = "This blade throbs, translucent and iridiscent, blueish arcane energies running through it's translucent surface..."
 	catchphrase = null
 	icon = 'icons/mob/actions/roguespells.dmi'
 	icon_state = "katar_bound"

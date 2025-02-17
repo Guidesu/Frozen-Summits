@@ -579,22 +579,28 @@
 /obj/structure/fluff/clock/examine(mob/user)
 	. = ..()
 	if(!broke)
-		var/day = "... actually, WHAT dae is it?"
+		var/day = "... actually, WHAT day is it?"
 		switch(GLOB.dayspassed)
 			if(1)
-				day = "Moon's dae."
+				day = "Selday."
 			if(2)
-				day = "Tiw's dae."
+				day = "Tyrday."
 			if(3)
-				day = "Wedding's dae."
+				day = "Janday."
 			if(4)
-				day = "Thule's dae."
+				day = "Keleday."
 			if(5)
-				day = "Freyja's dae."
+				day = "Mystraday."
 			if(6)
-				day = "Saturn's dae."
+				day = "Lathday."
 			if(7)
-				day = "Sun's dae."
+				day = "Istiday."
+			if(8)
+				day = "Suneday."
+			if(9)
+				day = "Ogday."
+			if(10)
+				day = "Akaday."
 		. += "Oh no, it's [station_time_timestamp("hh:mm")] on a [day]"
 //		if(SSshuttle.emergency.mode == SHUTTLE_DOCKED)
 //			if(SSshuttle.emergency.timeLeft() < 30 MINUTES)
@@ -636,22 +642,28 @@
 /obj/structure/fluff/wallclock/examine(mob/user)
 	. = ..()
 	if(!broke)
-		var/day = "... actually, WHAT dae is it?"
+		var/day = "... actually, WHAT day is it?"
 		switch(GLOB.dayspassed)
 			if(1)
-				day = "Moon's dae."
+				day = "Selday."
 			if(2)
-				day = "Tiw's dae."
+				day = "Tyrday."
 			if(3)
-				day = "Wedding's dae."
+				day = "Janday."
 			if(4)
-				day = "Thule's dae."
+				day = "Keleday."
 			if(5)
-				day = "Freyja's dae."
+				day = "Mystraday."
 			if(6)
-				day = "Saturn's dae."
+				day = "Lathday."
 			if(7)
-				day = "Sun's dae."
+				day = "Istiday."
+			if(8)
+				day = "Suneday."
+			if(9)
+				day = "Ogday."
+			if(10)
+				day = "Akaday."
 		. += "Oh no, it's [station_time_timestamp("hh:mm")] on a [day]"
 //		testing("mode is [SSshuttle.emergency.mode] should be [SHUTTLE_DOCKED]")
 //		if(SSshuttle.emergency.mode == SHUTTLE_DOCKED)

@@ -98,19 +98,25 @@ GLOBAL_VAR_INIT(dayspassed, FALSE)
 		var/text_to_show
 		switch(GLOB.dayspassed)
 			if(1)
-				text_to_show = "DAWN OF THE FIRST DAE\nSELUNE'S DAE"
+				text_to_show = "DAWN OF THE FIRST DAY\nSELDAY"
 			if(2)
-				text_to_show = "DAWN OF THE SECOND DAE\nTYR'S DAE"
+				text_to_show = "DAWN OF THE SECOND DAY\nTYRDAY"
 			if(3)
-				text_to_show = "DAWN OF THE THIRD DAE\nWEDDING'S DAE"
+				text_to_show = "DAWN OF THE THIRD DAY\nJANDAY"
 			if(4)
-				text_to_show = "DAWN OF THE FOURTH DAE\nMYSTRA'S DAE"
+				text_to_show = "DAWN OF THE FOURTH DAY\nKELEDAY"
 			if(5)
-				text_to_show = "DAWN OF THE FIFTH DAE\nCHAUNTEA'S DAE"
+				text_to_show = "DAWN OF THE FIFTH DAY\nMYSTRADAY"
 			if(6)
-				text_to_show = "DAWN OF THE SIXTH DAE\nMORADIN'S DAE"
+				text_to_show = "DAWN OF THE SIXTH DAY\nLATHDAY"
 			if(7)
-				text_to_show = "DAWN OF THE SEVENTH DAE\nLATHANDER'S DAE"
+				text_to_show = "DAWN OF THE SEVENTH DAY\nISTIDAY"
+			if(8)
+				text_to_show = "DAWN OF THE EIGHTH DAY\nSUNEDAY"
+			if(9)
+				text_to_show = "DAWN OF THE NINTH DAY\nOGDAY"
+			if(10)
+				text_to_show = "DAWN OF THE TENTH DAY\nAKADAY"
 		if(!text_to_show)
 			return
 		if(text_to_show in mind.areas_entered)

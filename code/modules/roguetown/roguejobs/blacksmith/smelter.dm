@@ -171,7 +171,7 @@
 					var/alloy //moving each alloy to it's own var allows for possible additions later
 					var/steelalloy
 					var/bronzealloy
-//					var/adamantinealloy
+					var/adamantinealloy
 
 					for(var/obj/item/I in ore)
 						if(I.smeltresult == /obj/item/rogueore/coal)
@@ -182,10 +182,14 @@
 							bronzealloy = bronzealloy + 1
 						if(I.smeltresult == /obj/item/ingot/copper)
 							bronzealloy = bronzealloy + 2
-//						if(I.smeltresult == /obj/item/ingot/silver)
-//							adamantinealloy = adamantinealloy + 1
-//						if(I.smeltresult == /obj/item/ingot/steel)
-//							adamantinealloy = adamantinealloy + 2
+						if(I.smeltresult == /obj/item/ingot/adamant)
+							adamantinealloy = adamantinealloy + 1
+						if(I.smeltresult == /obj/item/ingot/gold)
+							adamantinealloy = adamantinealloy + 2
+						if(I.smeltresult == /obj/item/ingot/silver)
+							adamantinealloy = adamantinealloy + 3
+						if(I.smeltresult == /obj/item/ingot/steel)
+							adamantinealloy = adamantinealloy + 4
 
 					if(steelalloy == 7)
 						testing("STEEL ALLOYED")
@@ -194,9 +198,10 @@
 					else if(bronzealloy == 7)
 						testing("BRONZE ALLOYED")
 						alloy = /obj/item/ingot/bronze
-//					else if(adamantinealloy == 15)
-//						testing("ADAMANTINE ALLOYED")
-//						alloy = /obj/item/ingot/adamantine
+					else if(adamantinealloy == 10)
+						testing("ADAMANTINE ALLOYED")
+						maxore = 2 // 
+						alloy = /obj/item/ingot/adamantine
 					else
 						alloy = null
 

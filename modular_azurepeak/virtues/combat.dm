@@ -1,11 +1,11 @@
 /datum/virtue/combat/magical_potential
-	name = "Arcyne Potential"
-	desc = "I grasped the basics of arcyne magic at an early age, and have been able to prestidigitate for as long as I can remember. Combat-oriented classes get a weaker version of this virtue."
+	name = "Arcane Potential"
+	desc = "I grasped the basics of arcane magic at an early age, and have been able to prestidigitate for as long as I can remember."
 	added_skills = list(/datum/skill/magic/arcane = 1)
 
 /datum/virtue/combat/magical_potential/apply_to_human(mob/living/carbon/human/recipient)
 	if (!recipient.mind?.get_skill_level(/datum/skill/magic/arcane)) // we can do this because apply_to is always called first
-		recipient.mind?.adjust_spellpoints(2) // no martial-arcyne for you - not the intent of this virtue!
+		recipient.mind?.adjust_spellpoints(2) // no martial-arcane for you - not the intent of this virtue!
 		if (!recipient.mind?.has_spell(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation))
 			recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 	else

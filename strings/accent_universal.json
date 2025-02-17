@@ -1,17 +1,13 @@
 {
     "universal": {
-		"life": "lyfe",
-		"lantern": "lamptern",
-
 		"ERP": "bush whacking",
-		"day": "dae",
-		"monday": "moonsdae",
-		"tuesday": "tiwsdae",
-		"wednesday": "weddingsdae",
-		"thursday": "thulesdae",
-		"friday": "freyjasdae",
-		"saturday": "saturnsdae",
-		"sunday": "sunsdae",
+		"monday": "selday",
+		"tuesday": "tyrday",
+		"wednesday": "janday",
+		"thursday": "mystraday",
+		"friday": "lathday",
+		"saturday": "istiday",
+		"sunday": "suneday",
 		"stfu": "silence",
 		"skibidi": "foolish",
 		"ohio": "underworld",
@@ -73,8 +69,6 @@
 		"vibing": "relaxing",
 		"weirdo": "weerdoe",
 		"adonai": "ao",
-		"zombie": "zomble",
-		"skeleton": "skelelon",
 		"PQ": "reputation",
 		"sergant":  "sargent"
     }

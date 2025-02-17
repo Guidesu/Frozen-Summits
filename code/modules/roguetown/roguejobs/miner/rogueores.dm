@@ -29,6 +29,12 @@
 	icon_state = "oresilv[rand(1,3)]"
 	..()
 
+/obj/item/rogueore/adamant
+	name = "raw adamant"
+	desc = "A gleaming ore of moonlight hue."
+	icon_state = "oreada"
+	smeltresult = /obj/item/ingot/adamant
+	sellprice = 8
 
 /obj/item/rogueore/iron
 	name = "raw iron"
@@ -168,12 +174,14 @@
 	icon_state = "ingottin"
 	smeltresult = /obj/item/ingot/tin
 	sellprice = 15
+
 /obj/item/ingot/bronze
 	name = "bronze bar"
 	desc = "A hard and durable alloy favored by engineers and followers of Ravox alike."
 	icon_state = "ingotbronze"
 	smeltresult = /obj/item/ingot/bronze
 	sellprice = 30
+
 /obj/item/ingot/silver
 	name = "silver bar"
 	desc = "This bar radiates purity. Treasured by the realms."
@@ -187,9 +195,17 @@
 	icon_state = "ingotsteel"
 	smeltresult = /obj/item/ingot/steel
 	sellprice = 40
+
 /obj/item/ingot/adamantine
 	name = "adamantine bar"
-	desc = "Sacrificing the holy elements of silver for raw strength, this strange and powerful ingot's origin carries dark rumors.."
+	desc = "A powerful alloy forged from adamant using materials not entirely known to the less initiated..."
 	icon_state = "ingotadamantine"
 	smeltresult = /obj/item/ingot/adamantine
+	sellprice = 90
+
+/obj/item/ingot/adamant
+	name = "adamant bar"
+	desc = "A pure, black metal bar made of the superbly rare adamant ore."
+	icon_state = "ingotada"
+	smeltresult = /obj/item/ingot/adamant
 	sellprice = 90

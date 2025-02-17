@@ -4,33 +4,33 @@
 	crate_name = "Gifts of Knowledge"
 	crate_type = /obj/structure/closet/crate/chest/merchant
 
-/datum/supply_pack/rogue/Mage/Dorpel
-	name = "Dorpel"
+/datum/supply_pack/rogue/Mage/Diamond
+	name = "Diamond"
 	cost = 180
 	contains = list(/obj/item/roguegem/diamond)
 
-/datum/supply_pack/rogue/Mage/Rontz
-	name = "Rontz"
+/datum/supply_pack/rogue/Mage/Ruby
+	name = "Ruby"
 	cost = 150
 	contains = list(/obj/item/roguegem)
 
-/datum/supply_pack/rogue/Mage/Blortz
-	name = "Blortz"
+/datum/supply_pack/rogue/Mage/quartz
+	name = "Quartz"
 	cost = 120
 	contains = list(/obj/item/roguegem/blue)
 
-/datum/supply_pack/rogue/Mage/saffira
-	name = "Saffira"
+/datum/supply_pack/rogue/Mage/sapphire
+	name = "Sapphire"
 	cost = 90
 	contains = list(/obj/item/roguegem/violet)
 
-/datum/supply_pack/rogue/Mage/gemerald
-	name = "Gemerald"
+/datum/supply_pack/rogue/Mage/emerald
+	name = "Emerald"
 	cost = 70
 	contains = list(/obj/item/roguegem/green)
 
-/datum/supply_pack/rogue/Mage/toper
-	name = "Toper"
+/datum/supply_pack/rogue/Mage/topaz
+	name = "Topaz"
 	cost = 55
 	contains = list(/obj/item/roguegem/yellow)
 
