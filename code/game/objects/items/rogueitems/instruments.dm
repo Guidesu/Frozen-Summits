@@ -37,10 +37,6 @@
 //	soundloop.start()
 	. = ..()
 
-/obj/item/rogue/instrument/Destroy()
-	qdel(soundloop)
-	. = ..()
-
 /obj/item/rogue/instrument/dropped(mob/living/user, silent)
 	..()
 	if(soundloop)
@@ -55,7 +51,7 @@
 	user.changeNext_move(CLICK_CD_MELEE)
 	if(!playing)
 		var/note_color = "#7f7f7f" // uses MMO item rarity color grading
-		var/curfile = input(user, "Which song?", "Music", name) as null|anything in song_list
+		var/curfile = input(user, "Which song?", "Roguetown", name) as null|anything in song_list
 		if(!user)
 			return
 		if(user.mind)
@@ -78,11 +74,11 @@
 				if(6)
 					note_color = "#ff8000"
 					stressevent = /datum/stressevent/music/six
-/*		if(playing) //We already checked this???
+		if(playing)
 			playing = FALSE
 			soundloop.stop()
 			user.remove_status_effect(/datum/status_effect/buff/playing_music)
-			return*/
+			return
 		if(!(src in user.held_items))
 			return
 		if(user.get_inactive_held_item())

@@ -660,8 +660,6 @@
 	pass_flags = LETPASSTHROW
 	anchored = TRUE
 	layer = 2.8
-
-	soundloop = /datum/looping_sound/fireloop
 	var/obj/item/attachment = null
 	var/obj/item/reagent_containers/food/snacks/food = null
 	cookonme = TRUE
@@ -933,7 +931,6 @@
 	cookonme = TRUE
 	can_damage = TRUE
 	max_integrity = 30
-	soundloop = /datum/looping_sound/fireloop
 
 /obj/machinery/light/rogue/campfire/process()
 	..()
