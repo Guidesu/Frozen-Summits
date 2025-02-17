@@ -57,6 +57,9 @@
 	var/alert = null
 	sellprice = 10
 
+	grid_width = 32
+	grid_height = 32
+
 /obj/item/mundane/puzzlebox/medium/Initialize()
 	. = ..()
 	dice_roll = rand(6,20)
@@ -97,6 +100,9 @@
 	var/list/finished_ckeys = list()
 	var/dice_roll = null
 	sellprice = 150
+
+	grid_width = 32
+	grid_height = 32
 
 /obj/item/mundane/puzzlebox/impossible/Initialize()
 	. = ..()

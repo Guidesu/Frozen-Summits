@@ -238,6 +238,11 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Baroness dress"
 	path = /obj/item/clothing/suit/roguetown/shirt/belldress/baroness
 
+//PANTS
+/datum/loadout_item/skirt
+	name = "Skirt"
+	path = /obj/item/clothing/under/roguetown/skirt
+
 //ACCESSORIES
 /datum/loadout_item/stockings
 	name = "Stockings"
