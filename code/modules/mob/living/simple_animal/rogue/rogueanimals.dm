@@ -13,7 +13,16 @@
 	faction = list("rogueanimal")
 	robust_searching = 1
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
-	attack_sound = PUNCHWOOSH
+	footstep_type = FOOTSTEP_MOB_BAREFOOT
+	speak_chance = 1
+
+	turns_per_move = 5
+	move_to_delay = 8	// basically speed when player controlled. Lower is faster, a lot faster.
+	see_in_dark = 6
+	robust_searching = TRUE
+
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat = 1)
+
 	health = 40
 	maxHealth = 40
 	move_to_delay = 5
@@ -36,10 +45,41 @@
 	minimum_distance = 10
 	dodge_sound = 'sound/combat/dodge.ogg'
 	dodge_prob = 0
+	candodge = TRUE
+	var/tier = 0
+	search_objects = TRUE
+	can_saddle = FALSE
+
+	/// If this mob feeds on corpses.
+	var/body_eater = FALSE
+
+	/// If the creature is doing something they should STOP MOVING.
+	var/can_act = TRUE
+
+	/// Trolls eat more than wolves
+	var/food_max = 50
+
 	var/deaggroprob = 10
 	var/eat_forever
 	candodge = TRUE
 
+	var/summon_primer = null
+/mob/living/simple_animal/hostile/retaliate/rogue/onbite(mob/living/carbon/human/user)
+	visible_message(span_danger("[user] bites [src]!"))
+	playsound(src, "smallslash", 100, TRUE, -1)
+	var/bite_power = 3
+
+	if(HAS_TRAIT(user, TRAIT_STRONGBITE))
+		bite_power += ( user.STASTR )
+
+	apply_damage((bite_power), BRUTE)
+	..()
+
+/mob/living/simple_animal/hostile/retaliate/rogue/Move()
+	//If you cant act and dont have a player stop moving.
+	if(!can_act && !client)
+		return FALSE
+	..()
 
 /mob/living/simple_animal/hostile/retaliate/rogue/apply_damage(damage = 0,damagetype = BRUTE, def_zone = null, blocked = FALSE, forced = FALSE)
 	..()

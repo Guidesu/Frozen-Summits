@@ -104,3 +104,13 @@ require only minor tweaks.
 /// TRUE if we're ok with going down
 #define Z_LEVEL_DOWN 2
 #define LARGEST_Z_LEVEL_INDEX Z_LEVEL_DOWN
+/// Map spot is allowed
+#define MAP_DEPLOY_ALLOWED "allowed"
+/// Map spot has turfs that restrict deployment
+#define MAP_DEPLOY_BAD_TURFS "bad turfs"
+/// Map spot has areas that restrict deployment
+#define MAP_DEPLOY_BAD_AREA "bad area"
+/// Map spot has anchored objects that restrict deployment
+#define MAP_DEPLOY_ANCHORED_OBJECTS "anchored objects"
+/// Map spot is out of bounds from the maps x/y coordinates
+#define MAP_DEPLOY_OUTSIDE_MAP "outside map"
