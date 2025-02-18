@@ -54,7 +54,8 @@
 		/obj/item/roguecoin/silver/pile=4,
 		/obj/item/rogueweapon/pick=23,
 		/obj/item/riddleofsteel=2,
-		/obj/item/clothing/neck/roguetown/talkstone=2)
+		/obj/item/clothing/neck/roguetown/talkstone=2,
+		/obj/item/storage/backpack/rogue/bag_of_holding=5)
 	if(prob(70))
 		var/I = pickweight(loot)
 		new I(src)
