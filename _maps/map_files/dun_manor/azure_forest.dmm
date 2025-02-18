@@ -2894,7 +2894,10 @@
 "xa" = (
 /obj/structure/fluff/traveltile{
 	aportalid = "udarkout3";
-	aportalgoesto = "udarkin3"
+	aportalgoesto = "udarkin3";
+	icon = 'icons\roguetown\other_codebases\sojourn\obj\burrows.dmi';
+	icon_state = "maint_hole";
+	name = "burrow"
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
