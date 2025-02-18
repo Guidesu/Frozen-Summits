@@ -6,10 +6,10 @@
 	var/list/stored_skills
 	var/list/stored_experience
 	STASTR = 20
-	STACON = 15
-	STAEND = 13
-	STAPER = 14
-	STASPD = 13
+	STACON = 20
+	STAEND = 20
+	STAPER = 20
+	STASPD = 15
 	STAINT = 7
 	faction = list("wolves")
 
@@ -74,7 +74,7 @@
 	)
 
 /datum/species/werewolf/send_voice(mob/living/carbon/human/H)
-	playsound(get_turf(H), pick('sound/vo/mobs/wwolf/wolftalk1.ogg','sound/vo/mobs/wwolf/wolftalk2.ogg'), 100, TRUE, -1)
+	playsound(get_turf(H), pick('sound/vo/mobs/wwolf/wolftalk1.ogg','sound/vo/mobs/wwolf/wolftalk2.ogg'), 55, TRUE, -1)
 
 /datum/species/werewolf/regenerate_icons(mob/living/carbon/human/H)
 	H.icon = 'icons/roguetown/mob/monster/werewolf.dmi'

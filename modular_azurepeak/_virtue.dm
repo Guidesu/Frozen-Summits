@@ -26,6 +26,9 @@ GLOBAL_LIST_EMPTY(virtues)
 /datum/virtue/proc/apply_to_human(mob/living/carbon/human/recipient)
 	return
 
+/datum/virtue/proc/apply_to_species(datum/species/recipient)
+	return
+
 /datum/virtue/proc/handle_traits(mob/living/carbon/human/recipient)
 	if (!LAZYLEN(added_traits))
 		return

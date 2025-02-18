@@ -21,15 +21,43 @@
 
 //-------------------
 
-/datum/virtue/size/lycan
+/datum/virtue/lycan
 	name = "Lycanthropic Lineage"
 	desc = "Born of the feral bloodline, my frame is broad, my strength immense, and my constitution unmatched. However, my mind is often clouded, a reflection of the wild instincts within. The sharpness of my claws and the deep, resonant howl that escapes my throat speak of the beast that stirs in my soul. The moon calls to me, drawing me closer to my true form, where man and wolf converge in a primal dance of power and fury. Through the gift of transformation and a name that marks my rebirth, I stride between civilization and the wilds, embodying both"
 
-/datum/virtue/size/lycan/apply_to_human(mob/living/carbon/human/recipient)
+/datum/virtue/lycan/apply_to_human(mob/living/carbon/human/recipient)
+	// Add spells/verbs
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/claws)
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/howl/call_of_the_moon)
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/cinematic_shapeshift)
 	recipient.verbs += /mob/living/carbon/human/proc/werewolf_regenerate
+	recipient.dna.species.soundpack_m = new /datum/voicepack/werewolf
+	recipient.dna.species.soundpack_f = new /datum/voicepack/werewolf_female
+	recipient.AddComponent(/datum/component/werewolf_voice)
+
+/datum/component/werewolf_voice
+	var/static/list/werewolf_sounds = list(
+		'sound/vo/mobs/wwolf/wolftalk1.ogg',
+		'sound/vo/mobs/wwolf/wolftalk2.ogg'
+	)
+
+
+/datum/component/werewolf_voice/Initialize()
+	RegisterSignal(parent, COMSIG_MOB_SAY, .proc/handle_speech)
+
+/datum/component/werewolf_voice/proc/handle_speech(mob/living/carbon/human/H)
+	playsound(
+		get_turf(H),
+		pick(werewolf_sounds),
+		105,
+		TRUE,
+		-1
+	)
+
+/datum/component/werewolf_voice/Destroy()
+	UnregisterSignal(parent, COMSIG_MOB_SAY)
+	return ..()
+
 /*
 /datum/virtue/size/lycan_female
 	name = "Lycanthropic Lineage (Female)"

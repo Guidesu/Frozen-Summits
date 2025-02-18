@@ -3715,6 +3715,7 @@
 #include "modular_azurepeak\virtues\size.dm"
 #include "modular_azurepeak\virtues\thief.dm"
 #include "modular_azurepeak\virtues\utility.dm"
+#include "modular_guidesa\bg3_music.dm"
 #include "modular_guidesa\general_stuffs.dm"
 #include "modular_guidesa\items.dm"
 #include "modular_guidesa\quirks_guidesa.dm"
