@@ -240,9 +240,7 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/woods)
 "bS" = (
-/obj/effect/landmark/start/adventurerlate{
-	dir = 1
-	},
+/obj/effect/landmark/start/wildnight,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
 "bU" = (
@@ -370,9 +368,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
 "cQ" = (
-/obj/effect/landmark/start/adventurerlate{
-	dir = 1
-	},
+/obj/effect/landmark/start/wildnight,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/woods)
 "cR" = (
@@ -611,9 +607,7 @@
 	dir = 8;
 	icon_state = "border"
 	},
-/obj/effect/landmark/start/adventurerlate{
-	dir = 1
-	},
+/obj/effect/landmark/start/wildnight,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/woods)
 "eG" = (
@@ -1060,9 +1054,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 4
 	},
-/obj/effect/landmark/start/adventurerlate{
-	dir = 1
-	},
+/obj/effect/landmark/start/wildnight,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/woods)
 "hP" = (
@@ -1362,9 +1354,7 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
 "kf" = (
-/obj/effect/landmark/start/adventurerlate{
-	dir = 1
-	},
+/obj/effect/landmark/start/wildnight,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
 "kg" = (
@@ -3106,9 +3096,7 @@
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/outdoors/woods)
 "yE" = (
-/obj/effect/landmark/start/adventurerlate{
-	dir = 1
-	},
+/obj/effect/landmark/start/wildnight,
 /turf/open/floor/rogue/grass/green,
 /area/rogue/outdoors/woods)
 "yH" = (
@@ -5281,9 +5269,7 @@
 /turf/open/water/pond,
 /area/rogue/outdoors/woods)
 "Ql" = (
-/obj/effect/landmark/start/adventurerlate{
-	dir = 1
-	},
+/obj/effect/landmark/start/wildnight,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors/woods)
 "Qm" = (
@@ -5532,9 +5518,7 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
 "Sk" = (
-/obj/effect/landmark/start/adventurerlate{
-	dir = 1
-	},
+/obj/effect/landmark/start/wildnight,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods)
 "So" = (

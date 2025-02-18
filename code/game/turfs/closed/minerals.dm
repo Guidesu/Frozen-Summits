@@ -624,6 +624,10 @@
 	mineralChance = 33
 	mineralSpawnChanceList = list(/turf/closed/mineral/rogue/salt = 5,/turf/closed/mineral/rogue/gold = 9,/turf/closed/mineral/rogue/silver = 5,/turf/closed/mineral/rogue/iron = 33,/turf/closed/mineral/rogue/copper = 20,/turf/closed/mineral/rogue/tin = 12,/turf/closed/mineral/rogue/coal = 19, /turf/closed/mineral/rogue/gem = 3)
 
+/turf/closed/mineral/random/rogue/underdark
+	icon_state = "minrandund"
+	mineralChance = 40
+	mineralSpawnChanceList = list(/turf/closed/mineral/rogue/gold = 14,/turf/closed/mineral/rogue/silver = 10,/turf/closed/mineral/rogue/iron = 33,/turf/closed/mineral/rogue/copper = 15,/turf/closed/mineral/rogue/tin = 8,/turf/closed/mineral/rogue/coal = 14, /turf/closed/mineral/rogue/gem = 8, /turf/closed/mineral/rogue/adamant = 5, /turf/closed/mineral/rogue/mithral = 5)
 
 //begin actual mineral turfs
 /turf/closed/mineral/rogue
@@ -647,6 +651,20 @@
 	spread = 0
 
 /turf/closed/mineral/rogue/gold
+	icon_state = "mingold"
+	mineralType = /obj/item/rogueore/gold
+	rockType = /obj/item/natural/rock/gold
+	spreadChance = 5
+	spread = 1
+
+/turf/closed/mineral/rogue/adamant
+	icon_state = "mingold"
+	mineralType = /obj/item/rogueore/gold
+	rockType = /obj/item/natural/rock/gold
+	spreadChance = 5
+	spread = 1
+
+/turf/closed/mineral/rogue/mithral
 	icon_state = "mingold"
 	mineralType = /obj/item/rogueore/gold
 	rockType = /obj/item/natural/rock/gold

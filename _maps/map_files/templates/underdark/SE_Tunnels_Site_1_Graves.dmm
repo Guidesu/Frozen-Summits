@@ -1,0 +1,161 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/mineral/random/rogue/underdark,
+/area/rogue/under/underdark)
+"b" = (
+/obj/structure/closet/dirthole/closed/loot,
+/obj/structure/gravemarker,
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark)
+"E" = (
+/obj/structure/closet/dirthole/closed/loot,
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark)
+"J" = (
+/obj/structure/mineral_door/bars,
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark)
+"L" = (
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark)
+"R" = (
+/obj/structure/closet/dirthole/grave,
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark)
+"W" = (
+/obj/structure/bars/cemetery,
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark)
+
+(1,1,1) = {"
+a
+a
+R
+W
+L
+L
+L
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+b
+R
+W
+L
+L
+L
+L
+a
+a
+"}
+(3,1,1) = {"
+a
+L
+E
+W
+J
+W
+W
+W
+L
+a
+"}
+(4,1,1) = {"
+W
+L
+E
+R
+L
+E
+R
+W
+L
+L
+"}
+(5,1,1) = {"
+W
+L
+L
+b
+L
+L
+L
+J
+L
+L
+"}
+(6,1,1) = {"
+W
+b
+L
+L
+L
+b
+L
+W
+W
+L
+"}
+(7,1,1) = {"
+a
+R
+E
+L
+L
+R
+R
+W
+L
+L
+"}
+(8,1,1) = {"
+a
+W
+W
+J
+J
+W
+W
+W
+L
+a
+"}
+(9,1,1) = {"
+a
+L
+L
+L
+L
+L
+L
+L
+a
+a
+"}
+(10,1,1) = {"
+a
+a
+L
+L
+L
+L
+a
+a
+a
+a
+"}

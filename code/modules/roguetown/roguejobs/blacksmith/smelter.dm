@@ -188,7 +188,7 @@
 							adamantinealloy = adamantinealloy + 2
 						if(I.smeltresult == /obj/item/ingot/silver)
 							adamantinealloy = adamantinealloy + 3
-						if(I.smeltresult == /obj/item/ingot/steel)
+						if(I.smeltresult == /obj/item/ingot/mithral)
 							adamantinealloy = adamantinealloy + 4
 
 					if(steelalloy == 7)

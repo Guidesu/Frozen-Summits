@@ -187,7 +187,8 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	ambush_times = list("night","dawn","dusk","day")
 	ambush_types = list(
 				/turf/open/floor/rogue/dirt,
-				/turf/open/floor/rogue/dirt/road)
+				/turf/open/floor/rogue/dirt/road,
+				/turf/open/floor/rogue/naturalstone)
 	ambush_mobs = list(
 				/mob/living/carbon/human/species/elf/dark/npc/basic/ambush = 30,
 				/mob/living/carbon/human/species/goblin/npc/ambush/cave = 20,
@@ -198,6 +199,15 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 
 /area/rogue/under/underdark/harrowhall
 	name = "harrowhall"
+	icon_state = "spidercave"
+	first_time_text = "HARROWHALL"
+	droning_sound = 'sound/music/area/underworlddrone.ogg'
+	droning_sound_dusk = null
+	droning_sound_night = null
+	converted_type = /area/rogue/outdoors/dungeon1
+
+/area/rogue/under/underdark/harrowhall
+	name = "underdark"
 	icon_state = "spidercave"
 	first_time_text = "HARROWHALL"
 	droning_sound = 'sound/music/area/underworlddrone.ogg'
