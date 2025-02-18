@@ -58,8 +58,8 @@
 
 /obj/effect/landmark/mapGenerator/rogue/underdark
 	mapGeneratorType = /datum/mapGenerator/underdark
-	endTurfX = 128
-	endTurfY = 128
+	endTurfX = 200
+	endTurfY = 200
 	startTurfX = 1
 	startTurfY = 1
 
