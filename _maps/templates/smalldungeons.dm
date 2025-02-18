@@ -116,6 +116,7 @@
 		/obj/item/rogueweapon/hammer = 3,
 		/obj/item/rogueweapon/tongs = 3,
 		/obj/item/rogueweapon/pick = 3,
+		/obj/item/storage/backpack/rogue/bag_of_holding = 1,
 
 		//armor
 		/obj/item/clothing/suit/roguetown/armor/leather/studded = 2,
@@ -233,7 +234,8 @@
 		/obj/item/storage/bag/tray = 3,
 		/obj/item/mundane/puzzlebox/medium = 2,
 		/obj/item/mundane/puzzlebox/easy = 2,
-		/obj/item/mundane/puzzlebox/impossible = 1
+		/obj/item/mundane/puzzlebox/impossible = 1,
+		/obj/item/storage/backpack/rogue/bag_of_holding = 1
 	)
 	lootcount = 1
 
@@ -290,7 +292,8 @@
 		/obj/item/rogueweapon/stoneaxe = 3,
 		/obj/item/rogueweapon/hammer = 3,
 		/obj/item/rogueweapon/tongs = 3,
-		/obj/item/rogueweapon/pick = 3
+		/obj/item/rogueweapon/pick = 3,
+		/obj/item/storage/backpack/rogue/bag_of_holding = 1
 	)
 	lootcount = 1
 
@@ -346,6 +349,7 @@
 		/obj/item/book/granter/spell/blackstone/blindness = 1,
 		/obj/item/book/granter/spell/blackstone/invisibility = 3,
 		/obj/item/book/granter/spell/blackstone/sicknessray = 2,
-		/obj/item/book/granter/spell/blackstone/bonechill = 2
+		/obj/item/book/granter/spell/blackstone/bonechill = 2,
+		/obj/item/storage/backpack/rogue/bag_of_holding = 3
 	)
 	lootcount = 1

@@ -966,9 +966,15 @@
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/under/underdark/harrowhall)
 "sh" = (
-/obj/effect/landmark/map_load_mark/se_tunnels_s1,
-/turf/closed/mineral/random/rogue/underdark,
-/area/rogue/under/underdark)
+/obj/structure/closet/crate/chest/gold,
+/obj/item/roguegem/random,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
+/obj/item/storage/backpack/rogue/bag_of_holding,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/under/underdark/harrowhall)
 "sk" = (
 /obj/effect/landmark/mapGenerator/rogue/underdark,
 /turf/closed/mineral/rogue/bedrock{
@@ -1098,6 +1104,12 @@
 	},
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/shelter)
+"uw" = (
+/obj/structure/rack/rogue,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/item/storage/backpack/rogue/bag_of_holding,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/town/basement)
 "uM" = (
 /mob/living/carbon/human/species/elf/dark/npc/basic/ambush,
 /turf/open/floor/rogue/woodturned,
@@ -1645,6 +1657,10 @@
 /obj/item/rope,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/under/underdark/harrowhall)
+"Ez" = (
+/obj/effect/landmark/map_load_mark/se_tunnels_s1,
+/turf/closed/mineral/random/rogue/underdark,
+/area/rogue/under/underdark)
 "EA" = (
 /turf/closed/mineral/rogue/mithral,
 /area/rogue/under/underdark)
@@ -2465,6 +2481,7 @@
 /obj/item/clothing/head/roguetown/headdress/alt,
 /obj/item/clothing/suit/roguetown/shirt/dress/silkdress/random,
 /obj/structure/closet/crate/roguecloset,
+/obj/item/storage/backpack/rogue/bag_of_holding,
 /turf/open/floor/rogue/carpet,
 /area/rogue/under/underdark/harrowhall)
 "TA" = (
@@ -29084,7 +29101,7 @@ nF
 nF
 nF
 nF
-sh
+Ez
 nF
 nF
 nF
@@ -30938,7 +30955,7 @@ nF
 nF
 nF
 nF
-sh
+Ez
 nF
 nF
 nF
@@ -36119,7 +36136,7 @@ nF
 nF
 nF
 nF
-sh
+Ez
 nF
 gT
 gT
@@ -39809,7 +39826,7 @@ nF
 nF
 nF
 nF
-sh
+Ez
 nF
 nF
 nF
@@ -46646,7 +46663,7 @@ nF
 nF
 nF
 Ia
-gn
+uw
 uW
 ch
 ch
@@ -99172,7 +99189,7 @@ CC
 ne
 pG
 aP
-pG
+sh
 CC
 iU
 mm
