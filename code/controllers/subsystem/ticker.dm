@@ -138,7 +138,11 @@ SUBSYSTEM_DEF(ticker)
 
 	if(isemptylist(music))
 		music = world.file2list(ROUND_START_MUSIC_LIST, "\n")
-		login_music = pick('sound/music/title.ogg','sound/music/title2.ogg')
+		login_music = pick(music)
+	else
+		login_music = pick('sound/music/bg3_title_1.ogg','sound/music/bg3_title_2.ogg')//,'sound/music/bg2_title_1.ogg')
+
+
 
 	if(!GLOB.syndicate_code_phrase)
 		GLOB.syndicate_code_phrase	= generate_code_phrase(return_list=TRUE)
