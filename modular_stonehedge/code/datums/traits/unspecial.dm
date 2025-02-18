@@ -673,7 +673,7 @@
 
 /datum/quirk/wild_night/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
-	var/turf/location = get_spawn_turf_for_job("Pilgrim")
+	var/turf/location = get_spawn_turf_for_job("Wilder")
 	H.forceMove(location)
 	grant_lit_torch(H)
 

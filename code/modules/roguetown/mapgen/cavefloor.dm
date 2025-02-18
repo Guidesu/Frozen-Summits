@@ -58,8 +58,8 @@
 
 /obj/effect/landmark/mapGenerator/rogue/underdark
 	mapGeneratorType = /datum/mapGenerator/underdark
-	endTurfX = 128
-	endTurfY = 128
+	endTurfX = 200
+	endTurfY = 200
 	startTurfX = 1
 	startTurfY = 1
 
@@ -71,10 +71,11 @@
 	allowed_turfs = list(/turf/open/floor/rogue/dirt,/turf/open/floor/rogue/dirt/road)
 	spawnableAtoms = list(
 		/obj/item/natural/stone = 10,
-		/obj/structure/roguerock=5,
-		/obj/structure/flora/rogueshroom=20,
-		/obj/structure/flora/roguegrass=15,
-		/obj/structure/closet/dirthole/closed/loot=10,
+		/obj/structure/roguerock = 5,
+		/obj/structure/flora/rogueshroom = 20,
+		/obj/structure/flora/rogueshroom/big = 10,
+		/obj/structure/flora/roguegrass = 15,
+		/obj/structure/closet/dirthole/closed/loot = 10,
 		/obj/item/natural/rock = 3, 
 		/obj/structure/glowshroom = 5,
 		/obj/structure/flora/roguegrass/herb/underdark/random = 25)

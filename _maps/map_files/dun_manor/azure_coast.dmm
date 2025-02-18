@@ -948,9 +948,7 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors/beach)
 "fh" = (
-/obj/effect/landmark/start/adventurerlate{
-	dir = 1
-	},
+/obj/effect/landmark/start/wildnight,
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/beach/forest)
 "fi" = (
@@ -1248,9 +1246,7 @@
 	},
 /area/rogue/outdoors/beach/forest)
 "hh" = (
-/obj/effect/landmark/start/adventurerlate{
-	dir = 1
-	},
+/obj/effect/landmark/start/wildnight,
 /turf/open/floor/rogue/snow{
 	color = "e6f2ff"
 	},
@@ -1464,9 +1460,7 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/beach/forest)
 "iY" = (
-/obj/effect/landmark/start/adventurerlate{
-	dir = 1
-	},
+/obj/effect/landmark/start/wildnight,
 /turf/open/floor/rogue/dirt/road{
 	color = "80ffff"
 	},
@@ -2184,9 +2178,7 @@
 /turf/open/transparent/openspace,
 /area/rogue/indoors/cave)
 "oT" = (
-/obj/effect/landmark/start/adventurerlate{
-	dir = 1
-	},
+/obj/effect/landmark/start/wildnight,
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/beach/forest)
 "oX" = (
@@ -3675,9 +3667,7 @@
 /turf/open/water/swamp,
 /area/rogue/indoors/cave)
 "Ah" = (
-/obj/effect/landmark/start/adventurerlate{
-	dir = 1
-	},
+/obj/effect/landmark/start/wildnight,
 /turf/open/floor/rogue/wood,
 /area/rogue/outdoors/beach/forest)
 "Ai" = (
@@ -4956,9 +4946,7 @@
 	},
 /area/rogue/indoors/cave)
 "JD" = (
-/obj/effect/landmark/start/adventurerlate{
-	dir = 1
-	},
+/obj/effect/landmark/start/wildnight,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/outdoors/beach/forest)
 "JE" = (

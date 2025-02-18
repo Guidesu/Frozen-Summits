@@ -11,6 +11,35 @@
 	max_w_class = WEIGHT_CLASS_NORMAL
 	not_while_equipped = TRUE
 
+/datum/component/storage/concrete/roguetown/bagofholding
+	screen_max_rows = 9
+	screen_max_columns = 6
+	max_w_class = WEIGHT_CLASS_GIGANTIC
+	not_while_equipped = TRUE
+	allow_big_nesting = TRUE
+
+/datum/component/storage/concrete/roguetown/bagofholding/handle_item_insertion(obj/item/W, prevent_warning = FALSE, mob/user, datum/component/storage/remote, params, storage_click = FALSE)
+	var/atom/A = parent
+	if(A == W)		//don't put myself into myself.
+		return
+	var/list/obj/item/storage/backpack/rogue/bag_of_holding/matching = typecache_filter_list(W.GetAllContents(), typecacheof(/obj/item/storage/backpack/rogue/bag_of_holding))
+	matching -= A
+	if(istype(W, /obj/item/storage/backpack/rogue/bag_of_holding) || matching.len)
+		var/safety = alert(user, "Doing this will have extremely dire consequences for yourself and everything surrounding you.", "Put in [A.name]?", "Abort", "Proceed")
+		if(safety != "Proceed" || QDELETED(A) || QDELETED(W) || QDELETED(user) || !user.canUseTopic(A, BE_CLOSE, iscarbon(user)))
+			return
+		var/turf/loccheck = get_turf(A)
+		to_chat(user, span_danger("The dimensional spaces of the bags of holding conflict with one another!"))
+		qdel(W)
+		playsound(loccheck,'sound/blank.ogg', 200, TRUE)
+
+		message_admins("[ADMIN_LOOKUPFLW(user)] detonated a bag of holding at [ADMIN_VERBOSEJMP(loccheck)].")
+		log_game("[key_name(user)] detonated a bag of holding at [loc_name(loccheck)].")
+		explosion(A, heavy_impact_range = 3, light_impact_range = 5, smoke = TRUE, soundin = pick('sound/misc/explode/incendiary (1).ogg','sound/misc/explode/incendiary (2).ogg'))
+		qdel(A)
+		return
+	. = ..()
+
 /datum/component/storage/concrete/roguetown/surgery_bag
 	screen_max_rows = 5
 	screen_max_columns = 4

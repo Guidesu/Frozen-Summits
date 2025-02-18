@@ -498,7 +498,7 @@
 	icon_state = "t[rand(1,4)]stump"
 
 /obj/structure/flora/rogueshroom/big
-	name = "mushroom"
+	name = "Zurkhwood"
 	desc = "Mushrooms are the only happy beings in this place."
 	icon = 'icons/roguetown/misc/fungal_tree.dmi'
 

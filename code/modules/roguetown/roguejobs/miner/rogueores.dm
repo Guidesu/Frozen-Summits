@@ -31,10 +31,25 @@
 
 /obj/item/rogueore/adamant
 	name = "raw adamant"
-	desc = "A gleaming ore of moonlight hue."
-	icon_state = "oreada"
+	desc = "A gleaming ore of black hue."
+	icon_state = "oreadamant1"
 	smeltresult = /obj/item/ingot/adamant
 	sellprice = 8
+
+/obj/item/rogueore/adamant/Initialize()
+	icon_state = "oreadamant[rand(1,3)]"
+	..()
+
+/obj/item/rogueore/mithral
+	name = "raw mithral"
+	desc = "A gleaming ore of moonlight hue."
+	icon_state = "oremithral1"
+	smeltresult = /obj/item/ingot/mithral
+	sellprice = 8
+
+/obj/item/rogueore/adamant/Initialize()
+	icon_state = "oremithral[rand(1,3)]"
+	..()
 
 /obj/item/rogueore/iron
 	name = "raw iron"
@@ -206,6 +221,13 @@
 /obj/item/ingot/adamant
 	name = "adamant bar"
 	desc = "A pure, black metal bar made of the superbly rare adamant ore."
-	icon_state = "ingotada"
+	icon_state = "ingotadamant"
 	smeltresult = /obj/item/ingot/adamant
-	sellprice = 90
+	sellprice = 150
+
+/obj/item/ingot/mithral
+	name = "mithral bar"
+	desc = "Precious Truemetal. Desirable to many, but just as rare."
+	icon_state = "ingotmithral"
+	smeltresult = /obj/item/ingot/mithral
+	sellprice = 150

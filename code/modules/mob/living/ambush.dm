@@ -60,6 +60,10 @@ GLOBAL_VAR_INIT(ambush_mobconsider_cooldown, 15 SECONDS) // Cooldown for each in
 		if(isturf(RS.loc))
 			testing("foundshroom")
 			possible_targets += RS.loc
+	for(var/obj/item/natural/rock/RR in view(5, src))
+		if(isturf(RR.loc))
+			testing("foundrock")
+			possible_targets += RR.loc
 	if(possible_targets.len)
 		mob_timers["ambushlast"] = world.time
 		for(var/mob/living/V in victimsa)

@@ -585,6 +585,21 @@
 	sewrepair = TRUE
 	component_type = /datum/component/storage/concrete/roguetown/backpack
 
+/obj/item/storage/backpack/rogue/bag_of_holding
+	name = "bag of holding"
+	desc = ""
+	icon_state = "rogueboh"
+	item_state = "rogueboh"
+	icon = 'icons/roguetown/clothing/storage.dmi'
+	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = ITEM_SLOT_BACK_L
+	resistance_flags = FIRE_PROOF
+	max_integrity = 600
+	equip_sound = 'sound/blank.ogg'
+	bloody_icon_state = "bodyblood"
+	sewrepair = TRUE
+	component_type = /datum/component/storage/concrete/roguetown/bagofholding
+
 /obj/item/storage/belt/rogue/leather/plaquegold/steward
 	name = "fancy gold belt"
 	desc = "A dark belt with real gold making up the buckle and highlights. How bougie."

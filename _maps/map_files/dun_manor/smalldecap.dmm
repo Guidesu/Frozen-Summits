@@ -2291,7 +2291,6 @@
 	name = "inhumen rune";
 	color = "#61190b"
 	},
-/obj/item/reagent_containers/powder/health,
 /obj/item/rogueweapon/huntingknife/idagger/steel,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/mountains/decap/stepbelow)
@@ -2749,7 +2748,6 @@
 /obj/structure/closet/crate/chest/old_crate,
 /obj/item/reagent_containers/powder/ozium,
 /obj/item/reagent_containers/powder/ozium,
-/obj/item/reagent_containers/powder/mana,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/outdoors/mountains/decap/stepbelow)
 "HI" = (
