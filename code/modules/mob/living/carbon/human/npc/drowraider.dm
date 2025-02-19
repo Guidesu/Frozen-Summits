@@ -4,7 +4,7 @@ GLOBAL_LIST_INIT(drow_aggro, world.file2list("strings/rt/drowraideraggrolines.tx
 /mob/living/carbon/human/species/elf/dark/npc // Parent type for NPC drow. Allows for basic AI to apply to all types of NPCs, but not equipment or stats.
 	aggressive=1 // Makes them hostile
 	mode = AI_IDLE // Enables AI and waits for special circumstances
-	faction = list("darkseldarine") // Assigns them to a 'team', so they dont kill eachother.
+	faction = list("darkseldarine","spiders") // Assigns them to a 'team', so they dont kill eachother.
 	ambushable = FALSE // Makes them not trigger random ambushes
 	dodgetime = 30
 	flee_in_pain = TRUE // Makes them run away and play combat safe when health is low
@@ -59,7 +59,7 @@ GLOBAL_LIST_INIT(drow_aggro, world.file2list("strings/rt/drowraideraggrolines.tx
 /mob/living/carbon/human/species/elf/dark/npc/basic
 	aggressive=1
 	mode = AI_IDLE
-	faction = list("darkseldarine")
+	faction = list("darkseldarine","spiders")
 	ambushable = FALSE
 	dodgetime = 30
 	flee_in_pain = TRUE
@@ -160,7 +160,7 @@ GLOBAL_LIST_INIT(drow_aggro, world.file2list("strings/rt/drowraideraggrolines.tx
 /mob/living/carbon/human/species/elf/dark/npc/boss
 	aggressive=1
 	mode = AI_IDLE
-	faction = list("darkseldarine")
+	faction = list("darkseldarine","spiders")
 	ambushable = FALSE
 	dodgetime = 30
 	flee_in_pain = FALSE

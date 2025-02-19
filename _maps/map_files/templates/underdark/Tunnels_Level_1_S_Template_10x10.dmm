@@ -1,0 +1,130 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue)
+"z" = (
+/turf/closed/mineral/random/rogue/underdark,
+/area/rogue)
+
+(1,1,1) = {"
+z
+z
+a
+a
+a
+a
+a
+z
+z
+z
+"}
+(2,1,1) = {"
+z
+a
+a
+a
+a
+a
+a
+a
+z
+z
+"}
+(3,1,1) = {"
+z
+a
+a
+a
+a
+a
+a
+a
+a
+z
+"}
+(4,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(5,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(6,1,1) = {"
+a
+a
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(7,1,1) = {"
+z
+a
+a
+a
+a
+a
+a
+a
+a
+a
+"}
+(8,1,1) = {"
+z
+a
+a
+a
+a
+a
+a
+a
+a
+z
+"}
+(9,1,1) = {"
+z
+a
+a
+a
+a
+a
+a
+a
+z
+z
+"}
+(10,1,1) = {"
+z
+z
+a
+a
+a
+a
+z
+z
+z
+z
+"}

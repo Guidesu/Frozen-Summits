@@ -1,0 +1,139 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/mineral/random/rogue/underdark,
+/area/rogue/under/underdark/dungeon)
+"e" = (
+/turf/closed/mineral/rogue/adamant,
+/area/rogue/under/underdark/dungeon)
+"v" = (
+/turf/open/lava,
+/area/rogue/under/underdark/dungeon)
+"H" = (
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/underdark/dungeon)
+"Q" = (
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark/dungeon)
+
+(1,1,1) = {"
+a
+a
+Q
+H
+H
+H
+Q
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+Q
+H
+H
+v
+H
+H
+H
+a
+a
+"}
+(3,1,1) = {"
+a
+H
+H
+v
+v
+v
+v
+H
+H
+a
+"}
+(4,1,1) = {"
+Q
+H
+v
+a
+a
+a
+H
+H
+H
+Q
+"}
+(5,1,1) = {"
+Q
+H
+v
+a
+e
+a
+v
+v
+H
+Q
+"}
+(6,1,1) = {"
+Q
+H
+H
+a
+a
+a
+v
+v
+H
+Q
+"}
+(7,1,1) = {"
+a
+H
+v
+v
+v
+v
+v
+H
+H
+Q
+"}
+(8,1,1) = {"
+a
+H
+H
+v
+v
+v
+H
+H
+Q
+a
+"}
+(9,1,1) = {"
+a
+Q
+H
+H
+v
+H
+H
+Q
+a
+a
+"}
+(10,1,1) = {"
+a
+a
+Q
+H
+H
+H
+a
+a
+a
+a
+"}

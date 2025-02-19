@@ -1,0 +1,168 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark/dungeon)
+"f" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/underdark/dungeon)
+"h" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/underdark/dungeon)
+"q" = (
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/under/underdark/dungeon)
+"s" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/underdark/dungeon)
+"u" = (
+/obj/structure/fluff/statue/spider,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/underdark/dungeon)
+"y" = (
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/underdark/dungeon)
+"M" = (
+/turf/closed/mineral/random/rogue/underdark,
+/area/rogue/under/underdark/dungeon)
+"Q" = (
+/mob/living/carbon/human/species/elf/dark/npc/boss,
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark/dungeon)
+"V" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/spider/mutated,
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark/dungeon)
+
+(1,1,1) = {"
+M
+M
+a
+a
+a
+a
+a
+M
+M
+M
+"}
+(2,1,1) = {"
+M
+a
+a
+a
+a
+V
+a
+a
+M
+M
+"}
+(3,1,1) = {"
+M
+V
+q
+a
+a
+y
+y
+a
+a
+M
+"}
+(4,1,1) = {"
+a
+a
+y
+s
+h
+s
+q
+a
+a
+a
+"}
+(5,1,1) = {"
+a
+a
+a
+h
+u
+f
+Q
+V
+a
+a
+"}
+(6,1,1) = {"
+a
+a
+a
+s
+h
+s
+y
+a
+a
+a
+"}
+(7,1,1) = {"
+M
+a
+V
+a
+y
+y
+q
+a
+a
+a
+"}
+(8,1,1) = {"
+M
+a
+a
+a
+a
+a
+a
+a
+a
+M
+"}
+(9,1,1) = {"
+M
+a
+a
+a
+a
+a
+a
+a
+M
+M
+"}
+(10,1,1) = {"
+M
+M
+a
+a
+a
+a
+M
+M
+M
+M
+"}
