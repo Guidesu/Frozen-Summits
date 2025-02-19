@@ -3818,6 +3818,10 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
+"fmV" = (
+/obj/effect/landmark/observer_start,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town)
 "fna" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
@@ -74648,7 +74652,7 @@ sPC
 sPC
 sPC
 sPC
-sPC
+fmV
 sPC
 sPC
 sPC
