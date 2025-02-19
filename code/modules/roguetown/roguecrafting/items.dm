@@ -850,6 +850,7 @@
 				/obj/item/jingle_bells = 1,
 				)
 	craftdiff = 0
+<<<<<<< HEAD
 /*
 /datum/crafting_recipe/roguetown/shinobiarrow
 	name = "shinobi arrow(5)"
@@ -880,6 +881,11 @@
 	reqs = list(/obj/item/rogueweapon/sickle/kama = 1,
 				/obj/item/rope/chain = 1)
 	craftdiff = 1
+=======
+
+// BOUQUETS & CROWNS
+
+>>>>>>> 8e04fe506a (Update items.dm)
 /datum/crafting_recipe/roguetown/bouquet_rosa
 	name = "rosa bouquet"
 	result = /obj/item/bouquet/rosa
