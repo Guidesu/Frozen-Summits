@@ -47,6 +47,7 @@
 #define TRAIT_GUARDSMAN "Vigilant Guardsman"
 #define TRAIT_KNIGHTSMAN "Royal Defiance"
 #define TRAIT_WOODSMAN "Talented Woodsman"
+#define TRAIT_UNDERDARKLING "Underdark Adept"
 #define TRAIT_VAMPIRIC_CURSE "Unholy Curse"
 #define TRAIT_INQUISITION "Member of the Inquisition"
 #define TRAIT_GOODTRAINER "Good Trainer"
@@ -144,6 +145,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_GUARDSMAN = span_info("I am vigilant in my duties. In the town of Frozen Summit, my abilities are sharper due to my routine and familiarity."),
 	TRAIT_KNIGHTSMAN = span_info("I am a stalwart defender of the town. In the keep of Frozen Summit, my abilities are sharper due to my routine and familiarity."),
 	TRAIT_WOODSMAN = span_info("I am vigilant in my duties. In the grove and coast of Frozen Summit, my abilities are sharper due to my routine and familiarity."),
+	TRAIT_UNDERDARKLING = span_info("I've favored the underdark for so long, I know it like the back of my hand."),
 	TRAIT_CHOSEN = "You were choosen by the gods you to represent their glory.",
 	TRAIT_INQUISITION = span_info("I am a member of the Inquisition. I can easily identify others of my cadre at a glance."),
 	TRAIT_WEBWALK = "I can move freely between webs.",

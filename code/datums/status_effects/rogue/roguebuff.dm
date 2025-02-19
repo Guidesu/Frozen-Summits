@@ -265,6 +265,11 @@
 	desc = "I've trekked these woods for some time now. I find traversal easier here."
 	icon_state = "buff"
 
+/atom/movable/screen/alert/status_effect/buff/underdarkbuff
+	name = "Underdark Adept"
+	desc = "I've favored the underdark for so long, I know it like the back of my hand."
+	icon_state = "buff"
+
 /atom/movable/screen/alert/status_effect/buff/vampnerf
 	name = "Unholy Curse"
 	desc = "I feel them.. watching me... oh fuck...."
@@ -274,6 +279,11 @@
 	id = "wardenbuff"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/wardenbuff
 	effectedstats = list("speed" = 1, "perception" = 3) 
+
+/datum/status_effect/buff/underdarkbuff
+	id = "underdarkbuff"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/underdarkbuff
+	effectedstats = list("speed" = 1, "perception" = 2, "endurance" = 1, "fortune" = 1) 
 
 /datum/status_effect/buff/guardbuffone
 	id = "guardbuffone"
