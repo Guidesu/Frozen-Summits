@@ -4,7 +4,7 @@
 	undead_hater = FALSE
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 	confess_lines = list(
-		"Ao IS THE DEMIURGE!",
+		"AO IS THE DEMIURGE!",
 		"THE DIVINE ARE WORTHLESS COWARDS!",
 		"THE DIVINE ARE DECEIVERS!",
 	)
