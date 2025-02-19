@@ -11,6 +11,8 @@
 	throw_range = 2 //No head bowling
 	px_x = 0
 	px_y = -8
+	grid_height = ONE_SLOTS
+	grid_width = ONE_SLOTS
 	stam_damage_coeff = 1
 	max_stamina_damage = 100
 	dismember_wound = /datum/wound/dismemberment/head

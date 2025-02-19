@@ -74,7 +74,7 @@
 
 
 /obj/item/riddleofsteel
-	name = "Moradins Gift"
+	name = "Primordial Fire"
 	icon_state = "ros"
 	icon = 'icons/roguetown/items/gems.dmi'
 	desc = "Flesh, mind."

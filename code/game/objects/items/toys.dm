@@ -677,6 +677,8 @@
 	var/card_throwforce = 0
 	var/card_throw_speed = 1
 	var/card_throw_range = 7
+	grid_height = ONE_SLOTS
+	grid_width = ONE_SLOTS
 	var/list/card_attack_verb = list("attacked")
 
 /obj/item/toy/cards/suicide_act(mob/living/carbon/user)

@@ -345,6 +345,15 @@
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_WOODSMAN, TRAIT_GENERIC)
 
+/datum/quirk/underdarkadept
+	name = "(Virtue) - Underdark Adept"
+	desc = "I've favored the underdark for so long, I know it like the back of my hand."
+	value = 2
+
+/datum/quirk/underdarkadept/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_UNDERDARKLING, TRAIT_GENERIC)
+
 /datum/quirk/bad_mood
 	name = "(Flaw) - Bad Mood"
 	desc = "Everything just seems to piss me off."

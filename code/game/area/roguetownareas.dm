@@ -18,6 +18,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	var/town_area = FALSE
 	var/keep_area = FALSE
 	var/warden_area = FALSE
+	var/underdark_area = FALSE
 	var/church_area = FALSE
 
 /area/rogue/Entered(mob/living/carbon/human/guy)
@@ -38,6 +39,12 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	. = ..()
 	if((src.warden_area == TRUE) && HAS_TRAIT(guy, TRAIT_WOODSMAN) && !guy.has_status_effect(/datum/status_effect/buff/wardenbuff)) // Warden
 		guy.apply_status_effect(/datum/status_effect/buff/wardenbuff)
+
+/area/rogue/Entered(mob/living/carbon/human/guy)
+
+	. = ..()
+	if((src.underdark_area == TRUE) && HAS_TRAIT(guy, TRAIT_UNDERDARKLING) && !guy.has_status_effect(/datum/status_effect/buff/underdarkbuff)) // Warden
+		guy.apply_status_effect(/datum/status_effect/buff/underdarkbuff)
 
 /area/rogue/Entered(mob/living/carbon/human/guy)
 
@@ -184,6 +191,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = 'sound/music/area/dungeon2.ogg'
 	first_time_text = "THE UNDERDARK"
+	underdark_area = TRUE
 	ambush_times = list("night","dawn","dusk","day")
 	ambush_types = list(
 				/turf/open/floor/rogue/dirt,

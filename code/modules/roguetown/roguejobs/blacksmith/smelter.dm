@@ -150,7 +150,7 @@
 /obj/machinery/light/rogue/smelter/great
 	icon = 'icons/roguetown/misc/forge.dmi'
 	name = "great furnace"
-	desc = "The pinnacle of dwarven engineering and the miracle of Moradins's blessed fire crystal, allowing for greater alloys to be made."
+	desc = "The pinnacle of dwarven engineering and the miracle of primordial fire, allowing for greater alloys to be made."
 	icon_state = "smelter0"
 	base_state = "smelter"
 	anchored = TRUE
