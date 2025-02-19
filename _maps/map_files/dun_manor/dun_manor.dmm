@@ -1865,6 +1865,10 @@
 /obj/structure/flora/roguetree/stump/log,
 /turf/open/water/swamp,
 /area/rogue/under/cave)
+"bMa" = (
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
 "bMh" = (
 /obj/structure/closet/crate/roguecloset,
 /obj/item/needle/thorn,
@@ -2055,6 +2059,10 @@
 /obj/structure/rack/rogue/shelf/biggest,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town)
+"cab" = (
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
 "ccD" = (
 /obj/machinery/light/rogue/torchholder{
 	icon_state = "torchwall1";
@@ -57950,7 +57958,7 @@ pOn
 pOn
 pOn
 pOn
-pOn
+cuY
 pOn
 pOn
 kWR
@@ -58432,7 +58440,7 @@ fsA
 puh
 rej
 rej
-pOn
+cuY
 pOn
 pOn
 pOn
@@ -59535,7 +59543,7 @@ puh
 pVd
 pVd
 pVd
-puh
+edS
 pOn
 pOn
 vTH
@@ -59846,7 +59854,7 @@ rej
 rej
 rej
 pOn
-puh
+edS
 puh
 pVd
 pVd
@@ -83244,7 +83252,7 @@ tXZ
 pdC
 pdC
 pdC
-pdC
+bMa
 ent
 pdC
 srJ
@@ -83556,7 +83564,7 @@ tXZ
 tXZ
 ent
 ent
-pdC
+bMa
 pdC
 ent
 ent
@@ -84805,11 +84813,11 @@ ggR
 pdC
 pdC
 ent
-ent
+cab
 pdC
 pdC
 pdC
-pdC
+bMa
 pdC
 pdC
 pdC
@@ -84817,7 +84825,7 @@ tXZ
 tXZ
 tXZ
 pdC
-ent
+cab
 ent
 srJ
 srJ
@@ -108366,7 +108374,7 @@ tXZ
 tXZ
 tXZ
 pdC
-ent
+cab
 ent
 pdC
 srJ
@@ -109627,7 +109635,7 @@ tXZ
 tXZ
 pdC
 pdC
-pdC
+bMa
 pdC
 ent
 srJ
@@ -109769,7 +109777,7 @@ ent
 pdC
 ent
 pdC
-pdC
+bMa
 ent
 ent
 ent
@@ -110091,7 +110099,7 @@ ent
 pdC
 pdC
 ent
-ent
+cab
 pdC
 pdC
 tXZ
@@ -110256,7 +110264,7 @@ tXZ
 tXZ
 tXZ
 pdC
-ent
+cab
 pdC
 pdC
 pdC
