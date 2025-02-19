@@ -51,7 +51,7 @@
 #define COMSIG_GLOB_MOB_DEATH "!mob_death"
 /// global living say plug - use sparingly: (mob/speaker , message)
 #define COMSIG_GLOB_LIVING_SAY_SPECIAL "!say_special"
-
+#define COMSIG_LIVING_DEATH "living_death"
 //////////////////////////////////////////////////////////////////
 
 // /datum signals

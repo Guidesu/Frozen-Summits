@@ -8,7 +8,7 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 	health = 20
 	maxHealth = 20
 	gender = PLURAL //placeholder
-
+	var/obj/item/card/id/access_card = null
 	status_flags = CANPUSH
 
 	var/icon_living = ""
