@@ -858,7 +858,6 @@
 /obj/item/clothing/gloves/roguetown/chain,
 /obj/item/clothing/neck/roguetown/gorget/steel,
 /obj/item/clothing/wrists/roguetown/bracers,
-/mob/living/carbon/spirit,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/mountains/decap/stepbelow)
 "kP" = (
