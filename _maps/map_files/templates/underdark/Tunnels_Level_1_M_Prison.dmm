@@ -3,50 +3,50 @@
 /turf/open/floor/rogue/dirt{
 	color = "585F96"
 	},
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "g" = (
 /turf/open/water/swamp,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "k" = (
 /turf/closed/mineral/random/rogue/underdark,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "p" = (
 /obj/structure/closet/crate/chest/lootbox,
 /turf/open/floor/rogue/herringbone,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "r" = (
 /obj/item/reagent_containers/glass/bucket/wooden,
 /turf/open/floor/rogue/herringbone,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "t" = (
 /obj/structure/bars,
 /turf/open/water/swamp,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "F" = (
 /turf/open/floor/rogue/herringbone,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "H" = (
 /obj/structure/glowshroom,
 /turf/open/water/swamp,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "L" = (
 /obj/structure/bars,
 /turf/open/floor/rogue/herringbone,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "N" = (
 /obj/structure/glowshroom,
 /turf/open/floor/rogue/dirt{
 	color = "585F96"
 	},
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "Q" = (
 /obj/structure/bed/rogue/bedroll,
 /obj/effect/decal/remains/human,
 /turf/open/floor/rogue/herringbone,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "S" = (
 /turf/closed/wall/mineral/rogue/craftstone,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 
 (1,1,1) = {"
 k

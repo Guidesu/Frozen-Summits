@@ -6,23 +6,23 @@
 	name = "Will-o'-wisp"
 	},
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "b" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass/herb/random,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "c" = (
 /obj/structure/flora/roguetree/normal,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "e" = (
 /obj/item/natural/stone{
 	pixel_x = -16;
 	pixel_y = 16
 	},
 /turf/open/water/cleanshallow,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "f" = (
 /obj/effect/wisp{
 	color = "yellow";
@@ -31,7 +31,7 @@
 	},
 /obj/structure/flora/roguegrass/bush/wall/tall,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "i" = (
 /obj/item/natural/stone{
 	pixel_x = 16;
@@ -43,26 +43,26 @@
 	name = "Will-o'-wisp"
 	},
 /turf/open/water/cleanshallow,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "j" = (
 /obj/structure/flora/roguegrass/swampweed,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "k" = (
 /obj/structure/flora/roguetree/normal,
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "l" = (
 /obj/structure/flora/roguegrass/maneater/real,
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "p" = (
 /obj/structure/flora/roguegrass/thorn_bush,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "q" = (
 /obj/effect/wisp{
 	color = "yellow";
@@ -71,18 +71,18 @@
 	},
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "s" = (
 /obj/item/natural/stone,
 /obj/structure/flora/roguegrass/herb/random,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "t" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass/herb/random,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "u" = (
 /obj/item/natural/stone{
 	pixel_x = 16;
@@ -90,13 +90,13 @@
 	},
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/cleanshallow,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "v" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "x" = (
 /obj/effect/wisp{
 	color = "yellow";
@@ -104,14 +104,14 @@
 	name = "Will-o'-wisp"
 	},
 /turf/open/water/cleanshallow,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "y" = (
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "z" = (
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "A" = (
 /obj/effect/wisp{
 	color = "yellow";
@@ -120,29 +120,29 @@
 	},
 /obj/structure/flora/roguegrass/herb/random,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "B" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "E" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "F" = (
 /obj/structure/flora/roguegrass/bush/wall/tall,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "H" = (
 /turf/open/floor/rogue/dirt{
 	color = "585F96"
 	},
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "J" = (
 /turf/closed/mineral/random/rogue/underdark,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "K" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/effect/wisp{
@@ -152,46 +152,46 @@
 	},
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "L" = (
 /obj/item/natural/stone,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "M" = (
 /obj/structure/flora/roguegrass/maneater/real,
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "N" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "O" = (
 /obj/structure/flora/roguegrass/maneater/real,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "P" = (
 /obj/structure/flora/roguegrass/herb/random,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "R" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "S" = (
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "T" = (
 /obj/structure/flora/junglebush,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "U" = (
 /obj/structure/flora/roguegrass,
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "V" = (
 /obj/item/clothing/head/peaceflower{
 	pixel_y = 5
@@ -200,7 +200,7 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/spells,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "W" = (
 /obj/item/natural/stone{
 	pixel_x = -16;
@@ -213,15 +213,15 @@
 	name = "Will-o'-wisp"
 	},
 /turf/open/water/cleanshallow,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "Y" = (
 /turf/open/water/cleanshallow,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 "Z" = (
 /obj/structure/flora/junglebush,
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/grass/green,
-/area/rogue)
+/area/rogue/under/underdark/dungeon)
 
 (1,1,1) = {"
 J
