@@ -343,24 +343,6 @@
 		if(prob(50))
 			C.adjustFireLoss(4)
 			C.Jitter(3)
-/datum/status_effect/debuff/cold
-	id = "Frostveiled"
-	alert_type =  /atom/movable/screen/alert/status_effect/debuff/cold
-	effectedstats = list("speed" = -2)
-	duration = 12 SECONDS
-
-/datum/status_effect/debuff/cold/on_apply()
-	. = ..()
-	var/mob/living/target = owner
-	var/newcolor = rgb(136, 191, 255)
-	target.add_atom_colour(newcolor, TEMPORARY_COLOUR_PRIORITY)
-	addtimer(CALLBACK(target, TYPE_PROC_REF(/atom, remove_atom_colour), TEMPORARY_COLOUR_PRIORITY, newcolor), 12 SECONDS)
-
-/atom/movable/screen/alert/status_effect/debuff/cold
-	name = "Cold"
-	desc = "Something has chilled me to the bone! It's hard to move."
-	icon_state = "muscles"
-
 // Darkling debuffs
 /datum/status_effect/debuff/darkling_glare
 	id = "darkling_glare"

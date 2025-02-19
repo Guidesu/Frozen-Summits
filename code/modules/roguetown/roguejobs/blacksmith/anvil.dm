@@ -70,7 +70,6 @@
 
 	if(istype(W, /obj/item/rogueweapon/hammer))
 		user.changeNext_move(CLICK_CD_MELEE)
-		var/obj/item/rogueweapon/hammer/hammer = W
 		if(!hingot)
 			return
 		if(!hingot.currecipe)

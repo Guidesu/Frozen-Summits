@@ -171,7 +171,6 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 	cmode = 1
 
 	var/remains_type
-	var/binded = FALSE
 
 /mob/living/simple_animal/Initialize()
 	. = ..()
@@ -534,8 +533,6 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 
 /mob/living/simple_animal/handle_fire()
 	. = ..()
-	if(!on_fire)
-		return TRUE //the mob is no longer on fire. Stop damaging mobs. Done in parent, but calling the parent calls it here.
 	if(fire_stacks > 0)
 		apply_damage(5, BURN)
 		if(fire_stacks > 5)
