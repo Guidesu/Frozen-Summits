@@ -124,8 +124,8 @@
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/mask/rogue/facemask/psydonmask
-	name = "Psydonian Mask"
-	desc = "A symbolic mask typically worn by members of the Otavan Inquisition."
+	name = "Ao's Mask"
+	desc = "A symbolic mask typically worn by members of the Inquisition."
 	icon_state = "psydonmask"
 	item_state = "psydonmask"
 

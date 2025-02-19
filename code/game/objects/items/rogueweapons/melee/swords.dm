@@ -328,7 +328,7 @@
 	item_state = "judgement"
 	lefthand_file = 'icons/mob/inhands/weapons/roguebig_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/roguebig_righthand.dmi'
-	name = "Psydonia Redentor"
+	name = "Ao's Redentor"
 	desc = "...for the LORD is my tower, and HE gives me the power to tear down the works of the enemy..."
 	parrysound = "bladedmedium"
 	swingsound = BLADEWOOSH_LARGE

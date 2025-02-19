@@ -173,9 +173,9 @@
 	character.mind.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, 6, TRUE)
 
 /datum/special_trait/psydons_rider
-	name = "Psydon's Drunkest Rider"
-	greet_text = span_notice("I ride! None of the laws shall stop me for that is Psydon's divine will!")
-	req_text = "Worship Psydon"
+	name = "Ao's Drunkest Rider"
+	greet_text = span_notice("I ride! None of the laws shall stop me for that is Ao's divine will!")
+	req_text = "Worship Ao"
 	allowed_patrons = list(/datum/patron/old_god)
 	weight = 100
 

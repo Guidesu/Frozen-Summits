@@ -572,8 +572,8 @@
 	armor = list("blunt" = 80, "slash" = 90, "stab" = 70, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	
 /obj/item/clothing/head/roguetown/helmet/psydonbarbute
-	name = "psydonian barbute"
-	desc = "A barbute styled with Psydonian Imagery."
+	name = "ao's barbute"
+	desc = "A barbute styled with Ao's Imagery."
 	icon_state = "psydonbarbute"
 	item_state = "psydonbarbute"
 	block2add = FOV_BEHIND
@@ -660,8 +660,8 @@
 		add_overlay(pic)
 
 /obj/item/clothing/head/roguetown/helmet/psydonbarbute
-	name = "psydonian barbute"
-	desc = "A barbute styled with Psydonian Imagery."
+	name = "ao's barbute"
+	desc = "A barbute styled with Ao's Imagery."
 	icon_state = "psydonbarbute"
 	item_state = "psydonbarbute"
 	block2add = FOV_BEHIND
@@ -1607,8 +1607,8 @@
 	smelt_bar_num = 2
 
 /obj/item/clothing/head/roguetown/roguehood/psydon
-	name = "psydonian hood"
-	desc = "A hood worn by those who favor Psydon. Forever enduring!"
+	name = "ao's hood"
+	desc = "A hood worn by those who favor Ao. Forever enduring!"
 	icon_state = "psydonhood"
 	item_state = "psydonhood"
 	color = null
