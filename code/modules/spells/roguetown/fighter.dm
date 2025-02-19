@@ -27,7 +27,7 @@
 	miracle = FALSE
 
 	invocation = ""
-	invocation_type = "shout" //can be none, whisper, emote and shout
+	invocation_type = "emote" //can be none, whisper, emote and shout
 
 /obj/effect/proc_holder/spell/self/secondwind/cast(mob/user = usr)
 	var/mob/living/carbon/M = user
