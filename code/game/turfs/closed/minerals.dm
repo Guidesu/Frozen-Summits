@@ -659,15 +659,15 @@
 
 /turf/closed/mineral/rogue/adamant
 	icon_state = "mingold"
-	mineralType = /obj/item/rogueore/gold
-	rockType = /obj/item/natural/rock/gold
+	mineralType = /obj/item/rogueore/adamant
+	rockType = /obj/item/natural/rock/adamant
 	spreadChance = 5
 	spread = 1
 
 /turf/closed/mineral/rogue/mithral
 	icon_state = "mingold"
-	mineralType = /obj/item/rogueore/gold
-	rockType = /obj/item/natural/rock/gold
+	mineralType = /obj/item/rogueore/mithral
+	rockType = /obj/item/natural/rock/mithral
 	spreadChance = 5
 	spread = 1
 
