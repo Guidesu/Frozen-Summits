@@ -82,7 +82,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 ///// OUTDOORS AREAS //////
 
 /area/rogue/outdoors
-	name = "outdoors frozen summit"
+	name = "outdoors hamlet"
 	icon_state = "outdoors"
 	outdoors = TRUE
 	ambientrain = RAIN_OUT
@@ -909,7 +909,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_night = null
 
 /area/rogue/under/town/caverogue
-	name = "miningcave (Frozen Summit)"
+	name = "miningcave (Hamlet)"
 	icon_state = "caverogue"
 	ambientsounds = AMB_GENCAVE
 	ambientnight = AMB_GENCAVE
