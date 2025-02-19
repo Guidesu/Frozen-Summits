@@ -364,6 +364,18 @@
 	tastes = list("sugar" = 1)
 	grind_results = list(/datum/reagent/sugar = 10)
 
+/obj/item/reagent_containers/food/snacks/grown/garlick/rogue
+	name = "garlick bulb"
+	desc = ""
+	icon_state = "garlick"
+	eat_effect = /datum/status_effect/debuff/uncookedfood
+	tastes = list("pungent umami" = 1)
+	bitesize = 2
+	list_reagents = list(/datum/reagent/consumable/nutriment = 1) //add a reagent that harms vampires later
+	can_distill = FALSE
+	rotprocess = null
+	seed = /obj/item/seeds/garlick
+
 // poppies, from vanderlin
 /obj/item/reagent_containers/food/snacks/grown/rogue/poppy
 	name = "poppy"
