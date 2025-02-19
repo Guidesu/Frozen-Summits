@@ -1,0 +1,201 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/mineral/random/rogue/underdark,
+/area/rogue/under/underdark/dungeon)
+"b" = (
+/turf/open/floor/rogue/tile{
+	icon_state = "chess"
+	},
+/area/rogue/under/underdark/dungeon)
+"j" = (
+/obj/structure/mineral_door/bars{
+	locked = 1
+	},
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark/dungeon)
+"k" = (
+/obj/structure/bars,
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark/dungeon)
+"s" = (
+/mob/living/carbon/human/species/skeleton/npc/ambush,
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark/dungeon)
+"w" = (
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/under/underdark/dungeon)
+"y" = (
+/obj/structure/closet/crate/chest/lootbox,
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark/dungeon)
+"A" = (
+/obj/structure/closet/crate/chest/lootbox,
+/turf/open/floor/rogue/tile{
+	icon_state = "chess"
+	},
+/area/rogue/under/underdark/dungeon)
+"C" = (
+/mob/living/carbon/human/species/skeleton/npc/ambush,
+/turf/open/floor/rogue/tile{
+	icon_state = "chess"
+	},
+/area/rogue/under/underdark/dungeon)
+"F" = (
+/obj/structure/closet/crate/chest/lootbox,
+/obj/item/roguegem/random,
+/turf/open/floor/rogue/tile{
+	icon_state = "chess"
+	},
+/area/rogue/under/underdark/dungeon)
+"K" = (
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark/dungeon)
+"L" = (
+/obj/item/ingot/gold,
+/turf/open/floor/rogue/tile{
+	icon_state = "chess"
+	},
+/area/rogue/under/underdark/dungeon)
+"Q" = (
+/obj/structure/bars,
+/turf/open/floor/rogue/tile{
+	icon_state = "chess"
+	},
+/area/rogue/under/underdark/dungeon)
+"T" = (
+/obj/structure/mineral_door/bars,
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue/under/underdark/dungeon)
+
+(1,1,1) = {"
+a
+a
+K
+K
+K
+K
+K
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+w
+w
+k
+j
+K
+w
+w
+a
+a
+"}
+(3,1,1) = {"
+a
+k
+y
+s
+K
+b
+Q
+w
+K
+a
+"}
+(4,1,1) = {"
+K
+k
+b
+L
+b
+C
+b
+K
+K
+K
+"}
+(5,1,1) = {"
+K
+T
+b
+C
+A
+b
+A
+j
+K
+K
+"}
+(6,1,1) = {"
+K
+w
+C
+b
+b
+K
+K
+k
+K
+K
+"}
+(7,1,1) = {"
+a
+w
+F
+A
+K
+s
+k
+k
+K
+K
+"}
+(8,1,1) = {"
+a
+w
+w
+k
+j
+K
+K
+K
+K
+a
+"}
+(9,1,1) = {"
+a
+K
+K
+K
+K
+K
+K
+K
+a
+a
+"}
+(10,1,1) = {"
+a
+a
+K
+K
+K
+K
+a
+a
+a
+a
+"}

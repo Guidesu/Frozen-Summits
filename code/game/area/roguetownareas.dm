@@ -206,14 +206,14 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/dungeon1
 
-/area/rogue/under/underdark/harrowhall
-	name = "underdark"
+/area/rogue/under/underdark/dungeon
+	name = "underdark dungeon"
 	icon_state = "spidercave"
-	first_time_text = "HARROWHALL"
-	droning_sound = 'sound/music/area/underworlddrone.ogg'
+	first_time_text = "THE UNDERDARK"
+	droning_sound = 'sound/music/area/dwarf.ogg'
 	droning_sound_dusk = null
-	droning_sound_night = null
-	converted_type = /area/rogue/outdoors/dungeon1
+	droning_sound_night = 'sound/music/area/dungeon2.ogg'
+	converted_type = /area/rogue/indoors/shelter
 
 /area/rogue/outdoors/rtfield
 	name = "azure basin"

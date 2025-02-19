@@ -1,0 +1,270 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue)
+"g" = (
+/turf/open/water/swamp,
+/area/rogue)
+"k" = (
+/turf/closed/mineral/random/rogue/underdark,
+/area/rogue)
+"p" = (
+/obj/structure/closet/crate/chest/lootbox,
+/turf/open/floor/rogue/herringbone,
+/area/rogue)
+"r" = (
+/obj/item/reagent_containers/glass/bucket/wooden,
+/turf/open/floor/rogue/herringbone,
+/area/rogue)
+"t" = (
+/obj/structure/bars,
+/turf/open/water/swamp,
+/area/rogue)
+"F" = (
+/turf/open/floor/rogue/herringbone,
+/area/rogue)
+"H" = (
+/obj/structure/glowshroom,
+/turf/open/water/swamp,
+/area/rogue)
+"L" = (
+/obj/structure/bars,
+/turf/open/floor/rogue/herringbone,
+/area/rogue)
+"N" = (
+/obj/structure/glowshroom,
+/turf/open/floor/rogue/dirt{
+	color = "585F96"
+	},
+/area/rogue)
+"Q" = (
+/obj/structure/bed/rogue/bedroll,
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/herringbone,
+/area/rogue)
+"S" = (
+/turf/closed/wall/mineral/rogue/craftstone,
+/area/rogue)
+
+(1,1,1) = {"
+k
+k
+k
+k
+k
+g
+g
+g
+g
+g
+a
+a
+a
+H
+k
+k
+k
+k
+k
+k
+"}
+(2,1,1) = {"
+k
+k
+a
+g
+g
+g
+a
+a
+g
+g
+a
+a
+a
+g
+g
+g
+a
+k
+k
+k
+"}
+(3,1,1) = {"
+k
+a
+a
+g
+g
+a
+a
+H
+H
+g
+L
+S
+L
+L
+H
+g
+a
+g
+g
+k
+"}
+(4,1,1) = {"
+a
+a
+N
+a
+g
+g
+S
+t
+g
+L
+Q
+L
+p
+F
+g
+t
+S
+a
+a
+k
+"}
+(5,1,1) = {"
+a
+a
+g
+a
+g
+g
+L
+p
+g
+F
+F
+L
+g
+H
+g
+r
+t
+g
+a
+a
+"}
+(6,1,1) = {"
+a
+g
+g
+a
+a
+g
+t
+g
+H
+F
+g
+g
+g
+F
+F
+g
+g
+H
+a
+a
+"}
+(7,1,1) = {"
+a
+a
+a
+a
+g
+g
+g
+g
+r
+F
+H
+S
+F
+Q
+F
+g
+t
+g
+a
+a
+"}
+(8,1,1) = {"
+k
+a
+a
+g
+g
+N
+S
+L
+L
+L
+g
+g
+H
+t
+t
+t
+S
+a
+a
+k
+"}
+(9,1,1) = {"
+k
+k
+k
+g
+g
+g
+g
+a
+g
+g
+a
+H
+a
+g
+g
+g
+a
+a
+k
+k
+"}
+(10,1,1) = {"
+k
+k
+k
+k
+k
+k
+g
+g
+g
+g
+a
+a
+a
+g
+g
+k
+k
+k
+k
+k
+"}
