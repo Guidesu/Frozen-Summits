@@ -349,6 +349,26 @@
 	var/area/rogue/our_area = get_area(owner)
 	if(!(our_area.underdark_area))
 		owner.remove_status_effect(/datum/status_effect/buff/underdarkbuff)
+/datum/status_effect/buff/guardbuffone/process()
+
+	.=..()
+	var/area/rogue/our_area = get_area(owner)
+	if(!(our_area.town_area))
+		owner.remove_status_effect(/datum/status_effect/buff/antiguardbuffone)
+
+/datum/status_effect/buff/wardenbuff/process()
+
+	.=..()
+	var/area/rogue/our_area = get_area(owner)
+	if(!(our_area.warden_area))
+		owner.remove_status_effect(/datum/status_effect/buff/antiwardenbuff)
+
+/datum/status_effect/buff/underdarkbuff/process()
+
+	.=..()
+	var/area/rogue/our_area = get_area(owner)
+	if(!(our_area.underdark_area))
+		owner.remove_status_effect(/datum/status_effect/buff/antiunderdarkbuff)
 
 /datum/status_effect/buff/underdarkbuff/on_apply()
 	. = ..()

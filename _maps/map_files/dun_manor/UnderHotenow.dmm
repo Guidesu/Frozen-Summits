@@ -350,7 +350,7 @@
 "fY" = (
 /obj/effect/decal/remains/wolf,
 /obj/effect/decal/remains/wolf,
-/turf/closed/mineral/random/rogue/underdark,
+/turf/closed/mineral/rogue/gem,
 /area/rogue/under/underdark)
 "gh" = (
 /obj/structure/fluff/railing/wood{
@@ -1090,7 +1090,7 @@
 /area/rogue/under/town/basement)
 "tJ" = (
 /obj/effect/decal/cleanable/blood,
-/turf/closed/mineral/random/rogue/underdark,
+/turf/closed/mineral/rogue/gem,
 /area/rogue/under/underdark)
 "tK" = (
 /obj/structure/bookcase/random,
@@ -2004,6 +2004,9 @@
 	color = "585F96"
 	},
 /area/rogue/indoors/shelter)
+"Ki" = (
+/turf/closed/mineral/rogue/gem,
+/area/rogue/under/underdark)
 "Ko" = (
 /turf/closed/wall/mineral/rogue/wooddark/horizontal,
 /area/rogue/under/underdark)
@@ -2846,7 +2849,7 @@
 /area/rogue/under/underdark)
 "Zf" = (
 /obj/effect/decal/cleanable/blood/gibs,
-/turf/closed/mineral/random/rogue/underdark,
+/turf/closed/mineral/rogue/gem,
 /area/rogue/under/underdark)
 "Zi" = (
 /obj/structure/mineral_door/wood/violet,
@@ -22892,7 +22895,7 @@ yH
 yH
 yH
 yH
-nF
+Ki
 yH
 Ik
 gT
@@ -23092,8 +23095,8 @@ yH
 yH
 Ze
 fY
-nF
-nF
+Ki
+Ki
 tJ
 yH
 gT
@@ -23294,8 +23297,8 @@ Ik
 yQ
 CQ
 Zf
-nF
-nF
+Ki
+Ki
 yH
 yH
 gT
