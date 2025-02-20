@@ -32,7 +32,7 @@
 	sewrepair = TRUE
 	armor = list("blunt" = 30, "slash" = 10, "stab" = 20, "fire" = 0, "acid" = 0)
 	salvage_amount = 1
-	salvage_result = /obj/item/natural/hide
+	salvage_result = /obj/item/natural/hide/cured
 
 /obj/item/clothing/shoes/roguetown/nobleboot
 	name = "noble boots"
@@ -45,7 +45,7 @@
 	sewrepair = TRUE
 	armor = list("blunt" = 35, "slash" = 15, "stab" = 25, "fire" = 0, "acid" = 0)
 	salvage_amount = 2
-	salvage_result = /obj/item/natural/hide
+	salvage_result = /obj/item/natural/hide/cured
 
 /obj/item/clothing/shoes/roguetown/shortboots
 	name = "shortboots"
@@ -56,7 +56,7 @@
 	item_state = "shortboots"
 	sewrepair = TRUE
 	salvage_amount = 1
-	salvage_result = /obj/item/natural/hide
+	salvage_result = /obj/item/natural/hide/cured
 
 /obj/item/clothing/shoes/roguetown/ridingboots
 	name = "riding boots"
@@ -67,7 +67,7 @@
 	item_state = "ridingboots"
 	sewrepair = TRUE
 	salvage_amount = 1
-	salvage_result = /obj/item/natural/hide
+	salvage_result = /obj/item/natural/hide/cured
 
 ///obj/item/clothing/shoes/roguetown/ridingboots/Initialize()
 //	. = ..()
@@ -83,7 +83,7 @@
 	resistance_flags = null
 	color = "#473a30"
 	salvage_amount = 1
-	salvage_result = /obj/item/natural/hide
+	salvage_result = /obj/item/natural/hide/cured
 
 /obj/item/clothing/shoes/roguetown/simpleshoes/white
 	color = null
@@ -137,7 +137,7 @@
 	sewrepair = TRUE
 	armor = list("blunt" = 30, "slash" = 10, "stab" = 20, "fire" = 0, "acid" = 0)
 	salvage_amount = 1
-	salvage_result = /obj/item/natural/hide
+	salvage_result = /obj/item/natural/hide/cured
 
 /obj/item/clothing/shoes/roguetown/boots/armor
 	name = "plated boots"
@@ -166,7 +166,7 @@
 	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	salvage_amount = 1
-	salvage_result = /obj/item/natural/hide
+	salvage_result = /obj/item/natural/hide/cured
 
 /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	name = "iron plated boots"
