@@ -304,7 +304,7 @@
 /obj/item/clothing/mask/rogue/kaizoku/menpo
 	name = "iron somen taisho"
 	icon_state = "ironmenpo"
-	desc = "Ever since the Onis has been dignified on Abyssariad fold, they have been exalted in war masks - and this became their default pattern for menpos ever since. "
+	desc = "Ever since the Onis has been dignified on Kara-tur fold, they have been exalted in war masks - and this became their default pattern for menpos ever since. "
 	max_integrity = 100
 	blocksound = PLATEHIT
 	break_sound = 'sound/foley/breaksound.ogg'
@@ -347,7 +347,7 @@
 /obj/item/clothing/mask/rogue/kaizoku/menpo/facemask
 	name = "iron Merkkin mask"
 	icon_state = "irontribal"
-	desc = "The old, barely used mask of the almost extinct Merkpeople, with fish-like characteristics. Usually used by abyssals."
+	desc = "The old, barely used mask of the almost extinct Merkpeople, with fish-like characteristics. Usually used by the east."
 	max_integrity = 100
 	body_parts_covered = FACE|MOUTH|EYES
 
@@ -379,7 +379,7 @@
 	name = "ogre mask"
 	icon_state = "colourable_onimask"
 	max_integrity = 200
-	desc = "A mask that glorifies a Ogre warrior. It portrays the mostly perfect perception of the race, so efficiently it became the standards for Fog island military due to its intimidation value."
+	desc = "A mask that glorifies a Ogre warrior. It portrays the mostly perfect perception of the race, so efficiently it became the standards for Shou Lung military due to its intimidation value."
 	colorable_var = TRUE
 
 /obj/item/clothing/mask/rogue/kaizoku/menpo/facemask/colourable/attack_right(mob/user)
@@ -413,7 +413,7 @@
 
 /obj/item/clothing/mask/rogue/kaizoku/facemask/dishonor
 	name = "dishonor mask"
-	desc = "Blackpowder-infused, soul-bound veil for dishonored Abyssariads as a consequence for bringing shame to their clan and traditions, for those unentitled to be called Abyssariads - the Burakumins (non-persons), such as prostitutes and beggars. If broken, it will explode."
+	desc = "Blackpowder-infused, soul-bound veil for dishonored Kara-tur as a consequence for bringing shame to their clan and traditions, for those unentitled such as prostitutes and beggars. If broken, it will explode."
 	icon_state = "bmask"
 	max_integrity = 300 //Unique and very protective. You will need it. Trust me.
 	blocksound = PLATEHIT

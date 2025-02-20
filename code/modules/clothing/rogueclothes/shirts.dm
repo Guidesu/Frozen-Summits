@@ -496,7 +496,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/rags/monkgarb
 	name = "monk samue"
-	desc = "The Samue is the clothing used by Abyssanctum monks engaged on the act of Samu, most proper for those performing temple maintenance and mountain hiking."
+	desc = "The Samue is the clothing used by Kara-tur monks engaged on the act of Samu, most proper for those performing temple maintenance and mountain hiking."
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
 	icon = 'icons/roguetown/kaizoku/clothingicon/shirt.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/shirt.dmi'
@@ -536,7 +536,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/looseshirt
 	name = "kimono jinbei"
-	desc = "A summer shirt that goes along with a tobi, used during the hot summers on Fog islands."
+	desc = "A summer shirt that goes along with a tobi, used during the hot summers in Shou Lung."
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
 	icon = 'icons/roguetown/kaizoku/clothingicon/shirt.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/shirt.dmi'
@@ -562,7 +562,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/rags/tribal
 	name = "tribal garbs"
-	desc = "Tribal clothings made from plant fiber commonly used by abyssal tribesmen."
+	desc = "Tribal clothings made from plant fiber commonly used by the easts tribesmen."
 	icon = 'icons/roguetown/kaizoku/clothingicon/shirt.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/shirt.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_shirts.dmi'
@@ -575,7 +575,7 @@
 
 /obj/item/clothing/suit/roguetown/shirt/robe/wizard/guardian
 	name = "onmyoji's warfare garb"
-	desc = "The garbs used by Abyssariad magicians during times of warfare, holding the marks of Abyssor upon the cloth."
+	desc = "The garbs used by Kara-tur magicians during times of warfare, holding the marks of the east upon the cloth."
 	icon_state = "abyssaltunic"
 	icon = 'icons/roguetown/kaizoku/clothingicon/shirt.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/shirt.dmi'
@@ -598,28 +598,28 @@
 
 /obj/item/clothing/suit/roguetown/shirt/robe/wizard/guardian/thunder
 	name = "thunder onmyoji's warfare garb"
-	desc = "The garbs used by Abyssariad magicians during times of warfare. Marked in yellow for the mountainous magicians and monks who praises Abyssor's thunders."
+	desc = "The garbs used by Kara-tur magicians during times of warfare. Marked in yellow for the mountainous magicians and monks who praises the easts thunders."
 	color = CLOTHING_THUNDER
 
 /obj/item/clothing/suit/roguetown/shirt/robe/wizard/guardian/storm
 	name = "storm onmyoji's warfare garb"
-	desc = "The garbs used by Abyssariad magicians during times of warfare. Marked in dark blue for the lighthouse keepers of Abyssanctum's faith, who keeps the eternal fire going."
+	desc = "The garbs used by Kara-tur magicians during times of warfare. Marked in dark blue for the lighthouse keepers of Abyssanctum's faith, who keeps the eternal fire going."
 	color = CLOTHING_STORM
 
 /obj/item/clothing/suit/roguetown/shirt/robe/wizard/guardian/ocean
 	name = "ocean onmyoji's warfare garb"
-	desc = "The garbs used by Abyssariad magicians during times of warfare.  Marked in light blue for the expeditionary magicians and monks of Abyssanctum's faith, long married to the ocean."
+	desc = "The garbs used by Kara-tur magicians during times of warfare.  Marked in light blue for the expeditionary magicians and monks of the Kara-tur's faith, long married to the ocean."
 	color = CLOTHING_OCEAN
 
 /obj/item/clothing/suit/roguetown/shirt/robe/wizard/guardian/island
 	name = "island onmyoji's warfare garb"
-	desc = "The garbs used by Abyssariad magicians during times of warfare. Marked in red for the soilgazers of Abyssanctum's faith, those bent in ensuring no plague shall reach their blessed islands. "
+	desc = "The garbs used by Kara-tur magicians during times of warfare. Marked in red for the soilgazers of the Kara-tur's faith, those bent in ensuring no plague shall reach their blessed islands. "
 	color = CLOTHING_ISLAND
 
 /obj/item/clothing/suit/roguetown/shirt/kaizoku/robe
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "onmyoji's garb"
-	desc = "Casual abyssariad garbs usually used by magicians, or those living on the frigid, treacherous mountains on the edges of the Fog islands."
+	desc = "Casual Kara-tur garbs usually used by magicians, or those living on the frigid, treacherous mountains on the edges of Shou Lung."
 	icon_state = "loosetunic"
 	icon = 'icons/roguetown/kaizoku/clothingicon/shirt.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/shirt.dmi'

@@ -109,7 +109,7 @@
 
 /obj/item/clothing/wrists/roguetown/bracers/mountainstar
 	name = "weeping god-patterned bracers"
-	desc = "Y-shaped steel plates marks this bracer everywhere it is looked upon, most proper for the Weeping God."
+	desc = "Y-shaped steel plates marks this bracer everywhere it is looked upon, most proper for the lost god."
 	icon = 'icons/roguetown/kaizoku/clothingicon/wrists.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/wrists.dmi'
 	sleeved = 'icons/roguetown/kaizoku/clothing/wrists.dmi'
@@ -132,7 +132,7 @@
 
 /obj/item/clothing/wrists/roguetown/bracers/leather/khudagach
 	name = "khudagach bracers"
-	desc = "Oil-boiled leather bracers made to protect the forearms and wrists of abyssariad archers, light cavalry and farming folk."
+	desc = "Oil-boiled leather bracers made to protect the forearms and wrists of Kara-tur archers, light cavalry and farming folk."
 	icon_state = "khudagach"
 	item_state = "khudagach"
 	icon = 'icons/roguetown/kaizoku/clothingicon/wrists.dmi'
@@ -141,7 +141,7 @@
 
 /obj/item/clothing/wrists/roguetown/splintarms/bonebracer
 	name = "bone bracers"
-	desc = "the bracers made of rough bone and iron ore, usually created and used by tribalistic Abyssals."
+	desc = "the bracers made of rough bone and iron ore, usually created and used by the tribalistic east."
 	icon = 'icons/roguetown/kaizoku/clothingicon/wrists.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/wrists.dmi'
 	sleeved = 'icons/roguetown/kaizoku/clothing/wrists.dmi'

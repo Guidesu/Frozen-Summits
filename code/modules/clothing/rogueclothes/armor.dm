@@ -793,7 +793,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/plate/nanbando
 	name = "nanban-dou-sode"
-	desc = "Abyssariad steel cuirass, refined and with additional sode for protection. Rare and prized by High-ranking zamurais, this design has been acquired from raided humen settlements."
+	desc = "Kara-tur steel cuirass, refined and with additional sode for protection. Rare and prized by High-ranking eastern warriors, this design has been acquired from raided humen settlements."
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/armor.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_armor.dmi'
@@ -802,7 +802,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/cuirass/nanbando
 	name = "nanban-dou"
-	desc = "The Abyssariad steel cuirass that only protects the chest. Relatively common among the ones from the lower Zamurai caste."
+	desc = "The Kara-tur steel cuirass that only protects the chest. Relatively common among the lower ranking warriors."
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/armor.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_armor.dmi'
@@ -811,7 +811,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/nanbando
 	name = "nanban-do-gusoku"
-	desc = "A complete set of abyssariad steel armor, refined and with additional auxiliary parts for protection."
+	desc = "A complete set of Kara-tur steel armor, refined and with additional auxiliary parts for protection."
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/armor.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_armor.dmi'
@@ -832,7 +832,7 @@
 	name = "lamellae-tatami do"
 	desc = "a foldable, lightweight armor for convenient motion and manufacturing ease. \
 	It is made of rectangular steel lamellae sewn into chainmail and is a massforged armor. \
-	Considered the backbone of abyssariad military armor, often used below mirror-armor and o-yoroi."
+	Considered the backbone of some Kara-tur military armor, often used below mirror-armor and o-yoroi."
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/armor.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_armor.dmi'
@@ -860,7 +860,7 @@
 /obj/item/clothing/suit/roguetown/armor/plate/mirror/iron
 	name = "iron mirror armor"
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
-	desc = "Polished iron plates defines the frame of this armor with a metal disk at its center. This is the armor design used by the Islander army together with a kusari katabira."
+	desc = "Polished iron plates defines the frame of this armor with a metal disk at its center. This is the armor design used by some Kara-tur together with a kusari katabira."
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/armor.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_armor.dmi'
 	icon_state = "imirrorarmor"
@@ -873,7 +873,7 @@
 /obj/item/clothing/suit/roguetown/armor/plate/mirror
 	name = "steel mirror armor"
 	icon_state = "mirrorarmor"
-	desc = "Polished steel plates defines the frame of this armor with a metal disk at its center. This is the armor design used by the Islander army together with a kusari katabira."
+	desc = "Polished steel plates defines the frame of this armor with a metal disk at its center. This is the armor design used by some Kara-tur together with a kusari katabira."
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/armor.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_armor.dmi'
@@ -881,7 +881,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/brigandine/oyoroi //I did everything I could to fix this shit. I couldn't. So the entire 'colourscheme overlay' ordeal went to hell.
 	name = "o-yoroi"
-	desc = "Heavy-duty lamellar armor esteemed high-ranking zamurais on horseback or on land."
+	desc = "Heavy-duty lamellar armor esteemed high-ranking Kara-tur on horseback or on land."
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/armor.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_armor.dmi'
@@ -936,7 +936,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/brigandine/oyoroi/oyoroigusoku
 	name = "o-yoroi gusoku"
-	desc = "Heavy-duty, complete set of lamellar armor esteemed by high-ranking zamurais on horseback or on land."
+	desc = "Heavy-duty, complete set of lamellar armor esteemed by high-ranking Kara-tur on horseback or on land."
 	icon_state = "oyoroi"
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
 
@@ -961,7 +961,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/leather/abyssal
 	name = "leather lamellar armor"
-	desc = "Also know as 'Tiejia', this islander leather armor features small rectangular leather plates laced together to cover vital organs."
+	desc = "Also know as 'Tiejia', this Kara-tur leather armor features small rectangular leather plates laced together to cover vital organs."
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/armor.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_armor.dmi'
@@ -969,7 +969,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/leather/hide/dustwalker
 	name = "leather cavalry armor"
-	desc = "The Khatag Teghelgah designed to be used by abyssariad light cavalry and horse archers on the heart of Fog Island."
+	desc = "The Khatag Teghelgah designed to be used by Kara-tur light cavalry and horse archers on the heart of Shou Lung."
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/armor.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_armor.dmi'
@@ -1018,7 +1018,7 @@
 /obj/item/clothing/suit/roguetown/armor/chainmail/rattan //New armor; Iron-to-steel tier.
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "rattan armor"
-	desc = "A flexible and durable full body coat made from oil-boiled rattan and layered iron wires. Used by LinYou Raiders, it can be easily repaired."
+	desc = "A flexible and durable full body coat made from oil-boiled rattan and layered iron wires. Used by Kara-tur Raiders, it can be easily repaired."
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/armor.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_armor.dmi'
@@ -1044,8 +1044,8 @@
 
 //New Rare Heartfelt equipment
 /obj/item/clothing/suit/roguetown/armor/medium/surcoat/heartfelt/abyssariad
-	name = "abyssariad kikko gusoku"
-	desc = "The Heartfelt design reforged in the ways of Fog Islands to better supply quick-moving zamurai cavalry, replacing the heavier and costier O-Yoroi lamellar."
+	name = "kara-tur kikko gusoku"
+	desc = "The Eastern Realms design reforged in the ways of Shou Lung to better supply quick-moving Kara-tur cavalry, replacing the heavier and costier O-Yoroi lamellar."
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS //does not protect the arms. Countering the Brigandine that protects the arms, but not legs.
 	icon_state = "kikkoabyssal"
 	item_state = "kikkoabyssal"
@@ -1055,7 +1055,7 @@
 	name = "kaizoku's waitao"
 	icon_state = "waitao_coat"
 	color = null
-	desc = "A silken coat of Heartfelt making used by the Abyssariad Kaizoku, those who brought the name of Fog Islands to the outsiders by accident. Or just artistic folk."
+	desc = "A silken coat of Eastern Realms making used by the Kara-tur Kaizoku, those who brought the name of Shou lung to the outsiders by accident. Or just artistic folk."
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/armor.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_armor.dmi'
@@ -1064,8 +1064,8 @@
 
 /obj/item/clothing/suit/roguetown/armor/brigandine/shanwenkai //I dislike overused armor in unique roles. so I just made an "Officer" armor based on the chinese actual officer armor. Brigadine.
 	slot_flags = ITEM_SLOT_ARMOR
-	name = "weeper-patterned championage armor" //This is the Shan Wen Kia armor, but the downwards 'Y' is upwards now, so I can't name it <mountain patterned armor>
-	desc = "The ancient godwenkai, a heavy armor made with overlapping arrangement of armor plates, assembled with the symbol of the Weeping God. This is used by Abyssariad Champions who still lingers on this world, honoring the Weeper who fed Abyssor."
+	name = "god-patterned championage armor" //This is the Shan Wen Kia armor, but the downwards 'Y' is upwards now, so I can't name it <mountain patterned armor>
+	desc = "The ancient godwenkai, a heavy armor made with overlapping arrangement of armor plates, assembled with the symbol of a lost god. This is used by Kara-tur Champions who still lingers on this world, honoring the Weeper who fed Kara-tur."
 	icon_state = "shanwenkai"
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/armor.dmi'
@@ -1085,7 +1085,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/light/hitatare
 	name = "yoroi hitatare"
-	desc = "A traditional Abyssariad padded robe with wide sleeves, made to be worn beneath armor. It is comfortable and thick, but not very protective compared to a ruankai, but can be used all the time without raising suspicion."
+	desc = "A traditional Kara-tur padded robe with wide sleeves, made to be worn beneath armor. It is comfortable and thick, but not very protective compared to a ruankai, but can be used all the time without raising suspicion."
 	icon_state = "yoroihitatare"
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/armor.dmi'
@@ -1149,7 +1149,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/deelcoat
 	name = "reinforced deel coat"
-	desc = "A loose-fitting abyssariad tunic usually made with horse leather, traditionally used by the Dustwalkers. The dense padding greatly protects the user against blunt trauma."
+	desc = "A loose-fitting Kara-tur tunic usually made with horse leather, traditionally used by the Dustwalkers. The dense padding greatly protects the user against blunt trauma."
 	icon_state = "deel"
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/armor.dmi'
@@ -1157,7 +1157,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/leather/splint/ninjakappa //same as studded leather armor
 	name = "tribalistic bronze cuirass"
-	desc = "A layered armor with oil-boiled leather reinforced with bronze plates sew into the fabric. Light and flexible, it is used by abyssals who became part of underground shinobi operations to destroy illegal gangs, drugdealers and centers of prostitution."
+	desc = "A layered armor with oil-boiled leather reinforced with bronze plates sew into the fabric. Light and flexible, it is used by Kara-tur who became part of underground shinobi operations to destroy illegal gangs, drugdealers and centers of prostitution."
 	icon_state = "ninjakappa"
 	item_state = "ninjakappa"
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
@@ -1167,8 +1167,8 @@
 /obj/item/clothing/suit/roguetown/armor/rare/myrmidon
 	name = "myrmidon mingguang kai" // that's "明光铠", not the genshin character.
 	desc = "Ocean-blessed overlapping steel plates joined by butchered demonhide threads and orichalcum infusion, \
-	long purified with abyssor sigils and symbols of the Weeper. Each steel layer is engraved: \
-	\"By the Heavenly Emperor's command. For the abyss against all odds.\""
+	long purified with Kara-tur sigils and symbols of a lost good. Each steel layer is engraved: \
+	\"By the Heavenly Emperor's command. For the Eastern Realms against all odds.\""
 	icon_state = "myrmidon"
 	item_state = "myrmidon"
 	allowed_race = list("abyssariad")
@@ -1200,7 +1200,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/ceramic/reinforced
 	name = "marauder trollhunter armor"
-	desc = "The heavy armor used by the tribalistic marauders forces under the flag of Abyssariads from the Flag Islands. Made of ceramic-like material from lava forges."
+	desc = "The heavy armor used by the tribalistic marauders forces under the flag of Kara-tur from the Island Kingdoms. Made of ceramic-like material from lava forges."
 	icon_state = "marauder_chest"
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/armor.dmi'
