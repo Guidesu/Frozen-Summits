@@ -49,9 +49,9 @@
 #define TRAIT_WOODSMAN "Favored Terrain - Forest"
 #define TRAIT_UNDERDARKLING "Favored Terrain - Underdark" // Frozen Summit Add
 
-#define TRAIT_ANTIWOODSMAN "Favored Terrain - Forest" // Frozen Summit Add
-#define TRAIT_ANTIUNDERDARKLING "Favored Terrain - Underdark" // Frozen Summit Add
-#define TRAIT_ANTIGUARDSMAN "Favored Terrain - Urban" // Frozen Summit Add
+#define TRAIT_ANTIWOODSMAN "Disliked Terrain - Forest" // Frozen Summit Add
+#define TRAIT_ANTIUNDERDARKLING "Disliked Terrain - Underdark" // Frozen Summit Add
+#define TRAIT_ANTIGUARDSMAN "Disliked Terrain - Urban" // Frozen Summit Add
 
 
 #define TRAIT_VAMPIRIC_CURSE "Unholy Curse"
@@ -152,9 +152,9 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_KNIGHTSMAN = span_info("I am a stalwart defender of the town. In the keep of Frozen Summit, my abilities are sharper due to my routine and familiarity."),
 	TRAIT_WOODSMAN = span_info("I am vigilant in my duties. In the grove and coast of Frozen Summit, my abilities are sharper due to my routine and familiarity."),
 	TRAIT_UNDERDARKLING = span_info("I've favored the underdark for so long, I know it like the back of my hand."),
-	TRAIT_ANTIWOODSMAN = span_info("I am vigilant in my duties. In the grove and coast of Frozen Summit, my abilities are sharper due to my routine and familiarity."),
-	TRAIT_ANTIGUARDSMAN = span_info("I am vigilant in my duties. In the town of Frozen Summit, my abilities are sharper due to my routine and familiarity."),
-	TRAIT_ANTIUNDERDARKLING = span_info("I've favored the underdark for so long, I know it like the back of my hand."),
+	TRAIT_ANTIWOODSMAN = span_info("There's something about the woods that really rubs me the wrong way...."),
+	TRAIT_ANTIGUARDSMAN = span_info("There's something about this town that really rubs me the wrong way...."),
+	TRAIT_ANTIUNDERDARKLING = span_info("There's something about the underdark that really rubs me the wrong way..."),
 	TRAIT_CHOSEN = "You were choosen by the gods you to represent their glory.",
 	TRAIT_INQUISITION = span_info("I am a member of the Inquisition. I can easily identify others of my cadre at a glance."),
 	TRAIT_WEBWALK = "I can move freely between webs.",
