@@ -328,31 +328,58 @@
 	ADD_TRAIT(H, TRAIT_WATERBREATHING, TRAIT_GENERIC)
 
 /datum/quirk/guardsman
-	name = "(Virtue) - Guardsman"
+	name = "(Favored Terrain) - Urban"
 	desc = "I am vigilant in my duties. In the town of Frozen Summit, my abilities are sharper due to my routine and familiarity."
-	value = 2
+	value = 5
 
 /datum/quirk/guardsman/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_GUARDSMAN, TRAIT_GENERIC)
 
 /datum/quirk/woodsman
-	name = "(Virtue) - Woodsman"
+	name = "(Favored Terrain) - Forest"
 	desc = "I am vigilant in my duties. In the grove and coast of Frozen Summit, my abilities are sharper due to my routine and familiarity."
-	value = 2
+	value = 5
 
 /datum/quirk/woodsman/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_WOODSMAN, TRAIT_GENERIC)
 
 /datum/quirk/underdarkadept
-	name = "(Virtue) - Underdark Adept"
+	name = "(Favored Terrain) - Underdark"
 	desc = "I've favored the underdark for so long, I know it like the back of my hand."
-	value = 2
+	value = 5
 
 /datum/quirk/underdarkadept/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_UNDERDARKLING, TRAIT_GENERIC)
+
+/datum/quirk/antiguardsman
+	name = "(UnFavored Terrain) - Urban"
+	desc = "In the town of Frozen Summit, my abilities are dulled due to unfamiliarity."
+	value = -5
+
+/datum/quirk/antiguardsman/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_ANTIGUARDSMAN, TRAIT_GENERIC)
+
+/datum/quirk/antiwoodsman
+	name = "(UnFavored Terrain) - Forest"
+	desc = "In the grove and coast of Frozen Summit, my abilities are dulled due to unfamiliarity."
+	value = -5
+
+/datum/quirk/antiwoodsman/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_ANTIWOODSMAN, TRAIT_GENERIC)
+
+/datum/quirk/antiunderdarkadept
+	name = "(UnFavored Terrain) - Underdark"
+	desc = "There's something about the underdark that just leaves me unsettled and off my game."
+	value = -5
+
+/datum/quirk/antiunderdarkadept/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_ANTIUNDERDARKLING, TRAIT_GENERIC)
 
 /datum/quirk/bad_mood
 	name = "(Flaw) - Bad Mood"

@@ -270,6 +270,11 @@
 	desc = "I've favored the underdark for so long, I know it like the back of my hand."
 	icon_state = "buff"
 
+/atom/movable/screen/alert/status_effect/buff/unfavored
+	name = "Disliked Area"
+	desc = "There's something about this area that just rubs me the wrong way..."
+	icon_state = "buff"
+
 /atom/movable/screen/alert/status_effect/buff/vampnerf
 	name = "Unholy Curse"
 	desc = "I feel them.. watching me... oh fuck...."
@@ -278,17 +283,32 @@
 /datum/status_effect/buff/wardenbuff
 	id = "wardenbuff"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/wardenbuff
-	effectedstats = list("speed" = 1, "perception" = 3) 
+	effectedstats = list("speed" = 2, "perception" = 2, "endurance" = 1, "fortune" = 1, "constitution" = 1) 
 
 /datum/status_effect/buff/underdarkbuff
 	id = "underdarkbuff"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/underdarkbuff
-	effectedstats = list("speed" = 1, "perception" = 2, "endurance" = 1, "fortune" = 1) 
+	effectedstats = list("speed" = 2, "perception" = 2, "endurance" = 1, "fortune" = 1, "constitution" = 1) 
 
 /datum/status_effect/buff/guardbuffone
 	id = "guardbuffone"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/guardbuffone
-	effectedstats = list("constitution" = 1,"endurance" = 1, "speed" = 1, "perception" = 2) 
+	effectedstats = list("speed" = 2, "perception" = 2, "endurance" = 1, "fortune" = 1, "constitution" = 1) 
+
+/datum/status_effect/buff/antiwardenbuff
+	id = "antiwardenbuff"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/unfavored
+	effectedstats = list("speed" = -2, "perception" = -2, "endurance" = -2, "fortune" = -2, "constitution" = -2) 
+
+/datum/status_effect/buff/antiunderdarkbuff
+	id = "antiunderdarkbuff"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/unfavored
+	effectedstats = list("speed" = -2, "perception" = -2, "endurance" = -2, "fortune" = -2, "constitution" = -2) 
+
+/datum/status_effect/buff/antiguardbuffone
+	id = "antiguardbuffone"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/unfavored
+	effectedstats = list("speed" = -2, "perception" = -2, "endurance" = -2, "fortune" = -2, "constitution" = -2) 
 
 /datum/status_effect/buff/vampnerf
 	id = "vampnerf"
@@ -320,6 +340,21 @@
 	ADD_TRAIT(owner, TRAIT_LONGSTRIDER, TRAIT_GENERIC)
 
 /datum/status_effect/buff/wardenbuff/on_remove()
+	. = ..()
+	REMOVE_TRAIT(owner, TRAIT_LONGSTRIDER, TRAIT_GENERIC)
+
+/datum/status_effect/buff/underdarkbuff/process()
+
+	.=..()
+	var/area/rogue/our_area = get_area(owner)
+	if(!(our_area.underdark_area))
+		owner.remove_status_effect(/datum/status_effect/buff/underdarkbuff)
+
+/datum/status_effect/buff/underdarkbuff/on_apply()
+	. = ..()
+	ADD_TRAIT(owner, TRAIT_LONGSTRIDER, TRAIT_GENERIC)
+
+/datum/status_effect/buff/underdarkbuff/on_remove()
 	. = ..()
 	REMOVE_TRAIT(owner, TRAIT_LONGSTRIDER, TRAIT_GENERIC)
 
