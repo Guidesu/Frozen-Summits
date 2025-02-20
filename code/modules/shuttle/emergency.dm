@@ -397,7 +397,7 @@
 				mode = SHUTTLE_ESCAPE
 				launch_status = ENDGAME_LAUNCHED
 				setTimer(SSshuttle.emergencyEscapeTime * engine_coeff)
-				priority_announce("The last boat has left. Roguetown is doomed.", null, 'sound/misc/boatleave.ogg')
+				priority_announce("The last boat has left. The Frozen Summit is doomed.", null, 'sound/misc/boatleave.ogg')
 
 		if(SHUTTLE_STRANDED)
 			SSshuttle.checkHostileEnvironment()

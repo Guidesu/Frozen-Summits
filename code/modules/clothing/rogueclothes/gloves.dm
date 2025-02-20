@@ -204,8 +204,8 @@
 	sleeved = 'icons/roguetown/kaizoku/clothing/gloves.dmi'
 
 /obj/item/clothing/gloves/roguetown/leather/abyssal
-	name = "abyssal gloves"
-	desc = "Flexible, sturdy gloves of abyssariad making for horseback use to shield the hands against fast moving reins or grappling hook cables."
+	name = "eastern gloves"
+	desc = "Flexible, sturdy gloves of Kara-tur making for horseback use to shield the hands against fast moving reins or grappling hook cables."
 	icon_state = "abyssalgloves"
 	icon = 'icons/roguetown/kaizoku/clothingicon/gloves.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/gloves.dmi'
@@ -215,18 +215,18 @@
 	color = CLOTHING_SOOT_BLACK
 
 /obj/item/clothing/gloves/roguetown/leather/abyssal/kabukimono
-	name = "kabuki-maru abyssal gloves"
-	desc = "Flexible, sturdy gloves of abyssariad making, but with colours well know from being used by criminals of low level from the fog islands."
+	name = "kabuki-maru eastern gloves"
+	desc = "Flexible, sturdy gloves of Kara-tur making, but with colours well know from being used by criminals of lower levels of Shou Lung."
 	color = CLOTHING_KABUKIMONO
 
 /obj/item/clothing/gloves/roguetown/leather/abyssal/toweryakko
-	name = "tower-yakko abyssal gloves"
-	desc = "Flexible, sturdy gloves of abyssariad making, but with colours well know from being used by criminals of low level from the fog islands."
+	name = "tower-yakko eastern gloves"
+	desc = "Flexible, sturdy gloves of Kara-tur making, but with colours well know from being used by criminals of lower levels of Shou Lung."
 	color = CLOTHING_TOWERYAKKO
 
 /obj/item/clothing/gloves/roguetown/angle/falcon
 	name = "falconry gloves"
-	desc = "thick, padded leather gloves to protect a handler's limbs against the sharp talons from their loyal flying companion. Falcons are used in warfare, hunting and communication on Fog Islands."
+	desc = "thick, padded leather gloves to protect a handler's limbs against the sharp talons from their loyal flying companion. Falcons are used in warfare, hunting and communication in Shou Lung."
 	icon_state = "falconrygloves"
 	icon = 'icons/roguetown/kaizoku/clothingicon/gloves.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/gloves.dmi'

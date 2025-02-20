@@ -288,7 +288,7 @@
 
 /obj/item/clothing/shoes/roguetown/boots/jikatabi
 	name = "jikatabi"
-	desc = "A standard tabi that keeps the toes flexible and healthy, avoiding calluses of long expeditions. However, it looks rather goofy for the non-islanders."
+	desc = "A standard tabi that keeps the toes flexible and healthy, avoiding calluses of long expeditions. However, it looks rather goofy for the non-easterners."
 	icon = 'icons/roguetown/kaizoku/clothingicon/feet.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/feet.dmi'
 	sleeved = 'icons/roguetown/kaizoku/clothing/feet.dmi'
@@ -334,17 +334,17 @@
 
 /obj/item/clothing/shoes/roguetown/shortboots/cloudhead/kabukimono
 	name = "kabuki-maru cloudhead shoes"
-	desc = "The same traditional cloudhead shoes of the Abyssariads, but colored in rich yellow tone and with intense implication of being used by a lowly burakumin whom belongs to an armed gang."
+	desc = "The same traditional cloudhead shoes of the Kara-tur, but colored in rich yellow tone and with intense implication of being used by a lowly ninja whom belongs to an armed gang."
 	color = "#9b874f"
 
 /obj/item/clothing/shoes/roguetown/shortboots/cloudhead/toweryakkos
 	name = "tower-yakko cloudhead shoes"
-	desc = "The same traditional cloudhead shoes of the Abyssariads, but colored in rich purple tone and with intense implication of being used by a lowly burakumin whom belongs to an armed gang."
+	desc = "The same traditional cloudhead shoes of the Kara-tur, but colored in rich purple tone and with intense implication of being used by a lowly ninja whom belongs to an armed gang."
 	color = "#804d97"
 
 /obj/item/clothing/shoes/roguetown/ridingboots/gutal
 	name = "leather gutal"
-	desc = "The boots used by Abyssariad cavalry with upturned toes and durable, oil-boiled leather."
+	desc = "The boots used by Kara-tur cavalry with upturned toes and durable, oil-boiled leather."
 	icon_state = "leathergutal"
 	item_state = "leathergutal"
 	icon = 'icons/roguetown/kaizoku/clothingicon/feet.dmi'

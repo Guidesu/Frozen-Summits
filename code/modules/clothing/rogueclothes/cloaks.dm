@@ -1545,7 +1545,7 @@
 
 /obj/item/clothing/cloak/raincloak/mino
 	name = "mino cloak"
-	desc = "An abyssariad raincoat made out of straw that covers the entire body."
+	desc = "An Kara-tur raincoat made out of straw that covers the entire body."
 	icon_state = "mino"
 	inhand_mod = FALSE
 	hoodtype = null
@@ -1556,7 +1556,7 @@
 
 /obj/item/clothing/cloak/raincloak/guardiancloak
 	name = "guardian cloak"
-	desc = "The design of cloaks from Guardians of old. The symbol of the Eternity Eagle remains binding the cloth on the user, for those who protects the skies and oceans."
+	desc = "The design of cloaks from Guardians of old. The symbol of Stronmaus remains binding the cloth on the user, for those who protects the skies and oceans."
 	icon_state = "guardiancloak"
 	inhand_mod = FALSE
 	hoodtype = null
@@ -1703,7 +1703,7 @@
 
 /obj/item/clothing/cloak/newheartfelt
 	name = "heartfelt cloak"
-	desc = "Luxurious silk cloak adorned in regal red, the protective garment that has long portrayed the fiery spirit of the Heartfelt people, and their dutiful lords."
+	desc = "Luxurious silk cloak adorned in regal red, the protective garment that has long portrayed the spirit of the Eastern Realms people, and their dutiful lords."
 	icon_state = "heartfelt_cloak"
 	body_parts_covered = CHEST|GROIN|VITALS|ARMS
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/cloaks.dmi'
@@ -1787,14 +1787,14 @@
 		L.update_inv_cloak()
 
 /obj/item/clothing/cloak/jinbaori/guard
-	desc = "A jinbaori with the lord's heraldic colors. This one is worn typically by ashigarus retainers adquired by the lords of rockhill from a pact with the Fog Islands."
+	desc = "A jinbaori with the lord's heraldic colors. This one is worn typically by Kara-tur retainers adquired by the lords of the east from a pact with the Shou Lung."
 	color = CLOTHING_BLOOD_RED
 	detail_tag = "_spl"
 	detail_color = CLOTHING_PLUM_PURPLE
 
 /obj/item/clothing/cloak/jinbaori/raider
 	name = "raider jinbaori"
-	desc = "A jinbaori used by the traditional abyssanctum ashigaru retainers. Relentless as the ocean who brew them."
+	desc = "A jinbaori used by the traditional Kara-tur retainers. Relentless as the land that created them."
 	color = CLOTHING_DARK_INK
 	detail_tag = "_spl"
 	detail_color = CLOTHING_ROYAL_PURPLE
@@ -1833,7 +1833,7 @@
 		GLOB.lordcolor += src
 
 /obj/item/clothing/cloak/haramaki/odoshi/zamurai
-	desc = "The odoshi used by Foglander Zamurais bond to Rockhill's lords. It uses said lord's heraldic colors."
+	desc = "The odoshi used by Kara-tur bound to the easts lords. It uses said lord's heraldic colors."
 	color = CLOTHING_BLOOD_RED
 	detail_tag = "_spl2"
 	detail_color = CLOTHING_PLUM_PURPLE
@@ -1900,7 +1900,7 @@
 
 /obj/item/clothing/cloak/haramaki/odoshi/raider
 	name = "raider odoshi"
-	desc = "A odoshi used by the traditional abyssanctum zamurai retainers. Relentless as the ocean who brew them."
+	desc = "A odoshi used by the traditional Kara-tur retainers. Relentless as the land that created them."
 	color = CLOTHING_DARK_INK
 	detail_tag = "_spl"
 	detail_color = CLOTHING_ROYAL_PURPLE

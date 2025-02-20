@@ -4,9 +4,9 @@
 	undead_hater = FALSE
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 	confess_lines = list(
-		"PSYDON IS THE DEMIURGE!",
-		"THE TEN ARE WORTHLESS COWARDS!",
-		"THE TEN ARE DECEIVERS!",
+		"AO IS THE DEMIURGE!",
+		"THE DIVINE ARE WORTHLESS COWARDS!",
+		"THE DIVINE ARE DECEIVERS!",
 	)
 
 /datum/patron/inhumen/zizo
