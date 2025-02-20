@@ -109,7 +109,7 @@ SUBSYSTEM_DEF(vote)
 				for(var/option in winners)
 					text += "\n\t[option]"
 				if(mode == "endround")
-					winners = list("End Round")
+					winners = list("Continue Playing")
 			. = pick(winners)
 			text += "\n<b>Vote Result: [.]</b>"
 		else

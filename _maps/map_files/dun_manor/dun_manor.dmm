@@ -433,7 +433,7 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/town)
 "abx" = (
-/obj/structure/fluff/dryingrack,
+/obj/structure/fluff/tanningrack,
 /turf/open/floor/rogue/hay,
 /area/rogue/outdoors/town)
 "aby" = (
@@ -2205,7 +2205,7 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/church)
 "cmn" = (
-/obj/structure/fluff/dryingrack,
+/obj/structure/fluff/tanningrack,
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town)
 "cmN" = (
@@ -2884,7 +2884,7 @@
 	},
 /area/rogue/outdoors/town)
 "dqL" = (
-/obj/structure/fluff/dryingrack,
+/obj/structure/fluff/tanningrack,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
 "drc" = (
@@ -3720,7 +3720,7 @@
 /obj/effect/decal/cobbleedge{
 	dir = 2
 	},
-/obj/structure/fluff/dryingrack,
+/obj/structure/fluff/tanningrack,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
 "fdy" = (
@@ -4015,7 +4015,7 @@
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -32
 	},
-/obj/structure/fluff/dryingrack,
+/obj/structure/fluff/tanningrack,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "fFk" = (
@@ -5124,7 +5124,7 @@
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/town)
 "hLa" = (
-/obj/structure/fluff/dryingrack,
+/obj/structure/fluff/tanningrack,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town)
 "hLv" = (
@@ -6359,7 +6359,7 @@
 	dir = 4;
 	pixel_x = 6
 	},
-/obj/structure/fluff/dryingrack,
+/obj/structure/fluff/tanningrack,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/outdoors/town)
 "kaW" = (
@@ -6367,7 +6367,7 @@
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/town)
 "kbJ" = (
-/obj/structure/fluff/dryingrack,
+/obj/structure/fluff/tanningrack,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/rtfield)
 "kbL" = (
@@ -9509,7 +9509,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 4
 	},
-/obj/structure/fluff/dryingrack,
+/obj/structure/fluff/tanningrack,
 /turf/open/floor/rogue/twig{
 	dir = 8
 	},
@@ -10220,7 +10220,7 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
 "qAp" = (
-/obj/structure/fluff/dryingrack,
+/obj/structure/fluff/tanningrack,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/tavern)
 "qAs" = (
@@ -10682,7 +10682,7 @@
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town)
 "rzV" = (
-/obj/structure/fluff/dryingrack{
+/obj/structure/fluff/tanningrack{
 	pixel_y = 2;
 	pixel_x = 13
 	},
@@ -11875,7 +11875,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield)
 "trb" = (
-/obj/structure/fluff/dryingrack{
+/obj/structure/fluff/tanningrack{
 	pixel_y = 12
 	},
 /turf/open/floor/rogue/herringbone,
@@ -13934,7 +13934,7 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/tavern)
 "xgy" = (
-/obj/structure/fluff/dryingrack,
+/obj/structure/fluff/tanningrack,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town)
 "xgC" = (
@@ -14247,7 +14247,7 @@
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
 "xHT" = (
-/obj/structure/fluff/dryingrack,
+/obj/structure/fluff/tanningrack,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
 "xIu" = (
