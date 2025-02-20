@@ -733,13 +733,20 @@
 	max_integrity = 200
 
 /obj/item/rogueweapon/sword/long/blackflamb
-	force = 28
-	force_wielded = 35
+	force = 20
+	force_wielded = 32
 	icon_state = "blackflamb"
 	name = "adamantine flamberge"
-	desc = "A strange sword with a winding blade forged of adamantine and a ruby pommel."
+	desc = "A strange sword with a winding blade forged of adamantine. This one's weight makes it more effective with both hands."
 	smeltresult = /obj/item/ingot/adamantine
-	max_integrity = 200
+	gripped_intents = list(/datum/intent/sword/cut/zwei, /datum/intent/sword/chop, /datum/intent/sword/thrust/zwei, /datum/intent/sword/strike)
+	wlength = WLENGTH_GREAT
+	w_class = WEIGHT_CLASS_BULKY
+	minstr = 15
+	wdefense = 4
+	max_integrity = 600
+	max_blade_int = 600
+	smelt_bar_num = 2
 
 /obj/item/rogueweapon/sword/long/blackflamb/getonmobprop(tag)
 	. = ..()
