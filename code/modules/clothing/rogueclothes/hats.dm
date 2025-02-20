@@ -2258,7 +2258,7 @@
 /obj/item/clothing/head/roguetown/helmet/ceramic/medium
 	name = "bone ravanger helmet"
 	icon_state = "ravager_head"
-	desc = "The helmets commonly used by warriors or common riverdwellers who took upon themselves to protect their heads against goblin invasions."
+	desc = "The helmets commonly used by warriors or common riverdwellers who took upon themselves to protect their heads against goblinoid invasions."
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB) //Bones are not good against blunt.
 	body_parts_covered = HEAD|HAIR|EARS
 	flags_inv = HIDEEARS

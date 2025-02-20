@@ -377,8 +377,8 @@
 	sellprice = 2
 
 /obj/item/rogueweapon/huntingknife/throwingknife/psydon
-	name = "Ao's tossblade"
-	desc = "An unconventional method of delivering silver to a heretic; but one Ao smiles at, all the same. Doubles as an actual knife in a pinch, though obviously not as well."
+	name = "tyr's tossblade"
+	desc = "An unconventional method of delivering silver to a heretic; but one Tyr smiles at, all the same. Doubles as an actual knife in a pinch, though obviously not as well."
 	item_state = "bone_dagger"
 	force = 12
 	throwforce = 28
