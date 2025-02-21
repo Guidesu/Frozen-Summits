@@ -95,7 +95,7 @@
 
 	var/mugshot_set = FALSE
 
-	var/has_studied = FALSE
+
 
 /datum/mind/New(key)
 	src.key = key

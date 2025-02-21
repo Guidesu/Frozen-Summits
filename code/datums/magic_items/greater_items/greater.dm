@@ -80,14 +80,14 @@
 	if(active_item)
 		return
 	else
-		user.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/docheallsser)
+		user.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/curewounds5e)
 		to_chat(user, span_notice("[i] feels warm against fingers."))
 		active_item = TRUE
 
 /datum/magic_item/greater/woundclosing/on_drop(var/obj/item/i, var/mob/living/user)
 	if(active_item)
 		active_item = FALSE
-		user.mind.RemoveSpell(/obj/effect/proc_holder/spell/targeted/docheallsser)
+		user.mind.RemoveSpell(/obj/effect/proc_holder/spell/invoked/curewounds5e)
 		to_chat(user, span_notice("The warmth of [i] fades away."))
 
 /datum/magic_item/greater/returningweapon

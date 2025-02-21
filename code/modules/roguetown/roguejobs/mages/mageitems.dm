@@ -100,12 +100,13 @@
 	w_class = WEIGHT_CLASS_SMALL
 	var/rune_to_scribe = null
 	var/amount = 8
+
 /obj/item/chalk/examine(mob/user)
 	. = ..()
 	desc += "It has [amount] uses left."
 
 /obj/item/chalk/attackby(obj/item/M, mob/user, params)
-	if(istype(M,/obj/item/rogueore/cinnabar))
+	if(istype(M,/obj/item/reagent_containers/powder/salt))
 		if(amount < 8)
 			amount = 8
 			to_chat(user, span_notice("I press acryne magic into the [M] and the red crystals within melt into quicksilver, quickly sinking into the [src]."))
@@ -159,12 +160,11 @@
 		//Return false if nothing in range was found
 	return FALSE
 
-
+/*
 /obj/item/rogueweapon/huntingknife/idagger/silver/arcyne
 	name = "glowing purple silver dagger"
 	desc = "This dagger glows a faint purple. Quicksilver runs across its blade."
-	var/is_bled = FALSE
-	var/obj/effect/decal/cleanable/roguerune/rune_to_scribe = null
+
 	var/chosen_keyword
 
 /obj/item/rogueweapon/huntingknife/idagger/silver/arcyne/Initialize()
@@ -172,7 +172,7 @@
 	filter(type="drop_shadow", x=0, y=0, size=2, offset=1, color=rgb(128, 0, 128, 1))
 
 /obj/item/rogueweapon/huntingknife/idagger/silver/attackby(obj/item/M, mob/user, params)
-	if(istype(M,/obj/item/rogueore/cinnabar))
+	if(istype(M,/obj/item/reagent_containers/powder/salt))
 		var/crafttime = (60 - ((user.mind?.get_skill_level(/datum/skill/magic/arcane))*5))
 		if(do_after(user, crafttime, target = src))
 			playsound(loc, 'sound/magic/scrapeblade.ogg', 100, TRUE)
@@ -198,7 +198,7 @@
 		is_bled = TRUE
 		return
 	var/datum/ritual/pickrune
-	var/runenameinput = input(user, "Runes", "RATWOOD") as null|anything in GLOB.t4rune_types
+	var/runenameinput = input(user, "Runes", "Frozen Summit") as null|anything in GLOB.t4rune_types
 	testing("runenameinput [runenameinput]")
 	pickrune = GLOB.rune_types[runenameinput]
 	rune_to_scribe = pickrune
@@ -213,7 +213,7 @@
 		to_chat(user, span_cult("There is a structure, rune or wall in the way."))
 		return
 	if(initial(rune_to_scribe.req_keyword))
-		chosen_keyword = stripped_input(user, "Keyword for the new rune", "Ratwood", max_length = MAX_NAME_LEN)
+		chosen_keyword = stripped_input(user, "Keyword for the new rune", "Frozen Summit", max_length = MAX_NAME_LEN)
 		if(!chosen_keyword)
 			return FALSE
 	var/crafttime = (100 - ((user.mind?.get_skill_level(/datum/skill/magic/arcane))*5))
@@ -240,7 +240,7 @@
 		//Return false if nothing in range was found
 	return FALSE
 
-
+*/
 
 /obj/item/roguegem/amethyst
 	name = "amythortz"
@@ -311,7 +311,7 @@
 		to_chat(user,span_notice("I stop the [src].")) //Sand magically flows back because that's more convinient to use.
 		stop()
 
-obj/item/hourglass/temporal/stop()
+/obj/item/hourglass/temporal/stop()
 	..()
 	do_teleport(victim, target, channel = TELEPORT_CHANNEL_QUANTUM)
 

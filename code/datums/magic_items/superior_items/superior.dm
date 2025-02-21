@@ -1,5 +1,5 @@
 ///T2 Enchantments
-/datum/magic_item/superior/nightvision
+/*datum/magic_item/superior/nightvision
 	name = "night vision"
 	description = "It has a sigil of Noc's eye."
 	var/active_item = FALSE
@@ -146,3 +146,4 @@
 	.=..()
 	var/obj/item/rogueweapon/hammer/hammer = i
 	hammer.quality = hammer.quality *2
+*/

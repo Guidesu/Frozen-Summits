@@ -151,7 +151,6 @@ s
 	desc = "This forge uses cycling magma from an internal core to heat things."
 	icon_state = "infernal0"
 	base_state = "infernal"
-	heat_time = 300
 
 /obj/machinery/light/rogue/forge/arcane/process()
 	if(isopenturf(loc))
@@ -284,7 +283,7 @@ s
 	var/verbu = "hits"
 	verbu = pick(user.used_intent.attack_verb)
 	if(newforce > 1)
-		if(user.stamina_add(5))
+		if(user.adjustStaminaLoss(5))
 			user.visible_message(span_danger("[user] [verbu] [src] with [I]!"))
 	user.visible_message(span_danger("[src] comes to life, archaic stone shifting into position!"))
 	sleep(2)

@@ -6,7 +6,7 @@ That said, mage apprentices for the most part, start off with 5 (8 if counting t
 Court magos has a total of 17 points, To allow for picking of their 'strongest' spell, between greater fireball, meteor, and sundering lightning.
 Theoretically someone could get 12 spell points to get one of those spells, in 4 nights, but odds are, it's unlikely.
 Unless of course, they went heavy into the gameplay loop, and got a better book. And even then, it's likely only feasible for apprentices given modifiers.
--Radiantflash */
+-Radiantflash 
 //A spell to choose new spells, upon spawning or gaining levels - NOTE: Please keep this spell at the top of the file to make it better for organization -RadiantFlash
 /obj/effect/proc_holder/spell/invoked/learnspell
 	name = "Attempt to learn a new spell"
@@ -116,7 +116,7 @@ Unless of course, they went heavy into the gameplay loop, and got a better book.
 	else
 		user.mind.used_spell_points += item.cost
 		user.mind.AddSpell(new item)
-
+*/
 /obj/effect/proc_holder/spell/invoked/projectile/lightningbolt
 	name = "Bolt of Lightning"
 	desc = "Emit a bolt of lightning that burns and stuns a target."
@@ -599,7 +599,7 @@ Unless of course, they went heavy into the gameplay loop, and got a better book.
 			flame_hit[L] = TRUE
 		else
 			L.adjustFireLoss(10) //if we've already hit them, do way less damage
-	explosion(T, -1, exp_heavy, exp_light, exp_flash, 0, flame_range = exp_fire, hotspot_range = exp_hotspot, soundin = explode_sound)
+	explosion(T, -1, exp_heavy, exp_light, exp_flash, 0, flame_range = exp_fire, soundin = explode_sound)
 
 /obj/effect/proc_holder/spell/targeted/summonweapon
 	name = "Summon Weapon"
@@ -619,7 +619,7 @@ Unless of course, they went heavy into the gameplay loop, and got a better book.
 	var/obj/marked_item
 
 
-obj/effect/proc_holder/spell/targeted/summonweapon/cast(list/targets,mob/user = usr)
+/obj/effect/proc_holder/spell/targeted/summonweapon/cast(list/targets,mob/user = usr)
 	for(var/mob/living/L in targets)
 		var/list/hand_items = list(L.get_active_held_item(),L.get_inactive_held_item())
 		var/message
@@ -643,7 +643,7 @@ obj/effect/proc_holder/spell/targeted/summonweapon/cast(list/targets,mob/user = 
 				else
 					message = span_warning("I must hold the desired weapon in my hands to imbue it for summoning!")
 
-		else if(marked_item && marked_item in hand_items) //unlinking item to the spell
+		else if(marked_item in hand_items) //unlinking item to the spell
 			message = span_notice("I remove the imbuement on [marked_item] to use elsewhere.")
 			name = "Instant Summons"
 			marked_item = 		null

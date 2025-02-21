@@ -62,9 +62,6 @@
 	var/list/selected_atoms
 	var/associated_ritual = null	//Associated ritual for runes with only 1 ritual. Use in tandom with ritual_number
 
-/proc/isarcyne(mob/living/carbon/human/A)
-	return istype(A) && A.mind && (A.mind?.get_skill_level(/datum/skill/magic/arcane) > SKILL_LEVEL_NONE)	//checks if person has arcane skill
-
 /proc/isdivine(mob/living/carbon/human/A)
 	return istype(A) && A.mind && (A.mind?.get_skill_level(/datum/skill/magic/holy) > SKILL_LEVEL_NONE)	//checks if person has holy/divine skill
 
@@ -198,7 +195,7 @@ GLOBAL_LIST(teleport_runes)
 					rituals += GLOB.t2enchantmentrunerituallist
 			else if(istype(src,/obj/effect/decal/cleanable/roguerune/arcyne))
 				rituals += GLOB.allowedrunerituallist
-			var/ritualnameinput = input(user, "Rituals", "RATWOOD") as null|anything in rituals
+			var/ritualnameinput = input(user, "Rituals", "Frozen Summit") as null|anything in rituals
 			testing("ritualnameinput [ritualnameinput]")
 			var/datum/runerituals/pickritual1
 			pickritual1 = rituals[ritualnameinput]
