@@ -190,6 +190,8 @@
 	var/obj/item/ingot/hingot = null
 	var/hott = FALSE
 	smeltresult = /obj/item/ingot/iron
+	grid_width = ONE_SLOTS
+	grid_height = TWO_SLOTS
 
 
 /obj/item/rogueweapon/tongs/examine(mob/user)
