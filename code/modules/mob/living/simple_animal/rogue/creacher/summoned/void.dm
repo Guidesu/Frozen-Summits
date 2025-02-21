@@ -293,11 +293,6 @@ It will also call down lightning strikes from the sky, and fling people with it'
 
 
 
-#define DRAKE_SWOOP_HEIGHT 270 //how high up drakes go, in pixels
-#define DRAKE_SWOOP_DIRECTION_CHANGE_RANGE 5 //the range our x has to be within to not change the direction we slam from
-
-#define SWOOP_DAMAGEABLE 1
-#define SWOOP_INVULNERABLE 2
 
 
 /mob/living/simple_animal/hostile/retaliate/rogue/voiddragon/proc/SetRecoveryTime(buffer_time)
