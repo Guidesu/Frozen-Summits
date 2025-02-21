@@ -407,6 +407,7 @@
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 	icon_state = "kunai"
 	force = 8
+	throwforce = 20
 
 /obj/item/rogueweapon/huntingknife/idagger/steel/tanto
 	name = "tanto"

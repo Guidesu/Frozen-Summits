@@ -11,6 +11,12 @@
 	max_w_class = WEIGHT_CLASS_NORMAL
 	not_while_equipped = TRUE
 
+/datum/component/storage/concrete/roguetown/rucksack
+	screen_max_rows = 5
+	screen_max_columns = 4
+	max_w_class = WEIGHT_CLASS_NORMAL
+	not_while_equipped = FALSE
+
 /datum/component/storage/concrete/roguetown/bagofholding
 	screen_max_rows = 9
 	screen_max_columns = 6
