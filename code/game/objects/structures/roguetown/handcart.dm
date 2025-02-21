@@ -45,9 +45,9 @@
 /obj/structure/handcart/examine(mob/user)
 	. = ..()
 	if(upgrade_level == 1)
-		. += span_notice("This cart has a <i>level 1</i> woodcutters wheelbrace instaled.")
+		. += span_notice("This cart has a <i>level 1</i> woodcutters wheelbrace installed.")
 	else if(upgrade_level == 2)
-		. += span_notice("This cart has a <i>level 2</i> woodcutters wheelbrace instaled.")
+		. += span_notice("This cart has a <i>level 2</i> woodcutters wheelbrace installed.")
 
 /obj/structure/handcart/proc/manage_upgrade()
 	switch(upgrade_level)

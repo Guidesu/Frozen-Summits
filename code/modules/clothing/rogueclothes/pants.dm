@@ -501,7 +501,7 @@
 
 /obj/item/clothing/under/roguetown/trou/tobi
 	name = "tobi pants"
-	desc = "Baggy pants of abyssariad design. Suitable for those who works the field and avoid horseback."
+	desc = "Baggy pants of Kara-tur design. Suitable for those who works the field and avoid horseback."
 	icon_state = "tobi"
 	item_state = "tobi"
 	icon = 'icons/roguetown/kaizoku/clothingicon/pants.dmi'
@@ -532,14 +532,14 @@
 	color = CLOTHING_KABUKIMONO
 
 /obj/item/clothing/under/roguetown/trou/tobi/dragonslayer
-	desc = "Baggy pants of abyssariad design. This one is coated in asbestos, and may be just as dangerous."
+	desc = "Baggy pants of Kara-tur design. This one is coated in asbestos, and may be just as dangerous."
 	color = "#3d4681"
 	armor = list("melee" = 20, "bullet" = 0, "laser" = 75,"energy" = 75, "bomb" = 75, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/under/roguetown/trou/leather/fur
 	name = "thick tobi"
 	icon_state = "furpants"
-	desc = "A tobi made out of Dendor's beloved guardians - so Abyssor's beloved guardians can use it."
+	desc = "A tobi made out of the easts beloved guardians - so the easts beloved guardians can use it."
 	icon = 'icons/roguetown/kaizoku/clothingicon/pants.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/pants.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_pants.dmi'
@@ -552,7 +552,7 @@
 	name = "hakama"
 	icon_state = "hakama"
 	alternate_worn_layer = SHOESLEEVE_LAYER
-	desc = "Suitable for the Abyssariad-cultured, in which large battle-skirts does not hurt their masculinity, differently of the frail Imperial counterpart."
+	desc = "Suitable for the Kara-tur cultured, in which large battle-skirts does not hurt their masculinity, differently of the frail Imperial counterpart."
 	icon = 'icons/roguetown/kaizoku/clothingicon/pants.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/pants.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_pants.dmi'
@@ -592,8 +592,8 @@
 	alternate_worn_layer = SHOESLEEVE_LAYER
 
 /obj/item/clothing/under/roguetown/platelegs/weepershanwenkai
-	name = "weeper-patterned championage lowerhalf"
-	desc = "Lower part of a godwenkai armor, relics of abyssariad championage for those of high-ranking deeply bound to Abyssanctum. Usually made of bronze, the grasp of the current era brought high-quality steel to the table."
+	name = "god-patterned championage lowerhalf"
+	desc = "Lower part of a godwenkai armor, relics of Kara-tur championage for those of high-ranking deeply bound to Abyssanctum. Usually made of bronze, the grasp of the current era brought high-quality steel to the table."
 	icon = 'icons/roguetown/kaizoku/clothingicon/pants.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/pants.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_pants.dmi'
@@ -604,7 +604,7 @@
 
 /obj/item/clothing/under/roguetown/heavy_leather_pants/lightivory
 	name = "ivory leg plates"
-	desc = "The leg protection proper for abyssals warriors."
+	desc = "The leg protection proper for the easts warriors."
 	icon = 'icons/roguetown/kaizoku/clothingicon/pants.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/pants.dmi'
 	sleeved = 'icons/roguetown/kaizoku/helpers/sleeves_pants.dmi'
@@ -614,7 +614,7 @@
 
 /obj/item/clothing/under/roguetown/kaizoku/tribal
 	name = "tribal lowerhalf"
-	desc = "piece of clothings usually used by abyssal tribesmen of all genders."
+	desc = "piece of clothings usually used by the easts tribesmen of all genders."
 	icon_state = "tribalcloth"
 	icon = 'icons/roguetown/kaizoku/clothingicon/pants.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/pants.dmi'

@@ -1,6 +1,6 @@
 /obj/structure/boatbell
 	name = "bell"
-	desc = "This is the doomspeller of Roguetown."
+	desc = "This is the doomspeller of Frozen Summit."
 	icon = 'icons/roguetown/misc/structure.dmi'
 	icon_state = "bell"
 	density = FALSE
@@ -30,7 +30,7 @@
 	last_ring = world.time
 
 /obj/structure/boatbell/escape
-	desc = "This boat spells the doom of Roguetown. The bell being rung will naturally incite panic in everyone, as many fear the fate of many lordless border settlements should they stay."
+	desc = "This boat spells the doom of Frozen Summit. The bell being rung will naturally incite panic in everyone, as many fear the fate of many lordless border settlements should they stay."
 	var/bribe = 0
 	var/bribeprice = 500
 

@@ -37,6 +37,7 @@
 	icon_state = "goldplaque"
 	sellprice = 50
 	sewrepair = FALSE
+	component_type = /datum/component/storage/concrete/roguetown/belt/gold
 	anvilrepair = /datum/skill/craft/armorsmithing
 
 /obj/item/storage/belt/rogue/leather/shalal
@@ -98,12 +99,12 @@
 	content_overlays = FALSE
 	bloody_icon_state = "bodyblood"
 	sewrepair = TRUE
+	grid_height = TWO_SLOTS
+	grid_width = ONE_SLOTS
 	resistance_flags = FIRE_PROOF
 	component_type = /datum/component/storage/concrete/roguetown/coin_pouch
 
 /obj/item/storage/belt/rogue/pouch/coins
-	grid_height = TWO_SLOTS
-	grid_width = ONE_SLOTS
 
 /obj/item/storage/belt/rogue/pouch/coins/mid/Initialize()
 	. = ..()

@@ -11,6 +11,12 @@
 	max_w_class = WEIGHT_CLASS_NORMAL
 	not_while_equipped = TRUE
 
+/datum/component/storage/concrete/roguetown/rucksack
+	screen_max_rows = 5
+	screen_max_columns = 4
+	max_w_class = WEIGHT_CLASS_NORMAL
+	not_while_equipped = FALSE
+
 /datum/component/storage/concrete/roguetown/bagofholding
 	screen_max_rows = 9
 	screen_max_columns = 6
@@ -48,6 +54,11 @@
 /datum/component/storage/concrete/roguetown/belt
 	screen_max_rows = 3
 	screen_max_columns = 2
+	max_w_class = WEIGHT_CLASS_SMALL
+
+/datum/component/storage/concrete/roguetown/belt/gold
+	screen_max_rows = 4
+	screen_max_columns = 3
 	max_w_class = WEIGHT_CLASS_SMALL
 
 /datum/component/storage/concrete/roguetown/coin_pouch

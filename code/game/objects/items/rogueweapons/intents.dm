@@ -320,7 +320,7 @@
 	animname = "strike"
 	item_d_type = "stab"
 	blade_class = BCLASS_DRILL
-	chargetime = 0.3
+	chargetime = 0
 	swingdelay = 3
 
 /datum/intent/shoot //shooting crossbows or other guns, no parrydrain

@@ -484,7 +484,7 @@
 /datum/anvil_recipe/weapons/blackflamb
 	name = "Flamberge"
 	req_bar = /obj/item/ingot/adamantine
-	additional_items = list(/obj/item/ingot/adamantine, /obj/item/roguegem)
+	additional_items = list(/obj/item/ingot/adamantine)
 	created_item = /obj/item/rogueweapon/sword/long/blackflamb
 	craftdiff = 5
 
@@ -781,3 +781,11 @@
 	req_bar = /obj/item/ingot/iron
 	created_item = /obj/item/rogueweapon/sickle/kama
 	craftdiff = 2
+
+// --------- MITHRAL RECIPES ----------
+
+/datum/anvil_recipe/weapons/mithral/staff
+	name = "Mithral Pole"
+	req_bar = /obj/item/ingot/mithral
+	created_item = /obj/item/rogueweapon/woodstaff/mithral
+	craftdiff = 3

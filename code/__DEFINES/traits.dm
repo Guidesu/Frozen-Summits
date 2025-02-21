@@ -44,10 +44,16 @@
 #define TRAIT_SEEDKNOW "Seed Knower"
 #define TRAIT_SQUIRE_REPAIR "Squire Knowledge"
 #define TRAIT_TRAINED_SMITH "Trained Smith"
-#define TRAIT_GUARDSMAN "Vigilant Guardsman"
+#define TRAIT_GUARDSMAN "Favored Terrain - Urban"
 #define TRAIT_KNIGHTSMAN "Royal Defiance"
-#define TRAIT_WOODSMAN "Talented Woodsman"
-#define TRAIT_UNDERDARKLING "Underdark Adept"
+#define TRAIT_WOODSMAN "Favored Terrain - Forest"
+#define TRAIT_UNDERDARKLING "Favored Terrain - Underdark" // Frozen Summit Add
+
+#define TRAIT_ANTIWOODSMAN "Disliked Terrain - Forest" // Frozen Summit Add
+#define TRAIT_ANTIUNDERDARKLING "Disliked Terrain - Underdark" // Frozen Summit Add
+#define TRAIT_ANTIGUARDSMAN "Disliked Terrain - Urban" // Frozen Summit Add
+
+
 #define TRAIT_VAMPIRIC_CURSE "Unholy Curse"
 #define TRAIT_INQUISITION "Member of the Inquisition"
 #define TRAIT_GOODTRAINER "Good Trainer"
@@ -146,6 +152,9 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_KNIGHTSMAN = span_info("I am a stalwart defender of the town. In the keep of Frozen Summit, my abilities are sharper due to my routine and familiarity."),
 	TRAIT_WOODSMAN = span_info("I am vigilant in my duties. In the grove and coast of Frozen Summit, my abilities are sharper due to my routine and familiarity."),
 	TRAIT_UNDERDARKLING = span_info("I've favored the underdark for so long, I know it like the back of my hand."),
+	TRAIT_ANTIWOODSMAN = span_info("There's something about the woods that really rubs me the wrong way...."),
+	TRAIT_ANTIGUARDSMAN = span_info("There's something about this town that really rubs me the wrong way...."),
+	TRAIT_ANTIUNDERDARKLING = span_info("There's something about the underdark that really rubs me the wrong way..."),
 	TRAIT_CHOSEN = "You were choosen by the gods you to represent their glory.",
 	TRAIT_INQUISITION = span_info("I am a member of the Inquisition. I can easily identify others of my cadre at a glance."),
 	TRAIT_WEBWALK = "I can move freely between webs.",

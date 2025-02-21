@@ -130,6 +130,8 @@
 	righthand_file = 'icons/mob/inhands/equipment/hydroponics_righthand.dmi'
 	force = 5
 	throwforce = 7
+	grid_height = TWO_SLOTS
+	grid_width = ONE_SLOTS
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/shovel/serrated

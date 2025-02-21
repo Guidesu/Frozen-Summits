@@ -463,7 +463,7 @@
 
 /obj/item/clothing/neck/roguetown/psicross/abyssanctum
 	name = "reformist abyssanctum amulet"
-	desc = "Despair thee not at the abyssal depths, for where light doth fade, vessels of might shall be therein carved, as Abyssor and the Weeper guide their own."
+	desc = "Despair thee not at the easts depths, for where light doth fade, vessels of might shall be therein carved, as Abyssor and the Weeper guide their own."
 	icon = 'icons/roguetown/kaizoku/clothingicon/neck.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/neck.dmi'
 	icon_state = "abyssanctum"
@@ -477,7 +477,7 @@
 
 /obj/item/clothing/neck/roguetown/mercmedal/kabukimaru
 	name = "hihiirokane beads"
-	desc = "Hihiirokane, or 'Mythril', is a luminous, rare metal drawn from the abyssal depths where the pressure is hostile to most life. The Abyssariads holds the key to its mystery, a secret that dwarves would covet at any cost."
+	desc = "Hihiirokane, or 'Mythril', is a luminous, rare metal drawn from the abyssal depths where the pressure is hostile to most life. The Kara-tur holds the key to its mystery, a secret that dwarves would covet at any cost."
 	icon = 'icons/roguetown/kaizoku/clothingicon/neck.dmi'
 	mob_overlay_icon = 'icons/roguetown/kaizoku/clothing/neck.dmi'
 	icon_state = "mythrilbeads"

@@ -5442,7 +5442,7 @@
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/woods)
 "PB" = (
-/obj/structure/fluff/dryingrack,
+/obj/structure/fluff/tanningrack,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
 "PC" = (

@@ -88,6 +88,10 @@
 /obj/item/bodypart/l_leg/goblin
 	dismemberable = 0
 
+/obj/item/bodypart/head/goblin
+	grid_height = ONE_SLOTS
+	grid_width = ONE_SLOTS
+
 /obj/item/bodypart/head/goblin/update_icon_dropped()
 	return
 

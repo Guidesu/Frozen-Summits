@@ -432,10 +432,6 @@
 /obj/machinery/light/rogue/campfire/densefire,
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/town)
-"abx" = (
-/obj/structure/fluff/dryingrack,
-/turf/open/floor/rogue/hay,
-/area/rogue/outdoors/town)
 "aby" = (
 /obj/structure/closet/crate/chest,
 /obj/item/rogueweapon/stoneaxe,
@@ -2204,10 +2200,6 @@
 /obj/item/alch/horn,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/church)
-"cmn" = (
-/obj/structure/fluff/dryingrack,
-/turf/open/floor/rogue/wood/herringbone,
-/area/rogue/indoors/town)
 "cmN" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -2883,10 +2875,6 @@
 	dir = 4
 	},
 /area/rogue/outdoors/town)
-"dqL" = (
-/obj/structure/fluff/dryingrack,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/woods)
 "drc" = (
 /obj/machinery/loom,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -3716,13 +3704,6 @@
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/wood/herringbone,
 /area/rogue/indoors/town/tavern)
-"fdv" = (
-/obj/effect/decal/cobbleedge{
-	dir = 2
-	},
-/obj/structure/fluff/dryingrack,
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town)
 "fdy" = (
 /turf/closed/wall/mineral/rogue/decostone,
 /area/rogue/outdoors/town)
@@ -4011,13 +3992,6 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/church)
-"fFd" = (
-/obj/machinery/light/rogue/wallfire/candle{
-	pixel_y = -32
-	},
-/obj/structure/fluff/dryingrack,
-/turf/open/floor/rogue/wood,
-/area/rogue/indoors/town)
 "fFk" = (
 /obj/structure/roguerock,
 /turf/open/floor/rogue/naturalstone,
@@ -4725,7 +4699,6 @@
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
 	},
-/obj/item/rogueweapon/stoneaxe/oath,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/rtfield)
 "gXg" = (
@@ -5123,10 +5096,6 @@
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/town)
-"hLa" = (
-/obj/structure/fluff/dryingrack,
-/turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town)
 "hLv" = (
 /obj/structure/table/church,
 /obj/item/reagent_containers/glass/bucket/pot/stone,
@@ -6359,17 +6328,12 @@
 	dir = 4;
 	pixel_x = 6
 	},
-/obj/structure/fluff/dryingrack,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/outdoors/town)
 "kaW" = (
 /obj/structure/fluff/grindwheel,
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/town)
-"kbJ" = (
-/obj/structure/fluff/dryingrack,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/outdoors/rtfield)
 "kbL" = (
 /obj/machinery/light/rogue/wallfire{
 	pixel_y = 32
@@ -6881,26 +6845,6 @@
 /area/rogue/indoors/town)
 "kRD" = (
 /obj/structure/closet/crate/chest,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
-/obj/item/reagent_containers/food/snacks/rogue/piedough,
 /obj/item/reagent_containers/food/snacks/rogue/piedough,
 /obj/item/reagent_containers/food/snacks/rogue/piedough,
 /obj/item/reagent_containers/food/snacks/rogue/piedough,
@@ -7835,33 +7779,6 @@
 /area/rogue/indoors/town)
 "muq" = (
 /obj/structure/closet/crate/chest,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
-/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
 /obj/item/reagent_containers/food/snacks/rogue/meat/steak,
 /obj/item/reagent_containers/food/snacks/rogue/meat/steak,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -9509,7 +9426,6 @@
 /obj/structure/fluff/railing/border{
 	dir = 4
 	},
-/obj/structure/fluff/dryingrack,
 /turf/open/floor/rogue/twig{
 	dir = 8
 	},
@@ -9846,16 +9762,6 @@
 /area/rogue/indoors/town/tavern)
 "pXe" = (
 /obj/structure/closet/crate/chest,
-/obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
-/obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
-/obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
-/obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
-/obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
-/obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
-/obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
-/obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
-/obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
-/obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
 /obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
 /obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -10219,10 +10125,6 @@
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors)
-"qAp" = (
-/obj/structure/fluff/dryingrack,
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/tavern)
 "qAs" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -10680,16 +10582,6 @@
 /obj/item/alch/euphrasia,
 /obj/item/alch/calendula,
 /turf/open/floor/rogue/wood/herringbone,
-/area/rogue/indoors/town)
-"rzV" = (
-/obj/structure/fluff/dryingrack{
-	pixel_y = 2;
-	pixel_x = 13
-	},
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
-	},
-/turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
 "rAw" = (
 /obj/structure/fluff/railing/wood{
@@ -11874,12 +11766,6 @@
 /obj/structure/far_travel,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield)
-"trb" = (
-/obj/structure/fluff/dryingrack{
-	pixel_y = 12
-	},
-/turf/open/floor/rogue/herringbone,
-/area/rogue/indoors/town)
 "trD" = (
 /obj/item/reagent_containers/glass/bucket/pot/stone,
 /turf/open/floor/rogue/grasscold,
@@ -13933,10 +13819,6 @@
 /obj/item/reagent_containers/glass/bucket/pot,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/tavern)
-"xgy" = (
-/obj/structure/fluff/dryingrack,
-/turf/open/floor/rogue/blocks,
-/area/rogue/indoors/town)
 "xgC" = (
 /obj/structure/fermenting_barrel/water{
 	pixel_x = 7;
@@ -14244,10 +14126,6 @@
 	dir = 1
 	},
 /obj/structure/closet/crate/chest/old_crate,
-/turf/open/floor/rogue/ruinedwood/herringbone,
-/area/rogue/indoors/town)
-"xHT" = (
-/obj/structure/fluff/dryingrack,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
 "xIu" = (
@@ -26340,7 +26218,7 @@ bQr
 muq
 tCj
 tCj
-qAp
+bQr
 bQr
 bQr
 tCj
@@ -30115,7 +29993,7 @@ iMF
 iMF
 ccX
 drc
-rzV
+qGr
 qGr
 qGr
 nQp
@@ -33793,7 +33671,7 @@ mBN
 jwv
 mBN
 mBN
-xHT
+mBN
 jwv
 pDp
 xHk
@@ -43113,7 +42991,7 @@ iFY
 fZj
 oLW
 iVJ
-fdv
+dzE
 acN
 dlX
 lwR
@@ -45387,7 +45265,7 @@ ada
 xDp
 xDp
 lyP
-abx
+acL
 acL
 puh
 puh
@@ -53037,7 +52915,7 @@ xDp
 utD
 rej
 oLW
-trb
+vuV
 vuV
 cUx
 vuV
@@ -53489,7 +53367,7 @@ jVy
 hHC
 hHC
 kUZ
-xgy
+kUZ
 wmf
 tdL
 tdL
@@ -54038,7 +53916,7 @@ aXS
 gdc
 qsk
 biI
-kbJ
+biI
 tvC
 biI
 dPz
@@ -58745,7 +58623,7 @@ xOC
 uHt
 fpz
 xrL
-hLa
+sPC
 psj
 uHt
 tuX
@@ -58785,7 +58663,7 @@ wGn
 kOY
 rWl
 wGn
-dqL
+rWl
 sHp
 sHp
 sHp
@@ -71295,7 +71173,7 @@ hbl
 yaE
 gXg
 bZH
-cmn
+hSx
 hSx
 yaE
 tXZ
@@ -76660,7 +76538,7 @@ rRK
 rRK
 lZm
 mye
-fFd
+oOQ
 rRK
 rRK
 tXZ
