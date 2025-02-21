@@ -235,3 +235,15 @@
 	craftdiff = 2
 
 // --------- BRONZE RECIPES -----------
+
+// --------- MITHRAL RECIPES ----------
+
+// --------- ADAMANTINE RECIPES -------
+
+/datum/anvil_recipe/tools/adamantine/pick
+	name = "Greatpick (+2 Mithral)"
+	req_bar = /obj/item/ingot/adamantine
+	additional_items = list(/obj/item/ingot/mithral, /obj/item/rogueweapon/woodstaff/mithral)
+	created_item = /obj/item/rogueweapon/pick/adamantine
+	craftdiff = 3
+	i_type = "Tools"

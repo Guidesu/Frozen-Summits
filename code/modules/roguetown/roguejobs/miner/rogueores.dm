@@ -47,7 +47,7 @@
 	smeltresult = /obj/item/ingot/mithral
 	sellprice = 8
 
-/obj/item/rogueore/adamant/Initialize()
+/obj/item/rogueore/mithral/Initialize()
 	icon_state = "oremithral[rand(1,3)]"
 	..()
 

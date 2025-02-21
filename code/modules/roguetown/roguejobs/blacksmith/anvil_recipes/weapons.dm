@@ -781,3 +781,11 @@
 	req_bar = /obj/item/ingot/iron
 	created_item = /obj/item/rogueweapon/sickle/kama
 	craftdiff = 2
+
+// --------- MITHRAL RECIPES ----------
+
+/datum/anvil_recipe/weapons/mithral/staff
+	name = "Mithral Pole"
+	req_bar = /obj/item/ingot/mithral
+	created_item = /obj/item/rogueweapon/woodstaff/mithral
+	craftdiff = 3
