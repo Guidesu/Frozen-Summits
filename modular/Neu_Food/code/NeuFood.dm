@@ -137,6 +137,9 @@
 	righthand_file = 'modular/Neu_Food/icons/food_righthand.dmi'
 	experimental_inhand = FALSE
 
+	grid_width = 32
+	grid_height = 64
+
 /obj/item/rogueweapon/huntingknife/cleaver
 	lefthand_file = 'modular/Neu_Food/icons/food_lefthand.dmi'
 	righthand_file = 'modular/Neu_Food/icons/food_righthand.dmi'
