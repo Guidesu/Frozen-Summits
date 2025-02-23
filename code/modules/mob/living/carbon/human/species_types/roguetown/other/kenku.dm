@@ -76,7 +76,7 @@
 		/datum/customizer/bodypart_feature/accessory,
 		/datum/customizer/bodypart_feature/face_detail,
 		/datum/customizer/bodypart_feature/underwear,
-		/datum/customizer/organ/tail/anthro,
+		/datum/customizer/organ/tail/kenku,
 		/datum/customizer/organ/snout/kenku,
 		/datum/customizer/organ/ears/anthro,
 		/datum/customizer/organ/horns/anthro,
@@ -141,6 +141,8 @@
 /datum/species/kenku/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()
 	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
+	C.verbs += /mob/living/carbon/human/proc/changevoice
+	C.verbs += /mob/living/carbon/human/proc/swapvoice
 
 /datum/species/kenku/on_species_loss(mob/living/carbon/C)
 	. = ..()
