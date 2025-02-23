@@ -88,7 +88,7 @@
 		if(!cocked)
 			to_chat(user, span_info("I ready the arquebus to be fired..."))
 			if(user.mind)
-				var/skill = user.mind.get_skill_level(/datum/skill/combat/crossbows)
+				var/skill = user.mind.get_skill_level(/datum/skill/combat/firearms)
 				if(skill)
 					reload_time = reload_time / skill
 			if(move_after(user, reload_time SECONDS, target = user))
@@ -107,7 +107,7 @@
 
 /obj/item/gun/ballistic/arquebus_pistol/process_fire/(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0)
 	if(user.mind)
-		var/skill = user.mind.get_skill_level(/datum/skill/combat/crossbows)
+		var/skill = user.mind.get_skill_level(/datum/skill/combat/firearms)
 		if(skill)
 			misfire_chance = max(0, misfire_chance - (skill * 2))
 			spread = max(3, spread / skill)

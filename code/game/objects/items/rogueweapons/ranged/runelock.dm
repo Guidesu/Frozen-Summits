@@ -112,7 +112,7 @@
 		var/newtime = chargetime
 		//skill block
 		newtime = newtime + 18
-		newtime = newtime - (mastermob.mind.get_skill_level(/datum/skill/combat/crossbows) * 3)
+		newtime = newtime - (mastermob.mind.get_skill_level(/datum/skill/combat/firearms) * 3)
 		//per block
 		newtime = newtime + 20
 		newtime = newtime - (mastermob.STAPER)
