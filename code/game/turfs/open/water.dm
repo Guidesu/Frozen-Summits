@@ -89,7 +89,7 @@
 					drained += 40
 				if(HAS_TRAIT(user, TRAIT_ABYSSOR_SWIM))
 					drained -=5
-				if(HAS_TRAIT(user, TRAIT_ABYSSOR_SWIM))
+				if(HAS_TRAIT(user, TRAIT_THALASSOPHOBIA))
 					drained +=30
 				if(!user.rogfat_add(drained))
 					user.Immobilize(30)
