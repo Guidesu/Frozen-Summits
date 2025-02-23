@@ -936,7 +936,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		// THEY HUNGER
 		var/hunger_rate = HUNGER_FACTOR
 		if(HAS_TRAIT(H, TRAIT_HIGHMETABOLISM))
-			hunger_rate = (HUNGER_FACTOR * 4)
+			hunger_rate = (HUNGER_FACTOR * 2)
 /*		if(H.satiety > MAX_SATIETY)
 			H.satiety = MAX_SATIETY
 		else if(H.satiety > 0)
@@ -967,7 +967,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		// THEY HUNGER
 		var/hunger_rate = HUNGER_FACTOR
 		if(HAS_TRAIT(H, TRAIT_HIGHMETABOLISM))
-			hunger_rate = (HUNGER_FACTOR * 4)
+			hunger_rate = (HUNGER_FACTOR * 2)
 //		hunger_rate *= H.physiology.hunger_mod
 		H.adjust_hydration(-hunger_rate)
 
