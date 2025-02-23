@@ -153,7 +153,7 @@
 		)
 
 /datum/customizer/organ/tail/anthro
-	customizer_choices = list(/datum/customizer_choice/organ/tail/kenku)
+	customizer_choices = list(/datum/customizer_choice/organ/tail/anthro)
 	allows_disabling = TRUE
 	default_disabled = TRUE
 
@@ -183,9 +183,9 @@
 	allows_accessory_color_customization = FALSE
 
 /datum/customizer/organ/tail/kenku
-	customizer_choices = list(/datum/customizer_choice/organ/tail/anthro)
-	allows_disabling = TRUE
-	default_disabled = TRUE
+	customizer_choices = list(/datum/customizer_choice/organ/tail/kenku)
+	allows_disabling = FALSE
+	default_disabled = FALSE
 
 /datum/customizer_choice/organ/tail/anthro
 	name = "Wild-Kin Tail"

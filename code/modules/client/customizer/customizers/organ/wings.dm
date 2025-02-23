@@ -103,7 +103,7 @@
 /datum/customizer/organ/wings/kenku
 	customizer_choices = list(/datum/customizer_choice/organ/wings/kenku)
 	allows_disabling = TRUE
-	default_disabled = TRUE
+	default_disabled = FALSE
 
 /datum/customizer_choice/organ/wings/kenku
 	name = "Kenku Wings"

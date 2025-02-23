@@ -42,7 +42,8 @@
 	/datum/species/akula,\
 	/datum/species/anthromorph,\
 	/datum/species/demihuman,\
-	/datum/species/abyssariad/changeling
+	/datum/species/abyssariad/changeling,\
+	/datum/species/kenku
 
 #define RACES_SHUNNED \
 	/datum/species/halforc,\
