@@ -49,3 +49,8 @@
 			continue
 		limb.drop_limb()
 		qdel(limb)
+
+	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
+		backpack_contents = null
+		backl = null
+		break

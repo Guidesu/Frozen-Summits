@@ -190,6 +190,8 @@
 					to_chat(user, span_warning("I'm not capable of climbing this wall."))
 					return
 				used_time = max(70 - (myskill * 10) - (L.STASPD * 3), 30)
+				if(HAS_TRAIT(L, TRAIT_ACROPHOBIA))
+					used_time = used_time*3
 			if(user.m_intent != MOVE_INTENT_SNEAK)
 				playsound(user, climbsound, 100, TRUE)
 			user.visible_message(span_warning("[user] starts to climb [src]."), span_warning("I start to climb [src]..."))

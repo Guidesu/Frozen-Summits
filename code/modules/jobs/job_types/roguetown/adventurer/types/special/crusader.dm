@@ -85,6 +85,11 @@
 	C.grant_spells(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 
+	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
+		backpack_contents = null
+		backl = null
+		break
+
 /obj/item/clothing/cloak/stabard/crusader
 	name = "surcoat of the golden order"
 	icon_state = "crusader_surcoat"

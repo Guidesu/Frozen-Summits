@@ -211,7 +211,7 @@
 //positive
 /datum/quirk/duelist
 	name = "(Weapons/Skills) Sword Training"
-	desc = "I sword training and stashed a short sword."
+	desc = "I am trained in swords and have stashed my own short sword."
 	value = 1
 
 /datum/quirk/duelist/on_spawn()
@@ -229,6 +229,37 @@
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	H.mind.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
 	H.mind.special_items["Rapier"] = /obj/item/rogueweapon/sword/rapier
+
+/datum/quirk/adamantinebones
+	name = "(Virtue) Adamantine Bones"
+	desc = "My bones are far stronger than those of others of my species. I am immune to dismemberment."
+	value = 15
+
+/datum/quirk/adamantinebones/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_NODISMEMBER, TRAIT_GENERIC)
+
+/datum/quirk/musketeer
+	name = "(Weapons/Skills) Musketeer"
+	desc = "I have have a quick hand and keen eye when employing firearms, and have one stashed away nearby."
+	value = 5
+
+/datum/quirk/musketeer/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.mind.adjust_skillrank_up_to(/datum/skill/combat/firearms, 3, TRUE)
+	H.mind.special_items["Arquebus Pistol"] = /obj/item/gun/ballistic/arquebus_pistol
+	H.mind.special_items["Sphere Pouch"] = /obj/item/storage/belt/rogue/pouch/ammo
+
+/datum/quirk/arbalist
+	name = "(Weapons/Skills) Arbalist"
+	desc = "Thanks to extreme practice with a crossbow, I have a higher skill when it comes to using them, and have one stashed nearby."
+	value = 3
+
+/datum/quirk/arbalist/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.mind.adjust_skillrank_up_to(/datum/skill/combat/crossbows, 3, TRUE)
+	H.mind.special_items["Crossbow"] = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
+	H.mind.special_items["Bolt Quiver"] = /obj/item/quiver/bolts
 
 /datum/quirk/training2
 	name = "(Weapons/Skills) Mace Training"
@@ -562,13 +593,66 @@
 /datum/quirk/nopouch/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	var/obj/item/pouch = locate(/obj/item/storage/belt/rogue/pouch) in H
-	if(H.wear_neck == pouch)
-		H.wear_neck = null
+	if(H.neck == pouch)
+		H.neck = null
 	if(H.beltl == pouch)
 		H.beltl = null
 	if(H.beltr == pouch)
 		H.beltr = null
 	qdel(pouch)
+
+/datum/quirk/nobag
+	name = "(Flaw) No Bag"
+	desc = "I lost my bags in a rabid saiga attack. How will I get it back?"
+	value = -12 // Many classes have their starting equipment in their bags.
+
+/datum/quirk/nobag/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/obj/item/bag = locate(/obj/item/storage/backpack/rogue) in H
+	if(H.backl == bag)
+		H.wear_neck = null
+	if(H.backr == bag)
+		H.beltl = null
+	qdel(bag)
+
+/datum/quirk/missingarm
+	name = "(Flaw) Amputee: Arm"
+	desc = "I lost an arm because of an injury."
+	value = -10 // You can technically replace it in round with prosthetics or another person's limb.
+
+/datum/quirk/missingarm/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/obj/item/bodypart/l_arm = H.get_bodypart(BODY_ZONE_L_ARM)
+	var/obj/item/bodypart/r_arm = H.get_bodypart(BODY_ZONE_R_ARM)
+	if(prob(50))
+		if(l_arm)
+			l_arm.drop_limb()
+			qdel(l_arm)
+	else 
+		if(r_arm)
+			r_arm.drop_limb()
+			qdel(r_arm)
+
+/datum/quirk/missingleg
+	name = "(Flaw) Amputee: Leg"
+	desc = "I lost a leg because of an injury. At least I have a walking stick."
+	value = -10 // You can technically replace it in round with prosthetics or another person's limb.
+
+/datum/quirk/missingleg/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/obj/item/bodypart/l_leg = H.get_bodypart(BODY_ZONE_L_LEG)
+	var/obj/item/bodypart/r_leg = H.get_bodypart(BODY_ZONE_R_LEG)
+	var/obj/item/rogueweapon/woodstaff/staff = new /obj/item/rogueweapon/woodstaff(get_turf(H))
+	H.put_in_hands(staff, forced = TRUE)
+
+	if(prob(50))
+		if(l_leg)
+			l_leg.drop_limb()
+			qdel(l_leg)
+	else 
+		if(r_leg)
+			r_leg.drop_limb()
+			qdel(r_leg)
 
 /datum/quirk/hussite
 	name = "(Flaw) Cursed"
@@ -638,10 +722,85 @@
 	ADD_TRAIT(H, TRAIT_COMICSANS, TRAIT_GENERIC)
 	H.dna.add_mutation(WACKY)
 
+/datum/quirk/chunkyfingers
+	name = "(Flaw) Sluggish Manipulation"
+	desc = "My hands are just too meaty for most delicate tasks. I can no longer parry, most finer tools like crossbows are unusable to me, and it takes longer for me to put on my gear. How bothersome."
+	value = -15
+
+/datum/quirk/chunkyfingers/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_CHUNKYFINGERS, TRAIT_GENERIC)
+
+/datum/quirk/highmetabolism
+	name = "(Flaw) High Metabolism"
+	desc = "I get hungry and thirsty four times as fast."
+	value = -6
+
+/datum/quirk/highmetabolism/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_HIGHMETABOLISM, TRAIT_GENERIC)
+
+/datum/quirk/mute
+	name = "(Flaw) Mute"
+	desc = "I cannot speak."
+	value = -10
+
+/datum/quirk/mute/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_MUTE, TRAIT_GENERIC)
+
+/datum/quirk/noheadarmor
+	name = "(Flaw) Exposed Head/Neck"
+	desc = "I cannot wear neck or head armor."
+	value = -8
+
+/datum/quirk/noheadarmor/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.dna.species.no_equip.Add(SLOT_NECK)
+	H.dna.species.no_equip.Add(SLOT_HEAD)
+	H.dna.species.no_equip.Add(SLOT_WEAR_MASK)
+
+/datum/quirk/noarmor
+	name = "(Flaw) Armorless"
+	desc = "I cannot wear over-armor. Chain shirts and leather are flexible enough to wear in lieu of a shirt, though!"
+	value = -8
+
+/datum/quirk/noarmor/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	H.dna.species.no_equip.Add(SLOT_ARMOR)
+
+/datum/quirk/acrophobia
+	name = "(Flaw) Acrophobia"
+	desc = "I'm afraid of hights. It takes me longer to climb up and down, and I cant look down over edges without getting dizzy..."
+	value = -6
+
+/datum/quirk/acrophobia/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_ACROPHOBIA, TRAIT_GENERIC)
+
+/datum/quirk/electricityweakness
+	name = "(Flaw) Shock Weakness"
+	desc = "Due to my blood heritage, fey magic, or elemental prowess, I am weaker than most to electrical shocks. (Cancelled out by Shock Immunity.)"
+	value = -4 // Half points that immune costs because immune negates weakness. Idk how to make them cancel out yet.
+
+/datum/quirk/electricityweakness/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_SHOCKWEAKNESS, TRAIT_GENERIC)
+	H.dna.species.siemens_coeff = 4
+
+/datum/quirk/lumbering
+	name = "(Flaw) Lumbering"
+	desc = "I'm awkward on my feet and make too much noise. I can not sneak. Ever."
+	value = -15 // This trait prevents sneaking, which means you cannot avoid triggering ambushes or concealing from mobs, player or npc alike. Constantly exposing yourself to a risk of death.
+
+/datum/quirk/lumbering/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_NOSNEAK, TRAIT_GENERIC)
+
 /datum/quirk/unlucky
 	name = "(Flaw) Unlucky"
 	desc = "Ever since you knocked over that glass vase, you just feel... off"
-	value = -8
+	value = -12
 
 /datum/quirk/unlucky/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -649,13 +808,22 @@
 
 
 /datum/quirk/jesterphobia
-	name = "(Flaw) Jesterphobic"
+	name = "(Flaw) Coulrophobia"
 	desc = "I have a severe, irrational fear of Jesters"
 	value = -4
 
 /datum/quirk/jesterphobia/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_JESTERPHOBIA, TRAIT_GENERIC)
+
+/datum/quirk/thalassophobia
+	name = "(Flaw) Thalassophobia"
+	desc = "I have a severe fear of water, and my panicked swimming exhausts me much faster!"
+	value = -6 // Gives 3x more than blessed swim costs, but the effects are 6x worse. Self corrects.
+
+/datum/quirk/thalassophobia/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_THALASSOPHOBIA, TRAIT_GENERIC)
 
 /datum/quirk/dweakness
 	name = "(Flaw) Deceiving Weakness"
@@ -703,7 +871,6 @@
 /datum/quirk/vampire
 	name = "(Flavor/Mechanic) Blood Sucker"
 	desc = "You need blood to survive, depending if you are merely an beast folk that needs blood to survive or a mutated human, you are not truly a vampire, of course others might think you are. (To gain the undead trait, and all the benefits of being a vampire, select the correct virtue alongside this quirk.)"
-//	desc = "You've existed long before the gods existed, you know the truth and have no reason to worship them. You are faithless. After attaining power, Levishth has cursed your people, bringing bad omens where ever you go. For this reason, the people of Stonehedge have shunned you and discriminated against you, there is no possible way an antediluvian will ever hold a position of power in Stonehedge, let alone be welcomed. Levishth has only shown favor to one antediluvian, rewarding them with the title of Vampire Lord, and gifting them powers far beyond that of a regular nitecreacher. Your pale skin, fangs, and eerie eyes are EASILY identifable features, so it is best to stay covered at all times in public areas."
 
 /datum/quirk/vampire/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder

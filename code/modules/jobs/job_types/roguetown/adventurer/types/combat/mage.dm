@@ -57,3 +57,8 @@
 			if(/datum/patron/inhumen/zizo)
 				H.cmode_music = 'sound/music/combat_cult.ogg'
 				backpack_contents = list(/obj/item/roguekey/inhumen = 1)
+
+	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
+		backpack_contents = null
+		backl = null
+		break

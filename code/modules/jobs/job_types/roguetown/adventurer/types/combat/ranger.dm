@@ -111,6 +111,11 @@
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 	else
 		pants = /obj/item/clothing/under/roguetown/tights/black
+	
+	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
+		backpack_contents = null
+		backl = null
+		break
 
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)

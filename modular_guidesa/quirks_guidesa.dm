@@ -164,7 +164,7 @@
 /datum/quirk/immune_eletricity
 	name = "(Virtue) Shock Immunity"
 	desc = "Due to my blood heritage, fey magic, or elemental prowess, i am immune to a degree to shocks."
-	value = 7
+	value = 8
 
 /datum/quirk/immune_eletricity/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
