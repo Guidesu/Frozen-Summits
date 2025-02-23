@@ -786,6 +786,7 @@
 /datum/quirk/electricityweakness/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_SHOCKWEAKNESS, TRAIT_GENERIC)
+	H.dna.species.siemens_coeff = 4
 
 /datum/quirk/lumbering
 	name = "(Flaw) Lumbering"
