@@ -7,7 +7,7 @@
 	desc = "A race of flightless, humanoid avians, Kenku are typically described as having the physical appearance of humanoid ravens or crows, \
 	with sharp beaks, talon-like hands and feet, and feathered bodies. \
 	Cursed by a former master whose name is lost to history, Kenku were stripped of their wings, their voice, and their affinity for individual creativity, \
-	Forcing them to rely on perfect mimicry to speak and create. (+1 Int, +2 Speed)"
+	Forcing them to rely on perfect mimicry to speak and create. (+1 Int, +2 Speed, Inherent Second Voice Virtue)"
 	default_color = "444"
 	inherent_traits = list(
 		TRAIT_EMPATH,
