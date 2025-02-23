@@ -58,6 +58,7 @@
 	var/obj/item/clothing/wear_pants = null
 	var/obj/item/belt = null
 	var/obj/item/beltl = null
+	var/obj/item/neck = null
 	var/obj/item/beltr = null
 	var/obj/item/wear_ring = null
 	var/obj/item/wear_wrists = null

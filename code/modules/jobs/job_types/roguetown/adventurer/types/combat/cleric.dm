@@ -187,6 +187,11 @@
 		C.grant_spells(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 
+	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
+		backpack_contents = null
+		backl = null
+		break
+
 /datum/outfit/job/roguetown/adventurer/cleric/post_equip(mob/living/carbon/human/H)
 	..()
 	H.virginity = TRUE

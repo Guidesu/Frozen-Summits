@@ -47,3 +47,8 @@
 	H.change_stat("intelligence", 2)
 	H.change_stat("constitution", 2) // Cheese diet.
 	H.change_stat("endurance", 1)
+
+	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
+		backpack_contents = null
+		backl = null
+		break

@@ -137,6 +137,8 @@
 				if(CH)
 					myskill += 1
 			used_time = max(70 - (myskill * 10) - (L.STASPD * 3), 30)
+			if(HAS_TRAIT(L, TRAIT_ACROPHOBIA))
+				used_time = used_time*3
 		playsound(user, 'sound/foley/climb.ogg', 100, TRUE)
 		user.visible_message(span_warning("[user] starts to climb [src]."), span_warning("I start to climb [src]..."))
 		if(do_after(L, used_time, target = src))

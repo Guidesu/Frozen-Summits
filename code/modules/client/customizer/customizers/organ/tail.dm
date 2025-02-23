@@ -153,6 +153,36 @@
 		)
 
 /datum/customizer/organ/tail/anthro
+	customizer_choices = list(/datum/customizer_choice/organ/tail/kenku)
+	allows_disabling = TRUE
+	default_disabled = TRUE
+
+/datum/customizer_choice/organ/tail/kenku
+	name = "Kenku Tailfeathers"
+	organ_type = /obj/item/organ/tail/kenku
+	sprite_accessories = list(
+		/datum/sprite_accessory/tail/corvid,
+		/datum/sprite_accessory/tail/hawk,
+		)
+
+/datum/customizer/organ/tail/changeling
+	customizer_choices = list(/datum/customizer_choice/organ/tail/changeling)
+	allows_disabling = FALSE
+
+/datum/customizer_choice/organ/tail/changeling
+	name = "Changeling Tail"
+	organ_type = /obj/item/organ/tail/changeling
+	generic_random_pick = TRUE
+	sprite_accessories = list(
+		/datum/sprite_accessory/tails/changeling/onetail,
+		/datum/sprite_accessory/tails/changeling/twotails,
+		/datum/sprite_accessory/tails/changeling/threetails,
+		/datum/sprite_accessory/tail/kitsune,
+		/datum/sprite_accessory/tail/tamamo_kitsune,
+		)
+	allows_accessory_color_customization = FALSE
+
+/datum/customizer/organ/tail/kenku
 	customizer_choices = list(/datum/customizer_choice/organ/tail/anthro)
 	allows_disabling = TRUE
 	default_disabled = TRUE
@@ -220,20 +250,3 @@
 		/datum/sprite_accessory/tail/lizard/spikes,
 		/datum/sprite_accessory/tail/rattlesnake
 		)
-
-/datum/customizer/organ/tail/changeling
-	customizer_choices = list(/datum/customizer_choice/organ/tail/changeling)
-	allows_disabling = FALSE
-
-/datum/customizer_choice/organ/tail/changeling
-	name = "Changeling Tail"
-	organ_type = /obj/item/organ/tail/changeling
-	generic_random_pick = TRUE
-	sprite_accessories = list(
-		/datum/sprite_accessory/tails/changeling/onetail,
-		/datum/sprite_accessory/tails/changeling/twotails,
-		/datum/sprite_accessory/tails/changeling/threetails,
-		/datum/sprite_accessory/tail/kitsune,
-		/datum/sprite_accessory/tail/tamamo_kitsune,
-		)
-	allows_accessory_color_customization = FALSE

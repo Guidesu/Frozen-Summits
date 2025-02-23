@@ -54,7 +54,7 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 		r_hand = /obj/item/rogueweapon/woodstaff
 
-
-
-
-
+	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
+		backpack_contents = null
+		backl = null
+		break

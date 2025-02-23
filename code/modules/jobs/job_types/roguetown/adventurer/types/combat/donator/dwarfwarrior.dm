@@ -49,3 +49,8 @@
 	H.change_stat("constitution", 3) // Seven points just like Warrior. They already get a debuff racial to speed. Please do not stack it God please.
 	H.change_stat("strength", 2)
 	H.change_stat("endurance", 2)
+
+	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
+		backpack_contents = null
+		backl = null
+		break

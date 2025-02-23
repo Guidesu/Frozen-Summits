@@ -36,3 +36,8 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 	H.change_stat("strength", 1)
 	H.change_stat("endurance", 1)
+
+	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
+		backpack_contents = null
+		backl = null
+		break

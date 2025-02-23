@@ -50,3 +50,7 @@
 /obj/item/organ/wings/tengu
 	name = "harpy wings"
 	desc = ""
+
+/obj/item/organ/wings/kenku
+	name = "kenku wings"
+	desc = ""

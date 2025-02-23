@@ -257,3 +257,25 @@
 		/datum/sprite_accessory/snout/stubby,
 		/datum/sprite_accessory/snout/stubbyalt,
 		)
+
+/datum/customizer/organ/snout/kenku
+	customizer_choices = list(/datum/customizer_choice/organ/snout/kenku)
+
+/datum/customizer_choice/organ/snout/kenku
+	name = "Kenku Beak"
+	organ_type = /obj/item/organ/snout/beak
+	sprite_accessories = list(
+		/datum/sprite_accessory/snout/bird,
+		/datum/sprite_accessory/snout/bigbeak,
+		/datum/sprite_accessory/snout/bigbeakshort,
+		/datum/sprite_accessory/snout/slimbeak,
+		/datum/sprite_accessory/snout/slimbeakshort,
+		/datum/sprite_accessory/snout/slimbeakalt,
+		/datum/sprite_accessory/snout/hookbeak,
+		/datum/sprite_accessory/snout/hookbeakbig,
+		/datum/sprite_accessory/snout/toucan,
+		/datum/sprite_accessory/snout/sbeak,
+		/datum/sprite_accessory/snout/front/bird,
+		/datum/sprite_accessory/snout/front/bigbeak,
+		/datum/sprite_accessory/snout/front/toucan,
+		)

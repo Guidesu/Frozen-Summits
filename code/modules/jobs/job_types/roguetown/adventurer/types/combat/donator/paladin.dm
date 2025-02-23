@@ -144,3 +144,8 @@
 	//Max devotion limit - Paladins are stronger but cannot pray to gain all abilities beyond t1
 	C.grant_spells_templar(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
+
+	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
+		backpack_contents = null
+		backl = null
+		break

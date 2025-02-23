@@ -167,3 +167,8 @@
 	H.change_stat("perception", 1)
 	H.cmode_music = 'sound/music/combat_duelist.ogg'
 	to_chat(H, span_info("I trained as a swashbuckler, flair and precision is my weapon... And some dirty tricks under my cape. I can fool people into underestimating me, their last mistake."))
+
+	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
+		backpack_contents = null
+		backl = null
+		break

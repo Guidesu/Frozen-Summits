@@ -99,3 +99,19 @@
 		/datum/sprite_accessory/wings/wide/harpywingsalt2_top,
 		/datum/sprite_accessory/wings/large/harpyswept,
 		)
+
+/datum/customizer/organ/wings/kenku
+	customizer_choices = list(/datum/customizer_choice/organ/wings/kenku)
+	allows_disabling = TRUE
+	default_disabled = TRUE
+
+/datum/customizer_choice/organ/wings/kenku
+	name = "Kenku Wings"
+	organ_type = /obj/item/organ/wings/kenku
+	sprite_accessories = list(
+		/datum/sprite_accessory/wings/wide/harpywings,
+		/datum/sprite_accessory/wings/wide/harpywingsalt1,
+		/datum/sprite_accessory/wings/wide/harpywings_top,
+		/datum/sprite_accessory/wings/wide/harpywingsalt1_top,
+		/datum/sprite_accessory/wings/large/harpyswept,
+		)
