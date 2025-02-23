@@ -733,8 +733,8 @@
 
 /datum/quirk/highmetabolism
 	name = "(Flaw) High Metabolism"
-	desc = "I get hungry and thirsty four times as fast."
-	value = -6
+	desc = "I get hungry and thirsty twice as fast."
+	value = -5
 
 /datum/quirk/highmetabolism/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
