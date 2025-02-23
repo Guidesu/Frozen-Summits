@@ -37,14 +37,6 @@ GLOBAL_LIST_INIT(named_breast_sizes, list(
 	"normal" = 3,
 	"large" = 4,
 	"extra large" = 5,
-	"massive" = 6,
-	"enormous" = 7,
-	"towering" = 8,
-	"magnificent" = 9,
-	"gigantic" = 10,
-	"titanic" = 11,
-	"gargantuan" = 12,
-	"colossal" = 13,
 ))
 
 //unselectables included.
@@ -55,17 +47,6 @@ GLOBAL_LIST_INIT(uns_named_breast_sizes, list(
 	"normal" = 3,
 	"large" = 4,
 	"extra large" = 5,
-	"massive" = 6,
-	"enormous" = 7,
-	"towering" = 8,
-	"magnificent" = 9,
-	"gigantic" = 10,
-	"titanic" = 11,
-	"gargantuan" = 12,
-	"colossal" = 13,
-	"unbelieveably big" = 14,
-	"godly big" = 15,
-	"ungodly big" = 16,
 ))
 
 

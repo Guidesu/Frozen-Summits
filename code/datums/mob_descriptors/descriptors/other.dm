@@ -228,26 +228,4 @@
 			adjective = "a large"
 		if(5)
 			adjective = "an extra large"
-		if(6)
-			adjective = "a massive"
-		if(7)
-			adjective = "an enormous"
-		if(8)
-			adjective = "a magnificent"
-		if(9)
-			adjective = "a towering"
-		if(10)
-			adjective = "a gigantic"
-		if(11)
-			adjective = "a titanic"
-		if(12)
-			adjective = "a gargantuan"
-		if(13)
-			adjective = "a colossal"
-		if(14)
-			adjective = "a unbelieveably big"
-		if(15)
-			adjective = "a very big"
-		if(16)
-			adjective = "a ungodly big"
 	return "[adjective] pair of breasts"

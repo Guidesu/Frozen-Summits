@@ -111,7 +111,7 @@
 	color_key_defaults = list(KEY_SKIN_COLOR)
 
 /datum/sprite_accessory/breasts
-	icon = 'modular_stonehedge/icons/mob/sprite_accessory/genitals/breasts.dmi'
+	icon = 'icons/mob/sprite_accessory/genitals/breasts.dmi'
 	color_key_name = "Breasts"
 	relevant_layers = list(BODY_BEHIND_LAYER,BODY_FRONT_FRONT_LAYER)
 
