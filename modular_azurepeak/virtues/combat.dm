@@ -73,14 +73,14 @@
 	desc = "I have trained under a duelist of considerable skill, and always have my trusty rapier close at hand. (+1 to Swords, Up to Expert, Minimum Apprentice)"
 	added_stashed_items = list("Rapier" = /obj/item/rogueweapon/sword/rapier)
 */
-
+/*
 /datum/virtue/combat/duelist/apply_to_human(mob/living/carbon/human/recipient)
 	if(recipient.mind?.get_skill_level(/datum/skill/combat/swords) < SKILL_LEVEL_JOURNEYMAN)
 		recipient.mind?.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_APPRENTICE, silent = TRUE)
 	else
 		added_skills = list(list(/datum/skill/combat/swords, 1, 4))
 		handle_skills(recipient)
-
+*/
 /datum/virtue/combat/bowman
 	name = "Toxophilite"
 	desc = "I have studied underneath a bowman of considerable skill, and always have my trusty bow and a quiver of arrows close at hand. (+1 to Bows, Up to Legendary, Minimum Apprentice)"
@@ -119,7 +119,7 @@
 
 /datum/virtue/combat/rotcured/apply_to_human(mob/living/carbon/human/recipient)
 	recipient.update_body() // applies the rot skin tone stuff
-
+/*
 /datum/virtue/combat/dualwielder
 	name = "Dual Wielder"
 	desc = "Whether it was by the Naledi scholars, Etruscan privateers or even the Kazengan senseis. I've been graced with the knowledge of how to wield two weapons at once, making my offense more formidable, at the expense of my defense. When I wield two identical type weapons, I roll attacks twice, but so does the enemy against me. I've also learned to become ambidextrous, ignoring any off-hand penalties."
@@ -129,3 +129,4 @@
 	name = "Sentinel of Wits"
 	desc = "Whether it's by having an annoying sibling that kept prodding me with a stick, or years of study and observation, I've become adept at both parrying and dodging stronger opponents, by learning their moves and studying them. My own attacks however, still rely on true training of my weapons. \n I convert INT into dodge and parry chance, every 2 INT points above 10 adding 10% additional chance. Does not count artificial buffs to INT from potions or substances."
 	added_traits = list(TRAIT_SENTINELOFWITS)
+*/

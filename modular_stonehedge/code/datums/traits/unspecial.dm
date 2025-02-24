@@ -1191,3 +1191,73 @@
 /datum/quirk/battle_Stance/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/toggle_stance)
+
+
+/datum/quirk/magic_barrier
+	name = "(Virtue) Magic Barrier"
+	desc = "You have a magical barrier that protects you from a few hits, and by that, know a very small ammount of arcana."
+	value = 3
+
+/datum/quirk/magic_barrier/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
+	H.mind.adjust_skillrank_up_to((/datum/skill/magic/arcane), 1, TRUE)
+
+
+/datum/quirk/intellectual
+	name = "(Virtue) Intellectual"
+	desc = "You are a very smart person, you know a lot of things, and you can see other people's stats."
+	value = 2
+
+/datum/quirk/intellectual/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_INTELLECTUAL, TRAIT_GENERIC)
+
+
+/datum/quirk/keenears
+	name = "(Virtue) Keen Ears"
+	desc = "You have very good hearing, you can hear things that others can't."
+	value = 2
+
+/datum/quirk/keenears/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_KEENEARS, TRAIT_GENERIC)
+
+
+/datum/quirk/deathknower
+	name = "(Virtue) Death Knower"
+	desc = "You know when someone dies by a blessing from Kelemvor or a curse from Myrkul."
+	value = 3
+
+/datum/quirk/deathknower/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_DEATHSIGHT, TRAIT_GENERIC)
+
+/datum/quirk/sun_sensitivity
+	name = "(Flaw) Sun Sensitivity"
+	desc = "You are very sensitive to the sun, and you get annoyed by it."
+	value = -3
+
+/datum/quirk/sun_sensitivity/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_DARKLING, TRAIT_GENERIC)
+
+
+/datum/quirk/dual_wielder
+	name = "(Combat) Dual Wielder"
+	desc = "You can wield two weapons at the same time, giving you a bonus in combat. Also against you."
+	value = 3
+
+/datum/quirk/dual_wielder/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_DUALWIELDER, TRAIT_GENERIC)
+
+
+/datum/quirk/sentinel_of_wits
+	name = "(Virtue) Sentinel of Wits"
+	desc = "Whether it's by having an annoying sibling that kept prodding me with a stick, or years of study and observation, I've become adept at both parrying and dodging stronger opponents, by learning their moves and studying them. My own attacks however, still rely on true training of my weapons. \n I convert INT into dodge and parry chance, every 2 INT points above 10 adding 10% additional chance. Does not count artificial buffs to INT from potions or substances."
+	value = 2
+
+/datum/quirk/sentinel_of_wits/on_spawn()
+	var/mob/living/carbon/human/H = quirk_holder
+	ADD_TRAIT(H, TRAIT_SENTINELOFWITS, TRAIT_GENERIC)

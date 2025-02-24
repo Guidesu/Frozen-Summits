@@ -3713,6 +3713,7 @@
 #include "modular_azurepeak\virtues\custom_virtues.dm"
 #include "modular_azurepeak\virtues\items.dm"
 #include "modular_azurepeak\virtues\movement.dm"
+#include "modular_azurepeak\virtues\new_virtues.dm"
 #include "modular_azurepeak\virtues\size.dm"
 #include "modular_azurepeak\virtues\thief.dm"
 #include "modular_azurepeak\virtues\utility.dm"
