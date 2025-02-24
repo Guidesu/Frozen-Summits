@@ -1236,7 +1236,7 @@
 /datum/quirk/sun_sensitivity
 	name = "(Flaw) Sun Sensitivity"
 	desc = "You are very sensitive to the sun, and you get annoyed by it."
-	value = -3
+	value = -6
 
 /datum/quirk/sun_sensitivity/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
