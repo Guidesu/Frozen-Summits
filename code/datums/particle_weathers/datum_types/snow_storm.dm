@@ -1,16 +1,16 @@
 //Snow - goes down and swirls
 /particles/weather/snow
-	icon_state             = list("cross"=2, "snow_1"=5, "snow_2"=2, "snow_3"=2,)
-	color                  = "#ffffff"
-	position               = generator("box", list(-500,-256,5), list(500,500,0))
-	spin                   = generator("num",-10,10)
-	gravity                = list(0, -2, 0.1)
-	drift                  = generator("circle", 0, 3) // Some random movement for variation
-	friction               = 0.3  // shed 30% of velocity and drift every 0.1s
+	icon_state			 = list("cross"=2, "snow_1"=5, "snow_2"=2, "snow_3"=2,)
+	color				  = "#ffffff"
+	position			   = generator("box", list(-500,-256,5), list(500,500,0))
+	spin				   = generator("num",-10,10)
+	gravity				= list(0, -2, 0.1)
+	drift				  = generator("circle", 0, 3) // Some random movement for variation
+	friction			   = 0.3  // shed 30% of velocity and drift every 0.1s
 	//Weather effects, max values
-	maxSpawning           = 50
-	minSpawning           = 10
-	wind                  = 2
+	maxSpawning		   = 50
+	minSpawning		   = 10
+	wind				  = 2
 
 	// big snowflakes
 	transform			 = null
@@ -31,7 +31,7 @@
 	immunity_type = TRAIT_SNOWSTORM_IMMUNE
 	probability = 1
 	target_trait = PARTICLEWEATHER_SNOW
-	weather_special_effect = /datum/weather_effect/snow
+//	weather_special_effect = /datum/weather_effect/snow
 
 //Makes you a little chilly
 /datum/particle_weather/snow_gentle/weather_act(mob/living/L)
@@ -56,7 +56,7 @@
 	immunity_type = TRAIT_SNOWSTORM_IMMUNE
 	probability = 1
 	target_trait = PARTICLEWEATHER_SNOW
-	weather_special_effect = /datum/weather_effect/snow
+//	weather_special_effect = /datum/weather_effect/snow
 
 /datum/weather_effect
 	var/name = "effect"

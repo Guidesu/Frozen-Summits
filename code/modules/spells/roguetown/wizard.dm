@@ -447,7 +447,7 @@ Unless of course, they went heavy into the gameplay loop, and got a better book.
 	chargedloop = /datum/looping_sound/invokegen
 	associated_skill = /datum/skill/magic/arcane
 	xp_gain = TRUE
-	cost = 3
+	cost = 1
 
 /mob/living/simple_animal/hostile/retaliate/rogue/wolf/familiar/Initialize(mapload, mob/user)
 	. = ..()
@@ -519,7 +519,7 @@ Unless of course, they went heavy into the gameplay loop, and got a better book.
 /obj/effect/proc_holder/spell/invoked/meteor_storm
 	name = "Meteor storm"
 	desc = "Summons forth dangerous meteors from the sky to scatter and smash foes."
-	cost = 13
+	cost = 4
 	releasedrain = 50
 	chargedrain = 1
 	chargetime = 50
@@ -615,7 +615,7 @@ Unless of course, they went heavy into the gameplay loop, and got a better book.
 	action_icon_state = "summons"
 	invocation = "Zar’kalthra ven’thelis!"
 	invocation_type = "Whisper"
-	cost = 2
+	cost = 1
 	var/obj/marked_item
 
 
@@ -697,7 +697,7 @@ Unless of course, they went heavy into the gameplay loop, and got a better book.
 /obj/effect/proc_holder/spell/invoked/sundering_lightning
 	name = "Sundering Lightning"
 	desc = "Summons forth dangerous rapid lightning strikes."
-	cost = 13
+	cost = 2
 	releasedrain = 50
 	chargedrain = 1
 	chargetime = 50

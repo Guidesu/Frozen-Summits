@@ -49,7 +49,7 @@ obj/item/enchantmentscroll/mining/attack_obj(obj/item/O, mob/living/user)
 		to_chat(user, span_notice("Nothing happens. Perhaps you can't enchant [O] with this?"))
 
 /obj/item/enchantmentscroll/xylix
-	name = "enchanting scroll of xylix's grace"
+	name = "enchanting scroll of tymora's grace"
 	desc = "A scroll imbued with an enchantment of luck. How fortunate!"
 	component = /datum/magic_item/mundane/xylix
 
@@ -59,7 +59,7 @@ obj/item/enchantmentscroll/mining/attack_obj(obj/item/O, mob/living/user)
 		to_chat(user, span_notice("You open [src] and place [O] within. Moments later, it flashes blue with arcana, and [src] crumbles to dust."))
 		var/magiceffect= new component
 		O.AddComponent(/datum/component/magic_item, magiceffect)
-		O.name += " of xylixs grace"
+		O.name += " of tymora's grace"
 		qdel(src)
 		O.enchanted = TRUE
 		O.filters += filter(type="drop_shadow", x=0, y=0, size=1, offset=2, color=rgb(rand(1,255),rand(1,255),rand(1,255)))

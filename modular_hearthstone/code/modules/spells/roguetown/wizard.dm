@@ -245,7 +245,12 @@
 		/obj/effect/proc_holder/spell/targeted/touch/lesserknock,
 		/obj/effect/proc_holder/spell/invoked/counterspell,
 		/obj/effect/proc_holder/spell/invoked/enlarge,
-		/obj/effect/proc_holder/spell/invoked/leap
+		/obj/effect/proc_holder/spell/invoked/leap,
+		/obj/effect/proc_holder/spell/invoked/findfamiliar,
+		/obj/effect/proc_holder/spell/invoked/arcyne_storm,
+		/obj/effect/proc_holder/spell/invoked/meteor_storm,
+		/obj/effect/proc_holder/spell/targeted/summonweapon,
+		/obj/effect/proc_holder/spell/invoked/sundering_lightning,
 		
 	)
 

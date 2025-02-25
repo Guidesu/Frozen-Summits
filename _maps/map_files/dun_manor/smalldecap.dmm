@@ -573,12 +573,6 @@
 /obj/structure/chair/wood/rogue,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/mountains/decap/stepbelow)
-"hm" = (
-/obj/structure/fluff/sellsign{
-	name = "CONDEMNED BY THE HOLY SEE"
-	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/mountains/decap)
 "hq" = (
 /obj/effect/decal/remains/saiga,
 /turf/open/floor/rogue/cobble/mossy,
@@ -2676,12 +2670,6 @@
 /obj/item/toy/cards/deck/tarot,
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/mountains/decap/stepbelow)
-"GW" = (
-/obj/structure/fluff/sellsign{
-	name = "CONDEMNED BY THE HOLY SEE"
-	},
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/mountains/decap)
 "GZ" = (
 /obj/structure/closet/crate/coffin,
 /obj/item/reagent_containers/glass/bottle/rogue/manapot,
@@ -3567,12 +3555,6 @@
 /obj/structure/fluff/walldeco/rpainting,
 /turf/closed/wall/mineral/rogue/stonebrick,
 /area/rogue/under/cave/undeadmanor)
-"Ss" = (
-/obj/structure/fluff/walldeco/wallshield{
-	pixel_y = 32
-	},
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/mountains/decap)
 "Sy" = (
 /obj/item/grown/log/tree/small,
 /mob/living/carbon/human/species/skeleton/npc,
@@ -3768,10 +3750,15 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/goblinfort)
 "UQ" = (
-/obj/structure/fluff/walldeco/wallshield{
-	pixel_y = 32
+/obj/structure/bars{
+	color = "#755f48";
+	name = "rusted bars"
 	},
-/turf/open/floor/rogue/cobble/mossy,
+/obj/structure/bars/passage{
+	density = 0;
+	icon_state = "passage1"
+	},
+/turf/closed,
 /area/rogue/outdoors/mountains/decap)
 "US" = (
 /obj/structure/stairs/stone/d{
@@ -6102,7 +6089,7 @@ CF
 CF
 rp
 rp
-UQ
+bb
 JG
 TW
 xh
@@ -6362,7 +6349,7 @@ LR
 LR
 wo
 ra
-GW
+JG
 JG
 TW
 TW
@@ -6490,7 +6477,7 @@ LR
 LR
 LR
 LR
-wo
+UQ
 ra
 JG
 JG
@@ -6752,7 +6739,7 @@ lq
 lq
 wo
 ra
-hm
+Ry
 JG
 Ry
 Ry
@@ -7012,7 +6999,7 @@ fg
 fg
 rp
 rp
-Ss
+JG
 Ry
 JG
 JG

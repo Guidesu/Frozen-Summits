@@ -16,7 +16,7 @@
 	result = /obj/item/chalk
 	reqs = list(/obj/item/reagent_containers/powder/salt = 1,
 				/datum/reagent/water = 15)
-	craftdiff = 2
+	craftdiff = 0
 
 /datum/crafting_recipe/roguetown/arcana/infernalfeather
 	name = "infernal feather"
