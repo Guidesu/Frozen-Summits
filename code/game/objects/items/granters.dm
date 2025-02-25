@@ -52,10 +52,9 @@
 		return FALSE
 	if(!user.can_read(src))
 		return FALSE
-/*	AZURE PEAK REMOVAL -- UNUSED ANYWAY
-	if(user.STAINT < 12)
-			to_chat(user, span_warning("You can't make sense of the sprawling runes!"))
-			return FALSE */
+	if(user.STAINT < 12)	//12 is minimum int stat the prospective mages
+		to_chat(user, span_warning("You can't make sense of the sprawling runes!"))
+		return FALSE
 	if(used)
 		if(oneuse)
 			recoil(user)

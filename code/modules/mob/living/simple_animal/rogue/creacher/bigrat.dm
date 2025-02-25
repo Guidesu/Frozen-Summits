@@ -44,6 +44,10 @@
 	stat_attack = UNCONSCIOUS
 	remains_type = /obj/effect/decal/remains/bigrat
 
+	AIStatus = AI_OFF
+	can_have_ai = FALSE
+	ai_controller = /datum/ai_controller/big_rat
+
 /obj/effect/decal/remains/bigrat
 	name = "remains"
 	gender = PLURAL
@@ -62,6 +66,32 @@
 		icon_living = "Frat"
 		icon_dead = "Frat1"
 	update_icon()
+
+	AddElement(/datum/element/ai_flee_while_injured, 0.75, retreat_health)
+	ai_controller.set_blackboard_key(BB_BASIC_FOODS, food_type)
+
+/mob/living/simple_animal/hostile/retaliate/rogue/bigrat/death(gibbed)
+	..()
+	update_icon()
+
+/mob/living/simple_animal/hostile/retaliate/rogue/bigrat/tamed()
+	..()
+	deaggroprob = 20
+	if(can_buckle)
+		var/datum/component/riding/D = LoadComponent(/datum/component/riding)
+		D.set_riding_offsets(RIDING_OFFSET_ALL, list(TEXT_NORTH = list(0, 2), TEXT_SOUTH = list(0, 2), TEXT_EAST = list(-2, 2), TEXT_WEST = list(2, 2)))
+		D.set_vehicle_dir_layer(SOUTH, OBJ_LAYER)
+		D.set_vehicle_dir_layer(NORTH, OBJ_LAYER)
+		D.set_vehicle_dir_layer(EAST, OBJ_LAYER)
+		D.set_vehicle_dir_layer(WEST, OBJ_LAYER)
+		D.vehicle_move_delay = 6	//Slowdown the rous, its too fast
+		move_to_delay = 6
+
+
+/mob/living/simple_animal/hostile/retaliate/rogue/bigrat/find_food()
+	. = ..()
+	if(!.)
+		return eat_bodies()
 
 
 /mob/living/simple_animal/hostile/retaliate/rogue/bigrat/death(gibbed)

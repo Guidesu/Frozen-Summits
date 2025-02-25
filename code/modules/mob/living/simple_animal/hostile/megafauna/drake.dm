@@ -101,7 +101,7 @@ Difficulty: Medium
 	button_icon_state = "lavastaff_warn"
 	chosen_message = span_colossus("I are now swooping and raining lava at your target.")
 	chosen_attack_num = 4
-
+/*
 /mob/living/simple_animal/hostile/megafauna/dragon/OpenFire()
 	if(swooping)
 		return
@@ -180,7 +180,8 @@ Difficulty: Medium
 			INVOKE_ASYNC(src, PROC_REF(fire_line), turfs)
 		SLEEP_CHECK_DEATH(25)
 	SetRecoveryTime(30)
-
+*/
+/*
 /mob/living/simple_animal/hostile/megafauna/dragon/proc/lava_arena()
 	if(!target)
 		return
@@ -204,7 +205,7 @@ Difficulty: Medium
 	var/list/turfs = RANGE_TURFS(2, center)
 	while(amount > 0)
 		var/list/empty = indestructible_turfs.Copy() // can't place safe turfs on turfs that weren't changed to be open
-		var/any_attack = 0
+//		var/any_attack = 0
 		for(var/turf/T in turfs)
 			for(var/mob/living/L in T.contents)
 				if(L.client)
@@ -213,15 +214,6 @@ Difficulty: Medium
 			for(var/obj/mecha/M in T.contents)
 				empty += pick(((RANGE_TURFS(2, M) - RANGE_TURFS(1, M)) & turfs) - empty)
 				any_attack = 1
-		if(!any_attack)
-			for(var/obj/effect/temp_visual/drakewall/D in drakewalls)
-				qdel(D)
-			return 0 // nothing to attack in the arena time for enraged attack if we still have a target
-		for(var/turf/T in turfs)
-			if(!(T in empty))
-				new /obj/effect/temp_visual/lava_warning(T)
-			else if(!istype(T, /turf/closed/indestructible))
-				new /obj/effect/temp_visual/lava_safe(T)
 		amount--
 		SLEEP_CHECK_DEATH(24)
 	return 1 // attack finished completely
@@ -432,6 +424,8 @@ Difficulty: Medium
 	src.alpha = 63.75
 	animate(src, alpha = 255, time = duration)
 
+*/
+/*
 /obj/effect/temp_visual/lava_warning/proc/fall(reset_time)
 	var/turf/T = get_turf(src)
 	playsound(T,'sound/blank.ogg', 80, TRUE)
@@ -572,7 +566,7 @@ Difficulty: Medium
 			flame_hit[L] = TRUE
 		else
 			L.adjustFireLoss(10) //if we've already hit them, do way less damage
-
+*/
 /mob/living/simple_animal/hostile/megafauna/dragon/lesser
 	name = "lesser ash drake"
 	maxHealth = 200
@@ -590,7 +584,7 @@ Difficulty: Medium
 	crusher_loot = list()
 	butcher_results = list(/obj/item/stack/ore/diamond = 5, /obj/item/stack/sheet/sinew = 5, /obj/item/stack/sheet/bone = 30)
 	attack_action_types = list()
-
+/*
 /mob/living/simple_animal/hostile/megafauna/dragon/lesser/AltClickOn(atom/movable/A)
 	if(!istype(A))
 		return
@@ -600,7 +594,7 @@ Difficulty: Medium
 	swoop_attack(FALSE, A)
 	lava_pools(10, 2) // less pools but longer delay before spawns
 	player_cooldown = world.time + 200 // needs seperate cooldown or cant use fire attacks
-
+*/
 /mob/living/simple_animal/hostile/megafauna/dragon/lesser/grant_achievement(medaltype,scoretype)
 	return
 
@@ -631,7 +625,7 @@ Difficulty: Medium
 
 /mob/living/simple_animal/hostile/megafauna/dragon/space_dragon/grant_achievement(medaltype,scoretype)
 	return
-
+/*
 /mob/living/simple_animal/hostile/megafauna/dragon/space_dragon/Initialize()
 	var/obj/effect/proc_holder/spell/aoe_turf/repulse/spacedragon/repulse_action = new /obj/effect/proc_holder/spell/aoe_turf/repulse/spacedragon(src)
 	repulse_action.action.Grant(src)
@@ -651,7 +645,7 @@ Difficulty: Medium
 		return
 	ranged_cooldown = world.time + ranged_cooldown_time
 	fire_stream()
-
+*/
 /obj/effect/proc_holder/spell/aoe_turf/repulse/spacedragon
 	name = "Tail Sweep"
 	desc = ""
@@ -677,3 +671,5 @@ Difficulty: Medium
 
 /mob/living/simple_animal/hostile/megafauna/dragon/space_dragon/AltClickOn(atom/movable/A)
 	return
+
+

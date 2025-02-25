@@ -13,7 +13,16 @@
 	faction = list("rogueanimal")
 	robust_searching = 1
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
-	attack_sound = PUNCHWOOSH
+	footstep_type = FOOTSTEP_MOB_BAREFOOT
+	speak_chance = 1
+
+	turns_per_move = 5
+	move_to_delay = 8	// basically speed when player controlled. Lower is faster, a lot faster.
+	see_in_dark = 6
+	robust_searching = TRUE
+
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat = 1)
+
 	health = 40
 	maxHealth = 40
 	move_to_delay = 5
@@ -36,10 +45,41 @@
 	minimum_distance = 10
 	dodge_sound = 'sound/combat/dodge.ogg'
 	dodge_prob = 0
+	candodge = TRUE
+	var/tier = 0
+	search_objects = TRUE
+	can_saddle = FALSE
+
+	/// If this mob feeds on corpses.
+	var/body_eater = FALSE
+
+	/// If the creature is doing something they should STOP MOVING.
+	var/can_act = TRUE
+
+	/// Trolls eat more than wolves
+	var/food_max = 50
+
 	var/deaggroprob = 10
 	var/eat_forever
 	candodge = TRUE
 
+	var/summon_primer = null
+/mob/living/simple_animal/hostile/retaliate/rogue/onbite(mob/living/carbon/human/user)
+	visible_message(span_danger("[user] bites [src]!"))
+	playsound(src, "smallslash", 100, TRUE, -1)
+	var/bite_power = 3
+
+	if(HAS_TRAIT(user, TRAIT_STRONGBITE))
+		bite_power += ( user.STASTR )
+
+	apply_damage((bite_power), BRUTE)
+	..()
+
+/mob/living/simple_animal/hostile/retaliate/rogue/Move()
+	//If you cant act and dont have a player stop moving.
+	if(!can_act && !client)
+		return FALSE
+	..()
 
 /mob/living/simple_animal/hostile/retaliate/rogue/apply_damage(damage = 0,damagetype = BRUTE, def_zone = null, blocked = FALSE, forced = FALSE)
 	..()
@@ -96,6 +136,7 @@
 				qdel(F)
 				food = max(food + 30, 100)
 				return TRUE
+
 	for(var/obj/item/F in foundfood)
 		if(is_type_in_list(F, food_type))
 			var/turf/T = get_turf(F)
@@ -263,3 +304,43 @@
 		stop_automated_movement = TRUE
 		Goto(user,move_to_delay)
 		addtimer(CALLBACK(src, PROC_REF(return_action)), 3 SECONDS)
+
+/obj/item/gudder
+
+/obj/item/gudder/Initialize()
+	create_reagents(100)
+	reagents.add_reagent(/datum/reagent/consumable/milk, rand(0,20))
+	. = ..()
+
+/obj/item/gudder/proc/generateMilk()
+	reagents.add_reagent(/datum/reagent/consumable/milk, 1)
+
+/obj/item/gudder/proc/milkAnimal(obj/O, mob/living/user = usr)
+	var/obj/item/reagent_containers/glass/G = O
+	if(G.reagents.total_volume >= G.volume)
+		to_chat(user, span_warning("[O] is full."))
+		return
+	if(!reagents.has_reagent(/datum/reagent/consumable/milk, 5))
+		to_chat(user, span_warning("The udder is dry. Wait a bit longer..."))
+		user.changeNext_move(10)
+		return
+	if(do_after(user, 1 SECONDS, target = src))
+		reagents.trans_to(O, rand(5,10))
+		user.visible_message(span_notice("[user] milks [src] using \the [O]"))
+		playsound(O, pick('sound/vo/mobs/cow/milking (1).ogg', 'sound/vo/mobs/cow/milking (2).ogg'), 100, TRUE, -1)
+		user.Immobilize(1 SECONDS)
+		user.changeNext_move(1 SECONDS)
+
+
+/mob/living/simple_animal/hostile/retaliate/rogue/UnarmedAttack(atom/A)
+	. = ..()
+	if(!is_type_in_list(A, food_type))
+		return
+
+	if(!src.CanReach(A))
+		return
+
+	face_atom(A)
+	playsound(src,'sound/misc/eat.ogg', rand(30,60), TRUE)
+	qdel(A)
+	food = max(food + 30, 100)

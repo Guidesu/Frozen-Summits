@@ -183,10 +183,10 @@
 		continue
 	FOR_DVIEW_END
 
-/obj/machinery/jukebox/disco/proc/hierofunk()
-	for(var/i in 1 to 10)
-		spawn_atom_to_turf(/obj/effect/temp_visual/hierophant/telegraph/edge, src, 1, FALSE)
-		sleep(5)
+///obj/machinery/jukebox/disco/proc/hierofunk()
+//	for(var/i in 1 to 10)
+//		spawn_atom_to_turf(/obj/effect/temp_visual/hierophant/telegraph/edge, src, 1, FALSE)
+//		sleep(5)
 
 #define DISCO_INFENO_RANGE (rand(85, 115)*0.01)
 
@@ -279,8 +279,6 @@
 						glow.set_light_on(FALSE)
 						glow.set_light_color(LIGHT_COLOR_RED)
 					glow.even_cycle = !glow.even_cycle
-		if(prob(2))  // Unique effects for the dance floor that show up randomly to mix things up
-			INVOKE_ASYNC(src, PROC_REF(hierofunk))
 		sleep(selection.song_beat)
 		if(QDELETED(src))
 			return
