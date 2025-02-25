@@ -148,3 +148,8 @@
 			H.change_stat("endurance", 2)
 			ADD_TRAIT(H, TRAIT_STRONGBITE, TRAIT_GENERIC) //doubles bite damage, which is 50% of STR.
 			H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
+
+	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
+		backpack_contents = null
+		backl = null
+		break

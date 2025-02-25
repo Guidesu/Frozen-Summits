@@ -33,3 +33,8 @@
 		H.change_stat("strength", 1)
 		H.change_stat("endurance", 1)
 		H.change_stat("intelligence", -1)
+
+	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
+		backpack_contents = null
+		backl = null
+		break

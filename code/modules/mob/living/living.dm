@@ -2078,6 +2078,12 @@
 		if(ttime < 0)
 			ttime = 0
 
+	if(HAS_TRAIT(src, TRAIT_ACROPHOBIA))
+		to_chat(src, span_danger("Too high!"))
+		src.cursed_freak_out()
+		stop_looking()
+		return
+
 	visible_message(span_info("[src] looks down through [T]."))
 
 	if(!do_after(src, ttime, target = src))

@@ -38,6 +38,7 @@
 #define TRAIT_ANTIMAGIC	"Anti-Magic"
 #define TRAIT_ANTISCRYING "Non-Detection"
 #define TRAIT_SHOCKIMMUNE "Shock Immunity"
+#define TRAIT_SHOCKWEAKNESS "Shock Weakness" // Frozen Summit Add
 #define TRAIT_NOSLEEP "Fatal Insomnia"
 #define TRAIT_FASTSLEEP "Fast Sleeper"
 #define TRAIT_GOODLOVER "Fabled Lover"
@@ -79,7 +80,7 @@
 #define TRAIT_SLOPPYSLEEPER "Sloppy Sleeper"
 //Hearthstone end.
 #define TRAIT_DARKLING "Darkling"
-
+#define TRAIT_THALASSOPHOBIA "Thalassophobia"
 
 
 // PATRON GOD TRAITS
@@ -200,6 +201,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_ANTIMAGIC = "I am immune to most forms of magic.",
 	TRAIT_ANTISCRYING = "I am immune to most forms of magical divination.",
 	TRAIT_SHOCKIMMUNE = "I am immune to electrical shocks.",
+	TRAIT_SHOCKWEAKNESS = "I am weaker to electrical shocks.",
 	TRAIT_NOSLEEP = span_warning("I can't sleep."),
 	TRAIT_ROT_EATER = span_necrosis("I can eat rotten food."),
 	TRAIT_ORGAN_EATER = span_bloody("I can eat organs and raw flesh."),
@@ -241,6 +243,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_INTELLECTUAL = span_info("I have a keen eye and can assess a person's prowess in wit and blade."),
 	TRAIT_KAIZOKU = "Whether by birth or by learning, I've inherited the Islander ways instead of Imperial culture.",
 	TRAIT_DARKLING = span_info("I am a creature of the dark and am sensitive to the light. The hateful sun is especially harsh on my eyes, and I prefer to sleep during the day."),
+	TRAIT_THALASSOPHOBIA = span_info("I have a severe fear of deep water, and swim poorly because of it."),
 	TRAIT_LEGENDARY_ALCHEMIST = span_info("An expert in the art of finding herbs in the wild."),
 	TRAIT_COUNTERCOUNTERSPELL = span_info("I automatically know when to counter Counterspells, and can do so without even thinking about it."),
 	TRAIT_UNSEEMLY = span_info("My face is ugly and makes everyone who looks at me miserable."),
@@ -450,6 +453,10 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_FRIENDLY			"friendly"
 #define TRAIT_GRABWEAKNESS		"grab_weakness"
 #define TRAIT_SNOB				"snob"
+#define TRAIT_HIGHMETABOLISM	"high_metabolism"
+#define TRAIT_ACROPHOBIA		"acrophobia"
+#define TRAIT_NOSNEAK			"nosneak"
+
 
 // common trait sources
 #define TRAIT_GENERIC "generic"

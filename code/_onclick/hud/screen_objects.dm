@@ -734,6 +734,9 @@
 /atom/movable/screen/rogmove/proc/toggle(mob/user)
 	if(isobserver(user))
 		return
+	if(HAS_TRAIT(user, TRAIT_NOSNEAK))
+		to_chat(user, span_warning("I am unable to sneak..."))
+		return
 	if(user.m_intent == MOVE_INTENT_SNEAK)
 		user.toggle_rogmove_intent(MOVE_INTENT_WALK)
 	else

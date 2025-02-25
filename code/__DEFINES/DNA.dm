@@ -186,8 +186,8 @@
 
 #define DEFAULT_BREASTS_SIZE 3
 #define MIN_BREASTS_SIZE 0
-#define MAX_BREASTS_SIZE 13 //16 available, above 13 is hyper-er.
-#define TOTAL_BREASTS_SIZE 16
+#define MAX_BREASTS_SIZE 5 //16 available, above 13 is hyper-er.
+#define TOTAL_BREASTS_SIZE 5
 
 #define DEFAULT_BUTT_SIZE 0
 #define MIN_BUTT_SIZE 0

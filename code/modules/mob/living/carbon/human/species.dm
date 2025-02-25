@@ -874,7 +874,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	if(!I.equip_delay_self || bypass_equip_delay_self)
 		return TRUE
 	if(HAS_TRAIT(H, TRAIT_CHUNKYFINGERS))
-		return do_after(H, 5 MINUTES, target = H)
+		return do_after(H, 5 SECONDS, target = H)
 	if(I.equip_delay_self > 10)
 		H.visible_message(span_smallnotice("[H] start putting on [I]..."), span_smallnotice("I start putting on [I]..."))
 	if(I.edelay_type)
@@ -935,6 +935,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	if (H.nutrition > 0 && H.stat != DEAD && !HAS_TRAIT(H, TRAIT_NOHUNGER))
 		// THEY HUNGER
 		var/hunger_rate = HUNGER_FACTOR
+		if(HAS_TRAIT(H, TRAIT_HIGHMETABOLISM))
+			hunger_rate = (HUNGER_FACTOR * 2)
 /*		if(H.satiety > MAX_SATIETY)
 			H.satiety = MAX_SATIETY
 		else if(H.satiety > 0)
@@ -964,6 +966,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	if (H.hydration > 0 && H.stat != DEAD && !HAS_TRAIT(H, TRAIT_NOHUNGER))
 		// THEY HUNGER
 		var/hunger_rate = HUNGER_FACTOR
+		if(HAS_TRAIT(H, TRAIT_HIGHMETABOLISM))
+			hunger_rate = (HUNGER_FACTOR * 2)
 //		hunger_rate *= H.physiology.hunger_mod
 		H.adjust_hydration(-hunger_rate)
 

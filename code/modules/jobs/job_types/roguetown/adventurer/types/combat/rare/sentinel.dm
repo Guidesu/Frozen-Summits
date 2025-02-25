@@ -50,3 +50,8 @@
 	H.change_stat("endurance", 2)
 	H.change_stat("speed", 1)
 	H.ambushable = FALSE
+
+	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
+		backpack_contents = null
+		backl = null
+		break

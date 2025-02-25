@@ -246,6 +246,7 @@
 	force = 9
 	pixel_y = -16
 	pixel_x = -16
+	trigger_guard = TRIGGER_GUARD_ALLOW_ALL
 	inhand_x_dimension = 64
 	inhand_y_dimension = 64
 	bigboy = TRUE
@@ -353,6 +354,7 @@
 	icon = 'icons/roguetown/weapons/64.dmi'
 	icon_state = "longbow"
 	slot_flags = ITEM_SLOT_BACK
+	trigger_guard = TRIGGER_GUARD_ALLOW_ALL
 	damfactor = 1.2
 	pixel_y = -16
 	pixel_x = -16

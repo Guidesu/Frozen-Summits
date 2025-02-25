@@ -393,6 +393,8 @@
 	//Stun
 	var/should_stun = (!(flags & SHOCK_TESLA) || siemens_coeff > 0.5) && !(flags & SHOCK_NOSTUN)
 	if(!HAS_TRAIT(src, TRAIT_NOPAIN))
+		if(should_stun && HAS_TRAIT(src, TRAIT_SHOCKWEAKNESS))
+			Paralyze(120)
 		if(should_stun && !HAS_TRAIT(src, TRAIT_NOPAINSTUN))
 			Paralyze(30)
 		//Jitter and other fluff.

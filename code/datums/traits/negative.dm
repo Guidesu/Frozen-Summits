@@ -43,7 +43,7 @@
 /datum/quirk/no_taste
 	name = "Ageusia"
 	desc = "You can't taste anything"
-	value = -1
+	value = -2
 	mob_trait = TRAIT_AGEUSIA
 	gain_text = span_notice("I can't taste anything!")
 	lose_text = span_notice("I can taste again!")

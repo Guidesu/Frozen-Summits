@@ -50,3 +50,7 @@
 		H.mind.martial_art.projectile_deflect = TRUE
 		ADD_TRAIT(H, TRAIT_LEAPER, TRAIT_GENERIC) //crouching tiger hidden dragon
 
+	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
+		backpack_contents = null
+		backl = null
+		break

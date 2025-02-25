@@ -42,7 +42,8 @@
 	/datum/species/akula,\
 	/datum/species/anthromorph,\
 	/datum/species/demihuman,\
-	/datum/species/abyssariad/changeling
+	/datum/species/abyssariad/changeling,\
+	/datum/species/kenku
 
 #define RACES_SHUNNED \
 	/datum/species/halforc,\
@@ -79,6 +80,7 @@
 	/datum/species/kobold,\
 	/datum/species/goblinp,\
 	/datum/species/abyssariad/changeling,\
+	/datum/species/kenku,\
 )
 
 #define CLOTHED_RACES_TYPES list(\
@@ -103,6 +105,7 @@
 	/datum/species/kobold,\
 	/datum/species/goblinp,\
 	/datum/species/abyssariad/changeling,\
+	/datum/species/kenku,\
 )
 // Non-dwarf non-kobold non-goblin mostly
 #define NON_DWARVEN_RACE_TYPES list(\
@@ -123,6 +126,7 @@
 	/datum/species/demihuman,\
 	/datum/species/halforc,\
 	/datum/species/abyssariad/changeling,\
+	/datum/species/kenku,\
 )
 // Non-elf non-dwarf non-kobold non-goblin mostly
 #define HUMANLIKE_RACE_TYPES list(\
@@ -139,6 +143,7 @@
 	/datum/species/anthromorph,\
 	/datum/species/demihuman,\
 	/datum/species/abyssariad/changeling,\
+	/datum/species/kenku,\
 )
 #define ALL_CLERIC_PATRONS list(/datum/patron/divine/astrata, /datum/patron/divine/noc, /datum/patron/divine/dendor, /datum/patron/divine/abyssor, /datum/patron/divine/ravox, /datum/patron/divine/necra, /datum/patron/divine/xylix, /datum/patron/divine/pestra, /datum/patron/divine/malum, /datum/patron/divine/eora, /datum/patron/divine/lathander, /datum/patron/neutral/tempus, /datum/patron/neutral/helm, /datum/patron/neutral/talona, /datum/patron/neutral/oghma, /datum/patron/neutral/corellon, /datum/patron/neutral/garl, /datum/patron/neutral/yondalla, /datum/patron/neutral/elistraee, /datum/patron/neutral/talos, /datum/patron/neutral/tymora, /datum/patron/neutral/mielikki, /datum/patron/divine/selune)
 

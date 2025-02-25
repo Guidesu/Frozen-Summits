@@ -49,7 +49,7 @@
 	playsound(
 		get_turf(H),
 		pick(werewolf_sounds),
-		105,
+		30,
 		TRUE,
 		-1
 	)
