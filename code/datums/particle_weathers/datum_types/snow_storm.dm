@@ -130,7 +130,6 @@
 	density = FALSE
 	plane = GAME_PLANE
 	layer = TABLE_LAYER - 0.1
-	var/deletion_timer // Track our self-deletion timer
 	var/bleed_layer = 0
 	var/progression = 0
 	var/turf/snowed_turf
@@ -143,8 +142,6 @@
 	bleed_layer = bleed_layers
 	if(!bleed_layer)
 		bleed_layer = rand(1, 3)
-	// Set random self-deletion timer (5-7 minutes in deciseconds)
-	deletion_timer = addtimer(CALLBACK(GLOBAL_PROC, .proc/qdel, src), rand(3000, 4200), TIMER_STOPPABLE)
 
 	//RegisterSignal(src, COMSIG_ATOM_TURF_CHANGE, PROC_REF(update_visuals_effects))
 
@@ -160,8 +157,7 @@
 	STOP_PROCESSING(SSslowobj, src)
 	snowed_turf.snow = null
 	snowed_turf = null
-	if(deletion_timer)
-		deltimer(deletion_timer)
+
 	. = ..()
 
 /obj/structure/snow/process(delta_time)
