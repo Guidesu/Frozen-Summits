@@ -187,7 +187,7 @@
 		"I ANSWER THE CALL OF THE WILD HUNT!",
 	)
 	
-/* RATWOOD EDIT - Back to the main pantheon 
+/* Frozen Summit EDIT - Back to the main pantheon 
 /datum/patron/inhumen/eora
 	name = "Eora"
 	domain = "Goddess of Degeneracy, Debauchery and Addiction"

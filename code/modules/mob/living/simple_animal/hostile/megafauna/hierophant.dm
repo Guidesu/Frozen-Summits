@@ -46,7 +46,7 @@ Difficulty: Hard
 	icon_living = "hierophant"
 	friendly_verb_continuous = "stares down"
 	friendly_verb_simple = "stare down"
-	icon = 'icons/mob/lavaland/hierophant_new.dmi'
+/*	icon = 'icons/mob/lavaland/hierophant_new.dmi'
 	faction = list("boss") //asteroid mobs? get that shit out of my beautiful square house
 	speak_emote = list("preaches")
 	armor_penetration = 50
@@ -713,3 +713,4 @@ Difficulty: Hard
 			to_chat(user, span_hierophant_warning("I touch the beacon with the club, but nothing happens."))
 	else
 		return ..()
+*/

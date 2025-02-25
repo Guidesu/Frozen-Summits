@@ -153,7 +153,7 @@
 		L.client.give_award(/datum/award/score/boss_score, L) //Score progression for bosses killed in general
 		L.client.give_award(score_achievement_type, L) //Score progression for specific boss killed
 	return TRUE
-
+/*
 /datum/action/innate/megafauna_attack
 	name = "Megafauna Attack"
 	icon_icon = 'icons/mob/actions/actions_animal.dmi'
@@ -171,3 +171,4 @@
 /datum/action/innate/megafauna_attack/Activate()
 	M.chosen_attack = chosen_attack_num
 	to_chat(M, chosen_message)
+*/

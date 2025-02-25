@@ -8,7 +8,7 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 	health = 20
 	maxHealth = 20
 	gender = PLURAL //placeholder
-
+	var/obj/item/card/id/access_card = null
 	status_flags = CANPUSH
 
 	var/icon_living = ""
@@ -111,8 +111,7 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 	var/breedchildren = 3
 
 	///Simple_animal access.
-	///Innate access uses an internal ID card.
-	var/obj/item/card/id/access_card = null
+	var/list/lock_hashes
 	///In the event that you want to have a buffing effect on the mob, but don't want it to stack with other effects, any outside force that applies a buff to a simple mob should at least set this to 1, so we have something to check against.
 	var/buffed = 0
 	///If the mob can be spawned with a gold slime core. HOSTILE_SPAWN are spawned with plasma, FRIENDLY_SPAWN are spawned with blood.
@@ -171,6 +170,7 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 	cmode = 1
 
 	var/remains_type
+	var/binded = FALSE
 
 /mob/living/simple_animal/Initialize()
 	. = ..()
@@ -280,8 +280,10 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 	if(stat != DEAD)
 		if(health <= 0)
 			death()
+			SEND_SIGNAL(src, COMSIG_MOB_STATCHANGE, DEAD)
 			return
 	med_hud_set_status()
+	SEND_SIGNAL(src, COMSIG_MOB_STATCHANGE, stat)
 	if(footstep_type)
 		AddComponent(/datum/component/footstep, footstep_type)
 
@@ -296,6 +298,10 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 
 /mob/living/simple_animal/proc/handle_automated_movement()
 	set waitfor = FALSE
+	if(binded)
+		return
+	if(ai_controller)
+		return
 	if(!stop_automated_movement && wander && !doing)
 		if(ssaddle && has_buckled_mobs())
 			return 0
@@ -533,6 +539,8 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 
 /mob/living/simple_animal/handle_fire()
 	. = ..()
+	if(!on_fire)
+		return TRUE //the mob is no longer on fire. Stop damaging mobs. Done in parent, but calling the parent calls it here.
 	if(fire_stacks > 0)
 		apply_damage(5, BURN)
 		if(fire_stacks > 5)

@@ -131,7 +131,8 @@
 	name = "solid window"
 	result = /obj/structure/roguewindow/solid
 	reqs = list(/obj/item/natural/plank = 1,
-				/obj/item/natural/glass = 1)
+				/obj/item/ingot/iron = 1)
+//				/obj/item/natural/glass = 1)
 	craftsound = 'sound/foley/Building-01.ogg'
 	skillcraft = /datum/skill/craft/masonry
 
@@ -139,7 +140,7 @@
 	name = "openable window"
 	result = /obj/structure/roguewindow/openclose
 	reqs = list(/obj/item/grown/log/tree/small = 1,
-				/obj/item/natural/glass = 1,
+//				/obj/item/natural/glass = 1,
 				/obj/item/ingot/iron = 1)
 	craftsound = 'sound/foley/Building-01.ogg'
 

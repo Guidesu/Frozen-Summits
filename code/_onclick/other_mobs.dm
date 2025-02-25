@@ -390,11 +390,11 @@
 					var/exp_to_gain = STAINT
 					if(stealroll > targetperception)
 					//TODO add exp here
-						// RATWOOD MODULAR START
+						// Frozen Summit MODULAR START
 						if(V.cmode)
 							to_chat(src, "<span class='warning'>[V] is alert. I can't pickpocket them like this.</span>")
 							return
-						// RATWOOD MODULAR END
+						// Frozen Summit MODULAR END
 						if(U.get_active_held_item())
 							to_chat(src, span_warning("I can't pickpocket while my hand is full!"))
 							return
@@ -570,7 +570,7 @@
 	A.attack_animal(src)
 
 /atom/proc/attack_animal(mob/user)
-	return
+	SEND_SIGNAL(src, COMSIG_ATOM_ATTACK_ANIMAL, user)
 
 /mob/living/RestrainedClickOn(atom/A)
 	return

@@ -13,7 +13,7 @@
 	/obj/item/rogueore/iron)
 
 // ---------- Glass ----------------
-/datum/roguestock/import/glasspane
+/*datum/roguestock/import/glasspane
 	name = "Glass panes import"
 	desc = "Helpful for fixing windows."
 	item_type = /obj/structure/closet/crate/chest/crate/steward/glass
@@ -23,7 +23,7 @@
 /obj/structure/closet/crate/chest/crate/steward/glass/PopulateContents()
 	for(var/i in 2 to 6)
 		new /obj/item/natural/glass(src)
-
+*/
 /datum/supply_pack/rogue/rawmats/copper
 	name = "Copper Ore"
 	cost = 60
