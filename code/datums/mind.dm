@@ -151,6 +151,7 @@
 				referred_gender = "Androgynous"
 		known_people[H.real_name]["FGENDER"] = referred_gender
 		known_people[H.real_name]["FAGE"] = H.age
+		known_people[H.real_name]["FSPECIES"] = H.dna.species.name
 		if (ishuman(current))
 			var/mob/living/carbon/human/C = current
 			var/heretic_text = H.get_heretic_symbol(C)
@@ -188,6 +189,7 @@
 					else
 						referred_gender = "Androgynous"
 				M.known_people[H.real_name]["FGENDER"] = referred_gender
+				M.known_people[H.real_name]["FSPECIES"] = H.dna.species.name
 				M.known_people[H.real_name]["FAGE"] = H.age
 				if(ishuman(M.current))
 					var/mob/living/carbon/human/C = M.current
@@ -238,12 +240,11 @@
 			continue
 		var/fjob = known_people[P]["FJOB"]
 		var/fgender = known_people[P]["FGENDER"]
+		var/fspecies = known_people[P]["FSPECIES"]
 		var/fage = known_people[P]["FAGE"]
 		var/fheresy = known_people[P]["FHERESY"]
 		if(fcolor && fjob)
-			if (fheresy)
-				contents +="<B><font color=#f1d669>[fheresy]</font></B> "
-			contents += "<B><font color=#[fcolor];text-shadow:0 0 10px #8d5958, 0 0 20px #8d5958, 0 0 30px #8d5958, 0 0 40px #8d5958, 0 0 50px #e60073, 0 0 60px #8d5958, 0 0 70px #8d5958;>[P]</font></B><BR>[fjob], [capitalize(fgender)], [fage]"
+			contents += "<B><font color=#[fcolor];text-shadow:0 0 10px #8d5958, 0 0 20px #8d5958, 0 0 30px #8d5958, 0 0 40px #8d5958, 0 0 50px #e60073, 0 0 60px #8d5958, 0 0 70px #8d5958;>[P]</font></B><BR>[fjob], [fspecies], [capitalize(fgender)], [fage]"
 			contents += "<BR>"
 
 	var/datum/browser/popup = new(user, "PEOPLEIKNOW", "", 260, 400)
