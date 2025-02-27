@@ -14,7 +14,7 @@
 	var/datum/looping_sound/showering/soundloop
 	var/reagent_id = /datum/reagent/water
 	var/reaction_volume = 200
-
+/*
 /obj/machinery/shower/Initialize()
 	. = ..()
 	create_reagents(reaction_volume)
@@ -234,3 +234,4 @@
 	layer = FLY_LAYER
 	anchored = TRUE
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+*/

@@ -880,7 +880,6 @@
 	reqs = list(/obj/item/rogueweapon/sickle/kama = 1,
 				/obj/item/rope/chain = 1)
 	craftdiff = 1
-=======
 
 // BOUQUETS & CROWNS
 

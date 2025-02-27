@@ -31,8 +31,8 @@
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/howl/call_of_the_moon)
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/cinematic_shapeshift)
 	recipient.verbs += /mob/living/carbon/human/proc/werewolf_regenerate
-	recipient.dna.species.soundpack_m = new /datum/voicepack/werewolf
-	recipient.dna.species.soundpack_f = new /datum/voicepack/werewolf_female
+	recipient.dna.species.soundpack_m = new /datum/voicepack/male/werewolf
+	recipient.dna.species.soundpack_f = new /datum/voicepack/female/werewolf_female
 	recipient.AddComponent(/datum/component/werewolf_voice)
 
 /datum/component/werewolf_voice
@@ -49,7 +49,7 @@
 	playsound(
 		get_turf(H),
 		pick(werewolf_sounds),
-		30,
+		5,
 		TRUE,
 		-1
 	)

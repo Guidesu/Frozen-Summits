@@ -1,4 +1,4 @@
-/datum/voicepack/werewolf/get_sound(soundin, modifiers)
+/datum/voicepack/male/werewolf/get_sound(soundin, modifiers)
 	var/used
 	switch(modifiers)
 		if("old")
@@ -116,7 +116,7 @@
 
 ///---
 
-/datum/voicepack/werewolf_female/get_sound(soundin, modifiers)
+/datum/voicepack/female/werewolf_female/get_sound(soundin, modifiers)
 	var/used
 	switch(modifiers)
 		if("old")

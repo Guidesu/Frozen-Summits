@@ -39,8 +39,6 @@
 		/obj/item/reagent_containers/glass/bottle/rogue/wine = 1,
 		/obj/item/reagent_containers/glass/bottle/rogue = 1,	
 		/mob/living/carbon/human/species/goblin/npc/sea = 25,
-		/mob/living/simple_animal/hostile/rogue/deepone = 30,
-		/mob/living/simple_animal/hostile/rogue/deepone/spit = 30,			
 	)
 	mudfishloot = list(
 		/obj/item/reagent_containers/food/snacks/fish/mudskipper = 200,
