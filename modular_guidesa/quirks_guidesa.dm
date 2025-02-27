@@ -1,7 +1,20 @@
+// 2-4/(-2) cost for minor game affecting positive and negative quirks
+// 5-6/(-4) cost for moderate quirks
+// 7-10/(-6)-(-12) cost for major quirks
+// 15/(-10)-(-15) cost for quirks that can drastically affect the game
+
+// These values can vary, but this should help establish a standard. 
+// Try to keep negatives a lower point gain than positives require, especially if they affect the same thing.*
+// *This is to prevent some quirks from being free, especially if they cancel eachother out to a positive degree.
+
+// Keep skill ups to 3, as well.
+
+// If everyone's special, then noone is.
+
 /datum/quirk/elemental_breath_fire
 	name = "(Spells) Elemental Breath (Fire Breath)"
 	desc = "Harness the elemental fury within you to unleash a breath of scorching fire. This power, often gifted by draconic heritage or a deep elemental connection, allows you to exhale a ball of flames, searing the enemies. Its not not as strong as a true dragon breath, the intensity only embodies a little of your lineage's power, but it requires time to recover after each use."
-	value = 2
+	value = 4 // Spell
 
 /datum/quirk/elemental_breath_fire/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -47,20 +60,16 @@
 /datum/quirk/elemental_breath_eletricity
 	name = "(Spells) Elemental Breath (Lighting Breath)"
 	desc = "You can unleash a bolt of lightning from your breath, striking enemies in a straight line. This power comes from your draconic heritage or elemental connection and can only be used occasionally as it takes time to recharge."
-	value = 2
+	value = 4
 
 /datum/quirk/elemental_breath_eletricity/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/lightningbolt)
 
-
-
-
-
 /datum/quirk/elemental_acid
 	name = "(Spells) Elemental Breath (Acid)"
 	desc = "You can breath acid. Ouch."
-	value = 2
+	value = 4
 
 /datum/quirk/elemental_acid/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -76,7 +85,7 @@
 /datum/quirk/xenophobic
 	name = "(Flavor) Xenophobic"
 	desc = "Thoses filthy lesser races, to even look at them makes me feel disgust."
-	value = -7
+	value = -4 // Makes you get a stress event when examining people who arent your own race. Negated by tolerant, unfortunately.
 
 /datum/quirk/xenophobic/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -88,7 +97,7 @@
 /datum/quirk/tolerant
 	name = "(Flavor) Tolerant"
 	desc = "Well, people are alright i guess."
-	value = 0
+	value = 4
 
 /datum/quirk/tolerant/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -98,7 +107,7 @@
 /datum/quirk/nosey
 	name = "(Flavor/Combat) Nosey"
 	desc = "I can grab people by their nose!"
-	value = 3
+	value = 2 // Barely useful, primarily only after you've won a fight with another player.
 
 /datum/quirk/nosey/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -117,7 +126,7 @@
 /datum/quirk/critical_weakness
 	name = "(Flaws) Critically Weak"
 	desc = "I am quick to wound, and a fracture on my head would be my doom. "
-	value = -15
+	value = -20 // An unusual increase to the max of 15 Im aiming for. Only because taking this can literally cause you to instantly die based on RNG.
 
 /datum/quirk/critical_weakness/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -126,7 +135,7 @@
 /datum/quirk/good_trainer
 	name = "(Weapons/Skills) Good Trainer"
 	desc = "I am good at training people in combat, if they parry my attacks or attack me with their desired weapon they will learn faster than others."
-	value = 2
+	value = 2 // Keep this low, incentivises rp and sparring.
 
 /datum/quirk/good_trainer/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -135,7 +144,7 @@
 /datum/quirk/one_eye_l
 	name = "(Flaws) Bad Eye (Left)"
 	desc = "My left eye is bad, wounded, or lost, and thus my vision is bad"
-	value = -7
+	value = -8
 
 /datum/quirk/one_eye_l/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -144,7 +153,7 @@
 /datum/quirk/one_eye_r
 	name = "(Flaws) Bad Eye (Right)"
 	desc = "My Right eye is bad, wounded, or lost, and thus my vision is bad"
-	value = -7
+	value = -8
 
 /datum/quirk/one_eye_r/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -154,7 +163,7 @@
 /datum/quirk/one_eye_both
 	name = "(Flaws) Bad Eye (Both)"
 	desc = "My both eyes are bad. My vision is really limited."
-	value = -15
+	value = -16 // 16 cause its both bad eye quirks
 
 /datum/quirk/one_eye_both/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -164,13 +173,13 @@
 /datum/quirk/immune_eletricity
 	name = "(Virtue) Shock Immunity"
 	desc = "Due to my blood heritage, fey magic, or elemental prowess, i am immune to a degree to shocks."
-	value = 8
+	value = 10
 
 /datum/quirk/immune_eletricity/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_SHOCKIMMUNE, TRAIT_GENERIC)
 
-/datum/quirk/seed_knower
+/* /datum/quirk/seed_knower // Irrelevant quirk. Just having a competent farming level accomplishes this, and you can get that with quirks alone.
 	name = "(Virtue) Seed Knower"
 	desc = "Due to teachings i had, i know which seed is which when i look at them."
 	value = 1
@@ -178,14 +187,14 @@
 /datum/quirk/seed_knower/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_SEEDKNOW, TRAIT_GENERIC)
-
+ */
 
 
 
 /datum/quirk/pugilist
 	name = "(Combat) Pugilist"
 	desc = "I am good at punching people."
-	value = 3
+	value = 8 // The  dmg increase is huge, shouldnt be low
 
 /datum/quirk/pugilist/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -217,7 +226,7 @@
 /datum/quirk/martist
 	name = "(Combat) Martial Artist"
 	desc = "I know martial arts to a degree, and i can use it in battle, like kicks in a better manner."
-	value = 2
+	value = 6
 
 /datum/quirk/martist/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -225,16 +234,16 @@
 
 
 /datum/quirk/bash_door
-	name = "(Virtues) Door Basher"
+	name = "(Feat) Door Basher"
 	desc = "Due to my terrifying size or merely my body, i can bash into doors, and break them."
-	value = 3
+	value = 4
 
 /datum/quirk/bash_door/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_BASHDOORS, TRAIT_GENERIC)
 
 /datum/quirk/silver_bless
-	name = "(Virtues) Silver Blessed"
+	name = "(Feat) Silver Blessed"
 	desc = "I was blessed by the moonmaiden since i was little, completing the trial of the forest under her guidance under the moon made me slightly more special than others."
 	value = 2
 
@@ -246,7 +255,7 @@
 /datum/quirk/nyctophobia
 	name = "(Flaws) Nyctophobia"
 	desc = "I fear the dark..."
-	value = -7
+	value = -6 // Prevents running unless you have a light source, in the dark.
 	medical_record_text = "Patient demonstrates a fear of the dark. (Seriously?)"
 
 /datum/quirk/nyctophobia/on_process()
@@ -275,7 +284,7 @@
 /datum/quirk/teacher
 	name = "(Virtue) Teacher"
 	desc = "I can teach others lessons in skills they don't know and i do! Usually would not work at someone who is more skilled at me."
-	value = 1
+	value = 8 // Free levels with minimal effort for other people.
 
 /datum/quirk/teacher/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -303,7 +312,7 @@
 /datum/quirk/bigguy
 	name = "(Health) - Big Guy"
 	desc = "My immense frame and size allows me to smash through wooden walls and doors, and into people with more effectiveness, and throw them really easily."
-	value = 3
+	value = 4
 
 /datum/quirk/bigguy/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -312,7 +321,7 @@
 /datum/quirk/abyssor_swim
 	name = "(Virtue) - Blessed Swim"
 	desc = "I get far less tired when swimming than my peers."
-	value = 2
+	value = 4 // Can take a patron to get this anyway
 
 /datum/quirk/abyssor_swim/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -321,7 +330,7 @@
 /datum/quirk/waterbreathing
 	name = "(Virtue) - Water Breathing"
 	desc = "I do not drown in bodies of water."
-	value = 2
+	value = 4
 
 /datum/quirk/waterbreathing/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -357,7 +366,7 @@
 /datum/quirk/antiguardsman
 	name = "(UnFavored Terrain) - Urban"
 	desc = "In the town of Frozen Summit, my abilities are dulled due to unfamiliarity."
-	value = -5
+	value = -6 // Debuff is stronger than the buff for favored terrain
 
 /datum/quirk/antiguardsman/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -366,7 +375,7 @@
 /datum/quirk/antiwoodsman
 	name = "(UnFavored Terrain) - Forest"
 	desc = "In the grove and coast of Frozen Summit, my abilities are dulled due to unfamiliarity."
-	value = -5
+	value = -6
 
 /datum/quirk/antiwoodsman/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -375,7 +384,7 @@
 /datum/quirk/antiunderdarkadept
 	name = "(UnFavored Terrain) - Underdark"
 	desc = "There's something about the underdark that just leaves me unsettled and off my game."
-	value = -5
+	value = -6
 
 /datum/quirk/antiunderdarkadept/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -384,16 +393,16 @@
 /datum/quirk/bad_mood
 	name = "(Flaw) - Bad Mood"
 	desc = "Everything just seems to piss me off."
-	value = -7
+	value = -8 // Increases stress values. Can result in heart attacks much more easily.
 
 /datum/quirk/bad_mood/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	ADD_TRAIT(H, TRAIT_BAD_MOOD, TRAIT_GENERIC)
 
 /datum/quirk/bready
-	name = "(Skills) - Battle Ready"
+	name = "(Combat) - Battle Ready"
 	desc = "Defensive stance does not passively fatigue me."
-	value = 5
+	value = 6
 
 /datum/quirk/bready/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -402,7 +411,7 @@
 /datum/quirk/mediumarmor
 	name = "(Skills) - Medium Armor Proficiency"
 	desc = "I can move freely in medium armor."
-	value = 5
+	value = 6 // Most roles have their relevant armor proficiencies. This lets you break the mold and be tankier, based on what youre going for.
 
 /datum/quirk/mediumarmor/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -410,8 +419,8 @@
 
 /datum/quirk/heavyarmor
 	name = "(Skills) - Heavy Armor Proficiency"
-	desc = "I can move freely in heavy armor."
-	value = 5
+	desc = "I can move freely in heavy and medium armor."
+	value = 12 // Double the cost of medium because it also applies medium armor, too.
 
 /datum/quirk/heavyarmor/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
