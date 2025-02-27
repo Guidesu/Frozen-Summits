@@ -180,12 +180,12 @@
 	recipient.verbs += /mob/living/carbon/human/proc/changevoice
 	recipient.verbs += /mob/living/carbon/human/proc/swapvoice
 
-/datum/virtue/utility/keenears
+/* /datum/virtue/utility/keenears // Quirk now
 	name = "Keen Ears"
 	desc = "Cowering from authorities, loved ones or by a generous gift of the gods, you've adapted a keen sense of hearing, and can identify the speakers even when they are out of sight, and their whispers are louder to you. Along with this, you've developed good eyes for tracking, letting you keep those you fear, or those you seek, in your sights."
 	added_skills = list(list(/datum/skill/misc/tracking, 3, 6))
 	added_traits = list(TRAIT_KEENEARS)
-
+ */
 
 //HERETIC VIRTUES (there's only pne amd it's utility so I didn't want to make a whole file yet)
 
