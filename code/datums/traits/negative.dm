@@ -4,12 +4,12 @@
 /datum/quirk/myvice
 	name = "MY VICE (Free points)"
 	desc = ""
-	value = -2
+	value = -4
 
 /datum/quirk/monochromatic
 	name = "Monochromacy"
-	desc = ""
-	value = -2
+	desc = "The whole world is washed out, shades of gray. How... Droll."
+	value = -6 // While mostly cosmetic, it drastically takes away from the enjoyment of the game, so more points by virtue of CBT
 	medical_record_text = "Patient is afflicted with almost complete color blindness."
 
 /datum/quirk/monochromatic/add()
@@ -43,7 +43,7 @@
 /datum/quirk/no_taste
 	name = "Ageusia"
 	desc = "You can't taste anything"
-	value = -2
+	value = -4 // More points because its detrimental without putting some lean into medicine.
 	mob_trait = TRAIT_AGEUSIA
 	gain_text = span_notice("I can't taste anything!")
 	lose_text = span_notice("I can taste again!")
@@ -76,7 +76,7 @@
 /datum/quirk/snob
 	name = "Snob"
 	desc = "You feel like a noble. Looking bothered at dirty places."
-	value = -1
+	value = -2 // Stress in dirty rooms.
 	gain_text = span_notice("I feel like you understand what things should look like.")
 	lose_text = span_notice("Well who cares about deco anyways?")
 	medical_record_text = "Patient seems to be rather stuck up."
@@ -85,7 +85,7 @@
 /datum/quirk/blooddeficiency
 	name = "Blood Deficiency"
 	desc = "You have a illness that makes you lose blood, but you can survive it barely without aid."
-	value = -2
+	value = -4 // Makes death by bloodloss faster.
 	gain_text = span_danger("I feel my vigor slowly fading away.")
 	lose_text = span_notice("I feel vigorous again.")
 	medical_record_text = "Patient requires regular treatment for blood loss due to low production of blood."
@@ -288,10 +288,10 @@
 /datum/quirk/family_heirloom/on_clone(data)
 	heirloom = data
 */
-/datum/quirk/frail
-	name = "Frail"
-	desc = "You are slightly more frail than most. Your bones ligaments are weaker."
-	value = -2
+/datum/quirk/frail2
+	name = "Glass Jaw"
+	desc = "You are slightly more frail than most. Your bones ligaments are weaker, and are disabled more easily."
+	value = -8 // Disabled limbs is almost as bad as dismemberment.
 	mob_trait = TRAIT_EASYLIMBDISABLE
 	gain_text = span_danger("I feel frail.")
 	lose_text = span_notice("I feel sturdy again.")
@@ -300,7 +300,7 @@
 /datum/quirk/heavy_sleeper
 	name = "Heavy Sleeper"
 	desc = "You take a bit to wake up"
-	value = -3
+	value = -4 // It adds up over time.
 	mob_trait = TRAIT_HEAVY_SLEEPER
 	gain_text = span_danger("I feel sleepy.")
 	lose_text = span_notice("I feel awake again.")

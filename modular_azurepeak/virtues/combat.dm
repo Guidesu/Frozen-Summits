@@ -15,6 +15,11 @@
 			recipient.mind?.adjust_spellpoints(2) // This lessons the -6 that applies to martial classes by default (currently only pontifex at time of change).
 			to_chat(recipient, span_notice("My virtue lessens the limitations of my magical reach."))
 
+/datum/virtue/combat/adamantinebones
+	name = "Adamantine Bones"
+	desc = "My bones are far stronger than those of others of my species. I am immune to dismemberment."
+	added_traits = list(TRAIT_NODISMEMBER)
+
 /datum/virtue/combat/devotee
 	name = "Devotee"
 	desc = "Though not officially of the Church, my relationship with my chosen Patron is strong enough to grant me the most minor of their blessings. I've also kept a psycross of my deity. Combat-oriented classes get a weaker version of this virtue."
@@ -95,22 +100,6 @@
 		added_skills = list(list(/datum/skill/combat/bows, 1, 6))
 		handle_skills(recipient)
 
-/*/datum/virtue/combat/tavern_brawler
-	name = "Tavern Brawler"
-	desc = "I've never met a problem my fists couldn't solve."
-	added_traits = list(TRAIT_CIVILIZEDBARBARIAN)
-*/
-/*
-/datum/virtue/combat/guarded
-	name = "Guarded"
-	desc = "I have long kept my true capabilities and vices a secret. Sometimes being deceptively weak can save one's lyfe. Such a virtue allows me to avoid and perform feints easier. My skills cannot be assessed, and I keep my Inhumen faith hidden even from the most keen eyes."
-	added_traits = list(TRAIT_DECEIVING_MEEKNESS)
-
-/datum/virtue/combat/impervious
-	name = "Impervious"
-	desc = "I've spent years shoring up my weakspots, and have become difficult to wound with critical blows."
-	added_traits = list(TRAIT_CRITICAL_RESISTANCE)
-*/
 /datum/virtue/combat/rotcured
 	name = "Rotcured"
 	desc = "I was once afflicted with the accursed rot, and was cured. It has left me changed: my limbs are weaker, but I feel no pain and have no need to breathe..."
@@ -119,14 +108,8 @@
 
 /datum/virtue/combat/rotcured/apply_to_human(mob/living/carbon/human/recipient)
 	recipient.update_body() // applies the rot skin tone stuff
-/*
-/datum/virtue/combat/dualwielder
-	name = "Dual Wielder"
-	desc = "Whether it was by the Naledi scholars, Etruscan privateers or even the Kazengan senseis. I've been graced with the knowledge of how to wield two weapons at once, making my offense more formidable, at the expense of my defense. When I wield two identical type weapons, I roll attacks twice, but so does the enemy against me. I've also learned to become ambidextrous, ignoring any off-hand penalties."
-	added_traits = list(TRAIT_DUALWIELDER)
 
-/datum/virtue/combat/sharp
+/datum/virtue/combat/sharp // This *adds* your int to parry chance. With this, defense is a matter of attrition.
 	name = "Sentinel of Wits"
 	desc = "Whether it's by having an annoying sibling that kept prodding me with a stick, or years of study and observation, I've become adept at both parrying and dodging stronger opponents, by learning their moves and studying them. My own attacks however, still rely on true training of my weapons. \n I convert INT into dodge and parry chance, every 2 INT points above 10 adding 10% additional chance. Does not count artificial buffs to INT from potions or substances."
 	added_traits = list(TRAIT_SENTINELOFWITS)
-*/
