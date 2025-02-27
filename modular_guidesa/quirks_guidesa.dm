@@ -411,7 +411,7 @@
 /datum/quirk/mediumarmor
 	name = "(Skills) - Medium Armor Proficiency"
 	desc = "I can move freely in medium armor."
-	value = 8 // Most roles have their relevant armor proficiencies. This lets you break the mold and be tankier, based on what youre going for.
+	value = 6 // Most roles have their relevant armor proficiencies. This lets you break the mold and be tankier, based on what youre going for.
 
 /datum/quirk/mediumarmor/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
@@ -419,8 +419,8 @@
 
 /datum/quirk/heavyarmor
 	name = "(Skills) - Heavy Armor Proficiency"
-	desc = "I can move freely in heavy armor."
-	value = 8
+	desc = "I can move freely in heavy and medium armor."
+	value = 12 // Double the cost of medium because it also applies medium armor, too.
 
 /datum/quirk/heavyarmor/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
