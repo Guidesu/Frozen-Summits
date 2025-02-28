@@ -5441,10 +5441,6 @@
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/outdoors/woods)
-"PB" = (
-/obj/structure/fluff/tanningrack,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/woods)
 "PC" = (
 /obj/item/roguebin/water/gross,
 /turf/open/floor/rogue/dirt,
@@ -5721,7 +5717,6 @@
 /obj/item/clothing/mask/rogue/lordmask/naledi,
 /obj/item/storage/backpack/rogue/satchel,
 /obj/item/clothing/suit/roguetown/shirt/robe/pointfex,
-/obj/item/clothing/suit/roguetown/armor/leather/heavy/belted,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/outdoors/woods)
 "RK" = (
@@ -33576,7 +33571,7 @@ kV
 jW
 jW
 jW
-bS
+jW
 jW
 jW
 jW
@@ -34043,7 +34038,7 @@ jW
 jW
 jW
 By
-bS
+jW
 bP
 bP
 bP
@@ -35151,7 +35146,7 @@ Ek
 jW
 jW
 bP
-bP
+yE
 bP
 bP
 Ek
@@ -35930,7 +35925,7 @@ bP
 bP
 bP
 bP
-bP
+yE
 bP
 bP
 jW
@@ -46615,7 +46610,7 @@ MK
 Hk
 XV
 bP
-PB
+MK
 oX
 bP
 Vy

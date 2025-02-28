@@ -2472,12 +2472,6 @@
 	},
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town/tavern)
-"cIM" = (
-/obj/item/quest_board_bin{
-	pixel_y = 33
-	},
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/town)
 "cIV" = (
 /obj/structure/fluff/railing/wood{
 	pixel_y = 17
@@ -11623,14 +11617,6 @@
 "sRV" = (
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/outdoors/beach)
-"sSg" = (
-/obj/structure/mannequin/male,
-/obj/structure/fluff/railing/wood{
-	pixel_x = 1;
-	pixel_y = -8
-	},
-/turf/open/floor/rogue/herringbone,
-/area/rogue/indoors/town)
 "sSo" = (
 /obj/structure/flora/roguegrass,
 /turf/closed/mineral/rogue/bedrock,
@@ -13997,12 +13983,8 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
 "xct" = (
-/obj/structure/mannequin/male/female,
-/obj/structure/fluff/railing/wood{
-	pixel_x = 1;
-	pixel_y = -8
-	},
-/turf/open/floor/rogue/herringbone,
+/obj/structure/bookcase/random,
+/turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town)
 "xcO" = (
 /obj/structure/table/wood{
@@ -14227,10 +14209,6 @@
 /area/rogue/outdoors/town)
 "xsZ" = (
 /obj/structure/mannequin,
-/obj/structure/fluff/railing/wood{
-	pixel_x = 1;
-	pixel_y = -8
-	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town)
 "xtg" = (
@@ -53616,7 +53594,7 @@ uJQ
 hSx
 cPY
 ccX
-xct
+rGG
 tGZ
 dPd
 pnm
@@ -53932,7 +53910,7 @@ ccX
 hSx
 hAQ
 ccX
-sSg
+pnm
 tGZ
 dPd
 rGG
@@ -54097,7 +54075,7 @@ ccX
 hHC
 hHC
 ccX
-cIM
+rej
 uks
 luq
 abj
@@ -102438,8 +102416,8 @@ tXZ
 tXZ
 ccX
 oIW
-ccX
-egn
+xct
+xct
 lnS
 jdd
 ccX

@@ -46,8 +46,14 @@
 			STR.remove_from_storage(I, get_turf(src))
 	return ..()
 
+/obj/item/quest_board/attack_hand(mob/user)
+	var/datum/component/storage/CP = GetComponent(/datum/component/storage)
+	if(CP)
+		CP.rmb_show(user)
+		return TRUE
 
-/obj/item/quest_board_bin
+
+/obj/item/quest_board/quest_board_bin
 	name = "bin board" //This is a bin that is also a board
 	desc = "A board with various quests posted on it. It also has a bin attached to it."
 	icon = 'modular_guidesa/items_stuffs_any.dmi'
