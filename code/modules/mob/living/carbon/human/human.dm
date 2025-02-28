@@ -54,6 +54,7 @@
 	verbs += /mob/living/proc/lay_down
 	verbs += /mob/living/carbon/human/proc/overwrite_cbt_music_to_bg3
 	verbs += /mob/living/carbon/human/proc/rp_dice_roll
+	verbs += /mob/living/carbon/human/verb/gm_note
 
 	icon_state = ""		//Remove the inherent human icon that is visible on the map editor. We're rendering ourselves limb by limb, having it still be there results in a bug where the basic human icon appears below as south in all directions and generally looks nasty.
 
