@@ -5,22 +5,32 @@
 
 	// Define skill list with associated stats
 	var/list/skill_choices = list(
+	// Strength Skills
 		"Athletics (Strength)" = STAT_STRENGTH,
+		"Intimidation (Strength)" = STAT_STRENGTH,
+
+	// Speed Skills (Dexterity equivalent)
 		"Acrobatics (Speed)" = STAT_SPEED,
 		"Sleight of Hand (Speed)" = STAT_SPEED,
 		"Stealth (Speed)" = STAT_SPEED,
+	
+	// Intelligence Skills
 		"Arcana (Intelligence)" = STAT_INTELLIGENCE,
 		"History (Intelligence)" = STAT_INTELLIGENCE,
-		"Investigation (Perception)" = STAT_PERCEPTION,
+		"Investigation (Intelligence)" = STAT_INTELLIGENCE,
 		"Nature (Intelligence)" = STAT_INTELLIGENCE,
 		"Religion (Intelligence)" = STAT_INTELLIGENCE,
-		"Animal Handling (Constitution)" = STAT_CONSTITUTION,
-		"Insight (Perception)" = STAT_PERCEPTION,
 		"Medicine (Intelligence)" = STAT_INTELLIGENCE,
+		"Animal Handling (Intelligence)" = STAT_INTELLIGENCE,
+
+	// Perception Skills (Wisdom equivalent)
+
+		"Insight (Perception)" = STAT_PERCEPTION,
 		"Perception (Perception)" = STAT_PERCEPTION,
-		"Survival (Constitution)" = STAT_CONSTITUTION,
+		"Survival (Perception)" = STAT_PERCEPTION,
+	
+	// Fortune Skills (Charisma equivalent)
 		"Deception (Fortune)" = STAT_FORTUNE,
-		"Intimidation (Strength)" = STAT_STRENGTH,
 		"Performance (Fortune)" = STAT_FORTUNE,
 		"Persuasion (Fortune)" = STAT_FORTUNE
 	)
