@@ -328,6 +328,11 @@
 			add_event(null, "nutrition", /datum/mood_event/hungry)
 		if(0 to NUTRITION_LEVEL_STARVING)
 			add_event(null, "nutrition", /datum/mood_event/starving)
+	switch(L.hydration)
+		if(HYDRATION_LEVEL_HYDRATED to INFINITY)
+			add_event(null, "hydration", /datum/mood_event/hydrated)
+		if(HYDRATION_LEVEL_DEHYDRATED to HYDRATION_LEVEL_SMALLTHIRST)
+			clear_event(null, "hydration")
 
 /datum/component/mood/proc/HandleCharge(mob/living/carbon/human/H)
 	var/datum/species/ethereal/E = H.dna.species
