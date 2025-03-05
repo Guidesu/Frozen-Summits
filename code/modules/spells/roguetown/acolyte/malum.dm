@@ -10,7 +10,7 @@
 	no_early_release = TRUE
 	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
 	sound = 'sound/items/bsmithfail.ogg'
-	invocation = "Through flame and ash, let vigor rise, by Malum’s hand, let strength reprise!"
+	invocation = "Through flame and ash, let vigor rise, by Moradin’s hand, let strength reprise!"
 	invocation_type = "shout"
 	associated_skill = /datum/skill/magic/holy
 	antimagic_allowed = FALSE
@@ -20,7 +20,7 @@
 	charging_slowdown = 3
 	chargedloop = /datum/looping_sound/invokegen
 	devotion_cost = 30
-	
+
 /obj/effect/proc_holder/spell/invoked/heatmetal
 	name = "Heat Metal"
 	overlay_state = "heatmetal"
@@ -33,7 +33,7 @@
 	no_early_release = TRUE
 	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
 	sound = 'sound/items/bsmithfail.ogg'
-	invocation = "With heat I wield, with flame I claim, Let metal serve in Malum's name!"
+	invocation = "With heat I wield, with flame I claim, Let metal serve in Moradin's name!"
 	invocation_type = "shout"
 	associated_skill = /datum/skill/magic/holy
 	antimagic_allowed = FALSE
@@ -56,7 +56,7 @@
 	no_early_release = TRUE
 	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
 	sound = 'sound/items/bsmithfail.ogg'
-	invocation = "By molten might and hammer's weight, in Malum’s flame, the earth shall quake!"
+	invocation = "By molten might and hammer's weight, in Moradin’s flame, the earth shall quake!"
 	invocation_type = "shout"
 	associated_skill = /datum/skill/magic/holy
 	antimagic_allowed = TRUE
@@ -79,7 +79,7 @@
 	no_early_release = TRUE
 	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
 	sound = 'sound/items/bsmithfail.ogg'
-	invocation = "Coins to ash, flame to form, in Malum’s name, let creation be born!"
+	invocation = "Coins to ash, flame to form, in Moradin’s name, let creation be born!"
 	invocation_type = "shout"
 	associated_skill = /datum/skill/magic/holy
 	antimagic_allowed = FALSE
@@ -92,7 +92,7 @@
 
 /obj/effect/proc_holder/spell/invoked/heatmetal/cast(list/targets, mob/user = usr)
 	. = ..()
-	var/list/nosmeltore = list(/obj/item/rogueore/coal, /obj/item/rogueore/cinnabar)
+	var/list/nosmeltore = list(/obj/item/rogueore/coal)
 	var/datum/effect_system/spark_spread/sparks = new()
 	var/target = targets[1]
 	if (!target || target in nosmeltore)
@@ -118,7 +118,7 @@ proc/handle_item_smelting(obj/item/target, mob/user, datum/effect_system/spark_s
 
 proc/handle_living_entity(mob/target, mob/user, list/nosmeltore)
 	var/obj/item/targeteditem = get_targeted_item(user, target)
-	if (!targeteditem || targeteditem.smeltresult == /obj/item/ash || target.anti_magic_check(TRUE,TRUE)) 
+	if (!targeteditem || targeteditem.smeltresult == /obj/item/ash || target.anti_magic_check(TRUE,TRUE))
 		show_visible_message(user, "After their incantation, [user] points at [target] but it seems to have no effect.", "After your incantation, you point at [target] but it seems to have no effect.")
 		return
 	if (istype(targeteditem, /obj/item/rogueweapon/tongs))
@@ -141,7 +141,7 @@ proc/handle_living_entity(mob/target, mob/user, list/nosmeltore)
 			if(target.get_item_by_slot(SLOT_ARMOR))
 				target_item = target.get_item_by_slot(SLOT_ARMOR)
 			else if (target.get_item_by_slot(SLOT_SHIRT))
-				target_item = target.get_item_by_slot(SLOT_SHIRT)	
+				target_item = target.get_item_by_slot(SLOT_SHIRT)
 		if (BODY_ZONE_PRECISE_NECK)
 			target_item = target.get_item_by_slot(SLOT_NECK)
 		if (BODY_ZONE_PRECISE_R_EYE || BODY_ZONE_PRECISE_L_EYE || BODY_ZONE_PRECISE_NOSE)
@@ -190,7 +190,7 @@ proc/handle_heating_equipped(mob/living/carbon/target, obj/item/clothing/targete
 	var/obj/item/armor = target.get_item_by_slot(SLOT_ARMOR)
 	var/obj/item/shirt = target.get_item_by_slot(SLOT_SHIRT)
 	var/armor_can_heat = armor && armor.smeltresult && armor.smeltresult != /obj/item/ash
-	var/shirt_can_heat = shirt && shirt.smeltresult && shirt.smeltresult != /obj/item/ash // Full damage if no shirt 
+	var/shirt_can_heat = shirt && shirt.smeltresult && shirt.smeltresult != /obj/item/ash // Full damage if no shirt
 	var/damage_to_apply = 20 // How much damage should your armor burning you should do.
 	if (user.zone_selected == BODY_ZONE_CHEST)
 		if (armor_can_heat && (!shirt_can_heat && shirt))
@@ -223,14 +223,14 @@ proc/apply_damage_if_covered(mob/living/carbon/target, list/body_zones, obj/item
 	. = ..()
 	var/const/starminatoregen = 500 // How much stamina should the spell give back to the caster.
 	var/mob/target = targets[1]
-	if (!iscarbon(target)) 
+	if (!iscarbon(target))
 		return
 	if (target == user)
-		target.energy_add(starminatoregen)
-		show_visible_message(usr, "As [user] intones the incantation, vibrant flames swirl around them.", "As you intones the incantation, vibrant flames swirl around you, You feel refreshed.")
-	else if (user.energy > (starminatoregen * 2))
-		user.energy_add(-(starminatoregen * 2))
-		target.energy_add(starminatoregen * 2)
+		target.rogstam_add(starminatoregen)
+		show_visible_message(usr, "As [user] intones the incantation, vibrant flames swirl around them.", "As you intone the incantation, vibrant flames swirl around you, You feel refreshed.")
+	else if (user.rogstam > (starminatoregen * 2))
+		user.rogstam_add(-(starminatoregen * 2))
+		target.rogstam_add(starminatoregen * 2)
 		show_visible_message(target, "As [user] intones the incantation, vibrant flames swirl around them, a dance of energy flowing towards [target].", "As [user] intones the incantation, vibrant flames swirl around them, a dance of energy flowing towards you. You feel refreshed")
 
 /obj/effect/proc_holder/spell/invoked/craftercovenant/cast(list/targets, mob/user = usr)
@@ -358,7 +358,7 @@ world/New()
 			shaken.apply_effect(1 SECONDS, EFFECT_IMMOBILIZE, 0)
 			show_visible_message(shaken, null, "The ground quakes but I manage to keep my footing.")
 		else
-			shaken.apply_effect(1 SECONDS, EFFECT_KNOCKDOWN, 0)		
+			shaken.apply_effect(1 SECONDS, EFFECT_KNOCKDOWN, 0)
 			show_visible_message(shaken, null, "The ground quakes, making me fall over.")
 	for (var/obj/structure/damaged in view(radius, fallzone))
 		if(!istype(damaged, /obj/structure/flora/newbranch))
