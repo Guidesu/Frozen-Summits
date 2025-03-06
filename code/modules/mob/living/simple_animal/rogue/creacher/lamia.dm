@@ -1,4 +1,3 @@
-/*
 /mob/living/simple_animal/hostile/retaliate/rogue/lamia
 	icon = 'icons/roguetown/mob/monster/lamia.dmi'
 	name = "lamia"
@@ -15,7 +14,8 @@
 	base_intents = list(/datum/intent/simple/bite, /datum/intent/simple/claw)
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 1,
 						/obj/item/reagent_containers/food/snacks/fat = 1,
-	)
+						/obj/item/alch/sinew = 2,
+						/obj/item/alch/bone = 1)
 	faction = list("orcs")
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST|MOB_REPTILE
 	health = 200
@@ -27,7 +27,7 @@
 	environment_smash = ENVIRONMENT_SMASH_NONE
 	retreat_distance = 0
 	minimum_distance = 0
-	food_type = list(/obj/item/reagent_containers/food/snacks/rogue/meat, /obj/item/bodypart, /obj/item/organ)
+	food_type = list(/obj/item/reagent_containers/food/snacks/meat, /obj/item/bodypart, /obj/item/organ)
 	footstep_type = null
 	pooptype = null
 	STACON = 6
@@ -42,7 +42,6 @@
 	dodgetime = 15
 	aggressive = 1
 	remains_type = null
-	body_eater = TRUE
 	var/sneaking = FALSE
 	var/light_check = 0
 	var/light_check_delay = 3 SECONDS
@@ -122,4 +121,3 @@
 	sneaking = FALSE
 	alpha = 255
 	sneak_cooldown = world.time + sneak_cooldown_delay
-*/

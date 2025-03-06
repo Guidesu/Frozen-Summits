@@ -1,5 +1,4 @@
-/*
-// //The vile Vore Monster
+//The vile Vore Monster
 /mob/living/simple_animal/hostile/retaliate/rogue/headless
 	icon = 'icons/roguetown/mob/monster/lamia.dmi'
 	name = "headless"
@@ -14,7 +13,7 @@
 	see_in_dark = 9
 	move_to_delay = 3
 	base_intents = list(/datum/intent/simple/bite, /datum/intent/simple/claw)
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 1,
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/steak = 1,
 						/obj/item/reagent_containers/food/snacks/fat = 2,
 						/obj/item/alch/sinew = 2,
 						/obj/item/alch/bone = 1)
@@ -44,13 +43,21 @@
 	dodgetime = 15
 	aggressive = 1
 	remains_type = null
-	body_eater = TRUE
+
+	ai_controller = /datum/ai_controller/headless
+	AIStatus = AI_OFF
+	can_have_ai = FALSE
+
 	var/mob/living/swallowed_mob
 	var/health_at_swallow = 1000
 	var/stomach_burn_cooldown = 0
 	var/stomach_burn_delay = 10
 	var/swallow_cooldown = 0
 	var/swallow_cooldown_delay = 30 SECONDS
+
+/mob/living/simple_animal/hostile/retaliate/rogue/headless/Initialize()
+	. = ..()
+	AddElement(/datum/element/ai_flee_while_injured, 0.75, retreat_health)
 
 /mob/living/simple_animal/hostile/retaliate/rogue/headless/AttackingTarget()
 	//If its a carbon, your cooldown is up, and your above 30% health you can eat them
@@ -81,11 +88,9 @@
 				stomach_burn_cooldown = world.time + stomach_burn_delay
 			if(swallowed_mob.stat == DEAD)
 				//They are full dead.
-				swallowed_mob.dust(drop_items = TRUE)
-				swallowed_mob = null
-				body_eater = TRUE
+				SpitUp()
 				adjustBruteLoss(-50)
-				visible_message(span_notice("The [src] starts to rapidly heal."))
+				visible_message(span_notice("[src] starts to rapidly heal."))
 				//Half the cooldown since they successfully killed their target. Worst possible outcome has occured.
 				swallow_cooldown = world.time + (swallow_cooldown_delay / 2)
 	return ..()
@@ -94,7 +99,7 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/headless/CanAttack(atom/the_target)
 	. = ..()
 	if(!.)
-		if(body_eater && isliving(the_target))
+		if(isliving(the_target))
 			var/mob/living/L = the_target
 			if(L.stat == DEAD)
 				return TRUE
@@ -158,7 +163,6 @@
 	L.forceMove(src)
 	swallowed_mob = L
 	health_at_swallow = health
-	body_eater = FALSE
 
 /mob/living/simple_animal/hostile/retaliate/rogue/headless/proc/SpitUp()
 	if(swallowed_mob)
@@ -166,6 +170,4 @@
 		playsound(loc, 'sound/vo/vomit.ogg', 25, TRUE)
 		swallowed_mob.forceMove(get_turf(src))
 		swallowed_mob = null
-		body_eater = TRUE
 	swallow_cooldown = world.time + swallow_cooldown_delay
-*/
