@@ -28,6 +28,7 @@
 		target.Dizzy(10)
 		target.blur_eyes(20)
 		target.emote("drown")
+		target.ExtinguishMob()
 		return TRUE
 	revert_cast()
 	return FALSE
@@ -56,7 +57,7 @@
 		var/mob/living/target = targets[1]
 		if(user.patron?.undead_hater && (target.mob_biotypes & MOB_UNDEAD)) //THE DEEP CALLS- sorry, the pressure of the deep falls upon those of the undead ilk
 			target.visible_message(span_danger("[target] is crushed by divine pressure!"), span_userdanger("I'm crushed by divine pressure!"))
-			target.adjustBruteLoss(30)			
+			target.adjustBruteLoss(30)
 			return TRUE
 		var/conditional_buff = FALSE
 		var/situational_bonus = 1
@@ -75,7 +76,7 @@
 		var/healing = 6.5
 		target.adjustFireLoss(-80)
 		if (conditional_buff)
-			to_chat(user, "Calling upon Abyssor's power is easier in these conditions!")
+			to_chat(user, "Calling upon the depth's power is easier in these conditions!")
 			healing += situational_bonus
 			target.adjustFireLoss(-40)
 		target.apply_status_effect(/datum/status_effect/buff/healing, healing)
@@ -138,7 +139,7 @@
 	associated_skill = /datum/skill/magic/holy
 	antimagic_allowed = TRUE
 	charge_max = 60 SECONDS
-	req_items = list(/obj/item/clothing/neck/roguetown/psicross/abyssanctum)
+	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
 	devotion_cost = 45
 
 /turf/open/proc/apply_ice_turf()
@@ -185,10 +186,10 @@
 	if(istype(owner, /mob/living/carbon/human))
 		tomb.buckle_mob(owner, TRUE, check_loc = FALSE)
 		if(owner.patron && owner.patron.type == /datum/patron/divine/abyssor)
-			to_chat(src, "<span class='debug'>Abyssor follower = no processing..</span>")
+			to_chat(src, "<span class='debug'>Depth follower = no processing..</span>")
 			tomb.processing = FALSE
 		else
-			to_chat(src, "<span class='debug'>Unbased person that don't follow abyssor, start to purify their ass.</span>")
+			to_chat(src, "<span class='debug'>Unbased person that don't follow the waves, start to purify their ass.</span>")
 			START_PROCESSING(SSobj, tomb) // Processing for non-Abyssor followers
 	owner.forceMove(tomb) // Move the owner inside the tomb
 	tomb.max_integrity = 300
@@ -307,7 +308,7 @@
 	movement_interrupt = FALSE
 	projectile_type = /obj/projectile/magic/purify
 	chargedloop = null
-	req_items = list(/obj/item/clothing/neck/roguetown/psicross/abyssanctum)
+	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
 	sound = 'sound/music/kaizoku/spells/martialart_abyssanctum.ogg'
 	invocation_type = "none"
 	//invocation = "delivers sharp jabs and a sudden clap, unleashing a freezing shockwave that forms and launches a jagged ice spike."

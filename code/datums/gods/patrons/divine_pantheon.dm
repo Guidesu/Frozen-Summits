@@ -111,7 +111,7 @@
 		"THE OCEAN'S FURY IS UMBERLEE'S WILL!",
 		"I AM DRAWN BY THE PULL OF THE TIDE!",
 	)
-	
+
 /datum/patron/divine/ravox
 	name = "Tyr"
 	domain = "Justice, Glory, Battle"
@@ -191,7 +191,11 @@
 	domain = "Creation, Fire, and Crafting"
 	desc = "Moradin, the Soul Forger, is the dwarven god of creation and craftsmanship. He values hard work and skill above all else."
 	worshippers = "Smiths, Miners, Engineers"
-	t1 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
+	t0 = /obj/effect/proc_holder/spell/invoked/malum_flame_rogue
+	t1 = /obj/effect/proc_holder/spell/invoked/vigorousexchange
+	t2 = /obj/effect/proc_holder/spell/invoked/heatmetal
+	t3 = /obj/effect/proc_holder/spell/invoked/craftercovenant
+	t4 = /obj/effect/proc_holder/spell/invoked/hammerfall
 	confess_lines = list(
 		"MORADIN IS MY MUSE!",
 		"TRUE VALUE IS IN THE TOIL!",
