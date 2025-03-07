@@ -137,8 +137,8 @@
 
 // Enhanced process with wiggle states
 /obj/item/baby/process()
-	hunger = max(0, hunger - 0.5)
-	cleanliness = max(0, cleanliness - 0.3)
+	hunger = max(0, hunger - 0.06)
+	cleanliness = max(0, cleanliness - 0.06)
 	
 	if(hunger < 30 || cleanliness < 30)
 		happiness = max(0, happiness - 1.5)
@@ -180,7 +180,7 @@
 	// Bottle feeding
 	if(istype(reagent_container, /obj/item/reagent_containers))
 		if(reagent_container.reagents.has_reagent(edible_reagents))
-			var/transfer_amount = 15
+			var/transfer_amount = 5
 			if(reagent_container.reagents.remove_reagent(edible_reagents, transfer_amount))
 				hunger = min(100, hunger + 20)
 				happiness = min(100, happiness + 10)
