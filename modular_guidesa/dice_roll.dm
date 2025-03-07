@@ -61,7 +61,7 @@
 	D.pixel_y = rand(-8, 8)
 */
 	// Roll with delay for animation
-	addtimer(CALLBACK(src, .proc/finish_roll, chosen_skill, modifier), 3 SECONDS)
+	addtimer(CALLBACK(src, .proc/finish_roll, chosen_skill, modifier), 1 SECONDS)
 
 /mob/living/carbon/human/proc/finish_roll(skill, modifier)
 	var/roll = rand(1, 20)

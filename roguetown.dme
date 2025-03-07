@@ -3806,6 +3806,7 @@
 #include "modular_azurepeak\virtues\thief.dm"
 #include "modular_azurepeak\virtues\utility.dm"
 #include "modular_guidesa\bg3_music.dm"
+#include "modular_guidesa\caretaking.dm"
 #include "modular_guidesa\dice_roll.dm"
 #include "modular_guidesa\general_stuffs.dm"
 #include "modular_guidesa\gm_talking_rp.dm"
