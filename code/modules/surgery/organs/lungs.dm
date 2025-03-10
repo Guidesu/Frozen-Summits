@@ -451,3 +451,8 @@
 	cold_level_1_threshold = 200
 	cold_level_2_threshold = 140
 	cold_level_3_threshold = 100
+/obj/item/organ/lungs/construct
+	name = "construct aersource"
+	desc = "A complex hollow crystal, which courses with air through unknowable means. Steam wisps around it in a vortex."
+	icon_state = "lungs-con"
+	

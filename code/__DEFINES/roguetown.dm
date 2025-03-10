@@ -45,15 +45,21 @@
 	/datum/species/abyssariad/changeling,\
 	/datum/species/kenku
 
+
 #define RACES_SHUNNED \
 	/datum/species/halforc,\
 	/datum/species/anthromorphsmall,\
-	/datum/species/kobold
+	/datum/species/kobold,\
 
 #define RACES_DESPISED \
 	/datum/species/goblinp,\
 
-#define RACES_ALL_KINDS list(RACES_DESPISED, RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED)
+#define RACES_CONSTRUCT \
+	/datum/species/construct/metal,\
+
+#define RACES_ALL_KINDS list(RACES_DESPISED, RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED, RACES_CONSTRUCT)
+
+#define RACES_NO_CONSTRUCT list(RACES_DESPISED, RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED)
 
 #define RACES_SHUNNED_UP list(RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED)
 
@@ -81,6 +87,7 @@
 	/datum/species/goblinp,\
 	/datum/species/abyssariad/changeling,\
 	/datum/species/kenku,\
+	/datum/species/construct/metal,\
 )
 
 #define CLOTHED_RACES_TYPES list(\
@@ -106,6 +113,7 @@
 	/datum/species/goblinp,\
 	/datum/species/abyssariad/changeling,\
 	/datum/species/kenku,\
+	/datum/species/construct/metal,\
 )
 // Non-dwarf non-kobold non-goblin mostly
 #define NON_DWARVEN_RACE_TYPES list(\
@@ -127,6 +135,7 @@
 	/datum/species/halforc,\
 	/datum/species/abyssariad/changeling,\
 	/datum/species/kenku,\
+	/datum/species/construct/metal,\
 )
 // Non-elf non-dwarf non-kobold non-goblin mostly
 #define HUMANLIKE_RACE_TYPES list(\
@@ -144,6 +153,7 @@
 	/datum/species/demihuman,\
 	/datum/species/abyssariad/changeling,\
 	/datum/species/kenku,\
+	/datum/species/construct/metal,\
 )
 #define ALL_CLERIC_PATRONS list(/datum/patron/divine/astrata, /datum/patron/divine/noc, /datum/patron/divine/dendor, /datum/patron/divine/abyssor, /datum/patron/divine/ravox, /datum/patron/divine/necra, /datum/patron/divine/xylix, /datum/patron/divine/pestra, /datum/patron/divine/malum, /datum/patron/divine/eora, /datum/patron/neutral/talona, /datum/patron/neutral/oghma, /datum/patron/neutral/corellon, /datum/patron/neutral/garl, /datum/patron/neutral/yondalla, /datum/patron/neutral/elistraee, /datum/patron/neutral/talos, /datum/patron/divine/selune)
 
