@@ -319,3 +319,60 @@
 	name = "skinning knife"
 	desc = "More than one way to skin a seelie."
 	icon_state = "skinningknife"
+/obj/item/rogueweapon/knuckles/bronzeknuckles
+	name = "bronze knuckles"
+	desc = "A mean looking pair of bronze knuckles. Mildly heavier than it's steel counterpart, making it a solid defensive option, if less wieldy."
+	force = 13
+	possible_item_intents = list(/datum/intent/knuckles/strike,/datum/intent/knuckles/smash)
+	icon = 'icons/roguetown/weapons/32.dmi'
+	icon_state = "bronzeknuckle"
+	gripsprite = FALSE
+	wlength = WLENGTH_SHORT
+	w_class = WEIGHT_CLASS_SMALL
+	slot_flags = ITEM_SLOT_HIP
+	parrysound = list('sound/combat/parry/pugilism/unarmparry (1).ogg','sound/combat/parry/pugilism/unarmparry (2).ogg','sound/combat/parry/pugilism/unarmparry (3).ogg')
+	sharpness = IS_BLUNT
+	max_integrity = 300
+	swingsound = list('sound/combat/wooshes/punch/punchwoosh (1).ogg','sound/combat/wooshes/punch/punchwoosh (2).ogg','sound/combat/wooshes/punch/punchwoosh (3).ogg')
+	associated_skill = /datum/skill/combat/unarmed
+	throwforce = 12
+	wdefense = 5
+	wbalance = 1
+	blade_dulling = DULLING_BASHCHOP
+	anvilrepair = /datum/skill/craft/weaponsmithing
+	smeltresult = /obj/item/ingot/bronze
+	grid_width = 32
+	grid_height = 32
+
+/datum/intent/knuckles
+	clickcd = 8
+
+/datum/intent/knuckles/strike
+	name = "punch"
+	blade_class = BCLASS_BLUNT
+	attack_verb = list("punches", "clocks")
+	hitsound = list('sound/combat/hits/punch/punch_hard (1).ogg', 'sound/combat/hits/punch/punch_hard (2).ogg', 'sound/combat/hits/punch/punch_hard (3).ogg')
+	chargetime = 0
+	penfactor = 15
+	swingdelay = 0
+	icon_state = "inpunch"
+	item_d_type = "blunt"
+
+
+/datum/intent/knuckles/smash
+	name = "smash"
+	blade_class = BCLASS_SMASH
+	attack_verb = list("smashes")
+	hitsound = list('sound/combat/hits/punch/punch_hard (1).ogg', 'sound/combat/hits/punch/punch_hard (2).ogg', 'sound/combat/hits/punch/punch_hard (3).ogg')
+	penfactor = 40
+	damfactor = 1.1
+	swingdelay = 6
+	icon_state = "insmash"
+	item_d_type = "blunt"
+
+
+/obj/item/rogueweapon/knuckles/eora
+	name = "close caress"
+	desc = "Some times call for a more intimate approach."
+	force = 20
+	icon_state = "eoraknuckle"
