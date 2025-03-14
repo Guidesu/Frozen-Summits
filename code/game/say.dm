@@ -143,6 +143,7 @@ GLOBAL_LIST_INIT(freqtospan, list(
 	if(copytext_char(input, length_char(input) - 1) == "!!")
 		spans |= SPAN_YELL
 
+	input = parsemarkdown_basic(input, limited = TRUE, barebones = TRUE)
 	var/spanned = attach_spans(input, spans)
 	if(isliving(src))
 		var/mob/living/L = src
