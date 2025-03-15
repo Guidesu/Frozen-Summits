@@ -2,7 +2,7 @@
 // A bard's bread and butter. Maybe jester too?
 /obj/effect/proc_holder/spell/invoked/mockery
 	name = "Viscious Mockery"
-	overlay_state = "null"
+	overlay_state = "vm"
 	releasedrain = 30
 	chargetime = 30
 	range = 6

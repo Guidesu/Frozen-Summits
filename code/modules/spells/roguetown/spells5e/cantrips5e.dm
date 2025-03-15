@@ -25,7 +25,7 @@
 	desc = ""
 	clothes_req = FALSE
 	range = 8
-	overlay_state = "null"
+	overlay_state = "blade_ward"
 	sound = list('sound/magic/whiteflame.ogg')
 	active = FALSE
 
@@ -86,7 +86,7 @@
 //==============================================
 /obj/effect/proc_holder/spell/invoked/boomingblade5e
 	name = "Booming Blade"
-	overlay_state = "blade_burst"
+	overlay_state = "booming_blade"
 	releasedrain = 50
 	chargetime = 3
 	charge_max = 15 SECONDS
@@ -179,7 +179,7 @@
 	desc = ""
 	clothes_req = FALSE
 	range = 0
-	overlay_state = "null"
+	overlay_state = "bonfire"
 	sound = list('sound/magic/whiteflame.ogg')
 	active = FALSE
 
@@ -236,7 +236,7 @@
 // Notes: turn a freshly dead body into a rotman
 /obj/effect/proc_holder/spell/invoked/decompose5e
 	name = "Decompose"
-	overlay_state = "null"
+	overlay_state = "decompose"
 	releasedrain = 50
 	chargetime = 5
 	charge_max = 15 SECONDS
@@ -311,7 +311,7 @@
 	clothes_req = FALSE
 	range = 8
 	projectile_type = /obj/projectile/magic/eldritchblast5e
-	overlay_state = "force_dart"
+	overlay_state = "e_blast"
 	sound = list('sound/magic/whiteflame.ogg')
 	active = FALSE
 
@@ -338,12 +338,22 @@
 
 /obj/projectile/magic/eldritchblast5e
 	name = "eldritch blast"
-	icon = 'icons/obj/projectiles.dmi'
-	icon_state = "arcane_barrage"
-	damage = 20
-	damage_type = BRUTE
+	tracer_type = /obj/effect/projectile/tracer/stun
+	muzzle_type = null
+	impact_type = null
+	hitscan = TRUE
+	movement_type = UNSTOPPABLE
+	light_color = LIGHT_COLOR_WHITE
+	damage = 55
+	damage_type = BURN
+	nodamage = FALSE
+	speed = 0.3
 	flag = "magic"
-	range = 15
+	light_color = "#ff0000"
+	light_range = 7
+	knockdown = 1
+	drowsy = 1
+
 
 /obj/projectile/magic/eldritchblast5e/on_hit(atom/target, blocked = FALSE)
 	. = ..()
@@ -356,7 +366,7 @@
 			return BULLET_ACT_BLOCK
 		if(isliving(target))
 			var/mob/living/L = target
-			if(L.STACON <= 14)
+			if(L.STACON <= 7)
 				L.electrocute_act(3, src)
 			else
 				L.electrocute_act(2, src)
@@ -371,7 +381,7 @@
 	name = "Encode Thoughts"
 	desc = "Latch onto the mind of one who is nearby, weaving a particular thought into their mind."
 	name = "Encode Thoughts"
-	overlay_state = "null"
+	overlay_state = "e_thought"
 	releasedrain = 25
 	chargetime = 1
 	charge_max = 10 SECONDS
@@ -420,7 +430,7 @@
 	clothes_req = FALSE
 	range = 8
 	projectile_type = /obj/projectile/magic/aoe/fireball/firebolt5e
-	overlay_state = "fireball_multi"
+	overlay_state = "f_bolt"
 	sound = list('sound/magic/whiteflame.ogg')
 	active = FALSE
 	releasedrain = 30
@@ -459,7 +469,7 @@
 //==============================================
 /obj/effect/proc_holder/spell/invoked/frostbite5e
 	name = "Frostbite"
-	overlay_state = "null"
+	overlay_state = "frostbite"
 	releasedrain = 50
 	chargetime = 1
 	charge_max = 25 SECONDS
@@ -518,7 +528,7 @@
 //==============================================
 /obj/effect/proc_holder/spell/invoked/greenflameblade5e
 	name = "Green-Flame Blade"
-	overlay_state = "null"
+	overlay_state = "fireblade"
 	releasedrain = 50
 	chargetime = 3
 	charge_max = 10 SECONDS
@@ -574,7 +584,7 @@
 //==============================================
 /obj/effect/proc_holder/spell/targeted/guidance5e
 	name = "Guidance"
-	overlay_state = "null"
+	overlay_state = "guidance"
 	releasedrain = 50
 	chargetime = 1
 	charge_max = 30 SECONDS
@@ -644,7 +654,7 @@
 //==============================================
 /obj/effect/proc_holder/spell/invoked/infestation5e
 	name = "Infestation"
-	overlay_state = "null"
+	overlay_state = "infestation"
 	invocation = "Infesta!"
 	invocation_type = "shout"
 	releasedrain = 50
@@ -734,7 +744,7 @@
 //==============================================
 /obj/effect/proc_holder/spell/self/light5e
 	name = "Light"
-	overlay_state = "null"
+	overlay_state = "light"
 	releasedrain = 50
 	chargetime = 1
 	charge_max = 30 SECONDS
@@ -898,7 +908,7 @@
 
 /obj/effect/proc_holder/spell/targeted/lightninglure5e
 	name = "Lightning Lure"
-	overlay_state = "null"
+	overlay_state = "lure"
 	releasedrain = 50
 	chargetime = 1
 	charge_max = 5 SECONDS
@@ -953,7 +963,7 @@
 //==============================================
 /obj/effect/proc_holder/spell/invoked/magicstone5e
 	name = "Magic Stone"
-	overlay_state = "null"
+	overlay_state = "rune1"
 	releasedrain = 50
 	chargetime = 10
 	charge_max = 30 SECONDS
@@ -1001,7 +1011,7 @@
 
 /obj/effect/proc_holder/spell/invoked/mending5e
 	name = "Mending"
-	overlay_state = "null"
+	overlay_state = "mending"
 	releasedrain = 50
 	chargetime = 5
 	charge_max = 15 SECONDS
@@ -1055,7 +1065,7 @@
 
 /obj/effect/proc_holder/spell/invoked/mindsliver5e
 	name = "Mind Sliver"
-	overlay_state = "null"
+	overlay_state = "sliver"
 	releasedrain = 30
 	chargetime = 0
 	charge_max = 15 SECONDS
@@ -1125,7 +1135,7 @@
 //my hope is that it doesn't work with love poiton...
 /obj/effect/proc_holder/spell/invoked/poisonspray5e
 	name = "Poison Spray"
-	overlay_state = "null"
+	overlay_state = "poison"
 	releasedrain = 50
 	chargetime = 3
 	charge_max = 20 SECONDS
@@ -1188,7 +1198,7 @@
 	clothes_req = FALSE
 	range = 8
 	projectile_type = /obj/projectile/magic/rayoffrost5e
-	overlay_state = "null"
+	overlay_state = "rof"
 	sound = list('sound/magic/whiteflame.ogg')
 	active = FALSE
 
@@ -1334,7 +1344,7 @@
 
 /obj/effect/proc_holder/spell/self/goodberry
 	name = "Goodberry"
-	overlay_state = "null"
+	overlay_state = "gb"
 	releasedrain = 50
 	chargetime = 1
 	charge_max = 30 SECONDS

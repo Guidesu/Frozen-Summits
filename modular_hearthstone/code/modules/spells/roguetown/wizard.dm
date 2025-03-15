@@ -820,7 +820,7 @@
 	desc = "A slow-moving glob of acid that sprays over an area upon impact."
 	range = 8
 	projectile_type = /obj/projectile/magic/acidsplash5e
-	overlay_state = "null"
+	overlay_state = "as"
 	sound = list('sound/magic/whiteflame.ogg')
 	active = FALSE
 	invocation = "Vaer'thaliss!"
@@ -903,7 +903,7 @@
 /obj/effect/proc_holder/spell/invoked/frostbite5e
 	name = "Frostbite"
 	desc = "Freeze your enemy with an icy blast that does low damage, but reduces the target's Speed for a considerable length of time."
-	overlay_state = "null"
+	overlay_state = "fb"
 	invocation = "Gelid'zar!"
 	invocation_type = "shout"
 	releasedrain = 50
@@ -1083,7 +1083,7 @@
 	desc = "A ray of frozen energy, slowing the first thing it touches and lightly damaging it."
 	range = 8
 	projectile_type = /obj/projectile/magic/frostbolt
-	overlay_state = "null"
+	overlay_state = "ik"
 	sound = list('sound/magic/whiteflame.ogg')
 	active = FALSE
 	invocation = "Sylvaris!"
@@ -1314,7 +1314,7 @@
 /obj/effect/proc_holder/spell/invoked/poisonspray5e
 	name = "Aerosolize" //once again renamed to fit better :)
 	desc = "Turns a container of liquid into a smoke containing the reagents of that liquid."
-	overlay_state = "null"
+	overlay_state = "ae"
 	releasedrain = 50
 	chargetime = 3
 	charge_max = 20 SECONDS
