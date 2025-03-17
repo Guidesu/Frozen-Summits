@@ -232,7 +232,7 @@
 				to_chat(src, span_info("[text]"))
 			
 			var/attacker_feedback 
-			if(user.client?.prefs.showrolls && attacker_dualw)
+			if(user.client?.prefs.showrolls && (attacker_dualw || defender_dualw))
 				attacker_feedback = "Attacking with advantage. ([100 - ((prob2defend / 100) * (prob2defend / 100) * 100)]%)"
 
 			var/parry_status = FALSE
@@ -531,7 +531,7 @@
 		//----------Dual Wielding check end---------
 
 		var/attacker_feedback 
-		if(user.client?.prefs.showrolls && attacker_dualw)
+		if(user.client?.prefs.showrolls && (attacker_dualw || defender_dualw))
 			attacker_feedback = "Attacking with advantage. ([100 - ((prob2defend / 100) * (prob2defend / 100) * 100)]%)"
 
 		if(src.client?.prefs.showrolls)
