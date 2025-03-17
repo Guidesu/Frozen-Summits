@@ -119,7 +119,7 @@ obj/item/enchantmentscroll/mining/attack_obj(obj/item/O, mob/living/user)
 	else
 		to_chat(user, span_notice("Nothing happens. Perhaps you can't enchant [O] with this?"))
 
-/*T2 Enchantments below
+//T2 Enchantments below
 
 /obj/item/enchantmentscroll/nightvision
 	name = "enchanting scroll of darksight"
@@ -239,7 +239,8 @@ obj/item/enchantmentscroll/mining/attack_obj(obj/item/O, mob/living/user)
 		qdel(src)
 	else
 		to_chat(user, span_notice("Nothing happens. Perhaps you can't enchant [O] with this?"))
-*///T3 Enchantments below
+
+//T3 Enchantments below
 
 /obj/item/enchantmentscroll/lifesteal
 	name = "enchanting scroll of lyfestealing"
