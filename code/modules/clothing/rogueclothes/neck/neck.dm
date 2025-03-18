@@ -406,7 +406,7 @@
 	icon_state = "iwolfcollaralt"
 
 /obj/item/clothing/neck/roguetown/psicross/abyssor
-	name = "amulet of Abyssor"
+	name = "amulet of the deep"
 	desc = ""
 	icon_state = "abyssor"
 

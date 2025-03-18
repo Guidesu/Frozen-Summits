@@ -483,6 +483,9 @@
 /obj/structure/flora/roguetree/stump/log,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
+"dC" = (
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/outdoors/woods)
 "dE" = (
 /obj/structure/flora/roguegrass/water,
 /turf/open/water/river{
@@ -517,6 +520,11 @@
 	icon_state = "border"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/outdoors/woods)
+"dP" = (
+/obj/structure/fluff/railing/wood,
+/obj/effect/wisp,
+/turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/woods)
 "dQ" = (
 /obj/effect/wisp/tree,
@@ -1183,6 +1191,11 @@
 	icon_state = "border"
 	},
 /turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/woods)
+"il" = (
+/obj/effect/wisp,
+/obj/structure/well,
+/turf/open/floor/rogue/churchbrick,
 /area/rogue/outdoors/woods)
 "in" = (
 /obj/structure/fluff/railing/wood,
@@ -2608,6 +2621,22 @@
 "tx" = (
 /turf/open/floor/rogue/hexstone,
 /area/rogue/outdoors/woods)
+"tF" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1
+	},
+/obj/effect/wisp,
+/turf/open/floor/rogue/grass/green,
+/area/rogue/outdoors/woods)
+"tH" = (
+/obj/item/clothing/neck/roguetown/psicross/abyssor{
+	anchored = 1;
+	name = "amulet of Eldath";
+	desc = "Eldath is a quiet, pacifist goddess of still waters, streams, and rivers. She is often associated with freshwater sources and sacred groves."
+	},
+/obj/structure/table/wood,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/outdoors/woods)
 "tM" = (
 /obj/structure/fluff/railing/fence{
 	dir = 4
@@ -2946,10 +2975,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
 "wE" = (
-/obj/structure/well/fountain{
-	pixel_x = 16
-	},
-/turf/open/floor/rogue/cobble,
+/turf/open/water/ocean/deep,
 /area/rogue/outdoors/woods)
 "wG" = (
 /obj/structure/flora/roguegrass/bush/wall,
@@ -3444,6 +3470,10 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/outdoors/woods)
+"Ai" = (
+/obj/structure/ladder,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/outdoors/woods)
 "Aj" = (
 /obj/structure/mineral_door/wood/donjon{
 	dir = 1
@@ -3589,6 +3619,10 @@
 	},
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods)
+"Bc" = (
+/obj/effect/wisp,
+/turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods)
 "Bh" = (
 /obj/structure/fluff/railing/wood{
@@ -4611,6 +4645,13 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/money,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
+"IC" = (
+/obj/structure/fluff/railing/wood{
+	dir = 8
+	},
+/obj/structure/ladder,
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/woods)
 "IL" = (
 /obj/effect/decal/cobbleedge{
 	dir = 6
@@ -5266,6 +5307,7 @@
 /obj/structure/fluff/railing/wood{
 	dir = 4
 	},
+/obj/effect/wisp,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods)
 "NT" = (
@@ -5468,6 +5510,10 @@
 "PS" = (
 /obj/effect/decal/cobbleedge,
 /turf/open/floor/rogue/hexstone,
+/area/rogue/outdoors/woods)
+"PT" = (
+/obj/structure/well/fountain/mana,
+/turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods)
 "PU" = (
 /obj/structure/fluff/railing/border{
@@ -23190,7 +23236,7 @@ ys
 ys
 ys
 ys
-ys
+wE
 ys
 ys
 ys
@@ -23345,10 +23391,10 @@ ys
 ys
 ys
 ys
-ys
-ys
-ys
-ys
+wE
+wE
+wE
+wE
 ys
 ys
 ys
@@ -23501,14 +23547,14 @@ ys
 ys
 ys
 ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
 ys
 ys
 ys
@@ -23657,14 +23703,14 @@ Ry
 ys
 ys
 ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
 ys
 ys
 ys
@@ -23814,14 +23860,14 @@ Ry
 ys
 ys
 ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
 ys
 ys
 ys
@@ -23968,17 +24014,17 @@ Ry
 Ry
 kV
 kV
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
 ys
 ys
 ys
@@ -24125,17 +24171,17 @@ Ry
 kV
 kV
 kV
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
 ys
 ys
 ys
@@ -24282,17 +24328,17 @@ kV
 kV
 kV
 kV
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
 ys
 ys
 ys
@@ -24438,18 +24484,18 @@ Ry
 kV
 kV
 kV
-kV
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
 ys
 ys
 ys
@@ -24595,18 +24641,18 @@ Ry
 kV
 kV
 kV
-kV
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
-ys
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
 ys
 ys
 ys
@@ -24752,18 +24798,18 @@ Ry
 kV
 kV
 kV
-kV
-ys
-ys
-ys
-ys
-ys
-Ry
-Ry
-Ry
-Ry
-ys
-ys
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
 ys
 ys
 ys
@@ -24909,17 +24955,17 @@ Ry
 Ry
 kV
 kV
-kV
-ys
-ys
-ys
-Ry
-Ry
-ys
-ys
-ys
-ys
-ys
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
+wE
 ys
 ys
 ys
@@ -25067,14 +25113,14 @@ Ry
 kV
 kV
 kV
-ys
-ys
-ys
-Ry
-ys
-ys
-ys
-ys
+wE
+wE
+wE
+il
+dC
+dC
+il
+pC
 ys
 ys
 ys
@@ -25225,13 +25271,13 @@ Ry
 kV
 kV
 ys
-ys
-ys
-Ry
-ys
-ys
-ys
-ys
+pC
+Ai
+dC
+uy
+uy
+dC
+pC
 ys
 ys
 ys
@@ -25382,13 +25428,13 @@ Ry
 kV
 kV
 ys
-ys
-ys
-Ry
-ys
-ys
-ys
-ys
+pC
+dC
+uy
+uy
+uy
+dC
+pC
 ys
 ys
 ys
@@ -25539,13 +25585,13 @@ Ry
 Ry
 kV
 ys
-ys
-ys
-Ry
-ys
-ys
-ys
-ys
+pC
+dC
+uy
+uy
+uy
+dC
+pC
 ys
 ys
 ys
@@ -25696,13 +25742,13 @@ Ry
 Ry
 kV
 Ry
-Ry
-Ry
-ys
-ys
-ys
-ys
-ys
+pC
+il
+dC
+tH
+dC
+il
+pC
 ys
 ys
 ys
@@ -25853,13 +25899,13 @@ Ry
 Ry
 Ry
 Ry
-Ry
-Ry
-Ry
-ys
-ys
-ys
-ys
+pC
+pC
+pC
+pC
+pC
+pC
+pC
 ys
 ys
 ys
@@ -48933,10 +48979,10 @@ pC
 Yi
 MK
 MK
-MK
+Yi
 NR
 jW
-jW
+cU
 jW
 hT
 jW
@@ -49090,11 +49136,11 @@ pC
 MK
 MK
 MK
-in
+dP
 sY
-wE
 sY
-BO
+sY
+tF
 bP
 jW
 jW
@@ -49247,11 +49293,11 @@ pC
 MK
 MK
 jW
-in
+dP
 sY
+PT
 sY
-sY
-BO
+tF
 Ek
 jW
 Yu
@@ -49404,10 +49450,10 @@ pC
 MK
 jW
 jW
-in
+ky
+Bc
 sY
-sY
-sY
+Bc
 BO
 bP
 jW
@@ -49561,8 +49607,8 @@ kV
 jW
 jW
 jW
-jW
-rc
+Yi
+IC
 rc
 rc
 Ek
