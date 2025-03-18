@@ -20,7 +20,6 @@
 	new /obj/item/book/granter/spell/spells5e/bladeward5e(src)
 	new /obj/item/book/granter/spell/spells5e/createbonfire5e(src)
 	new /obj/item/book/granter/spell/spells5e/frostbite5e(src)
-	new /obj/item/book/granter/spell/spells5e/guidance5e(src)
 	new /obj/item/book/granter/spell/spells5e/infestation5e(src)
 	new /obj/item/book/granter/spell/spells5e/light5e(src)
 	new /obj/item/book/granter/spell/spells5e/lightninglure5e(src)
@@ -99,11 +98,6 @@
 	spellname = "green-flame blade"
 	icon_state ="scrollred"
 
-/obj/item/book/granter/spell/spells5e/guidance5e
-	name = "Scroll of Guidance"
-	spell = /obj/effect/proc_holder/spell/targeted/guidance5e
-	spellname = "guidance"
-	icon_state ="scrollred"
 
 /obj/item/book/granter/spell/spells5e/infestation5e
 	name = "Scroll of Infestation"

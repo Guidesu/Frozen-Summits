@@ -582,8 +582,9 @@
 //==============================================
 //	GUIDANCE
 //==============================================
-/obj/effect/proc_holder/spell/targeted/guidance5e
-	name = "Guidance"
+/obj/effect/proc_holder/spell/targeted/thought_guidance
+	name = "Thought Guidance"
+	desc = "Guide the thoughts of one who is nearby, illuminating their mind with the weave."
 	overlay_state = "guidance"
 	releasedrain = 50
 	chargetime = 1
@@ -607,37 +608,49 @@
 	invocation_type = "shout" //can be none, whisper, emote and shout
 	include_user = FALSE
 
-/obj/effect/proc_holder/spell/targeted/guidance5e/cast(list/targets, mob/living/user)
+/obj/effect/proc_holder/spell/targeted/thought_guidance/cast(list/targets, mob/living/user)
 	for(var/mob/living/carbon/C in targets)
-		var/datum/status_effect/buff/guidance5e/G = new /datum/status_effect/buff/guidance5e/
+		var/datum/status_effect/buff/thought_guidance5e/G = new /datum/status_effect/buff/thought_guidance5e/
 		C.apply_status_effect(G) //apply buff
 		to_chat(C, span_info("You are illuminated by [user]'s guiding light."))
 		C.visible_message(span_info("[C] is illuminated by a guiding presence!"), span_info("You begin to guide [C]."))
 
-/datum/status_effect/buff/guidance5e
-	id = "guidance"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/guidance5e
-	duration = 30 SECONDS
-	effectedstats = list("intelligence" = 2)
-	var/static/mutable_appearance/guided = mutable_appearance('icons/effects/effects.dmi', "blessed")
+
+
+
+
+
+
+
+#define THOUGHT_GUIDANCE_FILTER "thought_guidance_glow"
+
+/datum/status_effect/buff/thought_guidance5e
+	id = "thought_guidance"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/thought_guidance5e
+	duration = 1 MINUTES
+	effectedstats = list("intelligence" = 4)
+	var/outline_colour ="#297ba0"
 	var/mob/living/carbon/giver
 
-/datum/status_effect/buff/guidance5e/on_apply()
+/datum/status_effect/buff/thought_guidance5e/on_apply()
 	. = ..()
 	var/mob/living/target = owner
-	target.add_overlay(guided)
 	target.update_vision_cone()
+	var/filter = owner.get_filter(THOUGHT_GUIDANCE_FILTER)
+	if (!filter)
+		owner.add_filter(THOUGHT_GUIDANCE_FILTER, 2, list("type" = "outline", "color" = outline_colour, "alpha" = 200, "size" = 1))
 
-/datum/status_effect/buff/guidance5e/on_remove()
+/datum/status_effect/buff/thought_guidance5e/on_remove()
 	var/mob/living/target = owner
-	target.cut_overlay(guided)
 	target.update_vision_cone()
+	owner.remove_filter(THOUGHT_GUIDANCE_FILTER)
 	. = ..()
 
-/atom/movable/screen/alert/status_effect/buff/guidance5e
-	name = "Guidance"
-	desc = "Someone is guiding me."
+/atom/movable/screen/alert/status_effect/buff/thought_guidance5e
+	name = "Thought Guidance"
+	desc = "Someone is guiding me with their weave."
 	icon_state = "buff"
+
 
 //==============================================
 //	GUST

@@ -249,6 +249,7 @@
 			/obj/effect/proc_holder/spell/invoked/curewounds5e,
 			/obj/effect/proc_holder/spell/invoked/guidance,
 			/obj/effect/proc_holder/spell/invoked/fortitude,
+			/obj/effect/proc_holder/spell/targeted/thought_guidance
 
 		),
 		"Divine and Unholy (Requires Devotion)" = list(
@@ -1025,6 +1026,7 @@
 	xp_gain = TRUE
 	invocation = "Valar'Thar!"
 	invocation_type = "shout"
+	overlay_state = "fortitude"
 	releasedrain = 60
 	chargedrain = 1
 	chargetime = 4 SECONDS
@@ -1061,6 +1063,7 @@
 	xp_gain = TRUE
 	invocation = "Sehanine'Ver!"
 	invocation_type = "shout"
+	overlay_state = "guidance_two"
 	releasedrain = 60
 	chargedrain = 1
 	chargetime = 4 SECONDS
