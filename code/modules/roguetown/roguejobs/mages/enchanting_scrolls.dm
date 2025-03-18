@@ -225,7 +225,7 @@ T1 Enchantments below here*/
 	else
 		to_chat(user, span_notice("Nothing happens. Perhaps you can't enchant [O] with this?"))
 
-/*
+
 /obj/item/enchantmentscroll/smithing
 	name = "enchanting scroll of smithing"
 	desc = "A scroll imbued with an enchantment of smithing. Provides better hammer strikes on anvils."
@@ -242,7 +242,7 @@ T1 Enchantments below here*/
 		qdel(src)
 	else
 		to_chat(user, span_notice("Nothing happens. Perhaps you can't enchant [O] with this?"))
-		*/
+
 //T3 Enchantments below
 
 /obj/item/enchantmentscroll/lifesteal

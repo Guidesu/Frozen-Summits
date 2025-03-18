@@ -138,7 +138,7 @@
 		REMOVE_TRAIT(user, TRAIT_LONGSTRIDER, "[type]")
 		to_chat(user, span_notice("I feel mundane once more"))
 
-/*
+
 /datum/magic_item/superior/smithing
 	name = "smithing"
 	description = "It's warm with forge flame."
@@ -148,4 +148,4 @@
 	var/obj/item/rogueweapon/hammer/hammer = i
 	hammer.quality = hammer.quality *2
 
-*/
+
