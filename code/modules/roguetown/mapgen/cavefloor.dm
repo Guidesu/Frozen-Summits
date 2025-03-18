@@ -76,7 +76,10 @@
 		/obj/structure/flora/rogueshroom/big = 10,
 		/obj/structure/flora/roguegrass = 15,
 		/obj/structure/closet/dirthole/closed/loot = 10,
-		/obj/item/natural/rock = 3, 
+		/obj/item/natural/rock = 3,
+		/obj/item/natural/artifact = 2,
+		/obj/structure/leyline = 2,
+		/obj/structure/voidstoneobelisk = 2,
 		/obj/structure/glowshroom = 5,
 		/obj/structure/flora/roguegrass/herb/underdark/random = 25)
 	allowed_areas = list(/area/rogue/under/underdark)

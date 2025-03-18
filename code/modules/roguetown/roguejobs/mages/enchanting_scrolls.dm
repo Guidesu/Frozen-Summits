@@ -35,7 +35,7 @@ T1 Enchantments below here*/
 	desc = "A scroll imbued with an enchantment of mining. Good for mining rock."
 	component = /datum/magic_item/mundane/mining
 
-obj/item/enchantmentscroll/mining/attack_obj(obj/item/O, mob/living/user)
+/obj/item/enchantmentscroll/mining/attack_obj(obj/item/O, mob/living/user)
 	.=..()
 	if(istype(O,/obj/item/rogueweapon/pick))
 		to_chat(user, span_notice("You open [src] and place [O] within. Moments later, it flashes blue with arcana, and [src] crumbles to dust."))
@@ -49,7 +49,7 @@ obj/item/enchantmentscroll/mining/attack_obj(obj/item/O, mob/living/user)
 		to_chat(user, span_notice("Nothing happens. Perhaps you can't enchant [O] with this?"))
 
 /obj/item/enchantmentscroll/xylix
-	name = "enchanting scroll of tymora's grace"
+	name = "enchanting scroll of xylix's grace"
 	desc = "A scroll imbued with an enchantment of luck. How fortunate!"
 	component = /datum/magic_item/mundane/xylix
 
@@ -59,7 +59,7 @@ obj/item/enchantmentscroll/mining/attack_obj(obj/item/O, mob/living/user)
 		to_chat(user, span_notice("You open [src] and place [O] within. Moments later, it flashes blue with arcana, and [src] crumbles to dust."))
 		var/magiceffect= new component
 		O.AddComponent(/datum/component/magic_item, magiceffect)
-		O.name += " of tymora's grace"
+		O.name += " of xylixs grace"
 		qdel(src)
 		O.enchanted = TRUE
 		O.filters += filter(type="drop_shadow", x=0, y=0, size=1, offset=2, color=rgb(rand(1,255),rand(1,255),rand(1,255)))
@@ -101,7 +101,7 @@ obj/item/enchantmentscroll/mining/attack_obj(obj/item/O, mob/living/user)
 		qdel(src)
 	else
 		to_chat(user, span_notice("Nothing happens. Perhaps you can't enchant [O] with this?"))
-
+/*
 /obj/item/enchantmentscroll/revealing
 	name = "enchanting scroll of revealing"
 	desc = "A scroll imbued with an enchantment of revealing. Doubles range of lightsources."
@@ -119,7 +119,9 @@ obj/item/enchantmentscroll/mining/attack_obj(obj/item/O, mob/living/user)
 	else
 		to_chat(user, span_notice("Nothing happens. Perhaps you can't enchant [O] with this?"))
 
-/*T2 Enchantments below
+*/
+
+//T2 Enchantments below
 
 /obj/item/enchantmentscroll/nightvision
 	name = "enchanting scroll of darksight"
@@ -223,6 +225,7 @@ obj/item/enchantmentscroll/mining/attack_obj(obj/item/O, mob/living/user)
 	else
 		to_chat(user, span_notice("Nothing happens. Perhaps you can't enchant [O] with this?"))
 
+/*
 /obj/item/enchantmentscroll/smithing
 	name = "enchanting scroll of smithing"
 	desc = "A scroll imbued with an enchantment of smithing. Provides better hammer strikes on anvils."
@@ -239,7 +242,8 @@ obj/item/enchantmentscroll/mining/attack_obj(obj/item/O, mob/living/user)
 		qdel(src)
 	else
 		to_chat(user, span_notice("Nothing happens. Perhaps you can't enchant [O] with this?"))
-*///T3 Enchantments below
+		*/
+//T3 Enchantments below
 
 /obj/item/enchantmentscroll/lifesteal
 	name = "enchanting scroll of lyfestealing"

@@ -43,7 +43,7 @@
 	return FALSE
 
 /obj/effect/proc_holder/spell/invoked/revive
-	name = "Anastasis"
+	name = "Revivify"
 	overlay_state = "revive"
 	releasedrain = 90
 	chargedrain = 0

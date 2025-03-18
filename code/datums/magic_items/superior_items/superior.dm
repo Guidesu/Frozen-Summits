@@ -1,7 +1,7 @@
 ///T2 Enchantments
-/*datum/magic_item/superior/nightvision
+/datum/magic_item/superior/nightvision
 	name = "night vision"
-	description = "It has a sigil of Noc's eye."
+	description = "It has a sigil of Selûne's eye."
 	var/active_item = FALSE
 
 /datum/magic_item/superior/nightvision/on_equip(var/item/i, var/mob/living/user, slot)
@@ -129,15 +129,16 @@
 		return
 	else
 		active_item = TRUE
-		ADD_TRAIT(user, TRAIT_BOG_TREKKING, "[type]")
+		ADD_TRAIT(user, TRAIT_LONGSTRIDER, "[type]")
 		to_chat(user, span_notice("I feel like I can move through rough ground easily!"))
 
 /datum/magic_item/superior/trekk/on_drop(var/item/i, var/mob/living/user)
 	if(active_item)
 		active_item = FALSE
-		REMOVE_TRAIT(user, TRAIT_BOG_TREKKING, "[type]")
+		REMOVE_TRAIT(user, TRAIT_LONGSTRIDER, "[type]")
 		to_chat(user, span_notice("I feel mundane once more"))
 
+/*
 /datum/magic_item/superior/smithing
 	name = "smithing"
 	description = "It's warm with forge flame."
@@ -146,4 +147,5 @@
 	.=..()
 	var/obj/item/rogueweapon/hammer/hammer = i
 	hammer.quality = hammer.quality *2
+
 */

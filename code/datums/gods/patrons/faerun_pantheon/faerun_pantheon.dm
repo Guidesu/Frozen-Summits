@@ -4,21 +4,6 @@
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 
 /datum/patron/divine/astrata
-	name = "Pelor"
-	domain = "Sun, Healing, and Agriculture"
-	desc = "The benevolent god of the Sun, Pelor radiates warmth and healing to all. Farmers and healers alike revere his light and are strengthened by his guidance."
-	worshippers = "Clerics of the Light, Healers, Farmers"
-	confess_lines = list(
-		"PELOR IS MY LIGHT!",
-		"PELOR BRINGS PEACE!",
-		"I SERVE THE GLORY OF THE SUN!",
-	)
-	t1 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
-	t2 = /obj/effect/proc_holder/spell/invoked/heal
-	t3 = /obj/effect/proc_holder/spell/invoked/revive
-
-
-/datum/patron/divine/lathander
 	name = "Lathander"
 	domain = "Dawn, Renewal, and Vitality"
 	desc = "Lathander is the god of dawn, renewal, and life, representing the promise of new beginnings and the resilience of the human spirit. His followers believe that light can overcome darkness, and that with each sunrise, there is an opportunity to grow, heal, and bring hope to the world. Most of the times. Merchants and Travellers worship them due to him protecting them over their travels."
@@ -28,9 +13,6 @@
 	"EVERY DAY IS A NEW HOPE!",
 	"THE LIGHT SHALL TRIUMPH OVER DARKNESS!",
 	"LATHANDER GUIDES ME TO PEACE!")
-	t1 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
-	t2 = /obj/effect/proc_holder/spell/invoked/heal
-	t3 = /obj/effect/proc_holder/spell/invoked/revive
 
 /datum/patron/divine/noc
 	name = "Mystra"
@@ -218,3 +200,41 @@
 		"HER BEAUTY SHINES IN ALL THINGS!",
 		"I LOVE YOU, EVEN AS YOU TRESPASS AGAINST ME!",
 	)
+
+
+/datum/patron/divine/tempus
+	name = "Tempus"
+	domain = "War, Honor, and Combat"
+	desc = "Tempus is the Lord of Battles, overseeing war and soldiers with honor and discipline. He embodies the virtues of an honorable warrior and condemns bloodlust for its own sake, teaching his followers to fight with purpose."
+	worshippers = "Warriors, Knights, Soldiers, and Battlefield Healers"
+	confess_lines = list(
+		"TEMPUS, GUIDE MY BLADE!",
+		"IN TEMPUS'S NAME, I STAND HONORABLY!",
+		"FOR TEMPUS, I FIGHT WITH PURPOSE!"
+	)
+
+/datum/patron/divine/helm
+	name = "Helm"
+	domain = "God of Protection, Vigilance, and Guardianship"
+	desc = "Helm, known as The Watcher, is the eternal sentinel among gods, representing protectors and guardians across the planes. His clergy believe in duty and constant vigilance, watching over the world with unwavering resolve."
+	worshippers = "Guards, Sentinels, Paladins, and Watchers"
+	confess_lines = list(
+		"HELM, PROTECT MY WATCH!",
+		"FOR HELM, I GUARD THE INNOCENT!",
+		"IN HELM'S NAME, I STAND UNBROKEN!"
+	)
+
+/datum/patron/divine/mielikki
+	name = "Mielikki"
+	domain = "Forests, Nature, and Forest Creatures"
+	desc = "Mielikki is the goddess of forests and the creatures that dwell within them. She is a serene, protective deity whose followers honor the quiet, mystical beauty of the natural world."
+	worshippers = "Rangers, Druids, Forest Dwellers, and Conservationists"
+	confess_lines = list(
+		"MIELIKKI, GUARD THIS FOREST!",
+		"FOR MIELIKKI, I DEFEND NATURE!",
+		"IN MIELIKKI'S NAME, I PROTECT THE WILD!"
+	)
+	mob_traits = list(TRAIT_KNEESTINGER_IMMUNITY)
+	t1 = /obj/effect/proc_holder/spell/targeted/blesscrop
+	t2 = /obj/effect/proc_holder/spell/targeted/beasttame
+	t3 = /obj/effect/proc_holder/spell/self/howl/call_of_the_moon

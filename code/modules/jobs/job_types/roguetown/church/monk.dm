@@ -107,8 +107,9 @@
 			ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
 
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	C.grant_spells_monk(H)
+	C.grant_spells_churchling(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
+	H.mind.adjust_spellpoints(8)
 
 /datum/outfit/job/roguetown/monk/post_equip(mob/living/carbon/human/H)
 	..()

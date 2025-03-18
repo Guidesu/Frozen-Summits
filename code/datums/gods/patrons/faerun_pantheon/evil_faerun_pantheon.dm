@@ -2,9 +2,8 @@
 	name = null
 	associated_faith = /datum/faith/inhumen
 	undead_hater = FALSE
-	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 	confess_lines = list(
-		"AO IS THE DEMIURGE!",
+		"THE DIVINE IS A DEMIURGE!",
 		"THE DIVINE ARE WORTHLESS COWARDS!",
 		"THE DIVINE ARE DECEIVERS!",
 	)
@@ -187,16 +186,4 @@
 		"I ANSWER THE CALL OF THE WILD HUNT!",
 	)
 	
-/* Frozen Summit EDIT - Back to the main pantheon 
-/datum/patron/inhumen/eora
-	name = "Eora"
-	domain = "Goddess of Degeneracy, Debauchery and Addiction"
-	desc = "The Fallen Daughter of Psydon, once used to be a goddess of love and family but has now fallen from grace as she leads mortals to hedonism."
-	worshippers = "Drunkards, Junkies, Gamblers and Bards"
-	confess_lines = list(
-		"EORA BRINGS ME PLEASURE!",
-		"EORA BRINGS ME LUCK!",
-		"EORA IS MY HAPPINESS!",
-	)
-	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
-*/ 
+

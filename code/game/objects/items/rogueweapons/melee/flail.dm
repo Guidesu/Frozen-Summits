@@ -253,7 +253,7 @@
 // ask monochrome9090 for permission. Respect the artists's will.//
 // If you want this quality content, COMMISSION me instead. 	 //
 // For this project, requirements are low, and mostly lore-based.//
-// I just do not desire for the Abyssariads to be butchered.	 //
+// I just do not desire for the kara-turs to be butchered.	 //
 ///////////////////////////////////////////////////////////////////
 
 /datum/intent/flail/strike/ranged/smash
@@ -344,7 +344,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	name = "nunchaku"
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
-	desc = "A pair of wooden rods linked by a short chain, designed for concealment and often used by Abyssariad Plowmen- for where swords was only on the hands of the Zamurai caste."
+	desc = "A pair of wooden rods linked by a short chain, designed for concealment and often used by kara-tur Plowmen- for where swords was only on the hands of the Zamurai caste."
 	icon_state = "nunchaku"
 
 /obj/item/rogueweapon/flail/kusarigama

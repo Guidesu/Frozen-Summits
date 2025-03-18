@@ -40,7 +40,8 @@
 			beltr = /obj/item/rogueweapon/huntingknife/idagger/steel/special
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			var/datum/devotion/C = new /datum/devotion(H, H.patron)
-			C.grant_spells_templar(H)
+			C.grant_spells_churchling(H)
+			H.mind.adjust_spellpoints(4)
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1)
 			H.mind.adjust_skillrank(/datum/skill/misc/music, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
@@ -160,8 +161,9 @@
 					cloak = /obj/item/clothing/suit/roguetown/shirt/robe //placeholder, anyone who doesn't have cool patron drip sprites just gets generic robes
 					head = /obj/item/clothing/head/roguetown/roguehood
 			var/datum/devotion/C = new /datum/devotion(H, H.patron)
-			C.grant_spells(H)
+			C.grant_spells_churchling(H)
 			START_PROCESSING(SSobj, C)
+			H.mind.adjust_spellpoints(8)
 
 	switch(H.patron?.type)
 		if(/datum/patron/old_god)

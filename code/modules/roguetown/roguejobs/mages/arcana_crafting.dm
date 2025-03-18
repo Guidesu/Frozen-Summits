@@ -4,19 +4,25 @@
 	skillcraft = /datum/skill/magic/arcane
 	subtype_reqs = TRUE
 
+/datum/crafting_recipe/roguetown/arcana/summonerspouch
+	name = "summoners pouch"
+	result = list(/obj/item/storage/magebag)
+	reqs = list(/obj/item/natural/hide/cured = 1)
+	sellprice = 0
+
 /datum/crafting_recipe/roguetown/arcana/amethyst
 	name = "amythortz"
 	result = /obj/item/roguegem/amethyst
 	reqs = list(/obj/item/natural/stone = 1,
-				/datum/reagent/medicine/manapot = 15)
+				/datum/reagent/water = 15)
 	craftdiff = 2
 
 /datum/crafting_recipe/roguetown/arcana/chalk
 	name = "chalk"
 	result = /obj/item/chalk
-	reqs = list(/obj/item/reagent_containers/powder/salt = 1,
+	reqs = list(/obj/item/rogueore/coal = 1,
 				/datum/reagent/water = 15)
-	craftdiff = 0
+	craftdiff = 2
 
 /datum/crafting_recipe/roguetown/arcana/infernalfeather
 	name = "infernal feather"

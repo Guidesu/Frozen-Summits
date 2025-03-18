@@ -72,8 +72,10 @@
 
 	ADD_TRAIT(H, TRAIT_SEEDKNOW, TRAIT_GENERIC)
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	C.grant_spells_priest(H)
+
+	C.grant_spells_churchling(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
+	H.mind.adjust_spellpoints(8)
 
 	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
 		backpack_contents = null

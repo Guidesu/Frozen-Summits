@@ -772,7 +772,7 @@
 // ask monochrome9090 for permission. Respect the artists's will.//
 // If you want this quality content, COMMISSION me instead. 	 //
 // For this project, requirements are low, and mostly lore-based.//
-// I just do not desire for the Abyssariads to be butchered.	 //
+// I just do not desire for the kara-turs to be butchered.	 //
 ///////////////////////////////////////////////////////////////////
 
 /obj/item/clothing/suit/roguetown/armor/leather/vest/muneate //exists only for the drip.
@@ -1171,7 +1171,6 @@
 	\"By the Heavenly Emperor's command. For the Eastern Realms against all odds.\""
 	icon_state = "myrmidon"
 	item_state = "myrmidon"
-	allowed_race = list("abyssariad")
 	sleevetype = null
 	max_integrity = 500 //Chest + Pants - Everything is on a single armor. Breaks easier since it gets battered everywhere, so it requires more endurance.
 	icon = 'icons/roguetown/kaizoku/clothingicon/armor.dmi'

@@ -398,7 +398,7 @@
 // ask monochrome9090 for permission. Respect the artists's will.//
 // If you want this quality content, COMMISSION me instead. 	 //
 // For this project, requirements are low, and mostly lore-based.//
-// I just do not desire for the Abyssariads to be butchered.	 //
+// I just do not desire for the kara-turs to be butchered.	 //
 ///////////////////////////////////////////////////////////////////
 
 /obj/item/rogueweapon/huntingknife/kunai //Practically a villager knife with more utility. It helps others to climb walls.
@@ -417,7 +417,7 @@
 
 /obj/item/rogueweapon/huntingknife/idagger/steel/kaiken
 	name = "kaiken"
-	desc = "The weapon laws in colonized Abyssariad islands, with high humen of elven population, forbade non-warriors from carrying blades in public, so abyssariad colonists made weapons such as this."
+	desc = "The weapon laws in colonized kara-tur islands, with high humen of elven population, forbade non-warriors from carrying blades in public, so kara-tur colonists made weapons such as this."
 	icon_state = "kaiken"
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut,/datum/intent/dagger/thrust/pick)

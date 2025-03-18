@@ -16,7 +16,7 @@ Within this file:
 	chargedloop = null
 	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
 	sound = 'sound/magic/timestop.ogg'
-	invocation = "In Ravox's name, stand and fight, coward!"
+	invocation = "In Justice's name, stand and fight, coward!"
 	invocation_type = "shout"
 	associated_skill = /datum/skill/magic/holy
 	antimagic_allowed = TRUE
@@ -31,7 +31,7 @@ Within this file:
 		return
 
 	var/mob/living/spelltarget = A
-	spelltarget.apply_status_effect(/datum/status_effect/debuff/ravox_burden)
+	spelltarget.apply_status_effect(/datum/status_effect/debuff/freezing)
 
 	if(spelltarget != user)
 		user.visible_message("[user] shouts an incantation, causing [spelltarget] to go stiff!")

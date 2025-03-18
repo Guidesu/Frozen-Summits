@@ -292,7 +292,7 @@
 	id = "freezing"
 	alert_type = /atom/movable/screen/alert/status_effect/debuff/freezing
 	duration = 30 SECONDS
-	effectedstats = list("speed" = -3, "endurance" = -2)
+	effectedstats = list("speed" = -7, "endurance" = -2)
 
 /datum/status_effect/debuff/freezing/tick()
 	if(iscarbon(owner))

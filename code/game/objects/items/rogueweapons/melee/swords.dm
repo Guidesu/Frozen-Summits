@@ -861,12 +861,12 @@
 // ask monochrome9090 for permission. Respect the artists's will.//
 // If you want this quality content, COMMISSION me instead. 	 //
 // For this project, requirements are low, and mostly lore-based.//
-// I just do not desire for the Abyssariads to be butchered.	 //
+// I just do not desire for the kara-turs to be butchered.	 //
 ///////////////////////////////////////////////////////////////////
 
 /obj/item/rogueweapon/sword/long/tachi //this sword is all fucked. Oh God. Help me.
 	name = "tachi"
-	desc = "A long, curved Zatana of Abyssariad make, introduced when Wokou raiders returned to the Fog Isles with captured horses and began developing their own cavalry tactics."
+	desc = "A long, curved Zatana of kara-tur make, introduced when Wokou raiders returned to the Fog Isles with captured horses and began developing their own cavalry tactics."
 	icon = 'icons/roguetown/kaizoku/weapons/64.dmi'
 	icon_state = "tachi"
 	item_state = "tachi"
@@ -900,25 +900,25 @@
 
 /obj/item/rogueweapon/sword/iron/jian
 	name = "iron jian"
-	desc = "A simple, double-edged iron straight sword of abyssariad design used in martial arts."
+	desc = "A simple, double-edged iron straight sword of kara-tur design used in martial arts."
 	icon_state = "jian"
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 
 /obj/item/rogueweapon/sword/iron/messer/dao
 	name = "iron dao"
-	desc = "A single edged iron saber of Abyssariad making for horseback use. Suitable for chopping."
+	desc = "A single edged iron saber of kara-tur making for horseback use. Suitable for chopping."
 	icon_state = "dao"
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 
 /obj/item/rogueweapon/sword/falchion/yuntoudao //this sprite disappeared by reasons unknown
 	name = "Yuntoudao"
-	desc = "A expensive Abyssariad saber with wide middle and tapered ends in a 'willow-leaf' shape, it concentrates the force of a strike in an axe-like blow, while retaining the swiftness of a saber."
+	desc = "A expensive kara-tur saber with wide middle and tapered ends in a 'willow-leaf' shape, it concentrates the force of a strike in an axe-like blow, while retaining the swiftness of a saber."
 	icon_state = "yuntoudao"
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 
 /obj/item/rogueweapon/sword/short/jian
 	name = "short jian"
-	desc = "A simple, shortened version of the double-edged Jian. This is usually given to Abyssariad citizens as a right for self-defense by the emperor's will."
+	desc = "A simple, shortened version of the double-edged Jian. This is usually given to kara-tur citizens as a right for self-defense by the emperor's will."
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 	icon_state = "shortjian"
 
@@ -939,13 +939,13 @@
 
 /obj/item/rogueweapon/sword/sabre/piandao
 	name = "piandao"
-	desc = "An curved abyssariad sword with a broad, single-edged blade that ends in a heavier curve for powerful and fast sweeping strikes."
+	desc = "An curved kara-tur sword with a broad, single-edged blade that ends in a heavier curve for powerful and fast sweeping strikes."
 	icon_state = "piandao"
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 
 /obj/item/rogueweapon/sword/sabre/piandao/dec
 	name = "decorated piandao"
-	desc = "The Abyssariad saber with the hilt covered in gold and letters reflecting the user's family lineage."
+	desc = "The kara-tur saber with the hilt covered in gold and letters reflecting the user's family lineage."
 	icon_state = "piandaodec"
 	max_integrity = 550
 	sellprice = 140
@@ -992,7 +992,7 @@
 
 /obj/item/rogueweapon/tetsubishi //I humbly request someone to cook the 'jump' not causing damage.
 	name = "tetsubishi"
-	desc = "a sharp spike object used to slow down pursuer, often used by abyssariad shinobis, it has been massproduced and shipped to Heartfell."
+	desc = "a sharp spike object used to slow down pursuer, often used by kara-tur shinobis, it has been massproduced and shipped to Heartfell."
 	icon_state = "tetsubishi"
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 	force = 5

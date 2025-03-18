@@ -301,7 +301,7 @@
 // ask monochrome9090 for permission. Respect the artists's will.//
 // If you want this quality content, COMMISSION me instead. 	 //
 // For this project, requirements are low, and mostly lore-based.//
-// I just do not desire for the Abyssariads to be butchered.	 //
+// I just do not desire for the kara-turs to be butchered.	 //
 ///////////////////////////////////////////////////////////////////
 
 /obj/item/rogueweapon/stoneaxe/battle/ono
@@ -310,7 +310,7 @@
 	force_wielded = 25
 	possible_item_intents = list(/datum/intent/axe/cut)
 	name = "nagai ono"
-	desc = "A battleaxe of Abyssariad design with a longer handle and shorter blade than its Humen counterpart. The increased leverage, reduced weight, and smaller striking area give it greater use against armor, while the longer handle makes it easier to parry with."
+	desc = "A battleaxe of kara-tur design with a longer handle and shorter blade than its Humen counterpart. The increased leverage, reduced weight, and smaller striking area give it greater use against armor, while the longer handle makes it easier to parry with."
 	icon_state = "ono"
 	max_blade_int = 500
 	smeltresult = /obj/item/ingot/steel
@@ -340,7 +340,7 @@
 	force = 15
 	possible_item_intents = list(/datum/intent/axe/cut, /datum/intent/axe/chop) //Added chop because the throwing Ono is still suitable for woodcutting. It's a hatchet.
 	name = "nage ono"
-	desc = "A well-balanced, short-handled Abyssariad axe designed for throwing. Traditionally used as a hunting weapon as an alternative to archery, as bow wood is scarce on the Fog Isles."
+	desc = "A well-balanced, short-handled kara-tur axe designed for throwing. Traditionally used as a hunting weapon as an alternative to archery, as bow wood is scarce on the Fog Isles."
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 	icon_state = "throwing_ono"
 	max_blade_int = 500

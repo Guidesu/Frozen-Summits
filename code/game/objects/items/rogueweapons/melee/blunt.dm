@@ -451,7 +451,7 @@
 // ask monochrome9090 for permission. Respect the artists's will.//
 // If you want this quality content, COMMISSION me instead. 	 //
 // For this project, requirements are low, and mostly lore-based.//
-// I just do not desire for the Abyssariads to be butchered.	 //
+// I just do not desire for the kara-turs to be butchered.	 //
 ///////////////////////////////////////////////////////////////////
 
 /obj/item/rogueweapon/mace/goden/otsuchi
@@ -460,7 +460,7 @@
 	possible_item_intents = list(/datum/intent/mace/strike)
 	gripped_intents = list(/datum/intent/mace/strike, /datum/intent/mace/smash)
 	name = "otsuchi"
-	desc = "A wooden greathammer of Abyssariad make, heavy enough to give any warrior pause. Often used by Yamabushi warriors."
+	desc = "A wooden greathammer of kara-tur make, heavy enough to give any warrior pause. Often used by Yamabushi warriors."
 	icon_state = "otsuchi"
 	icon = 'icons/roguetown/kaizoku/weapons/64.dmi'
 	sharpness = IS_BLUNT
@@ -533,7 +533,7 @@
 	name = "ararebo"
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 	icon_state = "ararebo"
-	desc = "A large, iron-capped club used by Abyssariads as a armor-breaking tool. Most suitable to breach Grezenholftean cuirass while still holding a shield in the off-hand."
+	desc = "A large, iron-capped club used by kara-turs as a armor-breaking tool. Most suitable to breach Grezenholftean cuirass while still holding a shield in the off-hand."
 
 /obj/item/rogueweapon/mace/ararebo/dustcurse/dropped()
 	. = ..()
@@ -559,7 +559,7 @@
 	name = "steel ararebo"
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 	icon_state = "sararebo"
-	desc = "A large, steel-capped club used by Abyssariads as a armor-breaking tool. Most suitable to breach Grezenholftean cuirass while still holding a shield in the off-hand."
+	desc = "A large, steel-capped club used by kara-turs as a armor-breaking tool. Most suitable to breach Grezenholftean cuirass while still holding a shield in the off-hand."
 
 /obj/item/rogueweapon/mace/steel/ararebo/dustcurse/dropped()
 	. = ..()
@@ -589,7 +589,7 @@
 
 /obj/item/rogueweapon/mace/cudgel/jitte
 	name = "jitte"
-	desc = "An abyssariad Ashigaru guard weapon. The hook along the shaft allows the club to arrest a blade that has been parried, increasing the defensive utility of a otherwise simple baton."
+	desc = "An kara-tur Ashigaru guard weapon. The hook along the shaft allows the club to arrest a blade that has been parried, increasing the defensive utility of a otherwise simple baton."
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 	icon_state = "jitte"
 	wdefense = 4

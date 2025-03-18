@@ -325,7 +325,7 @@
 // ask monochrome9090 for permission. Respect the artists's will.//
 // If you want this quality content, COMMISSION me instead. 	 //
 // For this project, requirements are low, and mostly lore-based.//
-// I just do not desire for the Abyssariads to be butchered.	 //
+// I just do not desire for the kara-turs to be butchered.	 //
 ///////////////////////////////////////////////////////////////////
 
 /obj/item/rogueweapon/shield/rattan //The description about the firearm projectiles protection is actually real for this shield, pretty neat thing to include here. It won't change gamewise tho
@@ -348,7 +348,7 @@
 
 /obj/item/rogueweapon/shield/tower/abyssaltower
 	name = "abyssal towershield"
-	desc = "The legendary shield frame named 'Naraku-kai no Tate', long used by Abyssariad champions in the old age against demonic incursions on Fog Islands. It has resemblance with Aasimar's tower shields, which was proper for the time."
+	desc = "The legendary shield frame named 'Naraku-kai no Tate', long used by kara-tur champions in the old age against demonic incursions on Fog Islands. It has resemblance with Aasimar's tower shields, which was proper for the time."
 	icon_state = "abyssaltower"
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 	force = 15

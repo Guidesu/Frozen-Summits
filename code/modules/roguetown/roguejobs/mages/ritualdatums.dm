@@ -501,7 +501,7 @@ GLOBAL_LIST_INIT(t4enchantmentrunerituallist,generate_t4enchantment_rituallist()
 	tier = 1
 	required_atoms = list(/datum/reagent/water = 15,/obj/item/paper/scroll = 1,/obj/item/natural/infernalash = 2, /obj/item/natural/fairydust = 2)
 	result_atoms = list(/obj/item/enchantmentscroll/holding)
-
+/*
 /datum/runerituals/enchanting/revealing
 	name = "Revealing Light"
 	desc = "Doubles brightness!"
@@ -509,7 +509,7 @@ GLOBAL_LIST_INIT(t4enchantmentrunerituallist,generate_t4enchantment_rituallist()
 	tier = 1
 	required_atoms = list(/datum/reagent/water = 15,/obj/item/paper/scroll = 1, /obj/item/natural/fairydust = 2)
 	result_atoms = list(/obj/item/enchantmentscroll/revealing)
-/*
+*/
 /datum/runerituals/enchanting/nightvision
 	name = "Dark Vision"
 	desc = "Provides dark sight!"
@@ -557,7 +557,7 @@ GLOBAL_LIST_INIT(t4enchantmentrunerituallist,generate_t4enchantment_rituallist()
 	tier = 2
 	required_atoms = list(/datum/reagent/water = 15,/obj/item/paper/scroll = 1,/obj/item/natural/elementalshard = 1, /obj/item/natural/artifact = 1, /obj/item/natural/melded/t1 = 1)
 	result_atoms = list(/obj/item/enchantmentscroll/trekk)
-
+/*
 /datum/runerituals/enchanting/smithing
 	name = "Smithing"
 	desc = "Better smithing."
@@ -565,6 +565,8 @@ GLOBAL_LIST_INIT(t4enchantmentrunerituallist,generate_t4enchantment_rituallist()
 	tier = 2
 	required_atoms = list(/datum/reagent/water = 15,/obj/item/paper/scroll = 1,/obj/item/natural/elementalshard = 1, /obj/item/natural/elementalmote = 1, /obj/item/natural/melded/t1 = 1)
 	result_atoms = list(/obj/item/enchantmentscroll/smithing)
+
+*/
 /datum/runerituals/enchanting/lifesteal
 	name = "Lyfestealing"
 	desc = "Steals health from foes."
@@ -572,7 +574,7 @@ GLOBAL_LIST_INIT(t4enchantmentrunerituallist,generate_t4enchantment_rituallist()
 	tier = 3
 	required_atoms = list(/datum/reagent/water = 15,/obj/item/paper/scroll = 1,/obj/item/natural/heartwoodcore = 1, /obj/item/natural/hellhoundfang = 2, /obj/item/natural/melded/t2 = 1)
 	result_atoms = list(/obj/item/enchantmentscroll/lifesteal)
-*/
+
 /datum/runerituals/enchanting/frostveil
 	name = "Frostveil"
 	desc = "Chills foes."

@@ -406,7 +406,7 @@
 	var/spellbonus = 15
 	var/scribe_damage = 10
 
-/obj/item/rogueweapon/huntingknife/idagger/silver/arcyne
+/obj/item/rogueweapon/huntingknife/idagger/silver/arcyne_old
 	name = "glowing purple silver dagger"
 	desc = "This dagger glows a faint purple. Powder runs across its blade."
 	var/is_bled = FALSE
@@ -454,10 +454,10 @@
 		qdel(src)
 		user.put_in_active_hand(silver_knife)
 
-// helper proc
+/* helper proc
 /proc/isarcyne(mob/living/carbon/human/A)
 	return istype(A) && A.mind && (A.mind?.get_skill_level(/datum/skill/magic/arcane) > SKILL_LEVEL_NONE)
-
+*/
 /obj/effect/roguerune/proc/do_invoke_glow()
 	set waitfor = FALSE
 	animate(src, transform = matrix()*2, alpha = 0, time = 5, flags = ANIMATION_END_NOW) //fade out

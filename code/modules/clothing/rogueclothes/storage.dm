@@ -706,7 +706,7 @@
 
 /obj/item/storage/belt/rogue/kaizoku/leather/daisho
 	name = "daisho belt"
-	desc = "A oil-boiled reinforced silk or leather belt used by Abyssariads for practicing Daisho."
+	desc = "A oil-boiled reinforced silk or leather belt used by Kara-turans for practicing Daisho."
 	icon_state = "daisho"
 	sellprice = 5
 	icon = 'icons/roguetown/kaizoku/clothingicon/belts.dmi'

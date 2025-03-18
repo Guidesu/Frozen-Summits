@@ -1116,16 +1116,15 @@
 
 /datum/quirk/magic_potential
 	name = "(Spells) Magical Potential"
-	desc = "You being born with magical blood, or learning through books, you know the way of arcane and have your trusty book with you, its more like a old book that you can't really use anymore, need get an actual new one. Precious and valuable, you would kill anyone if they touched this book, by Mystra spectral balls! (Do not pick this if you join a role with magic power, it is buggy.)"
+	desc = "You being born with magical blood, or learning through books, you know the way of arcane and have your trusty book with you, its more like a old book that you can't really use anymore, need to finish it. Precious and valuable, you would kill anyone if they touched this book, by Mystra spectral balls!"
 	value = 6 // Stacks with the virtue, too. You also get a book, which is potential to get even *more*
 
 /datum/quirk/magic_potential/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	H.mind.adjust_skillrank_up_to((/datum/skill/magic/arcane), 2, TRUE)
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
-	H.mind.special_items["Heirloom Magical Book"] = /obj/item/book/granter/spellbook
+	H.mind.special_items["Unfinished Arcane Book"] = /obj/item/spellbook_unfinished
 
-
+/*
 /datum/quirk/paladin
 	name = "(Faith) Paladin Potential"
 	desc = "One of the gods favor you and has given you holy potential of a paladin, you have a special ability if you are from the main non-evil pantheon. (Do not pick this if you join a role with faith power, it is buggy.)"
@@ -1135,18 +1134,20 @@
 	var/mob/living/carbon/human/H = quirk_holder
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	H.mind.adjust_skillrank_up_to((/datum/skill/magic/holy), 2, TRUE)
-	C.grant_spells_templar(H)
+	C.grant_spells_churchling(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
+
+	*/
 
 /datum/quirk/novitae
 	name = "(Faith) Neophyte of the Faith"
-	desc = "One of the gods favor you and has given you holy potential of a neophyte, you are not as skilled as other people. (Do not pick this if you join a role with faith power or the other quirk. It is buggy)"
+	desc = "One of the gods favor you and has given you holy potential of a neophyte, you are not as skilled as other people. You can learn divine spells and become a better cleric, from druidic trickery, to spells of death domain."
 	value = 2 // Gives miracle
 
 /datum/quirk/novitae/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	H.mind.adjust_skillrank_up_to((/datum/skill/magic/holy), 1, TRUE)
+	H.mind.adjust_skillrank_up_to((/datum/skill/magic/holy), 2, TRUE)
 	C.grant_spells_churchling(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 

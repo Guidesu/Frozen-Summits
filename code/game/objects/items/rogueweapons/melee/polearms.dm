@@ -795,14 +795,14 @@
 // ask monochrome9090 for permission. Respect the artists's will.//
 // If you want this quality content, COMMISSION me instead. 	 //
 // For this project, requirements are low, and mostly lore-based.//
-// I just do not desire for the Abyssariads to be butchered.	 //
+// I just do not desire for the kara-turs to be butchered.	 //
 ///////////////////////////////////////////////////////////////////
 
 /obj/item/rogueweapon/spear/mancatcher
 	force = 10
 	force_wielded = 20
 	name = "sasumata"
-	desc = "A unique polearm featuring a spring-action pincer on the end, lined with spikes designed to cause extreme pain, rather than extreme injury. Referred to as a man-catcher in the Humen tongue due to coastal kidnappings performed by abyssariad Wokous."
+	desc = "A unique polearm featuring a spring-action pincer on the end, lined with spikes designed to cause extreme pain, rather than extreme injury. Referred to as a man-catcher in the Humen tongue due to coastal kidnappings performed by kara-tur Wokous."
 	icon_state = "sasumata"
 	icon = 'icons/roguetown/kaizoku/weapons/64.dmi'
 	wlength = WLENGTH_GREAT
@@ -829,7 +829,7 @@
 
 /obj/item/rogueweapon/spear/yari
 	name = "su yari"
-	desc = "A long, straight-headed spear of Abyssariad design, often used by sea raiders to fend off light cavalry on in-land offensives. Well know for the 'Yari wall' strategy and for being 'Yarimazing' among Abyssariads."
+	desc = "A long, straight-headed spear of kara-tur design, often used by sea raiders to fend off light cavalry on in-land offensives. Well know for the 'Yari wall' strategy and for being 'Yarimazing' among kara-turs."
 	icon_state = "suyari"
 	icon = 'icons/roguetown/kaizoku/weapons/64.dmi'
 	pixel_y = -16
@@ -858,7 +858,7 @@
 
 /obj/item/rogueweapon/spear/halberd/naginata
 	name = "naginata"
-	desc = "Its earliest form being a tachi blade mounted upon a long wooden pole, the naginata was the first polearm to come into widespread use by the Abyssariad, who developed the weapon in order to better combat Humen and Elven cavalry."
+	desc = "Its earliest form being a tachi blade mounted upon a long wooden pole, the naginata was the first polearm to come into widespread use by the kara-tur, who developed the weapon in order to better combat Humen and Elven cavalry."
 	icon = 'icons/roguetown/kaizoku/weapons/64.dmi'
 	icon_state = "naginata"
 	dropshrink = 0.8
@@ -915,14 +915,14 @@
 
 /obj/item/rogueweapon/woodstaff/bostaff
 	name = "bo staff"
-	desc = "the bo, or 'abyssariad quarterstaff', is a simple weapon used in martial arts to entrap, strike and sweep the enemy."
+	desc = "the bo, or 'kara-tur quarterstaff', is a simple weapon used in martial arts to entrap, strike and sweep the enemy."
 	icon_state = "bostaff"
 	icon = 'icons/roguetown/kaizoku/weapons/64.dmi'
 	bigboy = TRUE
 
 /obj/item/rogueweapon/spear/firelance
 	name = "sanctiflux firelance"
-	desc = "The new iteration of the ancient abyssariad 'Widowmaker', the harbinger of purification against zizodemons, tieflings and grezenhoft. \
+	desc = "The new iteration of the ancient kara-tur 'Widowmaker', the harbinger of purification against zizodemons, tieflings and grezenhoft. \
 	Used safely by the hundred thousand march, by hands whom holds purifying intentions from the abyss." //Hundred thousand march is the definition of champions. But after bloody apotheosis, its just anyone islander-cultured.
 	icon = 'icons/roguetown/kaizoku/weapons/firelance.dmi'
 	icon_state = "firelance"
@@ -994,7 +994,7 @@
 		if(SOUTH) delta_y = -1
 		if(WEST) delta_x = -1
 
-	for(var/distance in 1 to range) // This fire pattern widens every second tile. This will be the Abyssariad/Heartfelt 'military' standard.
+	for(var/distance in 1 to range) // This fire pattern widens every second tile. This will be the kara-tur/Heartfelt 'military' standard.
 		var/width = distance / 2 // Calculate when it widens
 		for(var/offset in -width to width) // Control the width itself
 			var/turf/current_turf
@@ -1093,7 +1093,7 @@
 
 /obj/item/sanctiflux
 	name = "sanctiflux gourd"
-	desc = "The abyssariad answer to demonic corruption, purger of zizo and men, malum's essence in sanctifying form to branch with abyssal valors. An Abyssariad secret from Fog Islands."
+	desc = "The kara-tur answer to demonic corruption, purger of zizo and men, malum's essence in sanctifying form to branch with abyssal valors. An kara-tur secret from Fog Islands."
 	icon = 'icons/roguetown/kaizoku/weapons/items.dmi'
 	icon_state = "gourd"
 

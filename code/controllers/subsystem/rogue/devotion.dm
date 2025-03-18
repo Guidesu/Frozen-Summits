@@ -138,7 +138,7 @@
 	if(!H || !H.mind || !patron)
 		return
 
-	var/list/spelllist = list(/obj/effect/proc_holder/spell/targeted/touch/orison, /obj/effect/proc_holder/spell/invoked/lesser_heal) //This would have caused jank.
+	var/list/spelllist = list() //This would have caused jank.
 	for(var/spell_type in spelllist)
 		if(!spell_type || H.mind.has_spell(spell_type))
 			continue
@@ -146,7 +146,8 @@
 		H.mind.AddSpell(newspell)
 		LAZYADD(granted_spells, newspell)
 	level = CLERIC_T0
-	max_devotion = CLERIC_REQ_1 //Max devotion limit - Churchlings only get diagnose and lesser miracle.
+	passive_devotion_gain = 0.5
+	max_devotion = CLERIC_REQ_4 //Max devotion limit - Churchlings only get diagnose and lesser miracle.
 	max_progression = CLERIC_REQ_0
 
 /datum/devotion/proc/grant_spells_priest(mob/living/carbon/human/H)

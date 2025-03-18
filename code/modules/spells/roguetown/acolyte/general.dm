@@ -177,14 +177,14 @@
 
 			if(/datum/patron/godless)
 				target.visible_message(span_info("Without any particular cause or reason, [target] is healed!"), span_notice("My wounds close without cause."))
-
+/*
 			if(/datum/patron/divine/lathander)
 				target.visible_message(span_info("A warm radiance dawns over [target]!"), span_notice("I am embraced by the renewing light of dawn!"))
 				// Similar to Astrata: healing bonus during the day to symbolize Lathander's association with dawn
 				if (GLOB.tod == "day")
 					conditional_buff = TRUE
 					situational_bonus = 2
-
+*/
 			if(/datum/patron/divine/selune)
 				target.visible_message(span_info("A calming moonlit aura surrounds [target]!"), span_notice("The light of Selûne soothes my wounds!"))
 				// Similar to Noc: healing bonus during the night, as Selûne is tied to the moon
@@ -292,7 +292,7 @@
 						situational_bonus = min(situational_bonus + 0.1, 2)
 				if (situational_bonus > 0)
 					conditional_buff = TRUE
-
+/*
 			if(/datum/patron/neutral/mielikki)
 				target.visible_message(span_info("An aura of peace and flourishing nature surrounds [target]!"), span_notice("Mielikki's touch rejuvenates me in her favored glades."))
 				// Similar to Dendor but tied to forests specifically, with a focus on balance and harmony
@@ -310,7 +310,7 @@
 				if (prob(75)) // High probability to align with "good luck"
 					conditional_buff = TRUE
 					situational_bonus = rand(1.5, 3)
-
+*/
 			if(/datum/patron/neutral/talos)
 				target.visible_message(span_info("The storm's fury courses through [target]!"), span_notice("The Storm Lord's wrath fuels my resilience!"))
 				// Similar to Abyssor but tied to storms; enhances healing in rainy or stormy conditions
@@ -333,13 +333,13 @@
 
 			if(/datum/patron/neutral/talona)
 				target.visible_message(span_info("A shadow of noxious energy surrounds [target], yet it seems oddly soothing."), span_notice("Talona's touch both poisons and purges, leaving me healed!"))
-
+/*
 			if(/datum/patron/neutral/helm)
 				target.visible_message(span_info("A steadfast presence manifests around [target], unyielding and protective."), span_notice("Helm's vigilance restores my strength!"))
 
 			if(/datum/patron/neutral/tempus)
 				target.visible_message(span_info("A roar of battle echoes around [target], filled with martial vigor."), span_notice("Tempus' martial fury renews my resolve!"))
-
+*/
 
 			if(/datum/patron/forces/baphomet)
 				target.visible_message(span_info("A primal roar reverberates through [target], and their eyes flash with savage fury."), span_notice("Baphomet's bestial rage empowers me!"))

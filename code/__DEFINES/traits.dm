@@ -89,7 +89,7 @@
 #define TRAIT_KNEESTINGER_IMMUNITY "Blessing of Silvanus"
 #define TRAIT_SOUL_EXAMINE "Blessing of Kelemvor" //can check bodies to see if they have departed
 #define TRAIT_CRACKHEAD "Blessing of Sharess" //will never overdose
-#define TRAIT_CHOSEN "Pelor's Chosen"
+#define TRAIT_CHOSEN "Lathander's Chosen"
 #define TRAIT_ABYSSOR_SWIM "Blessing of Umberlee" //less base fatigue drain when swimming
 #define TRAIT_XYLIX "Blessing of Lady Luck" //secret thieves cant language
 

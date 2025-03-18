@@ -62,6 +62,17 @@
 	var/list/selected_atoms
 	var/associated_ritual = null	//Associated ritual for runes with only 1 ritual. Use in tandom with ritual_number
 
+
+/obj/effect/decal/cleanable/roguerune/attack_right(mob/living/carbon/human/user)
+	user.visible_message(span_warning("[user] begins wiping away the rune"))
+	if(do_after(user, 15))
+		playsound(loc, 'sound/foley/cloth_wipe (1).ogg', 100, TRUE)
+		qdel(src)
+
+
+/proc/isarcyne(mob/living/carbon/human/A)
+	return istype(A) && A.mind && (A.mind?.get_skill_level(/datum/skill/magic/arcane) > SKILL_LEVEL_NONE)	//checks if person has arcane skill
+
 /proc/isdivine(mob/living/carbon/human/A)
 	return istype(A) && A.mind && (A.mind?.get_skill_level(/datum/skill/magic/holy) > SKILL_LEVEL_NONE)	//checks if person has holy/divine skill
 
@@ -195,7 +206,7 @@ GLOBAL_LIST(teleport_runes)
 					rituals += GLOB.t2enchantmentrunerituallist
 			else if(istype(src,/obj/effect/decal/cleanable/roguerune/arcyne))
 				rituals += GLOB.allowedrunerituallist
-			var/ritualnameinput = input(user, "Rituals", "Frozen Summit") as null|anything in rituals
+			var/ritualnameinput = input(user, "Rituals", "RATWOOD") as null|anything in rituals
 			testing("ritualnameinput [ritualnameinput]")
 			var/datum/runerituals/pickritual1
 			pickritual1 = rituals[ritualnameinput]
@@ -204,10 +215,12 @@ GLOBAL_LIST(teleport_runes)
 				return
 			if(pickritual1.tier > src.tier)
 				to_chat(user, span_hierophant_warning("Your ritual rune is not strong enough to perform this ritual."))
+				rune_in_use = FALSE
 				return
 			invoke(invokers, pickritual1)
 		else
 			to_chat(user, span_danger("You need [req_invokers - length(invokers)] more adjacent invokers to use this rune in such a manner."))	//Needs more invokers, fails invoke
+			rune_in_use = FALSE
 			fail_invoke()
 	. = ..()
 
@@ -220,6 +233,8 @@ GLOBAL_LIST(teleport_runes)
 		invokers += user
 	if(req_invokers > 1)
 		for(var/mob/living/invoker in range(runesize, src))
+			if(invoker == user)
+				continue
 			if(!invoker.can_speak())
 				continue
 			if(invoker.stat != CONSCIOUS)
@@ -236,8 +251,7 @@ GLOBAL_LIST(teleport_runes)
 			if(magictype == "blood")
 				if(isblood(invoker))
 					invokers += invoker
-			if(invoker == user)
-				continue
+
 
 	return invokers
 
@@ -459,7 +473,7 @@ GLOBAL_LIST(teleport_runes)
 	desc = "arcane symbols pulse upon the ground..."
 	icon = 'icons/effects/160x160.dmi'
 	icon_state = "imbuement"
-	tier = 3
+	tier = 4
 	runesize = 2
 	pixel_x = -64 //So the big ol' 96x96 sprite shows up right
 	pixel_y = -64

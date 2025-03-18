@@ -588,7 +588,6 @@
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 	allowed_sex = list(MALE, FEMALE)
-	allowed_race = list("human", "tiefling", "aasimar", "abyssariad")
 	color = null
 	sellprice = 100
 
@@ -632,7 +631,6 @@
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 	allowed_sex = list(MALE)
-	allowed_race = list("human", "tiefling", "aasimar", "abyssariad")
 	color = null
 
 /obj/item/clothing/suit/roguetown/shirt/kaizoku/robe/Initialize()

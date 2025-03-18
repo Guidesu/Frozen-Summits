@@ -1994,7 +1994,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/leather/malgai
 	name = "leather malgai"
-	desc = "A abyssariad leather helmet usually used by those who dwells \
+	desc = "A kara-tur leather helmet usually used by those who dwells \
 	on the center of Shou Lung, where great steppes exists, or your common hunter."
 	icon_state = "malgai"
 	icon = 'icons/roguetown/kaizoku/clothingicon/head.dmi'
@@ -2184,7 +2184,6 @@
 	icon_state = "myrmidon"
 	item_state = "myrmidon"
 	allowed_sex = list(MALE, FEMALE)
-	allowed_race = list("abyssariad")
 	flags_inv = HIDEEARS
 	clothing_flags = CANT_SLEEP_IN
 	body_parts_covered = HEAD_EXCEPT_EYES

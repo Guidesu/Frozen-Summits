@@ -3,30 +3,6 @@
 	associated_faith = /datum/faith/neutral
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 
-
-
-/datum/patron/neutral/tempus
-	name = "Tempus"
-	domain = "War, Honor, and Combat"
-	desc = "Tempus is the Lord of Battles, overseeing war and soldiers with honor and discipline. He embodies the virtues of an honorable warrior and condemns bloodlust for its own sake, teaching his followers to fight with purpose."
-	worshippers = "Warriors, Knights, Soldiers, and Battlefield Healers"
-	confess_lines = list(
-		"TEMPUS, GUIDE MY BLADE!",
-		"IN TEMPUS'S NAME, I STAND HONORABLY!",
-		"FOR TEMPUS, I FIGHT WITH PURPOSE!"
-	)
-
-/datum/patron/neutral/helm
-	name = "Helm"
-	domain = "God of Protection, Vigilance, and Guardianship"
-	desc = "Helm, known as The Watcher, is the eternal sentinel among gods, representing protectors and guardians across the planes. His clergy believe in duty and constant vigilance, watching over the world with unwavering resolve."
-	worshippers = "Guards, Sentinels, Paladins, and Watchers"
-	confess_lines = list(
-		"HELM, PROTECT MY WATCH!",
-		"FOR HELM, I GUARD THE INNOCENT!",
-		"IN HELM'S NAME, I STAND UNBROKEN!"
-	)
-
 /datum/patron/neutral/talona
 	name = "Talona"
 	domain = "Disease, Poison, Decay and Medicine"
@@ -112,32 +88,6 @@
 		"FOR TALOS, I SPREAD CHAOS!",
 		"IN TALOS'S NAME, I WREAK HAVOC!"
 	)
-
-/datum/patron/neutral/tymora
-	name = "Tymora"
-	domain = "Luck, Fortune, and Adventure"
-	desc = "Tymora is the bright-faced goddess of luck and fortune, who favors those who take risks and embrace adventure. Her followers are often gamblers and thrill-seekers, trusting in her blessing to guide their fate."
-	worshippers = "Adventurers, Gamblers, Rogues, and Fortune-Seekers"
-	confess_lines = list(
-		"TYMORA, GUIDE MY HAND!",
-		"FOR TYMONA, I EMBRACE CHANCE!",
-		"IN TYMONA'S NAME, I TRUST MY LUCK!"
-	)
-
-/datum/patron/neutral/mielikki
-	name = "Mielikki"
-	domain = "Forests, Nature, and Forest Creatures"
-	desc = "Mielikki is the goddess of forests and the creatures that dwell within them. She is a serene, protective deity whose followers honor the quiet, mystical beauty of the natural world."
-	worshippers = "Rangers, Druids, Forest Dwellers, and Conservationists"
-	confess_lines = list(
-		"MIELIKKI, GUARD THIS FOREST!",
-		"FOR MIELIKKI, I DEFEND NATURE!",
-		"IN MIELIKKI'S NAME, I PROTECT THE WILD!"
-	)
-	mob_traits = list(TRAIT_KNEESTINGER_IMMUNITY)
-	t1 = /obj/effect/proc_holder/spell/targeted/blesscrop
-	t2 = /obj/effect/proc_holder/spell/targeted/beasttame
-	t3 = /obj/effect/proc_holder/spell/self/howl/call_of_the_moon
 
 /datum/patron/neutral/semuanya  
 	name = "Semuanya"  

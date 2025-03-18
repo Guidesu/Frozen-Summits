@@ -77,7 +77,7 @@
 		explode(TRUE)
 
 /obj/item/grenade/smoke_bomb
-	name = "abyssariad smokebomb"
+	name = "kara-tur smokebomb"
 	desc = "The stealth operation bomb made out of guano, sugar and nahcolite for shinobi usage."
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 	icon_state = "smoke_bomb"
@@ -102,7 +102,7 @@
 	qdel(src)
 
 /obj/item/grenade/smoke_bomb/poison
-	name = "abyssariad poisonbomb"
+	name = "kara-tur poisonbomb"
 	desc = "Ceramic sphere containing toxic composts from within, awaiting to be released."
 	icon = 'icons/roguetown/kaizoku/weapons/32.dmi'
 	icon_state = "poison_bomb"

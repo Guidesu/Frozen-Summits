@@ -141,9 +141,9 @@
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	//Max devotion limit - Paladins are stronger but cannot pray to gain all abilities beyond t1
-	C.grant_spells_templar(H)
+	C.grant_spells_churchling(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
+	H.mind.adjust_spellpoints(6)
 
 	for(var/datum/quirk/nobag/NB in H.roundstart_quirks)
 		backpack_contents = null

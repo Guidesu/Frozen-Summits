@@ -36,6 +36,7 @@
 	var/spark_cd = 0
 	var/xp_interval = 150 // really don't want people to spam this too much for xp - they will, but the intent is for them to not
 	var/xp_cooldown = 0
+	var/gatherspeed = 35
 
 /obj/item/melee/touch_attack/prestidigitation/Initialize()
 	. = ..()
@@ -49,21 +50,21 @@
 /obj/item/melee/touch_attack/prestidigitation/attack_self()
 	qdel(src)
 
+
 /obj/item/melee/touch_attack/prestidigitation/afterattack(atom/target, mob/living/carbon/user, proximity)
-	var/fatigue_used
 	switch (user.used_intent.type)
 		if (INTENT_HELP) // Clean something like a bar of soap
-			fatigue_used = handle_cost(user, PRESTI_CLEAN)
-			if (clean_thing(target, user))
-				handle_xp(user, fatigue_used, TRUE) // cleaning ignores the xp cooldown because it awards comparatively little
+			handle_cost(user, PRESTI_CLEAN)
+			if(istype(target,/obj/structure/well/fountain/mana) || istype(target, /turf/open/lava))
+				gather_thing(target, user)
+				return
+			clean_thing(target, user)
 		if (INTENT_DISARM) // Snap your fingers and produce a spark
-			fatigue_used = handle_cost(user, PRESTI_SPARK)
-			if (create_spark(user, target))
-				handle_xp(user, fatigue_used)
+			handle_cost(user, PRESTI_SPARK)
+			create_spark(user)
 		if (/datum/intent/use) // Summon an orbiting arcane mote for light
-			fatigue_used = handle_cost(user, PRESTI_MOTE)
-			if (handle_mote(user))
-				handle_xp(user, fatigue_used)
+			handle_cost(user, PRESTI_MOTE)
+			handle_mote(user)
 
 /obj/item/melee/touch_attack/prestidigitation/proc/handle_cost(mob/living/carbon/human/user, action)
 	// handles fatigue/stamina deduction, this stuff isn't free - also returns the cost we took to use for xp calculations
@@ -171,6 +172,21 @@
 			return TRUE
 		return FALSE
 
+
+/obj/item/melee/touch_attack/prestidigitation/proc/gather_thing(atom/target, mob/living/carbon/human/user)
+
+	var/skill_level = user.mind?.get_skill_level(attached_spell.associated_skill)
+	gatherspeed = initial(gatherspeed) - (skill_level * 3) // 3 cleanspeed per skill level, from 35 down to a maximum of 17 (pretty quick)
+	var/turf/Turf = get_turf(target)
+	if (istype(target, /obj/structure/well/fountain/mana))
+		if (do_after(user, src.gatherspeed, target = target))
+			to_chat(user, span_notice("I mold the liquid mana in \the [target.name] with my arcane power, crystalizing it!"))
+			new /obj/item/natural/manacrystal(Turf)
+	if (istype(target, /turf/open/lava))
+		if (do_after(user, src.gatherspeed, target = target))
+			to_chat(user, span_notice("I mold a handful of oozing lava  with my arcane power, rapidly hardening it!"))
+			new /obj/item/natural/obsidian(user.loc)
+
 // Intents for prestidigitation
 
 /obj/effect/wisp/prestidigitation
@@ -192,85 +208,153 @@
 
 /obj/effect/proc_holder/spell/self/learnspell/cast(list/targets, mob/user = usr)
 	. = ..()
-	//list of spells you can learn, it may be good to move this somewhere else eventually
-	//TODO: make GLOB list of spells, give them a true/false tag for learning, run through that list to generate choices
-	var/list/choices = list()
-	var/list/obj/effect/proc_holder/spell/spell_choices = list(/obj/effect/proc_holder/spell/invoked/projectile/fireball,
-		/obj/effect/proc_holder/spell/invoked/projectile/lightningbolt,
-		/obj/effect/proc_holder/spell/invoked/projectile/fetch,
-		/obj/effect/proc_holder/spell/invoked/projectile/spitfire,
-		/obj/effect/proc_holder/spell/invoked/forcewall_weak,
-		/obj/effect/proc_holder/spell/invoked/slowdown_spell_aoe,
-		/obj/effect/proc_holder/spell/self/message,
-		/obj/effect/proc_holder/spell/invoked/push_spell,
-		/obj/effect/proc_holder/spell/invoked/blade_burst,
-		/obj/effect/proc_holder/spell/targeted/touch/nondetection,
-//		/obj/effect/proc_holder/spell/invoked/knock,
-		/obj/effect/proc_holder/spell/invoked/haste,
-		/obj/effect/proc_holder/spell/invoked/featherfall,
-		/obj/effect/proc_holder/spell/targeted/touch/darkvision,
-		/obj/effect/proc_holder/spell/invoked/longstrider,
-		/obj/effect/proc_holder/spell/invoked/invisibility,
-		/obj/effect/proc_holder/spell/invoked/blindness,
-		/obj/effect/proc_holder/spell/invoked/projectile/acidsplash5e,
-//		/obj/effect/proc_holder/spell/invoked/frostbite5e,
-		/obj/effect/proc_holder/spell/invoked/guidance,
-		/obj/effect/proc_holder/spell/invoked/fortitude,
-		/obj/effect/proc_holder/spell/self/bladeward5e,
-		/obj/effect/proc_holder/spell/invoked/boomingblade5e,
-		/obj/effect/proc_holder/spell/aoe_turf/conjure/createbonfire5e,
-		/obj/effect/proc_holder/spell/invoked/decompose5e,
-		/obj/effect/proc_holder/spell/invoked/projectile/eldritchblast5e,
-		/obj/effect/proc_holder/spell/targeted/encodethoughts5e,
-		/obj/effect/proc_holder/spell/invoked/projectile/firebolt5e,
-		/obj/effect/proc_holder/spell/invoked/curewounds5e,
-		/obj/effect/proc_holder/spell/invoked/greenflameblade5e,
-		/obj/effect/proc_holder/spell/invoked/infestation5e,
-		/obj/effect/proc_holder/spell/self/light5e,
-		/obj/effect/proc_holder/spell/self/goodberry,
-		/obj/effect/proc_holder/spell/targeted/lightninglure5e,
-		/obj/effect/proc_holder/spell/invoked/projectile/rayoffrost5e,
-		/obj/effect/proc_holder/spell/invoked/snap_freeze,
-		/obj/effect/proc_holder/spell/invoked/projectile/frostbolt,
-		/obj/effect/proc_holder/spell/invoked/projectile/arcynebolt,
-		/obj/effect/proc_holder/spell/invoked/gravity,
-		/obj/effect/proc_holder/spell/targeted/touch/summonrogueweapon/bladeofpsydon,
-		/obj/effect/proc_holder/spell/invoked/projectile/repel,
-		/obj/effect/proc_holder/spell/invoked/mending5e,
-		/obj/effect/proc_holder/spell/invoked/poisonspray5e,
-		/obj/effect/proc_holder/spell/targeted/touch/lesserknock,
-		/obj/effect/proc_holder/spell/invoked/counterspell,
-		/obj/effect/proc_holder/spell/invoked/enlarge,
-		/obj/effect/proc_holder/spell/invoked/leap,
-		/obj/effect/proc_holder/spell/invoked/findfamiliar,
-		/obj/effect/proc_holder/spell/invoked/arcyne_storm,
-		/obj/effect/proc_holder/spell/invoked/meteor_storm,
-		/obj/effect/proc_holder/spell/targeted/summonweapon,
-		/obj/effect/proc_holder/spell/invoked/sundering_lightning,
-		
+	// Organized spell list by D&D schools
+	var/list/spell_categories = list(
+		"Evocation" = list(
+			/obj/effect/proc_holder/spell/invoked/projectile/fireball,
+			/obj/effect/proc_holder/spell/invoked/projectile/lightningbolt,
+			/obj/effect/proc_holder/spell/invoked/projectile/spitfire,
+			/obj/effect/proc_holder/spell/invoked/arcyne_storm,
+			/obj/effect/proc_holder/spell/invoked/meteor_storm,
+			/obj/effect/proc_holder/spell/invoked/projectile/acidsplash5e,
+			/obj/effect/proc_holder/spell/invoked/projectile/firebolt5e,
+			/obj/effect/proc_holder/spell/invoked/projectile/rayoffrost5e,
+			/obj/effect/proc_holder/spell/invoked/snap_freeze,
+			/obj/effect/proc_holder/spell/invoked/projectile/frostbolt,
+			/obj/effect/proc_holder/spell/invoked/projectile/arcynebolt,
+			/obj/effect/proc_holder/spell/invoked/sundering_lightning,
+			/obj/effect/proc_holder/spell/invoked/blade_burst,
+			/obj/effect/proc_holder/spell/invoked/boomingblade5e,
+			/obj/effect/proc_holder/spell/invoked/greenflameblade5e
+		),
+		"Abjuration" = list(
+			/obj/effect/proc_holder/spell/invoked/forcewall_weak,
+			/obj/effect/proc_holder/spell/self/bladeward5e,
+			/obj/effect/proc_holder/spell/invoked/counterspell,
+			/obj/effect/proc_holder/spell/targeted/touch/nondetection,
+		),
+		"Transmutation" = list(
+			/obj/effect/proc_holder/spell/targeted/touch/prestidigitation,
+			/obj/effect/proc_holder/spell/invoked/enlarge,
+			/obj/effect/proc_holder/spell/invoked/featherfall,
+			/obj/effect/proc_holder/spell/invoked/mending5e,
+			/obj/effect/proc_holder/spell/invoked/haste,
+			/obj/effect/proc_holder/spell/invoked/longstrider,
+			/obj/effect/proc_holder/spell/invoked/gravity,
+			/obj/effect/proc_holder/spell/targeted/touch/lesserknock,
+			/obj/effect/proc_holder/spell/invoked/leap
+		),
+		"Divine" = list(
+			/obj/effect/proc_holder/spell/self/goodberry,
+			/obj/effect/proc_holder/spell/invoked/curewounds5e,
+			/obj/effect/proc_holder/spell/invoked/guidance,
+			/obj/effect/proc_holder/spell/invoked/fortitude,
+
+		),
+		"Divine and Unholy (Requires Devotion)" = list(
+			/obj/effect/proc_holder/spell/targeted/touch/orison,
+			/obj/effect/proc_holder/spell/invoked/lesser_heal,
+			/obj/effect/proc_holder/spell/invoked/diagnose,
+			/obj/effect/proc_holder/spell/invoked/attach_bodypart,
+			/obj/effect/proc_holder/spell/invoked/cure_rot,
+			/obj/effect/proc_holder/spell/invoked/revive,
+			/obj/effect/proc_holder/spell/invoked/heal,
+			/obj/effect/proc_holder/spell/invoked/abyssheal,
+			/obj/effect/proc_holder/spell/invoked/appraise,
+			/obj/effect/proc_holder/spell/invoked/transact,
+			/obj/effect/proc_holder/spell/invoked/equalize,
+			/obj/effect/proc_holder/spell/invoked/churnwealthy,
+			/obj/effect/proc_holder/spell/targeted/blesscrop,
+			/obj/effect/proc_holder/spell/targeted/beasttame,
+			/obj/effect/proc_holder/spell/targeted/conjure_glowshroom,
+			/obj/effect/proc_holder/spell/self/howl/call_of_the_moon,
+			/obj/effect/proc_holder/spell/invoked/projectile/purify,
+			/obj/effect/proc_holder/spell/invoked/abyssor_bends,
+			/obj/effect/proc_holder/spell/invoked/call_mossback,
+			/obj/effect/proc_holder/spell/invoked/icebind,
+			/obj/effect/proc_holder/spell/targeted/beasttame,
+			/obj/effect/proc_holder/spell/invoked/shepherd,
+			/obj/effect/proc_holder/spell/invoked/invisibility/miracle,
+			/obj/effect/proc_holder/spell/invoked/blindness/miracle,
+			/obj/effect/proc_holder/spell/invoked/bud,
+			/obj/effect/proc_holder/spell/invoked/eoracurse,
+			/obj/effect/proc_holder/spell/invoked/sacred_flame_rogue,
+			/obj/effect/proc_holder/spell/invoked/shepherd,
+			/obj/effect/proc_holder/spell/invoked/avert,
+			/obj/effect/proc_holder/spell/targeted/abrogation,
+			/obj/effect/proc_holder/spell/targeted/soulspeak,
+			/obj/effect/proc_holder/spell/invoked/wheel,
+			/obj/effect/proc_holder/spell/invoked/mockery,
+			/obj/effect/proc_holder/spell/invoked/malum_flame_rogue,
+			/obj/effect/proc_holder/spell/invoked/vigorousexchange,
+			/obj/effect/proc_holder/spell/invoked/heatmetal,
+			/obj/effect/proc_holder/spell/invoked/craftercovenant,
+			/obj/effect/proc_holder/spell/invoked/hammerfall,
+			/obj/effect/proc_holder/spell/targeted/churn,
+			/obj/effect/proc_holder/spell/invoked/burden,
+		),
+		"Conjuration" = list(
+			/obj/effect/proc_holder/spell/invoked/projectile/fetch,
+			/obj/effect/proc_holder/spell/aoe_turf/conjure/createbonfire5e,
+			/obj/effect/proc_holder/spell/targeted/touch/summonrogueweapon/bladeofpsydon,
+			/obj/effect/proc_holder/spell/invoked/findfamiliar,
+			/obj/effect/proc_holder/spell/targeted/summonweapon,
+			/obj/effect/proc_holder/spell/invoked/infestation5e,
+			/obj/effect/proc_holder/spell/invoked/poisonspray5e
+		),
+		"Illusion" = list(
+			/obj/effect/proc_holder/spell/invoked/invisibility,
+			/obj/effect/proc_holder/spell/self/message,
+			/obj/effect/proc_holder/spell/self/light5e,
+			/obj/effect/proc_holder/spell/invoked/appraise,
+		),
+		"Necromancy" = list(
+			/obj/effect/proc_holder/spell/invoked/decompose5e,
+			/obj/effect/proc_holder/spell/invoked/blindness,
+			/obj/effect/proc_holder/spell/invoked/rituos,
+			/obj/effect/proc_holder/spell/invoked/raise_lesser_undead,
+			/obj/effect/proc_holder/spell/invoked/projectile/profane,
+		),
+		"Enchantment" = list(
+			/obj/effect/proc_holder/spell/invoked/slowdown_spell_aoe,
+			/obj/effect/proc_holder/spell/invoked/push_spell,
+			/obj/effect/proc_holder/spell/targeted/lightninglure5e,
+			/obj/effect/proc_holder/spell/targeted/encodethoughts5e,
+			/obj/effect/proc_holder/spell/targeted/touch/darkvision
+		)
 	)
 
+	// Category selection
+	var/category_choice = input(user, "Choose spell type", "Spell Learning") as null|anything in spell_categories
+	if(!category_choice) return
+	
+	// Non-blocking divine warning
+	if(category_choice == "Divine and Unholy (Requires Devotion)")
+		to_chat(user, span_warning("This magic requires divine connection!"))
+
+	// Original code with category filter
+	var/list/spell_choices = spell_categories[category_choice]
+	var/list/choices = list()
 	for(var/i = 1, i <= spell_choices.len, i++)
 		choices["[spell_choices[i].name]: [spell_choices[i].cost]"] = spell_choices[i]
 
 	var/choice = input("Choose a spell, points left: [user.mind.spell_points - user.mind.used_spell_points]") as null|anything in choices
 	var/obj/effect/proc_holder/spell/item = choices[choice]
 	if(!item)
-		return     // user canceled;
-	if(alert(user, "[item.desc]", "[item.name]", "Learn", "Cancel") == "Cancel") //gives a preview of the spell's description to let people know what a spell does
+		return
+	if(alert(user, "[item.desc]", "[item.name]", "Learn", "Cancel") == "Cancel")
 		return
 	for(var/obj/effect/proc_holder/spell/knownspell in user.mind.spell_list)
 		if(knownspell.type == item.type)
 			to_chat(user,span_warning("You already know this one!"))
-			return	//already know the spell
+			return
 	if(item.cost > user.mind.spell_points - user.mind.used_spell_points)
 		to_chat(user,span_warning("You do not have enough experience to create a new spell."))
-		return		// not enough spell points
-	else
-		user.mind.used_spell_points += item.cost
-		user.mind.AddSpell(new item)
-		addtimer(CALLBACK(user.mind, TYPE_PROC_REF(/datum/mind, check_learnspell)), 2 SECONDS) //self remove if no points
-		return TRUE
+		return
+	user.mind.used_spell_points += item.cost
+	user.mind.AddSpell(new item)
+	addtimer(CALLBACK(user.mind, TYPE_PROC_REF(/datum/mind, check_learnspell)), 2 SECONDS)
+	return TRUE
 
 //forcewall
 /obj/effect/proc_holder/spell/invoked/forcewall_weak
@@ -1470,7 +1554,7 @@
 /obj/effect/proc_holder/spell/invoked/enlarge/proc/remove_buff(mob/living/carbon/target)
 	REMOVE_TRAIT(target, TRAIT_BIGGUY, MAGIC_TRAIT)
 	target.transform = target.transform.Translate(0, -(0.25 * 16))
-	target.transform = target.transform.Scale(1/1.25, 1/1.25)      
+	target.transform = target.transform.Scale(1/1.25, 1/1.25)	  
 	target.update_transform()
 	to_chat(target, span_warning("I feel smaller all of a sudden."))
 	target.visible_message("[target]'s body shrinks quickly!")
