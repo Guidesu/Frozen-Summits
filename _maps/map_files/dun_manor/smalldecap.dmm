@@ -139,13 +139,31 @@
 "ez" = (
 /turf/closed/wall/mineral/rogue/stonebrick,
 /area/rogue/indoors/town/dwarfin)
+"eB" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/hellhound,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/mountains/decap)
 "eF" = (
 /obj/structure/flora/roguetree/burnt,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/caves)
 "eG" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/infernal/hellhound,
-/turf/open/floor/rogue/dirt,
+/obj/structure/fluff/traveltile{
+	aportalid = "hotenew";
+	icon = 'icons\obj\stationobjs.dmi';
+	icon_state = "portal1";
+	name = "Portal to Avernus";
+	aportalgoesto = "avernus";
+	desc = "The portal stands as a jagged wound in reality, a swirling vortex of infernal flame and shadow that seems to pulse with a life of its own. Etched into ancient, crumbling stone are sigils of a forgotten infernal tongue, glowing a deep, ominous red. The air around it is heavy with the stench of brimstone and the faint, mournful echoes of lost souls. Beyond the threshold, visions of a desolate, war-torn landscape flicker—endless fields of scorched earth, jagged obsidian peaks, and rivers of molten fire marking the realm of Avernus. The portal’s tumultuous energy hums with a promise of eternal conflict, daring any who approach to step into a domain where the very laws of nature are subverted by the relentless forces of hell."
+	},
+/obj/effect/decal/cleanable/roguerune/arcyne/teleport{
+	color = "red"
+	},
+/turf/open/lava/item_acid{
+	color = "red";
+	light_color = "red";
+	name = "blood pond"
+	},
 /area/rogue/outdoors/mountains/decap)
 "eL" = (
 /turf/open/transparent/openspace,
@@ -195,40 +213,11 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cavelava)
-"fU" = (
-/obj/structure/fluff/traveltile{
-	aportalid = "hotenew";
-	icon = 'icons\obj\stationobjs.dmi';
-	icon_state = "portal1";
-	name = "Portal to Avernus";
-	aportalgoesto = "avernus";
-	desc = "The portal stands as a jagged wound in reality, a swirling vortex of infernal flame and shadow that seems to pulse with a life of its own. Etched into ancient, crumbling stone are sigils of a forgotten infernal tongue, glowing a deep, ominous red. The air around it is heavy with the stench of brimstone and the faint, mournful echoes of lost souls. Beyond the threshold, visions of a desolate, war-torn landscape flicker—endless fields of scorched earth, jagged obsidian peaks, and rivers of molten fire marking the realm of Avernus. The portal’s tumultuous energy hums with a promise of eternal conflict, daring any who approach to step into a domain where the very laws of nature are subverted by the relentless forces of hell."
-	},
-/obj/effect/decal/cleanable/roguerune/arcyne/teleport{
-	color = "red"
-	},
-/turf/open/lava/item_acid{
-	color = "red";
-	light_color = "red";
-	name = "blood pond"
-	},
-/area/rogue/outdoors/mountains/decap)
 "gm" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/rogue/greenstone,
 /area/rogue/under/cavelava)
-"gx" = (
-/obj/structure/fluff/traveltile{
-	aportalid = "hotenew";
-	icon = 'icons\obj\stationobjs.dmi';
-	icon_state = "portal1";
-	name = "Portal to Avernus";
-	aportalgoesto = "avernus";
-	desc = "The portal stands as a jagged wound in reality, a swirling vortex of infernal flame and shadow that seems to pulse with a life of its own. Etched into ancient, crumbling stone are sigils of a forgotten infernal tongue, glowing a deep, ominous red. The air around it is heavy with the stench of brimstone and the faint, mournful echoes of lost souls. Beyond the threshold, visions of a desolate, war-torn landscape flicker—endless fields of scorched earth, jagged obsidian peaks, and rivers of molten fire marking the realm of Avernus. The portal’s tumultuous energy hums with a promise of eternal conflict, daring any who approach to step into a domain where the very laws of nature are subverted by the relentless forces of hell."
-	},
-/turf/open/lava,
-/area/rogue/outdoors/mountains/decap)
 "gE" = (
 /obj/item/rogueweapon/pick,
 /turf/open/floor/rogue/naturalstone,
@@ -289,10 +278,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/red,
 /area/rogue/under/cavelava)
-"hF" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/infernal/imp,
-/turf/open/floor/rogue/volcanic,
-/area/rogue/outdoors/mountains/decap)
 "hJ" = (
 /obj/structure/closet/crate/chest/neu_fancy,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -396,6 +381,10 @@
 /obj/machinery/light/rogue/firebowl,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/caves)
+"kM" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/imp,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap)
 "kR" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/mountains)
@@ -435,10 +424,6 @@
 /area/rogue/outdoors/mountains/decap)
 "mf" = (
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/mountains/decap)
-"mi" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/infernal/imp,
-/turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/mountains/decap)
 "mp" = (
 /obj/structure/fluff/railing/fence,
@@ -524,10 +509,6 @@
 "oc" = (
 /turf/closed/mineral/random/rogue/med,
 /area/rogue/outdoors/caves)
-"oj" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/infernal/hellhound,
-/turf/open/floor/rogue/volcanic,
-/area/rogue/outdoors/mountains/decap)
 "oo" = (
 /obj/structure/spider/stickyweb,
 /turf/open/floor/rogue/naturalstone,
@@ -577,6 +558,10 @@
 /obj/effect/landmark/mapGenerator/rogue/decap,
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/under/cavelava)
+"qp" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/hellhound,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap)
 "qv" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/rogue/herringbone,
@@ -732,6 +717,8 @@
 /obj/structure/fluff/statue,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cavelava)
+"wE" = (
+/area/rogue/indoors/town/dwarfin)
 "wH" = (
 /obj/machinery/light/rogue/torchholder{
 	dir = 8;
@@ -798,6 +785,17 @@
 /obj/item/rogueweapon/sword/decorated,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cavelava)
+"yg" = (
+/obj/structure/fluff/traveltile{
+	aportalid = "hotenew";
+	icon = 'icons\obj\stationobjs.dmi';
+	icon_state = "portal1";
+	name = "Portal to Avernus";
+	aportalgoesto = "avernus";
+	desc = "The portal stands as a jagged wound in reality, a swirling vortex of infernal flame and shadow that seems to pulse with a life of its own. Etched into ancient, crumbling stone are sigils of a forgotten infernal tongue, glowing a deep, ominous red. The air around it is heavy with the stench of brimstone and the faint, mournful echoes of lost souls. Beyond the threshold, visions of a desolate, war-torn landscape flicker—endless fields of scorched earth, jagged obsidian peaks, and rivers of molten fire marking the realm of Avernus. The portal’s tumultuous energy hums with a promise of eternal conflict, daring any who approach to step into a domain where the very laws of nature are subverted by the relentless forces of hell."
+	},
+/turf/open/lava,
+/area/rogue/outdoors/mountains/decap)
 "yl" = (
 /turf/open/lava,
 /area/rogue/outdoors/mountains/decap)
@@ -923,8 +921,6 @@
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/mountains/deception)
-"DA" = (
-/area/rogue/indoors/town/dwarfin)
 "DD" = (
 /turf/open/water/river,
 /area/rogue/outdoors/mountains/decap)
@@ -1244,6 +1240,10 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains/decap)
+"NO" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/infernal/imp,
+/turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/mountains/decap)
 "Ou" = (
 /obj/item/reagent_containers/glass/bottle/waterskin,
@@ -27284,7 +27284,7 @@ yl
 kb
 kb
 jm
-mi
+NO
 jm
 jm
 jm
@@ -27546,7 +27546,7 @@ jm
 jm
 kb
 kb
-eG
+eB
 jm
 jm
 jm
@@ -27798,7 +27798,7 @@ Hk
 Hk
 jm
 kb
-oj
+qp
 jm
 jm
 jm
@@ -28062,7 +28062,7 @@ Hk
 jm
 kb
 kb
-fU
+eG
 kb
 jm
 jm
@@ -28317,7 +28317,7 @@ xV
 kb
 kb
 kb
-hF
+kM
 kb
 jm
 jm
@@ -28712,9 +28712,9 @@ pt
 yl
 kb
 jm
-hF
+kM
 jm
-eG
+eB
 jm
 yl
 yl
@@ -28971,7 +28971,7 @@ pt
 yl
 pt
 yl
-gx
+yg
 kb
 kb
 yl
@@ -32286,9 +32286,9 @@ HO
 ez
 NC
 LF
-DA
+wE
 hs
-DA
+wE
 NC
 ez
 ez
@@ -32417,7 +32417,7 @@ ez
 Fv
 Sj
 hs
-DA
+wE
 VD
 ig
 ez
@@ -32547,7 +32547,7 @@ ez
 Uf
 Sj
 Sj
-DA
+wE
 YR
 nA
 ez
@@ -32804,9 +32804,9 @@ Ku
 kI
 td
 VO
-DA
+wE
 hs
-DA
+wE
 Sj
 Sj
 pO
@@ -32936,10 +32936,10 @@ td
 NC
 RD
 hs
-DA
+wE
 Sj
-DA
-DA
+wE
+wE
 ez
 jy
 mu
@@ -33065,9 +33065,9 @@ Ku
 td
 ez
 oS
-DA
-DA
-DA
+wE
+wE
+wE
 NC
 ez
 ez
