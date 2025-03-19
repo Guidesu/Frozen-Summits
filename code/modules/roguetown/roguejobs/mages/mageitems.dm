@@ -41,7 +41,7 @@
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_combined_w_class = 42
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
-	STR.max_items = 60
+	STR.max_items = 20
 	STR.set_holdable(list(
 		/obj/item/natural/infernalash,
 		/obj/item/natural/hellhoundfang,
