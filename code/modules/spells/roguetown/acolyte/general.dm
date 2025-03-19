@@ -15,6 +15,7 @@
 	charge_max = 30 SECONDS
 	miracle = TRUE
 	devotion_cost = 10
+	cost = 1
 
 /obj/effect/proc_holder/spell/invoked/lesser_heal/cast(list/targets, mob/living/user)
 	. = ..()
@@ -390,6 +391,7 @@
 	charge_max = 20 SECONDS
 	miracle = TRUE
 	devotion_cost = 20
+	cost = 2
 
 /obj/effect/proc_holder/spell/invoked/heal/cast(list/targets, mob/living/user)
 	. = ..()

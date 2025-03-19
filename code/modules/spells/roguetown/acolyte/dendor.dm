@@ -14,6 +14,7 @@
 	invocation_type = "shout" //can be none, whisper, emote and shout
 	miracle = TRUE
 	devotion_cost = 20
+	cost = 1
 
 /obj/effect/proc_holder/spell/targeted/blesscrop/cast(list/targets,mob/user = usr)
 	. = ..()
@@ -46,6 +47,7 @@
 	invocation_type = "whisper" //can be none, whisper, emote and shout
 	miracle = TRUE
 	devotion_cost = 20
+	cost = 2
 
 /obj/effect/proc_holder/spell/targeted/beasttame/cast(list/targets,mob/user = usr)
 	. = ..()
@@ -71,6 +73,7 @@
 	invocation = "Spores light the way."
 	invocation_type = "whisper" //can be none, whisper, emote and shout
 	devotion_cost = 30
+	cost = 3
 
 /obj/effect/proc_holder/spell/targeted/conjure_glowshroom/cast(list/targets, mob/user = usr)
 	. = ..()
@@ -90,6 +93,7 @@
 	ignore_cockblock = TRUE
 	use_language = TRUE
 	var/first_cast = FALSE
+	cost = 4
 
 /obj/effect/proc_holder/spell/self/howl/call_of_the_moon/cast(mob/living/carbon/human/user)
 	// only usable at night

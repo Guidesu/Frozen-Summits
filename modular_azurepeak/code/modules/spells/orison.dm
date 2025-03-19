@@ -16,6 +16,7 @@
 	chargedloop = /datum/looping_sound/invokegen
 	associated_skill = /datum/skill/magic/holy
 	hand_path = /obj/item/melee/touch_attack/orison
+	cost = 1
 
 /obj/item/melee/touch_attack/orison
 	name = "\improper lesser prayer"
