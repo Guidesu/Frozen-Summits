@@ -17,6 +17,7 @@
 	charge_max = 5 SECONDS
 	miracle = TRUE
 	devotion_cost = 30
+	cost = 1
 
 /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue/cast(list/targets, mob/user = usr)
 	. = ..()
@@ -60,6 +61,7 @@
 	charge_max = 2 MINUTES
 	miracle = TRUE
 	devotion_cost = 80
+	cost = 3
 	/// Amount of PQ gained for reviving people
 	var/revive_pq = PQ_GAIN_REVIVE
 

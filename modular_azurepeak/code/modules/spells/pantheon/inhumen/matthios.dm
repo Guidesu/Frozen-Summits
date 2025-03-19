@@ -17,6 +17,7 @@
 	charge_max = 5 SECONDS 
 	miracle = TRUE
 	devotion_cost = 0 
+	cost = 1
 
 /obj/effect/proc_holder/spell/invoked/appraise/secular
 	name = "Secular Appraise"
@@ -52,6 +53,7 @@
 	charge_max = 20 SECONDS
 	miracle = TRUE
 	devotion_cost = 20
+	cost = 1
 
 
 /obj/effect/proc_holder/spell/invoked/transact/cast(list/targets, mob/living/user)
@@ -98,6 +100,7 @@
 	chargedrain = 0
 	chargetime = 50
 	releasedrain = 60
+	cost = 2
 	no_early_release = TRUE
 	antimagic_allowed = TRUE
 	movement_interrupt = FALSE
@@ -180,6 +183,7 @@
 	chargedrain = 0
 	chargetime = 50
 	releasedrain = 90
+	cost = 3
 	no_early_release = TRUE
 	antimagic_allowed = TRUE
 	movement_interrupt = FALSE

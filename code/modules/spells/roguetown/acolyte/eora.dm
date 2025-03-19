@@ -16,6 +16,7 @@
 	chargedloop = /datum/looping_sound/invokegen
 	associated_skill = /datum/skill/magic/holy
 	charge_max = 60 SECONDS
+	cost = 1
 
 /obj/effect/proc_holder/spell/invoked/bud/cast(list/targets, mob/living/user)
 	var/target = targets[1]
@@ -53,6 +54,7 @@
 	antimagic_allowed = TRUE
 	charge_max = 10 SECONDS
 	miracle = FALSE
+	cost = 2
 
 /obj/effect/proc_holder/spell/invoked/eoracurse/cast(list/targets, mob/living/user)
 	if(isliving(targets[1]))

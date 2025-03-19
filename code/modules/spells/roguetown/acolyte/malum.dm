@@ -20,6 +20,7 @@
 	charging_slowdown = 3
 	chargedloop = /datum/looping_sound/invokegen
 	devotion_cost = 30
+	cost = 1
 
 /obj/effect/proc_holder/spell/invoked/heatmetal
 	name = "Heat Metal"
@@ -43,6 +44,7 @@
 	charging_slowdown = 3
 	chargedloop = /datum/looping_sound/invokegen
 	devotion_cost = 40
+	cost = 2
 
 /obj/effect/proc_holder/spell/invoked/hammerfall
 	name = "Hammerfall"
@@ -66,6 +68,7 @@
 	charging_slowdown = 3
 	chargedloop = /datum/looping_sound/invokegen
 	devotion_cost = 80
+	cost = 3
 
 /obj/effect/proc_holder/spell/invoked/craftercovenant
 	name = "The Crafter’s Covenant"
@@ -89,6 +92,7 @@
 	charging_slowdown = 3
 	chargedloop = /datum/looping_sound/invokegen
 	devotion_cost = 100
+	cost = 4
 
 /obj/effect/proc_holder/spell/invoked/heatmetal/cast(list/targets, mob/user = usr)
 	. = ..()
@@ -388,6 +392,7 @@ world/New()
 	charge_max = 15 SECONDS
 	miracle = TRUE
 	devotion_cost = 15
+	cost = 1
 
 obj/effect/proc_holder/spell/invoked/malum_flame_rogue/cast(list/targets, mob/user = usr)
 	. = ..()

@@ -14,6 +14,7 @@
 	invocation_type = "whisper" //can be none, whisper, emote and shout
 	miracle = TRUE
 	devotion_cost = 5 //very weak spell, you can just make a grave marker with a literal stick
+	cost = 1
 
 /obj/effect/proc_holder/spell/targeted/burialrite/cast(list/targets, mob/user = usr)
 	. = ..()
@@ -45,6 +46,7 @@
 	invocation_type = "shout" //can be none, whisper, emote and shout
 	miracle = TRUE
 	devotion_cost = 20
+	cost = 3 //It quite literally blows up undead when used. A three is generous... - Blue
 
 /obj/effect/proc_holder/spell/targeted/churn/cast(list/targets,mob/living/user = usr)
 	var/prob2explode = 100
@@ -97,6 +99,7 @@
 	invocation_type = "whisper" //can be none, whisper, emote and shout
 	miracle = TRUE
 	devotion_cost = 30
+	cost = 2
 
 /obj/effect/proc_holder/spell/targeted/soulspeak/cast(list/targets,mob/user = usr)
 	var/mob/living/carbon/spirit/capturedsoul = null

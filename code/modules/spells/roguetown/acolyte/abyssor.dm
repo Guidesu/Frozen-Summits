@@ -16,6 +16,7 @@
 	charge_max = 20 SECONDS
 	miracle = TRUE
 	devotion_cost = 15
+	cost = 1
 
 /obj/effect/proc_holder/spell/invoked/abyssor_bends/cast(list/targets, mob/user = usr)
 	. = ..()
@@ -50,6 +51,7 @@
 	charge_max = 10 SECONDS
 	miracle = TRUE
 	devotion_cost = 50
+	cost = 2
 
 /obj/effect/proc_holder/spell/invoked/abyssheal/cast(list/targets, mob/living/user)
 	. = ..()
@@ -104,6 +106,7 @@
 	charge_max = 180 SECONDS
 	miracle = TRUE
 	devotion_cost = 100
+	cost = 3
 	var/townercrab = TRUE //I was looking at this for three days and i am utterly stupid for not fixing it
 /obj/effect/proc_holder/spell/invoked/call_mossback/cast(list/targets, mob/living/user)
 	. = ..()
@@ -141,6 +144,7 @@
 	charge_max = 60 SECONDS
 	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
 	devotion_cost = 45
+	cost = 4
 
 /turf/open/proc/apply_ice_turf()
 	var/prev_icon_state = icon_state //that code saves the original attributes of the turf to avoid a black void.

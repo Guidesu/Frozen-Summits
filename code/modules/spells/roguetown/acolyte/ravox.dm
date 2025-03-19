@@ -23,6 +23,7 @@ Within this file:
 	miracle = TRUE
 	charge_max = 30 SECONDS
 	devotion_cost = 20
+	cost = 1
 
 /obj/effect/proc_holder/spell/invoked/burden/cast(list/targets, mob/user)
 	var/atom/A = targets[1]
