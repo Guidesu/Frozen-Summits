@@ -3,22 +3,20 @@
     "map_path": "map_files/dun_manor",
 	"map_file": [
 	"dun_manor.dmm",
+	"smalldecap.dmm",
 	"azure_forest.dmm",
 	"azure_coast.dmm",
 	"dakkaswamp.dmm",
 	"crags.dmm",
-	"UnderHotenow.dmm",
-	"avernus.dmm",
-	"mount_hotenow.dmm"
+	"UnderHotenow.dmm"
 	],
 	"traits": [{"Name": "Dun Manor", "Up": true}, {"Up": true, "Down": true}, {"Up": true, "Down": true}, {"Down": true},
+	{"Name": "Magma Crater"},
 	{"Name": "Azure Forest", "Up": true}, {"Up": true, "Down": true}, {"Up": true, "Down": true}, {"Down": true},
 	{"Name": "Azure Coast", "Up": true}, {"Up": true, "Down": true}, {"Up": true, "Down": true}, {"Down": true},
 	{"Name": "Dakka Swamp", "Up": true}, {"Down": true},
 	{"Name": "Crags", "Up": true},{"Up": true, "Down": true}, {"Down": true},
-	{"Name": "Underdark", "Up": true}, {"Up": true, "Down": true}, {"Up": true, "Down": true}, {"Down": true},
-	{"Name": "Avernus"},
-	{"Name": "Mount Hotenow", "Up": true},{"Up": true, "Down": true}, {"Down": true}],
+	{"Name": "Underdark", "Up": true}, {"Up": true, "Down": true}, {"Up": true, "Down": true}, {"Down": true}],
 	"minetype": null,
 	"space_empty_levels": 0,
 	"space_ruin_levels": 0,
@@ -27,5 +25,5 @@
 		"ferry": "ferry_base",
 		"whiteship": "whiteship_box",
 		"emergency": "emergency_rogue"
-	}
+    }
 }

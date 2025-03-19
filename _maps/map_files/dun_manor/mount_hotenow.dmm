@@ -785,17 +785,6 @@
 /obj/item/rogueweapon/sword/decorated,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cavelava)
-"yg" = (
-/obj/structure/fluff/traveltile{
-	aportalid = "hotenew";
-	icon = 'icons\obj\stationobjs.dmi';
-	icon_state = "portal1";
-	name = "Portal to Avernus";
-	aportalgoesto = "avernus";
-	desc = "The portal stands as a jagged wound in reality, a swirling vortex of infernal flame and shadow that seems to pulse with a life of its own. Etched into ancient, crumbling stone are sigils of a forgotten infernal tongue, glowing a deep, ominous red. The air around it is heavy with the stench of brimstone and the faint, mournful echoes of lost souls. Beyond the threshold, visions of a desolate, war-torn landscape flicker—endless fields of scorched earth, jagged obsidian peaks, and rivers of molten fire marking the realm of Avernus. The portal’s tumultuous energy hums with a promise of eternal conflict, daring any who approach to step into a domain where the very laws of nature are subverted by the relentless forces of hell."
-	},
-/turf/open/lava,
-/area/rogue/outdoors/mountains/decap)
 "yl" = (
 /turf/open/lava,
 /area/rogue/outdoors/mountains/decap)
@@ -28971,7 +28960,7 @@ pt
 yl
 pt
 yl
-yg
+yl
 kb
 kb
 yl

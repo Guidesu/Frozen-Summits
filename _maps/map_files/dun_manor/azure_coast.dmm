@@ -6752,15 +6752,6 @@
 /obj/structure/bed/rogue/inn/hay,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/cave)
-"WY" = (
-/obj/structure/fluff/traveltile{
-	aportalid = "forestdecapin";
-	aportalgoesto = "forestdecapout"
-	},
-/turf/open/floor/rogue/dirt/road{
-	color = "80ffff"
-	},
-/area/rogue/outdoors/beach/forest)
 "WZ" = (
 /obj/structure/roguewindow,
 /turf/open/floor/rogue/blocks,
@@ -57292,9 +57283,9 @@ pZ
 pZ
 pZ
 pZ
-WY
-WY
-WY
+pZ
+pZ
+pZ
 pZ
 pZ
 pZ
@@ -57422,9 +57413,9 @@ SZ
 pz
 pz
 bu
-XK
-XK
-XK
+pz
+pz
+pz
 pz
 pz
 pz
@@ -57552,20 +57543,20 @@ pz
 pz
 pz
 pz
-XK
-XK
-XK
-XK
-XK
-XK
-XK
-XK
-XK
-XK
-XK
-XK
-XK
-XK
+pz
+pz
+pz
+pz
+pz
+pz
+pz
+pz
+pz
+pz
+pz
+pz
+pz
+pz
 XK
 pz
 pz
@@ -57683,18 +57674,18 @@ ed
 pz
 pz
 pz
-XK
-XK
-XK
-XK
-XK
-XK
-XK
-XK
-XK
-XK
-XK
-XK
+pz
+pz
+pz
+pz
+pz
+pz
+pz
+pz
+pz
+pz
+pz
+pz
 XK
 XK
 XK
