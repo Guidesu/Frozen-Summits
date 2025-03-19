@@ -225,6 +225,8 @@
 	w_class = WEIGHT_CLASS_NORMAL		 //upped to three because books are, y'know, pretty big. (and you could hide them inside eachother recursively forever)
 	attack_verb = list("bashed", "whacked", "educated")
 	resistance_flags = FLAMMABLE
+	grid_width = ONE_SLOTS
+	grid_height = TWO_SLOTS
 	drop_sound = 'sound/foley/dropsound/book_drop.ogg'
 	pickup_sound =  'sound/blank.ogg'
 
@@ -232,8 +234,6 @@
 	name = "tome in waiting"
 	icon_state = "spellbook_unfinished"
 	desc = "A fully bound tome of scroll paper. It's lacking a certain arcane energy."
-	grid_width = ONE_SLOTS
-	grid_height = TWO_SLOTS
 
 /obj/item/natural/hide/attackby(obj/item/P, mob/living/carbon/human/user, params)
 	var/found_table = locate(/obj/structure/table) in (loc)

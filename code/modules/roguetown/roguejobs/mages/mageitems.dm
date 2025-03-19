@@ -98,6 +98,8 @@
 	damtype = BRUTE
 	force = 1
 	w_class = WEIGHT_CLASS_SMALL
+	grid_width = ONE_SLOTS
+	grid_height = ONE_SLOTS
 	var/rune_to_scribe = null
 	var/amount = 8
 /obj/item/chalk/examine(mob/user)
