@@ -41,7 +41,7 @@
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_combined_w_class = 42
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
-	STR.max_items = 20
+	STR.max_items = 60
 	STR.set_holdable(list(
 		/obj/item/natural/infernalash,
 		/obj/item/natural/hellhoundfang,
@@ -98,6 +98,8 @@
 	damtype = BRUTE
 	force = 1
 	w_class = WEIGHT_CLASS_SMALL
+	grid_width = ONE_SLOTS
+	grid_height = ONE_SLOTS
 	var/rune_to_scribe = null
 	var/amount = 8
 /obj/item/chalk/examine(mob/user)
