@@ -1150,6 +1150,7 @@
 	H.mind.adjust_skillrank_up_to((/datum/skill/magic/holy), 2, TRUE)
 	C.grant_spells_churchling(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
+	H.mind.adjust_spellpoints(4)
 
 /datum/quirk/nymphomaniac
 	name = "(Kinky) Nymphomaniac"
