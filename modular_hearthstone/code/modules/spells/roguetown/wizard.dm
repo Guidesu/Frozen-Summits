@@ -225,7 +225,8 @@
 			/obj/effect/proc_holder/spell/invoked/sundering_lightning,
 			/obj/effect/proc_holder/spell/invoked/blade_burst,
 			/obj/effect/proc_holder/spell/invoked/boomingblade5e,
-			/obj/effect/proc_holder/spell/invoked/greenflameblade5e
+			/obj/effect/proc_holder/spell/invoked/greenflameblade5e,
+			/obj/projectile/magic/eldritchblast5e
 		),
 		"Abjuration" = list(
 			/obj/effect/proc_holder/spell/invoked/forcewall_weak,
