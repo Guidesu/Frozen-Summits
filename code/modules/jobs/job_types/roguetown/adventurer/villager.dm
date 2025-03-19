@@ -1,7 +1,7 @@
 /datum/job/roguetown/villager
 	title = "Towner"
 	flag = VILLAGER
-	department_flag = PEASANTS
+	department_flag = YEOMEN
 	faction = "Station"
 	total_positions = 75
 	spawn_positions = 75

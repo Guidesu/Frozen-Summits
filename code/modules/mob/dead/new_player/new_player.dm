@@ -640,17 +640,17 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 			var/cat_name = ""
 			switch (SSjob.name_occupations[category[1]].department_flag)
 				if (NOBLEMEN)
-					cat_name = "Nobles"
+					cat_name = "Council"
 				if (COURTIERS)
-					cat_name = "Courtiers"
+					cat_name = "Aides"
 				if (GARRISON)
-					cat_name = "Garrison"
+					cat_name = "Watch"
 				if (CHURCHMEN)
-					cat_name = "Churchmen"
+					cat_name = "Clergy"
 				if (YEOMEN)
-					cat_name = "Yeomen"
+					cat_name = "Villagers"
 				if (PEASANTS)
-					cat_name = "Peasants"
+					cat_name = "Countryfolk"
 				if (YOUNGFOLK)
 					cat_name = "Sidefolk"
 				if (MERCENARIES)

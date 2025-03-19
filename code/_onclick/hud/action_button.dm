@@ -232,7 +232,7 @@
 
 
 
-#define AB_MAX_COLUMNS 12
+#define AB_MAX_COLUMNS 14
 
 /datum/hud/proc/ButtonNumberToScreenCoords(number) // TODO : Make this zero-indexed for readabilty
 	var/row = round((number - 1)/AB_MAX_COLUMNS)
@@ -241,7 +241,7 @@
 	var/coord_col = "+[col-1]"
 	var/coord_col_offset = 4 + 2 * col
 
-	var/coord_row = "[row ? -row : "+0"]"
+	var/coord_row = "+[row]"
 
 	return "WEST[coord_col]:[coord_col_offset],SOUTH[coord_row]:3"
 

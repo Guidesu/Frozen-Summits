@@ -4,8 +4,8 @@
 	flag = NIGHTMASTER
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_TOLERATED_UP

@@ -3790,6 +3790,7 @@
 #include "modular_guidesa\general_stuffs.dm"
 #include "modular_guidesa\gm_talking_rp.dm"
 #include "modular_guidesa\items.dm"
+#include "modular_guidesa\learn_spell.dm"
 #include "modular_guidesa\quirks_guidesa.dm"
 #include "modular_guidesa\refunding_spells.dm"
 #include "modular_guidesa\stats_quirk_guidesa.dm"
