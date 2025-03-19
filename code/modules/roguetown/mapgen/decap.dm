@@ -21,7 +21,7 @@
 							/obj/structure/flora/roguegrass/maneater = 13,
 							/obj/item/natural/stone = 23,
 							/obj/item/natural/artifact = 12,
-							/obj/structure/leyline = 7,
+							/obj/structure/leyline = 15,
 							/obj/structure/voidstoneobelisk = 9,
 							/obj/structure/manaflower = 8,
 							/obj/item/natural/manacrystal = 5,
