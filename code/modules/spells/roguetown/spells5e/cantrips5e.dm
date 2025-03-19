@@ -310,6 +310,7 @@
 	desc = ""
 	clothes_req = FALSE
 	range = 8
+	cost = 1
 	projectile_type = /obj/projectile/magic/eldritchblast5e
 	overlay_state = "e_blast"
 	sound = list('sound/magic/whiteflame.ogg')
