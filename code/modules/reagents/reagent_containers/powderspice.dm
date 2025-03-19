@@ -7,6 +7,8 @@
 	possible_transfer_amounts = list()
 	volume = 15
 	sellprice = 10
+	grid_width = ONE_SLOTS
+	grid_height = ONE_SLOTS
 
 /obj/item/reagent_containers/powder/spice
 	name = "spice"
