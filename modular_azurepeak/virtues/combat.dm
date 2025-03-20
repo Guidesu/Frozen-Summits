@@ -19,7 +19,7 @@
 	name = "Adamantine Bones"
 	desc = "My bones are far stronger than those of others of my species. I am immune to dismemberment."
 	added_traits = list(TRAIT_NODISMEMBER)
-/*
+
 /datum/virtue/combat/devotee
 	name = "Devotee"
 	desc = "Though not officially of the Church, my relationship with my chosen Patron is strong enough to grant me the most minor of their blessings. I've also kept a psycross of my deity. Combat-oriented classes get a weaker version of this virtue."
@@ -71,7 +71,7 @@
 			recipient.mind?.special_items["Ravox Psycross"] =/obj/item/clothing/neck/roguetown/psicross/ravox
 		if(/datum/patron/divine/malum)
 			recipient.mind?.special_items["Malum Psycross"] = /obj/item/clothing/neck/roguetown/psicross/malum
-*/
+
 /*
 /datum/virtue/combat/duelist
 	name = "Duelist Apprentice"
