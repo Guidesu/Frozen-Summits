@@ -926,9 +926,9 @@
 /turf/open/water/swamp,
 /area/rogue/under/cave)
 "acZ" = (
-/obj/structure/roguerock,
-/turf/closed/wall/mineral/rogue/wood,
-/area/rogue/indoors/town)
+/obj/item/natural/rock/salt,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/under/cave)
 "ada" = (
 /turf/open/floor/rogue/snow{
 	color = "e6f2ff"
@@ -1789,16 +1789,14 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/town)
 "bCA" = (
+/obj/effect/decal/cobbleedge{
+	dir = 4
+	},
 /obj/structure/table/wood{
 	dir = 8;
 	icon_state = "largetable"
 	},
-/obj/item/pestle,
-/obj/item/reagent_containers/glass/mortar,
-/obj/item/reagent_containers/glass/bottle,
-/obj/effect/decal/cobbleedge{
-	dir = 4
-	},
+/obj/item/rogueweapon/huntingknife/chefknife,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
 "bDN" = (
@@ -1935,6 +1933,15 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/mountains)
+"bPH" = (
+/obj/structure/mineral_door/wood/red{
+	lockid = "riverside_house1";
+	name = "riverside house i"
+	},
+/turf/open/floor/rogue/twig{
+	dir = 1
+	},
+/area/rogue/outdoors/town)
 "bQr" = (
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/tavern)
@@ -4211,14 +4218,14 @@
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/rtfield)
 "fRw" = (
+/obj/effect/decal/cobbleedge{
+	dir = 6
+	},
 /obj/structure/table/wood{
 	dir = 8;
 	icon_state = "largetable"
 	},
-/obj/item/rogueweapon/huntingknife/chefknife,
-/obj/effect/decal/cobbleedge{
-	dir = 6
-	},
+/obj/structure/fluff/millstone,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
 "fRU" = (
@@ -5589,6 +5596,16 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town/tavern)
+"iDP" = (
+/obj/item/reagent_containers/glass/bottle,
+/obj/item/reagent_containers/glass/mortar,
+/obj/item/pestle,
+/obj/structure/table/wood{
+	dir = 8;
+	icon_state = "largetable"
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town)
 "iFe" = (
 /mob/living/simple_animal/bird,
 /turf/open/floor/rogue/rooftop,
@@ -7526,6 +7543,14 @@
 /obj/structure/closet/crate/roguecloset,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/town)
+"lKY" = (
+/obj/structure/roguewindow/openclose/reinforced{
+	dir = 1
+	},
+/turf/open/floor/rogue/twig{
+	dir = 8
+	},
+/area/rogue/indoors/town)
 "lLr" = (
 /obj/structure/stairs,
 /turf/open/transparent/openspace,
@@ -8601,6 +8626,10 @@
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/tile/bath,
 /area/rogue/outdoors/exposed/bath)
+"nOL" = (
+/obj/structure/roguerock,
+/turf/closed/wall/mineral/rogue/wood,
+/area/rogue/indoors/town)
 "nPi" = (
 /obj/structure/closet/crate/chest/wicker,
 /obj/item/fishingrod,
@@ -10799,14 +10828,6 @@
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town)
 "rFu" = (
-/obj/structure/rack/rogue/shelf/big,
-/obj/item/cooking/pan,
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/reagent_containers/glass/bowl,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
-/obj/item/kitchen/spoon,
 /obj/effect/decal/cobbleedge{
 	dir = 8
 	},
@@ -11789,6 +11810,17 @@
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/town)
+"thb" = (
+/obj/item/kitchen/spoon,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/kitchen/spoon,
+/obj/item/kitchen/spoon,
+/obj/item/reagent_containers/glass/bowl,
+/obj/item/cooking/pan,
+/obj/item/reagent_containers/glass/bowl,
+/obj/structure/rack/rogue/shelf/big,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town)
 "tiQ" = (
 /obj/structure/fluff/railing/border,
 /obj/structure/fluff/railing/border{
@@ -12253,10 +12285,6 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
-"ucH" = (
-/obj/item/natural/rock/salt,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/under/cave)
 "udt" = (
 /obj/structure/closet/crate/chest/neu,
 /obj/item/reagent_containers/powder/salt,
@@ -13826,6 +13854,12 @@
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
+"wQl" = (
+/obj/structure/roguewindow/openclose/reinforced,
+/turf/open/floor/rogue/twig{
+	dir = 1
+	},
+/area/rogue/outdoors/town)
 "wQq" = (
 /turf/closed/wall/mineral/rogue/wooddark/vertical,
 /area/rogue/indoors/town/tavern)
@@ -24513,7 +24547,7 @@ hWI
 uBR
 wVM
 wVM
-ucH
+acZ
 sbR
 iSJ
 wVM
@@ -24668,7 +24702,7 @@ xXW
 xXW
 hWI
 hWI
-ucH
+acZ
 wVM
 wVM
 sbR
@@ -24831,7 +24865,7 @@ iSJ
 wVM
 wVM
 sbR
-ucH
+acZ
 wVM
 wVM
 etD
@@ -24984,7 +25018,7 @@ xXW
 xXW
 vDe
 hWI
-ucH
+acZ
 wVM
 wVM
 wVM
@@ -27831,7 +27865,7 @@ dFC
 dFC
 dFC
 fJU
-acZ
+nOL
 ccX
 ccX
 ccX
@@ -43786,8 +43820,8 @@ uGz
 uGz
 kqj
 kqj
-puh
-puh
+xDp
+xDp
 puh
 puh
 puh
@@ -43943,15 +43977,15 @@ uGz
 kqj
 kqj
 kqj
-pOn
-pOn
-pOn
-pOn
-pOn
-pOn
-rNp
-ada
+xDp
+xDp
+xDp
+xDp
 puh
+puh
+rNp
+pOn
+pOn
 pOn
 kEG
 pOn
@@ -44099,18 +44133,18 @@ sLi
 kqj
 kqj
 kqj
-ada
+xDp
+xDp
+xDp
+xDp
+xDp
+xDp
+xDp
+xDp
 xDp
 pOn
 pOn
-xDp
-xDp
-xDp
-xDp
-xDp
-xDp
-xDp
-xDp
+pOn
 pOn
 xDp
 xDp
@@ -44255,19 +44289,19 @@ sLi
 sLi
 sLi
 kqj
+xDp
+xDp
+xDp
+xDp
+xDp
+xDp
+xDp
+xDp
+xDp
+xDp
 pOn
 pOn
 pOn
-xDp
-xDp
-xDp
-xDp
-xDp
-xDp
-xDp
-xDp
-xDp
-xDp
 pOn
 pOn
 pOn
@@ -44414,17 +44448,17 @@ sLi
 sLi
 kqj
 xDp
+xDp
+yaE
+cij
+cij
+cij
+cij
+cij
+cij
+yaE
 pOn
 pOn
-pOn
-xDp
-xDp
-xDp
-xDp
-xDp
-xDp
-xDp
-xDp
 pOn
 pOn
 xWK
@@ -44571,17 +44605,17 @@ sLi
 sLi
 sLi
 kqj
-kqj
 xDp
+xDp
+cij
+crm
+fzp
+fzp
+fzp
+fzp
+crm
+cij
 pOn
-pOn
-xDp
-xDp
-xDp
-xDp
-xDp
-xDp
-xDp
 pOn
 pOn
 pOn
@@ -44729,17 +44763,17 @@ sLi
 sLi
 sLi
 kqj
-kqj
 xDp
+xDp
+cij
+fzp
+fzp
+fzp
+fzp
+fzp
+fyY
 yaE
-cij
-cij
-yaE
-xYi
-cij
-cij
-yaE
-ada
+pOn
 xXs
 pOn
 pOn
@@ -44885,19 +44919,19 @@ fRr
 ymg
 sLi
 sLi
-sLi
 hJa
 cyS
-cyS
-cij
-fyY
-crm
+sYE
+acM
+yaE
+fzp
+fzp
 cij
 sNt
 fzp
 adl
 cij
-ada
+pOn
 pOn
 pOn
 pOn
@@ -45043,14 +45077,14 @@ fRr
 ymg
 sLi
 sLi
-sLi
 sYE
 sYE
 sYE
-gLJ
+wQl
 fzp
 fzp
 fzp
+crm
 fzp
 fzp
 jDd
@@ -45201,11 +45235,11 @@ fRr
 ymg
 sLi
 sLi
-sLi
 shP
 vVq
 sYE
-mmt
+bPH
+fzp
 fzp
 fzp
 fzp
@@ -45361,9 +45395,9 @@ sLi
 sLi
 uGz
 kqj
-kqj
 xDp
-cij
+acM
+thb
 rFu
 vBP
 yaE
@@ -45520,11 +45554,11 @@ sLi
 kqj
 kqj
 xDp
-xDp
-cij
+acM
 wZD
+sPC
 fip
-cij
+lKY
 kcL
 kcL
 kcL
@@ -45678,8 +45712,8 @@ sLi
 kqj
 kqj
 xDp
-xDp
-cij
+acM
+iDP
 bCA
 fRw
 cij
@@ -45835,11 +45869,11 @@ sLi
 sLi
 kqj
 kqj
-pOn
 xDp
-yaE
+qYz
 cij
-wix
+cij
+cij
 yaE
 pvV
 kcL
@@ -45993,7 +46027,7 @@ sLi
 sLi
 kqj
 xDp
-pOn
+xDp
 xDp
 xDp
 xDp
