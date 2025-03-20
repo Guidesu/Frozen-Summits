@@ -316,7 +316,6 @@
 	name = "onion"
 	desc = ""
 	icon_state = "onion"
-	slices_num = 1
 	tastes = list("spicy sweetness" = 1)
 	bitesize = 2
 	list_reagents = list(/datum/reagent/consumable/nutriment = 2)

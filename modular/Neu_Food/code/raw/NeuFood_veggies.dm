@@ -9,6 +9,7 @@
 /*	..................   Onions   ................... */
 /obj/item/reagent_containers/food/snacks/grown/onion/rogue
 	desc = "A wonderful vegetable with many layers and broad flavor profile."
+	slices_num = 2
 	slice_path = /obj/item/reagent_containers/food/snacks/rogue/veg/onion_sliced
 	tastes = list("onion" = 1)
 	chopping_sound = TRUE
@@ -39,7 +40,7 @@
 /obj/item/reagent_containers/food/snacks/grown/potato/rogue
 	desc = "A spud, dwarven icon of growth."
 	eat_effect = null
-	slices_num = 1
+	slices_num = 2
 	slice_path = /obj/item/reagent_containers/food/snacks/rogue/veg/potato_sliced
 	cooked_type = /obj/item/reagent_containers/food/snacks/rogue/preserved/potato_baked
 	tastes = list("potato" = 1)
