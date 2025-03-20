@@ -284,12 +284,6 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 	destroy_sound = 'sound/foley/smash_rock.ogg'
 	attacked_sound = 'sound/foley/hit_rock.ogg'
 
-
-/obj/item/natural/rock/Initialize()
-	icon_state = "stonebig[rand(1,2)]"
-	..()
-
-
 /obj/item/natural/rock/Crossed(mob/living/L)
 	if(istype(L) && !L.throwing)
 		if(L.m_intent == MOVE_INTENT_RUN)
@@ -366,7 +360,10 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 	mineralType = /obj/item/rogueore/coal
 
 /obj/item/natural/rock/salt
+	name = "salt rock"
+	desc = "A rock with crystaline salt deposits."
 	mineralType = /obj/item/reagent_containers/powder/salt
+	icon_state = "stone_salt"
 
 /obj/item/natural/rock/gem
 	mineralType = /obj/item/roguegem/random

@@ -1,7 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"av" = (
-/turf/open/water/swamp/deep,
-/area/rogue/outdoors/crags)
 "aA" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors)
@@ -29,8 +26,9 @@
 /obj/structure/closet/crate/chest/old_crate,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors)
-"cA" = (
-/turf/closed/wall/mineral/rogue/craftstone,
+"da" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/volcanic,
 /area/rogue/outdoors/crags)
 "dk" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/slime/toxic,
@@ -43,22 +41,20 @@
 /obj/structure/mineral_door/wood/red,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors)
+"ec" = (
+/obj/item/rogueweapon/shield/heater{
+	desc = "A sturdy wood and leather shield. Made to not be too encumbering while still providing good protection. Appears to have a crest of Bahamut on it.";
+	name = "Bahamut Shield";
+	anchored = 1
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/crags)
 "fH" = (
 /turf/closed/mineral/random/rogue/med,
 /area/rogue/outdoors/crags)
 "gv" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/slime/toxic,
 /turf/open/floor/rogue/grasscold,
-/area/rogue/outdoors/crags)
-"gG" = (
-/turf/open/water/swamp/deep,
-/turf/closed/mineral/random/rogue/high,
-/turf/closed/mineral/random/rogue/high,
-/turf/closed/mineral/random/rogue/high,
-/area/rogue/outdoors/crags)
-"hT" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/infernal/hellhound,
-/turf/open/floor/rogue/volcanic,
 /area/rogue/outdoors/crags)
 "ie" = (
 /turf/open/lava,
@@ -68,23 +64,13 @@
 	dir = 4
 	},
 /area/rogue/outdoors/river)
-"iP" = (
-/turf/open/lava/item_acid{
-	color = "red";
-	light_color = "red";
-	name = "blood pond"
-	},
-/area/rogue/outdoors/crags)
-"ja" = (
-/turf/open/water/swamp,
-/area/rogue/outdoors/crags)
 "js" = (
 /obj/item/roguebin/water/gross,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors)
-"jx" = (
-/turf/open/water/swamp/deep,
-/turf/closed/mineral/random/rogue/high,
+"jM" = (
+/obj/machinery/light/rogue/firebowl/church,
+/turf/open/floor/rogue/volcanic,
 /area/rogue/outdoors/crags)
 "lE" = (
 /obj/structure/chair/wood/rogue{
@@ -99,26 +85,22 @@
 "lQ" = (
 /turf/closed/wall/mineral/rogue/tent,
 /area/rogue/indoors)
-"lS" = (
-/obj/effect/decal/cleanable/roguerune/arcyne/teleport{
-	color = "red"
-	},
-/obj/structure/fluff/traveltile{
-	aportalid = "hotenew";
-	icon = 'icons\obj\stationobjs.dmi';
-	icon_state = "portal1";
-	name = "Portal to Avernus";
-	aportalgoesto = "avernus";
-	desc = "The portal stands as a jagged wound in reality, a swirling vortex of infernal flame and shadow that seems to pulse with a life of its own. Etched into ancient, crumbling stone are sigils of a forgotten infernal tongue, glowing a deep, ominous red. The air around it is heavy with the stench of brimstone and the faint, mournful echoes of lost souls. Beyond the threshold, visions of a desolate, war-torn landscape flicker—endless fields of scorched earth, jagged obsidian peaks, and rivers of molten fire marking the realm of Avernus. The portal’s tumultuous energy hums with a promise of eternal conflict, daring any who approach to step into a domain where the very laws of nature are subverted by the relentless forces of hell."
-	},
-/turf/open/floor/rogue/volcanic,
-/area/rogue/outdoors/crags)
 "mb" = (
 /obj/effect/landmark/mapGenerator/rogue/cave{
 	endTurfX = 155;
 	endTurfY = 155
 	},
 /turf/closed/mineral/rogue/bedrock,
+/area/rogue/outdoors/crags)
+"mH" = (
+/obj/item/clothing/neck/roguetown/psicross/noc{
+	anchored = 1
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/crags)
+"mZ" = (
+/turf/open/water/swamp/deep,
+/turf/closed/mineral/random/rogue/high,
 /area/rogue/outdoors/crags)
 "nE" = (
 /turf/open/floor/rogue/grasscold,
@@ -128,6 +110,10 @@
 /obj/structure/closet/crate/chest/wicker,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors)
+"nW" = (
+/obj/structure/fluff/psycross/crafted,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/crags)
 "oB" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/crags)
@@ -140,6 +126,9 @@
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/crags)
+"rc" = (
+/turf/open/water/swamp,
+/area/rogue/outdoors/crags)
 "ri" = (
 /turf/open/water/river{
 	dir = 8
@@ -149,10 +138,6 @@
 /obj/structure/closet/crate/chest/old_crate,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors)
-"si" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/infernal/imp,
-/turf/open/floor/rogue/volcanic,
-/area/rogue/outdoors/crags)
 "su" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/slime,
 /turf/open/floor/rogue/naturalstone,
@@ -162,6 +147,13 @@
 /obj/structure/closet/crate/chest/old_crate,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors)
+"tL" = (
+/turf/open/lava/item_acid{
+	color = "yellow";
+	light_color = "yellow";
+	name = "blessed pond"
+	},
+/area/rogue/outdoors/crags)
 "tU" = (
 /turf/open/lava,
 /area/rogue/indoors)
@@ -188,6 +180,13 @@
 /obj/item/rogueore/coal,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors)
+"AC" = (
+/obj/item/rogueweapon/woodstaff/naledi{
+	name = "staff of selûne";
+	anchored = 1
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/crags)
 "AZ" = (
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 8
@@ -211,6 +210,9 @@
 /area/rogue/indoors)
 "BV" = (
 /turf/open/transparent/openspace,
+/area/rogue/outdoors/crags)
+"Ca" = (
+/turf/closed/wall/mineral/rogue/craftstone,
 /area/rogue/outdoors/crags)
 "Cv" = (
 /obj/effect/landmark/mapGenerator/rogue/forest{
@@ -300,19 +302,31 @@
 "Kn" = (
 /turf/closed/mineral/random/rogue/high,
 /area/rogue/indoors)
-"Lb" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/infernal/hellhound,
-/turf/open/floor/rogue/dirt,
+"KB" = (
+/turf/open/water/swamp/deep,
+/turf/closed/mineral/random/rogue/high,
+/turf/closed/mineral/random/rogue/high,
+/turf/closed/mineral/random/rogue/high,
 /area/rogue/outdoors/crags)
 "Mq" = (
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 1
 	},
 /area/rogue/indoors)
+"MD" = (
+/obj/item/clothing/neck/roguetown/psicross/ravox{
+	anchored = 1
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/crags)
 "Nb" = (
 /obj/structure/closet/crate/roguecloset/dark,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors)
+"Ng" = (
+/obj/structure/fluff/psycross/copper,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/crags)
 "Nh" = (
 /obj/machinery/light/rogue/firebowl,
 /turf/open/floor/rogue/blocks/stonered,
@@ -324,27 +338,45 @@
 /obj/machinery/light/rogue/smelter,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors)
+"Oy" = (
+/turf/open/water/swamp/deep,
+/turf/closed/mineral/random/rogue/high,
+/turf/closed/mineral/random/rogue/high,
+/area/rogue/outdoors/crags)
 "Py" = (
 /obj/structure/stairs/stone{
 	dir = 1
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/crags)
+"PS" = (
+/obj/structure/fluff/traveltile{
+	aportalid = "hotenew";
+	icon = 'icons\obj\stationobjs.dmi';
+	icon_state = "portal1";
+	name = "Portal to Avernus";
+	aportalgoesto = "avernus";
+	desc = "The portal stands as a jagged wound in reality, a swirling vortex of infernal flame and shadow that seems to pulse with a life of its own. Etched into ancient, crumbling stone are sigils of a forgotten infernal tongue, glowing a deep, ominous red. The air around it is heavy with the stench of brimstone and the faint, mournful echoes of lost souls. Beyond the threshold, visions of a desolate, war-torn landscape flicker—endless fields of scorched earth, jagged obsidian peaks, and rivers of molten fire marking the realm of Avernus. The portal’s tumultuous energy hums with a promise of eternal conflict, daring any who approach to step into a domain where the very laws of nature are subverted by the relentless forces of hell."
+	},
+/obj/effect/decal/cleanable/roguerune/arcyne/summoning/adv{
+	name = "warding rune of Selûne and Bahamut";
+	desc = "A blessed rune meant to ward off demons from the portal and purge them back to the nine hells"
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/crags)
+"PZ" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/crags)
 "Qu" = (
 /obj/structure/fluff/grindwheel,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors)
-"QQ" = (
-/turf/open/floor/rogue/dirt,
+"QS" = (
+/turf/open/water/swamp/deep,
 /area/rogue/outdoors/crags)
 "RF" = (
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/river)
-"RH" = (
-/turf/open/water/swamp/deep,
-/turf/closed/mineral/random/rogue/high,
-/turf/closed/mineral/random/rogue/high,
-/area/rogue/outdoors/crags)
 "Sd" = (
 /obj/structure/stairs/stone{
 	dir = 8
@@ -394,9 +426,8 @@
 /obj/machinery/light/rogue/forge,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors)
-"Zt" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/infernal/imp,
-/turf/open/floor/rogue/dirt,
+"Zc" = (
+/turf/open/water/pond,
 /area/rogue/outdoors/crags)
 
 (1,1,1) = {"
@@ -3479,7 +3510,7 @@ Jw
 fH
 fH
 fH
-ie
+Zc
 fH
 Nk
 Nk
@@ -3628,8 +3659,8 @@ ie
 ie
 Jw
 Jw
-QQ
-QQ
+PZ
+PZ
 Jw
 ie
 ie
@@ -3778,22 +3809,22 @@ ie
 bk
 fH
 Nk
-fH
+bk
 ie
 ie
 ie
 Jw
 Jw
-QQ
-Zt
-QQ
-QQ
-QQ
+PZ
+PZ
+PZ
+PZ
+PZ
 ie
-QQ
+PZ
 ie
-QQ
-QQ
+PZ
+PZ
 fH
 Nk
 Nk
@@ -3935,31 +3966,31 @@ fH
 fH
 fH
 ie
-ie
+Ca
 Jw
 Jw
 Jw
 Jw
-QQ
+PZ
 Jw
 Jw
 Jw
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
 Nk
 Nk
 Nk
 Nk
 Nk
-ie
+Zc
 Nk
 fH
 fH
@@ -4092,32 +4123,32 @@ ie
 ie
 ie
 ie
-ie
+Ca
 Jw
-iP
-iP
-iP
-iP
-iP
-iP
-iP
-Lb
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
+Jw
+Jw
+Jw
+Jw
+Jw
+Jw
+Jw
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
 Nk
-ie
+Zc
 Nk
-ie
+Zc
 Nk
-QQ
-QQ
+PZ
+PZ
 fH
 fH
 Uq
@@ -4245,36 +4276,36 @@ Nk
 Nk
 Nk
 Nk
-cA
+Ca
+Ca
+Ca
+Ca
+Ca
 Jw
-Jw
-Jw
-Jw
-Jw
-iP
-ie
-Jw
-ie
-Jw
-ie
-iP
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-ie
+tL
+tL
+tL
+tL
+tL
+tL
+tL
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+Zc
 fH
 fH
 fH
@@ -4402,36 +4433,36 @@ Nk
 Nk
 Nk
 Nk
-Nk
-ja
-ja
-QQ
+Ca
+rc
+rc
+PZ
 Jw
-hT
-iP
-QQ
-QQ
-QQ
-QQ
-QQ
-iP
-QQ
 Jw
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
-QQ
+tL
+Ng
+PZ
+AC
+PZ
+mH
+tL
+PZ
+Jw
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
+PZ
 fH
 fH
 Uq
@@ -4559,35 +4590,35 @@ Nk
 Nk
 Nk
 Nk
-Nk
+Ca
 Jw
-ja
-ja
-QQ
-ja
-iP
-QQ
+rc
+rc
+PZ
+rc
+tL
+PZ
 Jw
 Jw
 Jw
-QQ
-iP
-QQ
+PZ
+tL
+PZ
 Jw
-QQ
-ie
-QQ
-ie
+PZ
+Zc
+PZ
+Zc
 fH
 Nk
 Nk
 Nk
-ie
+Zc
 Nk
-ie
-ie
-QQ
-QQ
+Zc
+Zc
+PZ
+PZ
 Nk
 Nk
 Nk
@@ -4716,36 +4747,36 @@ Nk
 Nk
 Nk
 Nk
-Nk
+Ca
 Jw
 Jw
-ja
-ja
-ja
-iP
+rc
+rc
+rc
+tL
+da
 Jw
+PS
 Jw
-lS
+jM
+tL
+PZ
 Jw
-Jw
-iP
-QQ
-Jw
-QQ
-ie
-ie
-ie
+PZ
+Zc
+Zc
+Zc
 fH
-ie
+Zc
 Nk
 Nk
 Nk
 Nk
 Nk
-ie
-QQ
-QQ
-ie
+Zc
+PZ
+PZ
+Zc
 nE
 nE
 nE
@@ -4873,24 +4904,24 @@ Nk
 Nk
 Nk
 Nk
-Nk
-ja
-ja
-ja
+Ca
+rc
+rc
+rc
 Jw
-QQ
-iP
-QQ
-Jw
-Jw
-Jw
-QQ
-iP
+PZ
+tL
+PZ
 Jw
 Jw
-QQ
-ie
-ie
+Jw
+PZ
+tL
+Jw
+Jw
+PZ
+Zc
+Zc
 fH
 fH
 bk
@@ -4899,10 +4930,10 @@ Nk
 Nk
 Nk
 Nk
-ie
-QQ
-QQ
-QQ
+Zc
+PZ
+PZ
+PZ
 nE
 nE
 nE
@@ -5030,24 +5061,24 @@ Nk
 Nk
 Nk
 Nk
-cA
+Ca
+Ca
+Ca
+Ca
+Ca
 Jw
+tL
+nW
+PZ
+ec
+PZ
+MD
+tL
 Jw
-Jw
-si
-Jw
-iP
-QQ
-QQ
-QQ
-QQ
-QQ
-iP
-Jw
-QQ
-QQ
-ie
-ie
+PZ
+PZ
+Zc
+Zc
 fH
 bk
 fH
@@ -5058,9 +5089,9 @@ Nk
 Nk
 Nk
 Nk
-QQ
-QQ
-QQ
+PZ
+PZ
+PZ
 wq
 wq
 wq
@@ -5191,19 +5222,19 @@ ie
 ie
 ie
 ie
-ie
+Ca
 Jw
-iP
-ie
-Jw
-ie
-Jw
-ie
-iP
-QQ
-QQ
-QQ
-QQ
+tL
+tL
+tL
+tL
+tL
+tL
+tL
+PZ
+PZ
+PZ
+PZ
 Nk
 fH
 ie
@@ -5348,16 +5379,16 @@ bk
 fH
 ie
 fH
-ie
+Ca
 Jw
-iP
-iP
-iP
-iP
-iP
-iP
-iP
-QQ
+Jw
+Jw
+Jw
+Jw
+Jw
+Jw
+Jw
+PZ
 ie
 ie
 ie
@@ -5505,15 +5536,15 @@ bk
 ie
 fH
 fH
-fH
-fH
+bk
+bk
 Jw
 Jw
-QQ
-si
-QQ
-Lb
-QQ
+PZ
+Jw
+PZ
+PZ
+PZ
 Jw
 ie
 ie
@@ -5662,12 +5693,12 @@ bk
 bk
 bk
 ie
-fH
-fH
+bk
+bk
 ie
 ie
 Jw
-QQ
+PZ
 Jw
 Jw
 Jw
@@ -5819,7 +5850,7 @@ bk
 fH
 fH
 bk
-fH
+bk
 ie
 fH
 ie
@@ -5833,8 +5864,8 @@ fH
 Nk
 fH
 bk
-jx
-jx
+mZ
+mZ
 Nk
 Nk
 Nk
@@ -5989,9 +6020,9 @@ fH
 fH
 ie
 bk
-jx
-gG
-RH
+mZ
+KB
+Oy
 Nk
 Nk
 Nk
@@ -6146,9 +6177,9 @@ fH
 bk
 fH
 fH
-jx
-RH
-jx
+mZ
+Oy
+mZ
 Nk
 Nk
 nE
@@ -6302,10 +6333,10 @@ Nk
 Nk
 bk
 fH
-jx
-jx
-RH
-jx
+mZ
+mZ
+Oy
+mZ
 Nk
 Nk
 nE
@@ -6459,10 +6490,10 @@ ie
 fH
 fH
 fH
-jx
-jx
-RH
-jx
+mZ
+mZ
+Oy
+mZ
 Nk
 Nk
 wq
@@ -6611,15 +6642,15 @@ fH
 bk
 fH
 Nk
-av
+QS
 Nk
 Nk
 Nk
 Nk
-jx
-jx
-RH
-jx
+mZ
+mZ
+Oy
+mZ
 Nk
 Nk
 wq

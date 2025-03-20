@@ -23,7 +23,7 @@
 
 	fueluse = 30 MINUTES
 	start_fuel = 5 MINUTES
-	fuel_modifier = 0.33
+	fuel_modifier = 1
 	crossfire = FALSE
 
 /obj/machinery/light/rogue/smelter/attackby(obj/item/W, mob/living/user, params)

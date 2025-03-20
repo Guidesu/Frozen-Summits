@@ -336,7 +336,7 @@
 	var/transform_sound = 'sound/music/wolfintro.ogg'
 	var/list/transform_messages = list(
 		"Your body begins to change violently!",
-		"You feel an uncontrollable urge to howl!"
+		"You feel an uncontrollable urge to roar!"
 	)
 
 /datum/shapeshift_data/werewolf_male
@@ -466,7 +466,7 @@
 
 /mob/living/carbon/human/proc/werewolf_regenerate()
 	set name = "Devour & Regenerate"
-	set category = "LYCANTHROPY"
+	set category = "IC"
 	
 	
 	// Cooldown check

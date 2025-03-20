@@ -926,8 +926,8 @@
 /turf/open/water/swamp,
 /area/rogue/under/cave)
 "acZ" = (
-/obj/machinery/light/rogue/oven/south,
-/turf/open/floor/rogue/ruinedwood,
+/obj/structure/roguerock,
+/turf/closed/wall/mineral/rogue/wood,
 /area/rogue/indoors/town)
 "ada" = (
 /turf/open/floor/rogue/snow{
@@ -935,7 +935,10 @@
 	},
 /area/rogue/outdoors/town)
 "adb" = (
-/obj/structure/fermenting_barrel/water,
+/obj/machinery/light/rogue/torchholder{
+	dir = 4
+	},
+/obj/machinery/light/rogue/oven/east,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
 "adc" = (
@@ -5741,13 +5744,9 @@
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/town)
 "iSJ" = (
-/obj/structure/mineral_door/wood/donjon{
-	name = "Flints House";
-	lockid = "flints";
-	dir = 1
-	},
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town)
+/obj/structure/roguerock,
+/turf/open/water/ocean,
+/area/rogue/under/cave)
 "iSL" = (
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
@@ -8487,10 +8486,6 @@
 /area/rogue/indoors/town/garrison)
 "nyn" = (
 /obj/structure/table/wood,
-/obj/item/roguekey/custom{
-	name = "Flints House Key";
-	lockid = "flints"
-	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town)
 "nAg" = (
@@ -12258,6 +12253,10 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
+"ucH" = (
+/obj/item/natural/rock/salt,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/under/cave)
 "udt" = (
 /obj/structure/closet/crate/chest/neu,
 /obj/item/reagent_containers/powder/salt,
@@ -13908,12 +13907,8 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town/tavern)
 "wVM" = (
-/obj/structure/mineral_door/wood/donjon{
-	lockid = "flints";
-	dir = 8
-	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/indoors/town)
+/turf/open/water/ocean,
+/area/rogue/under/cave)
 "wVQ" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/rogue/naturalstone,
@@ -14550,13 +14545,15 @@
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
 	},
-/obj/item/cooking/pan{
-	pixel_y = 28
-	},
 /obj/item/rogueweapon/huntingknife/chefknife{
 	pixel_y = 6;
 	pixel_x = -10
 	},
+/obj/structure/fluff/millstone{
+	pixel_x = -7;
+	pixel_y = -3
+	},
+/obj/item/cooking/pan,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
 "ygP" = (
@@ -14614,12 +14611,6 @@
 "ymg" = (
 /turf/open/water/cleanshallow,
 /area/rogue/outdoors/rtfield)
-"ymi" = (
-/obj/structure/mineral_door/wood{
-	lockid = "houseshop"
-	},
-/turf/open/floor/rogue/twig,
-/area/rogue/indoors/town)
 
 (1,1,1) = {"
 pNQ
@@ -24046,11 +24037,11 @@ hWI
 hWI
 uBR
 uBR
-etD
-etD
-etD
-etD
-uBR
+wVM
+iSJ
+wVM
+wVM
+wVM
 uBR
 uBR
 uBR
@@ -24203,14 +24194,14 @@ lfj
 hWI
 hWI
 uBR
-uBR
-etD
-etD
-etD
-etD
-etD
-etD
-etD
+wVM
+wVM
+wVM
+wVM
+wVM
+wVM
+wVM
+wVM
 etD
 etD
 etD
@@ -24326,9 +24317,9 @@ hWI
 xXW
 bYv
 bYv
-bYv
-wVM
-bYv
+iax
+iax
+iax
 bYv
 bYv
 hWI
@@ -24361,13 +24352,13 @@ vDe
 hWI
 hWI
 hWI
-uBR
-uBR
-etD
-etD
-etD
-etD
-etD
+wVM
+wVM
+wVM
+wVM
+wVM
+wVM
+wVM
 etD
 etD
 etD
@@ -24520,12 +24511,12 @@ xXW
 hWI
 hWI
 uBR
-uBR
-uBR
-etD
-etD
-etD
-etD
+wVM
+wVM
+ucH
+sbR
+iSJ
+wVM
 etD
 etD
 etD
@@ -24677,14 +24668,14 @@ xXW
 xXW
 hWI
 hWI
-hWI
-uBR
-uBR
-uBR
-etD
-etD
-etD
-etD
+ucH
+wVM
+wVM
+sbR
+sbR
+sbR
+wVM
+iSJ
 etD
 etD
 yaE
@@ -24835,14 +24826,14 @@ vDe
 xXW
 hWI
 hWI
-hWI
-uBR
-uBR
-uBR
-uBR
-etD
-etD
-etD
+sbR
+iSJ
+wVM
+wVM
+sbR
+ucH
+wVM
+wVM
 etD
 etD
 yaE
@@ -24993,13 +24984,13 @@ xXW
 xXW
 vDe
 hWI
-hWI
-hWI
-uBR
-uBR
-uBR
-uBR
-etD
+ucH
+wVM
+wVM
+wVM
+wVM
+wVM
+wVM
 etD
 etD
 etD
@@ -25151,13 +25142,13 @@ xXW
 xXW
 xXW
 hWI
-hWI
-hWI
-hWI
-hWI
-uBR
-uBR
-uBR
+wVM
+wVM
+iSJ
+wVM
+wVM
+wVM
+iSJ
 etD
 etD
 etD
@@ -25310,12 +25301,12 @@ xXW
 xXW
 vDe
 hWI
-hWI
-hWI
-hWI
-hWI
-uBR
-uBR
+wVM
+wVM
+wVM
+wVM
+wVM
+wVM
 uBR
 etD
 etD
@@ -25471,8 +25462,8 @@ xXW
 vDe
 vDe
 hWI
-hWI
-hWI
+wVM
+iSJ
 hWI
 uBR
 uBR
@@ -27840,7 +27831,7 @@ dFC
 dFC
 dFC
 fJU
-ccX
+acZ
 ccX
 ccX
 ccX
@@ -48821,7 +48812,7 @@ acN
 fUV
 acN
 acN
-iSJ
+cpp
 rej
 xDp
 rej
@@ -49464,8 +49455,8 @@ ccX
 fzp
 fzp
 lRw
-acZ
-ats
+lRw
+adb
 ygb
 lRw
 xDp
@@ -49618,11 +49609,11 @@ oWz
 oWz
 fzp
 ccX
-fzp
+ccX
 fzp
 fzp
 ccX
-adb
+fzp
 fzp
 dYH
 adc
@@ -50428,7 +50419,7 @@ tVC
 tVC
 tVC
 lyP
-kWL
+pha
 puh
 rej
 rej
@@ -50586,7 +50577,7 @@ tdL
 bWh
 kWL
 kWL
-pha
+kWL
 kWL
 puh
 iGv
@@ -56279,7 +56270,7 @@ jrj
 kwz
 mDW
 mDW
-ymi
+gaK
 rej
 rej
 rej

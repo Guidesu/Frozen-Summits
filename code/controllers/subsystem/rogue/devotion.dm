@@ -248,7 +248,7 @@
 
 /mob/living/carbon/human/proc/changevoice()
 	set name = "Change Second Voice (Can only use Once!)"
-	set category = "Virtue"
+	set category = "IC"
 
 	var/newcolor = input(src, "Choose your character's SECOND voice color:", "VIRTUE","#a0a0a0") as color|null
 	if(newcolor)
@@ -261,7 +261,7 @@
 
 /mob/living/carbon/human/proc/swapvoice()
 	set name = "Swap Voice"
-	set category = "Virtue"
+	set category = "IC"
 
 	if(!second_voice)
 		to_chat(src, span_info("I haven't decided on my second voice yet."))
