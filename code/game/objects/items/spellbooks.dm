@@ -245,19 +245,19 @@
 /obj/item/book/granter/spellbook/expert
 	name = "Masterwork Grimoire"
 	desc = "Flawless vellum pages bear iridescent ink recipes. Bound in chimera leather cured during a lunar eclipse. Glows warmly when near its creator. Contains personalized spell variants refined over decades."
-	bookquality = 6
+	bookquality = 5
 	sellprice = 200
 
 /obj/item/book/granter/spellbook/master
 	name = "Arcane Magnum Opus"
 	desc = "A lifetime's work containing original spells. Pages made from phase spider silk, ink from bottled spellplague. Must be fed monthly with rare components to prevent magical decay."
-	bookquality = 8
+	bookquality = 6
 	sellprice = 250
 
 /obj/item/book/granter/spellbook/legendary
 	name = "Living Spellcodex"
 	desc = "Its creator poured their soul into this sentient book. Pages rewrite themselves using stolen Weave threads. Screams softly when spells are added without proper sacrifices."
-	bookquality = 12
+	bookquality = 8
 	sellprice = 400
 
 /obj/item/book/granter/spellbook/debug
