@@ -234,3 +234,9 @@
 	wdefense = 5
 	is_silver = TRUE
 	smeltresult = /obj/item/ingot/silver
+
+/obj/item/rogueweapon/whip/antique/psywhip
+	name = "daybreak"
+	desc = "I am wrath. I am silver."
+	icon_state = "psywhip"
+	is_silver = TRUE
