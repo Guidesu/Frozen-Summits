@@ -26,7 +26,6 @@ GLOBAL_LIST_INIT(glass_recipes, list ( \
 	grind_results = list(/datum/reagent/silicon = 20)
 	material_type = /datum/material/glass
 	point_value = 1
-	tableVariant = /obj/structure/table/glass
 
 /obj/item/stack/sheet/glass/suicide_act(mob/living/carbon/user)
 	user.visible_message(span_suicide("[user] begins to slice [user.p_their()] neck with \the [src]! It looks like [user.p_theyre()] trying to commit suicide!"))

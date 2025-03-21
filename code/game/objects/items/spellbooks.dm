@@ -527,10 +527,10 @@
 	arcyne_potency = 10
 
 /obj/item/roguegem/blue
-	arcyne_potency = 25
+	arcyne_potency = 15
 
 /obj/item/roguegem/diamond
-	arcyne_potency = 15
+	arcyne_potency = 25
 
 
 

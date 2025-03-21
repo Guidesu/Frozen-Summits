@@ -16,7 +16,7 @@
 	var/datum/techweb/linked_techweb
 	light_color = LIGHT_COLOR_BLUE
 	var/list/linked_stasisbeds
-
+/*
 /obj/machinery/computer/operating/Initialize()
 	. = ..()
 	linked_techweb = SSresearch.science_tech
@@ -119,3 +119,4 @@
 
 #undef MENU_OPERATION
 #undef MENU_SURGERIES
+*/

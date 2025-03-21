@@ -349,25 +349,7 @@
 	else
 		return ..()
 
-// chance2learn buff shit
-
-/obj/item/roguegem
-	var/arcyne_potency = 20
-
-/obj/item/roguegem/yellow
-	arcyne_potency = 5
-
-/obj/item/roguegem/green
-	arcyne_potency = 7
-
-/obj/item/roguegem/violet
-	arcyne_potency = 10
-
-/obj/item/roguegem/blue
-	arcyne_potency = 15
-
-/obj/item/roguegem/diamond
-	arcyne_potency = 25
+// chance2learn buff shit 
 
 /obj/item/roguegem/amethyst
 	name = "amethyst"

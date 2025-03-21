@@ -1,6 +1,6 @@
 /mob/living/carbon/human/proc/overwrite_cbt_music_to_bg3()
 	set name = "Change cmusic to BG3 music"
-	set category = "OOC"
+	set category = "IC"
 	set desc = "Replace your character's combat music with BG3 tracks"
 
 	// Confirmation prompt

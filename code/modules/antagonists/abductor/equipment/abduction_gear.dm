@@ -740,9 +740,9 @@ Congratulations! You are now trained for invasive xenobiology research!"}
 	name = "alien table frame"
 	desc = ""
 	icon_state = "alien_frame"
-	framestack = /obj/item/stack/sheet/mineral/abductor
-	framestackamount = 1
-
+//	framestack = /obj/item/stack/sheet/mineral/abductor
+//	framestackamount = 1
+/*
 /obj/structure/table_frame/abductor/attackby(obj/item/I, mob/user, params)
 	if(I.tool_behaviour == TOOL_WRENCH)
 		to_chat(user, span_notice("I start disassembling [src]..."))
@@ -774,7 +774,7 @@ Congratulations! You are now trained for invasive xenobiology research!"}
 			P.use(1)
 			new /obj/structure/table/optable/abductor(src.loc)
 			qdel(src)
-
+*/
 /obj/structure/table/abductor
 	name = "alien table"
 	desc = ""

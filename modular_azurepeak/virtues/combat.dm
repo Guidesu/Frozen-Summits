@@ -31,7 +31,7 @@
 	if (!recipient.devotion)
 		// only give non-devotionists orison... and t0 for some reason (this is probably a bad idea)
 		var/datum/devotion/new_faith = new /datum/devotion(recipient, recipient.patron)
-		var/datum/patron/our_patron = new_faith.patron
+//		var/datum/patron/our_patron = new_faith.patron
 		new_faith.max_devotion = CLERIC_REQ_1 - 20
 		new_faith.max_progression = CLERIC_REQ_1 - 20
 		recipient.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)

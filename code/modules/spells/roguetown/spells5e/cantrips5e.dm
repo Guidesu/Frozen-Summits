@@ -627,7 +627,7 @@
 /datum/status_effect/buff/thought_guidance5e
 	id = "thought_guidance"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/thought_guidance5e
-	duration = 1 MINUTES
+	duration = 2 MINUTES
 	effectedstats = list("intelligence" = 4)
 	var/outline_colour ="#297ba0"
 	var/mob/living/carbon/giver

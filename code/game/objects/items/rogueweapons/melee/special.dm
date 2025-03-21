@@ -319,6 +319,7 @@
 	name = "skinning knife"
 	desc = "More than one way to skin a seelie."
 	icon_state = "skinningknife"
+
 /obj/item/rogueweapon/knuckles/bronzeknuckles
 	name = "bronze knuckles"
 	desc = "A mean looking pair of bronze knuckles. Mildly heavier than it's steel counterpart, making it a solid defensive option, if less wieldy."

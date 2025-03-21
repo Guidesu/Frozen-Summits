@@ -130,8 +130,8 @@
 			if(type in surgical_processor.advanced_surgery_steps)
 				return TRUE
 
-	var/turf/target_turf = get_turf(target)
-
+//	var/turf/target_turf = get_turf(target)
+/*
 	// Get the relevant operating computer
 	var/obj/machinery/computer/operating/opcomputer
 	var/obj/structure/table/optable/table = locate(/obj/structure/table/optable) in target_turf
@@ -151,7 +151,7 @@
 	if(!(type in opcomputer.advanced_surgery_steps))
 		return FALSE
 	return TRUE
-
+*/
 /datum/surgery_step/proc/validate_user(mob/user, mob/living/target, target_zone, datum/intent/intent)
 	SHOULD_CALL_PARENT(TRUE)
 	if(possible_locs && !(target_zone in possible_locs))

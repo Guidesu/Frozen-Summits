@@ -438,12 +438,16 @@
 /datum/status_effect/buff/fortify //Increases all healing while it lasts.
 	id = "fortify"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/fortify
-	duration = 1 MINUTES
+	duration = 2 MINUTES
+
+
+
+
 
 /datum/status_effect/buff/fortitude
 	id = "fortitude"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/fortitude
-	duration = 1 MINUTES
+	alert_type =/atom/movable/screen/alert/status_effect/buff/fortitude5e
+	duration = 5 MINUTES
 
 /datum/status_effect/buff/fortitude/on_apply()
 	. = ..()
@@ -455,10 +459,12 @@
 	to_chat(owner, span_warning("The weight of the world rests upon my shoulders once more."))
 	REMOVE_TRAIT(owner, TRAIT_FORTITUDE, MAGIC_TRAIT)
 
-/datum/status_effect/buff/fortitude/on_remove()
-	. = ..()
-	to_chat(owner, span_warning("The weight of the world rests upon my shoulders once more."))
-	REMOVE_TRAIT(owner, TRAIT_FORTITUDE, MAGIC_TRAIT)
+/atom/movable/screen/alert/status_effect/buff/fortitude5e
+	name = "fortitude"
+	desc = "The typical drain I feel from day to day life is lessened, my athleticism greater."
+	icon_state = "buff"
+
+
 
 #define GUIDANCE_FILTER "guidance_glow"
 /atom/movable/screen/alert/status_effect/buff/guidance
@@ -470,7 +476,7 @@
 	var/outline_colour ="#f58e2d"
 	id = "guidance"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/guidance
-	duration = 1 MINUTES
+	duration = 5 MINUTES
 
 /datum/status_effect/buff/guidance/on_apply()
 	. = ..()

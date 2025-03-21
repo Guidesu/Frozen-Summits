@@ -241,7 +241,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/mapping_helpers/no_lava)
 	late = TRUE
 	icon_state = "iansbdayhelper"
 	var/balloon_clusters = 2
-
+/*
 /obj/effect/mapping_helpers/ianbirthday/LateInitialize()
 //	if(locate(/datum/holiday/ianbirthday) in SSevents.holidays)
 //		birthday()
@@ -251,7 +251,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/mapping_helpers/no_lava)
 	var/area/a = get_area(src)
 	var/list/table = list()//should only be one aka the front desk, but just in case...
 	var/list/openturfs = list()
-
+*/
+/*
 	//confetti and a corgi balloon! (and some list stuff for more decorations)
 	for(var/thing in a.contents)
 		if(istype(thing, /obj/structure/table/reinforced))
@@ -292,13 +293,12 @@ INITIALIZE_IMMEDIATE(/obj/effect/mapping_helpers/no_lava)
 			if(!placed)
 				new /obj/item/toy/balloon(clusterspot)
 	//remind me to add wall decor!
-
+*/
 /obj/effect/mapping_helpers/ianbirthday/admin//so admins may birthday any room
 	name = "generic birthday setup"
 	icon_state = "bdayhelper"
 
 /obj/effect/mapping_helpers/ianbirthday/admin/LateInitialize()
-	birthday()
 	qdel(src)
 
 //lets mappers place notes on airlocks with custom info or a pre-made note from a path

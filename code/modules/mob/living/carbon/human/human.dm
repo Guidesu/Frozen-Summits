@@ -56,6 +56,8 @@
 	verbs += /mob/living/carbon/human/proc/rp_dice_roll
 	verbs += /mob/living/carbon/human/verb/gm_note
 	verbs += /mob/living/carbon/human/verb/refund_spell
+	verbs += /mob/living/carbon/human/verb/pray_boon
+	verbs += /mob/living/carbon/human/verb/adjust_pixel_position
 
 	icon_state = ""		//Remove the inherent human icon that is visible on the map editor. We're rendering ourselves limb by limb, having it still be there results in a bug where the basic human icon appears below as south in all directions and generally looks nasty.
 
