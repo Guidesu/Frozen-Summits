@@ -3798,6 +3798,7 @@
 #include "modular_guidesa\shelf_nova.dm"
 #include "modular_guidesa\special_sword.dm"
 #include "modular_guidesa\stats_quirk_guidesa.dm"
+#include "modular_guidesa\tamira_far_travel.dm"
 #include "modular_guidesa\turfs.dm"
 #include "modular_guidesa\weapons.dm"
 #include "modular_guidesa\adv_classes_d&d\barbarian.dm"
