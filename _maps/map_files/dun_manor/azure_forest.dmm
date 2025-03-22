@@ -5375,13 +5375,6 @@
 /obj/item/natural/stone,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
-"SC" = (
-/turf/closed/mineral/random/rogue,
-/turf/open/water/river{
-	dir = 4;
-	icon_state = "rockwd"
-	},
-/area/rogue/outdoors/woods)
 "SF" = (
 /obj/structure/fluff/alch,
 /turf/open/floor/rogue/cobble,
@@ -17369,7 +17362,7 @@ gC
 gC
 gC
 gC
-lz
+gC
 gC
 kV
 kV
@@ -17678,10 +17671,10 @@ jW
 jW
 MK
 jW
-kV
 gC
-kV
-kV
+gC
+gC
+gC
 gC
 gC
 gC
@@ -17837,8 +17830,8 @@ MK
 jW
 gC
 gC
-kV
-kV
+gC
+gC
 gC
 gC
 aW
@@ -17994,8 +17987,8 @@ MK
 jW
 gC
 gC
-kV
-kV
+gC
+gC
 gC
 gC
 kV
@@ -18152,7 +18145,7 @@ OS
 gC
 gC
 gC
-kV
+gC
 gC
 gC
 kV
@@ -18309,7 +18302,7 @@ gC
 gC
 gC
 gC
-kV
+gC
 gC
 gC
 kV
@@ -18622,8 +18615,8 @@ OS
 OS
 TK
 TK
-NO
-NO
+gC
+gC
 gC
 aW
 kV
@@ -19250,7 +19243,7 @@ OS
 TK
 TK
 gC
-SC
+gC
 NO
 gC
 kV
@@ -19407,7 +19400,7 @@ OS
 TK
 TK
 gC
-SC
+gC
 NO
 gC
 kV
@@ -19564,7 +19557,7 @@ OS
 TK
 TK
 TK
-NO
+gC
 NO
 aW
 kV
@@ -19723,7 +19716,7 @@ gC
 gC
 NO
 NO
-jW
+pm
 kV
 kV
 kV
@@ -19880,7 +19873,7 @@ gC
 gC
 gC
 gC
-jW
+pm
 kV
 kV
 kV
@@ -20037,7 +20030,7 @@ gC
 gC
 gC
 gC
-jW
+pm
 pm
 kV
 kV
@@ -42021,7 +42014,7 @@ ew
 ew
 ew
 ew
-ew
+pm
 pm
 pm
 Ek
@@ -42178,7 +42171,7 @@ ew
 ew
 ew
 ew
-ew
+pm
 jW
 pm
 Ek
@@ -42334,7 +42327,7 @@ ew
 ew
 ew
 ew
-ew
+pm
 pm
 pm
 pm
@@ -42491,7 +42484,7 @@ ew
 ew
 ew
 ew
-ew
+pm
 pm
 Ek
 jW
@@ -42648,7 +42641,7 @@ ew
 ew
 ew
 ew
-ew
+pm
 pm
 pm
 By
@@ -42805,7 +42798,7 @@ ew
 ew
 ew
 ew
-ew
+pm
 pm
 pm
 By
@@ -42962,8 +42955,8 @@ ew
 ew
 ew
 ew
-ew
-ew
+pm
+pm
 pm
 By
 By
@@ -43118,8 +43111,8 @@ ew
 ew
 ew
 ew
-ew
-ew
+pm
+pm
 pm
 pm
 Ek
@@ -43275,9 +43268,9 @@ ew
 ew
 ew
 ew
-ew
-ew
-ew
+pm
+pm
+pm
 By
 Ek
 jW
@@ -43432,9 +43425,9 @@ ew
 ew
 ew
 ew
-ew
-ew
-ew
+pm
+pm
+pm
 jW
 By
 jW
@@ -43589,8 +43582,8 @@ ew
 ew
 ew
 ew
-ew
-ew
+pm
+pm
 pm
 pm
 pm
@@ -43746,8 +43739,8 @@ ew
 ew
 ew
 ew
-ew
-ew
+pm
+pm
 pm
 Ek
 pm

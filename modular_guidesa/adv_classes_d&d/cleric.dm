@@ -20,11 +20,49 @@
 
 	// CLASS ARCHETYPES
 	H.adjust_blindness(-3)
-	var/classes = list("Cantor","Missionary")
+	var/classes = list("Cleric", "Cantor","Missionary")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
 
+
+
+		if("Cleric")
+			to_chat(src, span_warning("Clerics are intermediaries between the mortal world and the distant planes of the gods. As varied as the gods they serve, clerics strive to embody the handiwork of their deities. No ordinary priest, a cleric is imbued with divine magic."))
+			H.set_blindness(0)
+			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
+			H.change_stat("perception", 1)
+			H.change_stat("strength", 2)
+			H.change_stat("constitution", 2) // Classic paladin is faster then the battle master.
+			H.change_stat("endurance", 1)
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			pants = /obj/item/clothing/under/roguetown/chainlegs
+			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
+			belt = /obj/item/storage/belt/rogue/leather/steel
+			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
+			beltr = /obj/item/rogueweapon/huntingknife
+			id = /obj/item/clothing/ring/silver
+			backr = /obj/item/rogueweapon/sword
+			backl = /obj/item/storage/backpack/rogue/satchel
+			backpack_contents = list(
+								/obj/item/flashlight/flare/torch = 1,
+								)
 		if("Cantor")
 			H.set_blindness(0)
 			to_chat(H, span_warning("You were a bard once - but you've found a new calling. Your eyes have been opened to the divine, now you wander from city to city singing songs and telling tales of your patron's greatness."))
@@ -103,7 +141,7 @@
 				if("Vocal Talisman")
 					backr = /obj/item/rogue/instrument/vocals
 
-		if("Cleric")
+		if("Missionary")
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are a devout worshipper of the divine with a strong connection to your patron god. You've spent years studying scriptures and serving your deity - now you wander into foreign lands, spreading the word of your faith."))
 			backl = /obj/item/storage/backpack/rogue/satchel

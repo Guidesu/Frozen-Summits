@@ -35,6 +35,7 @@
 	var/initial_sl
 	var/list/possible_enhancements
 	resistance_flags = FIRE_PROOF
+	slot_flags = ITEM_SLOT_BACK
 
 /obj/item/rogueweapon/Initialize()
 	. = ..()
