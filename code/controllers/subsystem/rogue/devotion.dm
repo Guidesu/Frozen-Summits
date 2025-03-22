@@ -146,9 +146,10 @@
 		H.mind.AddSpell(newspell)
 		LAZYADD(granted_spells, newspell)
 	level = CLERIC_T0
-	passive_devotion_gain = 0.5
+	passive_devotion_gain = 1
 	max_devotion = CLERIC_REQ_4 //Max devotion limit - Churchlings only get diagnose and lesser miracle.
 	max_progression = CLERIC_REQ_0
+	START_PROCESSING(SSobj, src)
 
 /datum/devotion/proc/grant_spells_priest(mob/living/carbon/human/H)
 	if(!H || !H.mind || !patron)
