@@ -49,11 +49,13 @@
 			H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
 			H.change_stat("perception", 1)
 			H.change_stat("strength", 2)
-			H.change_stat("constitution", 2) // Classic paladin is faster then the battle master.
+			H.change_stat("constitution", 2)
 			H.change_stat("endurance", 1)
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+			armor = /obj/item/clothing/suit/roguetown/armor/plate/half
 			pants = /obj/item/clothing/under/roguetown/chainlegs
+			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
+			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			belt = /obj/item/storage/belt/rogue/leather/steel
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltr = /obj/item/rogueweapon/huntingknife
