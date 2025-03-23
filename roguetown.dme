@@ -3789,6 +3789,7 @@
 #include "modular_guidesa\dice_roll.dm"
 #include "modular_guidesa\general_stuffs.dm"
 #include "modular_guidesa\gm_talking_rp.dm"
+#include "modular_guidesa\guidesa_statpack.dm"
 #include "modular_guidesa\holy_weapons.dm"
 #include "modular_guidesa\items.dm"
 #include "modular_guidesa\learn_spell.dm"

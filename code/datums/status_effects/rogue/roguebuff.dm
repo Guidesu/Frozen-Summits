@@ -444,24 +444,26 @@
 
 
 
-/datum/status_effect/buff/fortitude
+/datum/status_effect/buff/fortitude5e
 	id = "fortitude"
 	alert_type =/atom/movable/screen/alert/status_effect/buff/fortitude5e
 	duration = 5 MINUTES
 
-/datum/status_effect/buff/fortitude/on_apply()
+/datum/status_effect/buff/fortitude5e/on_apply()
 	. = ..()
 	to_chat(owner, span_warning("My body feels lighter..."))
 	ADD_TRAIT(owner, TRAIT_FORTITUDE, MAGIC_TRAIT)
+	ADD_TRAIT(owner, TRAIT_CRITICAL_RESISTANCE, MAGIC_TRAIT)
 
-/datum/status_effect/buff/fortitude/on_remove()
+/datum/status_effect/buff/fortitude5e/on_remove()
 	. = ..()
 	to_chat(owner, span_warning("The weight of the world rests upon my shoulders once more."))
-	REMOVE_TRAIT(owner, TRAIT_FORTITUDE, MAGIC_TRAIT)
+	ADD_TRAIT(owner, TRAIT_FORTITUDE, MAGIC_TRAIT)
+	ADD_TRAIT(owner, TRAIT_CRITICAL_RESISTANCE, MAGIC_TRAIT)
 
 /atom/movable/screen/alert/status_effect/buff/fortitude5e
 	name = "fortitude"
-	desc = "The typical drain I feel from day to day life is lessened, my athleticism greater."
+	desc = "The typical drain I feel from day to day life is lessened, my athleticism greater. As is my body against critical strikes."
 	icon_state = "buff"
 
 

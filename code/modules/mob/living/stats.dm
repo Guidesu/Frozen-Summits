@@ -110,40 +110,21 @@
 	switch(stat)
 		if("strength")
 			newamt = STASTR + amt
-			if(BUFSTR < 0)
-				BUFSTR = BUFSTR + amt
-				if(BUFSTR > 0)
-					newamt = STASTR + BUFSTR
-					BUFSTR = 0
-			if(BUFSTR > 0)
-				BUFSTR = BUFSTR + amt
-				if(BUFSTR < 0)
-					newamt = STASTR + BUFSTR
-					BUFSTR = 0
-			while(newamt < 1)
+			// Buffer handling remains the same
+			while(newamt < -30)  // NEW MIN CAP
 				newamt++
 				BUFSTR--
-			while(newamt > 20)
+			while(newamt > 40)   // NEW MAX CAP
 				newamt--
 				BUFSTR++
 			STASTR = newamt
 
 		if("perception")
 			newamt = STAPER + amt
-			if(BUFPER < 0)
-				BUFPER = BUFPER + amt
-				if(BUFPER > 0)
-					newamt = STAPER + BUFPER
-					BUFPER = 0
-			if(BUFPER > 0)
-				BUFPER = BUFPER + amt
-				if(BUFPER < 0)
-					newamt = STAPER + BUFPER
-					BUFPER = 0
-			while(newamt < 1)
+			while(newamt < -30)
 				newamt++
 				BUFPER--
-			while(newamt > 20)
+			while(newamt > 40)
 				newamt--
 				BUFPER++
 			STAPER = newamt
@@ -152,100 +133,50 @@
 
 		if("intelligence")
 			newamt = STAINT + amt
-			if(BUFINT < 0)
-				BUFINT = BUFINT + amt
-				if(BUFINT > 0)
-					newamt = STAINT + BUFINT
-					BUFINT = 0
-			if(BUFINT > 0)
-				BUFINT = BUFINT + amt
-				if(BUFINT < 0)
-					newamt = STAINT + BUFINT
-					BUFINT = 0
-			while(newamt < 1)
+			while(newamt < -30)
 				newamt++
 				BUFINT--
-			while(newamt > 20)
+			while(newamt > 40)
 				newamt--
 				BUFINT++
 			STAINT = newamt
 
 		if("constitution")
 			newamt = STACON + amt
-			if(BUFCON < 0)
-				BUFCON = BUFCON + amt
-				if(BUFCON > 0)
-					newamt = STACON + BUFCON
-					BUFCON = 0
-			if(BUFCON > 0)
-				BUFCON = BUFCON + amt
-				if(BUFCON < 0)
-					newamt = STACON + BUFCON
-					BUFCON = 0
-			while(newamt < 1)
+			while(newamt < -30)
 				newamt++
 				BUFCON--
-			while(newamt > 20)
+			while(newamt > 40)
 				newamt--
 				BUFCON++
 			STACON = newamt
 
 		if("endurance")
 			newamt = STAEND + amt
-			if(BUFEND < 0)
-				BUFEND = BUFEND + amt
-				if(BUFEND > 0)
-					newamt = STAEND + BUFEND
-					BUFEND = 0
-			if(BUFEND > 0)
-				BUFEND = BUFEND + amt
-				if(BUFEND < 0)
-					newamt = STAEND + BUFEND
-					BUFEND = 0
-			while(newamt < 1)
+			while(newamt < -30)
 				newamt++
 				BUFEND--
-			while(newamt > 20)
+			while(newamt > 40)
 				newamt--
 				BUFEND++
 			STAEND = newamt
 
 		if("speed")
 			newamt = STASPD + amt
-			if(BUFSPE < 0)
-				BUFSPE = BUFSPE + amt
-				if(BUFSPE > 0)
-					newamt = STASPD + BUFSPE
-					BUFSPE = 0
-			if(BUFSPE > 0)
-				BUFSPE = BUFSPE + amt
-				if(BUFSPE < 0)
-					newamt = STASPD + BUFSPE
-					BUFSPE = 0
-			while(newamt < 1)
+			while(newamt < -30)
 				newamt++
 				BUFSPE--
-			while(newamt > 20)
+			while(newamt > 40)
 				newamt--
 				BUFSPE++
 			STASPD = newamt
 
 		if("fortune")
 			newamt = STALUC + amt
-			if(BUFLUC < 0)
-				BUFLUC = BUFLUC + amt
-				if(BUFLUC > 0)
-					newamt = STALUC + BUFLUC
-					BUFLUC = 0
-			if(BUFLUC > 0)
-				BUFLUC = BUFLUC + amt
-				if(BUFLUC < 0)
-					newamt = STALUC + BUFLUC
-					BUFLUC = 0
-			while(newamt < 1)
+			while(newamt < -30)
 				newamt++
 				BUFLUC--
-			while(newamt > 20)
+			while(newamt > 40)
 				newamt--
 				BUFLUC++
 			STALUC = newamt

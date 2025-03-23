@@ -26,7 +26,7 @@
 			wrists = /obj/item/clothing/wrists/roguetown/bracers
 			
 			// Weapon Selection
-			var/weapons = list("Heirloom Sword","Warhammer","Poleaxe")
+			var/weapons = list("Heirloom Sword","Warhammer","Eaglebeak Polearm")
 			var/weapon_choice = input("Choose your signature weapon", "Arms Selection") as anything in weapons
 			switch(weapon_choice)
 				if("Heirloom Sword")
@@ -35,8 +35,8 @@
 				if("Warhammer")
 					backr = /obj/item/rogueweapon/mace/warhammer
 					H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
-				if("Spear")
-					backr = /obj/item/rogueweapon/spear
+				if("Eaglebeak Polearm")
+					backr = /obj/item/rogueweapon/eaglebeak
 					H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 			
 			// Skills & Traits

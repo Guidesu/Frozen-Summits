@@ -218,7 +218,7 @@
 	
 	for(var/mob/living/carbon/human/target in view(7, source_turf))
 		if(target.stat == CONSCIOUS)
-			target.apply_status_effect(/datum/status_effect/buff/fortitude)
+			target.apply_status_effect(/datum/status_effect/buff/fortitude5e)
 			to_chat(target, span_cultsmall("Holy endurance fortifies my body!"))
 	
 	return TRUE

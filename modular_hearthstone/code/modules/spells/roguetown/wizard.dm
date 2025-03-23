@@ -1047,7 +1047,7 @@
 		return
 
 	var/mob/living/spelltarget = A
-	spelltarget.apply_status_effect(/datum/status_effect/buff/fortitude)
+	spelltarget.apply_status_effect(/datum/status_effect/buff/fortitude5e)
 	playsound(get_turf(spelltarget), 'sound/magic/haste.ogg', 80, TRUE, soundping = TRUE)
 
 	if(spelltarget != user)

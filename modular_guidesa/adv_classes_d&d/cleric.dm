@@ -58,11 +58,16 @@
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltr = /obj/item/rogueweapon/huntingknife
 			id = /obj/item/clothing/ring/silver
-			backr = /obj/item/rogueweapon/sword
+			backr = /obj/item/rogueweapon/mace
 			backl = /obj/item/storage/backpack/rogue/satchel
 			backpack_contents = list(
 								/obj/item/flashlight/flare/torch = 1,
 								)
+			var/datum/devotion/C = new /datum/devotion(H, H.patron)
+			C.grant_spells_churchling(H)
+			H.mind.adjust_spellpoints(8)
+
+		
 		if("Cantor")
 			H.set_blindness(0)
 			to_chat(H, span_warning("You were a bard once - but you've found a new calling. Your eyes have been opened to the divine, now you wander from city to city singing songs and telling tales of your patron's greatness."))
