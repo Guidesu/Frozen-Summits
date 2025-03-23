@@ -1,12 +1,10 @@
 import { toTitleCase } from 'common/string';
 import { Component, Fragment } from 'inferno';
-import { act } from '../byond';
+import { useBackend } from '../backend';
 import { BlockQuote, Box, Button, NumberInput, Section, Table } from '../components';
 
 export const OreRedemptionMachine = props => {
-  const { state } = props;
-  const { config, data } = state;
-  const { ref } = config;
+  const { act, data } = useBackend(props);
   const {
     unclaimedPoints,
     materials,
@@ -30,7 +28,21 @@ export const OreRedemptionMachine = props => {
             ml={2}
             content="Claim"
             disabled={unclaimedPoints === 0}
-            onClick={() => act(ref, 'Claim')} />
+            onClick={() => act('Claim')} />
+          {data.hasID ? (
+            <Box>
+              <Button
+                content="Eject ID"
+                onClick={() => act('Eject')} />
+              You have {data.claimedPoints} mining points collected.
+            </Box>
+          ) : (
+            <Box>
+              <Button
+                content="Insert ID"
+                onClick={() => act('Insert')} />
+            </Box>
+          )}
         </Box>
       </Section>
       <Section>
@@ -40,7 +52,7 @@ export const OreRedemptionMachine = props => {
               <Button
                 icon="eject"
                 content="Eject design disk"
-                onClick={() => act(ref, 'diskEject')} />
+                onClick={() => act('diskEject')} />
             </Box>
             <Table>
               {diskDesigns.map(design => (
@@ -52,7 +64,7 @@ export const OreRedemptionMachine = props => {
                     <Button
                       disabled={!design.canupload}
                       content="Upload"
-                      onClick={() => act(ref, 'diskUpload', {
+                      onClick={() => act('diskUpload', {
                         design: design.index,
                       })} />
                   </Table.Cell>
@@ -64,7 +76,7 @@ export const OreRedemptionMachine = props => {
           <Button
             icon="save"
             content="Insert design disk"
-            onClick={() => act(ref, 'diskInsert')} />
+            onClick={() => act('diskInsert')} />
         )}
       </Section>
       <Section title="Materials">
@@ -73,7 +85,7 @@ export const OreRedemptionMachine = props => {
             <MaterialRow
               key={material.id}
               material={material}
-              onRelease={amount => act(ref, 'Release', {
+              onRelease={amount => act('Release', {
                 id: material.id,
                 sheets: amount,
               })} />
@@ -86,7 +98,7 @@ export const OreRedemptionMachine = props => {
             <MaterialRow
               key={material.id}
               material={material}
-              onRelease={amount => act(ref, 'Smelt', {
+              onRelease={amount => act('Smelt', {
                 id: material.id,
                 sheets: amount,
               })} />

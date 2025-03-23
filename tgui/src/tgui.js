@@ -20,19 +20,19 @@ window.update = window.initialize = dataString => {
   // Initialize
   if (!window.tgui) {
     window.tgui = new TGUI({
-      el: '#container',
-      data () {
+    el: '#container',
+    data () {
         const initial = data;
-        return {
-          constants: require('util/constants'),
-          text: require('util/text'),
-          config: initial.config,
-          data: initial.data,
+      return {
+        constants: require('util/constants'),
+        text: require('util/text'),
+        config: initial.config,
+        data: initial.data,
           adata: initial.data,
         };
       },
     });
-  }
+      }
   // Update
   if (window.tgui) {
     window.tgui.set('config', data.config);
@@ -40,7 +40,7 @@ window.update = window.initialize = dataString => {
       window.tgui.set('data', data.data);
       window.tgui.animate('adata', data.data);
     }
-  }
+}
 };
 
 // Try to find data in the page. If the JSON was inlined, load it.
