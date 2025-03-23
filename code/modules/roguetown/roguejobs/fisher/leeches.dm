@@ -6,6 +6,7 @@
 	icon = 'icons/roguetown/items/surgery.dmi'
 	icon_state = "leech"
 	baitpenalty = 0
+	baitchance = 100
 	freshfishloot = list(
 		/obj/item/reagent_containers/food/snacks/fish/carp = 200,
 		/obj/item/reagent_containers/food/snacks/fish/sunny = 305,
@@ -44,7 +45,40 @@
 		/obj/item/reagent_containers/food/snacks/fish/mudskipper = 200,
 		/obj/item/natural/worms/leech = 50,
 		/obj/item/clothing/ring/gold = 1,	
-		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 25,			
+		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab = 25,	
+	)
+	cageloot = list(/obj/item/trash/applecore = 50,//Pears, in Rockhill? Perish the thought.
+					/obj/item/grown/log/tree/stick = 2, //Single stick
+					/obj/item/reagent_containers/food/snacks/fish/oyster = 214,
+					/obj/item/reagent_containers/food/snacks/fish/shrimp = 214,
+					/obj/item/reagent_containers/food/snacks/fish/crab = 214,
+					/obj/item/reagent_containers/food/snacks/fish/lobster = 214,
+					/obj/item/natural/bundle/stick = 15, //Bundle of sticks
+					/obj/item/natural/stone = 30, //Easy for stones to trigger the traps accidentally
+					/obj/item/clothing/head/roguetown/helmet/tricorn = 15,
+					/obj/item/clothing/head/roguetown/helmet/bandana = 15,
+					/obj/item/clothing/head/roguetown/roguehood = 15,
+					/obj/item/clothing/under/roguetown/loincloth/brown = 15,
+					/obj/item/clothing/shoes/roguetown/sandals = 15,
+					/obj/item/clothing/shoes/roguetown/simpleshoes = 15,
+					/obj/item/clothing/gloves/roguetown/fingerless = 15,
+					/obj/item/clothing/gloves/roguetown/leather = 15,
+					/obj/item/reagent_containers/syringe = 1, //These are terrifyingly powerful.
+					/obj/item/reagent_containers/glass/cup/wooden = 27,
+					/obj/item/ammo_casing/caseless/rogue/arrow = 35,
+					/obj/item/customlock = 35,
+					/obj/item/storage/belt/rogue/pouch/coins/poor = 25,
+					/obj/item/shard = 1, //Bait is smaller
+					/obj/item/natural/cloth = 15,
+					/obj/item/kitchen/spoon = 1,
+					/obj/item/restraints/legcuffs/beartrap = 25,
+					/obj/item/clothing/ring/copper = 35, //lowered chance of rings, too small to trigger a trap reliably, but still here for gacha
+					/obj/item/clothing/ring/topazc = 10,
+					/obj/item/clothing/ring/emeraldc = 10,
+					/obj/item/clothing/ring/sapphirec = 10,
+					/obj/item/clothing/ring/silver = 15,
+					/obj/item/clothing/ring/topazs = 3,
+					/obj/item/clothing/ring/emeralds = 3
 	)	
 	embedding = list(
 		"embed_chance" = 100,
