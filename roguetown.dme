@@ -8,7 +8,6 @@
 // END_PREFERENCES
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
-#include "_maps\roguetest.dm"
 #include "_maps\map_files\templates\underdark\underdark.dm"
 #include "_maps\templates\arcyne_fortress.dm"
 #include "_maps\templates\bog_shack_small.dm"
@@ -3791,6 +3790,7 @@
 #include "modular_guidesa\bg3_music.dm"
 #include "modular_guidesa\boons.dm"
 #include "modular_guidesa\caretaking.dm"
+#include "modular_guidesa\crafting.dm"
 #include "modular_guidesa\dice_roll.dm"
 #include "modular_guidesa\general_stuffs.dm"
 #include "modular_guidesa\gm_talking_rp.dm"

@@ -1,0 +1,95 @@
+/* Crafting UI Styles */
+.craftingMenu {
+    padding: 10px;
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+.header h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.categoryTabs {
+    border-bottom: 2px solid #404040;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+
+.categoryTabs a {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-right: 5px;
+    background: #2d2d2d;
+    color: #88C0D0;
+    text-decoration: none;
+    border-radius: 3px 3px 0 0;
+}
+
+.categoryTabs a.selected {
+    background: #404040;
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.recipeList {
+    display: grid;
+    grid-gap: 15px;
+}
+
+.recipeItem {
+    background: #2d2d2d;
+    padding: 15px;
+    border-left: 4px solid #404040;
+    border-radius: 3px;
+}
+
+.recipeItem.craftable {
+    border-left-color: #4CAF50;
+}
+
+.recipeHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.recipeName {
+    font-size: 1.1em;
+    color: #88C0D0;
+}
+
+.craftButton {
+    padding: 5px 10px;
+    background: #4CAF50;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.recipeRequirements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.reqSection {
+    background: #1a1a1a;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.sectionHeader {
+    display: block;
+    color: #4CAF50;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+ul {
+    margin: 5px 0;
+    padding-left: 20px;
+    list-style-type: square;
+}
