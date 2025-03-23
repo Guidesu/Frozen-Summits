@@ -168,7 +168,7 @@
 /obj/item/reagent_containers/food/snacks/fish
 	chopping_sound = TRUE
 
-/* ............. fisj chop ................*/
+/* ............. Fish chop ................*/
 /obj/item/reagent_containers/food/snacks/rogue/meat/fish
 	name = "fish filet"
 	desc = "A filet of fish. All of them are the same inside."
@@ -178,3 +178,23 @@
 	cooked_type = /obj/item/reagent_containers/food/snacks/rogue/meat/fish/fried
 	slices_num = 1
 	ingredient_size = 1
+
+/* .........   Shellfish    ................. */
+/obj/item/reagent_containers/food/snacks/rogue/meat/shellfish
+	name = "shellfish meat"
+	desc = "Chop to create mince, bake or fry to make fried shellfish meat"
+	icon_state = "shellfish_meat"
+	rotprocess = SHELFLIFE_LONG //Fish don't rot
+	slice_path = /obj/item/reagent_containers/food/snacks/rogue/meat/mince/fish
+	slices_num = 1
+	slice_bclass = BCLASS_CHOP
+	fried_type = /obj/item/reagent_containers/food/snacks/rogue/meat/shellfish/fried
+	cooked_type = /obj/item/reagent_containers/food/snacks/rogue/meat/shellfish/fried
+
+/obj/item/reagent_containers/food/snacks/rogue/meat/shellfish/fried
+	eat_effect = null
+	slices_num = 0
+	name = "fried shellfish"
+	desc = "Description goes here"
+	icon_state = "shellfish_meat_cooked"
+	bonus_reagents = list(/datum/reagent/consumable/nutriment = MEATSLAB_NUTRITION)
