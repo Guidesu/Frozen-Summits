@@ -8,11 +8,11 @@ SUBSYSTEM_DEF(nightshift)
 	var/current_tod = null
 
 	var/nightshift_active = FALSE
-	var/nightshift_start_time = 648000    // Night starts at 6 PM
-	var/nightshift_end_time = 216000      // Night ends at 6 AM
-	var/nightshift_dawn_start = 180000    // Dawn starts at 5 AM
-	var/nightshift_day_start = 216000     // Day starts at 6 AM
-	var/nightshift_dusk_start = 612000    // Dusk starts at 5 PM
+// New balanced configuration: Day and Night each 50% of the time
+	var/nightshift_start_time = 432000	//6pm (18:00) - Night starts
+	var/nightshift_dawn_start = 396000	//5:30am (05:30) - Dawn starts
+	var/nightshift_day_start = 432000	//6am (06:00) - Day starts
+	var/nightshift_dusk_start = 396000	//5:30pm (17:30) - Dusk starts
 
 	//1hr = 36000
 	//30m = 18000
