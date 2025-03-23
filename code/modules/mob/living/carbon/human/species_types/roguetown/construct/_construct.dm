@@ -1,5 +1,5 @@
 /datum/species/construct
-	name = "Constructb"
+	name = "Warforged" // Changed from "Constructb"
 	id = "construct"
 
 /datum/species/construct/on_species_gain(mob/living/carbon/C, datum/species/old_species)
