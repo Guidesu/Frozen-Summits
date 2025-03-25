@@ -141,8 +141,6 @@
 	body_parts_covered = FULL_HEAD | NECK
 	armor = list("blunt" = 100, "slash" = 40, "stab" = 20, "piercing" = 100, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
-	icon = 'icons/roguetown/clothing/special/race_armor.dmi'
-	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/race_armor.dmi'
 	block2add = FOV_BEHIND
 	bloody_icon = 'icons/effects/blood64.dmi'
 	smeltresult = /obj/item/rogueore/coal
@@ -159,8 +157,6 @@
 	body_parts_covered = FULL_HEAD | NECK
 	armor = list("blunt" = 100, "slash" = 40, "stab" = 20, "piercing" = 100, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
-	icon = 'icons/roguetown/clothing/special/race_armor.dmi'
-	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/race_armor.dmi'
 	icon_state = "skullmet_bear"
 	item_state = "skullmet_bear"
 	block2add = FOV_BEHIND
@@ -180,8 +176,6 @@
 	body_parts_covered = FULL_HEAD | NECK
 	armor = list("blunt" = 100, "slash" = 40, "stab" = 20, "piercing" = 100, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
-	icon = 'icons/roguetown/clothing/special/race_armor.dmi'
-	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/race_armor.dmi'
 	block2add = FOV_BEHIND
 	bloody_icon = 'icons/effects/blood64.dmi'
 	smeltresult = /obj/item/rogueore/coal

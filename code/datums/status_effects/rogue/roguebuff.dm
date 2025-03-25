@@ -444,14 +444,18 @@
 
 
 
-
+#define FORTITUDE_FILTER "fortitude_glow"
 /datum/status_effect/buff/fortitude5e
+	var/outline_colour ="#3218c7"
 	id = "fortitude"
 	alert_type =/atom/movable/screen/alert/status_effect/buff/fortitude5e
 	duration = 5 MINUTES
 
 /datum/status_effect/buff/fortitude5e/on_apply()
 	. = ..()
+	var/filter = owner.get_filter(FORTITUDE_FILTER)
+	if (!filter)
+		owner.add_filter(FORTITUDE_FILTER, 2, list("type" = "outline", "color" = outline_colour, "alpha" = 200, "size" = 1))
 	to_chat(owner, span_warning("My body feels lighter..."))
 	ADD_TRAIT(owner, TRAIT_FORTITUDE, MAGIC_TRAIT)
 	ADD_TRAIT(owner, TRAIT_CRITICAL_RESISTANCE, MAGIC_TRAIT)
@@ -461,13 +465,14 @@
 	to_chat(owner, span_warning("The weight of the world rests upon my shoulders once more."))
 	ADD_TRAIT(owner, TRAIT_FORTITUDE, MAGIC_TRAIT)
 	ADD_TRAIT(owner, TRAIT_CRITICAL_RESISTANCE, MAGIC_TRAIT)
+	owner.remove_filter(FORTITUDE_FILTER)
 
 /atom/movable/screen/alert/status_effect/buff/fortitude5e
 	name = "fortitude"
 	desc = "The typical drain I feel from day to day life is lessened, my athleticism greater. As is my body against critical strikes."
 	icon_state = "buff"
 
-
+#undef FORTITUDE_FILTER
 
 #define GUIDANCE_FILTER "guidance_glow"
 /atom/movable/screen/alert/status_effect/buff/guidance
@@ -496,6 +501,7 @@
 	REMOVE_TRAIT(owner, TRAIT_GUIDANCE, MAGIC_TRAIT)
 
 #undef GUIDANCE_FILTER
+
 #define CRANKBOX_FILTER "crankboxbuff_glow"
 /atom/movable/screen/alert/status_effect/buff/churnerprotection
 	name = "Magick Distorted"

@@ -1,15 +1,13 @@
 /datum/job/roguetown/druid
 	title = "Druid"
-	f_title = "Druid"
+	f_title = "Druidess"
 	flag = DRUID
 	department_flag = CHURCHMEN
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
-	spells = list(/obj/effect/proc_holder/spell/invoked/diagnose/secular)
+	total_positions = 5
+	spawn_positions = 5
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
-	allowed_patrons = ALL_DIVINE_PATRONS //gets set to Silvanus on the outfit anyways lol
 	outfit = /datum/outfit/job/roguetown/druid
 	tutorial = "You have always been drawn to the wild, and the wild drawn to you. When your calling came, it was from him. Your patron claims dominion over all nature--promising bounties to those who act in his name to bring balance to His domain. The forest is the most comfortable place for you, toiling alongside farmers...although sometimes what lies beyond the gates fills your soul with a feral yearning."
 
@@ -22,7 +20,6 @@
 /datum/outfit/job/roguetown/druid
 	name = "Druid"
 	jobtype = /datum/job/roguetown/druid
-	allowed_patrons = list(/datum/patron/divine/dendor)
 
 /datum/outfit/job/roguetown/druid/pre_equip(mob/living/carbon/human/H)
 	..()

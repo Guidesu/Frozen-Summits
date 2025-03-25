@@ -58,3 +58,5 @@
 	desc = "A board with various quests posted on it. It also has a bin attached to it."
 	icon = 'modular_guidesa/items_stuffs_any.dmi'
 	icon_state = "bin_board"
+
+/obj/structure

@@ -8,7 +8,6 @@
 	selection_color = JCOLOR_CHURCH
 	f_title = "Priestess"
 	allowed_races = RACES_ALL_KINDS
-	allowed_patrons = ALL_DIVINE_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
 	tutorial = "You are a wandering Priest that came across a small hamlet. Deciding to settle here. You decided to help on its progression."
 	whitelist_req = FALSE
