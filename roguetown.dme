@@ -3829,6 +3829,8 @@
 #include "modular_guidesa\new_mobs\birds.dm"
 #include "modular_guidesa\new_mobs\ocean_fauna.dm"
 #include "modular_guidesa\new_mobs\slimes.dm"
+#include "modular_guidesa\random_things\merchant.dm"
+#include "modular_guidesa\random_things\silky_things.dm"
 #include "modular_guidesa\sex_folder\milking.dm"
 #include "modular_guidesa\sex_folder\spanking.dm"
 #include "modular_guidesa\spells\combat_stances.dm"

@@ -42,7 +42,7 @@
 	appro_skill = /datum/skill/craft/armorsmithing
 	req_bar = /obj/item/ingot/steel
 	additional_items = list(/obj/item/ingot/steel)
-	created_item = 	/obj/item/rogueweapon/mace/goden/steel/warhammer
+	created_item = 	/obj/item/clothing/head/roguetown/helmet/bascinet/klapp
 	craftdiff = 2
 
 
