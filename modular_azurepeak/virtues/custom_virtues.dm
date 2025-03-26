@@ -30,6 +30,7 @@
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/claws)
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/howl/call_of_the_moon)
 	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/cinematic_shapeshift)
+	recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/targeted/woundlick)
 	recipient.verbs += /mob/living/carbon/human/proc/werewolf_regenerate
 	recipient.dna.species.soundpack_m = new /datum/voicepack/male/werewolf
 	recipient.dna.species.soundpack_f = new /datum/voicepack/female/werewolf_female

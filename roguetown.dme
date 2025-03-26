@@ -3869,6 +3869,7 @@
 #include "modular_guidesa\sex_folder\milking.dm"
 #include "modular_guidesa\sex_folder\spanking.dm"
 #include "modular_guidesa\spells\combat_stances.dm"
+#include "modular_guidesa\spells\licking.dm"
 #include "modular_guidesa\structures\dragon_statues.dm"
 #include "modular_guidesa\structures\stockpile_golem.dm"
 #include "modular_hearthstone\code\datums\accents.dm"
