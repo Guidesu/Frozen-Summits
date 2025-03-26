@@ -38,7 +38,8 @@
 			/obj/item/clothing,
 			/obj/item/storage,
 			/obj/item/bedroll,
-			/obj/item/baby
+			/obj/item/baby,
+			/obj/item
 			)
 
 	var/static/list/selectable_colors = list(
