@@ -1,6 +1,7 @@
 /datum/sex_action/anal_sex
 	name = "Sodomize them"
 	stamina_cost = 1.0
+	check_incapacitated = FALSE
 
 /datum/sex_action/anal_sex/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
@@ -12,9 +13,9 @@
 /datum/sex_action/anal_sex/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE
-	if(!get_location_accessible(user, BODY_ZONE_PRECISE_GROIN, TRUE))
+	if(!get_location_accessible(user, BODY_ZONE_PRECISE_GROIN))
 		return FALSE
-	if(!get_location_accessible(target, BODY_ZONE_PRECISE_GROIN, TRUE))
+	if(!get_location_accessible(target, BODY_ZONE_PRECISE_GROIN))
 		return FALSE
 	if(!user.getorganslot(ORGAN_SLOT_PENIS))
 		return FALSE
@@ -32,18 +33,21 @@
 
 	user.sexcon.perform_sex_action(user, 2, 0, TRUE)
 	if(user.sexcon.check_active_ejaculation())
-		user.visible_message(span_love("[user] cums into [target]'s butt!"))
+		user.visible_message(span_lovebold("[user] cums into [target]'s butt!"))
 		user.sexcon.cum_into()
 		user.virginity = FALSE
 
 	if(user.sexcon.considered_limp())
 		user.sexcon.perform_sex_action(target, 1.2, 4, FALSE)
+	//else if((HAS_TRAIT(target, TRAIT_TINY)) && HAS_TRAIT(user, TRAIT_TINY))
+	//	user.sexcon.perform_sex_action(target, 0.2, 0, FALSE)
 	else
 		user.sexcon.perform_sex_action(target, 2.4, 9, FALSE)
 	target.sexcon.handle_passive_ejaculation()
 
 /datum/sex_action/anal_sex/on_finish(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	user.visible_message(span_warning("[user] pulls [user.p_their()] cock out of [target]'s butt."))
+	..()
+	user.visible_message(span_warning("[user] pulls his cock out of [target]'s butt."))
 
 /datum/sex_action/anal_sex/is_finished(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user.sexcon.finished_check())

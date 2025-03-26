@@ -11,13 +11,14 @@
 /datum/sex_action/toy_other_anal/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE
-	if(!get_location_accessible(target, BODY_ZONE_PRECISE_GROIN, TRUE))
+	if(!get_location_accessible(target, BODY_ZONE_PRECISE_GROIN))
 		return FALSE
 	if(!get_dildo_in_either_hand(user))
 		return FALSE
 	return TRUE
 
 /datum/sex_action/toy_other_anal/on_start(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	..()
 	var/obj/item/dildo = get_dildo_in_either_hand(user)
 	user.visible_message(span_warning("[user] shoves \the [dildo] in [target]'s butt..."))
 
@@ -29,6 +30,7 @@
 	target.sexcon.handle_passive_ejaculation()
 
 /datum/sex_action/toy_other_anal/on_finish(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	..()
 	var/obj/item/dildo = get_dildo_in_either_hand(user)
 	user.visible_message(span_warning("[user] pulls \the [dildo] from [target]'s butt."))
 

@@ -73,6 +73,18 @@
 	if(prob(25) && wife.is_fertile() && is_virile())
 		vag.be_impregnated(src)
 
+/mob/living/carbon/human/proc/impregnate(mob/living/carbon/human/wife)
+	var/obj/item/organ/testicles/testes = getorganslot(ORGAN_SLOT_TESTICLES)
+	if(!testes)
+		return
+
+	var/obj/item/organ/vagina/vag = wife.getorganslot(ORGAN_SLOT_VAGINA)
+	if(!vag)
+		return
+	if(prob(200)) // specifically for the mating press
+		vag.be_impregnated(src)
+
+
 /mob/living/carbon/human/proc/get_highest_grab_state_on(mob/living/carbon/human/victim)
 	var/grabstate = null
 	if(r_grab && r_grab.grabbed == victim)
