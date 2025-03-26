@@ -242,7 +242,6 @@
 		var/fgender = known_people[P]["FGENDER"]
 		var/fspecies = known_people[P]["FSPECIES"]
 		var/fage = known_people[P]["FAGE"]
-		var/fheresy = known_people[P]["FHERESY"]
 		if(fcolor && fjob)
 			contents += "<B><font color=#[fcolor];text-shadow:0 0 10px #8d5958, 0 0 20px #8d5958, 0 0 30px #8d5958, 0 0 40px #8d5958, 0 0 50px #e60073, 0 0 60px #8d5958, 0 0 70px #8d5958;>[P]</font></B><BR>[fjob], [fspecies], [capitalize(fgender)], [fage]"
 			contents += "<BR>"
