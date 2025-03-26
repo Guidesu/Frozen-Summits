@@ -1,3 +1,6 @@
+/mob
+	var/list/do_afters
+
 /// Attack something which is already adjacent to us, without ending planning
 /datum/ai_planning_subtree/basic_melee_attack_subtree/opportunistic
 	melee_attack_behavior = /datum/ai_behavior/basic_melee_attack/opportunistic

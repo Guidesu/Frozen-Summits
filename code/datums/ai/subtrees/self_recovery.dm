@@ -26,3 +26,12 @@
 
 /datum/ai_planning_subtree/simple_self_recovery/humanoid
 	heal_message = " tends to their wounds."
+
+/turf/open/transparent/openspace/can_traverse_safely(atom/movable/traveler)
+	return FALSE
+
+/turf/open/lava/can_traverse_safely(atom/movable/traveler)
+	return FALSE
+
+/turf/proc/can_traverse_safely(atom/movable/traveler)
+	return TRUE

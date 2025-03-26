@@ -104,3 +104,9 @@
 	if(!succeeded)
 		controller.clear_blackboard_key(target_key)
 		controller.pawn.icon_state = "mimic"
+
+/datum/ai_behavior/basic_melee_attack/bog_troll/finish_action(datum/ai_controller/controller, succeeded, target_key, targetting_datum_key, hiding_location_key)
+	. = ..()
+	if(!succeeded)
+		controller.clear_blackboard_key(target_key)
+		controller.pawn.icon_state = "Trollso"

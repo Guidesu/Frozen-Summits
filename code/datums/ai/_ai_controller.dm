@@ -70,6 +70,9 @@ have ways of interacting with a specific atom and control it. They posses a blac
 
 /datum/ai_controller/Destroy(force, ...)
 	set_ai_status(AI_STATUS_OFF)
+	set_movement_target(type, null)
+	if (ai_movement.moving_controllers[src])
+		ai_movement.stop_moving_towards(src)
 	UnpossessPawn(FALSE)
 	return ..()
 
@@ -204,7 +207,8 @@ have ways of interacting with a specific atom and control it. They posses a blac
 		var/action_delta_time = max(current_behavior.action_cooldown * 0.1, delta_time)
 
 		if(current_behavior.behavior_flags & AI_BEHAVIOR_REQUIRE_MOVEMENT) //Might need to move closer
-			if(!current_movement_target)
+			if(isnull(current_movement_target))
+				//fail_behavior(current_behavior) 
 				stack_trace("[pawn] wants to perform action type [current_behavior.type] which requires movement, but has no current movement target!")
 				return //This can cause issues, so don't let these slide.
 
@@ -254,8 +258,10 @@ have ways of interacting with a specific atom and control it. They posses a blac
 ///Determines whether the AI can currently make a new plan
 /datum/ai_controller/proc/able_to_plan()
 	. = TRUE
+	if (QDELETED(pawn)) 
+		return FALSE
 	for(var/datum/ai_behavior/current_behavior as anything in current_behaviors)
-		if(!(current_behavior.behavior_flags & AI_BEHAVIOR_CAN_PLAN_DURING_EXECUTION)) //We have a behavior that blocks planning
+		if(!(current_behavior.behavior_flags && AI_BEHAVIOR_CAN_PLAN_DURING_EXECUTION)) //We have a behavior that blocks planning
 			. = FALSE
 			break
 
@@ -294,6 +300,9 @@ have ways of interacting with a specific atom and control it. They posses a blac
 		if(AI_STATUS_OFF)
 			STOP_PROCESSING(SSai_behaviors, src)
 			SSai_controllers.active_ai_controllers -= src
+			CancelActions()
+		if(AI_STATUS_IDLE)
+			STOP_PROCESSING(SSai_behaviors, src)
 			CancelActions()
 
 /datum/ai_controller/proc/PauseAi(time)
@@ -353,10 +362,26 @@ have ways of interacting with a specific atom and control it. They posses a blac
 	set_ai_status(AI_STATUS_ON) //Can't do anything while player is connected
 	RegisterSignal(pawn, COMSIG_MOB_LOGIN, PROC_REF(on_sentience_gained))
 
+// Turn the controller off the controller if the pawn has been qdeleted
+/datum/ai_controller/proc/on_pawn_qdeleted()
+	SIGNAL_HANDLER
+	set_ai_status(AI_STATUS_OFF)
+	set_movement_target(type, null)
+	if(ai_movement.moving_controllers[src])
+		ai_movement.stop_moving_towards(src)
+
 /// Use this proc to define how your controller defines what access the pawn has for the sake of pathfinding, this requires they either have a key or you give them the lockids you want them to open
 /datum/ai_controller/proc/get_access()
 	return
 
+/// Returns true if we have a blackboard key with the provided key and it is not qdeleting
+/datum/ai_controller/proc/blackboard_key_exists(key)
+	var/datum/key_value = blackboard[key]
+	if (isdatum(key_value))
+		return !QDELETED(key_value)
+	if (islist(key_value))
+		return length(key_value) > 0
+	return !!key_value
 
 /**
  * Used to manage references to datum by AI controllers
@@ -598,6 +623,14 @@ have ways of interacting with a specific atom and control it. They posses a blac
 				next_to_clear -= inner_value
 
 		index += 1
+
+///No runtime when we fail our current behavior, just finish it.
+/datum/ai_controller/proc/fail_behavior(datum/ai_behavior/current_behavior)
+	var/list/arguments = list(src, FALSE)
+	var/list/stored_arguments = behavior_args[current_behavior.type]
+	if(stored_arguments)
+		arguments += stored_arguments
+	current_behavior.finish_action(arglist(arguments))
 
 #undef TRACK_AI_DATUM_TARGET
 #undef CLEAR_AI_DATUM_TARGET

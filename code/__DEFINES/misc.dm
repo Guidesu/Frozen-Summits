@@ -12,6 +12,10 @@
 #define TEXT_WEST			"[WEST]"
 
 
+///Returns true if the dir is diagonal, false otherwise
+#define ISDIAGONALDIR(d) (d&(d-1))
+
+
 //Human Overlays Indexes/////////
 #define MUTATIONS_LAYER			50		//mutations. Tk headglows, cold resistance glow, etc
 #define CLOAK_BEHIND_LAYER		49

@@ -53,3 +53,30 @@
 	owner.visible_message(span_alert("[owner] leaps into the air and lands atop [victim]!"))
 	if(!QDELETED(victim))
 		victim.OffBalance(30)
+
+/datum/action/cooldown/proc/enable_cooldown_actions()
+	for(var/datum/action/cooldown/cd_action in owner.actions)
+		cd_action.enable()
+
+/// Disables all cooldown actions
+/datum/action/cooldown/proc/disable_cooldown_actions()
+	for(var/datum/action/cooldown/cd_action in owner.actions)
+		cd_action.disable()
+
+/// Re-enables this cooldown action
+/datum/action/cooldown/proc/enable()
+	action_disabled = FALSE
+//	build_all_button_icons(UPDATE_BUTTON_STATUS)
+
+/// Disables this cooldown action
+/datum/action/cooldown/proc/disable()
+	action_disabled = TRUE
+//	build_all_button_icons(UPDATE_BUTTON_STATUS)
+
+
+/datum/action
+	var/action_disabled = FALSE
+
+
+/datum/action/cooldown/proc/Activate(atom/target)
+	return

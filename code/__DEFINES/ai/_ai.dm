@@ -2,10 +2,16 @@
 #define HAS_AI_CONTROLLER_TYPE(thing, type) istype(thing?.ai_controller, type)
 #define AI_STATUS_ON		1
 #define AI_STATUS_OFF		2
+#define AI_STATUS_IDLE		3
 
 ///Carbon checks
 #define SHOULD_RESIST(source) (source.on_fire || source.buckled || HAS_TRAIT(source, TRAIT_RESTRAINED) || (source.pulledby && source.pulledby.grab_state > GRAB_PASSIVE))
-#define IS_DEAD_OR_INCAP(source) (source.incapacitated() || IS_IN_STASIS(source) || source.stat)
+#define IS_DEAD_OR_INCAP(source) (source.incapacitated() || source.stat)
+
+
+#define BB_NEXT_HUNGRY "BB_NEXT_HUNGRY"
+///what we're going to eat next
+#define BB_FOOD_TARGET "bb_food_target"
 
 ///Max pathing attempts before auto-fail
 #define MAX_PATHING_ATTEMPTS 30
@@ -35,6 +41,8 @@
 ///AI flags
 #define STOP_MOVING_WHEN_PULLED (1<<0)
 
+//Blackboard
+
 //Generic BB keys
 #define BB_CURRENT_MIN_MOVE_DISTANCE "min_move_distance"
 
@@ -50,4 +58,17 @@
 ///time until we should next eat, set by the generic hunger subtree
 #define BB_NEXT_HUNGRY "BB_NEXT_HUNGRY"
 ///what we're going to eat next
-#define BB_FOOD_TARGET "bb_food_target"
+#define BB_BASIC_MOB_FOOD_TARGET "BB_basic_food_target"
+///what corpse we'll next try to eat
+#define BB_BASIC_MOB_CORPSE_TARGET "BB_basic_mob_corpse_target"
+
+#define BB_BASIC_MOB_TAMED "BB_basic_mob_tamed"
+
+//farm animals ai
+#define BB_CHICKEN_LAY_EGG "BB_chicken_lay_egg"
+#define BB_CHICKEN_NESTING_BOX "BB_chicken_nest_box"
+#define BB_COW_TIP_REACTING "BB_cow_tip_reacting"
+#define	BB_COW_TIPPER "BB_cow_tipper"
+
+//Move then recheck ai
+#define MOVEMENT_LOOP_START_FAST (1<<0)
