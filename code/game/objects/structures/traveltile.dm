@@ -78,7 +78,7 @@
 			if(user.pulledby)
 				return
 			to_chat(user, "<b>I begin to travel...</b>")
-			if(do_after(user, 0, needhand = FALSE, target = src))
+			if(do_after(user, 7, needhand = FALSE, target = src))
 				var/mob/living/L = user
 				var/atom/movable/pullingg = L.pulling
 				L.recent_travel = world.time
@@ -132,7 +132,7 @@
 			if(AM.pulledby)
 				return	
 			to_chat(AM, "<b>I begin to travel...</b>")
-			if(do_after(AM, 0, needhand = FALSE, target = src))
+			if(do_after(AM, 7, needhand = FALSE, target = src))
 				if(!can_go(AM))
 					return
 				var/mob/living/L = AM
