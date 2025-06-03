@@ -95,6 +95,9 @@
 	. = ..()
 
 /obj/structure/fluff/traveltile/proc/can_go(atom/movable/AM)
+	if(AM.recent_travel)
+		if(world.time < AM.recent_travel + 5 SECONDS)
+			. = FALSE
 	. = TRUE
 	if(. && required_trait && isliving(AM))
 		var/mob/living/L = AM
