@@ -325,7 +325,7 @@
 
 			if(weapon_parry == FALSE)
 				if(do_unarmed_parry(drained, user))
-					if((mobility_flags & MOBILITY_STAND) && can_train_combat_skill(H, /datum/skill/combat/unarmed, attacker_skill - SKILL_LEVEL_NOVICE))
+					if((mobility_flags & MOBILITY_STAND) && can_train_combat_skill(H, /datum/skill/combat/unarmed, attacker_skill - SKILL_LEVEL_EXPERT))
 						H.mind?.add_sleep_experience(/datum/skill/combat/unarmed, max(round(STAINT*exp_multi), 0), FALSE)
 					flash_fullscreen("blackflash2")
 					return TRUE
