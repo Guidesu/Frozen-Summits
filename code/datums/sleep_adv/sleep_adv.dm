@@ -68,7 +68,7 @@
 	return needed_xp
 
 /datum/sleep_adv/proc/add_sleep_experience(skill, amt, silent = FALSE)
-	if((mind.get_skill_level(skill) < SKILL_LEVEL_APPRENTICE) && !is_considered_sleeping())
+	if((mind.get_skill_level(skill) < SKILL_LEVEL_JOURNEYMAN) && !is_considered_sleeping())
 		mind.adjust_experience(skill, amt)
 		return
 	var/capped_pre = enough_sleep_xp_to_advance(skill, 2)
@@ -246,7 +246,6 @@
 			skill_string += ", "
 		skill_string += lowertext(skill_name)
 	to_chat(mind.current, span_notice("I feel inspired about [skill_string]..."))
-
 
 /datum/sleep_adv/proc/buy_special()
 	if(!can_buy_special())

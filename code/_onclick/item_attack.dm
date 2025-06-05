@@ -567,13 +567,13 @@
 
 	var/skill_level = user.mind.get_skill_level(associated_skill) // Need this so we can actually grab skill levels of peoples
 	switch(skill_level) // Depending on our skill level
-		if(SKILL_LEVEL_NONE)	   return "incompetently "
-		if(SKILL_LEVEL_NOVICE)     return "inexpertly "
+		if(SKILL_LEVEL_NONE)	   return "clumsily "
+		if(SKILL_LEVEL_NOVICE)     return "awkwardly  "
 		if(SKILL_LEVEL_APPRENTICE) return "amateurishly "
 		if(SKILL_LEVEL_JOURNEYMAN) return "competently "
-		if(SKILL_LEVEL_EXPERT)     return "adeptly "
-		if(SKILL_LEVEL_MASTER)     return "expertly "
-		if(SKILL_LEVEL_LEGENDARY)  return "masterfully "
+		if(SKILL_LEVEL_EXPERT)     return "expertly  "
+		if(SKILL_LEVEL_MASTER)     return "masterfully  "
+		if(SKILL_LEVEL_LEGENDARY)  return "flawlessly  "
 	return ""
 
 /mob/living/proc/send_item_attack_message(obj/item/I, mob/living/user, hit_area)
