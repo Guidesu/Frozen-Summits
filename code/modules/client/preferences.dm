@@ -337,6 +337,8 @@ GLOBAL_LIST_EMPTY(chosen_names)
 			// LETHALSTONE EDIT BEGIN: add pronoun prefs
 			dat += "<b>Pronouns:</b> <a href='?_src_=prefs;preference=pronouns;task=input'>[pronouns]</a><BR>"
 			// LETHALSTONE EDIT END
+			dat += "<br><b>__________________________</b>"
+
 
 			dat += "<BR>"
 			dat += "<b>Race Origin:</b> <a href='?_src_=prefs;preference=species;task=input'>[pref_species.name]</a>[spec_check(user) ? "" : " (!)"]<BR>"
@@ -372,8 +374,13 @@ GLOBAL_LIST_EMPTY(chosen_names)
 
 //			dat += "<b><a href='?_src_=prefs;preference=name;task=random'>Random Name</A></b><BR>"
 
+			dat += "<br><b>__________________________</b>"
 
-			dat += "<b>Virtue:</b> <a href='?_src_=prefs;preference=virtue;task=input'>[virtue]</a><BR>"
+
+
+
+
+			dat += "<br><b>Virtue:</b> <a href='?_src_=prefs;preference=virtue;task=input'>[virtue]</a><BR>"
 			if(statpack.name == "Virtuous")
 				dat += "<b>Second Virtue:</b> <a href='?_src_=prefs;preference=virtuetwo;task=input'>[virtuetwo]</a><BR>"
 			dat += "<b>Vice:</b> <a href='?_src_=prefs;preference=charflaw;task=input'>[charflaw]</a><BR>"
@@ -430,7 +437,14 @@ GLOBAL_LIST_EMPTY(chosen_names)
 				dat += "<b>Mutant Color #2:</b><span style='border: 1px solid #161616; background-color: #[features["mcolor2"]];'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=mutant_color2;task=input'>Change</a><BR>"
 				dat += "<b>Mutant Color #3:</b><span style='border: 1px solid #161616; background-color: #[features["mcolor3"]];'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=mutant_color3;task=input'>Change</a><BR>"
 
-			dat += "<b>Voice Color: </b><a href='?_src_=prefs;preference=voice;task=input'>Change</a>"
+
+			dat += "<br><b>__________________________</b>"
+
+
+
+
+
+			dat += "<br><b>Voice Color: </b><a href='?_src_=prefs;preference=voice;task=input'>Change</a>"
 			dat += "<br><b>Nickname Color: </b> </b><a href='?_src_=prefs;preference=highlight_color;task=input'>Change</a>"
 			dat += "<br><b>Voice Pitch: </b><a href='?_src_=prefs;preference=voice_pitch;task=input'>[voice_pitch]</a>"
 			//dat += "<br><b>Accent:</b> <a href='?_src_=prefs;preference=char_accent;task=input'>[char_accent]</a>"
@@ -439,6 +453,8 @@ GLOBAL_LIST_EMPTY(chosen_names)
 			dat += "<br><b>Descriptors:</b> <a href='?_src_=prefs;preference=descriptors;task=menu'>Change</a>"
 
 			dat += "<br><b>__________________________</b>"
+
+
 
 
 			dat += "<br><b>Headshot:</b> <a href='?_src_=prefs;preference=headshot;task=input'>Change</a>"
@@ -1053,77 +1069,208 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 			user.client.prefs.lastclass = null
 			user.client.prefs.save_preferences()
 
-/datum/preferences/proc/SetQuirks(mob/user)
-	if(!SSquirks)
-		to_chat(user, span_danger("The quirk subsystem is still initializing! Try again in a minute."))
-		return
+/datum/preferences/proc/generate_quirks_html(mob/user, current_category = "All", search_query = "", selected_quirk = null)
+	if(!SSquirks || !length(SSquirks.quirks))
+		return "<div class='recipe-content'><p>The quirk subsystem is still initializing. Try again in a minute.</p></div>"
 
-	var/list/dat = list()
-	if(!SSquirks.quirks.len)
-		dat += "The quirk subsystem hasn't finished initializing, please hold..."
-		dat += "<center><a href='?_src_=prefs;preference=trait;task=close'>Done</a></center><br>"
+	var/list/categories = list("All", "Positive", "Negative", "Neutral")
+	var/html = {"
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<title>Quirk Preferences</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #1e1e1e;
+			color: #e0e0e0;
+			margin: 0;
+			padding: 10px;
+		}
+		.book-content {
+			display: flex;
+			height: 85vh;
+			gap: 10px;
+		}
+		.sidebar {
+			width: 30%;
+			padding: 10px;
+			background-color: #2a2a2a;
+			border-radius: 5px;
+			overflow-y: auto;
+		}
+		.main-content {
+			width: 70%;
+			padding: 10px;
+			background-color: #2a2a2a;
+			border-radius: 5px;
+			overflow-y: auto;
+		}
+		.categories {
+			margin-bottom: 15px;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 5px;
+		}
+		.category-btn {
+			padding: 5px 10px;
+			background-color: #3a3a3a;
+			border: none;
+			border-radius: 3px;
+			color: #e0e0e0;
+			cursor: pointer;
+		}
+		.category-btn:hover {
+			background-color: #4a4a4a;
+		}
+		.category-btn.active {
+			background-color: #5a5a5a;
+			font-weight: bold;
+		}
+		.search-box {
+			width: 100%;
+			padding: 8px;
+			margin-bottom: 15px;
+			background-color: #3a3a3a;
+			border: 1px solid #4a4a4a;
+			border-radius: 3px;
+			color: #e0e0e0;
+		}
+		.recipe-list {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+		}
+		.recipe-link {
+			padding: 8px;
+			background-color: #3a3a3a;
+			color: #e0e0e0;
+			text-decoration: none;
+			border-radius: 3px;
+		}
+		.recipe-link:hover {
+			background-color: #4a4a4a;
+		}
+		.recipe-link.selected {
+			background-color: #5a5a5a;
+			font-weight: bold;
+		}
+		.recipe-content {
+			padding: 10px;
+		}
+		.no-matches {
+			color: #a0a0a0;
+			font-style: italic;
+			padding: 10px;
+			text-align: center;
+		}
+		.close-btn {
+			margin-bottom: 10px;
+			padding: 8px 15px;
+			background-color: #3a3a3a;
+			border: none;
+			border-radius: 3px;
+			color: #e0e0e0;
+			cursor: pointer;
+		}
+		.close-btn:hover {
+			background-color: #4a4a4a;
+		}
+		h1 {
+			margin-top: 0;
+			color: #ffffff;
+		}
+		hr {
+			border: none;
+			border-top: 1px solid #4a4a4a;
+			margin: 10px 0;
+		}
+	</style>
+</head>
+<body>
+	<h1>Configure Quirks</h1>
+	<button class='close-btn' onclick=\"window.location.href='?_src_=prefs;preference=trait;task=close'\">Close</button>
+	<div class='book-content'>
+		<div class='sidebar'>
+			<input type='text' class='search-box' id='searchInput' placeholder='Search quirks...' value='[search_query]'>
+			<div class='categories'>
+	"}
+
+	for(var/category in categories)
+		var/active_class = (category == current_category) ? "active" : ""
+		html += "<button class='category-btn [active_class]' onclick=\"window.location.href='?_src_=prefs;preference=trait;task=set_category;category=[category]'\">[category]</button>"
+
+	html += {"
+			</div>
+			<div class='recipe-list' id='quirkList'>
+	"}
+
+	var/list/quirks = list()
+	for(var/V in SSquirks.quirks)
+		var/datum/quirk/Q = SSquirks.quirks[V]
+		if(current_category == "All" || (current_category == "Positive" && isnum(Q.value) && Q.value > 0) || (current_category == "Negative" && isnum(Q.value) && Q.value < 0) || (current_category == "Neutral" && isnum(Q.value) && Q.value == 0))
+			if(!search_query || findtext(lowertext(initial(Q.name)), lowertext(search_query)))
+				quirks += V
+
+	if(!length(quirks))
+		html += "<div id='noMatchesMsg' class='no-matches'>No matching quirks found.</div>"
 	else
-		dat += "<center><b>Choose quirk setup</b></center><br>"
-		dat += "<div align='center'>Left-click to add or remove quirks. You need negative quirks to have positive ones.<br>\
-		Quirks are applied at roundstart and cannot normally be removed. Most things may not work or work right.</div>"
-		dat += "<center><a href='?_src_=prefs;preference=trait;task=close'>Done</a></center>"
-		dat += "<hr>"
-		dat += "<center><b>Current quirks:</b> [all_quirks.len ? all_quirks.Join(", ") : "None"]</center>"
-		dat += "<center>[GetPositiveQuirkCount()] / [MAX_QUIRKS] max positive quirks<br>\
-		<b>Quirk balance remaining:</b> [GetQuirkBalance()]</center><br>"
-		for(var/V in SSquirks.quirks)
-			var/datum/quirk/T = SSquirks.quirks[V]
-			var/quirk_name = initial(T.name)
-			var/has_quirk
-			var/quirk_cost = initial(T.value) * -1
-			var/lock_reason = "This trait is unavailable."
-			var/quirk_conflict = FALSE
-			for(var/_V in all_quirks)
-				if(_V == quirk_name)
-					has_quirk = TRUE
-			if(initial(T.mood_quirk) && CONFIG_GET(flag/disable_human_mood))
-				lock_reason = "Mood is disabled."
-				quirk_conflict = TRUE
-			if(has_quirk)
-				if(quirk_conflict)
-					all_quirks -= quirk_name
-					has_quirk = FALSE
-				else
-					quirk_cost *= -1 //invert it back, since we'd be regaining this amount
-			if(quirk_cost > 0)
-				quirk_cost = "+[quirk_cost]"
-			var/font_color = "#AAAAFF"
-			if(initial(T.value) != 0)
-				font_color = initial(T.value) > 0 ? "#AAFFAA" : "#FFAAAA"
-			if(quirk_conflict)
-				dat += "<font color='[font_color]'>[quirk_name]</font> - [initial(T.desc)] \
-				<font color='red'><b>LOCKED: [lock_reason]</b></font><br>"
-			else
-				if(has_quirk)
-					dat += "<a href='?_src_=prefs;preference=trait;task=update;trait=[quirk_name]'>[has_quirk ? "Remove" : "Take"] ([quirk_cost] pts.)</a> \
-					<b><font color='[font_color]'>[quirk_name]</font></b> - [initial(T.desc)]<br>"
-				else
-					dat += "<a href='?_src_=prefs;preference=trait;task=update;trait=[quirk_name]'>[has_quirk ? "Remove" : "Take"] ([quirk_cost] pts.)</a> \
-					<font color='[font_color]'>[quirk_name]</font> - [initial(T.desc)]<br>"
-		dat += "<br><center><a href='?_src_=prefs;preference=trait;task=reset'>Reset Quirks</a></center>"
+		for(var/V in quirks)
+			var/selected = (selected_quirk == V) ? "selected" : ""
+			html += "<a class='recipe-link [selected]' href='?_src_=prefs;preference=trait;task=select;trait=[V]'>[V]</a>"
 
-	var/datum/browser/noclose/popup = new(user, "mob_occupation", "<div align='center'>Quirk Preferences</div>", 900, 600) //no reason not to reuse the occupation window, as it's cleaner that way
-	popup.set_window_options("can_close=0")
-	popup.set_content(dat.Join())
-	popup.open(FALSE)
+	html += {"
+			</div>
+		</div>
+		<div class='main-content' id='mainContent'>
+	"}
 
-/datum/preferences/proc/GetQuirkBalance()
-	var/bal = 0
-	for(var/V in all_quirks)
-		var/datum/quirk/T = SSquirks.quirks[V]
-		bal -= initial(T.value)
-	return bal
-
-/datum/preferences/proc/GetPositiveQuirkCount()
-	. = 0
+	// Show current quirk stats at the top
+	var/positive_count = 0
+	var/balance = 0
 	for(var/q in all_quirks)
-		if(SSquirks.quirk_points[q] > 0)
-			.++
+		if(SSquirks.quirks[q]) {
+			var/datum/quirk/Q = SSquirks.quirks[q]
+			if(isnum(Q.value) && Q.value > 0)
+				positive_count++
+			if(isnum(Q.value))
+				balance -= Q.value
+		}
+	html += "<div><b>Current Quirks:</b> [length(all_quirks) ? all_quirks.Join(", ") : "None"]<br>"
+	html += "<b>Positive Quirks:</b> [positive_count] / [MAX_QUIRKS] &nbsp; <b>Balance Remaining:</b> [balance]</div><hr>"
+
+	if(selected_quirk) {
+		var/datum/quirk/Q = SSquirks.quirks[selected_quirk]
+		if(Q) {
+			html += "<div class='recipe-content'><h2>[selected_quirk]</h2><p>[initial(Q.desc)]</p>"
+			var/has_quirk = (selected_quirk in all_quirks)
+			var/quirk_cost = initial(Q.value)
+			var/cost_str = (quirk_cost > 0) ? "+[quirk_cost]" : "[quirk_cost]"
+			html += "<b>Points:</b> [cost_str]<br>"
+			html += "<a href='?_src_=prefs;preference=trait;task=update;trait=[selected_quirk]'>[has_quirk ? "Remove" : "Take"]</a>"
+			html += "</div>"
+		} else {
+			html += "<div class='recipe-content'><p>Invalid quirk selected.</p></div>"
+		}
+	} else {
+		html += "<div class='recipe-content'><p>Select a quirk from the list to view details.</p></div>"
+	}
+
+	html += {"
+		</div>
+	</div>
+</body>
+</html>
+	"}
+
+	return html
+
+/datum/preferences/proc/SetQuirks(mob/user, current_category = "All", search_query = "", selected_quirk = null)
+	var/html = generate_quirks_html(user, current_category, search_query, selected_quirk)
+	var/datum/browser/popup = new(user, "mob_occupation", "<div align='center'>Quirk Preferences</div>", 900, 600)
+	popup.set_content(html)
+	popup.open(FALSE)
 
 /datum/preferences/proc/SetKeybinds(mob/user)
 	var/list/dat = list()
@@ -1146,19 +1293,19 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 		for (var/i in kb_categories[category])
 			var/datum/keybinding/kb = i
 			if(!length(user_binds[kb.name]))
-				dat += "<label>[kb.full_name]</label> <a href ='?_src_=prefs;preference=keybinds;task=keybindings_capture;keybinding=[kb.name];old_key=["Unbound"]'>Unbound</a>"
+				dat += "<label>[kb.full_name]</label> <a href ='?_src_=prefs;preference=keybindings_capture;keybinding=[kb.name];old_key=["Unbound"]'>Unbound</a>"
 //						var/list/default_keys = hotkeys ? kb.hotkey_keys : kb.classic_keys
 //						if(LAZYLEN(default_keys))
 //							dat += "| Default: [default_keys.Join(", ")]"
 				dat += "<br>"
 			else
 				var/bound_key = user_binds[kb.name][1]
-				dat += "<label>[kb.full_name]</label> <a href ='?_src_=prefs;preference=keybinds;task=keybindings_capture;keybinding=[kb.name];old_key=[bound_key]'>[bound_key]</a>"
+				dat += "<label>[kb.full_name]</label> <a href ='?_src_=prefs;preference=keybindings_capture;keybinding=[kb.name];old_key=[bound_key]'>[bound_key]</a>"
 				for(var/bound_key_index in 2 to length(user_binds[kb.name]))
 					bound_key = user_binds[kb.name][bound_key_index]
-					dat += " | <a href ='?_src_=prefs;preference=keybinds;task=keybindings_capture;keybinding=[kb.name];old_key=[bound_key]'>[bound_key]</a>"
+					dat += " | <a href ='?_src_=prefs;preference=keybindings_capture;keybinding=[kb.name];old_key=[bound_key]'>[bound_key]</a>"
 				if(length(user_binds[kb.name]) < MAX_KEYS_PER_KEYBIND)
-					dat += "| <a href ='?_src_=prefs;preference=keybinds;task=keybindings_capture;keybinding=[kb.name]'>Add Secondary</a>"
+					dat += "| <a href ='?_src_=prefs;preference=keybindings_capture;keybinding=[kb.name]'>Add Secondary</a>"
 				dat += "<br>"
 
 	dat += "<br><br>"
@@ -1274,44 +1421,35 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 				SetChoices(user)
 		return 1
 
-
 	else if(href_list["preference"] == "trait")
 		switch(href_list["task"])
+			if("menu")
+				src.SetQuirks(user, "All", "", null)
+				return
+			if("set_category")
+				var/category = href_list["category"] || "All"
+				src.SetQuirks(user, category, href_list["query"] || "", href_list["trait"] || null)
+				return
+			if("select")
+				var/selected = href_list["trait"]
+				src.SetQuirks(user, href_list["category"] || "All", href_list["query"] || "", selected)
+				return
+			if("update")
+				var/trait = href_list["trait"]
+				if(trait)
+					if(trait in all_quirks)
+						all_quirks -= trait
+					else
+						all_quirks += trait
+				src.SetQuirks(user, href_list["category"] || "All", href_list["query"] || "", trait)
+				return
+			if("search")
+				var/query = href_list["query"] || ""
+				src.SetQuirks(user, href_list["category"] || "All", query, href_list["trait"] || null)
+				return
 			if("close")
 				user << browse(null, "window=mob_occupation")
-				ShowChoices(user)
-			if("update")
-				var/quirk = href_list["trait"]
-				if(!SSquirks.quirks[quirk])
-					return
-				for(var/V in SSquirks.quirk_blacklist) //V is a list
-					var/list/L = V
-					for(var/Q in all_quirks)
-						if((quirk in L) && (Q in L) && !(Q == quirk)) //two quirks have lined up in the list of the list of quirks that conflict with each other, so return (see quirks.dm for more details)
-							to_chat(user, span_danger("[quirk] is incompatible with [Q]."))
-							return
-				var/value = SSquirks.quirk_points[quirk]
-				var/balance = GetQuirkBalance()
-				if(quirk in all_quirks)
-					if(balance + value < 0)
-						to_chat(user, span_warning("Refunding this would cause you to go below your balance!"))
-						return
-					all_quirks -= quirk
-				else
-					if(GetPositiveQuirkCount() >= MAX_QUIRKS)
-						to_chat(user, span_warning("I can't have more than [MAX_QUIRKS] positive quirks!"))
-						return
-					if(balance - value < 0)
-						to_chat(user, span_warning("I don't have enough balance to gain this quirk!"))
-						return
-					all_quirks += quirk
-				SetQuirks(user)
-			if("reset")
-				all_quirks = list()
-				SetQuirks(user)
-			else
-				SetQuirks(user)
-		return TRUE
+				return
 
 	else if(href_list["preference"] == "antag")
 		switch(href_list["task"])
