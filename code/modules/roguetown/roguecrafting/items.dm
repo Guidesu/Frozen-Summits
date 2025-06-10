@@ -913,12 +913,6 @@
 	craftdiff = 1
 
 */
-/datum/crafting_recipe/roguetown/kusaripeasant
-	name = "handmade kusarigama"
-	result = /obj/item/rogueweapon/flail/kusarigama/peasant
-	reqs = list(/obj/item/rogueweapon/sickle/kama = 1,
-				/obj/item/rope/chain = 1)
-	craftdiff = 1
 
 // BOUQUETS & CROWNS
 

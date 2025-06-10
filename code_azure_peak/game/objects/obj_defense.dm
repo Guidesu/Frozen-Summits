@@ -241,6 +241,7 @@ GLOBAL_DATUM_INIT(acid_overlay, /mutable_appearance, mutable_appearance('icons/e
 	obj_broken = FALSE
 	obj_integrity = max_integrity
 
+
 ///what happens when the obj's integrity reaches zero.
 /obj/proc/obj_destruction(damage_flag)
 	obj_destroyed = TRUE

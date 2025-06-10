@@ -306,21 +306,6 @@
 /obj/machinery/microwave/proc/loop_finish()
 	operating = FALSE
 
-	var/metal = 0
-	for(var/obj/item/O in ingredients)
-		O.microwave_act(src)
-		if(O.custom_materials && length(O.custom_materials))
-			if(O.custom_materials[getmaterialref(/datum/material/iron)])
-				metal += O.custom_materials[getmaterialref(/datum/material/iron)]
-
-	if(metal)
-		spark()
-		broken = 2
-		if(prob(max(metal / 2, 33)))
-			explosion(loc, 0, 1, 2)
-	else
-		dropContents(ingredients)
-		ingredients.Cut()
 
 	after_finish_loop()
 

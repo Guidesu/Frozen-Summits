@@ -366,11 +366,7 @@
 		to_chat(M, "ARMOR BROKEN...!")
 	..()
 
-/obj/item/clothing/proc/obj_fix(damage_flag)
-	obj_broken = FALSE
-	if(damaged_clothes)
-		update_clothes_damaged_state(FALSE)
-	armor = original_armor
+
 /obj/item/clothing/proc/update_clothes_damaged_state(damaging = TRUE)
 	var/index = "[REF(initial(icon))]-[initial(icon_state)]"
 	var/static/list/damaged_clothes_icons = list()

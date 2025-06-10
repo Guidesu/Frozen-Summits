@@ -4,7 +4,7 @@
 	possible_item_intents = list(/datum/intent/lordbash, /datum/intent/lord_electrocute, /datum/intent/lord_silence)
 	gripped_intents = list(/datum/intent/lordbash)
 	name = "master's rod"
-	desc = "Bend the knee. Can't be used outside of the manor."
+	desc = "Bend the knee."
 	icon_state = "scepter"
 	icon = 'icons/roguetown/weapons/32.dmi'
 	sharpness = IS_BLUNT
@@ -16,17 +16,17 @@
 	smeltresult = /obj/item/ingot/iron
 	swingsound = BLUNTWOOSH_MED
 	minstr = 5
-	blade_dulling = DULLING_SHAFT_WOOD
+	blade_dulling = DULLING_BASHCHOP
 
-	grid_height = 96
-	grid_width = 32
+	grid_height = THREE_SLOTS
+	grid_width = ONE_SLOTS
 
 /datum/intent/lordbash
 	name = "bash"
 	blade_class = BCLASS_BLUNT
 	icon_state = "inbash"
 	attack_verb = list("bashes", "strikes")
-	penfactor = BLUNT_DEFAULT_PENFACTOR
+	penfactor = 10
 	item_d_type = "blunt"
 
 /datum/intent/lord_electrocute
@@ -63,42 +63,34 @@
 	if(ishuman(user))
 		var/mob/living/carbon/human/HU = user
 
-		if((HU.job != "Grand Duke") && (HU.job != "Consort"))
+		if((HU.job != "Consular") && (HU.job != "Consort"))
 			to_chat(user, span_danger("The rod doesn't obey me."))
 			return
 
 		if(ishuman(target))
 			var/mob/living/carbon/human/H = target
-			var/area/target_area = get_area(H)
-
-			if(!istype(target_area, /area/rogue/indoors/town/manor))
-				to_chat(user, span_danger("The rod cannot be used on targets outside of the manor!"))
-				return
 
 			if(H == HU)
 				return
 
 			if(H.anti_magic_check())
-				to_chat(user, span_danger("Something is disrupting the rod's power!"))
 				return
 		
 			if(!(H in SStreasury.bank_accounts))
-				to_chat(user, span_danger("The target must have a Meister account!"))
 				return
 
 			if(istype(user.used_intent, /datum/intent/lord_electrocute))
 				HU.visible_message(span_warning("[HU] electrocutes [H] with the [src]."))
-				user.Beam(target,icon_state="lightning[rand(1,12)]",time=5)
 				H.electrocute_act(5, src)
 				to_chat(H, span_danger("I'm electrocuted by the scepter!"))
 				return
 
 			if(istype(user.used_intent, /datum/intent/lord_silence))
-				HU.visible_message("<span class='warning'>[HU] silences [H] with \the [src].</span>")
-				H.set_silence(20 SECONDS)
-				to_chat(H, "<span class='danger'>I'm silenced by the scepter!</span>")
+				HU.visible_message(span_warning("[HU] silences [H] with the [src]."))
+				H.dna.add_mutation(/datum/mutation/human/mute)
+				addtimer(CALLBACK(H.dna, TYPE_PROC_REF(/datum/dna/, remove_mutation), /datum/mutation/human/mute), 20 SECONDS)
+				to_chat(H, span_danger("I'm silenced by the scepter!"))
 				return
-
 /obj/item/rogueweapon/mace/stunmace
 	force = 15
 	force_wielded = 15
@@ -441,7 +433,6 @@
 	resistance_flags = FIRE_PROOF
 	light_system = MOVABLE_LIGHT
 	light_power = 5
-	light_outer_range = 5
 	light_on = FALSE
 	light_color = "#db892b"
 	var/is_loaded = FALSE 

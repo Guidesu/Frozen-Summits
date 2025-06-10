@@ -61,24 +61,24 @@
 
 
 //roguetown
-#define CLOTHING_RED			"#a32121"
+#define CLOTHING_RED			"#8b2323"
 #define CLOTHING_PURPLE			"#8747b1"
-#define CLOTHING_BLACK			"#414143"
+#define CLOTHING_BLACK			"#2b292e"
 #define CLOTHING_GREY			"#6c6c6c"
-#define CLOTHING_BROWN			"#685542"
+#define CLOTHING_BROWN			"#61462c"
 #define CLOTHING_GREEN			"#428138"
-#define CLOTHING_DARK_GREEN		"#537bc6"
-#define CLOTHING_BLUE			"#0000FF"
+#define CLOTHING_DARK_GREEN		"#264d26"
+#define CLOTHING_BLUE			"#173266"
 #define CLOTHING_YELLOW			"#ffcd43"
 #define CLOTHING_TEAL			"#249589"
 #define CLOTHING_AZURE			"#007fff"
 #define CLOTHING_WHITE			"#ffffff"
-#define CLOTHING_ORANGE			"#bd6606"
-#define CLOTHING_MAJENTA		"#962e5c"
+#define CLOTHING_ORANGE			"#df8405"
+#define CLOTHING_MAGENTA		"#962e5c"
 
 #define CLOTHING_WET			"#bbbbbb"
 
-#define CLOTHING_COLOR_NAMES	list("Red","Purple","Black","Brown","Green","Blue","Yellow","Teal","White","Orange","Majenta")
+#define CLOTHING_COLOR_NAMES	list("Red","Purple","Black","Brown","Green","Blue","Yellow","Teal","White","Orange","Magenta")
 
 /proc/clothing_color2hex(input)
 	switch(input)
@@ -104,9 +104,8 @@
 			return CLOTHING_WHITE
 		if("Orange")
 			return CLOTHING_ORANGE
-		if("Majenta")
-			return CLOTHING_MAJENTA
-
+		if("Magenta")
+			return CLOTHING_MAGENTA
 
 //kaizoku
 

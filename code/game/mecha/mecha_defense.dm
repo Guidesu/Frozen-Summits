@@ -90,8 +90,7 @@
 		return 1
 
 
-/obj/mecha/hulk_damage()
-	return 15
+
 
 /obj/mecha/attack_hulk(mob/living/carbon/human/user)
 	. = ..()

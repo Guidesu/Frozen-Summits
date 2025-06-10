@@ -105,8 +105,6 @@
 	if (can_parry)
 		can_parry = FALSE
 
-/obj/item/rogueweapon/obj_fix()
-	..()
 
 	force = initial(force)
 	armor_penetration = initial(armor_penetration)

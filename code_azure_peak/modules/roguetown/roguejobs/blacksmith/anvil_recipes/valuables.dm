@@ -19,10 +19,6 @@
 	req_bar = /obj/item/ingot/iron
 	created_item = /obj/item/roguestatue/iron
 
-/datum/anvil_recipe/valuables/aalloy
-	name = "Decrepit Statue"
-	req_bar = /obj/item/ingot/aalloy
-	created_item = /obj/item/roguestatue/aalloy
 
 /datum/anvil_recipe/valuables/steel
 	name = "Statue"

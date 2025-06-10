@@ -215,7 +215,7 @@ GLOBAL_LIST_INIT(drow_aggro, world.file2list("strings/rt/drowraideraggrolines.tx
 	H.STASTR = rand(17,19)
 	H.STALUC = 12
 	r_hand = /obj/item/rogueweapon/sword/long/blackflamb
-	l_hand = /obj/item/rogueweapon/shield/tower/metal/abyssal
+	l_hand = /obj/item/rogueweapon/shield/tower/metal
 	shoes = /obj/item/clothing/shoes/roguetown/boots/adamantine/plateboots
 	H.dna.features["mcolor"] = pick("9796a9", "897489", "938f9c", "737373", "6a616d", "5f5f70", "2f2f38")
 	if(H.gender == FEMALE)

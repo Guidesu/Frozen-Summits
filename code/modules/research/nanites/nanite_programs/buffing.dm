@@ -46,8 +46,6 @@
 		var/mob/living/carbon/human/H = host_mob
 		H.physiology.armor.blunt += 50
 		H.physiology.armor.blunt += 50
-		H.physiology.armor.blunt += 50
-		H.physiology.armor.bullet += 35
 
 /datum/nanite_program/hardening/disable_passive_effect()
 	. = ..()
@@ -55,8 +53,6 @@
 		var/mob/living/carbon/human/H = host_mob
 		H.physiology.armor.blunt -= 50
 		H.physiology.armor.slash -= 50
-		H.physiology.armor.stab -= 50
-		H.physiology.armor.bullet -= 35
 
 /datum/nanite_program/refractive
 	name = "Dermal Refractive Surface"
@@ -65,18 +61,9 @@
 	rogue_types = list(/datum/nanite_program/skin_decay)
 
 /datum/nanite_program/refractive/enable_passive_effect()
-	. = ..()
-	if(ishuman(host_mob))
-		var/mob/living/carbon/human/H = host_mob
-		H.physiology.armor.laser += 50
-		H.physiology.armor.energy += 35
 
 /datum/nanite_program/refractive/disable_passive_effect()
-	. = ..()
-	if(ishuman(host_mob))
-		var/mob/living/carbon/human/H = host_mob
-		H.physiology.armor.laser -= 50
-		H.physiology.armor.energy -= 35
+
 
 /datum/nanite_program/coagulating
 	name = "Rapid Coagulation"

@@ -204,8 +204,6 @@
 		to_chat(user, span_warning("This accursed mask pacifies me!"))
 		ADD_TRAIT(user, TRAIT_PACIFISM, "cursedmask")
 		ADD_TRAIT(user, TRAIT_SPELLCOCKBLOCK, "cursedmask")
-		if(HAS_TRAIT(user, TRAIT_RITUALIST))
-			user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
 		var/timer = 20 MINUTES
 
 		if(bounty_amount >= 100)

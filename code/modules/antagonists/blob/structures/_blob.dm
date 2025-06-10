@@ -220,9 +220,6 @@
 	if(overmind)
 		overmind.blobstrain.extinguish_reaction(src)
 
-/obj/structure/blob/hulk_damage()
-	return 15
-
 /obj/structure/blob/attackby(obj/item/I, mob/user, params)
 	if(I.tool_behaviour == TOOL_ANALYZER)
 		user.changeNext_move(CLICK_CD_MELEE)

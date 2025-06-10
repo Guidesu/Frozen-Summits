@@ -89,8 +89,6 @@
 					var/mob/living/carbon/carbon_user = user
 					if(carbon_user.domhand)
 						used_str = carbon_user.get_str_arms(carbon_user.used_hand)
-					if(HAS_TRAIT(carbon_user, TRAIT_FORGEBLESSED))
-						carbon_user.rogfat_add(max(21 - (used_str * 3), 0)*advance_multiplier)
 					else
 						carbon_user.rogfat_add(max(40 - (used_str * 3), 0)*advance_multiplier)
 				var/total_chance = 7 * user.mind.get_skill_level(hingot.currecipe.appro_skill) * user.STAPER/10

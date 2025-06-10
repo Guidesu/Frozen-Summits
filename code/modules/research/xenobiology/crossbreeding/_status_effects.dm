@@ -571,18 +571,6 @@
 	fire = new(owner)
 	return ..()
 
-/datum/status_effect/stabilized/darkpurple/tick()
-	var/obj/item/I = owner.get_active_held_item()
-	var/obj/item/reagent_containers/food/snacks/F = I
-	if(istype(F))
-		if(F.cooked_type)
-			to_chat(owner, span_warning("[linked_extract] flares up brightly, and my hands alone are enough cook [F]!"))
-			var/obj/item/result = F.microwave_act()
-			if(istype(result))
-				owner.put_in_hands(result)
-	else
-		I.attackby(fire, owner)
-	return ..()
 
 /datum/status_effect/stabilized/darkpurple/on_remove()
 	REMOVE_TRAIT(owner, TRAIT_RESISTHEATHANDS, "slimestatus")

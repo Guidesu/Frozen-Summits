@@ -72,7 +72,7 @@
 	name = "gold ring"
 	icon_state = "ring_g"
 	sellprice = 45
-
+/*
 /obj/item/clothing/ring/active
 	var/active = FALSE
 	desc = "Unfortunately, like most magic rings, it must be used sparingly. (Right-click me to activate)"
@@ -133,7 +133,7 @@
 	var/datum/component/magcom = GetComponent(/datum/component/anti_magic)
 	if(magcom)
 		magcom.RemoveComponent()
-
+*/
 //gold rings
 /obj/item/clothing/ring/emerald
 	name = "emerald ring"
@@ -273,7 +273,7 @@
 	icon_state = "c_ring_diamond"
 	sellprice = 170
 
-
+/*
 /obj/item/clothing/ring/dragon_ring
 	name = "Dragon Ring"
 	icon_state = "dragonring"
@@ -301,5 +301,5 @@
 		user.change_stat("constitution", -2)
 		user.change_stat("endurance", -2)
 		active_item = FALSE
-		return
+		return */
 

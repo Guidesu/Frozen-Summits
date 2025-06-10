@@ -73,10 +73,11 @@
 	additional_items = list(/obj/item/ingot/bronze, /obj/item/roguegear, /obj/item/roguegear)
 	created_item = /obj/item/bodypart/r_leg/prosthetic/bronzeright
 	craftdiff = 4
-
+/*
 /datum/anvil_recipe/engineering/bronze/drill
 	name = "Clockwork Drill"
 	req_bar = /obj/item/ingot/bronze
 	additional_items = list(/obj/item/roguegear, /obj/item/roguegear, /obj/item/roguegem/diamond)
 	created_item = /obj/item/rogueweapon/pick/drill
 	craftdiff = 5
+*/

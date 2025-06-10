@@ -25,10 +25,6 @@
 	created_item = /obj/item/rogueweapon/pitchfork/copper
 	i_type = "Tools"
 
-/datum/anvil_recipe/tools/lamptern/copper
-	name = "Copper Lamptern"
-	req_bar = /obj/item/ingot/copper
-	created_item = /obj/item/flashlight/flare/torch/lantern/copper
 
 /datum/anvil_recipe/tools/hammer/copper
 	name = "Copper Hammer (+Stick)"
@@ -89,12 +85,6 @@
 	created_item = /obj/item/rogueweapon/pick/aalloy
 	i_type = "Tools"
 
-/datum/anvil_recipe/tools/aalloy/shovel
-	name = "Decrepit Shovel (+2 Sticks)"
-	req_bar = /obj/item/ingot/aalloy
-	additional_items = list(/obj/item/grown/log/tree/stick,/obj/item/grown/log/tree/stick)
-	created_item = /obj/item/rogueweapon/shovel/aalloy
-	i_type = "Tools"
 
 /datum/anvil_recipe/tools/aalloy/sewingneedle
 	name = "Decrepit Needles x3"
@@ -135,11 +125,7 @@
 	craftdiff = 1
 	createditem_num = 3
 
-/datum/anvil_recipe/tools/aalloy/bowl
-	name = "Decrepit Bowl"
-	req_bar = /obj/item/ingot/aalloy
-	created_item = /obj/item/reagent_containers/glass/bowl/aalloy
-	craftdiff = 1
+
 
 /datum/anvil_recipe/tools/aalloy/fork
 	name = "Decrepit Fork x3"
@@ -158,11 +144,6 @@
 
 // --------- IRON -----------
 
-/datum/anvil_recipe/tools/iron/blowrod
-	name = "Glass Blowing Rod"
-	req_bar = /obj/item/ingot/iron
-	created_item = /obj/item/rogueweapon/blowrod
-	craftdiff = 0
 
 /datum/anvil_recipe/tools/surgery/surgerytools
 	name = "Surgeon's Bag (+1 Iron, +1 Cured Leather)"
@@ -306,13 +287,6 @@
 	created_item = /obj/item/rogueweapon/huntingknife/scissors
 	i_type = "Tools"
 
-/datum/anvil_recipe/tools/headhook
-	name = "Iron Headhook (+2 Fibers)"
-	req_bar = /obj/item/ingot/iron
-	additional_items = list(/obj/item/natural/fibers = 2)
-	created_item = /obj/item/storage/hip/headhook
-	craftdiff = 3
-	i_type = "Tools"
 
 // --------- Steel -----------
 

@@ -37,12 +37,7 @@
 	default_unfasten_wrench(user, I)
 	return TRUE
 
-/obj/machinery/plumbing/plunger_act(obj/item/plunger/P, mob/living/user, reinforced)
-	to_chat(user, "<span class='notice'>I start furiously plunging [name].")
-	if(do_after(user, 30, target = src))
-		to_chat(user, "<span class='notice'>I finish plunging the [name].")
-		reagents.reaction(get_turf(src), TOUCH) //splash on the floor
-		reagents.clear_reagents()
+
 
 /obj/machinery/plumbing/welder_act(mob/living/user, obj/item/I)
 	. = ..()

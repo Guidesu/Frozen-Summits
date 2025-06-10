@@ -561,7 +561,7 @@
 	H.mind.adjust_skillrank_up_to(/datum/skill/craft/engineering, 3, TRUE)
 	H.mind.adjust_skillrank_up_to(/datum/skill/craft/smelting, 3, TRUE)
 	H.mind.adjust_skillrank_up_to(/datum/skill/craft/crafting, 2, TRUE)
-	H.mind.special_items["Hammer"] = /obj/item/rogueweapon/hammer/claw // works same as normal hammer.
+	H.mind.special_items["Hammer"] = /obj/item/rogueweapon/hammer // works same as normal hammer.
 	H.mind.special_items["Tongs"] = /obj/item/rogueweapon/tongs
 	H.mind.special_items["Coal"] = /obj/item/rogueore/coal
 
@@ -936,7 +936,6 @@
 	var/mob/living/carbon/human/H = quirk_holder
 	var/datum/antagonist/vampire/new_antag = new /datum/antagonist/vampirelord/lesser/secret()
 	H.mind.add_antag_datum(new_antag)
-	H.mind.special_items["Crimson Medallion"] = /obj/item/clothing/mask/rogue/collar/medallion
 
 /datum/antagonist/vampirelord/lesser/secret
 	ashes = FALSE
@@ -1021,11 +1020,6 @@
 
 /datum/quirk/clothing_stasher/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
-	H.mind.special_items["Black Collar"] = /obj/item/clothing/mask/rogue/collar/black
-	H.mind.special_items["Spiked Collar"] = /obj/item/clothing/mask/rogue/collar/spiked
-	H.mind.special_items["Cyan Collar"] = /obj/item/clothing/mask/rogue/collar
-	H.mind.special_items["glasses"] = /obj/item/clothing/mask/rogue/spectacles/glasses
-	H.mind.special_items["Crimson Medallion"] = /obj/item/clothing/mask/rogue/collar/medallion
 	H.mind.special_items["Exotic Bra"] = /obj/item/clothing/suit/roguetown/shirt/exoticsilkbra
 	H.mind.special_items["Golden anklets"] = /obj/item/clothing/shoes/roguetown/anklets
 	H.mind.special_items["Keffiyeh"] = /obj/item/clothing/head/roguetown/roguehood/shalal
@@ -1040,9 +1034,6 @@
 	H.mind.special_items["Folded Hat"] = /obj/item/clothing/head/roguetown/bucklehat
 	H.mind.special_items["Duelist's Hat"] = /obj/item/clothing/head/roguetown/duelhat
 	H.mind.special_items["Hood"] = /obj/item/clothing/head/roguetown/roguehood
-	H.mind.special_items["Takuhatsugasa Hat"] = /obj/item/clothing/head/roguetown/takuhatsugasa
-	H.mind.special_items["Torioigasa Hat"] = /obj/item/clothing/head/roguetown/tengai/torioigasa
-	H.mind.special_items["Gasa Hat"] = /obj/item/clothing/head/roguetown/tengai/gasa
 
 	H.mind.special_items["Tabard"] = /obj/item/clothing/cloak/tabard
 	H.mind.special_items["Surcoat"] = /obj/item/clothing/cloak/stabard
@@ -1056,7 +1047,6 @@
 	H.mind.special_items["Light Direbear Cloak"] = /obj/item/clothing/cloak/darkcloak/bear/light
 
 	H.mind.special_items["Dark Boots"] = /obj/item/clothing/shoes/roguetown/boots
-	H.mind.special_items["Noble Boots"] = /obj/item/clothing/shoes/roguetown/nobleboot
 	H.mind.special_items["Short Boots"] = /obj/item/clothing/shoes/roguetown/shortboots
 	H.mind.special_items["Riding Boots"] = /obj/item/clothing/shoes/roguetown/ridingboots
 
@@ -1066,12 +1056,6 @@
 	H.mind.special_items["Tunic"] = /obj/item/clothing/suit/roguetown/shirt/tunic
 	H.mind.special_items["Dress"] = /obj/item/clothing/suit/roguetown/shirt/dress/gen
 	H.mind.special_items["Bar Dress"] = /obj/item/clothing/suit/roguetown/shirt/dress
-	H.mind.special_items["Chemise"] = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress
-	H.mind.special_items["Eastern Monk Garb"] = /obj/item/clothing/suit/roguetown/shirt/rags/monkgarb
-	H.mind.special_items["Kimono"] = /obj/item/clothing/suit/roguetown/shirt/tunic/kimono
-	H.mind.special_items["Kamishimo"] = /obj/item/clothing/suit/roguetown/shirt/tunic/kamishimo
-	H.mind.special_items["Eastern Tribal Loincloth"] = /obj/item/clothing/under/roguetown/kaizoku/tribal
-	H.mind.special_items["Maid Dress"] = /obj/item/clothing/suit/roguetown/shirt/undershirt/maid_dress
 	H.mind.special_items["Sexy Dress"] = /obj/item/clothing/suit/roguetown/shirt/dress/gen/sexy
 	H.mind.special_items["Strapless Dress"] = /obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless
 	H.mind.special_items["Alternate Strapless Dress"] = /obj/item/clothing/suit/roguetown/shirt/dress/gen/strapless/alt
@@ -1098,10 +1082,7 @@
 	H.mind.special_items["Pipe"] = /obj/item/clothing/mask/cigarette/pipe
 	H.mind.special_items["Westman Pipe"] = /obj/item/clothing/mask/cigarette/pipe/westman
 	H.mind.special_items["Feather"] = /obj/item/natural/feather
-	H.mind.special_items["Battle Skirt"] = /obj/item/clothing/cloak/fauld/battleskirt
-	H.mind.special_items["Fauld"] = /obj/item/clothing/cloak/fauld
 	H.mind.special_items["Hakama"] = /obj/item/clothing/under/roguetown/tights/hakama
-	H.mind.special_items["Eyeband"] = /obj/item/clothing/mask/rogue/kaizoku/eyeband
 
 	H.mind.special_items["Silver Ring"] = /obj/item/clothing/ring/silver
 	H.mind.special_items["Gold Ring"] = /obj/item/clothing/ring/gold

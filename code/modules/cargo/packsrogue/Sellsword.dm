@@ -4,13 +4,6 @@
 	crate_name = "Gifts of Coinspillers"
 	crate_type = /obj/structure/closet/crate/chest/merchant
 
-
-/datum/supply_pack/rogue/Sellsword/dridersword
-	name = "Old Zybantine package..."
-	cost = 10
-	contains = list(/obj/item/rogueweapon/sword/long/rider)
-
-
 /datum/supply_pack/rogue/Sellsword/driderhead
 	name = "Desert Rider headdress"
 	cost = 5

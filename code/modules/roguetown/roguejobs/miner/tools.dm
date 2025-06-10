@@ -66,6 +66,7 @@
 	max_integrity = 250
 	smeltresult = /obj/item/ingot/steel
 
+/*
 /obj/item/rogueweapon/pick/drill
 	name = "clockwork drill"
 	desc = "A wonderfully complex work of engineering capable of shredding walls in seconds as opposed to hours."
@@ -102,7 +103,7 @@
 		loop.stop()
 		return
 	loop.start()
-
+*/
 /obj/item/rogueweapon/pick/adamantine
 	force = 12
 	force_wielded = 40

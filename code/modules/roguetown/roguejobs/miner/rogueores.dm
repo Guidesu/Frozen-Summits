@@ -231,3 +231,48 @@
 	icon_state = "ingotmithral"
 	smeltresult = /obj/item/ingot/mithral
 	sellprice = 150
+
+/obj/item/ingot/blacksteel
+	name = "blacksteel bar"
+	desc = "Sacrificing the holy elements of silver for raw strength, this strange and powerful ingot's origin carries dark rumors.."
+	icon_state = "ingotblacksteel"
+	smeltresult = /obj/item/ingot/blacksteel
+	sellprice = 90
+
+//Blessed Ingots
+/obj/item/ingot/steelholy/
+	name = "holy steel bar"
+	desc = "This ingot of steel has been touched by Malum. It radiates heat, even when outside a forge."
+	icon_state = "ingotsteelholy"
+	smeltresult = /obj/item/ingot/steel //Smelting it removes the blessing
+	sellprice = 60
+
+/obj/item/ingot/silverblessed/
+	name = "blessed silver bar"
+	desc = "This bar radiates a divine purity. Treasured by the realms and commonly found in Otavan weaponry."
+	icon_state = "ingotsilvblessed"
+	smeltresult = /obj/item/ingot/silver //Smelting it removes the blessing
+	sellprice = 100
+
+/obj/item/ingot/aalloy
+	name = "ancient alloy"
+	desc = "An old, decrepit slab of metal. Aeon has withered it's strength."
+	icon_state = "ingotancient"
+	smeltresult = /obj/item/ingot/aalloy
+	sellprice = 5
+
+
+/obj/item/ingot/purifiedaalloy
+	name = "purified ancient alloy"
+	desc = "An old slab of metal, sparked to life by Malum's craft."
+	icon_state = "ingotancient"
+	smeltresult = /obj/item/ingot/aaslag
+	sellprice = 100
+
+
+/obj/item/ingot/aaslag
+	name = "ancient slag"
+	desc = "What was once great, cannot be maintained forever."
+	icon_state = "ancientslag"
+	smeltresult = /obj/item/ingot/aaslag
+	sellprice = 0

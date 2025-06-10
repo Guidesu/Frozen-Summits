@@ -30,17 +30,7 @@
 	if(activated && reagents.total_volume <= reagents.maximum_volume) //this is also evaluated in add_reagent, but from my understanding proc calls are expensive and should be avoided in continous
 		reagents.add_reagent(reagent_id, potency)						   //processes
 
-/obj/structure/geyser/plunger_act(obj/item/plunger/P, mob/living/user, _reinforced)
-	if(!_reinforced)
-		to_chat(user, span_warning("The [P.name] isn't strong enough!"))
-		return
-	if(activated)
-		to_chat(user, "<span class'warning'>The [name] is already active!</span>")
-		return
 
-	to_chat(user, span_notice("I start vigorously plunging [src]!"))
-	if(do_after(user, 50*P.plunge_mod, target = src) && !activated)
-		start_chemming()
 
 /obj/structure/geyser/random
 	erupting_state = null
@@ -62,8 +52,6 @@
 	var/reinforced = FALSE //whether we do heavy duty stuff like geysers
 
 /obj/item/plunger/attack_obj(obj/O, mob/living/user)
-	if(!O.plunger_act(src, user, reinforced))
-		return ..()
 
 /obj/item/plunger/reinforced
 	name = "reinforced plunger"

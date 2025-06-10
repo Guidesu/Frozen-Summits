@@ -318,7 +318,3 @@
 			return
 	return ..()
 
-/obj/item/clothing/head/foilhat/microwave_act(obj/machinery/microwave/M)
-	. = ..()
-	if(!warped)
-		warp_up()

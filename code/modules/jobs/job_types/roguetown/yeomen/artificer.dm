@@ -53,7 +53,7 @@
 	beltl = /obj/item/gun/ballistic/arquebus_pistol
 	mask = /obj/item/clothing/mask/rogue/spectacles/golden
 	backl = /obj/item/storage/backpack/rogue/backpack
-	backpack_contents = list(/obj/item/rogueweapon/hammer/claw, /obj/item/roguekey/artificer, /obj/item/storage/belt/rogue/pouch/coins/poor	 = 1)
+	backpack_contents = list(/obj/item/rogueweapon/hammer, /obj/item/roguekey/artificer, /obj/item/storage/belt/rogue/pouch/coins/poor	 = 1)
 	H.change_stat("strength", 1)
 	H.change_stat("intelligence", 2)
 	H.change_stat("endurance", 1)

@@ -8,6 +8,7 @@
 	if((resistance_flags & INDESTRUCTIBLE) || !max_integrity)
 		return
 	damage_amount = run_obj_armor(damage_amount, damage_type, damage_flag, attack_dir, armor_penetration)
+	SEND_SIGNAL(src, COMSIG_OBJ_TAKE_DAMAGE, damage_amount, damage_type, damage_flag, sound_effect, attack_dir, armor_penetration)
 	testing("damamount [damage_amount]")
 	if(damage_amount < DAMAGE_PRECISION)
 		return
@@ -59,25 +60,37 @@
 		if(BURN)
 			playsound(src.loc, "burn", 100, FALSE, -1)
 
-/obj/hitby(atom/movable/AM, skipcatch, hitpush, blocked, datum/thrownthing/throwingdatum, d_type = "blunt")
+/obj/hitby(atom/movable/AM, skipcatch, hitpush, blocked, datum/thrownthing/throwingdatum, damage_flag = "blunt")
 	..()
 	if(AM.throwforce > 5)
-		take_damage(AM.throwforce*0.1, BRUTE, d_type, 1, get_dir(src, AM))
+		take_damage(AM.throwforce*0.1, BRUTE, damage_flag, 1, get_dir(src, AM))
 
-/obj/ex_act(severity, target)
+/obj/ex_act(severity, target, epicenter, devastation_range, heavy_impact_range, light_impact_range, flame_range)
 	if(resistance_flags & INDESTRUCTIBLE)
 		return
 	..() //contents explosion
-	if(target == src)
-		take_damage(INFINITY, BRUTE, "bomb", 0)
-		return
-	switch(severity)
-		if(1)
-			take_damage(INFINITY, BRUTE, "bomb", 0)
-		if(2)
-			take_damage(rand(100, 250), BRUTE, "bomb", 0)
-		if(3)
-			take_damage(rand(10, 90), BRUTE, "bomb", 0)
+	var/ddist = devastation_range
+	var/hdist = heavy_impact_range
+	var/ldist = light_impact_range
+	var/fdist = flame_range
+	var/fodist = get_dist(src, epicenter)
+	var/brute_loss = 0
+
+	switch (severity)
+		if (EXPLODE_DEVASTATE)
+			brute_loss = (250 * ddist) - (250 * max((fodist - 1), 0))
+
+		if (EXPLODE_HEAVY)
+			brute_loss = (100 * hdist) - (100 * max((fodist - 1), 0))
+
+		if(EXPLODE_LIGHT)
+			brute_loss = ((25 * ldist) - (25 * fodist))
+
+	take_damage(brute_loss, BRUTE, "blunt", 0)
+
+	if(fdist && !QDELETED(src))
+		var/stacks = ((fdist - fodist) * 2)
+		fire_act(stacks)
 
 /obj/bullet_act(obj/projectile/P)
 	. = ..()
@@ -85,27 +98,7 @@
 	visible_message(span_danger("[src] is hit by \a [P]!"), null, null, COMBAT_MESSAGE_RANGE)
 	if(!QDELETED(src)) //Bullet on_hit effect might have already destroyed this object
 		take_damage(P.damage, P.damage_type, P.flag, 0, turn(P.dir, 180), P.armor_penetration)
-
-///Called to get the damage that hulks will deal to the obj.
-/obj/proc/hulk_damage()
-	return 150 //the damage hulks do on punches to this object, is affected by melee armor
-
-/obj/attack_hulk(mob/living/carbon/human/user)
-	..()
-	user.visible_message(span_danger("[user] smashes [src]!"), span_danger("I smash [src]!"), null, COMBAT_MESSAGE_RANGE)
-	if(density)
-		playsound(src.loc, 'sound/blank.ogg', 100, TRUE)
-	else
-		playsound(src, 'sound/blank.ogg', 50, TRUE)
-	take_damage(hulk_damage(), BRUTE, "blunt", 0, get_dir(src, user))
-	return TRUE
-
-/obj/blob_act(obj/structure/blob/B)
-	if(isturf(loc))
-		var/turf/T = loc
-		if(T.intact && level == 1) //the blob doesn't destroy thing below the floor
-			return
-	take_damage(400, BRUTE, "blunt", 0, get_dir(src, B))
+	P.handle_drop() //AZURE PEAK: Make sure reusable projectiles don't disappear on hit
 
 /obj/proc/attack_generic(mob/user, damage_amount = 0, damage_type = BRUTE, damage_flag = 0, sound_effect = 1, armor_penetration = 0) //used by attack_alien, attack_animal, and attack_slime
 	user.do_attack_animation(src)
@@ -223,7 +216,7 @@ GLOBAL_DATUM_INIT(acid_overlay, /mutable_appearance, mutable_appearance('icons/e
 		SSfire_burning.processing[src] = src
 		add_overlay(GLOB.fire_overlay, TRUE)
 		playsound(src, 'sound/misc/enflame.ogg', 100, TRUE)
-		return TRUE
+		return 1
 
 ///called when the obj is destroyed by fire
 /obj/proc/burn()
@@ -242,12 +235,7 @@ GLOBAL_DATUM_INIT(acid_overlay, /mutable_appearance, mutable_appearance('icons/e
 
 ///Called when the obj is hit by a tesla bolt.
 /obj/proc/tesla_act(power, tesla_flags, shocked_targets)
-	if(QDELETED(src))
-		return
-	obj_flags |= BEING_SHOCKED
-	var/power_bounced = power / 2
-	tesla_zap(src, 3, power_bounced, tesla_flags, shocked_targets)
-	addtimer(CALLBACK(src, PROC_REF(reset_shocked)), 10)
+	return
 
 //The surgeon general warns that being buckled to certain objects receiving powerful shocks is greatly hazardous to your health
 ///Only tesla coils and grounding rods currently call this because mobs are already targeted over all other objects, but this might be useful for more things later.
@@ -275,13 +263,20 @@ GLOBAL_DATUM_INIT(acid_overlay, /mutable_appearance, mutable_appearance('icons/e
 				new I (get_turf(src))
 	qdel(src)
 
-///called after the obj takes damage and integrity is below integrity_failure level
+/// Called after the obj takes damage and integrity is below integrity_failure level
 /obj/proc/obj_break(damage_flag)
+	if (obj_broken)
+		return
 	obj_broken = TRUE
 	if(break_sound)
 		playsound(get_turf(src), break_sound, 80, TRUE)
 	if(break_message)
 		visible_message(break_message)
+
+/// Called after obj is repaired (needle/hammer for items). Do not call unless obj_broken is true to avoid breaking armor.
+/obj/proc/obj_fix(mob/user)
+	obj_broken = FALSE
+	obj_integrity = max_integrity
 
 ///what happens when the obj's integrity reaches zero.
 /obj/proc/obj_destruction(damage_flag)

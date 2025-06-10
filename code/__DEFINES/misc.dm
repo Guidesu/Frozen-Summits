@@ -53,18 +53,19 @@
 #define NECK_LAYER				17
 #define CLOAK_LAYER				16		//only when looking north or west/east
 #define HAIR_LAYER				15		//TODO: make part of head layer?
-#define MASK_LAYER				14
-#define HAIREXTRA_LAYER			13
-#define MOUTH_LAYER				12
-#define HEAD_LAYER				11
-#define BACK_LAYER				10		//only when looking north
-#define HANDS_LAYER				9
-#define HANDCUFF_LAYER			8
-#define LEGCUFF_LAYER			7
-#define BODY_BACK_LAYER			6
-#define BODY_FRONT_LAYER		5
-#define BODY_FRONT_FRONT_LAYER	4
-#define HALO_LAYER				3		//blood cult ascended halo, because there's currently no better solution for adding/removing
+#define HOOD_LAYER				14
+#define MASK_LAYER				13
+#define HAIREXTRA_LAYER			12
+#define MOUTH_LAYER				11
+#define HEAD_LAYER				10
+#define BACK_LAYER				9		//only when looking north
+#define HANDS_LAYER				8
+#define HANDCUFF_LAYER			7
+#define LEGCUFF_LAYER			6
+#define BODY_BACK_LAYER			5
+#define BODY_FRONT_LAYER		4
+#define BODY_FRONT_FRONT_LAYER	3
+#define HALO_LAYER				2		//blood cult ascended halo, because there's currently no better solution for adding/removing
 #define FIRE_LAYER				2		//If you're on fire
 #define TURF_LAYER				1		//If you're on fire
 #define TOTAL_LAYERS			50		//KEEP THIS UP-TO-DATE OR SHIT WILL BREAK ;_;

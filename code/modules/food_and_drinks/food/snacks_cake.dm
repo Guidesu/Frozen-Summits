@@ -175,9 +175,6 @@
 	tastes = list("cake" = 5, "sweetness" = 1)
 	foodtype = GRAIN | DAIRY | JUNKFOOD | SUGAR
 
-/obj/item/reagent_containers/food/snacks/store/cake/birthday/microwave_act(obj/machinery/microwave/M) //super sekrit club
-	new /obj/item/clothing/head/hardhat/cakehat(get_turf(src))
-	qdel(src)
 
 /obj/item/reagent_containers/food/snacks/cakeslice/birthday
 	name = "birthday cake slice"
@@ -206,10 +203,6 @@
 /obj/item/reagent_containers/food/snacks/store/cake/birthday/energy/attack(mob/living/M, mob/living/user)
 	. = ..()
 	energy_bite(M, user)
-
-/obj/item/reagent_containers/food/snacks/store/cake/birthday/energy/microwave_act(obj/machinery/microwave/M) //super sekriter club
-	new /obj/item/clothing/head/hardhat/cakehat/energycake(get_turf(src))
-	qdel(src)
 
 /obj/item/reagent_containers/food/snacks/cakeslice/birthday/energy
 	name = "energy cake slice"

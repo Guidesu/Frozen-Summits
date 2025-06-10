@@ -32,66 +32,7 @@
 	icon_state = "ring_g"
 	sellprice = 45
 
-/obj/item/clothing/ring/active
-	var/active = FALSE
-	desc = "Unfortunately, like most magic rings, it must be used sparingly. (Right-click me to activate)"
-	var/cooldowny
-	var/cdtime
-	var/activetime
-	var/activate_sound
 
-/obj/item/clothing/ring/active/attack_right(mob/user)
-	if(loc != user)
-		return
-	if(cooldowny)
-		if(world.time < cooldowny + cdtime)
-			to_chat(user, span_warning("Nothing happens."))
-			return
-	user.visible_message(span_warning("[user] twists the [src]!"))
-	if(activate_sound)
-		playsound(user, activate_sound, 100, FALSE, -1)
-	cooldowny = world.time
-	addtimer(CALLBACK(src, PROC_REF(demagicify)), activetime)
-	active = TRUE
-	update_icon()
-	activate(user)
-
-/obj/item/clothing/ring/active/proc/activate(mob/user)
-	user.update_inv_wear_id()
-
-/obj/item/clothing/ring/active/proc/demagicify()
-	active = FALSE
-	update_icon()
-	if(ismob(loc))
-		var/mob/user = loc
-		user.visible_message(span_warning("The ring settles down."))
-		user.update_inv_wear_id()
-
-
-/obj/item/clothing/ring/active/nomag
-	name = "ring of null magic"
-	icon_state = "ruby"
-	activate_sound = 'sound/magic/antimagic.ogg'
-	cdtime = 10 MINUTES
-	activetime = 30 SECONDS
-	sellprice = 100
-
-/obj/item/clothing/ring/active/nomag/update_icon()
-	..()
-	if(active)
-		icon_state = "rubyactive"
-	else
-		icon_state = "ruby"
-
-/obj/item/clothing/ring/active/nomag/activate(mob/user)
-	. = ..()
-	AddComponent(/datum/component/anti_magic, TRUE, FALSE, FALSE, ITEM_SLOT_RING, INFINITY, FALSE)
-
-/obj/item/clothing/ring/active/nomag/demagicify()
-	. = ..()
-	var/datum/component/magcom = GetComponent(/datum/component/anti_magic)
-	if(magcom)
-		magcom.ClearFromParent()
 
 //gold rings
 /obj/item/clothing/ring/emerald

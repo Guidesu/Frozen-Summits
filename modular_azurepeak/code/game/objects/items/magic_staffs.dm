@@ -11,23 +11,6 @@
 /obj/item/rogueweapon/woodstaff
 	var/cast_time_reduction = null
 
-/obj/item/rogueweapon/woodstaff/Initialize()
-	. = ..()
-	var/static/list/slapcraft_recipe_list = list(
-		/datum/crafting_recipe/toper_staff,
-		/datum/crafting_recipe/amethyst_staff,
-		/datum/crafting_recipe/emerald_staff,
-		/datum/crafting_recipe/sapphire_staff,
-		/datum/crafting_recipe/quartz_staff,
-		/datum/crafting_recipe/ruby_staff,
-		/datum/crafting_recipe/diamond_staff,
-		/datum/crafting_recipe/riddle_of_steel_staff,
-		)
-
-	AddElement(
-		/datum/element/slapcrafting,\
-		slapcraft_recipes = slapcraft_recipe_list,\
-	)
 
 /obj/item/rogueweapon/woodstaff/toper
 	name = "toper-focused staff"

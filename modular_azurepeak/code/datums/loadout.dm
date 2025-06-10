@@ -137,9 +137,6 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Dark Boots"
 	path = /obj/item/clothing/shoes/roguetown/boots
 
-/datum/loadout_item/nobleboots
-	name = "Noble Boots"
-	path = /obj/item/clothing/shoes/roguetown/nobleboot
 
 /datum/loadout_item/shortboots
 	name = "Short Boots"
@@ -177,26 +174,6 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/chemise
 	name = "Chemise"
 	path = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress
-
-/datum/loadout_item/easternmonkgarb
-	name = "Eastern Monk Garb"
-	path = /obj/item/clothing/suit/roguetown/shirt/rags/monkgarb
-
-/datum/loadout_item/kimono
-	name = "Kimono"
-	path = /obj/item/clothing/suit/roguetown/shirt/tunic/kimono
-
-/datum/loadout_item/kamishimo
-	name = "Kamishimo"
-	path = /obj/item/clothing/suit/roguetown/shirt/tunic/kamishimo
-
-/datum/loadout_item/easterntribalgarb
-	name = "Eastern Tribal Loincloth"
-	path = /obj/item/clothing/under/roguetown/kaizoku/tribal
-
-/datum/loadout_item/maid_dress
-	name = "Maid Dress"
-	path = /obj/item/clothing/suit/roguetown/shirt/undershirt/maid_dress
 
 /datum/loadout_item/sexydress
 	name = "Sexy Dress"
@@ -295,21 +272,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Feather"
 	path = /obj/item/natural/feather
 
-/datum/loadout_item/battleskirt
-	name = "Battle Skirt"
-	path = /obj/item/clothing/cloak/fauld/battleskirt
 
-/datum/loadout_item/fauld
-	name = "Fauld"
-	path = /obj/item/clothing/cloak/fauld
-
-/datum/loadout_item/hakama
-	name = "Hakama"
-	path = /obj/item/clothing/under/roguetown/tights/hakama
-
-/datum/loadout_item/eyeband
-	name = "Eyeband"
-	path = /obj/item/clothing/mask/rogue/kaizoku/eyeband
 //below are not clothes and may be valuable and well, clearly superior to having clothes but you only get one choice, and it's a 'loadout' so maybe its fine.
 // Above clothing are usually hard to get on their own, some.
 

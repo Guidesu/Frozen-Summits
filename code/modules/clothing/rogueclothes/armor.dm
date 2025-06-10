@@ -691,7 +691,6 @@
 	desc = "A thick boiled leather surcoat with plates concealed in it's many great folds. It weighs a ton and takes a great man to wear."
 	icon_state = "leathercoat"
 	item_state = "leathercoat"
-	var/picked = FALSE
 	sleeved_detail = TRUE
 	boobed_detail = TRUE
 

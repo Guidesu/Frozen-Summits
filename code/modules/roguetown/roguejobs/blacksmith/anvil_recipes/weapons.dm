@@ -125,12 +125,7 @@
 	name = "Iron Tossblades (four)"
 	req_bar = /obj/item/ingot/iron
 	created_item = /obj/item/rogueweapon/huntingknife/throwingknife
-/datum/anvil_recipe/weapons/iron/tossblade
-	name = "Iron Tossblades 4x"
-	req_bar = /obj/item/ingot/iron
-	created_item = /obj/item/rogueweapon/huntingknife/throwingknife/iron
-	craftdiff = 0
-	createditem_num = 4
+
 
 /datum/anvil_recipe/weapons/iron/javelin
 	name = "Iron Javelin (+1 Small Log)"
@@ -146,9 +141,7 @@
 	created_item = /obj/item/rogueweapon/huntingknife/idagger/steel
 	createditem_num = 1
 
-/datum/anvil_recipe/weapons/steel/dagger/tanto
-	name = "tanto"
-	created_item = /obj/item/rogueweapon/huntingknife/idagger/steel/tanto
+
 
 /datum/anvil_recipe/weapons/steel/daggerparrying
 	name = "Parrying Dagger (+1 Steel)"
@@ -229,12 +222,7 @@
 	created_item = /obj/item/rogueweapon/stoneaxe/battle
 	craftdiff = 3
 
-/datum/anvil_recipe/weapons/steel/combatknife
-	name = "Combat Knife (+1 Steel)"
-	req_bar = /obj/item/ingot/steel
-	additional_items = list(/obj/item/ingot/steel)
-	created_item = /obj/item/rogueweapon/huntingknife/cleaver/combat
-	craftdiff = 2
+
 
 /datum/anvil_recipe/weapons/steel/mace
 	name = "Mace (+1 Steel)"
@@ -655,31 +643,6 @@
 	additional_items = list(/obj/item/rope/chain, /obj/item/grown/log/tree/stick)
 	created_item = /obj/item/rogueweapon/flail/sflail/kusarifundo
 	craftdiff = 2
-
-/datum/anvil_recipe/weapons/kunai
-	name = "Kunai"
-	appro_skill = /datum/skill/craft/weaponsmithing
-	req_bar = /obj/item/ingot/iron
-	created_item = /obj/item/rogueweapon/huntingknife/kunai
-	craftdiff = 1
-
-/datum/anvil_recipe/weapons/tanto
-	name = "Tanto smallsword x2"
-	appro_skill = /datum/skill/craft/weaponsmithing
-	req_bar = /obj/item/ingot/steel
-	created_item = /obj/item/rogueweapon/huntingknife/idagger/steel/tanto
-	createmultiple = TRUE
-	createditem_num = 1
-	craftdiff = 2
-
-/datum/anvil_recipe/weapons/kaiken
-	name = "Kaiken knife x2"
-	appro_skill = /datum/skill/craft/weaponsmithing
-	req_bar = /obj/item/ingot/steel
-	created_item = /obj/item/rogueweapon/huntingknife/idagger/steel/kaiken
-	createmultiple = TRUE
-	createditem_num = 1
-	craftdiff = 3
 
 /datum/anvil_recipe/weapons/sai //not made of iron. Still Less damage tho.
 	name = "Sai x2"

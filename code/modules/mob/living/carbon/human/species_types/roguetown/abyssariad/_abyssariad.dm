@@ -94,12 +94,6 @@
 	result = /obj/item/clothing/head/roguetown/helmet/ceramic/medium
 	category = CAT_NONE
 
-/datum/crafting_recipe/mediumarmor //2-tiers, medium armor. The materials can be adquired naturally by butchering.
-	name = "Medium Tribal Armor"
-	time = 4 SECONDS
-	reqs = list(/obj/item/alch/bone = 3, /obj/item/alch/sinew = 2, /obj/item/natural/hide = 2, /obj/item/natural/cloth = 4)
-	result = /obj/item/clothing/suit/roguetown/armor/ceramic
-	category = CAT_NONE
 
 /datum/crafting_recipe/lighthelmet //1-tiers, light armor. The materials can be adquired naturally by butchering.
 	name = "Light Tribal Helmet"

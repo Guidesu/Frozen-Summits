@@ -172,7 +172,7 @@
 				var/obj/structure/table/TA = locate() in L.loc
 				var/obj/item/offhand = user.get_inactive_held_item()
 				if(offhand)
-					if(istype(offhand, /obj/item/rogueweapon/huntingknife/kunai))
+					if(istype(offhand, /obj/item/rogueweapon/woodstaff))
 						myskill += 3
 				if(TA)
 					myskill += 1
