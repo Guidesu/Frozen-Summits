@@ -420,7 +420,6 @@
 	armor_penetration = 1000
 	var/obj/machinery/power/supermatter_crystal/shard
 	var/balanced = 1
-	force_string = "INFINITE"
 
 /obj/item/melee/supermatter_sword/Initialize()
 	. = ..()

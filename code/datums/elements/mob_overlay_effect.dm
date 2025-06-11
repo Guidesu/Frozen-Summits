@@ -16,7 +16,6 @@
 		.["flags"] = flags
 ///mob_overlay_effect component. adds and removes
 /datum/element/mob_overlay_effect
-	element_flags = ELEMENT_BESPOKE | ELEMENT_DETACH
 	id_arg_index = 2
 
 	var/y_offset = 0

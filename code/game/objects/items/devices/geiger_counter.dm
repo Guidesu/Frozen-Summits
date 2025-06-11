@@ -212,21 +212,12 @@
 	update_icon()
 
 /obj/item/geiger_counter/cyborg/equipped(mob/user)
-	. = ..()
-	if(listeningTo == user)
-		return
-	if(listeningTo)
-		UnregisterSignal(listeningTo, COMSIG_ATOM_RAD_ACT)
-	RegisterSignal(user, COMSIG_ATOM_RAD_ACT, PROC_REF(redirect_rad_act))
-	listeningTo = user
+
 
 /obj/item/geiger_counter/cyborg/proc/redirect_rad_act(datum/source, amount)
 	rad_act(amount)
 
 /obj/item/geiger_counter/cyborg/dropped()
-	. = ..()
-	if(listeningTo)
-		UnregisterSignal(listeningTo, COMSIG_ATOM_RAD_ACT)
 
 #undef RAD_LEVEL_NORMAL
 #undef RAD_LEVEL_MODERATE

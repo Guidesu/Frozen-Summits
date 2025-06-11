@@ -154,12 +154,7 @@
 /obj/machinery/door/firedoor/attack_robot(mob/user)
 	return attack_ai(user)
 
-/obj/machinery/door/firedoor/attack_alien(mob/user)
-	add_fingerprint(user)
-	if(welded)
-		to_chat(user, span_warning("[src] refuses to budge!"))
-		return
-	open()
+
 
 /obj/machinery/door/firedoor/do_animate(animation)
 	switch(animation)

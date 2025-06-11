@@ -100,10 +100,7 @@ require only minor tweaks.
 
 // Defines for SSmapping's multiz_levels
 /// TRUE if we're ok with going up
-#define Z_LEVEL_UP 1
-/// TRUE if we're ok with going down
-#define Z_LEVEL_DOWN 2
-#define LARGEST_Z_LEVEL_INDEX Z_LEVEL_DOWN
+
 /// Map spot is allowed
 #define MAP_DEPLOY_ALLOWED "allowed"
 /// Map spot has turfs that restrict deployment

@@ -34,8 +34,6 @@
 		"embedded_pain_multiplier" = 1,
 		"embedded_fall_chance" = 0,
 	)
-	var/initial_sl
-	var/list/possible_enhancements
 	resistance_flags = FIRE_PROOF
 
 /obj/item/rogueweapon/Initialize()
@@ -105,6 +103,8 @@
 	if (can_parry)
 		can_parry = FALSE
 
+/obj/item/rogueweapon/obj_fix()
+	..()
 
 	force = initial(force)
 	armor_penetration = initial(armor_penetration)

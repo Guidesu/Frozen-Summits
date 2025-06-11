@@ -708,7 +708,6 @@
   * Default behaviour is to send COMSIG_ATOM_RAD_ACT and return
   */
 /atom/proc/rad_act(strength)
-	SEND_SIGNAL(src, COMSIG_ATOM_RAD_ACT, strength)
 
 /**
   * Respond to narsie eating our atom
@@ -730,8 +729,7 @@
   * Default behaviour is to send COMSIG_ATOM_RCD_ACT and return FALSE
   */
 /atom/proc/rcd_act(mob/user, obj/item/construction/rcd/the_rcd, passed_mode)
-	SEND_SIGNAL(src, COMSIG_ATOM_RCD_ACT, user, the_rcd, passed_mode)
-	return FALSE
+
 
 /**
   * Implement the behaviour for when a user click drags a storage object to your atom

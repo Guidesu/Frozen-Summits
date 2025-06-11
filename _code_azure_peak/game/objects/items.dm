@@ -5,6 +5,14 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 // if true, everyone item when created will have its name changed to be
 // more... RPG-like.
 
+
+#define ONE_SLOTS 32
+#define TWO_SLOTS 64
+#define THREE_SLOTS 96
+#define FOUR_SLOTS 128
+#define FIVE_SLOTS 160
+
+
 /obj/item
 	name = "item"
 	icon = 'icons/obj/items_and_weapons.dmi'
@@ -20,6 +28,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	var/icon/mob_overlay_icon
 	//Forced mob worn layer instead of the standard preferred ssize.
 	var/alternate_worn_layer
+	var/enchanted = FALSE
 
 	//Dimensions of the icon file used when this item is worn, eg: hats.dmi
 	//eg: 32x32 sprite, 64x64 sprite, etc.

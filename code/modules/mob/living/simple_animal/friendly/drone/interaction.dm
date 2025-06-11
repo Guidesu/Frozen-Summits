@@ -6,28 +6,6 @@
 //How the world interacts with drones
 
 
-/mob/living/simple_animal/drone/attack_drone(mob/living/simple_animal/drone/D)
-	if(D != src && stat == DEAD)
-		var/d_input = alert(D,"Perform which action?","Drone Interaction","Reactivate","Cannibalize","Nothing")
-		if(d_input)
-			switch(d_input)
-				if("Reactivate")
-					try_reactivate(D)
-
-				if("Cannibalize")
-					if(D.health < D.maxHealth)
-						D.visible_message(span_notice("[D] begins to cannibalize parts from [src]."), span_notice("I begin to cannibalize parts from [src]..."))
-						if(do_after(D, 60, 0, target = src))
-							D.visible_message(span_notice("[D] repairs itself using [src]'s remains!"), span_notice("I repair myself using [src]'s remains."))
-							D.adjustBruteLoss(-src.maxHealth)
-							new /obj/effect/decal/cleanable/oil/streak(get_turf(src))
-							qdel(src)
-						else
-							to_chat(D, span_warning("I need to remain still to cannibalize [src]!"))
-					else
-						to_chat(D, span_warning("You're already in perfect condition!"))
-				if("Nothing")
-					return
 
 //ATTACK HAND IGNORING PARENT RETURN VALUE
 /mob/living/simple_animal/drone/attack_hand(mob/user)

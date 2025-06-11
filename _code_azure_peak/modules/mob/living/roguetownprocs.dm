@@ -215,8 +215,6 @@
 					prob2defend += sentinel
 
 			prob2defend = clamp(prob2defend, 5, 90)
-			if(HAS_TRAIT(user, TRAIT_HARDSHELL) && H.client)	//Dwarf-merc specific limitation w/ their armor on in pvp
-				prob2defend = clamp(prob2defend, 5, 70)
 			if(!H?.check_armor_skill())
 				prob2defend = clamp(prob2defend, 5, 75)			//Caps your max parry to 75 if using armor you're not trained in. Bad dexerity.
 				drained = drained + 5							//More stamina usage for not being trained in the armor you're using.
@@ -442,8 +440,6 @@
 		if(H.rogfat_add(parrydrain))
 			if(W)
 				playsound(get_turf(src), pick(W.parrysound), 100, FALSE)
-			if(src.client)
-				GLOB.azure_round_stats[STATS_PARRIES]++
 			if(istype(rmb_intent, /datum/rmb_intent/riposte))
 				src.visible_message(span_boldwarning("<b>[src]</b> ripostes [user] with [W]!"))
 			else
@@ -463,15 +459,10 @@
 		if(H.rogfat_add(parrydrain))
 			playsound(get_turf(src), pick(parry_sound), 100, FALSE)
 			src.visible_message(span_warning("<b>[src]</b> parries [user]!"))
-			if(src.client)
-				GLOB.azure_round_stats[STATS_PARRIES]++
 			return TRUE
 		else
 			to_chat(src, span_boldwarning("I'm too tired to parry!"))
 			return FALSE
-	else
-		if(src.client)
-			GLOB.azure_round_stats[STATS_PARRIES]++
 		playsound(get_turf(src), pick(parry_sound), 100, FALSE)
 		return TRUE
 

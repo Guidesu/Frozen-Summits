@@ -81,8 +81,3 @@
 		if(BURN)
 			playsound(loc, 'sound/blank.ogg', 100, TRUE)
 
-/obj/structure/bed/nest/attack_alien(mob/living/carbon/alien/user)
-	if(user.used_intent.type != INTENT_HARM)
-		return attack_hand(user)
-	else
-		return ..()

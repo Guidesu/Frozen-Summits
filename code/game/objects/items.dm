@@ -663,15 +663,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	if(!user.put_in_active_hand(src, FALSE, FALSE))
 		user.dropItemToGround(src)
 
-/obj/item/attack_alien(mob/user)
-	var/mob/living/carbon/alien/A = user
 
-	if(!A.has_fine_manipulation)
-		if(src in A.contents) // To stop Aliens having items stuck in their pockets
-			A.dropItemToGround(src)
-		to_chat(user, span_warning("My claws aren't capable of such fine manipulation!"))
-		return
-	attack_paw(A)
 
 /obj/item/attack_ai(mob/user)
 	if(istype(src.loc, /obj/item/robot_module))

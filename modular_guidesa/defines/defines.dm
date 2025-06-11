@@ -44,9 +44,7 @@
 
 
 /obj
-	var/last_peeled_limb
-	var/peel_count = 0
-	var/peel_threshold = 3
+
 	var/altdetail_tag
 	var/altdetail_color
 	var/improvised = FALSE //if TRUE, this item is not a proper weapon, but rather a makeshift one. It will not be able to be repaired by normal means.

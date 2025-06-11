@@ -69,8 +69,6 @@
 						Atkcool = TRUE
 						addtimer(VARSET_CALLBACK(src, Atkcool, FALSE), 4.5 SECONDS)
 
-						if(Target.Adjacent(src))
-							Target.attack_slime(src)
 					break
 				if((Target.mobility_flags & MOBILITY_STAND) && prob(80))
 
@@ -79,8 +77,6 @@
 							Atkcool = TRUE
 							addtimer(VARSET_CALLBACK(src, Atkcool, FALSE), 4.5 SECONDS)
 
-							if(Target.Adjacent(src))
-								Target.attack_slime(src)
 
 					else
 						if(!Atkcool && Target.Adjacent(src))

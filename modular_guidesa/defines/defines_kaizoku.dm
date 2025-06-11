@@ -106,47 +106,23 @@ Thing can move up or down an armor class by significant changes to coverage & cr
 #define ARMOR_MINIMAL		list("melee" = 5, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 #define ARMOR_WEAK			list("melee" = 10, "bullet" = 5, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
-#define ARMOR_PADDED_BAD	list("melee" = 15, "bullet" = 15, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-#define ARMOR_PADDED		list("melee" = 25, "bullet" = 30, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-#define ARMOR_PADDED_GOOD	list("melee" = 30, "bullet" = 35, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 #define ARMOR_LEATHER_WORST	list("melee" = 20, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 #define ARMOR_LEATHER_BAD	list("melee" = 30, "bullet" = 10, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-#define ARMOR_LEATHER		list("melee" = 35, "bullet" = 15, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-#define	ARMOR_LEATHER_GOOD	list("melee" = 40, "bullet" = 20, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 // Medium AC
 #define ARMOR_MAILLE_IRON	list("melee" = 50, "bullet" = 30, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-#define ARMOR_MAILLE		list("melee" = 55, "bullet" = 40, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 #define ARMOR_MAILLE_GOOD	list("melee" = 60, "bullet" = 45, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 #define ARMOR_SCALE			list("melee" = 65, "bullet" = 65, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 // Heavy AC
 #define ARMOR_PLATE_BAD		list("melee" = 65, "bullet" = 50, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-#define ARMOR_PLATE			list("melee" = 80, "bullet" = 70, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-#define ARMOR_PLATE_GOOD	list("melee" = 90, "bullet" = 85, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
 
 /*-----------------------\
 | COVERAGE ARMOR DEFINES |
 \-----------------------*/
-
-#define COVERAGE_HEAD_NOSE		( HEAD | HAIR | EARS | NOSE )
-#define COVERAGE_HEAD			( HEAD | HAIR | EARS )
-#define COVERAGE_NASAL			( HEAD | HAIR | NOSE )
-#define COVERAGE_SKULL			( HEAD | HAIR )
-
-#define COVERAGE_VEST			( CHEST | VITALS )
-#define COVERAGE_SHIRT			( CHEST | VITALS | ARMS )
-#define COVERAGE_TORSO			( CHEST | GROIN | VITALS )
-#define COVERAGE_ALL_BUT_ARMS	( CHEST | GROIN | VITALS | LEGS )
-#define COVERAGE_ALL_BUT_LEGS	( CHEST | GROIN | VITALS | ARMS )
-#define COVERAGE_FULL			( CHEST | GROIN | VITALS | LEGS | ARMS )
-
-#define COVERAGE_PANTS			( GROIN | LEGS )
-#define COVERAGE_FULL_LEG		( LEGS | FEET )
-
 /*-----------------------------\
 | CRITICAL HIT DEFENSE DEFINES |
 \-----------------------------*/

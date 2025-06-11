@@ -9,7 +9,6 @@ Slimecrossing Weapons
 	name = "slimy boneblade"
 	desc = ""
 	force = 15
-	force_string = "painful"
 
 /obj/item/melee/arm_blade/slime/attack(mob/living/L, mob/user)
 	. = ..()
