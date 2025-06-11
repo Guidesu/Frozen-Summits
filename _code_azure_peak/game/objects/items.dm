@@ -6,12 +6,6 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 // more... RPG-like.
 
 
-#define ONE_SLOTS 32
-#define TWO_SLOTS 64
-#define THREE_SLOTS 96
-#define FOUR_SLOTS 128
-#define FIVE_SLOTS 160
-
 
 /obj/item
 	name = "item"
