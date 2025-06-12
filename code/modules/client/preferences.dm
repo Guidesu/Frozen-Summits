@@ -1073,7 +1073,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 	if(!SSquirks || !length(SSquirks.quirks))
 		return "<div class='recipe-content'><p>The quirk subsystem is still initializing. Try again in a minute.</p></div>"
 
-	var/list/categories = list("All", "Positive", "Negative", "Neutral")
+	var/list/categories = list("All", "Positive", "Negative", "Neutral", "Selected")
 	var/html = {"
 <!DOCTYPE html>
 <html>
@@ -1083,8 +1083,8 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 	<style>
 		body {
 			font-family: Arial, sans-serif;
-			background-color: #1e1e1e;
-			color: #e0e0e0;
+			background-color: #0a0a2a;
+			color: #e0e0ff;
 			margin: 0;
 			padding: 10px;
 		}
@@ -1096,16 +1096,18 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 		.sidebar {
 			width: 30%;
 			padding: 10px;
-			background-color: #2a2a2a;
+			background-color: #1a1a3a;
 			border-radius: 5px;
 			overflow-y: auto;
+			max-height: 600px;
 		}
 		.main-content {
 			width: 70%;
 			padding: 10px;
-			background-color: #2a2a2a;
+			background-color: #1a1a3a;
 			border-radius: 5px;
 			overflow-y: auto;
+			max-height: 600px;
 		}
 		.categories {
 			margin-bottom: 15px;
@@ -1115,27 +1117,27 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 		}
 		.category-btn {
 			padding: 5px 10px;
-			background-color: #3a3a3a;
+			background-color: #2a2a5a;
 			border: none;
 			border-radius: 3px;
-			color: #e0e0e0;
+			color: #e0e0ff;
 			cursor: pointer;
 		}
 		.category-btn:hover {
-			background-color: #4a4a4a;
+			background-color: #3a3a6a;
 		}
 		.category-btn.active {
-			background-color: #5a5a5a;
+			background-color: #4a4a8a;
 			font-weight: bold;
 		}
 		.search-box {
 			width: 100%;
 			padding: 8px;
 			margin-bottom: 15px;
-			background-color: #3a3a3a;
-			border: 1px solid #4a4a4a;
+			background-color: #2a2a5a;
+			border: 1px solid #4a4a8a;
 			border-radius: 3px;
-			color: #e0e0e0;
+			color: #e0e0ff;
 		}
 		.recipe-list {
 			display: flex;
@@ -1144,23 +1146,23 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 		}
 		.recipe-link {
 			padding: 8px;
-			background-color: #3a3a3a;
-			color: #e0e0e0;
+			background-color: #2a2a5a;
+			color: #e0e0ff;
 			text-decoration: none;
 			border-radius: 3px;
 		}
 		.recipe-link:hover {
-			background-color: #4a4a4a;
+			background-color: #3a3a6a;
 		}
 		.recipe-link.selected {
-			background-color: #5a5a5a;
+			background-color: #4a4a8a;
 			font-weight: bold;
 		}
 		.recipe-content {
 			padding: 10px;
 		}
 		.no-matches {
-			color: #a0a0a0;
+			color: #a0a0ff;
 			font-style: italic;
 			padding: 10px;
 			text-align: center;
@@ -1168,14 +1170,14 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 		.close-btn {
 			margin-bottom: 10px;
 			padding: 8px 15px;
-			background-color: #3a3a3a;
+			background-color: #2a2a5a;
 			border: none;
 			border-radius: 3px;
-			color: #e0e0e0;
+			color: #e0e0ff;
 			cursor: pointer;
 		}
 		.close-btn:hover {
-			background-color: #4a4a4a;
+			background-color: #3a3a6a;
 		}
 		h1 {
 			margin-top: 0;
@@ -1183,23 +1185,50 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 		}
 		hr {
 			border: none;
-			border-top: 1px solid #4a4a4a;
+			border-top: 1px solid #4a4a8a;
 			margin: 10px 0;
 		}
+		.selected-quirk {
+			background-color: #3a3a6a !important;
+		}
+		.remove-btn {
+			color: #ff8888;
+			margin-left: 10px;
+		}
+		.points-positive {
+			color: #88ff88;
+		}
+		.points-negative {
+			color: #ff8888;
+		}
+		.points-neutral {
+			color: #8888ff;
+		}
+		.disabled-link {
+			color: #666699;
+			cursor: not-allowed;
+		}
 	</style>
+	<script>
+		function handleSearch() {
+			var searchQuery = document.getElementById('searchInput').value;
+			window.location.href='?_src_=prefs;preference=trait;task=search;query='+encodeURIComponent(searchQuery)+';category=[current_category]';
+		}
+	</script>
 </head>
 <body>
 	<h1>Configure Quirks</h1>
 	<button class='close-btn' onclick=\"window.location.href='?_src_=prefs;preference=trait;task=close'\">Close</button>
 	<div class='book-content'>
 		<div class='sidebar'>
-			<input type='text' class='search-box' id='searchInput' placeholder='Search quirks...' value='[search_query]'>
+			<input type='text' class='search-box' id='searchInput' placeholder='Search quirks...' value='[search_query]' onkeyup='if(event.keyCode==13) handleSearch()'>
+			<button class='category-btn' onclick='handleSearch()'>Search</button>
 			<div class='categories'>
 	"}
 
 	for(var/category in categories)
 		var/active_class = (category == current_category) ? "active" : ""
-		html += "<button class='category-btn [active_class]' onclick=\"window.location.href='?_src_=prefs;preference=trait;task=set_category;category=[category]'\">[category]</button>"
+		html += "<button class='category-btn [active_class]' onclick=\"window.location.href='?_src_=prefs;preference=trait;task=set_category;category=[category]';search_query='[search_query]'\">[category]</button>"
 
 	html += {"
 			</div>
@@ -1207,18 +1236,36 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 	"}
 
 	var/list/quirks = list()
-	for(var/V in SSquirks.quirks)
-		var/datum/quirk/Q = SSquirks.quirks[V]
-		if(current_category == "All" || (current_category == "Positive" && isnum(Q.value) && Q.value > 0) || (current_category == "Negative" && isnum(Q.value) && Q.value < 0) || (current_category == "Neutral" && isnum(Q.value) && Q.value == 0))
-			if(!search_query || findtext(lowertext(initial(Q.name)), lowertext(search_query)))
-				quirks += V
+	if(current_category == "Selected")
+		quirks = all_quirks.Copy()
+	else
+		for(var/V in SSquirks.quirks)
+			var/datum/quirk/Q = SSquirks.quirks[V]
+			if(current_category == "All" || \
+			(current_category == "Positive" && isnum(Q.value) && Q.value > 0) || \
+			(current_category == "Negative" && isnum(Q.value) && Q.value < 0) || \
+			(current_category == "Neutral" && isnum(Q.value) && Q.value == 0))
+				if(!search_query || findtext(lowertext(initial(Q.name)), lowertext(search_query)))
+					quirks += V
 
 	if(!length(quirks))
 		html += "<div id='noMatchesMsg' class='no-matches'>No matching quirks found.</div>"
 	else
 		for(var/V in quirks)
+			var/datum/quirk/Q = SSquirks.quirks[V]
 			var/selected = (selected_quirk == V) ? "selected" : ""
-			html += "<a class='recipe-link [selected]' href='?_src_=prefs;preference=trait;task=select;trait=[V]'>[V]</a>"
+			var/selected_class = (V in all_quirks) ? "selected-quirk" : ""
+			var/points_class = "points-neutral"
+			if(isnum(Q.value))
+				if(Q.value > 0)
+					points_class = "points-positive"
+				else if(Q.value < 0)
+					points_class = "points-negative"
+			
+			html += "<a class='recipe-link [selected] [selected_class]' href='?_src_=prefs;preference=trait;task=select;trait=[V];category=[current_category];search_query=[search_query]'>[V] <span class='[points_class]'>([Q.value > 0 ? "+[Q.value]" : Q.value] pts)</span>"
+			if(current_category == "Selected")
+				html += "<span class='remove-btn' onclick=\"event.stopPropagation();window.location.href='?_src_=prefs;preference=trait;task=update;trait=[V];category=[current_category];search_query=[search_query]'\">(Remove)</span>"
+			html += "</a>"
 
 	html += {"
 			</div>
@@ -1226,36 +1273,55 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 		<div class='main-content' id='mainContent'>
 	"}
 
-	// Show current quirk stats at the top
+	// Calculate current quirk stats
 	var/positive_count = 0
 	var/balance = 0
 	for(var/q in all_quirks)
-		if(SSquirks.quirks[q]) {
+		if(SSquirks.quirks[q]) 
 			var/datum/quirk/Q = SSquirks.quirks[q]
-			if(isnum(Q.value) && Q.value > 0)
-				positive_count++
 			if(isnum(Q.value))
-				balance -= Q.value
-		}
-	html += "<div><b>Current Quirks:</b> [length(all_quirks) ? all_quirks.Join(", ") : "None"]<br>"
-	html += "<b>Positive Quirks:</b> [positive_count] / [MAX_QUIRKS] &nbsp; <b>Balance Remaining:</b> [balance]</div><hr>"
+				if(Q.value > 0)
+					positive_count++
+					balance -= Q.value  // Positive quirks COST points (subtract from balance)
+				else
+					balance += abs(Q.value)  // Negative quirks GIVE points (add to balance)
 
-	if(selected_quirk) {
+	// Display current status
+	html += "<div><b>Current Quirks:</b> [length(all_quirks) ? all_quirks.Join(", ") : "None"]<br>"
+	html += "<b>Positive Quirks:</b> [positive_count] / [MAX_QUIRKS]<br>"
+	html += "<b>Balance:</b> <span class='[balance >= 0 ? "points-positive" : "points-negative"]'>[balance]</span></div><hr>"
+
+// Then in the quirk selection logic:
+	if(selected_quirk)
 		var/datum/quirk/Q = SSquirks.quirks[selected_quirk]
-		if(Q) {
-			html += "<div class='recipe-content'><h2>[selected_quirk]</h2><p>[initial(Q.desc)]</p>"
+		if(Q)
 			var/has_quirk = (selected_quirk in all_quirks)
 			var/quirk_cost = initial(Q.value)
-			var/cost_str = (quirk_cost > 0) ? "+[quirk_cost]" : "[quirk_cost]"
-			html += "<b>Points:</b> [cost_str]<br>"
-			html += "<a href='?_src_=prefs;preference=trait;task=update;trait=[selected_quirk]'>[has_quirk ? "Remove" : "Take"]</a>"
+			var/absolute_cost = abs(quirk_cost)
+			// Check if we can take/remove this quirk
+			var/can_take = TRUE
+			var/reason = ""
+			if(has_quirk)
+				html += "<a href='?_src_=prefs;preference=trait;task=update;trait=[selected_quirk];category=[current_category];search_query=[search_query]'>Remove</a>"
+			else
+				if(quirk_cost > 0) // Positive quirk - check if we can afford it
+					if(positive_count >= MAX_QUIRKS)
+						can_take = FALSE
+						reason = "Maximum positive quirks reached"
+					else if(balance < absolute_cost)
+						can_take = FALSE
+						reason = "Insufficient balance"
+				// Negative quirks always allowed since they give us points
+				
+				if(can_take)
+					html += "<a href='?_src_=prefs;preference=trait;task=update;trait=[selected_quirk];category=[current_category];search_query=[search_query]'>Take</a>"
+				else
+					html += "<span class='disabled-link' title='[reason]'>Take (Disabled)</span>"
 			html += "</div>"
-		} else {
+		else
 			html += "<div class='recipe-content'><p>Invalid quirk selected.</p></div>"
-		}
-	} else {
+	else
 		html += "<div class='recipe-content'><p>Select a quirk from the list to view details.</p></div>"
-	}
 
 	html += {"
 		</div>
