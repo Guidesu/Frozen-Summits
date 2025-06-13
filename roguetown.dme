@@ -10,7 +10,6 @@
 #include "_code_azure_peak\__DEFINES\components.dm"
 #include "_code_azure_peak\__DEFINES\items_size.dm"
 #include "_maps\_basemap.dm"
-#include "_maps\roguetest.dm"
 #include "_maps\map_files\templates\underdark\underdark.dm"
 #include "_maps\templates\arcyne_fortress.dm"
 #include "_maps\templates\bog_shack_small.dm"
